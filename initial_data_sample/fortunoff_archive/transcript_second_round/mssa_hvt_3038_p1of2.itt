@@ -1,0 +1,1292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3.org/ns/ttml" xmlns:tt="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en-US" ttp:timeBase="smpte" ttp:frameRate="30" ttp:frameRateMultiplier="999 1000" ttp:dropMode="nonDrop">
+  <head>
+    <styling>
+      <style xml:id="normal" tts:fontFamily="sansSerif" tts:fontWeight="normal" tts:fontStyle="normal" tts:color="white" tts:fontSize="100%"/>
+      <style xml:id="bold" tts:fontFamily="sansSerif" tts:fontWeight="bold" tts:fontStyle="normal" tts:color="white" tts:fontSize="100%"/>
+      <style xml:id="italic" tts:fontFamily="sansSerif" tts:fontWeight="normal" tts:fontStyle="italic" tts:color="white" tts:fontSize="100%"/>
+    </styling>
+    <layout>
+      <region xml:id="top" tts:origin="0% 0%" tts:extent="100% 15%" tts:textAlign="center" tts:displayAlign="before"/>
+      <region xml:id="bottom" tts:origin="0% 85%" tts:extent="100% 15%" tts:textAlign="center" tts:displayAlign="after"/>
+    </layout>
+  </head>
+  <body style="normal" region="bottom">
+    <div begin="00:00:00:00">
+      <p begin="00:00:00:00" end="00:00:16:13" region="bottom"></p>
+      <p begin="00:00:16:13" end="00:00:19:27" region="bottom">SANDY HAYDEN: OK, Holocaust</br>documentation project,</p>
+      <p begin="00:00:19:27" end="00:00:21:29" region="bottom">June 15, 1983.</p>
+      <p begin="00:00:21:29" end="00:00:26:19" region="bottom">I'm Sandy Hayden interviewing</br>Mr. Rubin Pinski.</p>
+      <p begin="00:00:26:19" end="00:00:32:26" region="bottom">Um, Mr. Pinski, um, you were</br>born in a little town in P--</p>
+      <p begin="00:00:32:26" end="00:00:33:11" region="bottom">Poland.</p>
+      <p begin="00:00:33:11" end="00:00:35:07" region="bottom">Can you tell us what the</br>name of the town was?</p>
+      <p begin="00:00:35:07" end="00:00:37:05" region="bottom">RUBIN PINSKI: Yes, the</br>name of town is Zdzieciol.</p>
+      <p begin="00:00:37:05" end="00:00:37:23" region="bottom">SANDY HAYDEN: Zdzieciol.</p>
+      <p begin="00:00:37:23" end="00:00:38:17" region="bottom">RUBIN PINSKI: In Polish.</p>
+      <p begin="00:00:38:17" end="00:00:39:13" region="bottom">SANDY HAYDEN: Uh-huh.</p>
+      <p begin="00:00:39:13" end="00:00:41:27" region="bottom">RUBIN PINSKI: In</br>Russian, it was Dyatlovo.</p>
+      <p begin="00:00:41:27" end="00:00:42:29" region="bottom">SANDY HAYDEN: Dyatlovo.</p>
+      <p begin="00:00:42:29" end="00:00:46:28" region="bottom">RUBIN PINSKI: And well-known</br>in the Yiddish name, Zhetel.</p>
+      <p begin="00:00:46:28" end="00:00:48:16" region="bottom">SANDY HAYDEN: Zhetel.</p>
+      <p begin="00:00:48:16" end="00:00:50:29" region="bottom">So how-- how do you--</br>how do you refer to it?</p>
+      <p begin="00:00:50:29" end="00:00:54:29" region="bottom">RUBIN PINSKI: Well, among</br>friends and among, uh, people,</p>
+      <p begin="00:00:54:29" end="00:00:56:07" region="bottom">call it Zhetel [INAUDIBLE].</p>
+      <p begin="00:00:56:07" end="00:00:59:22" region="bottom">SANDY HAYDEN: OK, so can</br>we call it-- can we call it</p>
+      <p begin="00:00:59:22" end="00:01:00:26" region="bottom">Zhetel during the interview?</p>
+      <p begin="00:01:00:26" end="00:01:01:17" region="bottom">I think--</p>
+      <p begin="00:01:01:17" end="00:01:02:01" region="bottom">RUBIN PINSKI: Yes, I think--</p>
+      <p begin="00:01:02:01" end="00:01:03:13" region="bottom">SANDY HAYDEN: A little</br>easier for me to say</p>
+      <p begin="00:01:03:13" end="00:01:04:10" region="bottom">Zhetel than Zdzieciol.</p>
+      <p begin="00:01:04:10" end="00:01:07:09" region="bottom">RUBIN PINSKI: OK, well,</br>it's a very well-known town.</p>
+      <p begin="00:01:07:09" end="00:01:10:22" region="bottom">SANDY HAYDEN: Yeah, and</br>um, on the map here, it--</p>
+      <p begin="00:01:10:22" end="00:01:13:29" region="bottom">you explained that to me</br>a little earlier on that</p>
+      <p begin="00:01:13:29" end="00:01:17:03" region="bottom">it's, um, it has a</br>number of big cities--</p>
+      <p begin="00:01:17:03" end="00:01:23:11" region="bottom">RUBIN PINSKI: Big cities around</br>it, yes, which is [INAUDIBLE]..</p>
+      <p begin="00:01:23:11" end="00:01:27:28" region="bottom">And, uh, we are also west</br>of, uh, [INAUDIBLE]----</p>
+      <p begin="00:01:27:28" end="00:01:28:24" region="bottom">SANDY HAYDEN: Yeah.</p>
+      <p begin="00:01:28:24" end="00:01:33:01" region="bottom">RUBIN PINSKI: --about 150</br>kilometers between [INAUDIBLE]..</p>
+      <p begin="00:01:33:01" end="00:01:36:08" region="bottom">Uh, our town, Zhetel,</br>was, uh, city's leader.</p>
+      <p begin="00:01:36:08" end="00:01:39:06" region="bottom">It's also well-known city.</p>
+      <p begin="00:01:39:06" end="00:01:43:19" region="bottom">On the other side</br>towards Minsk was, uh,</p>
+      <p begin="00:01:43:19" end="00:01:45:07" region="bottom">city in the name of [INAUDIBLE].</p>
+      <p begin="00:01:45:07" end="00:01:47:19" region="bottom">SANDY HAYDEN:</br>Yeah, and did-- did</p>
+      <p begin="00:01:47:19" end="00:01:50:08" region="bottom">you used to travel</br>often to these cities?</p>
+      <p begin="00:01:50:08" end="00:01:51:23" region="bottom">RUBIN PINSKI: Well, not often.</p>
+      <p begin="00:01:51:23" end="00:01:52:21" region="bottom">I was very young.</p>
+      <p begin="00:01:52:21" end="00:01:53:17" region="bottom">SANDY HAYDEN: Uh-huh.</p>
+      <p begin="00:01:53:17" end="00:01:57:03" region="bottom">RUBIN PINSKI: I was just,</br>uh, uh, school, uh, child.</p>
+      <p begin="00:01:57:03" end="00:02:00:03" region="bottom">So I didn't have a chance</br>to travel too much.</p>
+      <p begin="00:02:00:03" end="00:02:00:29" region="bottom">SANDY HAYDEN: Mm-hmm.</p>
+      <p begin="00:02:00:29" end="00:02:03:14" region="bottom">And how big was-- how many</br>people were-- were in--</p>
+      <p begin="00:02:03:14" end="00:02:04:13" region="bottom">in Zhetel?</p>
+      <p begin="00:02:04:13" end="00:02:07:16" region="bottom">RUBIN PINSKI: Well, the</br>whole population was only</p>
+      <p begin="00:02:07:16" end="00:02:10:24" region="bottom">about, uh, 7,500 to 8,000.</p>
+      <p begin="00:02:10:24" end="00:02:11:23" region="bottom">SANDY HAYDEN: Mm-hmm.</p>
+      <p begin="00:02:11:23" end="00:02:15:01" region="bottom">RUBIN PINSKI: And at least</br>60% of them are Jews.</p>
+      <p begin="00:02:15:01" end="00:02:15:28" region="bottom">SANDY HAYDEN: Really?</p>
+      <p begin="00:02:15:28" end="00:02:19:15" region="bottom">So you-- you felt that</br>it was more Jewish--</p>
+      <p begin="00:02:19:15" end="00:02:21:29" region="bottom">you felt the Jewish community</br>very strongly there.</p>
+      <p begin="00:02:21:29" end="00:02:22:11" region="bottom">RUBIN PINSKI: Right.</p>
+      <p begin="00:02:22:11" end="00:02:22:22" region="bottom">SANDY HAYDEN: Uh-huh.</p>
+      <p begin="00:02:22:22" end="00:02:24:25" region="bottom">And was sort of Jewish</br>community was it?</p>
+      <p begin="00:02:24:25" end="00:02:26:14" region="bottom">Was it orthodox or?</p>
+      <p begin="00:02:26:14" end="00:02:28:03" region="bottom">RUBIN PINSKI:</br>Well, of all kinds.</p>
+      <p begin="00:02:28:03" end="00:02:34:10" region="bottom">Um, the, uh, the youth were</br>very-- very Zionist-minded.</p>
+      <p begin="00:02:34:10" end="00:02:37:27" region="bottom">There was [NON-ENGLISH SPEECH]</br>in our town.</p>
+      <p begin="00:02:37:27" end="00:02:43:09" region="bottom">The extreme right,</br>[NON-ENGLISH SPEECH]..</p>
+      <p begin="00:02:43:09" end="00:02:45:14" region="bottom">There are also</br>[NON-ENGLISH SPEECH],,</p>
+      <p begin="00:02:45:14" end="00:02:48:04" region="bottom">which is socialist.</p>
+      <p begin="00:02:48:04" end="00:02:52:17" region="bottom">Some very few communist</br>youth, all kinds</p>
+      <p begin="00:02:52:17" end="00:02:54:25" region="bottom">of, uh, organizations.</p>
+      <p begin="00:02:54:25" end="00:02:56:08" region="bottom">SANDY HAYDEN: Mm-hmm.</p>
+      <p begin="00:02:56:08" end="00:02:59:01" region="bottom">And was your family attached</br>to any organization?</p>
+      <p begin="00:02:59:01" end="00:03:01:09" region="bottom">RUBIN PINSKI: Yes, my</br>father was religious.</p>
+      <p begin="00:03:01:09" end="00:03:02:25" region="bottom">SANDY HAYDEN: He</br>was religious, yeah.</p>
+      <p begin="00:03:02:25" end="00:03:05:07" region="bottom">SANDY HAYDEN: And</br>along [INAUDIBLE]</p>
+      <p begin="00:03:05:07" end="00:03:06:23" region="bottom">to [INAUDIBLE] Israel.</p>
+      <p begin="00:03:06:23" end="00:03:10:07" region="bottom">This is a religious</br>organization.</p>
+      <p begin="00:03:10:07" end="00:03:14:20" region="bottom">And I-- I finished</br>[NON-ENGLISH SPEECH]..</p>
+      <p begin="00:03:14:20" end="00:03:19:25" region="bottom">And, uh, also [? learning ?]</br>in [NON-ENGLISH SPEECH],,</p>
+      <p begin="00:03:19:25" end="00:03:21:07" region="bottom">which it was called.</p>
+      <p begin="00:03:21:07" end="00:03:22:05" region="bottom">SANDY HAYDEN: Mm-hmm.</p>
+      <p begin="00:03:22:05" end="00:03:25:00" region="bottom">RUBIN PINSKI: And, uh, then I--</p>
+      <p begin="00:03:25:00" end="00:03:29:24" region="bottom">when I was 13, I was</br>[NON-ENGLISH SPEECH]..</p>
+      <p begin="00:03:29:24" end="00:03:32:28" region="bottom">It was not far from</br>our town, another town</p>
+      <p begin="00:03:32:28" end="00:03:34:29" region="bottom">called [INAUDIBLE].</p>
+      <p begin="00:03:34:29" end="00:03:39:26" region="bottom">They had a [NON-ENGLISH SPEECH]</br>on the, uh,</p>
+      <p begin="00:03:39:26" end="00:03:42:03" region="bottom">it was called</br>[NON-ENGLISH SPEECH] from</p>
+      <p begin="00:03:42:03" end="00:03:44:08" region="bottom">[NON-ENGLISH SPEECH].</p>
+      <p begin="00:03:44:08" end="00:03:46:02" region="bottom">And I was there till--</p>
+      <p begin="00:03:46:02" end="00:03:47:10" region="bottom">till 1939.</p>
+      <p begin="00:03:47:10" end="00:03:48:16" region="bottom">SANDY HAYDEN: Mm-hmm.</p>
+      <p begin="00:03:48:16" end="00:03:51:16" region="bottom">So you-- you had-- you had</br>really a religious upbringing</p>
+      <p begin="00:03:51:16" end="00:03:52:01" region="bottom">then?</p>
+      <p begin="00:03:52:01" end="00:03:53:13" region="bottom">RUBIN PINSKI: Very</br>religious, yes.</p>
+      <p begin="00:03:53:13" end="00:03:57:00" region="bottom">SANDY HAYDEN: And-- and your</br>early schooling was just</p>
+      <p begin="00:03:57:00" end="00:04:00:20" region="bottom">at in the [NON-ENGLISH SPEECH]</br>with other young Jewish boys</p>
+      <p begin="00:04:00:20" end="00:04:01:05" region="bottom">like you?</p>
+      <p begin="00:04:01:05" end="00:04:02:20" region="bottom">RUBIN PINSKI:</br>[INAUDIBLE] once, yes.</p>
+      <p begin="00:04:02:20" end="00:04:03:16" region="bottom">SANDY HAYDEN: Uh-huh.</p>
+      <p begin="00:04:03:16" end="00:04:05:08" region="bottom">And-- and you learned</br>all the subjects--</p>
+      <p begin="00:04:05:08" end="00:04:07:01" region="bottom">arithmetic and</br>reading and writing.</p>
+      <p begin="00:04:07:01" end="00:04:11:03" region="bottom">RUBIN PINSKI: Yes, this we</br>learned because the school was</p>
+      <p begin="00:04:11:03" end="00:04:13:00" region="bottom">subsidized by the government.</p>
+      <p begin="00:04:13:00" end="00:04:16:21" region="bottom">And we had to do</br>it to a half a day.</p>
+      <p begin="00:04:16:21" end="00:04:18:03" region="bottom">And all these other--</p>
+      <p begin="00:04:18:03" end="00:04:24:29" region="bottom">other subjects mainly</br>was [NON-ENGLISH SPEECH]..</p>
+      <p begin="00:04:24:29" end="00:04:25:25" region="bottom">SANDY HAYDEN: Mm-hmm.</p>
+      <p begin="00:04:25:25" end="00:04:28:09" region="bottom">So that was-- half the day was--</p>
+      <p begin="00:04:28:09" end="00:04:29:22" region="bottom">was-- was, um, school.</p>
+      <p begin="00:04:29:22" end="00:04:31:26" region="bottom">And the half-- other half</br>of the day was religious.</p>
+      <p begin="00:04:31:26" end="00:04:32:09" region="bottom">RUBIN PINSKI: Right.</p>
+      <p begin="00:04:32:09" end="00:04:33:10" region="bottom">SANDY HAYDEN: Uh-huh.</p>
+      <p begin="00:04:33:10" end="00:04:35:23" region="bottom">And did you, as a young</br>boy, did you enjoy that?</p>
+      <p begin="00:04:35:23" end="00:04:36:06" region="bottom">RUBIN PINSKI: Oh, yes.</p>
+      <p begin="00:04:36:06" end="00:04:36:13" region="bottom">I--</p>
+      <p begin="00:04:36:13" end="00:04:37:04" region="bottom">SANDY HAYDEN: Oh, he did.</p>
+      <p begin="00:04:37:04" end="00:04:39:11" region="bottom">You just never-- he never</br>thought, oh, I don't really</p>
+      <p begin="00:04:39:11" end="00:04:40:05" region="bottom">like going.</p>
+      <p begin="00:04:40:05" end="00:04:44:04" region="bottom">Or it wasn't too-- it-- it</br>wasn't-- you didn't see other</p>
+      <p begin="00:04:44:04" end="00:04:47:21" region="bottom">Jewish boys who maybe had half</br>the afternoon free because they</p>
+      <p begin="00:04:47:21" end="00:04:50:05" region="bottom">weren't going to town with</br>[INAUDIBLE] something.</p>
+      <p begin="00:04:50:05" end="00:04:54:04" region="bottom">RUBIN PINSKI: Well, there was</br>also a Yiddish [INAUDIBLE]..</p>
+      <p begin="00:04:54:04" end="00:04:57:05" region="bottom">And [INAUDIBLE],, as I</br>said, [NON-ENGLISH SPEECH]..</p>
+      <p begin="00:04:57:05" end="00:04:59:06" region="bottom">Hebrew only.</p>
+      <p begin="00:04:59:06" end="00:05:01:23" region="bottom">And, uh, the youth</br>used to get together,</p>
+      <p begin="00:05:01:23" end="00:05:04:04" region="bottom">and we had</br>discussions for hours,</p>
+      <p begin="00:05:04:04" end="00:05:06:10" region="bottom">had the discussions,</br>one with another.</p>
+      <p begin="00:05:06:10" end="00:05:09:03" region="bottom">[INAUDIBLE] religious</br>youth and the--</p>
+      <p begin="00:05:09:03" end="00:05:10:16" region="bottom">SANDY HAYDEN: Zionists, yeah.</p>
+      <p begin="00:05:10:16" end="00:05:14:27" region="bottom">RUBIN PINSKI: The-- the</br>other real nice gathering</p>
+      <p begin="00:05:14:27" end="00:05:15:26" region="bottom">[INAUDIBLE].</p>
+      <p begin="00:05:15:26" end="00:05:18:04" region="bottom">SANDY HAYDEN: And--</br>and your father--</p>
+      <p begin="00:05:18:04" end="00:05:22:05" region="bottom">your father let you associate</br>with all the other Jewish boys,</p>
+      <p begin="00:05:22:05" end="00:05:23:14" region="bottom">even if they weren't religious?</p>
+      <p begin="00:05:23:14" end="00:05:23:18" region="bottom">RUBIN PINSKI: Oh, yes.</p>
+      <p begin="00:05:23:18" end="00:05:24:22" region="bottom">SANDY HAYDEN: That wasn't--</p>
+      <p begin="00:05:24:22" end="00:05:27:23" region="bottom">RUBIN PINSKI: It was, uh,</br>a habit that Saturday.</p>
+      <p begin="00:05:27:23" end="00:05:31:27" region="bottom">My father used to</br>take, uh, the, uh,</p>
+      <p begin="00:05:31:27" end="00:05:35:07" region="bottom">children and study</br>with them [INAUDIBLE]</p>
+      <p begin="00:05:35:07" end="00:05:38:05" region="bottom">while other children were</br>playing football or something</p>
+      <p begin="00:05:38:05" end="00:05:39:06" region="bottom">like that.</p>
+      <p begin="00:05:39:06" end="00:05:45:06" region="bottom">But we had to obli--</br>oblige to our parents and--</p>
+      <p begin="00:05:45:06" end="00:05:48:17" region="bottom">and, uh, and do it for</br>them because, uh, we</p>
+      <p begin="00:05:48:17" end="00:05:50:18" region="bottom">always suspected our parents.</p>
+      <p begin="00:05:50:18" end="00:05:52:09" region="bottom">SANDY HAYDEN: Yeah, yeah.</p>
+      <p begin="00:05:52:09" end="00:05:53:07" region="bottom">RUBIN PINSKI: So we--</p>
+      <p begin="00:05:53:07" end="00:05:55:24" region="bottom">Saturdays, we used to see people</br>study with our [INAUDIBLE]..</p>
+      <p begin="00:05:55:24" end="00:05:57:02" region="bottom">SANDY HAYDEN: With your father.</p>
+      <p begin="00:05:57:02" end="00:05:58:25" region="bottom">RUBIN PINSKI:</br>Father [INAUDIBLE]..</p>
+      <p begin="00:05:58:25" end="00:06:02:00" region="bottom">SANDY HAYDEN: And how many--</br>how many were in your family?</p>
+      <p begin="00:06:02:00" end="00:06:02:24" region="bottom">RUBIN PINSKI: Four.</p>
+      <p begin="00:06:02:24" end="00:06:03:22" region="bottom">SANDY HAYDEN: Four.</p>
+      <p begin="00:06:03:22" end="00:06:06:18" region="bottom">Can you tell-- were</br>you the oldest, or--</p>
+      <p begin="00:06:06:18" end="00:06:08:08" region="bottom">RUBIN PINSKI: No, I</br>was the third one.</p>
+      <p begin="00:06:08:08" end="00:06:09:18" region="bottom">SANDY HAYDEN: The third one.</p>
+      <p begin="00:06:09:18" end="00:06:11:14" region="bottom">RUBIN PINSKI: My</br>sister was the oldest.</p>
+      <p begin="00:06:11:14" end="00:06:15:01" region="bottom">I had a brother and myself,</br>and I had a younger sister,</p>
+      <p begin="00:06:15:01" end="00:06:19:09" region="bottom">which perished in the--</p>
+      <p begin="00:06:19:09" end="00:06:20:12" region="bottom">in 1942.</p>
+      <p begin="00:06:20:12" end="00:06:22:06" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:06:22:06" end="00:06:26:12" region="bottom">And, um, what-- what did your</br>father do as a profession?</p>
+      <p begin="00:06:26:12" end="00:06:31:06" region="bottom">RUBIN PINSKI: He used to buy</br>grain from the farmers, grain</p>
+      <p begin="00:06:31:06" end="00:06:40:15" region="bottom">and, uh, other things and sell</br>it in, uh, a bigger wholesale.</p>
+      <p begin="00:06:40:15" end="00:06:43:04" region="bottom">He used-- in other words, he</br>used to buy it from the farmers</p>
+      <p begin="00:06:43:04" end="00:06:45:06" region="bottom">to sell it in the--</p>
+      <p begin="00:06:45:06" end="00:06:47:27" region="bottom">in the bigger-- in</br>the bigger wholesale.</p>
+      <p begin="00:06:47:27" end="00:06:48:20" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:06:48:20" end="00:06:51:08" region="bottom">And so did he sell it-- did</br>he sell it in-- in the town,</p>
+      <p begin="00:06:51:08" end="00:06:53:11" region="bottom">or did he take it to</br>the bigger cities?</p>
+      <p begin="00:06:53:11" end="00:06:54:17" region="bottom">RUBIN PINSKI: No.</p>
+      <p begin="00:06:54:17" end="00:06:57:11" region="bottom">He sold it in the</br>town to someone</p>
+      <p begin="00:06:57:11" end="00:07:00:08" region="bottom">who used to buy from everybody.</p>
+      <p begin="00:07:00:08" end="00:07:02:08" region="bottom">Also, he used to deal with--</p>
+      <p begin="00:07:02:08" end="00:07:05:00" region="bottom"></p>
+      <p begin="00:07:05:00" end="00:07:08:03" region="bottom">what was it called?</p>
+      <p begin="00:07:08:03" end="00:07:09:20" region="bottom">Mushrooms.</p>
+      <p begin="00:07:09:20" end="00:07:14:12" region="bottom">Dried mushrooms like--</br>and all kinds of--</p>
+      <p begin="00:07:14:12" end="00:07:19:26" region="bottom">all sorts of the-- the farmers</br>used to sell in the city.</p>
+      <p begin="00:07:19:26" end="00:07:23:10" region="bottom">SANDY HAYDEN: So he used to deal</br>with all sorts of produce then?</p>
+      <p begin="00:07:23:10" end="00:07:24:11" region="bottom">RUBIN PINSKI: Right.</p>
+      <p begin="00:07:24:11" end="00:07:25:19" region="bottom">SANDY HAYDEN: And your mother?</p>
+      <p begin="00:07:25:19" end="00:07:26:07" region="bottom">Can you--</p>
+      <p begin="00:07:26:07" end="00:07:27:15" region="bottom">RUBIN PINSKI: Just a housewife.</p>
+      <p begin="00:07:27:15" end="00:07:28:12" region="bottom">SANDY HAYDEN: Uh-huh.</p>
+      <p begin="00:07:28:12" end="00:07:30:28" region="bottom">Can you-- can you</br>describe your mother?</p>
+      <p begin="00:07:30:28" end="00:07:32:03" region="bottom">What you remember.</p>
+      <p begin="00:07:32:03" end="00:07:33:19" region="bottom">RUBIN PINSKI: Yes.</p>
+      <p begin="00:07:33:19" end="00:07:40:13" region="bottom">Very educated and, uh,</br>like a Jewish mother,</p>
+      <p begin="00:07:40:13" end="00:07:44:02" region="bottom">used to just oblige--</p>
+      <p begin="00:07:44:02" end="00:07:49:17" region="bottom">do the housework and, uh,</br>and raise the children.</p>
+      <p begin="00:07:49:17" end="00:07:52:14" region="bottom"></p>
+      <p begin="00:07:52:14" end="00:07:53:25" region="bottom">Like a real good Jewish mother.</p>
+      <p begin="00:07:53:25" end="00:07:56:05" region="bottom">SANDY HAYDEN: Good</br>Jewish mother, yeah.</p>
+      <p begin="00:07:56:05" end="00:07:58:12" region="bottom">And did you have</br>quite a bit of family,</p>
+      <p begin="00:07:58:12" end="00:07:59:28" region="bottom">cousins, and aunts, and uncles?</p>
+      <p begin="00:07:59:28" end="00:08:00:20" region="bottom">RUBIN PINSKI: Yes.</p>
+      <p begin="00:08:00:20" end="00:08:01:20" region="bottom">Yes, we had.</p>
+      <p begin="00:08:01:20" end="00:08:08:21" region="bottom">Um, not far from our house</br>my-- my mother's sister</p>
+      <p begin="00:08:08:21" end="00:08:13:10" region="bottom">and her family,</br>they all perished.</p>
+      <p begin="00:08:13:10" end="00:08:16:21" region="bottom">And my father's family</br>was in another city.</p>
+      <p begin="00:08:16:21" end="00:08:21:19" region="bottom">It's called [INAUDIBLE]</br>oh, about 100 kilometers</p>
+      <p begin="00:08:21:19" end="00:08:26:11" region="bottom">from us towards, uh, Pinsk.</p>
+      <p begin="00:08:26:11" end="00:08:31:10" region="bottom">And he had a brother, and</br>sisters, and a mother.</p>
+      <p begin="00:08:31:10" end="00:08:36:06" region="bottom">As a matter of fact, it was only</br>once in my life in that town</p>
+      <p begin="00:08:36:06" end="00:08:37:10" region="bottom">where my father comes from.</p>
+      <p begin="00:08:37:10" end="00:08:38:09" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:08:38:09" end="00:08:40:11" region="bottom">RUBIN PINSKI: I was only</br>eight, nine years old.</p>
+      <p begin="00:08:40:11" end="00:08:41:14" region="bottom">SANDY HAYDEN: So they did--</p>
+      <p begin="00:08:41:14" end="00:08:45:03" region="bottom">RUBIN PINSKI: I remember it</br>very vaguely about that town.</p>
+      <p begin="00:08:45:03" end="00:08:46:09" region="bottom">SANDY HAYDEN: So you much--</p>
+      <p begin="00:08:46:09" end="00:08:47:20" region="bottom">really, you had</br>much more contact</p>
+      <p begin="00:08:47:20" end="00:08:49:17" region="bottom">with your mother's</br>side of the family.</p>
+      <p begin="00:08:49:17" end="00:08:50:16" region="bottom">RUBIN PINSKI: Right.</p>
+      <p begin="00:08:50:16" end="00:08:51:20" region="bottom">SANDY HAYDEN: And did you--</p>
+      <p begin="00:08:51:20" end="00:08:54:26" region="bottom">you used to spend all</br>holidays and celebrations?</p>
+      <p begin="00:08:54:26" end="00:08:57:08" region="bottom">RUBIN PINSKI: Yes, we used</br>to get together on holidays.</p>
+      <p begin="00:08:57:08" end="00:09:00:21" region="bottom"></p>
+      <p begin="00:09:00:21" end="00:09:03:19" region="bottom">And sometimes in the middle</br>of the week, we used to--</p>
+      <p begin="00:09:03:19" end="00:09:10:09" region="bottom">I used to play with my</br>cousins like a normal--</p>
+      <p begin="00:09:10:09" end="00:09:12:05" region="bottom">normal way of--</p>
+      <p begin="00:09:12:05" end="00:09:13:14" region="bottom">SANDY HAYDEN: Of growing up.</p>
+      <p begin="00:09:13:14" end="00:09:16:07" region="bottom">RUBIN PINSKI: A fun</br>way of growing up, yes.</p>
+      <p begin="00:09:16:07" end="00:09:17:19" region="bottom">SANDY HAYDEN: And-- the--</p>
+      <p begin="00:09:17:19" end="00:09:20:22" region="bottom">the other 40% of</br>people who lived</p>
+      <p begin="00:09:20:22" end="00:09:23:04" region="bottom">in the town, who were they?</p>
+      <p begin="00:09:23:04" end="00:09:24:14" region="bottom">Were they Poles?</p>
+      <p begin="00:09:24:14" end="00:09:28:18" region="bottom">RUBIN PINSKI: A lot</br>of them were farmers.</p>
+      <p begin="00:09:28:18" end="00:09:33:12" region="bottom">And some were the, uh--</br>the administration--</p>
+      <p begin="00:09:33:12" end="00:09:37:07" region="bottom">the Polish administration</br>like policeman--</p>
+      <p begin="00:09:37:07" end="00:09:38:17" region="bottom">there was a magistrate.</p>
+      <p begin="00:09:38:17" end="00:09:41:18" region="bottom">It's like a city hall here.</p>
+      <p begin="00:09:41:18" end="00:09:46:28" region="bottom">And the, uh, the</br>mayor was a Pole.</p>
+      <p begin="00:09:46:28" end="00:09:50:24" region="bottom">And the secretaries were Poles.</p>
+      <p begin="00:09:50:24" end="00:09:54:23" region="bottom">And, uh, there was--</br>there wasn't a very big</p>
+      <p begin="00:09:54:23" end="00:09:58:00" region="bottom">administration in our town.</p>
+      <p begin="00:09:58:00" end="00:10:02:10" region="bottom">But, uh, and-- and</br>enough Poles to--</p>
+      <p begin="00:10:02:10" end="00:10:06:14" region="bottom">to collect taxes and--</p>
+      <p begin="00:10:06:14" end="00:10:10:06" region="bottom">and look after all the, uh--</p>
+      <p begin="00:10:10:06" end="00:10:11:12" region="bottom">SANDY HAYDEN: Administration.</p>
+      <p begin="00:10:11:12" end="00:10:13:06" region="bottom">RUBIN PINSKI: Administration</br>of the city, yeah.</p>
+      <p begin="00:10:13:06" end="00:10:15:15" region="bottom">SANDY HAYDEN: So that's really</br>all that they did there,</p>
+      <p begin="00:10:15:15" end="00:10:18:04" region="bottom">and the Jews were--</p>
+      <p begin="00:10:18:04" end="00:10:20:17" region="bottom">the Jews were involved in all</br>sorts of other professions</p>
+      <p begin="00:10:20:17" end="00:10:21:02" region="bottom">[INAUDIBLE].</p>
+      <p begin="00:10:21:02" end="00:10:25:04" region="bottom">RUBIN PINSKI: Oh, yeah, the Jews</br>were all kinds of professions.</p>
+      <p begin="00:10:25:04" end="00:10:34:07" region="bottom">Shoe-- shoemakers, fixing shoes,</br>and tailors, a lot of tailors,</p>
+      <p begin="00:10:34:07" end="00:10:41:17" region="bottom">and, uh, storekeepers, like</br>groceries and selling fabric.</p>
+      <p begin="00:10:41:17" end="00:10:44:19" region="bottom">That was also developed</br>a lot in our town,</p>
+      <p begin="00:10:44:19" end="00:10:49:01" region="bottom">selling leather, leather</br>soles and leather--</p>
+      <p begin="00:10:49:01" end="00:10:50:25" region="bottom">the shoes were made by hand.</p>
+      <p begin="00:10:50:25" end="00:10:51:17" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:10:51:17" end="00:10:52:10" region="bottom">Really?</p>
+      <p begin="00:10:52:10" end="00:10:54:11" region="bottom">Everybody's shoes</br>were made by hand.</p>
+      <p begin="00:10:54:11" end="00:10:57:09" region="bottom">RUBIN PINSKI: But there</br>was only one store--</p>
+      <p begin="00:10:57:09" end="00:11:02:06" region="bottom">while I was going up, I</br>remember started butter shoes.</p>
+      <p begin="00:11:02:06" end="00:11:07:27" region="bottom">And one store of</br>butter shoes opened up,</p>
+      <p begin="00:11:07:27" end="00:11:11:02" region="bottom">but until then,</br>there was no stores,</p>
+      <p begin="00:11:11:02" end="00:11:12:27" region="bottom">no shoes where they made shoes.</p>
+      <p begin="00:11:12:27" end="00:11:14:01" region="bottom">SANDY HAYDEN: Really, yeah.</p>
+      <p begin="00:11:14:01" end="00:11:16:01" region="bottom">RUBIN PINSKI: All made by hand.</p>
+      <p begin="00:11:16:01" end="00:11:17:20" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:11:17:20" end="00:11:20:28" region="bottom">And-- and-- um, I</br>suppose that there</p>
+      <p begin="00:11:20:28" end="00:11:25:02" region="bottom">were no Jews who were farmers</br>or landowners around the town.</p>
+      <p begin="00:11:25:02" end="00:11:26:15" region="bottom">RUBIN PINSKI: Yes,</br>there were a few</p>
+      <p begin="00:11:26:15" end="00:11:30:23" region="bottom">also had some farms,</br>not big ones, small--</p>
+      <p begin="00:11:30:23" end="00:11:31:12" region="bottom">small farms.</p>
+      <p begin="00:11:31:12" end="00:11:34:05" region="bottom">SANDY HAYDEN: So they were</br>allowed to own the land, and--</p>
+      <p begin="00:11:34:05" end="00:11:35:28" region="bottom">RUBIN PINSKI: And they</br>were doing the same</p>
+      <p begin="00:11:35:28" end="00:11:38:19" region="bottom">as other farmers,</br>but not too many.</p>
+      <p begin="00:11:38:19" end="00:11:39:12" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:11:39:12" end="00:11:43:13" region="bottom">RUBIN PINSKI: There were in</br>the villages around the town,</p>
+      <p begin="00:11:43:13" end="00:11:48:15" region="bottom">there were quite a few</br>Jews in the farming,</p>
+      <p begin="00:11:48:15" end="00:11:50:24" region="bottom">like in the other--</p>
+      <p begin="00:11:50:24" end="00:11:53:22" region="bottom">peasant, non-Jews,</br>peasants, they also</p>
+      <p begin="00:11:53:22" end="00:11:59:22" region="bottom">owned a couple of hectares</br>of land and lived from that.</p>
+      <p begin="00:11:59:22" end="00:12:00:19" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:12:00:19" end="00:12:02:23" region="bottom">RUBIN PINSKI: But in</br>the town, there was--</p>
+      <p begin="00:12:02:23" end="00:12:04:07" region="bottom">SANDY HAYDEN: [INAUDIBLE]</p>
+      <p begin="00:12:04:07" end="00:12:10:20" region="bottom">RUBIN PINSKI: Mostly the</br>Jews were like professionals,</p>
+      <p begin="00:12:10:20" end="00:12:14:04" region="bottom">like shoemakers, and tailors.</p>
+      <p begin="00:12:14:04" end="00:12:15:05" region="bottom">SANDY HAYDEN: [INAUDIBLE]</p>
+      <p begin="00:12:15:05" end="00:12:18:15" region="bottom">RUBIN PINSKI: And a lot of</br>Jews were just starting--</p>
+      <p begin="00:12:18:15" end="00:12:20:18" region="bottom">sitting and starting</br>[INAUDIBLE]..</p>
+      <p begin="00:12:20:18" end="00:12:22:05" region="bottom">SANDY HAYDEN: Yeah.</p>
+      <p begin="00:12:22:05" end="00:12:24:13" region="bottom">And what does-- what</br>were the relationships</p>
+      <p begin="00:12:24:13" end="00:12:27:17" region="bottom">like between the Jews and</br>the Poles in the town?</p>
+      <p begin="00:12:27:17" end="00:12:30:08" region="bottom">RUBIN PINSKI: As a matter fact,</br>the relationship was very good.</p>
+      <p begin="00:12:30:08" end="00:12:31:17" region="bottom">SANDY HAYDEN: Yeah?</p>
+      <p begin="00:12:31:17" end="00:12:35:27" region="bottom">RUBIN PINSKI: Especially with</br>the white Russians in our town.</p>
+      <p begin="00:12:35:27" end="00:12:39:18" region="bottom">The white Russians</br>were very nice to us.</p>
+      <p begin="00:12:39:18" end="00:12:42:06" region="bottom">The Poles themselves</br>were anti-Semitic.</p>
+      <p begin="00:12:42:06" end="00:12:43:06" region="bottom">SANDY HAYDEN: They were?</p>
+      <p begin="00:12:43:06" end="00:12:43:17" region="bottom">RUBIN PINSKI: Yes.</p>
+      <p begin="00:12:43:17" end="00:12:45:22" region="bottom">SANDY HAYDEN: So you</br>experienced that right from--</p>
+      <p begin="00:12:45:22" end="00:12:46:17" region="bottom">RUBIN PINSKI: Right.</p>
+      <p begin="00:12:46:17" end="00:12:47:21" region="bottom">SANDY HAYDEN: An early age.</p>
+      <p begin="00:12:47:21" end="00:12:52:27" region="bottom">RUBIN PINSKI: Since Hitler</br>came to power in 1933, the, uh,</p>
+      <p begin="00:12:52:27" end="00:12:55:15" region="bottom">Poles became different.</p>
+      <p begin="00:12:55:15" end="00:12:56:25" region="bottom">They were already anti-Semitic.</p>
+      <p begin="00:12:56:25" end="00:12:57:23" region="bottom">SANDY HAYDEN: Can you--</p>
+      <p begin="00:12:57:23" end="00:13:00:15" region="bottom">can you remember in what</br>way they became different?</p>
+      <p begin="00:13:00:15" end="00:13:05:16" region="bottom">RUBIN PINSKI: Yes, in the</br>last years in 1937, '38,</p>
+      <p begin="00:13:05:16" end="00:13:12:25" region="bottom">I remember they used to come</br>from bigger cities, young Poles</p>
+      <p begin="00:13:12:25" end="00:13:18:14" region="bottom">and carrying placards</br>saying, don't buy from Jews</p>
+      <p begin="00:13:18:14" end="00:13:21:22" region="bottom">and, uh, buy from Poles only.</p>
+      <p begin="00:13:21:22" end="00:13:25:04" region="bottom">And the anti-Semitism</br>started already to grow.</p>
+      <p begin="00:13:25:04" end="00:13:26:16" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:13:26:16" end="00:13:29:07" region="bottom">And do you remember-- do you</br>remember talking about it</p>
+      <p begin="00:13:29:07" end="00:13:32:26" region="bottom">as a young boy or hearing</br>your father and mother</p>
+      <p begin="00:13:32:26" end="00:13:33:19" region="bottom">talk about it.</p>
+      <p begin="00:13:33:19" end="00:13:35:02" region="bottom">Were they worried</br>about it at all?</p>
+      <p begin="00:13:35:02" end="00:13:36:15" region="bottom">RUBIN PINSKI: Oh, yes, we all--</p>
+      <p begin="00:13:36:15" end="00:13:40:20" region="bottom">we knew already what</br>actually from the papers,</p>
+      <p begin="00:13:40:20" end="00:13:44:02" region="bottom">from the Jewish papers we</br>used to guess from, uh,</p>
+      <p begin="00:13:44:02" end="00:13:49:24" region="bottom">the [INAUDIBLE],, like it was,</br>uh, produced in, uh, Warsaw.</p>
+      <p begin="00:13:49:24" end="00:13:51:14" region="bottom">We used to get these papers.</p>
+      <p begin="00:13:51:14" end="00:13:54:04" region="bottom">And we heard what going</br>on in German, what</p>
+      <p begin="00:13:54:04" end="00:13:56:15" region="bottom">the Germans did to the Jews.</p>
+      <p begin="00:13:56:15" end="00:13:58:09" region="bottom">So we were already scared.</p>
+      <p begin="00:13:58:09" end="00:13:59:01" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:13:59:01" end="00:14:01:21" region="bottom">You were worried that that could</br>start happening in Poland also.</p>
+      <p begin="00:14:01:21" end="00:14:04:03" region="bottom">RUBIN PINSKI: Yes, we were</br>very worried and scared</p>
+      <p begin="00:14:04:03" end="00:14:07:25" region="bottom">in the last few years</br>before the war broke out.</p>
+      <p begin="00:14:07:25" end="00:14:08:18" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:14:08:18" end="00:14:12:22" region="bottom">And even though the Jews were</br>the majority in your town, you</p>
+      <p begin="00:14:12:22" end="00:14:16:02" region="bottom">still, the Poles were</br>still openly anti-Semitic.</p>
+      <p begin="00:14:16:02" end="00:14:17:02" region="bottom">They weren't scared of--</p>
+      <p begin="00:14:17:02" end="00:14:17:23" region="bottom">RUBIN PINSKI: Yeah.</p>
+      <p begin="00:14:17:23" end="00:14:18:24" region="bottom">SANDY HAYDEN: --of [INAUDIBLE].</p>
+      <p begin="00:14:18:24" end="00:14:21:05" region="bottom">RUBIN PINSKI: No, they were--</br>they were very anti-Semitic</p>
+      <p begin="00:14:21:05" end="00:14:25:00" region="bottom">openly, but not actually not</br>the local Poles, always--</p>
+      <p begin="00:14:25:00" end="00:14:26:25" region="bottom">SANDY HAYDEN: Oh, always</br>Poles that came by.</p>
+      <p begin="00:14:26:25" end="00:14:27:23" region="bottom">RUBIN PINSKI: Came by.</p>
+      <p begin="00:14:27:23" end="00:14:32:21" region="bottom">And they also planted, uh,</br>anti-Semitism into the Poles</p>
+      <p begin="00:14:32:21" end="00:14:35:04" region="bottom">in our town.</p>
+      <p begin="00:14:35:04" end="00:14:38:03" region="bottom">But with the white</br>Russians, neighbors,</p>
+      <p begin="00:14:38:03" end="00:14:41:12" region="bottom">we lived in very peaceful.</p>
+      <p begin="00:14:41:12" end="00:14:45:08" region="bottom">And they were very nice.</p>
+      <p begin="00:14:45:08" end="00:14:49:06" region="bottom">SANDY HAYDEN: So when-- when</br>did all of that start to change?</p>
+      <p begin="00:14:49:06" end="00:14:52:08" region="bottom">RUBIN PINSKI: The last couple</br>of years, uh, before the war</p>
+      <p begin="00:14:52:08" end="00:14:53:20" region="bottom">started.</p>
+      <p begin="00:14:53:20" end="00:14:57:13" region="bottom">That-- wars, and</br>wars, and wars always.</p>
+      <p begin="00:14:57:13" end="00:14:59:14" region="bottom">SANDY HAYDEN: And with--</br>with the- white Russians</p>
+      <p begin="00:14:59:14" end="00:15:02:19" region="bottom">and the Poles in the town</br>also or still just the people</p>
+      <p begin="00:15:02:19" end="00:15:03:22" region="bottom">who were passing through?</p>
+      <p begin="00:15:03:22" end="00:15:04:22" region="bottom">RUBIN PINSKI: The Poles.</p>
+      <p begin="00:15:04:22" end="00:15:07:21" region="bottom">And some-- not too</br>many white Russians</p>
+      <p begin="00:15:07:21" end="00:15:12:28" region="bottom">became already a little bit</br>also with a cold shoulder</p>
+      <p begin="00:15:12:28" end="00:15:15:03" region="bottom">toward the Jews.</p>
+      <p begin="00:15:15:03" end="00:15:20:26" region="bottom">They were already, uh, showing</br>anti-Semitic, uh, tendencies.</p>
+      <p begin="00:15:20:26" end="00:15:23:22" region="bottom"></p>
+      <p begin="00:15:23:22" end="00:15:25:14" region="bottom">SANDY HAYDEN: And, um, can you--</p>
+      <p begin="00:15:25:14" end="00:15:29:23" region="bottom">can you describe what</br>happened, um, in 1939 when--</p>
+      <p begin="00:15:29:23" end="00:15:30:13" region="bottom">when--</p>
+      <p begin="00:15:30:13" end="00:15:34:04" region="bottom">RUBIN PINSKI: Oh, yes, well,</br>when the war broke out,</p>
+      <p begin="00:15:34:04" end="00:15:41:19" region="bottom">when the Germans attacked</br>Poland, the Poles, a lot</p>
+      <p begin="00:15:41:19" end="00:15:46:08" region="bottom">of Polish, uh, soldiers were</br>running through our town</p>
+      <p begin="00:15:46:08" end="00:15:47:28" region="bottom">towards Russia.</p>
+      <p begin="00:15:47:28" end="00:15:51:19" region="bottom">They were escaping</br>from the Germans.</p>
+      <p begin="00:15:51:19" end="00:16:00:03" region="bottom">And, uh, the war broke out on</br>the 1st of September, 1939.</p>
+      <p begin="00:16:00:03" end="00:16:07:14" region="bottom">And I think it was the 17th of</br>September the Russians came in</p>
+      <p begin="00:16:07:14" end="00:16:10:04" region="bottom">from-- from Minsk,</br>from the other side</p>
+      <p begin="00:16:10:04" end="00:16:13:03" region="bottom">and occupied our town.</p>
+      <p begin="00:16:13:03" end="00:16:20:23" region="bottom">And we came under the Russian</br>government and the Russian, uh,</p>
+      <p begin="00:16:20:23" end="00:16:21:22" region="bottom">occupation.</p>
+      <p begin="00:16:21:22" end="00:16:23:04" region="bottom">SANDY HAYDEN: And</br>did things start</p>
+      <p begin="00:16:23:04" end="00:16:24:22" region="bottom">to change very</br>much at that time?</p>
+      <p begin="00:16:24:22" end="00:16:26:14" region="bottom">RUBIN PINSKI: Changed--</br>it changed very--</p>
+      <p begin="00:16:26:14" end="00:16:28:02" region="bottom">very rapidly, yes.</p>
+      <p begin="00:16:28:02" end="00:16:31:18" region="bottom">SANDY HAYDEN: How old</br>were you, um, when the--</p>
+      <p begin="00:16:31:18" end="00:16:32:16" region="bottom">RUBIN PINSKI: In 1939?</p>
+      <p begin="00:16:32:16" end="00:16:33:09" region="bottom">SANDY HAYDEN: 1939.</p>
+      <p begin="00:16:33:09" end="00:16:34:19" region="bottom">You mind me asking you?</p>
+      <p begin="00:16:34:19" end="00:16:36:13" region="bottom">RUBIN PINSKI: Yes, I</br>was only 15 years old.</p>
+      <p begin="00:16:36:13" end="00:16:37:28" region="bottom">SANDY HAYDEN: 15 years old.</p>
+      <p begin="00:16:37:28" end="00:16:38:11" region="bottom">RUBIN PINSKI: Right.</p>
+      <p begin="00:16:38:11" end="00:16:39:08" region="bottom">SANDY HAYDEN: Uh-huh.</p>
+      <p begin="00:16:39:08" end="00:16:42:02" region="bottom">So you were a young-- you</br>were a young boy then?</p>
+      <p begin="00:16:42:02" end="00:16:43:14" region="bottom">RUBIN PINSKI: Very young boy.</p>
+      <p begin="00:16:43:14" end="00:16:44:17" region="bottom">SANDY HAYDEN: Do</br>you remember-- do</p>
+      <p begin="00:16:44:17" end="00:16:45:29" region="bottom">you remember some</br>of the feelings</p>
+      <p begin="00:16:45:29" end="00:16:48:06" region="bottom">that you had when-- when--</br>when the Russians occupied</p>
+      <p begin="00:16:48:06" end="00:16:48:21" region="bottom">your town?</p>
+      <p begin="00:16:48:21" end="00:16:51:06" region="bottom">RUBIN PINSKI: Oh, when the</br>Russians came, I mean, we--</p>
+      <p begin="00:16:51:06" end="00:16:53:23" region="bottom">we accepted them with open arms.</p>
+      <p begin="00:16:53:23" end="00:16:54:19" region="bottom">SANDY HAYDEN: Uh-huh.</p>
+      <p begin="00:16:54:19" end="00:16:56:06" region="bottom">You mean rather than</br>have the Germans--</p>
+      <p begin="00:16:56:06" end="00:16:57:10" region="bottom">RUBIN PINSKI: That's right.</p>
+      <p begin="00:16:57:10" end="00:16:59:11" region="bottom">We knew what the</br>Germans did to the Jews.</p>
+      <p begin="00:16:59:11" end="00:17:03:16" region="bottom">And they-- they were</br>actually, uh, liberators.</p>
+      <p begin="00:17:03:16" end="00:17:08:16" region="bottom">And they behaved very</br>nice except some of the--</p>
+      <p begin="00:17:08:16" end="00:17:12:28" region="bottom">from the rich Jews</br>took away the--</p>
+      <p begin="00:17:12:28" end="00:17:13:26" region="bottom">their stores.</p>
+      <p begin="00:17:13:26" end="00:17:18:08" region="bottom">Anybody who had a fabric</br>store, other kinds of stores,</p>
+      <p begin="00:17:18:08" end="00:17:21:00" region="bottom">they confiscated it.</p>
+      <p begin="00:17:21:00" end="00:17:24:18" region="bottom">But they let the</br>people work for them,</p>
+      <p begin="00:17:24:18" end="00:17:27:01" region="bottom">and they found</br>jobs for everybody.</p>
+      <p begin="00:17:27:01" end="00:17:31:05" region="bottom">And life went on fine.</p>
+      <p begin="00:17:31:05" end="00:17:32:19" region="bottom">SANDY HAYDEN: But</br>you were hearing--</p>
+      <p begin="00:17:32:19" end="00:17:36:15" region="bottom">you were hearing reports of</br>what was going on in Germany.</p>
+      <p begin="00:17:36:15" end="00:17:39:09" region="bottom">Can you tell me what some of</br>the things that you heard in--</p>
+      <p begin="00:17:39:09" end="00:17:43:29" region="bottom">RUBIN PINSKI: They used to</br>hear only from the paper</p>
+      <p begin="00:17:43:29" end="00:17:46:15" region="bottom">what the Germans behaved--</p>
+      <p begin="00:17:46:15" end="00:17:51:01" region="bottom">did bad to the Germans</br>Jews, also to the, uh--</p>
+      <p begin="00:17:51:01" end="00:17:57:18" region="bottom">when we heard the trouble</br>before the Russians came in.</p>
+      <p begin="00:17:57:18" end="00:18:01:05" region="bottom">We knew what's going more</br>or less on in the paper.</p>
+      <p begin="00:18:01:05" end="00:18:03:26" region="bottom">But the Russians concealed</br>from us everything.</p>
+      <p begin="00:18:03:26" end="00:18:08:02" region="bottom">They didn't know what's going</br>on in the other half of Poland.</p>
+      <p begin="00:18:08:02" end="00:18:09:25" region="bottom">SANDY HAYDEN: Really,</br>once they occupied--</p>
+      <p begin="00:18:09:25" end="00:18:11:06" region="bottom">RUBIN PINSKI: Once</br>they occupied,</p>
+      <p begin="00:18:11:06" end="00:18:13:26" region="bottom">we didn't know anything, just--</p>
+      <p begin="00:18:13:26" end="00:18:16:13" region="bottom">they told us what they</br>wanted to tell us.</p>
+      <p begin="00:18:16:13" end="00:18:19:14" region="bottom">SANDY HAYDEN: So did--</br>did you feel at any time</p>
+      <p begin="00:18:19:14" end="00:18:22:01" region="bottom">that you and your family</br>would like to escape or to go</p>
+      <p begin="00:18:22:01" end="00:18:23:06" region="bottom">to another part of Europe?</p>
+      <p begin="00:18:23:06" end="00:18:25:10" region="bottom">Or did you feel</br>that you would just</p>
+      <p begin="00:18:25:10" end="00:18:27:03" region="bottom">stay their for the meantime?</p>
+      <p begin="00:18:27:03" end="00:18:28:13" region="bottom">RUBIN PINSKI: Even if you felt--</p>
+      <p begin="00:18:28:13" end="00:18:29:26" region="bottom">but we couldn't do anything--</p>
+      <p begin="00:18:29:26" end="00:18:31:15" region="bottom">SANDY HAYDEN: You</br>didn't have a chance.</p>
+      <p begin="00:18:31:15" end="00:18:35:05" region="bottom">RUBIN PINSKI: --because</br>the Russian policy was you,</p>
+      <p begin="00:18:35:05" end="00:18:38:01" region="bottom">uh, if you are not with</br>us, you are against us.</p>
+      <p begin="00:18:38:01" end="00:18:41:26" region="bottom">In other words, if you</br>want to go away, you are--</p>
+      <p begin="00:18:41:26" end="00:18:43:14" region="bottom">you are our enemy.</p>
+      <p begin="00:18:43:14" end="00:18:44:07" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:18:44:07" end="00:18:46:02" region="bottom">So that was dangerous</br>for you too.</p>
+      <p begin="00:18:46:02" end="00:18:47:13" region="bottom">RUBIN PINSKI: So</br>we couldn't even</p>
+      <p begin="00:18:47:13" end="00:18:52:00" region="bottom">think of escaping or</br>going anywhere then.</p>
+      <p begin="00:18:52:00" end="00:18:55:07" region="bottom">We didn't have the</br>money to go too.</p>
+      <p begin="00:18:55:07" end="00:18:57:20" region="bottom">There was no-- nowhere to go.</p>
+      <p begin="00:18:57:20" end="00:18:59:04" region="bottom">SANDY HAYDEN: But</br>when the Russians</p>
+      <p begin="00:18:59:04" end="00:19:02:03" region="bottom">came to occupy</br>[INAUDIBLE],, you must</p>
+      <p begin="00:19:02:03" end="00:19:05:12" region="bottom">have been at you-- at yeshiva</br>in the neighboring town?</p>
+      <p begin="00:19:05:12" end="00:19:06:18" region="bottom">Or had you come back in town.</p>
+      <p begin="00:19:06:18" end="00:19:10:07" region="bottom">RUBIN PINSKI: No, I came back</br>to our town, because the, uh,</p>
+      <p begin="00:19:10:07" end="00:19:14:02" region="bottom">Russians, they didn't exactly--</p>
+      <p begin="00:19:14:02" end="00:19:18:09" region="bottom">they didn't say you</br>can do it, but so--</p>
+      <p begin="00:19:18:09" end="00:19:23:04" region="bottom">all the religious issues</br>disappeared somehow.</p>
+      <p begin="00:19:23:04" end="00:19:24:16" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:19:24:16" end="00:19:27:05" region="bottom">RUBIN PINSKI: The,</br>uh, officially,</p>
+      <p begin="00:19:27:05" end="00:19:30:23" region="bottom">they didn't say you</br>cannot go to synagogue,</p>
+      <p begin="00:19:30:23" end="00:19:34:01" region="bottom">because the Jews went</br>to synagogue while, uh--</p>
+      <p begin="00:19:34:01" end="00:19:36:28" region="bottom">while they were in occupation.</p>
+      <p begin="00:19:36:28" end="00:19:41:20" region="bottom">But somehow, the Jews</br>alone were afraid to do it.</p>
+      <p begin="00:19:41:20" end="00:19:42:19" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:19:42:19" end="00:19:45:08" region="bottom">So-- so yeshivas closed down?</p>
+      <p begin="00:19:45:08" end="00:19:47:19" region="bottom">RUBIN PINSKI: There was no--</br>no more yeshivas at all.</p>
+      <p begin="00:19:47:19" end="00:19:52:02" region="bottom">And then we-- we um, had</br>to go to Russian schools</p>
+      <p begin="00:19:52:02" end="00:19:52:29" region="bottom">to learn Russian.</p>
+      <p begin="00:19:52:29" end="00:19:53:22" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:19:53:22" end="00:19:55:04" region="bottom">So that's what you did</br>when you went back home.</p>
+      <p begin="00:19:55:04" end="00:19:56:02" region="bottom">RUBIN PINSKI: That's</br>what I did, yes.</p>
+      <p begin="00:19:56:02" end="00:19:57:24" region="bottom">SANDY HAYDEN: So you</br>were at-- at a school</p>
+      <p begin="00:19:57:24" end="00:19:59:19" region="bottom">with Russians and Poles.</p>
+      <p begin="00:19:59:19" end="00:20:01:19" region="bottom">And it was now a</br>mix-- a mixed school.</p>
+      <p begin="00:20:01:19" end="00:20:03:24" region="bottom">RUBIN PINSKI: Mixed, but</br>we-- we taught the subjects</p>
+      <p begin="00:20:03:24" end="00:20:05:10" region="bottom">that are only Russian.</p>
+      <p begin="00:20:05:10" end="00:20:07:07" region="bottom">We started a new</br>language altogether.</p>
+      <p begin="00:20:07:07" end="00:20:08:24" region="bottom">SANDY HAYDEN: And</br>how was-- how was it</p>
+      <p begin="00:20:08:24" end="00:20:10:26" region="bottom">going to a school</br>like that, because it</p>
+      <p begin="00:20:10:26" end="00:20:13:08" region="bottom">seems to be very different</br>from what you were used to?</p>
+      <p begin="00:20:13:08" end="00:20:16:11" region="bottom">RUBIN PINSKI: Yes, uh, but we--</p>
+      <p begin="00:20:16:11" end="00:20:18:12" region="bottom">we could learn,</br>because the language</p>
+      <p begin="00:20:18:12" end="00:20:25:12" region="bottom">itself was, uh, was a lot easier</br>to catch, because the white--</p>
+      <p begin="00:20:25:12" end="00:20:27:11" region="bottom">white Russian is</br>similar to Russian.</p>
+      <p begin="00:20:27:11" end="00:20:32:08" region="bottom">Polish is also a bit</br>similar in a way.</p>
+      <p begin="00:20:32:08" end="00:20:37:02" region="bottom">And the-- the writing</br>and reading was harder,</p>
+      <p begin="00:20:37:02" end="00:20:40:00" region="bottom">but the speaking, we</br>caught on very fast.</p>
+      <p begin="00:20:40:00" end="00:20:40:23" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:20:40:23" end="00:20:43:18" region="bottom">And how was it to be</br>in the class with, um,</p>
+      <p begin="00:20:43:18" end="00:20:46:11" region="bottom">with other children, with the</br>Russian and Polish children?</p>
+      <p begin="00:20:46:11" end="00:20:48:17" region="bottom">Did you get on with them,</br>or was there anti-Semitism?</p>
+      <p begin="00:20:48:17" end="00:20:49:18" region="bottom">RUBIN PINSKI: Yes.</p>
+      <p begin="00:20:49:18" end="00:20:51:18" region="bottom">No, no, there was</br>no anti-Semitism,</p>
+      <p begin="00:20:51:18" end="00:20:56:25" region="bottom">because, uh, they--</br>they knew that uh,</p>
+      <p begin="00:20:56:25" end="00:21:02:01" region="bottom">the Russians in the</br>Russian government,</p>
+      <p begin="00:21:02:01" end="00:21:03:19" region="bottom">there was no</br>anti-Semitism at all.</p>
+      <p begin="00:21:03:19" end="00:21:05:23" region="bottom">Everybody is the same.</p>
+      <p begin="00:21:05:23" end="00:21:12:21" region="bottom">And actually, they used to, uh,</br>punish for anti-Semitic, uh,</p>
+      <p begin="00:21:12:21" end="00:21:13:27" region="bottom">the writing--</p>
+      <p begin="00:21:13:27" end="00:21:15:18" region="bottom">saying.</p>
+      <p begin="00:21:15:18" end="00:21:17:10" region="bottom">They, uh, used to--</p>
+      <p begin="00:21:17:10" end="00:21:19:00" region="bottom">people are afraid</br>to be anti-Semitic.</p>
+      <p begin="00:21:19:00" end="00:21:19:26" region="bottom">SANDY HAYDEN: Really?</p>
+      <p begin="00:21:19:26" end="00:21:22:02" region="bottom">And the Poles also then</br>were afraid in school</p>
+      <p begin="00:21:22:02" end="00:21:22:25" region="bottom">to be anti-Semitic.</p>
+      <p begin="00:21:22:25" end="00:21:25:11" region="bottom">RUBIN PINSKI: Well,</br>actually, the Poles,</p>
+      <p begin="00:21:25:11" end="00:21:27:06" region="bottom">the few Poles that</br>were in our town</p>
+      <p begin="00:21:27:06" end="00:21:32:22" region="bottom">disappeared, the ones that were</br>in the administration before.</p>
+      <p begin="00:21:32:22" end="00:21:39:09" region="bottom">And the-- the Polish</br>farmers behaved like, uh,</p>
+      <p begin="00:21:39:09" end="00:21:43:02" region="bottom">like they have to behave</br>under the Russian occupation.</p>
+      <p begin="00:21:43:02" end="00:21:44:04" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:21:44:04" end="00:21:47:05" region="bottom">So how many years was--</br>were you under occupation</p>
+      <p begin="00:21:47:05" end="00:21:49:01" region="bottom">by the Russian forces?</p>
+      <p begin="00:21:49:01" end="00:21:53:14" region="bottom">RUBIN PINSKI: Well, from</br>1939, from September 1939</p>
+      <p begin="00:21:53:14" end="00:21:58:15" region="bottom">till the outbreak of the</br>war at the 22nd of June,</p>
+      <p begin="00:21:58:15" end="00:22:02:07" region="bottom">1941 when Hitler</br>attacked Russia.</p>
+      <p begin="00:22:02:07" end="00:22:02:29" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:22:02:29" end="00:22:05:12" region="bottom">So that was two years.</p>
+      <p begin="00:22:05:12" end="00:22:06:20" region="bottom">RUBIN PINSKI: Nearly two years.</p>
+      <p begin="00:22:06:20" end="00:22:07:21" region="bottom">SANDY HAYDEN: Right,</br>nearly two years, yeah.</p>
+      <p begin="00:22:07:21" end="00:22:08:12" region="bottom">RUBIN PINSKI: Two years, yes.</p>
+      <p begin="00:22:08:12" end="00:22:10:26" region="bottom">SANDY HAYDEN: And in a way, it</br>sounds like your life didn't</p>
+      <p begin="00:22:10:26" end="00:22:12:15" region="bottom">change too much in those tears.</p>
+      <p begin="00:22:12:15" end="00:22:16:04" region="bottom">The everyday living</br>didn't change too much.</p>
+      <p begin="00:22:16:04" end="00:22:19:17" region="bottom">RUBIN PINSKI: Well, it</br>did change in, uh, in uh,</p>
+      <p begin="00:22:19:17" end="00:22:23:17" region="bottom">the way that, from one</br>government to the other,</p>
+      <p begin="00:22:23:17" end="00:22:30:17" region="bottom">which, uh, the Russians had</br>started to, uh, put in us--</p>
+      <p begin="00:22:30:17" end="00:22:34:02" region="bottom">teach-- teach us-- teach us</br>their ways that you cannot be</p>
+      <p begin="00:22:34:02" end="00:22:39:28" region="bottom">in the, uh, dealings or any,</br>uh, you cannot own a store.</p>
+      <p begin="00:22:39:28" end="00:22:42:27" region="bottom">You can-- you can't,</br>uh, be for your own.</p>
+      <p begin="00:22:42:27" end="00:22:44:17" region="bottom">Everything has to be</br>for the government.</p>
+      <p begin="00:22:44:17" end="00:22:45:07" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:22:45:07" end="00:22:47:16" region="bottom">RUBIN PINSKI: Now what you have</br>to work for the government.</p>
+      <p begin="00:22:47:16" end="00:22:48:08" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:22:48:08" end="00:22:50:29" region="bottom">So it was more</br>Marxist or socialist.</p>
+      <p begin="00:22:50:29" end="00:22:51:28" region="bottom">RUBIN PINSKI: Right.</p>
+      <p begin="00:22:51:28" end="00:22:53:22" region="bottom">They tried to teach us.</p>
+      <p begin="00:22:53:22" end="00:22:57:15" region="bottom">But it wasn't so easy to</br>absorb in the beginning.</p>
+      <p begin="00:22:57:15" end="00:22:59:28" region="bottom">SANDY HAYDEN: Yeah, so that</br>was a bit difficult for--</p>
+      <p begin="00:22:59:28" end="00:23:01:07" region="bottom">for all of you.</p>
+      <p begin="00:23:01:07" end="00:23:03:23" region="bottom">RUBIN PINSKI: That's right,</br>but it was at least safe.</p>
+      <p begin="00:23:03:23" end="00:23:04:15" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:23:04:15" end="00:23:06:06" region="bottom">And was your father</br>able to continue</p>
+      <p begin="00:23:06:06" end="00:23:07:14" region="bottom">doing what he had been doing?</p>
+      <p begin="00:23:07:14" end="00:23:08:05" region="bottom">RUBIN PINSKI: No.</p>
+      <p begin="00:23:08:05" end="00:23:09:09" region="bottom">SANDY HAYDEN: What-- what--</p>
+      <p begin="00:23:09:09" end="00:23:12:16" region="bottom">what did he-- what</br>happened to his work then?</p>
+      <p begin="00:23:12:16" end="00:23:16:02" region="bottom">RUBIN PINSKI: He, uh, he</br>used to buy, well, not</p>
+      <p begin="00:23:16:02" end="00:23:19:01" region="bottom">exactly the same way as to--</p>
+      <p begin="00:23:19:01" end="00:23:22:12" region="bottom">before used to buy direct</br>from the farmers and--</p>
+      <p begin="00:23:22:12" end="00:23:23:11" region="bottom">and sell it.</p>
+      <p begin="00:23:23:11" end="00:23:26:17" region="bottom">And here he had to work</br>for the government.</p>
+      <p begin="00:23:26:17" end="00:23:29:25" region="bottom">He used to buy also</br>from the farmers,</p>
+      <p begin="00:23:29:25" end="00:23:33:04" region="bottom">but, uh, like in a</br>cooperative sort of.</p>
+      <p begin="00:23:33:04" end="00:23:37:03" region="bottom">He used to write down</br>everything he buys</p>
+      <p begin="00:23:37:03" end="00:23:40:21" region="bottom">and, uh, pay out the farmers.</p>
+      <p begin="00:23:40:21" end="00:23:42:20" region="bottom">He worked for the</br>government, in other words.</p>
+      <p begin="00:23:42:20" end="00:23:44:07" region="bottom">SANDY HAYDEN: And</br>how-- how was that?</p>
+      <p begin="00:23:44:07" end="00:23:45:26" region="bottom">Was that a big change for him?</p>
+      <p begin="00:23:45:26" end="00:23:47:14" region="bottom">RUBIN PINSKI: He got</br>used to it first.</p>
+      <p begin="00:23:47:14" end="00:23:48:29" region="bottom">SANDY HAYDEN: Uh-huh.</p>
+      <p begin="00:23:48:29" end="00:23:50:12" region="bottom">But it was-- it was all right.</p>
+      <p begin="00:23:50:12" end="00:23:52:00" region="bottom">RUBIN PINSKI: Before</br>that change, yeah.</p>
+      <p begin="00:23:52:00" end="00:23:52:28" region="bottom">But we got used to it.</p>
+      <p begin="00:23:52:28" end="00:23:53:24" region="bottom">SANDY HAYDEN: Uh-huh.</p>
+      <p begin="00:23:53:24" end="00:23:55:19" region="bottom">Did that mean that,</br>materially, that you</p>
+      <p begin="00:23:55:19" end="00:23:58:26" region="bottom">had less in your family</br>than you were used to?</p>
+      <p begin="00:23:58:26" end="00:24:01:21" region="bottom">RUBIN PINSKI: Yes,</br>uh, a little bit less,</p>
+      <p begin="00:24:01:21" end="00:24:03:13" region="bottom">but it wasn't too bad.</p>
+      <p begin="00:24:03:13" end="00:24:05:18" region="bottom">It was enough to get by.</p>
+      <p begin="00:24:05:18" end="00:24:06:11" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:24:06:11" end="00:24:09:03" region="bottom">So food, and</br>clothing, and shoes,</p>
+      <p begin="00:24:09:03" end="00:24:11:17" region="bottom">and all that sort of thing</br>during the Russian occupation</p>
+      <p begin="00:24:11:17" end="00:24:13:22" region="bottom">wasn't-- was that-- was</br>not too much of a problem.</p>
+      <p begin="00:24:13:22" end="00:24:15:14" region="bottom">You never--</p>
+      <p begin="00:24:15:14" end="00:24:19:06" region="bottom">RUBIN PINSKI: Yes, it was</br>a problem, because it never</p>
+      <p begin="00:24:19:06" end="00:24:20:21" region="bottom">brought in anything.</p>
+      <p begin="00:24:20:21" end="00:24:21:15" region="bottom">They took away.</p>
+      <p begin="00:24:21:15" end="00:24:22:14" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:24:22:14" end="00:24:24:16" region="bottom">RUBIN PINSKI: Anything</br>that was produced,</p>
+      <p begin="00:24:24:16" end="00:24:27:18" region="bottom">they took away from our</br>town and sent into Russia.</p>
+      <p begin="00:24:27:18" end="00:24:31:08" region="bottom">But, uh, we never</br>brought anything.</p>
+      <p begin="00:24:31:08" end="00:24:34:05" region="bottom">If they did bring</br>something, you had</p>
+      <p begin="00:24:34:05" end="00:24:39:19" region="bottom">to stand in, uh, a queue</br>for-- for hours to get it.</p>
+      <p begin="00:24:39:19" end="00:24:41:11" region="bottom">But we didn't complain.</p>
+      <p begin="00:24:41:11" end="00:24:43:25" region="bottom">It was-- they let us live.</p>
+      <p begin="00:24:43:25" end="00:24:46:28" region="bottom">That was-- that was</br>the main good thing</p>
+      <p begin="00:24:46:28" end="00:24:48:11" region="bottom">about the Russian occupation.</p>
+      <p begin="00:24:48:11" end="00:24:49:03" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:24:49:03" end="00:24:52:18" region="bottom">So you were just hoping that</br>that would continue right</p>
+      <p begin="00:24:52:18" end="00:24:53:06" region="bottom">until--</p>
+      <p begin="00:24:53:06" end="00:24:54:01" region="bottom">RUBIN PINSKI: Right.</p>
+      <p begin="00:24:54:01" end="00:24:56:20" region="bottom">SANDY HAYDEN: But then in 1941--</p>
+      <p begin="00:24:56:20" end="00:25:03:16" region="bottom">RUBIN PINSKI: 1941, when Hitler</br>attacked, uh, Russia, our city</p>
+      <p begin="00:25:03:16" end="00:25:07:13" region="bottom">was taken by the</br>Germans officially</p>
+      <p begin="00:25:07:13" end="00:25:10:19" region="bottom">until the 8th of June, 1941.</p>
+      <p begin="00:25:10:19" end="00:25:11:11" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:25:11:11" end="00:25:14:16" region="bottom">RUBIN PINSKI: That</br>was eight days later.</p>
+      <p begin="00:25:14:16" end="00:25:18:25" region="bottom">And in the eight</br>days, the, uh, there</p>
+      <p begin="00:25:18:25" end="00:25:26:22" region="bottom">were some battles close to our</br>town with the, uh, the, uh,</p>
+      <p begin="00:25:26:22" end="00:25:30:01" region="bottom">Russians who were running</br>away with the Germans who</p>
+      <p begin="00:25:30:01" end="00:25:37:05" region="bottom">were coming as parachutists.</p>
+      <p begin="00:25:37:05" end="00:25:39:00" region="bottom">The-- actually</br>they didn't take--</p>
+      <p begin="00:25:39:00" end="00:25:43:17" region="bottom">the Germans didn't occupy</br>our town as a full army.</p>
+      <p begin="00:25:43:17" end="00:25:49:27" region="bottom">But, uh, the, uh, they</br>parachuted behind the town</p>
+      <p begin="00:25:49:27" end="00:25:55:08" region="bottom">and attacked all the, uh,</br>running away trucks and, uh,</p>
+      <p begin="00:25:55:08" end="00:25:57:02" region="bottom">and tanks from the Russian.</p>
+      <p begin="00:25:57:02" end="00:25:57:24" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:25:57:24" end="00:25:58:24" region="bottom">So there was--</p>
+      <p begin="00:25:58:24" end="00:25:59:26" region="bottom">RUBIN PINSKI: Eight days.</p>
+      <p begin="00:25:59:26" end="00:26:02:10" region="bottom">SANDY HAYDEN: Really, so there</br>was fighting around your town</p>
+      <p begin="00:26:02:10" end="00:26:03:09" region="bottom">for-- for eight days.</p>
+      <p begin="00:26:03:09" end="00:26:05:07" region="bottom">RUBIN PINSKI: Yeah, so</br>fighting about eight days.</p>
+      <p begin="00:26:05:07" end="00:26:06:03" region="bottom">SANDY HAYDEN: Uh-huh.</p>
+      <p begin="00:26:06:03" end="00:26:08:09" region="bottom">And what was it like</br>during those eight days.</p>
+      <p begin="00:26:08:09" end="00:26:10:02" region="bottom">RUBIN PINSKI: Well,</br>it was very bad.</p>
+      <p begin="00:26:10:02" end="00:26:13:04" region="bottom">The, uh, the Jews,</br>uh, not only do</p>
+      <p begin="00:26:13:04" end="00:26:15:18" region="bottom">the whole population couldn't</br>get out of the houses, hiding</p>
+      <p begin="00:26:15:18" end="00:26:17:08" region="bottom">in the houses.</p>
+      <p begin="00:26:17:08" end="00:26:22:24" region="bottom">And they did get out</br>the, uh, the planes</p>
+      <p begin="00:26:22:24" end="00:26:26:19" region="bottom">shooting over the head,</br>the German planes.</p>
+      <p begin="00:26:26:19" end="00:26:29:27" region="bottom">In other words, uh,</br>most people were hiding.</p>
+      <p begin="00:26:29:27" end="00:26:30:20" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:26:30:20" end="00:26:32:14" region="bottom">And you must-- do you rem--</p>
+      <p begin="00:26:32:14" end="00:26:34:29" region="bottom">I mean, you must have been</br>very frightened about it.</p>
+      <p begin="00:26:34:29" end="00:26:35:22" region="bottom">RUBIN PINSKI: Very</br>frightened, yes.</p>
+      <p begin="00:26:35:22" end="00:26:37:15" region="bottom">SANDY HAYDEN: Do you</br>remember the feeling?</p>
+      <p begin="00:26:37:15" end="00:26:39:01" region="bottom">RUBIN PINSKI: Yes,</br>yes, I remember.</p>
+      <p begin="00:26:39:01" end="00:26:41:16" region="bottom">I used to hide even</br>in the basement.</p>
+      <p begin="00:26:41:16" end="00:26:43:02" region="bottom">SANDY HAYDEN: With</br>your whole family?</p>
+      <p begin="00:26:43:02" end="00:26:48:20" region="bottom">RUBIN PINSKI: The whole family</br>for days till-- till the, uh,</p>
+      <p begin="00:26:48:20" end="00:26:52:20" region="bottom">shooting got a little</br>bit, uh, eased.</p>
+      <p begin="00:26:52:20" end="00:26:53:16" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:26:53:16" end="00:26:55:25" region="bottom">And during those</br>eight days, do you--</p>
+      <p begin="00:26:55:25" end="00:26:57:09" region="bottom">I mean, were you</br>worried about what</p>
+      <p begin="00:26:57:09" end="00:26:59:25" region="bottom">was going to happen now</br>that the Russians had left?</p>
+      <p begin="00:26:59:25" end="00:27:02:07" region="bottom">RUBIN PINSKI: Well,</br>the uh, we knew</p>
+      <p begin="00:27:02:07" end="00:27:09:21" region="bottom">that it's not so good that</br>the Germans occupied the, uh,</p>
+      <p begin="00:27:09:21" end="00:27:13:27" region="bottom">living will be, uh,</br>bad [INAUDIBLE]..</p>
+      <p begin="00:27:13:27" end="00:27:15:03" region="bottom">We knew what to expect.</p>
+      <p begin="00:27:15:03" end="00:27:16:06" region="bottom">SANDY HAYDEN: You did know?</p>
+      <p begin="00:27:16:06" end="00:27:16:24" region="bottom">RUBIN PINSKI: Yes.</p>
+      <p begin="00:27:16:24" end="00:27:17:24" region="bottom">SANDY HAYDEN: Was this--</p>
+      <p begin="00:27:17:24" end="00:27:20:19" region="bottom">how hard-- how-- how did</br>you know this information,</p>
+      <p begin="00:27:20:19" end="00:27:21:17" region="bottom">because you--</p>
+      <p begin="00:27:21:17" end="00:27:23:16" region="bottom">RUBIN PINSKI: Well,</br>we knew what they do--</p>
+      <p begin="00:27:23:16" end="00:27:26:09" region="bottom">they did in Germany</br>or in Poland.</p>
+      <p begin="00:27:26:09" end="00:27:29:13" region="bottom">So we knew what to expect.</p>
+      <p begin="00:27:29:13" end="00:27:30:22" region="bottom">And so it happened.</p>
+      <p begin="00:27:30:22" end="00:27:31:15" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:27:31:15" end="00:27:33:00" region="bottom">Can you-- can you</br>tell us what happened</p>
+      <p begin="00:27:33:00" end="00:27:33:14" region="bottom">from the time the</br>Germans occupied?</p>
+      <p begin="00:27:33:14" end="00:27:34:23" region="bottom">RUBIN PINSKI: Yes.</p>
+      <p begin="00:27:34:23" end="00:27:38:12" region="bottom">The German soldiers,</br>they came in the town.</p>
+      <p begin="00:27:38:12" end="00:27:44:14" region="bottom">They-- they were very careful</br>walking by houses singularly.</p>
+      <p begin="00:27:44:14" end="00:27:48:20" region="bottom">They, uh, first</br>came in without--</p>
+      <p begin="00:27:48:20" end="00:27:55:06" region="bottom">without, uh, cars, or tanks,</br>or just occupied the city.</p>
+      <p begin="00:27:55:06" end="00:27:58:27" region="bottom">And, uh, immediately,</br>they started,</p>
+      <p begin="00:27:58:27" end="00:28:05:25" region="bottom">um, they started to</br>ask the, uh, some</p>
+      <p begin="00:28:05:25" end="00:28:09:09" region="bottom">of the, uh, Polish or white--</p>
+      <p begin="00:28:09:09" end="00:28:12:24" region="bottom">or the-- or the</br>non-Jewish population</p>
+      <p begin="00:28:12:24" end="00:28:15:16" region="bottom">where are-- where the Jews are.</p>
+      <p begin="00:28:15:16" end="00:28:20:16" region="bottom">And they asked for food from</br>the Jews and asked for bicycles.</p>
+      <p begin="00:28:20:16" end="00:28:22:08" region="bottom">SANDY HAYDEN: And you</br>gave it all to them?</p>
+      <p begin="00:28:22:08" end="00:28:22:18" region="bottom">RUBIN PINSKI: Everything.</p>
+      <p begin="00:28:22:18" end="00:28:23:14" region="bottom">SANDY HAYDEN: They had to, yeah.</p>
+      <p begin="00:28:23:14" end="00:28:24:26" region="bottom">RUBIN PINSKI: They</br>had no choice.</p>
+      <p begin="00:28:24:26" end="00:28:25:20" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:28:25:20" end="00:28:28:06" region="bottom">RUBIN PINSKI: And they had--</p>
+      <p begin="00:28:28:06" end="00:28:32:29" region="bottom">right away, the Germans</br>had some of the, uh,</p>
+      <p begin="00:28:32:29" end="00:28:35:14" region="bottom">of the town's inhabitants.</p>
+      <p begin="00:28:35:14" end="00:28:41:04" region="bottom">Some of them where they</br>with them, helping them,</p>
+      <p begin="00:28:41:04" end="00:28:45:12" region="bottom">uh, showing them the</br>Jewish, uh, houses.</p>
+      <p begin="00:28:45:12" end="00:28:51:21" region="bottom">And they went and robbed,</br>and beat, and uh, and--</p>
+      <p begin="00:28:51:21" end="00:28:57:19" region="bottom">the three days</br>after the, uh, they</p>
+      <p begin="00:28:57:19" end="00:29:02:11" region="bottom">had already with them</br>some, um, placards</p>
+      <p begin="00:29:02:11" end="00:29:07:02" region="bottom">hanging out in, uh, three</br>languages-- in German,</p>
+      <p begin="00:29:07:02" end="00:29:12:06" region="bottom">in Russian, and,</br>uh, and uh, Polish.</p>
+      <p begin="00:29:12:06" end="00:29:15:03" region="bottom">All de-- decrees against Jews.</p>
+      <p begin="00:29:15:03" end="00:29:15:29" region="bottom">SANDY HAYDEN: Really?</p>
+      <p begin="00:29:15:29" end="00:29:16:28" region="bottom">Yeah.</p>
+      <p begin="00:29:16:28" end="00:29:21:14" region="bottom">RUBIN PINSKI: That the Jews,</br>uh, cannot walk on the sidewalk.</p>
+      <p begin="00:29:21:14" end="00:29:26:24" region="bottom">They cannot, uh,</br>possess, uh, fur coats.</p>
+      <p begin="00:29:26:24" end="00:29:31:25" region="bottom">He cannot-- they</br>cannot have any gold.</p>
+      <p begin="00:29:31:25" end="00:29:34:17" region="bottom">They have to give it</br>away to the Germans--</p>
+      <p begin="00:29:34:17" end="00:29:39:16" region="bottom">and a long list of</br>decrees against Jews.</p>
+      <p begin="00:29:39:16" end="00:29:42:27" region="bottom">So we knew right away</br>the trouble started.</p>
+      <p begin="00:29:42:27" end="00:29:45:18" region="bottom"></p>
+      <p begin="00:29:45:18" end="00:29:52:11" region="bottom">And, uh, slowly, the Jews</br>started to come out of the--</p>
+      <p begin="00:29:52:11" end="00:29:53:19" region="bottom">of the hiding.</p>
+      <p begin="00:29:53:19" end="00:30:04:27" region="bottom">And-- and, uh, the, uh, Germans</br>gave every day new orders</p>
+      <p begin="00:30:04:27" end="00:30:09:29" region="bottom">to, uh, collect food and</br>collect clothes for them.</p>
+      <p begin="00:30:09:29" end="00:30:16:07" region="bottom">And then in the, uh, third</br>week was in July the 5th.</p>
+      <p begin="00:30:16:07" end="00:30:18:03" region="bottom">SANDY HAYDEN: At that</br>time, had they, um,</p>
+      <p begin="00:30:18:03" end="00:30:20:09" region="bottom">had there been any brutality?</p>
+      <p begin="00:30:20:09" end="00:30:22:14" region="bottom">Had there been-- had</br>they killed any Jews</p>
+      <p begin="00:30:22:14" end="00:30:23:20" region="bottom">during those three weeks?</p>
+      <p begin="00:30:23:20" end="00:30:25:26" region="bottom">Or had they just beaten them up?</p>
+      <p begin="00:30:25:26" end="00:30:27:24" region="bottom">RUBIN PINSKI: They killed--</p>
+      <p begin="00:30:27:24" end="00:30:32:19" region="bottom">they made like, um,</br>6 o'clock was curfew.</p>
+      <p begin="00:30:32:19" end="00:30:33:17" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:30:33:17" end="00:30:35:24" region="bottom">RUBIN PINSKI: And nobody</br>could go-- get out</p>
+      <p begin="00:30:35:24" end="00:30:40:02" region="bottom">of the house at 6</br>o'clock in the evening.</p>
+      <p begin="00:30:40:02" end="00:30:42:03" region="bottom">It wasn't evening yet.</p>
+      <p begin="00:30:42:03" end="00:30:48:20" region="bottom">So in several cases, some</br>Jews walked to one house</p>
+      <p begin="00:30:48:20" end="00:30:49:09" region="bottom">to the other.</p>
+      <p begin="00:30:49:09" end="00:30:50:05" region="bottom">SANDY HAYDEN: Really?</p>
+      <p begin="00:30:50:05" end="00:30:52:13" region="bottom">RUBIN PINSKI: After six of</br>them got shot right way.</p>
+      <p begin="00:30:52:13" end="00:30:55:06" region="bottom">In other words,</br>non-Jews weren't shot.</p>
+      <p begin="00:30:55:06" end="00:30:58:02" region="bottom">But Jews are shot</br>for-- for that.</p>
+      <p begin="00:30:58:02" end="00:31:03:04" region="bottom">That was the-- several</br>Jews were shot that way.</p>
+      <p begin="00:31:03:04" end="00:31:09:23" region="bottom">But then on the 15th of</br>July, the, uh, the uh,</p>
+      <p begin="00:31:09:23" end="00:31:12:01" region="bottom">order to make Judenrat.</p>
+      <p begin="00:31:12:01" end="00:31:17:01" region="bottom">In other words, they picked</br>10 of the best Jews from town</p>
+      <p begin="00:31:17:01" end="00:31:18:03" region="bottom">and--</p>
+      <p begin="00:31:18:03" end="00:31:20:12" region="bottom">and ordered them</br>to have a Judenrat</p>
+      <p begin="00:31:20:12" end="00:31:24:15" region="bottom">and have a Jewish police.</p>
+      <p begin="00:31:24:15" end="00:31:30:15" region="bottom">And, uh, then the, uh,</br>the next day, the--</p>
+      <p begin="00:31:30:15" end="00:31:32:28" region="bottom">SANDY HAYDEN: Do you know--</br>you knew some of the people who</p>
+      <p begin="00:31:32:28" end="00:31:35:09" region="bottom">were elected to the Judenrat?</p>
+      <p begin="00:31:35:09" end="00:31:36:12" region="bottom">RUBIN PINSKI: Yes.</p>
+      <p begin="00:31:36:12" end="00:31:42:21" region="bottom">Actually, the best, uh, the</br>best, uh, people from the city.</p>
+      <p begin="00:31:42:21" end="00:31:47:14" region="bottom">One was a lawyer called Alter</br>Dvoretsky was a young man.</p>
+      <p begin="00:31:47:14" end="00:31:48:28" region="bottom">He was very capable.</p>
+      <p begin="00:31:48:28" end="00:31:52:01" region="bottom">He was at the head</br>of the Judenrat</p>
+      <p begin="00:31:52:01" end="00:31:58:02" region="bottom">and, uh, several of</br>religious Jews [INAUDIBLE]..</p>
+      <p begin="00:31:58:02" end="00:32:00:04" region="bottom">SANDY HAYDEN: So they--</br>they were all good people.</p>
+      <p begin="00:32:00:04" end="00:32:04:07" region="bottom">RUBIN PINSKI: All-- a</br>better class of people.</p>
+      <p begin="00:32:04:07" end="00:32:06:12" region="bottom">As a matter of fact,</br>the rabbi for our town</p>
+      <p begin="00:32:06:12" end="00:32:09:08" region="bottom">was also included in that.</p>
+      <p begin="00:32:09:08" end="00:32:14:13" region="bottom">And the men on the</br>15h of July, it</p>
+      <p begin="00:32:14:13" end="00:32:17:23" region="bottom">was only two weeks</br>after they occup--</p>
+      <p begin="00:32:17:23" end="00:32:21:29" region="bottom">they came in, they,</br>uh, sent the police</p>
+      <p begin="00:32:21:29" end="00:32:27:12" region="bottom">to tell all the Jews to</br>come on the marketplace,</p>
+      <p begin="00:32:27:12" end="00:32:35:04" region="bottom">to get on the market place</br>from the age of 16 to 60.</p>
+      <p begin="00:32:35:04" end="00:32:40:00" region="bottom">Actually, they said</br>officially 16 to 60,</p>
+      <p begin="00:32:40:00" end="00:32:42:07" region="bottom">but whenever they</br>caught younger ones,</p>
+      <p begin="00:32:42:07" end="00:32:45:22" region="bottom">they also pushed</br>to the marketplace.</p>
+      <p begin="00:32:45:22" end="00:32:48:27" region="bottom">And, uh, on that--</p>
+      <p begin="00:32:48:27" end="00:32:54:11" region="bottom">on that, uh, marketplace,</br>the Gestapo came in.</p>
+      <p begin="00:32:54:11" end="00:32:57:21" region="bottom">They had a-- a table</br>and the market chairs.</p>
+      <p begin="00:32:57:21" end="00:33:01:02" region="bottom">And they had a</br>big list of people</p>
+      <p begin="00:33:01:02" end="00:33:04:16" region="bottom">who they called and said,</br>anybody will be called out</p>
+      <p begin="00:33:04:16" end="00:33:05:25" region="bottom">should go forward.</p>
+      <p begin="00:33:05:25" end="00:33:07:00" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:33:07:00" end="00:33:11:05" region="bottom">RUBIN PINSKI: And that way,</br>they took away 120 people.</p>
+      <p begin="00:33:11:05" end="00:33:11:27" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:33:11:27" end="00:33:13:09" region="bottom">What sort of people were they?</p>
+      <p begin="00:33:13:09" end="00:33:14:03" region="bottom">All men or--</p>
+      <p begin="00:33:14:03" end="00:33:18:00" region="bottom">RUBIN PINSKI: All men and</br>the better-- the better</p>
+      <p begin="00:33:18:00" end="00:33:21:03" region="bottom">class of people from the</br>city, and the-- and the</p>
+      <p begin="00:33:21:03" end="00:33:30:17" region="bottom">uh, the richer and, uh, more</br>learned, and they packed them</p>
+      <p begin="00:33:30:17" end="00:33:32:12" region="bottom">in talks.</p>
+      <p begin="00:33:32:12" end="00:33:33:23" region="bottom">SANDY HAYDEN: How</br>do you-- how do</p>
+      <p begin="00:33:33:23" end="00:33:34:29" region="bottom">you think they got that list?</p>
+      <p begin="00:33:34:29" end="00:33:35:28" region="bottom">Who gave them the list?</p>
+      <p begin="00:33:35:28" end="00:33:40:26" region="bottom">RUBIN PINSKI: The, uh, the</br>list was helped by the, uh,</p>
+      <p begin="00:33:40:26" end="00:33:44:27" region="bottom">local, by local</br>collaborators to the Germans.</p>
+      <p begin="00:33:44:27" end="00:33:45:25" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:33:45:25" end="00:33:47:27" region="bottom">Who knew the people in</br>the-- the Jewish people.</p>
+      <p begin="00:33:47:27" end="00:33:49:29" region="bottom">RUBIN PINSKI: They</br>knew everybody.</p>
+      <p begin="00:33:49:29" end="00:33:53:15" region="bottom">As a matter of fact,</br>in [INAUDIBLE],,</p>
+      <p begin="00:33:53:15" end="00:33:57:13" region="bottom">in the Hebrew school,</br>there was a janitor,</p>
+      <p begin="00:33:57:13" end="00:34:01:18" region="bottom">and he could speak Yiddish</br>just as good as any Jew.</p>
+      <p begin="00:34:01:18" end="00:34:02:11" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:34:02:11" end="00:34:05:13" region="bottom">RUBIN PINSKI: And he was</br>right away with the Germans</p>
+      <p begin="00:34:05:13" end="00:34:13:01" region="bottom">and gave out all the Jews</br>who were, uh, known in the--</p>
+      <p begin="00:34:13:01" end="00:34:13:19" region="bottom">in the town .</p>
+      <p begin="00:34:13:19" end="00:34:16:21" region="bottom"></p>
+      <p begin="00:34:16:21" end="00:34:19:23" region="bottom">And, uh, they took--</br>they said they</p>
+      <p begin="00:34:19:23" end="00:34:26:12" region="bottom">are going to take this, uh, 120</br>people to work in Nowogrodek.</p>
+      <p begin="00:34:26:12" end="00:34:33:22" region="bottom">Nowogrodek is a bigger city than</br>us about 38 kilometers away.</p>
+      <p begin="00:34:33:22" end="00:34:38:12" region="bottom">But we found out later that they</br>were shot in the Nowogrodek.</p>
+      <p begin="00:34:38:12" end="00:34:41:13" region="bottom">SANDY HAYDEN: And when</br>did you find that out?</p>
+      <p begin="00:34:41:13" end="00:34:44:05" region="bottom">RUBIN PINSKI: Well,</br>we found out from--</p>
+      <p begin="00:34:44:05" end="00:34:48:11" region="bottom">from peasants, which saw it.</p>
+      <p begin="00:34:48:11" end="00:34:51:19" region="bottom">SANDY HAYDEN: So that was</br>the first really bad atrocity</p>
+      <p begin="00:34:51:19" end="00:34:52:04" region="bottom">that--</p>
+      <p begin="00:34:52:04" end="00:34:53:02" region="bottom">RUBIN PINSKI: Yes.</p>
+      <p begin="00:34:53:02" end="00:34:58:01" region="bottom">That was only two weeks</br>after they entered our town.</p>
+      <p begin="00:34:58:01" end="00:35:04:29" region="bottom">And, uh, the kids saw all</br>kinds of, uh, every day they</p>
+      <p begin="00:35:04:29" end="00:35:10:05" region="bottom">demanded from us something</br>else, the Germans.</p>
+      <p begin="00:35:10:05" end="00:35:19:02" region="bottom">The, uh, or-- we organized</br>work like there was, uh,</p>
+      <p begin="00:35:19:02" end="00:35:23:07" region="bottom">a highway the Russians</br>started and didn't finish.</p>
+      <p begin="00:35:23:07" end="00:35:29:09" region="bottom">So they, uh, took</br>men who could-- well,</p>
+      <p begin="00:35:29:09" end="00:35:32:12" region="bottom">they were a little stronger</br>to work on that highway.</p>
+      <p begin="00:35:32:12" end="00:35:36:17" region="bottom">And I was also, uh,</br>working on that highway.</p>
+      <p begin="00:35:36:17" end="00:35:38:17" region="bottom">SANDY HAYDEN: Because</br>then you were a young man.</p>
+      <p begin="00:35:38:17" end="00:35:38:26" region="bottom">You were 16, 17.</p>
+      <p begin="00:35:38:26" end="00:35:40:24" region="bottom">RUBIN PINSKI: I was</br>young and strong, and--</p>
+      <p begin="00:35:40:24" end="00:35:41:05" region="bottom">SANDY HAYDEN: Yeah.</p>
+      <p begin="00:35:41:05" end="00:35:42:19" region="bottom">RUBIN PINSKI: And</br>I wanted to leave,</p>
+      <p begin="00:35:42:19" end="00:35:44:24" region="bottom">and they gave out</br>[SPEAKING GERMAN]..</p>
+      <p begin="00:35:44:24" end="00:35:47:16" region="bottom">[SPEAKING GERMAN] means</br>some kind of a document.</p>
+      <p begin="00:35:47:16" end="00:35:53:09" region="bottom">There was-- it went</br>by the column more</p>
+      <p begin="00:35:53:09" end="00:35:57:17" region="bottom">the people who were</br>stronger hard workers had</p>
+      <p begin="00:35:57:17" end="00:35:58:17" region="bottom">a red [SPEAKING GERMAN].</p>
+      <p begin="00:35:58:17" end="00:36:02:02" region="bottom">Some had green</br>[SPEAKING GERMAN]..</p>
+      <p begin="00:36:02:02" end="00:36:04:13" region="bottom">And, uh, the people--</p>
+      <p begin="00:36:04:13" end="00:36:07:26" region="bottom">the Jews were very,</br>uh, wanted very</p>
+      <p begin="00:36:07:26" end="00:36:09:27" region="bottom">much to get [SPEAKING GERMAN].</p>
+      <p begin="00:36:09:27" end="00:36:10:12" region="bottom">So--</p>
+      <p begin="00:36:10:12" end="00:36:11:05" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:36:11:05" end="00:36:13:04" region="bottom">So you had-- you had a red one?</p>
+      <p begin="00:36:13:04" end="00:36:14:11" region="bottom">RUBIN PINSKI: I have a good</br>[SPEAKING GERMAN],, yes.</p>
+      <p begin="00:36:14:11" end="00:36:15:03" region="bottom">SANDY HAYDEN: You</br>had a good one.</p>
+      <p begin="00:36:15:03" end="00:36:16:05" region="bottom">RUBIN PINSKI: Yes.</p>
+      <p begin="00:36:16:05" end="00:36:19:07" region="bottom">SANDY HAYDEN: How were you</br>chosen to-- to go and work?</p>
+      <p begin="00:36:19:07" end="00:36:22:18" region="bottom">RUBIN PINSKI: I,</br>uh, actually, they</p>
+      <p begin="00:36:22:18" end="00:36:30:14" region="bottom">were asking for volunteers,</br>and, uh, I wanted for this job,</p>
+      <p begin="00:36:30:14" end="00:36:31:26" region="bottom">so I worked on the--</p>
+      <p begin="00:36:31:26" end="00:36:33:24" region="bottom">on the, uh, building</br>that highway.</p>
+      <p begin="00:36:33:24" end="00:36:34:16" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:36:34:16" end="00:36:36:04" region="bottom">And your brothers?</p>
+      <p begin="00:36:36:04" end="00:36:37:29" region="bottom">RUBIN PINSKI: My</br>brother wasn't with me.</p>
+      <p begin="00:36:37:29" end="00:36:41:19" region="bottom">He was, uh-- he</br>was already taken--</p>
+      <p begin="00:36:41:19" end="00:36:45:27" region="bottom">before the at-- the</br>Germans attacked,</p>
+      <p begin="00:36:45:27" end="00:36:47:23" region="bottom">he was taken to</br>the Russian Army.</p>
+      <p begin="00:36:47:23" end="00:36:49:12" region="bottom">SANDY HAYDEN: How--</br>who-- who took him?</p>
+      <p begin="00:36:49:12" end="00:36:51:27" region="bottom">Was he conscripted</br>to the Russian Army?</p>
+      <p begin="00:36:51:27" end="00:36:52:23" region="bottom">RUBIN PINSKI: No, no.</p>
+      <p begin="00:36:52:23" end="00:36:54:05" region="bottom">He was already of age.</p>
+      <p begin="00:36:54:05" end="00:36:54:24" region="bottom">SANDY HAYDEN: Uh-huh, oh, I see.</p>
+      <p begin="00:36:54:24" end="00:36:56:05" region="bottom">RUBIN PINSKI: He</br>was born in 19--</p>
+      <p begin="00:36:56:05" end="00:36:57:06" region="bottom">SANDY HAYDEN: So he was in--</p>
+      <p begin="00:36:57:06" end="00:36:57:27" region="bottom">RUBIN PINSKI: 20.</p>
+      <p begin="00:36:57:27" end="00:37:02:06" region="bottom">He was 18 years old,</br>and he was taken legally</p>
+      <p begin="00:37:02:06" end="00:37:03:04" region="bottom">to the Russian Army.</p>
+      <p begin="00:37:03:04" end="00:37:03:19" region="bottom">SANDY HAYDEN: To</br>the Russian Army.</p>
+      <p begin="00:37:03:19" end="00:37:04:08" region="bottom">Uh-huh.</p>
+      <p begin="00:37:04:08" end="00:37:06:26" region="bottom">So had you-- did you keep--</p>
+      <p begin="00:37:06:26" end="00:37:09:08" region="bottom">manage to keep correspondence</br>with him during that time?</p>
+      <p begin="00:37:09:08" end="00:37:11:07" region="bottom">RUBIN PINSKI: It wasn't very--</p>
+      <p begin="00:37:11:07" end="00:37:12:25" region="bottom">it was right before the war.</p>
+      <p begin="00:37:12:25" end="00:37:17:13" region="bottom">All we heard-- we had only one</br>letter from him that is going</p>
+      <p begin="00:37:17:13" end="00:37:17:29" region="bottom">into--</p>
+      <p begin="00:37:17:29" end="00:37:20:11" region="bottom">deep into Russia.</p>
+      <p begin="00:37:20:11" end="00:37:23:24" region="bottom">And then we were</br>apart for six years.</p>
+      <p begin="00:37:23:24" end="00:37:24:20" region="bottom">SANDY HAYDEN: Really?</p>
+      <p begin="00:37:24:20" end="00:37:26:15" region="bottom">So you didn't know what</br>had happened to you.</p>
+      <p begin="00:37:26:15" end="00:37:28:18" region="bottom">RUBIN PINSKI: We</br>found him in 1946.</p>
+      <p begin="00:37:28:18" end="00:37:30:19" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:37:30:19" end="00:37:33:03" region="bottom">So that was-- that must have</br>been very hard for your mother</p>
+      <p begin="00:37:33:03" end="00:37:33:22" region="bottom">and father.</p>
+      <p begin="00:37:33:22" end="00:37:34:20" region="bottom">RUBIN PINSKI: Oh, yes.</p>
+      <p begin="00:37:34:20" end="00:37:35:04" region="bottom">SANDY HAYDEN: It</br>would be really--</p>
+      <p begin="00:37:35:04" end="00:37:36:16" region="bottom">RUBIN PINSKI: That's right.</p>
+      <p begin="00:37:36:16" end="00:37:37:12" region="bottom">SANDY HAYDEN: And your sister?</p>
+      <p begin="00:37:37:12" end="00:37:37:27" region="bottom">And--</p>
+      <p begin="00:37:37:27" end="00:37:41:20" region="bottom">RUBIN PINSKI: The sister was</br>the whole time with me together.</p>
+      <p begin="00:37:41:20" end="00:37:42:28" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:37:42:28" end="00:37:44:09" region="bottom">And then your younger brother.</p>
+      <p begin="00:37:44:09" end="00:37:45:17" region="bottom">RUBIN PINSKI: No,</br>my younger sister.</p>
+      <p begin="00:37:45:17" end="00:37:47:08" region="bottom">SANDY HAYDEN: Your</br>younger sister, sorry.</p>
+      <p begin="00:37:47:08" end="00:37:49:09" region="bottom">RUBIN PINSKI: I didn't</br>tell [INAUDIBLE]..</p>
+      <p begin="00:37:49:09" end="00:37:56:26" region="bottom">She perished in, uh, in 1942</br>in August together the parents.</p>
+      <p begin="00:37:56:26" end="00:37:58:17" region="bottom">SANDY HAYDEN: So your father--</p>
+      <p begin="00:37:58:17" end="00:38:00:01" region="bottom">when the Germans</br>came, your father</p>
+      <p begin="00:38:00:01" end="00:38:03:29" region="bottom">stopped, um, working, and--</p>
+      <p begin="00:38:03:29" end="00:38:04:24" region="bottom">RUBIN PINSKI: Right.</p>
+      <p begin="00:38:04:24" end="00:38:07:05" region="bottom">SANDY HAYDEN: You were the</br>only one that was really,</p>
+      <p begin="00:38:07:05" end="00:38:10:04" region="bottom">um, working on the highway.</p>
+      <p begin="00:38:10:04" end="00:38:11:22" region="bottom">RUBIN PINSKI: I was</br>the only one, yes.</p>
+      <p begin="00:38:11:22" end="00:38:13:07" region="bottom">SANDY HAYDEN: So-- what-- what--</p>
+      <p begin="00:38:13:07" end="00:38:14:29" region="bottom">what were you getting</br>paid in any way?</p>
+      <p begin="00:38:14:29" end="00:38:15:09" region="bottom">RUBIN PINSKI: No.</p>
+      <p begin="00:38:15:09" end="00:38:15:20" region="bottom">No.</p>
+      <p begin="00:38:15:20" end="00:38:16:02" region="bottom">SANDY HAYDEN: Did they feed you?</p>
+      <p begin="00:38:16:02" end="00:38:17:29" region="bottom">RUBIN PINSKI: No, they</br>didn't pay us anything.</p>
+      <p begin="00:38:17:29" end="00:38:18:29" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:38:18:29" end="00:38:21:21" region="bottom">RUBIN PINSKI: Uh, the--</p>
+      <p begin="00:38:21:21" end="00:38:31:15" region="bottom">the, uh, in 1941 on</br>November, the Germans</p>
+      <p begin="00:38:31:15" end="00:38:36:01" region="bottom">told us to leave our houses</br>and go into a ghetto.</p>
+      <p begin="00:38:36:01" end="00:38:38:12" region="bottom">They made a ghetto.</p>
+      <p begin="00:38:38:12" end="00:38:41:23" region="bottom">The Jews themselves had to</br>make a fence, a wired fence,</p>
+      <p begin="00:38:41:23" end="00:38:44:18" region="bottom">around it.</p>
+      <p begin="00:38:44:18" end="00:38:49:07" region="bottom">And at that time, uh, we</br>could only take with us</p>
+      <p begin="00:38:49:07" end="00:38:50:18" region="bottom">whatever we could--</p>
+      <p begin="00:38:50:18" end="00:38:51:13" region="bottom">SANDY HAYDEN: Carry.</p>
+      <p begin="00:38:51:13" end="00:38:52:08" region="bottom">RUBIN PINSKI: Carry.</p>
+      <p begin="00:38:52:08" end="00:38:53:06" region="bottom">SANDY HAYDEN: Uh-huh.</p>
+      <p begin="00:38:53:06" end="00:38:56:08" region="bottom">RUBIN PINSKI: And</br>it happened that we</p>
+      <p begin="00:38:56:08" end="00:39:00:14" region="bottom">had a big-- a very</br>big garden and used</p>
+      <p begin="00:39:00:14" end="00:39:04:24" region="bottom">to have enough</br>potatoes to put it</p>
+      <p begin="00:39:04:24" end="00:39:10:03" region="bottom">in a big hole covered</br>with earth and hide it</p>
+      <p begin="00:39:10:03" end="00:39:11:22" region="bottom">for the next spring.</p>
+      <p begin="00:39:11:22" end="00:39:14:28" region="bottom">That was done actually</br>normal times too.</p>
+      <p begin="00:39:14:28" end="00:39:16:07" region="bottom">SANDY HAYDEN: Right.</p>
+      <p begin="00:39:16:07" end="00:39:18:07" region="bottom">RUBIN PINSKI: So we--</p>
+      <p begin="00:39:18:07" end="00:39:26:00" region="bottom">all the potato that we got from,</br>uh, before the winter came,</p>
+      <p begin="00:39:26:00" end="00:39:27:23" region="bottom">we bur--</p>
+      <p begin="00:39:27:23" end="00:39:31:11" region="bottom">we buried it in the garden.</p>
+      <p begin="00:39:31:11" end="00:39:39:21" region="bottom">And, um, so in Spring</br>of 1942 in the ghetto,</p>
+      <p begin="00:39:39:21" end="00:39:41:24" region="bottom">I had that chance I--</p>
+      <p begin="00:39:41:24" end="00:39:43:11" region="bottom">to open that hole and--</p>
+      <p begin="00:39:43:11" end="00:39:44:04" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:39:44:04" end="00:39:47:01" region="bottom">RUBIN PINSKI: --put in the</br>potatoes in the ghetto so we</p>
+      <p begin="00:39:47:01" end="00:39:47:22" region="bottom">could have--</p>
+      <p begin="00:39:47:22" end="00:39:49:05" region="bottom">SANDY HAYDEN: Some food?</p>
+      <p begin="00:39:49:05" end="00:39:51:19" region="bottom">RUBIN PINSKI: Some</br>food for a while.</p>
+      <p begin="00:39:51:19" end="00:39:56:22" region="bottom">The whole-- the whole, uh, all</br>the inhabitants of that house,</p>
+      <p begin="00:39:56:22" end="00:39:58:13" region="bottom">we shared.</p>
+      <p begin="00:39:58:13" end="00:40:05:23" region="bottom">We used to bring in</br>like, uh, hiding it in--</p>
+      <p begin="00:40:05:23" end="00:40:08:26" region="bottom">in a way that the Germans</br>shouldn't see that they</p>
+      <p begin="00:40:08:26" end="00:40:09:29" region="bottom">carried potatoes in this--</p>
+      <p begin="00:40:09:29" end="00:40:11:29" region="bottom">SANDY HAYDEN: How did</br>you-- how did you do that?</p>
+      <p begin="00:40:11:29" end="00:40:14:29" region="bottom">RUBIN PINSKI: Well, we</br>into the night, at night,</p>
+      <p begin="00:40:14:29" end="00:40:16:21" region="bottom">and brought it in.</p>
+      <p begin="00:40:16:21" end="00:40:20:11" region="bottom">The houses that the</br>Germans confiscated was--</p>
+      <p begin="00:40:20:11" end="00:40:25:03" region="bottom">in the front of the house</br>was some sort of, uh--</p>
+      <p begin="00:40:25:03" end="00:40:30:20" region="bottom">uh, a list that,</br>uh, but this house</p>
+      <p begin="00:40:30:20" end="00:40:32:06" region="bottom">is confiscated by the Germans.</p>
+      <p begin="00:40:32:06" end="00:40:34:15" region="bottom">In the front, they couldn't</br>get in, but from the back--</p>
+      <p begin="00:40:34:15" end="00:40:35:15" region="bottom">SANDY HAYDEN: You could?</p>
+      <p begin="00:40:35:15" end="00:40:37:07" region="bottom">RUBIN PINSKI:</br>--you could get in.</p>
+      <p begin="00:40:37:07" end="00:40:38:15" region="bottom">But it didn't do anything.</p>
+      <p begin="00:40:38:15" end="00:40:41:17" region="bottom">A lot of Jewish houses</br>were occupied by--</p>
+      <p begin="00:40:41:17" end="00:40:46:02" region="bottom">by, uh, local, uh, non-Jews.</p>
+      <p begin="00:40:46:02" end="00:40:47:14" region="bottom">But some of them are still--</p>
+      <p begin="00:40:47:14" end="00:40:49:08" region="bottom">our house was still</br>empty standing there.</p>
+      <p begin="00:40:49:08" end="00:40:50:00" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:40:50:00" end="00:40:51:13" region="bottom">So you could sneak in at night.</p>
+      <p begin="00:40:51:13" end="00:40:53:26" region="bottom">RUBIN PINSKI: I used</br>to sneak in every night</p>
+      <p begin="00:40:53:26" end="00:40:55:29" region="bottom">and bring a little</br>bit of potatoes</p>
+      <p begin="00:40:55:29" end="00:40:57:18" region="bottom">that I could carry myself.</p>
+      <p begin="00:40:57:18" end="00:40:58:15" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:40:58:15" end="00:40:59:18" region="bottom">RUBIN PINSKI: And that's--</p>
+      <p begin="00:40:59:18" end="00:41:02:10" region="bottom">that's how we could</br>live for a while.</p>
+      <p begin="00:41:02:10" end="00:41:04:18" region="bottom">SANDY HAYDEN: Mhm And what</br>were the living conditions</p>
+      <p begin="00:41:04:18" end="00:41:05:15" region="bottom">like in the ghetto?</p>
+      <p begin="00:41:05:15" end="00:41:06:18" region="bottom">RUBIN PINSKI: Very bad.</p>
+      <p begin="00:41:06:18" end="00:41:06:28" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:41:06:28" end="00:41:08:21" region="bottom">Can you-- can you</br>describe it a little bit?</p>
+      <p begin="00:41:08:21" end="00:41:12:25" region="bottom">RUBIN PINSKI: Yes, they</br>packed in in the house,</p>
+      <p begin="00:41:12:25" end="00:41:18:02" region="bottom">in a little house, about 800</br>square feet or 900 square feet.</p>
+      <p begin="00:41:18:02" end="00:41:23:17" region="bottom">They packed in about 60 people,</br>one on top of the other.</p>
+      <p begin="00:41:23:17" end="00:41:25:27" region="bottom">SANDY HAYDEN: And that's how</br>you and your family lived--</p>
+      <p begin="00:41:25:27" end="00:41:26:13" region="bottom">lived with another--</p>
+      <p begin="00:41:26:13" end="00:41:27:17" region="bottom">RUBIN PINSKI: Yes, yes.</p>
+      <p begin="00:41:27:17" end="00:41:29:07" region="bottom">SANDY HAYDEN: --50 people or so.</p>
+      <p begin="00:41:29:07" end="00:41:32:18" region="bottom">RUBIN PINSKI: In the</br>basement and on top on the--</p>
+      <p begin="00:41:32:18" end="00:41:37:25" region="bottom">under the roof, people,</br>one on top of the other,</p>
+      <p begin="00:41:37:25" end="00:41:41:29" region="bottom">and the conditions in the</br>ghetto was very bad, dirty,</p>
+      <p begin="00:41:41:29" end="00:41:43:22" region="bottom">and no food.</p>
+      <p begin="00:41:43:22" end="00:41:44:14" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:41:44:14" end="00:41:46:20" region="bottom">And-- and lice also.</p>
+      <p begin="00:41:46:20" end="00:41:48:27" region="bottom">RUBIN PINSKI: Yes.</p>
+      <p begin="00:41:48:27" end="00:41:50:23" region="bottom">SANDY HAYDEN: And what--</br>what did the people,</p>
+      <p begin="00:41:50:23" end="00:41:53:06" region="bottom">the leaders of the</br>ghetto, of the Judenrat,</p>
+      <p begin="00:41:53:06" end="00:41:55:03" region="bottom">were they fair in the way they--</p>
+      <p begin="00:41:55:03" end="00:41:57:29" region="bottom">RUBIN PINSKI: Yes, they were</br>very fair, but they were also--</p>
+      <p begin="00:41:57:29" end="00:42:02:28" region="bottom">they had the same,</br>uh, goals we did.</p>
+      <p begin="00:42:02:28" end="00:42:06:12" region="bottom">They were also afraid</br>of-- the Germans used them</p>
+      <p begin="00:42:06:12" end="00:42:08:25" region="bottom">just to get their way.</p>
+      <p begin="00:42:08:25" end="00:42:09:27" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:42:09:27" end="00:42:14:23" region="bottom">RUBIN PINSKI: And, uh, this</br>out-- this Alter Dvoretsky</p>
+      <p begin="00:42:14:23" end="00:42:17:28" region="bottom">is from the Judenrat.</p>
+      <p begin="00:42:17:28" end="00:42:23:10" region="bottom">He organized a partisan</br>group in the ghetto.</p>
+      <p begin="00:42:23:10" end="00:42:26:19" region="bottom">And anybody who</br>could be of help--</p>
+      <p begin="00:42:26:19" end="00:42:28:15" region="bottom">used everybody that</br>could be of help.</p>
+      <p begin="00:42:28:15" end="00:42:32:19" region="bottom">Only the young</br>people he mobilized.</p>
+      <p begin="00:42:32:19" end="00:42:38:11" region="bottom">And myself was working in the</br>highway, building the highway.</p>
+      <p begin="00:42:38:11" end="00:42:43:14" region="bottom">I had a chance to bring into</br>the ghetto parts, uh, weapons.</p>
+      <p begin="00:42:43:14" end="00:42:45:04" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:42:45:04" end="00:42:50:24" region="bottom">RUBIN PINSKI: So we used to</br>tie it in bundles of wood.</p>
+      <p begin="00:42:50:24" end="00:42:52:08" region="bottom">SANDY HAYDEN: So</br>they wouldn't see.</p>
+      <p begin="00:42:52:08" end="00:42:55:19" region="bottom">RUBIN PINSKI: To carry it in.</p>
+      <p begin="00:42:55:19" end="00:42:59:10" region="bottom">And, uh, I used to take</br>chances to bring in parts</p>
+      <p begin="00:42:59:10" end="00:43:03:26" region="bottom">of rifles and ammunition.</p>
+      <p begin="00:43:03:26" end="00:43:08:16" region="bottom">And from time to time,</br>the Germans used to check</p>
+      <p begin="00:43:08:16" end="00:43:09:23" region="bottom">everybody-- every bundle of--</p>
+      <p begin="00:43:09:23" end="00:43:10:17" region="bottom">SANDY HAYDEN: Wood?</p>
+      <p begin="00:43:10:17" end="00:43:13:20" region="bottom">RUBIN PINSKI: Of wood,</br>or on the person.</p>
+      <p begin="00:43:13:20" end="00:43:16:22" region="bottom">Anybody that was found with</br>something was shot right away.</p>
+      <p begin="00:43:16:22" end="00:43:18:16" region="bottom">SANDY HAYDEN: So you</br>were lucky you never--</p>
+      <p begin="00:43:18:16" end="00:43:19:08" region="bottom">RUBIN PINSKI: Yes, I was lucky.</p>
+      <p begin="00:43:19:08" end="00:43:20:00" region="bottom">SANDY HAYDEN: [INAUDIBLE].</p>
+      <p begin="00:43:20:00" end="00:43:21:20" region="bottom">It must have been</br>frightening each time.</p>
+      <p begin="00:43:21:20" end="00:43:23:02" region="bottom">RUBIN PINSKI: Oh, yes, I mean--</p>
+      <p begin="00:43:23:02" end="00:43:23:25" region="bottom">SANDY HAYDEN: Yeah, it's a risk.</p>
+      <p begin="00:43:23:25" end="00:43:26:02" region="bottom">RUBIN PINSKI: I risked</br>with my life all the time.</p>
+      <p begin="00:43:26:02" end="00:43:27:08" region="bottom">SANDY HAYDEN: Yeah, yeah.</p>
+      <p begin="00:43:27:08" end="00:43:29:07" region="bottom">So you joined the partisan</br>group in the ghetto.</p>
+      <p begin="00:43:29:07" end="00:43:30:19" region="bottom">RUBIN PINSKI: Yeah.</p>
+      <p begin="00:43:30:19" end="00:43:31:07" region="bottom">[INAUDIBLE]</p>
+      <p begin="00:43:31:07" end="00:43:32:01" region="bottom">SANDY HAYDEN: 194--</p>
+      <p begin="00:43:32:01" end="00:43:32:29" region="bottom">1941?</p>
+      <p begin="00:43:32:29" end="00:43:34:02" region="bottom">RUBIN PINSKI: 1941.</p>
+      <p begin="00:43:34:02" end="00:43:34:29" region="bottom">SANDY HAYDEN: Uh-huh.</p>
+      <p begin="00:43:34:29" end="00:43:37:23" region="bottom">RUBIN PINSKI: We organized the--</p>
+      <p begin="00:43:37:23" end="00:43:42:10" region="bottom">in the basement, we used</br>to put together the rifles.</p>
+      <p begin="00:43:42:10" end="00:43:43:14" region="bottom">SANDY HAYDEN: And did you--</p>
+      <p begin="00:43:43:14" end="00:43:44:20" region="bottom">did you use them?</p>
+      <p begin="00:43:44:20" end="00:43:45:18" region="bottom">What-- what-- what--</p>
+      <p begin="00:43:45:18" end="00:43:48:09" region="bottom">RUBIN PINSKI: No, I didn't</br>have a chance to use,</p>
+      <p begin="00:43:48:09" end="00:43:52:03" region="bottom">and practically, nobody</br>had a chance, only--</p>
+      <p begin="00:43:52:03" end="00:43:57:15" region="bottom">only a few young</br>boys, uh, were, uh,</p>
+      <p begin="00:43:57:15" end="00:44:00:24" region="bottom">fighting against</br>them in the second--</p>
+      <p begin="00:44:00:24" end="00:44:05:07" region="bottom">not in the second time when</br>the Germans killed the Jews.</p>
+      <p begin="00:44:05:07" end="00:44:09:20" region="bottom">The Germans killed,</br>uh, about half</p>
+      <p begin="00:44:09:20" end="00:44:11:09" region="bottom">of the Jewish population</br>in the ghettos</p>
+      <p begin="00:44:11:09" end="00:44:15:28" region="bottom">they killed in 1941</br>till the end of April.</p>
+      <p begin="00:44:15:28" end="00:44:17:10" region="bottom">SANDY HAYDEN:</br>Yeah, I-- can you--</p>
+      <p begin="00:44:17:10" end="00:44:18:02" region="bottom">RUBIN PINSKI: Yes.</p>
+      <p begin="00:44:18:02" end="00:44:19:00" region="bottom">SANDY HAYDEN: Can you tell</br>me a little bit about--</p>
+      <p begin="00:44:19:00" end="00:44:20:18" region="bottom">RUBIN PINSKI: That</br>was a very bad day.</p>
+      <p begin="00:44:20:18" end="00:44:23:11" region="bottom">Then my parents were--</p>
+      <p begin="00:44:23:11" end="00:44:27:03" region="bottom">got killed killed and my sister.</p>
+      <p begin="00:44:27:03" end="00:44:33:21" region="bottom">Uh, it was the 30th of</br>April, 1941, and the Germans,</p>
+      <p begin="00:44:33:21" end="00:44:39:03" region="bottom">with the help [INAUDIBLE]</br>of the Ukrainian police,</p>
+      <p begin="00:44:39:03" end="00:44:46:12" region="bottom">so there were a few white</br>Russian police also surrounded</p>
+      <p begin="00:44:46:12" end="00:44:47:26" region="bottom">the ghetto.</p>
+      <p begin="00:44:47:26" end="00:44:51:24" region="bottom">And, uh, very early in the</br>morning, about 5 o'clock</p>
+      <p begin="00:44:51:24" end="00:44:53:29" region="bottom">in the morning, they started</br>to knock on the windows</p>
+      <p begin="00:44:53:29" end="00:44:58:18" region="bottom">and scream [SPEAKING GERMAN].</p>
+      <p begin="00:44:58:18" end="00:45:01:28" region="bottom">And, uh, they told</br>us to gather in</p>
+      <p begin="00:45:01:28" end="00:45:05:22" region="bottom">that, uh, it was an old cem--</p>
+      <p begin="00:45:05:22" end="00:45:08:23" region="bottom">Jewish cemetery</br>near the, uh, the</p>
+      <p begin="00:45:08:23" end="00:45:12:27" region="bottom">synagogues and told</br>us to gather there,</p>
+      <p begin="00:45:12:27" end="00:45:14:25" region="bottom">all the Jews should together.</p>
+      <p begin="00:45:14:25" end="00:45:18:05" region="bottom">And I came there.</p>
+      <p begin="00:45:18:05" end="00:45:24:15" region="bottom">We, uh-- they told us to</br>stand in families, each family</p>
+      <p begin="00:45:24:15" end="00:45:26:24" region="bottom">together, all the families.</p>
+      <p begin="00:45:26:24" end="00:45:29:29" region="bottom">So I had that red</br>[SPEAKING GERMAN],,</p>
+      <p begin="00:45:29:29" end="00:45:34:02" region="bottom">which was considered</br>to be a good sign.</p>
+      <p begin="00:45:34:02" end="00:45:39:00" region="bottom">And I had a friend who also</br>had a good [SPEAKING GERMAN],,</p>
+      <p begin="00:45:39:00" end="00:45:43:07" region="bottom">so I told him to take</br>my sister, saying</p>
+      <p begin="00:45:43:07" end="00:45:47:05" region="bottom">that this wife and I wanted</br>to rescue my family, my father</p>
+      <p begin="00:45:47:05" end="00:45:50:09" region="bottom">and mother.</p>
+      <p begin="00:45:50:09" end="00:45:57:11" region="bottom">I remember they started to</br>select the, uh, I showed him</p>
+      <p begin="00:45:57:11" end="00:45:58:12" region="bottom">the [SPEAKING GERMAN].</p>
+      <p begin="00:45:58:12" end="00:46:04:09" region="bottom">So he said, [SPEAKING GERMAN],,</br>to the right, which was good.</p>
+      <p begin="00:46:04:09" end="00:46:11:10" region="bottom">And right after, a couple</br>steps from this Gestapo man,</p>
+      <p begin="00:46:11:10" end="00:46:15:20" region="bottom">stood other Gestapo</br>people, looked</p>
+      <p begin="00:46:15:20" end="00:46:19:20" region="bottom">at the [SPEAKING GERMAN],,</br>and they let me go through</p>
+      <p begin="00:46:19:20" end="00:46:23:13" region="bottom">and apparently chased</br>[SPEAKING GERMAN],,</p>
+      <p begin="00:46:23:13" end="00:46:25:01" region="bottom">in other words--</p>
+      <p begin="00:46:25:01" end="00:46:26:19" region="bottom">SANDY HAYDEN: To--</br>to the bad line.</p>
+      <p begin="00:46:26:19" end="00:46:28:27" region="bottom">RUBIN PINSKI: To--</br>to get killed.</p>
+      <p begin="00:46:28:27" end="00:46:34:20" region="bottom">They said to resettle for</br>labor or something else,</p>
+      <p begin="00:46:34:20" end="00:46:36:28" region="bottom">but they took them</br>behind the town.</p>
+      <p begin="00:46:36:28" end="00:46:39:06" region="bottom">SANDY HAYDEN: And there was</br>nothing that you could do.</p>
+      <p begin="00:46:39:06" end="00:46:40:24" region="bottom">RUBIN PINSKI:</br>Nothing I could do.</p>
+      <p begin="00:46:40:24" end="00:46:44:13" region="bottom">And my sister went</br>with that, uh,</p>
+      <p begin="00:46:44:13" end="00:46:48:03" region="bottom">my friend who had a good</br>[SPEAKING GERMAN] too,</p>
+      <p begin="00:46:48:03" end="00:46:52:02" region="bottom">and she was, uh, rescued.</p>
+      <p begin="00:46:52:02" end="00:46:53:01" region="bottom">SANDY HAYDEN: Is that--</p>
+      <p begin="00:46:53:01" end="00:46:55:07" region="bottom">that day must be a very hard</br>day for you to remember.</p>
+      <p begin="00:46:55:07" end="00:46:57:18" region="bottom">RUBIN PINSKI: A</br>very bad day, yeah.</p>
+      <p begin="00:46:57:18" end="00:47:02:21" region="bottom">They killed half of the</br>Jewish population in one day,</p>
+      <p begin="00:47:02:21" end="00:47:06:04" region="bottom">and then they</br>shortened the ghetto.</p>
+      <p begin="00:47:06:04" end="00:47:09:27" region="bottom">They cut it in half.</p>
+      <p begin="00:47:09:27" end="00:47:15:28" region="bottom">In other words, the, uh, all</br>the edges around the ghetto,</p>
+      <p begin="00:47:15:28" end="00:47:18:20" region="bottom">and they told the Jews--</p>
+      <p begin="00:47:18:20" end="00:47:25:15" region="bottom">for the Jews to put an</br>electric fence closer inside.</p>
+      <p begin="00:47:25:15" end="00:47:28:27" region="bottom">And I continued to</br>work on that highway.</p>
+      <p begin="00:47:28:27" end="00:47:30:27" region="bottom">SANDY HAYDEN:</br>And-- and the Jews,</p>
+      <p begin="00:47:30:27" end="00:47:34:09" region="bottom">your family and the other</br>Jews, were they taken?</p>
+      <p begin="00:47:34:09" end="00:47:35:14" region="bottom">What happened to them?</p>
+      <p begin="00:47:35:14" end="00:47:36:28" region="bottom">RUBIN PINSKI: Yes,</br>they were taken.</p>
+      <p begin="00:47:36:28" end="00:47:38:10" region="bottom">They were led</br>through the streets.</p>
+      <p begin="00:47:38:10" end="00:47:46:01" region="bottom">They were taken behind the</br>town, and forced to undress,</p>
+      <p begin="00:47:46:01" end="00:47:51:08" region="bottom">and the, uh, the graves</br>were already dug.</p>
+      <p begin="00:47:51:08" end="00:47:55:20" region="bottom">It was already ready,</br>and they shot 50 people</p>
+      <p begin="00:47:55:20" end="00:47:58:05" region="bottom">at a time right--</p>
+      <p begin="00:47:58:05" end="00:48:02:06" region="bottom">right on top of the cliff.</p>
+      <p begin="00:48:02:06" end="00:48:03:21" region="bottom">They were all killed.</p>
+      <p begin="00:48:03:21" end="00:48:05:20" region="bottom">SANDY HAYDEN: What went</br>through your mind then?</p>
+      <p begin="00:48:05:20" end="00:48:08:00" region="bottom">Did you feel like you wanted</br>to avenge their deaths?</p>
+      <p begin="00:48:08:00" end="00:48:09:22" region="bottom">RUBIN PINSKI: Yes,</br>that's the only thing</p>
+      <p begin="00:48:09:22" end="00:48:12:27" region="bottom">was in my mind to avenge.</p>
+      <p begin="00:48:12:27" end="00:48:15:27" region="bottom">Well, I never believed</br>I'll stay alive.</p>
+      <p begin="00:48:15:27" end="00:48:20:01" region="bottom">But at least I should be</br>able to avenge for the--</p>
+      <p begin="00:48:20:01" end="00:48:22:06" region="bottom">for what they did.</p>
+      <p begin="00:48:22:06" end="00:48:23:12" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:48:23:12" end="00:48:25:17" region="bottom">Something that-- has that</br>stayed-- the feeling of it</p>
+      <p begin="00:48:25:17" end="00:48:26:07" region="bottom">stayed with you?</p>
+      <p begin="00:48:26:07" end="00:48:27:19" region="bottom">RUBIN PINSKI: Yes, I still--</p>
+      <p begin="00:48:27:19" end="00:48:31:19" region="bottom">the feeling never changed.</p>
+      <p begin="00:48:31:19" end="00:48:38:14" region="bottom">Well, I can't feel exactly the</br>same as I felt then, but I, uh,</p>
+      <p begin="00:48:38:14" end="00:48:41:08" region="bottom">had that feeling all the time.</p>
+      <p begin="00:48:41:08" end="00:48:45:14" region="bottom">SANDY HAYDEN: And-- and so</br>what happened after that day?</p>
+      <p begin="00:48:45:14" end="00:48:49:19" region="bottom">RUBIN PINSKI: Well, the, uh,</br>the ghetto was shortened.</p>
+      <p begin="00:48:49:19" end="00:48:54:05" region="bottom">The Judenrat actually</br>was also killed.</p>
+      <p begin="00:48:54:05" end="00:48:57:16" region="bottom">They told to the Judenrat.</p>
+      <p begin="00:48:57:16" end="00:49:00:12" region="bottom"></p>
+      <p begin="00:49:00:12" end="00:49:07:20" region="bottom">And, uh, they kept us</br>alive till August--</p>
+      <p begin="00:49:07:20" end="00:49:14:22" region="bottom">August 6th, 1942,</br>and, uh, August 6th ,</p>
+      <p begin="00:49:14:22" end="00:49:18:21" region="bottom">1942 happened the same thing.</p>
+      <p begin="00:49:18:21" end="00:49:24:07" region="bottom">The-- the Germans and</br>the Ukrainian police</p>
+      <p begin="00:49:24:07" end="00:49:28:25" region="bottom">surrounded-- surrounded</br>the, uh, the ghetto</p>
+      <p begin="00:49:28:25" end="00:49:32:06" region="bottom">and chased everybody</br>out in the marketplace.</p>
+      <p begin="00:49:32:06" end="00:49:35:07" region="bottom">But, uh, at that</br>time, I didn't--</p>
+      <p begin="00:49:35:07" end="00:49:37:24" region="bottom">I didn't run anymore to the--</p>
+      <p begin="00:49:37:24" end="00:49:41:00" region="bottom">on the marketplace</br>we were hiding.</p>
+      <p begin="00:49:41:00" end="00:49:41:22" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:49:41:22" end="00:49:42:20" region="bottom">Who-- who is we?</p>
+      <p begin="00:49:42:20" end="00:49:43:05" region="bottom">You?</p>
+      <p begin="00:49:43:05" end="00:49:44:00" region="bottom">You and your sister.</p>
+      <p begin="00:49:44:00" end="00:49:48:01" region="bottom">RUBIN PINSKI: I, and my</br>sister, and my cousin,</p>
+      <p begin="00:49:48:01" end="00:49:50:09" region="bottom">two cousins of mine.</p>
+      <p begin="00:49:50:09" end="00:49:53:20" region="bottom">We were hiding in a--</p>
+      <p begin="00:49:53:20" end="00:50:00:05" region="bottom">we-- we actually dug a</br>hiding place under the floor.</p>
+      <p begin="00:50:00:05" end="00:50:07:08" region="bottom">But being so close to the, uh,</br>ghetto gate of the [INAUDIBLE]</p>
+      <p begin="00:50:07:08" end="00:50:11:20" region="bottom">was the Germans where, the</br>other side of the ghetto, they</p>
+      <p begin="00:50:11:20" end="00:50:17:12" region="bottom">had their, uh, the officers.</p>
+      <p begin="00:50:17:12" end="00:50:20:09" region="bottom">We were afraid that close--</p>
+      <p begin="00:50:20:09" end="00:50:21:24" region="bottom">close-- being</br>close to the ghetto</p>
+      <p begin="00:50:21:24" end="00:50:26:08" region="bottom">would be a lot worse if</br>they start digging with</p>
+      <p begin="00:50:26:08" end="00:50:30:25" region="bottom">or searching with, uh, dogs.</p>
+      <p begin="00:50:30:25" end="00:50:33:16" region="bottom">So we were running--</p>
+      <p begin="00:50:33:16" end="00:50:36:07" region="bottom">we were running in a</br>place where my cousin</p>
+      <p begin="00:50:36:07" end="00:50:40:19" region="bottom">was working as a carpenter.</p>
+      <p begin="00:50:40:19" end="00:50:46:27" region="bottom">And the-- the-- it</br>was inside the ghetto.</p>
+      <p begin="00:50:46:27" end="00:50:50:06" region="bottom">You could get in from inside</br>and from outside the ghetto.</p>
+      <p begin="00:50:50:06" end="00:50:55:19" region="bottom">The, uh-- in other words,</br>the, uh, there was--</p>
+      <p begin="00:50:55:19" end="00:50:57:28" region="bottom">the back of the building</br>was inside the ghetto.</p>
+      <p begin="00:50:57:28" end="00:51:01:03" region="bottom">The front of the building</br>was out of the ghetto.</p>
+      <p begin="00:51:01:03" end="00:51:04:26" region="bottom">So we were running there</br>and running-- and hiding</p>
+      <p begin="00:51:04:26" end="00:51:05:17" region="bottom">in the basement.</p>
+      <p begin="00:51:05:17" end="00:51:10:02" region="bottom">There wasn't a</br>dark place to hide,</p>
+      <p begin="00:51:10:02" end="00:51:15:12" region="bottom">but a plain, little basement</br>and a tiny, little window.</p>
+      <p begin="00:51:15:12" end="00:51:21:04" region="bottom">And we got into the basement</br>and about 15 people there.</p>
+      <p begin="00:51:21:04" end="00:51:24:24" region="bottom">Some came also running</br>at that the place.</p>
+      <p begin="00:51:24:24" end="00:51:29:17" region="bottom">We are hiding there a whole day,</br>and through the little window,</p>
+      <p begin="00:51:29:17" end="00:51:31:07" region="bottom">you could see that--</p>
+      <p begin="00:51:31:07" end="00:51:37:01" region="bottom">the way the Germans chased</br>the Jews to the marketplace</p>
+      <p begin="00:51:37:01" end="00:51:40:04" region="bottom">and beating them.</p>
+      <p begin="00:51:40:04" end="00:51:47:19" region="bottom">And, uh, towards evening, at</br>night, we tried to get to--</p>
+      <p begin="00:51:47:19" end="00:51:51:09" region="bottom">we tried to get out of there,</br>because we knew we cannot stay</p>
+      <p begin="00:51:51:09" end="00:51:54:13" region="bottom">there overnight.</p>
+      <p begin="00:51:54:13" end="00:51:59:18" region="bottom">And, uh, somehow everybody</br>wants to get out first</p>
+      <p begin="00:51:59:18" end="00:52:04:25" region="bottom">and started to commotion</br>inside when the,</p>
+      <p begin="00:52:04:25" end="00:52:10:26" region="bottom">uh, the Germans with the</br>Lithuanians and the Ukrainians</p>
+      <p begin="00:52:10:26" end="00:52:17:13" region="bottom">were all helping the Germans,</br>uh, in the gathering the Jews.</p>
+      <p begin="00:52:17:13" end="00:52:20:16" region="bottom">They heard noise</br>in the building.</p>
+      <p begin="00:52:20:16" end="00:52:26:07" region="bottom">And they, uh, first opened</br>the door, and they caught us.</p>
+      <p begin="00:52:26:07" end="00:52:29:14" region="bottom">And, uh, my cousin</br>was a carpenter and I</p>
+      <p begin="00:52:29:14" end="00:52:33:19" region="bottom">started to beg the Germans as--</p>
+      <p begin="00:52:33:19" end="00:52:34:26" region="bottom">let us live.</p>
+      <p begin="00:52:34:26" end="00:52:37:01" region="bottom">I-- I could carpent--</p>
+      <p begin="00:52:37:01" end="00:52:39:04" region="bottom">I can.</p>
+      <p begin="00:52:39:04" end="00:52:43:02" region="bottom">So the German</br>answered, yeah, yeah.</p>
+      <p begin="00:52:43:02" end="00:52:47:07" region="bottom">Tomorrow, we will take</br>you to the new house.</p>
+      <p begin="00:52:47:07" end="00:52:50:06" region="bottom">In other words, we knew that</br>they were going to shoot us.</p>
+      <p begin="00:52:50:06" end="00:52:54:18" region="bottom">And they pushed us in</br>back into the basement</p>
+      <p begin="00:52:54:18" end="00:52:58:02" region="bottom">and put a heavy</br>table on top of it.</p>
+      <p begin="00:52:58:02" end="00:53:06:19" region="bottom">And, uh, outside they put</br>a post working, watching,</p>
+      <p begin="00:53:06:19" end="00:53:12:18" region="bottom">watching the uh, the outside</br>in the little window.</p>
+      <p begin="00:53:12:18" end="00:53:16:11" region="bottom">But to our-- to</br>our luck, the posts</p>
+      <p begin="00:53:16:11" end="00:53:21:01" region="bottom">sat down close to the</br>window and fell asleep.</p>
+      <p begin="00:53:21:01" end="00:53:24:13" region="bottom">And the, uh, the window</br>was too small for anybody</p>
+      <p begin="00:53:24:13" end="00:53:27:02" region="bottom">to get-- to crawl through.</p>
+      <p begin="00:53:27:02" end="00:53:31:22" region="bottom">So we-- we stretched out all</br>the cement around the window</p>
+      <p begin="00:53:31:22" end="00:53:38:18" region="bottom">and made a bigger hole, and</br>slowly, we took out the shoes,</p>
+      <p begin="00:53:38:18" end="00:53:39:21" region="bottom">and slowly we--</p>
+      <p begin="00:53:39:21" end="00:53:41:01" region="bottom">SANDY HAYDEN: Escaped, yeah.</p>
+      <p begin="00:53:41:01" end="00:53:45:09" region="bottom">RUBIN PINSKI: We, uh,</br>called out, and we, uh,</p>
+      <p begin="00:53:45:09" end="00:53:46:14" region="bottom">said that we'll--</p>
+      <p begin="00:53:46:14" end="00:53:50:16" region="bottom">we'll meet right in, uh, that.</p>
+      <p begin="00:53:50:16" end="00:53:54:06" region="bottom">A little river was</br>running close by,</p>
+      <p begin="00:53:54:06" end="00:53:59:02" region="bottom">and we said we shouldn't</br>walk with the streets.</p>
+      <p begin="00:53:59:02" end="00:54:02:16" region="bottom">We should, uh, go with the</br>river, which takes us out</p>
+      <p begin="00:54:02:16" end="00:54:05:20" region="bottom">in the outskirts of</br>the-- of the town.</p>
+      <p begin="00:54:05:20" end="00:54:07:07" region="bottom">And that way, we--</p>
+      <p begin="00:54:07:07" end="00:54:09:01" region="bottom">SANDY HAYDEN: So</br>you all escaped.</p>
+      <p begin="00:54:09:01" end="00:54:11:01" region="bottom">RUBIN PINSKI: Not all.</p>
+      <p begin="00:54:11:01" end="00:54:14:15" region="bottom">An older woman couldn't make it.</p>
+      <p begin="00:54:14:15" end="00:54:18:19" region="bottom">Two-- two people still, because</br>they found only two people</p>
+      <p begin="00:54:18:19" end="00:54:19:07" region="bottom">there in the--</p>
+      <p begin="00:54:19:07" end="00:54:20:20" region="bottom">SANDY HAYDEN: Mhm.</br>in the morning.</p>
+      <p begin="00:54:20:20" end="00:54:24:02" region="bottom">RUBIN PINSKI: --in the</br>basement the next day.</p>
+      <p begin="00:54:24:02" end="00:54:32:13" region="bottom">They escaped, and we wandered</br>around for, um, for, um,</p>
+      <p begin="00:54:32:13" end="00:54:33:12" region="bottom">until--</p>
+      <p begin="00:54:33:12" end="00:54:37:22" region="bottom">until it got, uh, light.</p>
+      <p begin="00:54:37:22" end="00:54:41:12" region="bottom">They escaped, my sister,</br>and I, and my two cousins</p>
+      <p begin="00:54:41:12" end="00:54:48:01" region="bottom">were running together, and</br>they came not very far.</p>
+      <p begin="00:54:48:01" end="00:54:52:03" region="bottom">They ran away about 10</br>kilometers out of town.</p>
+      <p begin="00:54:52:03" end="00:54:55:01" region="bottom">And it was already light.</p>
+      <p begin="00:54:55:01" end="00:55:00:08" region="bottom">We couldn't walk any further,</br>so we were hiding a little--</p>
+      <p begin="00:55:00:08" end="00:55:03:03" region="bottom">the little forest was very--</p>
+      <p begin="00:55:03:03" end="00:55:06:17" region="bottom">it wasn't-- it was a very</br>dangerous place to stay.</p>
+      <p begin="00:55:06:17" end="00:55:09:09" region="bottom">But we crawled into a bush.</p>
+      <p begin="00:55:09:09" end="00:55:11:16" region="bottom">We were hiding there.</p>
+      <p begin="00:55:11:16" end="00:55:13:22" region="bottom">And the shepherds could--</p>
+      <p begin="00:55:13:22" end="00:55:18:07" region="bottom">uh, we could see the</br>shepherds in the morning.</p>
+      <p begin="00:55:18:07" end="00:55:22:28" region="bottom">And somehow, we are lucky</br>that nobody noticed us</p>
+      <p begin="00:55:22:28" end="00:55:25:13" region="bottom">the whole day.</p>
+      <p begin="00:55:25:13" end="00:55:31:06" region="bottom">So the next evening,</br>we were trying</p>
+      <p begin="00:55:31:06" end="00:55:37:16" region="bottom">to get food into the</br>forest, because the, uh,</p>
+      <p begin="00:55:37:16" end="00:55:42:25" region="bottom">the forest around our</br>town was only about,</p>
+      <p begin="00:55:42:25" end="00:55:46:20" region="bottom">uh, 4 to 20 kilometers away.</p>
+      <p begin="00:55:46:20" end="00:55:49:06" region="bottom">SANDY HAYDEN: Were you planning</br>then to join partisan groups?</p>
+      <p begin="00:55:49:06" end="00:55:51:03" region="bottom">RUBIN PINSKI: Yes,</br>that was the main idea,</p>
+      <p begin="00:55:51:03" end="00:55:53:07" region="bottom">to join the partisans.</p>
+      <p begin="00:55:53:07" end="00:56:01:10" region="bottom">And, uh, the next night, we</br>came towards the, uh, forest</p>
+      <p begin="00:56:01:10" end="00:56:03:23" region="bottom">where the partisans were.</p>
+      <p begin="00:56:03:23" end="00:56:10:22" region="bottom">But talking to a peasant,</br>we knocked on the door,</p>
+      <p begin="00:56:10:22" end="00:56:13:25" region="bottom">and eh opened the door</br>to us, and he said--</p>
+      <p begin="00:56:13:25" end="00:56:20:16" region="bottom">he gave us bad news that</br>the Russian partisans are--</p>
+      <p begin="00:56:20:16" end="00:56:26:02" region="bottom">they are anti-Semitic, and they</br>killed some Jewish partisans,</p>
+      <p begin="00:56:26:02" end="00:56:29:19" region="bottom">which was the leader,</br>Alter Dvoretsky.</p>
+      <p begin="00:56:29:19" end="00:56:38:16" region="bottom">He was killed, and he suggested</br>we should go into, uh,</p>
+      <p begin="00:56:38:16" end="00:56:42:00" region="bottom">there was a [SPEAKING GERMAN]</br>like a working--</p>
+      <p begin="00:56:42:00" end="00:56:47:22" region="bottom">uh, it was a camp, which</br>was about 30 kilometers</p>
+      <p begin="00:56:47:22" end="00:56:52:15" region="bottom">from our town, and the town</br>was called [INAUDIBLE]..</p>
+      <p begin="00:56:52:15" end="00:56:57:21" region="bottom">And, uh, there the Germans</br>need these people, the Jews,</p>
+      <p begin="00:56:57:21" end="00:57:00:27" region="bottom">to build for them an airport.</p>
+      <p begin="00:57:00:27" end="00:57:07:08" region="bottom">And it was a chance to stay</br>alive as that farmer suggested.</p>
+      <p begin="00:57:07:08" end="00:57:10:24" region="bottom">And we took his advice, and</br>we went towards that, uh,</p>
+      <p begin="00:57:10:24" end="00:57:14:23" region="bottom">camp, which was--</p>
+      <p begin="00:57:14:23" end="00:57:18:12" region="bottom">together was about 33</br>kilometers to make.</p>
+      <p begin="00:57:18:12" end="00:57:24:01" region="bottom">So to the next,</br>towards [INAUDIBLE],,</p>
+      <p begin="00:57:24:01" end="00:57:30:28" region="bottom">we went around our town</br>towards that, uh, camp.</p>
+      <p begin="00:57:30:28" end="00:57:34:27" region="bottom">And the next morning,</br>we came-- we came--</p>
+      <p begin="00:57:34:27" end="00:57:36:22" region="bottom">we finally came to that camp.</p>
+      <p begin="00:57:36:22" end="00:57:38:28" region="bottom">We joined a group</br>of Jewish workers,</p>
+      <p begin="00:57:38:28" end="00:57:42:02" region="bottom">and we got into that camp.</p>
+      <p begin="00:57:42:02" end="00:57:45:05" region="bottom">Our feet were swollen,</br>because we were always</p>
+      <p begin="00:57:45:05" end="00:57:47:07" region="bottom">walking barefoot.</p>
+      <p begin="00:57:47:07" end="00:57:48:14" region="bottom">SANDY HAYDEN: And hungry.</p>
+      <p begin="00:57:48:14" end="00:57:50:12" region="bottom">RUBIN PINSKI: And hungry.</p>
+      <p begin="00:57:50:12" end="00:57:53:24" region="bottom">But the conditions in that</br>camp was just terrible.</p>
+      <p begin="00:57:53:24" end="00:57:55:09" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:57:55:09" end="00:57:57:11" region="bottom">RUBIN PINSKI: It was summer.</p>
+      <p begin="00:57:57:11" end="00:57:59:18" region="bottom">People slept under the sky.</p>
+      <p begin="00:57:59:18" end="00:58:01:11" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:58:01:11" end="00:58:05:14" region="bottom">RUBIN PINSKI: And, uh,</br>there was very little food.</p>
+      <p begin="00:58:05:14" end="00:58:09:21" region="bottom">And people had to carry stones</br>from one place to the other</p>
+      <p begin="00:58:09:21" end="00:58:10:15" region="bottom">to--</p>
+      <p begin="00:58:10:15" end="00:58:15:08" region="bottom">to, uh, build that airport.</p>
+      <p begin="00:58:15:08" end="00:58:22:09" region="bottom">And, uh, the, uh, we couldn't</br>work here, because we--</p>
+      <p begin="00:58:22:09" end="00:58:23:03" region="bottom">our feet were all--</p>
+      <p begin="00:58:23:03" end="00:58:24:02" region="bottom">SANDY HAYDEN: Was sore.</p>
+      <p begin="00:58:24:02" end="00:58:26:03" region="bottom">RUBIN PINSKI: --were</br>beaten and swollen.</p>
+      <p begin="00:58:26:03" end="00:58:29:16" region="bottom">So but they forced</br>us to go to work.</p>
+      <p begin="00:58:29:16" end="00:58:32:22" region="bottom">SANDY HAYDEN: Who-- were these</br>not Germans again or Russians?</p>
+      <p begin="00:58:32:22" end="00:58:33:17" region="bottom">Who?</p>
+      <p begin="00:58:33:17" end="00:58:37:03" region="bottom">RUBIN PINSKI: No,</br>the, uh, the people</p>
+      <p begin="00:58:37:03" end="00:58:40:12" region="bottom">who watched us were</br>actually Ukrainians.</p>
+      <p begin="00:58:40:12" end="00:58:42:29" region="bottom">And there were Jewish police.</p>
+      <p begin="00:58:42:29" end="00:58:49:03" region="bottom">The Germans always had this</br>streak to-- the-- to have</p>
+      <p begin="00:58:49:03" end="00:58:49:26" region="bottom">their--</p>
+      <p begin="00:58:49:26" end="00:58:53:00" region="bottom">their own-- their</br>own people to--</p>
+      <p begin="00:58:53:00" end="00:58:55:13" region="bottom">to do the bad job.</p>
+      <p begin="00:58:55:13" end="00:59:00:18" region="bottom">So the Jewish police would</br>chase down the Jews to work.</p>
+      <p begin="00:59:00:18" end="00:59:01:26" region="bottom">Actually, they had to.</p>
+      <p begin="00:59:01:26" end="00:59:02:24" region="bottom">They had no choice.</p>
+      <p begin="00:59:02:24" end="00:59:03:16" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="00:59:03:16" end="00:59:04:25" region="bottom">So you-- you--</p>
+      <p begin="00:59:04:25" end="00:59:08:08" region="bottom">you are sympathetic to their</br>position, the Jewish police.</p>
+      <p begin="00:59:08:08" end="00:59:10:24" region="bottom">You don't feel any--</p>
+      <p begin="00:59:10:24" end="00:59:13:12" region="bottom">RUBIN PINSKI: No, they didn't</br>do anything that they could help</p>
+      <p begin="00:59:13:12" end="00:59:13:27" region="bottom">it .</p>
+      <p begin="00:59:13:27" end="00:59:15:28" region="bottom">A lot of them were</br>actually in the partisans,</p>
+      <p begin="00:59:15:28" end="00:59:18:00" region="bottom">were running away to</br>the partisans together.</p>
+      <p begin="00:59:18:00" end="00:59:22:14" region="bottom">But, uh, they had no choice.</p>
+      <p begin="00:59:22:14" end="00:59:25:04" region="bottom">They were appointed</br>by the Germans,</p>
+      <p begin="00:59:25:04" end="00:59:29:19" region="bottom">and they to do what the</br>Germans told them to do.</p>
+      <p begin="00:59:29:19" end="00:59:34:19" region="bottom">And, uh, finally by--</p>
+      <p begin="00:59:34:19" end="00:59:37:28" region="bottom">by being there about</br>three weeks, we did--</p>
+      <p begin="00:59:37:28" end="00:59:39:21" region="bottom">I, for example, had to--</p>
+      <p begin="00:59:39:21" end="00:59:45:17" region="bottom">was chased out to go to work</br>on the carrying the stones.</p>
+      <p begin="00:59:45:17" end="00:59:49:23" region="bottom">And I was looking for a way</br>to go back to the partisans</p>
+      <p begin="00:59:49:23" end="00:59:50:25" region="bottom">till I--</p>
+      <p begin="00:59:50:25" end="00:59:52:22" region="bottom">one day, I found--</p>
+      <p begin="00:59:52:22" end="00:59:57:16" region="bottom">I noticed someone who I</br>knew went to the forest</p>
+      <p begin="00:59:57:16" end="01:00:02:19" region="bottom">yet before the slaughter</br>of the Jews in our town.</p>
+      <p begin="01:00:02:19" end="01:00:08:07" region="bottom">And when I talked to</br>him, and we met up,</p>
+      <p begin="01:00:08:07" end="01:00:11:06" region="bottom">they said that he</br>came to pick up Jews</p>
+      <p begin="01:00:11:06" end="01:00:16:29" region="bottom">from this camp to the forest.</p>
+      <p begin="01:00:16:29" end="01:00:20:11" region="bottom">And he gave me a</br>[INAUDIBLE],, a map how to--</p>
+      <p begin="01:00:20:11" end="01:00:21:14" region="bottom">SANDY HAYDEN: To get there.</p>
+      <p begin="01:00:21:14" end="01:00:23:00" region="bottom">RUBIN PINSKI: Go around.</p>
+      <p begin="01:00:23:00" end="01:00:30:28" region="bottom">Not to go to villages or to, uh,</br>in other words, to be careful</p>
+      <p begin="01:00:30:28" end="01:00:36:23" region="bottom">not to fall into certain,</br>uh, certain peasants who</p>
+      <p begin="01:00:36:23" end="01:00:39:10" region="bottom">helped the Germans.</p>
+      <p begin="01:00:39:10" end="01:00:45:27" region="bottom">And, uh, and, uh,</br>one-- one evening,</p>
+      <p begin="01:00:45:27" end="01:00:48:10" region="bottom">instead of going back to the--</p>
+      <p begin="01:00:48:10" end="01:00:50:07" region="bottom">the ghetto, there</br>was also a ghetto</p>
+      <p begin="01:00:50:07" end="01:00:55:17" region="bottom">in that camp, sort of a</br>ghetto, I stayed behind a--</p>
+      <p begin="01:00:55:17" end="01:00:59:03" region="bottom">a hump of stones.</p>
+      <p begin="01:00:59:03" end="01:01:04:08" region="bottom">And, uh, we left that camp.</p>
+      <p begin="01:01:04:08" end="01:01:06:08" region="bottom">SANDY HAYDEN: You, and</br>your sister, and cousins.</p>
+      <p begin="01:01:06:08" end="01:01:08:05" region="bottom">RUBIN PINSKI: My sister</br>and my two cousins.</p>
+      <p begin="01:01:08:05" end="01:01:09:07" region="bottom">SANDY HAYDEN: Uh-huh.</p>
+      <p begin="01:01:09:07" end="01:01:13:17" region="bottom">RUBIN PINSKI: And</br>another two, six of us,</p>
+      <p begin="01:01:13:17" end="01:01:17:21" region="bottom">and we made it during</br>the night to the forest.</p>
+      <p begin="01:01:17:21" end="01:01:18:25" region="bottom">SANDY HAYDEN: Mhm.</p>
+      <p begin="01:01:18:25" end="01:01:21:28" region="bottom">Well, I think we finished</br>the first half of the tape.</p>
+      <p begin="01:01:21:28" end="01:01:22:13" region="bottom">So--</p>
+      <p begin="01:01:22:13" end="01:01:23:07" region="bottom">RUBIN PINSKI: OK.</p>
+      <p begin="01:01:23:07" end="01:01:24:06" region="bottom">SANDY HAYDEN: They are going</br>to rewind it and then--</p>
+      <p begin="01:01:24:06" end="01:01:24:27" region="bottom">RUBIN PINSKI: OK.</p>
+      <p begin="01:01:24:27" end="01:01:26:24" region="bottom">SANDY HAYDEN: --we</br>can start from the--</p>
+      <p begin="01:01:26:24" end="01:01:28:19" region="bottom">RUBIN PINSKI: OK, in</br>the [INAUDIBLE] forest.</p>
+      <p begin="01:01:28:19" end="01:01:30:24" region="bottom">SANDY HAYDEN: In a</br>few minutes, yeah.</p>
+      <p begin="01:01:30:24" end="01:01:35:17" region="bottom"></p>
+    </div>
+  </body>
+</tt>
