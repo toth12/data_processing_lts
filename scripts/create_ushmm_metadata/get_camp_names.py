@@ -1,30 +1,35 @@
 import sys, os
-import pprint
 helper_path = os.path.join("..", "..", "utils")
 sys.path.insert(0, helper_path)
 import pdb
 import helper_mongo as h
 
-pp = pprint.PrettyPrinter(indent=4)
-
 
 def getCampNames():
+    """
+    Queries for subject_corporate in the undress_experiment database
+    Returns a dictionary with 529 entries, the keys being the 'id' of the interview
+    and the value being an array with the names of the camps
+    """
 
+    # query database
     result = h.query('Hol', 'undress_experiment', {}, {'subject_corporate': 1,'id':1} )
 
+    # initialize variables
     unknown_camps = []
     interview_known_camps = dict()
 
     # check for camps in subject_corporate
     for interview in result:
+        # retrieve object key
         mongo_key = interview.get('_id')
+
         # get id of interview
         key = interview.get('id')
 
         # check for subject_corporate key
         if 'subject_corporate' in interview:
             
-
             # get array of possible camps
             subj_arr = interview.get('subject_corporate')
             known_camps = set([])
@@ -52,18 +57,15 @@ def getCampNames():
                     known_camps.add(camp_name)
             
             # create entry for that interview if there were any camps
+            # else, add the mongo objectId to the list of unkown camps
             if len(known_camps) != 0:
                 interview_known_camps[key] = known_camps 
+            
             else:
                 unknown_camps.append(mongo_key)
         else:
             # keep track of camps without the subject corporate field
             unknown_camps.append(mongo_key)
         
-
-    # check for camps in subject topic facet 
-    backup = h.query('Hol', 'undress_experiment', { '_id' : { '$in' : unknown_camps } }, { 'subject_topical': 1} )
-    #pp.pprint(backup)
-
     return interview_known_camps
 
