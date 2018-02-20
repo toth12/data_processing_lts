@@ -17,6 +17,7 @@ def getInterviewYear():
     # initialize dictionary
     interview_year = dict()
 
+    # go through all the interviews
     for interview in result:
         key = interview.get('id')
         

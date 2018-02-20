@@ -17,19 +17,6 @@ def query(db_name,collection_name,query,projection):
 	return result
 
 
-def findDocs(db_name,collection_name): 
-	"""Takes a db name, collection name, query and projection as input, and returns the result as a list"""
-	client = MongoClient()
-	client = MongoClient('localhost', 27017)
-	db = client[db_name]
-	collection = db[collection_name]
-	#        pdb.set_trace()
-	result = []
-	for results in collection.find():
-		result.append(results)
-	client.close()	
-	return result
-
 def update_entry(db_name,collection_name,entry_id,new_field):
 	client = MongoClient()
 	client = MongoClient('localhost', 27017)
@@ -53,8 +40,6 @@ def delete_field(db_name,collection_name,field_to_delete):
 
 	#result of the updating operation can be accessed by printing r
 	client.close()
-
-
 
 
 def aggregate(db_name,collection_name,pipeline):

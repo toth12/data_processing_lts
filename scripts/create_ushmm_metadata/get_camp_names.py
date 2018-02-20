@@ -7,17 +7,18 @@ import helper_mongo as h
 
 def getCampNames():
     """
-    Queries for subject_corporate in the undress_experiment database
+    Queries undress_experiment for subject_corporate.
     Returns a dictionary with 529 entries, the keys being the 'id' of the interview
     and the value being an array with the names of the camps
+    Returns a set of interview IDs with all 1514 entries
     """
-
     # query database
     result = h.query('Hol', 'undress_experiment', {}, {'subject_corporate': 1,'id':1} )
 
     # initialize variables
     unknown_camps = []
     interview_known_camps = dict()
+    interview_ids = set([])
 
     # check for camps in subject_corporate
     for interview in result:
@@ -26,6 +27,9 @@ def getCampNames():
 
         # get id of interview
         key = interview.get('id')
+        
+        # add id to result
+        interview_ids.add(key)
 
         # check for subject_corporate key
         if 'subject_corporate' in interview:
@@ -66,6 +70,8 @@ def getCampNames():
         else:
             # keep track of camps without the subject corporate field
             unknown_camps.append(mongo_key)
-        
-    return interview_known_camps
+    
+    return interview_ids, interview_known_camps
 
+if __name__ == "__main__":
+    getCampNames()
