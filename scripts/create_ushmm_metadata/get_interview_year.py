@@ -21,8 +21,17 @@ def getInterviewYear():
     for interview in result:
         key = interview.get('id')
         
-        interview_year[key] = interview.get('display_date')
-    
+        # access date object
+        date = interview.get('display_date')[0]
+
+        # strip the year
+        year  = date[0:4]
+
+        # add to dict
+        interview_year[key] = year
 
     return interview_year
+
+if __name__ == "__main__":
+    getInterviewYear()
 

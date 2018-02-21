@@ -18,7 +18,7 @@ def getCampNames():
     # initialize variables
     unknown_camps = []
     interview_known_camps = dict()
-    interview_ids = set([])
+    interview_ids = []
 
     # check for camps in subject_corporate
     for interview in result:
@@ -29,7 +29,7 @@ def getCampNames():
         key = interview.get('id')
         
         # add id to result
-        interview_ids.add(key)
+        interview_ids.append(key)
 
         # check for subject_corporate key
         if 'subject_corporate' in interview:
@@ -63,7 +63,7 @@ def getCampNames():
             # create entry for that interview if there were any camps
             # else, add the mongo objectId to the list of unkown camps
             if len(known_camps) != 0:
-                interview_known_camps[key] = known_camps 
+                interview_known_camps[key] = list(known_camps) 
             
             else:
                 unknown_camps.append(mongo_key)

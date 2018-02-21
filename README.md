@@ -9,8 +9,10 @@
 "camp\_name (Concentration camp), returns a dictionary with 529 entries, the keys being the 'id' of the interview and the value being an array with the names of the camps
 * **get\_ghetto\_names.py**: queries undress\_experiment for subject\_topical. Within the subject\_topical array, any element that contained the substring "ghetto" was considered a ghetto. Returns a dictionary with 341 entries, the keys being the 'id' of the interview and the value being an array with the ghettos associated with the interview
 * **get\_interview\_year.py**: queries undress\_experiment for the interview\_year field, returns a dictionary with 1462 entries, the keys being the 'id' of the interview and the value being the date it was recorded
-* **get\_interview\_summary.py**: queries undress\_experiment for the interview\_year field,returns a dictionary with 1065 entries, the keys being the 'id' of the interview and the value being an array with the summary of the interviews
+* **get\_interview\_summary.py**: queries undress\_experiment for the interview\_year field. Strips the date string to get only the year. Returns a dictionary with 1065 entries, txzhe keys being the 'id' of the interview and the value being an array with the summary of the interviews
 * **get\_gender.py:**: queries undress\_experiment for the interview\_summary field. Uses common pronouns as a proxy to define the gender of the interviewee given the interview's interview summary. Returns a dictionary with 1065 entries, the keys being the 'id' of the interview and the value being the gender of the interviewee, if any
+* **get\_interview\_title.py:**: queries undress\_experiment for the title field.Returns a dictionary with 1514 entries, the keys being the 'id' of the interview and the value being the interview title
+* **get\_interviewee_name.py:**: queries undress\_experiment for the interviewee field (1301 fields have it). If not found, check if there is a summary (summary begins with the name of the interviewee) and use it as a backup method (201 names found through this backup method). Returns a dictionary with 1503 entries, the keys being the 'id' of the interview and the value being the interviewee name.  
 
 * **sample**: a folder with sample documents of the undress_experiment collection
 
