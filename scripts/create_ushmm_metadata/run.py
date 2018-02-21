@@ -5,7 +5,6 @@ from get_interview_summary import getInterviewSummary
 from get_interview_year import getInterviewYear
 from get_interviewee_name import getIntervieweeName
 from get_interview_title import getInterviewTitle
-from pymongo import MongoClient
 import concurrent.futures
 import sys, os
 helper_path = os.path.join("..", "..", "utils")
@@ -15,11 +14,6 @@ import helper_mongo as h
 import pprint
 pp = pprint.PrettyPrinter(indent=4)
 
-
-# create the collection
-client = MongoClient()
-db = client['Hol']
-collection = db['USHMM']
 
 # initialize dictionaries with all the pieces of information
 interview_ids, interviews_camp_names = getCampNames()
@@ -44,11 +38,4 @@ for id_ in interview_ids:
     document['interviewee_name'] = intervewees_names.get(id_, None)
     document['testimony_title'] = interviews_titles.get(id_, None)
     
-    db.collection.insert(document)
-
-client.close()
-    
-
-    
-    
-
+    h.insert('Hol', 'USHMM', document)
