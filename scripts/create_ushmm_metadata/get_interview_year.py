@@ -27,8 +27,9 @@ def getInterviewYear():
         # strip the year
         year  = date[0:4]
 
-        # add to dict
-        interview_year[key] = year
+        # add to dict if it is a valid year
+        if year != '':
+            interview_year[key] = int(year)
 
     return interview_year
 

@@ -22,7 +22,9 @@ def getInterviewTitle():
     for interview in result:
         key = interview.get('id')
         title = interview.get('title')
-        interview_titles[key] = title
+
+        # title is within the array
+        interview_titles[key] = title[0]
 
     return interview_titles
 

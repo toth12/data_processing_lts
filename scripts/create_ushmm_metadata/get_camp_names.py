@@ -18,7 +18,6 @@ def getCampNames():
     # initialize variables
     unknown_camps = []
     interview_known_camps = dict()
-    interview_ids = []
 
     # check for camps in subject_corporate
     for interview in result:
@@ -27,9 +26,6 @@ def getCampNames():
 
         # get id of interview
         key = interview.get('id')
-        
-        # add id to result
-        interview_ids.append(key)
 
         # check for subject_corporate key
         if 'subject_corporate' in interview:
@@ -71,7 +67,7 @@ def getCampNames():
             # keep track of camps without the subject corporate field
             unknown_camps.append(mongo_key)
     
-    return interview_ids, interview_known_camps
+    return interview_known_camps
 
 if __name__ == "__main__":
     getCampNames()

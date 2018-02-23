@@ -23,7 +23,7 @@ def getIntervieweeName():
         key = interview.get('id')
         name = interview.get('interviewee')
         if name is not None:
-            interviewee_names[key] = name
+            interviewee_names[key] = name[0]
 
         # backup method in case interviewee name was not registered
         else:
