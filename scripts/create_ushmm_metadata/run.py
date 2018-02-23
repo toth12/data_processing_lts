@@ -5,6 +5,9 @@ from get_interview_summary import getInterviewSummary
 from get_interview_year import getInterviewYear
 from get_interviewee_name import getIntervieweeName
 from get_interview_title import getInterviewTitle
+from get_shelfmark import getShelfmark
+from get_provenance import getProvenance
+
 import sys, os
 helper_path = os.path.join("..", "..", "utils")
 sys.path.insert(0, helper_path)
@@ -23,7 +26,7 @@ def populateDocument(document, unknown_fields, dictionary, id_, field_name):
     """
     if dictionary.get(id_, None) != None:
         document[field_name] = dictionary[id_]
-    else:
+    elif field_name != 'camp_names' and field_name != 'ghetto_names':
         unknown_fields.append(field_name)
 
                 
@@ -46,6 +49,8 @@ if __name__ == "__main__":
     interviews_summary = getInterviewSummary()
     interviewees_names = getIntervieweeName()
     interviews_titles = getInterviewTitle()
+    interviews_shelfmarks = getShelfmark()
+    interviews_provenances = getProvenance()
 
     # initialize csv to record missing fields
     ofile  = open('USHM_missing_records.csv', "w")
@@ -69,6 +74,8 @@ if __name__ == "__main__":
         populateDocument(document, unknown_fields, interviewees_gender, id_, 'gender')
         populateDocument(document, unknown_fields, interviewees_names, id_, 'interviewee_name')
         populateDocument(document, unknown_fields, interviews_titles, id_, 'testimony_title')
+        populateDocument(document, unknown_fields, interviews_shelfmarks, id_, 'shelfmark')
+        populateDocument(document, unknown_fields, interviews_provenances, id_, 'historical_provenance')
         
         # if there were any fields missing in the interview, record themissing interviews in csv
         if unknown_fields:

@@ -6,7 +6,7 @@ sys.path.insert(0, helper_path)
 import helper_mongo as h
 pp = pprint.PrettyPrinter(indent=4)
 
-def getInterviewYear():
+def getProvenance():
     """
     Returns a dictionary with the historical provenance of 1514 entries in
     the USHMM database
@@ -29,5 +29,5 @@ def getInterviewYear():
     return interviews_provenances
 
 if __name__ == "__main__":
-    getInterviewYear()
+    getProvenance()
 

@@ -9,6 +9,7 @@ import concurrent.futures
 # declare some constants
 MALE = "Male"
 FEMALE = "Female"
+COUPLE = "Couple"
 NO_GENDER = 0
 
 # array of common pronouns that give away the interviewee's gender
@@ -25,6 +26,7 @@ def getGenderHelper(interview):
     ''' 
     # get interview summary
     summary = interview.get('interview_summary')
+
     male_counter = 0
     female_counter = 0
 
