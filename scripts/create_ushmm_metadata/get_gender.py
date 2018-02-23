@@ -6,6 +6,7 @@ sys.path.insert(0, helper_path)
 import helper_mongo as h
 import concurrent.futures
 
+
 # declare some constants
 MALE = "Male"
 FEMALE = "Female"
@@ -26,7 +27,6 @@ def getGenderHelper(interview):
     ''' 
     # get interview summary
     summary = interview.get('interview_summary')
-
     male_counter = 0
     female_counter = 0
 
@@ -72,7 +72,7 @@ def getGender():
             if gender != NO_GENDER:
                 key = interview.get('id')
                 interviewees_gender[key] = gender
-        
+    
     return interviewees_gender
         
 if __name__ == "__main__":

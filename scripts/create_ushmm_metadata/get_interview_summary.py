@@ -20,6 +20,7 @@ def getInterviewSummary():
         
         # get interview summary and key
         summary = interview.get('interview_summary')
+            
         key = interview.get('id')
         
         # add key to dictionary

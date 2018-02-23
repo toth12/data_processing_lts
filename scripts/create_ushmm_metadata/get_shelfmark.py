@@ -24,7 +24,6 @@ def getShelfmark():
         # access date object
         interviews_shelfmark[key] = interview.get('rg_number')
 
-    pp.pprint(interviews_shelfmark)
     return interviews_shelfmark
 
 if __name__ == "__main__":

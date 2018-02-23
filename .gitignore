@@ -5,3 +5,6 @@
 test.py
 test.csv
 test_csv.py
+
+# Byte-compiled / optimized / DLL files
+__pycache__/

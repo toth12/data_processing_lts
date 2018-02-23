@@ -87,4 +87,4 @@ if __name__ == "__main__":
 
         document['collection'] = "USHM"
         
-        h.insert('Hol', 'test2', document)
+        h.insert('Hol', 'final_test', document)
