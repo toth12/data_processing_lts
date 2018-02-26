@@ -26,7 +26,7 @@ def populateDocument(document, unknown_fields, dictionary, id_, field_name):
     """
     if dictionary.get(id_, None) != None:
         document[field_name] = dictionary[id_]
-    elif field_name != 'camp_names' and field_name != 'ghetto_names':
+    elif field_name != 'camp_names' and field_name != 'ghetto_names' and field_name != "interview_summary":
         unknown_fields.append(field_name)
 
                 
