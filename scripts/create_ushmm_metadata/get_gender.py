@@ -76,7 +76,6 @@ def getGenderHelper(interview):
         else:
             first_name = tokens[0]
 
-        print(first_name)
         # endpoint to be called     
         url = 'https://api.genderize.io/?name=' + first_name
         

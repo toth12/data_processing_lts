@@ -1,0 +1,981 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f31\froman\fcharset238\fprq2 Times New Roman CE;}{\f32\froman\fcharset204\fprq2 Times New Roman Cyr;}
+{\f34\froman\fcharset161\fprq2 Times New Roman Greek;}{\f35\froman\fcharset162\fprq2 Times New Roman Tur;}{\f36\froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\f37\froman\fcharset178\fprq2 Times New Roman (Arabic);}
+{\f38\froman\fcharset186\fprq2 Times New Roman Baltic;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;
+\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}{\stylesheet{\ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext0 Normal;}{\*\cs10 \additive Default Paragraph Font;}{\*\cs15 \additive Default Par1;}{\s16\qc \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext16 1;}{\*\cs17 \additive \fs20 Default Para;}{\s18\qc \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext18 11;}{\*\cs19 \additive \super 
+Endnote Refe;}{\*\cs20 \additive \super Footnote Ref;}{\s21\qj \fi-720\li720\ri0\nowidctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin720\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext21 _level1;}{\s22\qj \fi-720\li1440\ri0\nowidctlpar\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin1440\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext22 _level2;}{\s23\qj \fi-720\li2160\ri0\nowidctlpar\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin2160\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext23 _level3;}{\s24\qj \fi-720\li2880\ri0\nowidctlpar\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin2880\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext24 _level4;}{\s25\qj \fi-720\li3600\ri0\nowidctlpar\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin3600\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 
+\snext25 _level5;}{\s26\qj \fi-720\li4320\ri0\nowidctlpar\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin4320\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext26 _level6;}{\s27\qj \fi-720\li5040\ri0\nowidctlpar
+\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin5040\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext27 _level7;}{\s28\qj \fi-720\li5760\ri0\nowidctlpar\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin5760\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext28 _level8;}{\s29\qj \fi-720\li6480\ri0\nowidctlpar\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin6480\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext29 _level9;}{
+\s30\qj \fi-720\li720\ri0\nowidctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin720\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext30 _levnl1;}{
+\s31\qj \fi-720\li1440\ri0\nowidctlpar\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin1440\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext31 _levnl2;}{\s32\qj \fi-720\li2160\ri0\nowidctlpar
+\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin2160\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext32 _levnl3;}{\s33\qj \fi-720\li2880\ri0\nowidctlpar
+\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin2880\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext33 _levnl4;}{\s34\qj \fi-720\li3600\ri0\nowidctlpar
+\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin3600\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext34 _levnl5;}{\s35\qj \fi-720\li4320\ri0\nowidctlpar
+\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin4320\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext35 _levnl6;}{\s36\qj \fi-720\li5040\ri0\nowidctlpar
+\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin5040\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext36 _levnl7;}{\s37\qj \fi-720\li5760\ri0\nowidctlpar\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin5760\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext37 _levnl8;}{\s38\qj \fi-720\li6480\ri0\nowidctlpar\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin6480\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext38 _levnl9;}{
+\s39\ql \li0\ri0\nowidctlpar\tqc\tx4320\tqr\tx8640\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext39 header;}{\s40\ql \li0\ri0\nowidctlpar\tqc\tx4320\tqr\tx8640\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext40 footer;}}{\info{\title THIS IS AN INTERVIEW WITH:_YM_[interviewee]_Cantor Yehuda Mandel}{\author Douglas F. Olena}{\operator Preferred User}{\creatim\yr2003\mo7\dy8\hr17\min6}
+{\revtim\yr2003\mo8\dy5\hr15\min4}{\printim\yr2003\mo7\dy8\hr17\min13}{\version3}{\edmins17}{\nofpages42}{\nofwords12327}{\nofchars-32766}{\*\company Gratz College}{\nofcharsws0}{\vern8299}}\margl1728\margr1440\margt1711\margb1632 
+\widowctrl\ftnbj\aenddoc\hyphhotz365\aftnnar\notabind\noxlattoyen\expshrtn\noultrlspc\dntblnsbdb\nospaceforul\subfontbysize\lytprtmet\hyphcaps0\horzdoc\dghspace120\dgvspace120\dghorigin1701\dgvorigin1984\dghshow0\dgvshow3
+\jcompress\viewkind1\viewscale75\nolnhtadjtbl \fet0\sectd \sbknone\linex0\headery1152\footery1632\sectdefaultcl {\header \pard\plain \qr \li86\ri432\widctlpar
+\tx14\tx86\tx734\tx1454\tx2174\tx2894\tx3614\tx4334\tx5054\tx5774\tx6494\tx7214\tx7934\tx8654\tx8726\faauto\rin432\lin86\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i\fs24 
+\par YEHUDA MANDEL    [1-1-\chpgn ]    
+\par }}{\footer \pard\plain \qc \li86\ri432\widctlpar\tx14\tx86\tx734\tx1454\tx2174\tx2894\tx3614\tx4334\tx5054\tx5774\tx6494\tx7214\tx7934\tx8654\tx8726\faauto\rin432\lin86\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i 
+From the collection of the Gratz College Holocaust Oral History Archive}{ 
+\par }}{\*\pnseclvl1\pndec\pnstart1 {\pntxta .}}{\*\pnseclvl2\pnlcltr\pnstart1 {\pntxta .}}{\*\pnseclvl3\pnlcrm\pnstart1 {\pntxta .}}{\*\pnseclvl4\pndec\pnstart1 {\pntxtb (}{\pntxta )}}{\*\pnseclvl5\pnlcltr\pnstart1 {\pntxtb (}{\pntxta )}}{\*\pnseclvl6
+\pnlcrm\pnstart1 {\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pndec\pnstart1 {\pntxta .}}{\*\pnseclvl8\pnlcltr\pnstart1 {\pntxta .}}{\*\pnseclvl9\pnlcrm\pnstart1 }\pard\plain \ql \li0\ri0\widctlpar
+\tx-360\tx0\tx4140\tx4578\tx6018\tx6120\tx6840\tx7560\tx8280\tx9000\tx9068\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\field{\*\fldinst {\fs24\lang4105\langfe1033\langnp4105  SEQ CHAPTER \\h \\r 1}}{\fldrslt }}{
+\i\fs24  THIS IS AN INTERVIEW WITH:}{\fs24 \tab YM - Cantor Yehuda Mandel [interviewee]
+\par \tab NL - Nora Levin [interviewer]
+\par \tab Interview Date - February 18, 1982,
+\par \tab March 17, 1982, June 4, 1982
+\par }\pard \ql \li0\ri0\sl361\slmult0\widctlpar\tx-360\tx0\tx4140\tx4578\tx6018\tx6120\tx6840\tx7560\tx8280\tx9000\tx9068\faauto\rin0\lin0\itap0 {\i\fs24 Tape one, side one:}{\fs24 
+\par 
+\par }\pard \qj \fi540\li0\ri0\sl361\slmult0\widctlpar\tx-360\tx0\tx720\tx792\tx1440\tx1584\tx2160\tx2376\tx2880\tx3168\tx3600\tx3960\tx4140\tx4320\tx4578\tx4752\tx5040\tx5544\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 {\fs24 NL:\tab 
+Now, Cantor Mandel, would you be good enough to tell us a little about when and where you were born and a little about your family background?
+\par YM:\tab Dr. Levin, I was born in a small town in Hungary called Csepe.
+\par NL:\tab Can you spell that, please?
+\par YM:\tab Yes, I will.  C-S-E-P-E.  Ugocsa Comidat.  That's U-G-O-C-S-A Comidat.
+\par NL:\tab That's the district?
+\par YM:\tab The district.  On March the 3rd, 1904.
+\par NL:\tab So this was part of the Austro-Hungarian Empire.
+\par YM:\tab This was part of the Austro-Hungarian Empire.  It was in the part of Hungary which was the so-called "religious" 
+Jewish part, where we spoke Yiddish and, eh, automatically we learned two, and some of us even three languages when we were small children.  Yiddish was spoken inside as soon as we closed the door.  From the inside we spoke Yiddish only.  As soon as we we
+re on the outside, the language was Hungarian and in some cases the Russian, Maloruski, the Ukrainian language.
+\par NL:\tab May I ask, why Russian?  What was the Russian influence there?
+\par YM:\tab Because there, at that part of Hungary, were many, many Ukrainians who spo
+ke Russian, and the pressure was so big, even 50 and 100 years ago, to tear away from mainly Austro-Hungary because they felt that they can't live as nationals.  Their culture, their education, their music, their everything, is oppressed by the Austrian g
+overnment.  Therefore, they, in their own homes, just as we Jews spoke Yiddish, so they spoke Ukrainian.
+\par NL:\tab Ukrainian, yes, interesting.
+\par YM:\tab This, then, shows that that was even in many, many years ago a very highly-explosive part of Hungary.  If they coul
+d have, probably, they would have torn away the part of Hungary from the Austro-Hungarian Empire in those days.  This brought another interesting fact.  They were completely influenced by the Church.  Some of them were Catholics; most of them (the non-Jew
+ish part, we're talking about) were Greek Catholics.
+\par NL:\tab Greek Orthodox.
+\par YM:\tab Greek Orthodox.  In both cases, the Church had an immense...eh...
+\par NL:\tab Influence?
+\par YM:\tab ...power and influence over them, and even when I was a small child, I started to go to }{\i\fs24 heder}{\fs24  at the age of three-and-a-half.  When I was four and five, I knew very well what it means to be attacked by the non-Jewish students.
+
+\par NL:\tab You already were...
+\par YM:\tab They waited for us with sticks and all kinds of things, and we learned to a degree how to fight 
+them as well.  This is maybe an interesting point from a point of view when we ask ourselves, how did the things get to the point where they started in 1938 or '39 in Hungary?  But they really and actually started in 1917 and '18 on a big scale when Horth
+y and his, eh, people, came and killed plenty of Jews in Hungary proper, and whoever could take advantage of Jews, did.
+\par NL:\tab Yes, we want to come to that, because that's an extremely important chapter.  This was part of the reaction against the B\'e9la Kun Comm
+unist regime, I believe.  Now, can you say a little more about your childhood, because this would be so interesting.
+\par YM:\tab I, eh, was born in an extremely Orthodox religious family.  My upbringing was the old type of Yiddish upbringing.  Eh, and I was four-and-a-half years old, probably, surely not five yet, I started to learn }{\i\fs24 Chumesh }{\fs24 [Pentateuch]}{
+\i\fs24 , Chumesh Midrasheh}{\fs24  [Post-Talmudic literature], eh, it wasn't a question of, do I want it?  There were no considerations as far as psychological questions.  This was it, and this is the way we grew up.
+\par NL:\tab Can you tell me, eh, excuse me, par-, I think I interrupted you
+\par YM:\tab We were seven children at home,
+\par NL:\tab Yes, yes,
+\par YM:\tab Three sisters and four brothers, of whom by today only one is alive, who came here in 1913, probably the last boat which reached the United...
+\par NL:\tab 19-
+\par YM:\tab '13
+\par NL:\tab '13.
+\par YM:\tab That's my oldest sister who lives in Philadelphia.
+\par NL:\tab And her name?
+\par YM:\tab Her name is Mrs. Helen Borish, B-O-R-I-S-H.
+\par NL:\tab And can you give me the names of the other children?
+\par YM:\tab Yes, sure.  The sister who followed her was Esther.  She was married to Yaakov Deutsch.  One sister, the youngest sister, died.  She was never married.  She got what was prevalent in those days in that part of the world, }{\i\fs24 
+galoppierende Tuberkulose}{\fs24  [consumption] and died before the age of 20.  Her name was Rivka.
+\par NL:\tab Rivka.  And the names of the brothers?
+\par YM:\tab My brothers, the younger brother, is Yoel, Yoel.  The one following him is Yisrael Dov, or Srulbear, as we called him, and the youngest brother was David.
+\par NL:\tab David.
+\par YM:\tab Now, my sister's children.  Did I give you the name of Esther?
+\par NL:\tab Yes.
+\par YM:\tab Yes, I did.  Esther had three children.  These children are, all three of them, in Israel, are settled there, and there they live.  Yoel, of course, Rivka had no children, Yoel was the first Associate Chief Cantor of the congregation in Zagreb.
+
+\par NL:\tab Mmm.
+\par YM:\tab He was professor of Hebrew Studies.  The younger brother was also a cantor; they were both my pupils.
+\par NL:\tab Is that so?
+\par YM:\tab In }{\i\fs24 Chazanut}{\fs24  [studies of religious chants], I mean.  We all went to }{\i\fs24 Yeshivot}{\fs24 
+, and the youngest brother, David, David Mandel, died in Israel in 1949.  His, he already got his doctoral degree from the university in Budapest, with a yellow star on his lapel.  He was a graduate of the seminary in Buda
+pest, and, was a graduate of the university in Budapest.
+\par NL:\tab What a distinguished family!
+\par YM:\tab Interesting, maybe--he was a graduate of the, Hebrew gymnasium in Munk\'e1cs, and maybe one distinction which does not apply, maybe, to too many people, is that afte
+r he went from Budapest because we were so very active in Zionist works--I wasn't home--he was engaged to a young lady by the name Hava Eisdorfer.  Their wedding was supposed to take place in June in my Temple in Budapest.  I wasn't home, of course, I was
+ in labor camp already in 1940-1944, and it never took place, the wedding never took place, of course, but he went with a }{\i\fs24 Kasztner}{\fs24  group...
+\par NL:\tab Ah, yes.
+\par YM:\tab ...to, eh, Bergen-Belsen.
+\par NL:\tab Uh huh.
+\par YM:\tab Not only that, because of my activity in Budapest, while I was there for ten years,  my family was called upon to take them along in my absence...
+\par NL:\tab Mmm
+\par YM:\tab ...and that was, that was wonderful.
+\par NL:\tab Oh yeh.
+\par YM:\tab These people who you read in this...
+\par NL:\tab Yes...
+\par YM:\tab  ...Yuri Brown story, they thought of it, because my brother was just as active.  And my brother came to Israel after Bergen-Belsen.  And after all this, and taught for awhile in }{\i\fs24 Gymnasium}{\fs24  }{\i\fs24 HaRaeali}{\fs24 
+ in Haifa and had an appointment to teach at the university in Yerushalaim [Jerusalem] of all things, Hebrew literature.  And, he never reached that day, because he died in Israel in April of 1949.
+\par NL:\tab Now, let's go back a bit.  I'd like to know a little about your parents.  Can you tell me about father and mother?
+\par YM:\tab Father grew up, probably, the same way as I did.  He probably started }{\i\fs24 heder}{\fs24  [chuckles] when he was the age of three.  He was a real Talmud}{\i\fs24  chochem}{\fs24 
+ [scholar of Talmud].  Very knowledgeable Jew.  He also spoke these languages, I have mentioned before, perfectly. He had, quite a bit of knowledge in,  in not only }{\i\fs24 Sifrut}{\fs24  [oral law] and, Talmud and }{\i\fs24 Chumash}{\fs24 
+ and so on, but he was a Talmud }{\i\fs24 chochem}{\fs24 .  As a matter of fact, he was not, though he was an ordained rabbi by his own }{\i\fs24 rabbonim}{\fs24  who gave him }{\i\fs24 Hatorath Torah}{\fs24 , and }{\i\fs24 Hatorat rabbanot}{\fs24 
+, he never acted, never was, a professional rabbi, but he }{\i\fs24 pasket shayles}{\fs24  [decided questions] as they said there, and took care of the }{\i\fs24 Yeshuvim}{\fs24  [settlements] all around us, and Avrohom Mandel was, eh, quite a }{\i\fs24 
+bekovedigge}{\fs24 r [honorable Jew].  My mother...
+\par NL:\tab Did he, eh, make a living out of teaching, or did he have a separate occupation?
+\par YM:\tab No, no, he had fields and was in the, he was a farmer...
+\par NL:\tab A farmer...
+\par YM:\tab And I, eh...
+\par NL:\tab Were Jews able to own land at that time?
+\par YM:\tab Yes.  In those days, yes.  My father, who was born in '77, I think, 1877.  That was really the golden period of Hungarian Jews.
+\par NL:\tab I see.
+\par YM:\tab Because then, it was after '48, after the French Revolution and so on.  And all these countries copied to a degree the French freedom, and so on and so forth.
+\par NL:\tab I see.
+\par YM:\tab And that expressed itself in the fact as well for Jews not to have any restrictions.  Jews, as a matter of fact, were allowed to marry non-Jews, for which before they would have been burned on the, you know?
+\par NL:\tab Stake, yes.
+\par YM:\tab But in those days there was freedom.  So, you could buy a house.  You could get into business, you could, you could own fields and farms and so on.
+\par NL:\tab And so, you grew up on the land.
+\par YM:\tab Yes, absolutely.
+\par NL:\tab Yes.  And was the family fairly comfortable, economically...
+\par YM:\tab Yes.
+\par NL:\tab ...or did you have hardships?
+\par YM:\tab You have to know, I mean, if I should go into this, I don't know.
+\par NL:\tab Yes.
+\par YM:\tab That in, in that part of Hungary in those days, let's say my days, after 1904, when I grew up to be at least to understand what's going on, 19
+10, '11, '12, and '13, '14, and even to '16, there is a river which was never controlled and never, never, put into shape, so to say, which every year brought floods and floods and floods.
+\par NL:\tab Mmm.
+\par YM:\tab My father became a poor man, I think, between 1910 and 1916.  Poor.  They made out somehow, but they weren't comfortable at the time anymore.
+\par NL:\tab But, eh, the land...
+\par YM:\tab The land...
+\par NL:\tab ...was still his, and...
+\par YM:\tab ...belonged...
+\par NL:\tab ...and was he able to recover?
+\par YM:\tab Yes, some of it, and whatever could be done with it was done.  But comfortable, he was not.  Before his time, and, of course, my recollection doesn't go back to that, all these land, belonged to my mother's father.
+\par NL:\tab I see.
+\par YM:\tab Eh, and presumably he made a very, very comfortable living.  So th
+at shows that there must have come some kind of natural causes which made it impossible for them to be comfortable anymore.  My mother, it may be worthwhile to mention, is the daughter of a man who was a teacher in 1830.
+\par NL:\tab Oh my.  A teacher in a Jewish school?
+\par YM:\tab There was no school.  He probably was a teacher...
+\par NL:\tab Tutoring...
+\par YM:\tab ...in a }{\i\fs24 heder}{\fs24 ...
+\par NL:\tab Oh, in a }{\i\fs24 heder}{\fs24 .
+\par YM:\tab Where, I don't know.  In a bigger village, 15, 20, 25, youngsters got together and he taught them the same things.
+\par NL:\tab So she was an educated woman, too.
+\par YM:\tab Ya, she was.
+\par NL:\tab About how many Jews lived in your community, Cantor?
+\par YM:\tab 36.
+\par NL:\tab Oh my.
+\par YM:\tab 36 families, and maybe it's worthwhile to mention that the little community of Csepa had at one time close to 30 }{\i\fs24 yeshivah bachurim}{\fs24  in different }{\i\fs24 yeshivot}{\fs24 . 30.
+\par NL:\tab Extraordinary.
+\par YM:\tab And this is what pushed us.  We wanted to be, to know a little more, and if Chaim knew this much, and got let's say }{\i\fs24 Haftorat Torah}{\fs24 , Moishe wanted to have the same thing, and this is...
+\par NL:\tab You were high achievers.
+\par YM:\tab Right.
+\par NL:\tab What were your relations generally with the non-Jewish community?  You've told us about the antisemitism of the children, but, let's say, father's relations with his non-Jewish neighbors?
+\par YM:\tab Very respectful.  Very respectful.  Because firs
+t of all they depended on him to a degree.  They worked for him to a degree.  But let me talk about two particular cases, and I think this would be reflective on what we are talking, and in answer to your question.  On one side of our house, because we li
+ved in a house, a tremendous house, the family who lived alongside of us was the Greek Orthodox family.  They had sons and daughters living in the same place, but I'm talking about the original family.  On the other side they were so-called "Reformed"...
+
+\par NL:\tab Christians.
+\par YM:\tab Christians.  We both, we were in the best of...
+\par NL:\tab Terms.
+\par YM:\tab ...terms.  They both, my mother spoke to the old lady on one side in Russian or Hungarian.  They spoke to each other, they exchanged views, but we knew that inside, deep, ther
+e is a certain hatred because they were extremely devout Catholics, Greek Catholic Christians, and they were immensely under the influence of their clergy.  At the time, which I can't remember, at home, we felt that the Reformed Christians, whatever denom
+ination the Reformed movement may belong to, they were a little more lenient.
+\par NL:\tab Yes, more modern.
+\par YM:\tab More modern.  We played together with these boys, with the children all together.  We sang their songs, we went to the same school...
+\par NL:\tab So, it was a relatively benign situation.
+\par YM:\tab Yes, yes.
+\par NL:\tab There were no antisemitic episodes of violence?
+\par YM:\tab No, and if they are thinking of acts like this sort, let's say, pogroms and so on...
+\par NL:\tab Yes.
+\par YM:\tab ...they were very, very far from our, from our life.
+\par NL:\tab Yes.  And what large town were you close to?
+\par YM:\tab We were close to two towns.  One is Anagy Szo'llo's, that's spelled A-N-A-G-Y, second word, S-Z-O-'-L-L-O'-S, and our district capital, let's say, was Halmi, H-A-L-M-I.
+\par NL:\tab And did you go into these towns from time to time?
+\par YM:\tab Oh, yes, many times.
+\par NL:\tab Many times.
+\par YM:\tab As a matter of fact, after 1918, when our part of the, our part of Hungary, became Czechoslovakia, I studied in Anagy Szo'llo's.  As a matter of fact, my first }{\i\fs24 yeshivah}{\fs24  was Anagy Szo'llo's.
+\par NL:\tab I see.
+\par YM:\tab I studied with a great man, a great }{\i\fs24 tzaddik}{\fs24  [very pious man], a great man, eh, Yosef Nehemiah Kormitzer.  He was my first }{\i\fs24 rebbe}{\fs24  in }{\i\fs24 yeshiva}{\fs24 .
+\par NL:\tab And you spoke about your going to school with the non-Jewish children.  Did you then go to the }{\i\fs24 heder}{\fs24  and to a public school?
+\par YM:\tab When I hear parents--and I had the privilege of teaching here in }{\i\fs24 Beth Judah}{\fs24 
+ of Logan when I was the cantor for about 18 years--and I hear parents consulting, constantly consulting, how to make Johnny to want to go to school, and to 
+want to do things, I'm always reminded of this, of this episode of my life.  We got up at 6 o'clock in the morning, took care of ourselves, even if we were five years old, now took the }{\i\fs24 koss in die hent and gevashen die finger}{\fs24 
+ [took the glass in hand, washed the fingers] and }{\i\fs24 gezukt Modeh Ani}{\fs24  [and said the morning prayer], and we went to }{\i\fs24 heder}{\fs24 
+.  And I will never forget it.  And in my profession, many many times it came back, the way we started, to study in the morning, either any one of the }{\i\fs24 Neviim}{\fs24  [Prophets], [sings] "}{\i\fs24 wai be mo--eh--ah--}{\fs24 " That }{\i\fs24 
+niggun}{\fs24  [melody], that was beautiful, it was nice, and this was the way we studied, and it was no question that the child will be nervous if I get him up at 6 o'clock in the morning.  That was no problem.
+\par NL:\tab This was expected.
+\par YM:\tab Right.  Eh, we, we stayed there, and }{\i\fs24 davened}{\fs24  [prayed], had the morning service.  Until 7:30.  Whenever we got there, 7:30.  At 7:30 we went home to have breakfast.  Because no one had breakfast before }{\i\fs24 davening}{\fs24 
+, of course.  And we had our breakfast and went to the school, that means, the elementary school, the regular elementary school, where we remained until eleven o'clock.  At eleven o'clock we rushed back to our }{\i\fs24 heder}{\fs24  and were in the }{
+\i\fs24 heder}{\fs24  until 12:00.  Then we studied }{\i\fs24 chumash}{\fs24 , that was the }{\i\fs24 chumash}{\fs24  period.  Then we went back home, had the dinner used to be in Europe, you know, in mid-day.  We had, eh, }{\i\fs24 Mittagmahl}{\fs24 
+ [mid-day meal], you know, and at two o'clock we were back in the public school.  We stayed in the public school until 4:00, sometimes 4:15, and as soon as we were dismissed there, we ran back to the }{\i\fs24 heder}{\fs24 ...
+\par NL:\tab Oh my.
+\par YM:\tab ...and repeated }{\i\fs24 Neviim}{\fs24  and studied }{\i\fs24 chumash}{\fs24 .  Whoever was ready for it studied }{\i\fs24 Mishnaios}{\fs24 , or }{\i\fs24 Gemura}{\fs24 .  Or whatever.  And we stayed there till about 6:00.  So this way of
+ learning, and this way of, of doing things is maybe not modern, but I think it was extremely helpful in our Jewish education.
+\par NL:\tab Extraordinary.  Such discipline that you must have...
+\par YM:\tab Yes.
+\par NL:\tab ...lived by.  And the play time was Sunday, I suppose.
+\par YM:\tab Play time was Sunday or whenever we could find the time for it.  Play was not, all work and no play was no problem there.  Whenever you could do it, you did it.
+\par NL:\tab Squeezed it in.
+\par YM:\tab Squeezed it in.
+\par NL:\tab Were you musical as a child?
+\par YM:\tab Yes.  Musical, not musically educated.  I was never musically educated, because I didn't have the chance.  There were no teachers.  I had a very sweet child's voice as a child.  I knew, of course, how to }{\i\fs24 daven}{\fs24 
+.  And I will never forget it.  I was maybe eight or nine years old when I }{\i\fs24 davened}{\fs24  in my, in our own congregation at home in Csepa, }{\i\fs24 maariv}{\fs24  [evening prayer], on eh, }{\i\fs24 Pesach}{\fs24 , }{\i\fs24 Shavuos}{\fs24 , }{
+\i\fs24 Succot}{\fs24 , whatever it was.  And eh, and there were, there were those additional prayers, those inserts, we call them }{\i\fs24 marouvis}{\fs24  [evening prayers], }{\i\fs24 lel shamurim}{\fs24 
+ [prayers at Pesach night], and so on and so forth.  And I did very well, I, I knew it was no problem.
+\par NL:\tab Eight.
+\par YM:\tab When I hear people prepare for the }{\i\fs24 Bar Mitzvah}{\fs24  a year or two earlier, I'm just angry, because if we were called and we were eight, nine years old, for a }{\i\fs24 maftir}{\fs24 
+ [last reading of the Torah], it was no problem.  I mean, it was, as a matter of fact the children were called as a rule, because that was the only }{\i\fs24 kibbud}{\fs24  [honor] a boy could get in those days, to be called for a }{\i\fs24 maftir}{\fs24 
+ [one who reads concluding verses of the Torah portion], because another }{\i\fs24 aliyah}{\fs24  he couldn't get; the }{\i\fs24 shevah korim}{\fs24  [seven readers] had to be adults.  So, we were the additional, an }{\i\fs24 achron}{\fs24 
+ [the last], or a }{\i\fs24 maftir}{\fs24 , we could be called too.
+\par NL:\tab This was all very natural in the cycle of your life.
+\par YM:\tab Yeh.
+\par NL:\tab And so your childhood was passed quite happily.
+\par YM:\tab Yes.
+\par NL:\tab And, do you have some memories of the war years?  Did your family have to move out?  Were any, were there any deprivations?
+\par YM:\tab No.  In 1914 when
+ the war broke out, as you well know now, I was ten years old.  This is just a side line.  I remember exactly the spot where I read the first announcement of Franz Josef [emperor of Austria/Hungary], who said, "I have thought it through very carefully.  I
+ 
+have given it all the consideration, and we must step in..." and so on and so forth, "the war".  The war years I remember very well because there was terrible pressure on all of us.  Because you have to know that we lived right underneath the Carpathian M
+o
+untains.  And the first lines maybe were about 100 km, which is about 60-65 miles away from us.  But I remember particularly during the war two years, when people who lived at the very end of the Galician part of Austro-Hungary, had to evac-, be evacuated
+ and evacuated, and came to us before }{\i\fs24 Pesach}{\fs24 .  What part of the war that was, I don't remember any more, but these people, about 60 families, came into our little community before }{\i\fs24 Pesach}{\fs24 
+, and I will never forget it.  Everyone was put up.  At families, my father, }{\i\fs24 zichronah l'bracha}{\fs24  [of blessed memory], gave a special, gave special permits to use on that }{\i\fs24 Pesach kitniyot}{\fs24 
+ [forbidden food].  He consulted with his rabbi, and they gave permission not only for }{\i\fs24 matzoh}{\fs24  or potatoes or what, but }{\i\fs24 kitniyot}{\fs24 .  In other words, vegetables...
+\par NL:\tab Baked beans
+\par YM:\tab Beans which you wouldn't eat normally.  So, all these families were put up.  I think this was repeated in '15, '16, '15 and '16, because as the war went on, either the Russians pushed the Austro-Hungarians back, or the 
+Austro-Hungarians pushed the Russians back, but the war went on in that part of the world, very close to us.
+\par NL:\tab Very close.
+\par YM:\tab Ya.
+\par NL:\tab But you weren't involved in the...
+\par YM:\tab We were never evacuated.  No.
+\par NL:\tab ...war actually.
+\par YM:\tab We had, of course, my mother's brother in particular, you may even know about him, Dr. Moishe Bolgar...
+\par NL:\tab The, the...
+\par YM:\tab Braun, original name.  His original name was Moishe Braun.  He was a lawyer by profession, and a first rate Hebrew novelist and writer and translator and, so he was at the battlefield all the time.
+\par NL:\tab A soldier.
+\par YM:\tab A soldier.  And we were under his, under this pressure that we were terribly scared for him.
+\par NL:\tab For him.
+\par YM:\tab He was like more than an uncle to us.  And we constantly were scared.  He was then, later on during the war he was the, the man responsible for a military newspaper called }{\i\fs24 Manilova}{\fs24 
+, where he was still in great danger all the time, but at least he didn't have to stay in the first line and shoot at someone.
+\par NL:\tab Yes, and, the end of the war meant changes for your community.  The peace treaty.  What were the territorial changes that involved your town?
+\par YM:\tab No, first of all, before it came to the very end and before it was decided that our part of the world should belong to Czechoslovakia, or tha
+t Czechoslovakia should be called into being at all, there were the--you know that the war in Hungary, especially where we belonged to, that part of Hungary came to an end by the White Revolution, White Flower Revolution, I don't know how that Flower is c
+alled, but the Socialist movement became stronger, later on the Communist and here }{\i\fs24 Kun B\'e9la}{\fs24 
+ comes in--the one we mentioned before--the Hungary became Communistic.  If it was one or the other, especially if it was Communistic, some people suffered from that.
+\par NL:\tab And you were in what sector?
+\par YM:\tab We were in, you mean as a party?  The sector of the land?
+\par NL:\tab Yes.
+\par YM:\tab We were in the sector which was occupied once in awhile for shorter or longer periods by the Communist powers, I wouldn't even call it regime, beca
+use it was no regime, or when others came who were stronger, so we were occupied by the White, they called them at the time...
+\par NL:\tab The anti-Communists.
+\par YM:\tab Ya.  By the Red; by the Rumanians; by the Czechs; by the, you name it, we were occupied by these powers.  And this, of course, went on in the end of 1917, '18, up to '19.  I became }{\i\fs24 bar mitzvah}{\fs24 
+, as you can see it, in about '19.  After my }{\i\fs24 bar mitzvah}{\fs24 , I went to study in this Natsalutsch}{\fs24\super 1{\footnote \pard\plain \ql \li0\ri0\sa240\widctlpar
+\tx-360\tx0\tx720\tx792\tx1440\tx1584\tx2160\tx2376\tx2880\tx3168\tx3600\tx3960\tx4140\tx4320\tx4578\tx4752\tx5040\tx5544\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {1}{\fs24 \tab 
+\tab \tab \tab   }{May be Nagyhalasz.}}}{\fs24  [phonetic] }{\i\fs24 yeshivah}{\fs24 .  At the time when I went in 1919...
+\par 
+\par 
+\par 
+\par 
+\par 
+\par 
+\par 
+\par \sect }\sectd \linex0\headery791\footery1632\sectdefaultcl {\header \pard\plain \ql \li0\ri0\widctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9068\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i\fs24 
+\par }\pard \qr \li0\ri0\widctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9068\faauto\rin0\lin0\itap0 {\i\fs24 YEHUDA MANDEL    [1-2-\chpgn ]    
+\par }}{\footer \pard\plain \qc \li0\ri0\widctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i 
+From the collection of the Gratz College Holocaust Oral History Archive}{ 
+\par }}{\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}
+{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl8
+\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}\pard\plain \qj \fi540\li0\ri0\sl361\slmult0\widctlpar
+\tx-360\tx0\tx720\tx792\tx1440\tx1584\tx2160\tx2376\tx2880\tx3168\tx3600\tx3960\tx4140\tx4320\tx4578\tx4752\tx5040\tx5544\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i\fs24 Tape
+ one, side two:}{\fs24 
+\par 
+\par NL:\tab Now you were saying that your area was in the hands of a whole variety of occupation forces.  Do you have some impressions of any of those particular periods?  Did you suffer especially under any particular occupation, Cantor?
+\par YM:\tab I myself as a child, of course, knew very little what's going on.
+\par NL:\tab Yes.
+\par YM:\tab Because finally in 1917 I was still only 13 years old.
+\par NL:\tab Yes.
+\par YM:\tab However, what I remember and, these, I don't know if those are interesting observations or not, I remember, for i
+nstance, that we had a dog, and the Rumanians came and shot the dog.  My brothers and sisters, they buried the dog and cried for the dog.  This made a very deep impression on me.  I know that the dog was laying around there dead [chuckling] and they didn'
+t bury him, they wanted me to be home to, to bury him, too [chuckling].  So this kind of childish, eh...
+\par NL:\tab Was this part of the anti-Jewish feeling on the part of the Rumanians, do you suppose?
+\par YM:\tab No, it was rather to make the people feel that they are in charge.
+\par NL:\tab I see.
+\par YM:\tab Now they went from house to house and picked up from flour, from sugar, from chickens, from soap, you name it, and they took it away from the family.  So this kind of thing, and this, and they were, it wasn't limited, this kind of 
+activity was not limited to the Rumanians only, to any one who came, with the exception of the Czechs.
+\par NL:\tab Ah yes.
+\par YM:\tab They came well provided.  When they came, they came orderly, in an orderly fashion.  You know, of course, that the Czechs, many of them, 
+were administrators of the Austro-Hungarian Empire already, and they knew very well how to handle people, most of them did.  Of course, in the moment they took over, things started to quiet down, and people knew that if they have a chicken, the soldiers w
+o
+n't come to take it away from them, or, if they had, let's say, geese, fat, or lard, or whatever, not like the Rumanians or the others, they won't take it away from them.  Stores started to open up again.  Materials in the stores started to appear.  Shoes
+ were available.  For years no shoes were available in our vicinity.  You couldn't get a pair of shoes.  I will never forget it.  When I went to Nagyhalasz [phonetic] }{\i\fs24 Yeshiva}{\fs24 
+, I still had those little slats made out of wood.  This is the way shoes were manufactured instead of soles.  So, this, these are my impressions.  Of course, what can a thirteen-year-old know...
+\par NL:\tab Yes, yes.
+\par YM:\tab ...in this kind of a boiling world.
+\par NL:\tab Yes, did your parents ever talk to you or to the children about the Bolshevik period of occupation?
+\par YM:\tab In my parents' mind, and I have to say this quite honestly, rightly or wrongly, Bolsheviks, because we were born, grew up, and lived in a different society, whatever was Red, whatever was Bolshevik, was poison.  They just couldn't, they 
+couldn't even get to the point, I'm afraid, to consider it.
+\par NL:\tab But this was how most Jews felt, I believe.
+\par YM:\tab I would say so, yes.
+\par NL:\tab Yes, there was a lot to fear.
+\par YM:\tab Yes, a lot to fear.
+\par NL:\tab A lot to fear.
+\par YM:\tab A.  The financial standings of everyone were in danger, and second, the religion...
+\par NL:\tab Anti-religious...
+\par YM:\tab ...which was their life...
+\par NL:\tab Of course.
+\par YM:\tab ...which was their, their mainstay, was constantly in danger.
+\par NL:\tab Of course.
+\par YM:\tab And we heard that after, I don't know, we knew about all the troubles, let's say the,  the Russian Czar and his family and his generals gave to the Jewish population of Russia, we knew about all that, and we were sorry that they were killed.  But 
+}{\i\fs24 Fonya-ganef}{\fs24  [Russian thief], as we called him in those days, and as he was called by the people who came to us, eh, we knew very well what happened to them, and we couldn't really, so to say, say }{\i\fs24 kaddish}{\fs24 
+ after them.  We were sorry as human beings that they were killed, but we knew that religion is out, and no more }{\i\fs24 heder}{\fs24 , and no more }{\i\fs24 Mishnah}{\fs24 , and no more, no more, eh...
+\par NL:\tab No more property, no more private property.
+\par YM:\tab Right, yes, no more private property.
+\par NL:\tab A lot to fear.
+\par YM:\tab So from this you will see what our emotions and even logical considerations were.  Now my father, or mother, never sat down with us to have a political...
+\par NL:\tab Discussion.
+\par YM:\tab Political discussion.
+\par NL:\tab [chuckles]
+\par YM:\tab I mean in those days.  Among the boys I was the oldest, but my oldest sister wasn't even there.  She left Europe in 1913.  My younger sis
+ter got married and she didn't live in the same place where we lived.  I really did not attend too many, and didn't even have a chance, to get the feeling--just what I heard superficially--and, of course, if Reb Moishe or Reb Chaim said that this is terri
+ble, I had to think it is terrible.
+\par NL:\tab And, and it was.  It was.  Uh, now in 1918, 1919, what was the political setup that affected your town, Cantor?
+\par YM:\tab In 1918 and 1919, as I said, our part of the land changed owners, so to say, many many times, but in '19 I went to Nagyhalasz, to my first }{\i\fs24 yeshiva}{\fs24 
+.  Nagyhalasz at the time, already, was Czechoslovakia.  And there was a great relaxation.  Our village was divided by the, rather, about four kilometers from our village we had a river called Tisza, which comes from the high, up in the...
+\par NL:\tab Carpathian.
+\par YM:\tab Carpathian mountains.  And, eh, flew through, close by to our river, to our village.  When I used to come home in the first }{\i\fs24 z'man--z'man}{\fs24  is a semester, six months, you know--when I used to come home, in '19 
+or maybe '20, from Nagyhalasz, for a }{\i\fs24 Shabbes}{\fs24  to be home with my parents, we didn't need anything else, but a permit from the, Czechoslovakian police, let's say, or }{\i\fs24 Gendarmerie}{\fs24 
+, or whatever it was, that we are citizens or...
+\par NL:\tab Residents.
+\par YM:\tab ...residents of this and this village.  And even if we were stopped, we could pass.
+\par NL:\tab But your parents were technically within Hungary.
+\par YM:\tab Technically, they were within Hungary, yes.  Because it wasn't decided that this wouldn't be Hungary any more at the time.  Whe
+n then this other side of the Tisza was, eh, adopted to be also Czechoslovakia up to a certain point, then things relaxed in our village as well.  But in Nagyhalasz, really we didn't have this when I got there anymore, because Nagyhalasz, as such, because
+ it was on the right hand side of this river, immediately was decided that this will be part of Podkarpatska Rus, yes, but it will belong as such, eh, to the Czechoslovakia.
+\par NL:\tab Czechoslovakia.
+\par YM:\tab Czechoslovakia.  Now you know that Czechoslovakia consisted of Podkarpatska Rus, Slovakia, Moravia, eh...
+\par NL:\tab Bohemia.
+\par YM:\tab Bohemia and so on.  So, therefore, this was just a part of it.  Where we lived was part of Podkarpatska Rus, all of it belongs, now, of course, to Russia.
+\par NL:\tab To Russia, yes.  And did you live with a private family, or did you live in the }{\i\fs24 yeshiva}{\fs24 ?  Was there a dormitory?
+\par YM:\tab This again is a very interesting story.  }{\i\fs24 Ich hab gegessen cost-teg}{\fs24  ["to support learning" families provided meals for }{\i\fs24 Yeshiva}{\fs24  students on different days], if you know what that is.
+\par NL:\tab Yes, yes.
+\par YM:\tab I eat a...
+\par NL:\tab Eating days.
+\par YM:\tab Right.  Every day at a different place.  I was just extremely lucky that my father, as a, a, as the owner of some...
+\par NL:\tab Land.
+\par YM:\tab ...land and so on had cattle to sell, and had sheep to sell, and had to buy things from, eh, materials for the farm and so on, so he had these friends, and I, just by coincidence, used to have my }{\i\fs24 cost-teg}{\fs24  at these families.
+
+\par NL:\tab I see.
+\par YM:\tab As a matter of fact, my sister-in-law, Chava, who lives in Israel, her father was an associate in some way of my father, and I had a }{\i\fs24 cost-tug}{\fs24  [singular], a day, to get my lunch or dinner, whatever in their house.
+\par NL:\tab Ah.
+\par YM:\tab So that I knew Chava Eizdorfer even before she was born.
+\par NL:\tab [Laughs].  Very interesting.  And this was a large }{\i\fs24 yeshiva}{\fs24 ?
+\par YM:\tab It wasn't a large }{\i\fs24 yeshiva}{\fs24 
+; it was a much bigger town than ours.  As I say it was the capital of this district, Ungvar, and, eh, I will say in Nagyhalasz, at the time probably have lived 350 Jewish, 400 Jewish families.  So that was already a big
+ town.  Nagyhalasz had a beautiful, big synagogue, of course Orthodox, two, three }{\i\fs24 betai medrushim}{\fs24  [class-rooms], and it was a nice, nice town.  The }{\i\fs24 yeshiva}{\fs24  as such was never big, and was never, there was never a }{
+\i\fs24 yeshiva}{\fs24  in Nagyhalasz in spite of the fact that the great Shmelcha Klein was the, the }{\i\fs24 Rov}{\fs24  in Nagyhalasz, it was never a }{\i\fs24 yeshiva}{\fs24  town until Yosef Nehemiah Kornitz, }{\i\fs24 zichron l'bracha}{\fs24 
+, came and organized this }{\i\fs24 yeshiva}{\fs24 .
+\par NL:\tab I see.
+\par YM:\tab Which consisted always of about 30, 35, less than 40 }{\i\fs24 bocherim}{\fs24  [young men].  And mainly youngsters.
+\par NL:\tab Youngsters.
+\par YM:\tab Young people, 14, 15, I myself studied in Nagyhalasz for two-and-a-half years; after that I already went to Ungvar, which was the capital city of Podkarpatska Rus, Uzhgorod, today it's called Uzhgorod.  Eh, and the }{\i\fs24 Rov}{\fs24 
+ was the chief rabbi of Podkarpatska Rus, Erbavram Yosef Greenwald, he was a }{\i\fs24 haver}{\fs24  of my father in his father's }{\i\fs24 yeshiva}{\fs24  in Ust.  So, I went to this }{\i\fs24 yeshiva}{\fs24 
+ to study.  After that, in other words, we didn't spend, I don't know, the time in Nagyhalasz until we became ready for, for anything like }{\i\fs24 hora'ah}{\fs24 
+ [teaching], or whatever it was.  We studied and got a good basic education there.  I myself was there, I think, for five }{\i\fs24 z'man}{\fs24  [semesters], that means two-and-a-half years.  After that I went to--started to study in Ungvar.
+\par NL:\tab Oh my.  And, were there any secular studies involved, or...
+\par YM:\tab No.
+\par NL:\tab ...did you have a tutor for those?
+\par YM:\tab In my, of course, in my village you couldn't, even if you did want to...
+\par NL:\tab No.
+\par YM:\tab ...go further than the fourth, maximum the sixth grade.
+\par NL:\tab Grade.
+\par YM:\tab Eh, so that when I came to Nagyhalasz and my uncle--this uncle which I mentioned before, was a great influence--to get some secular knowledge as well, I studied privately.  At the end of the season we took our exams i
+n a private way.  Let me mention something very interesting.  I never in my life had any exercises, any kind of painting or drawing; that was just strange to me.  }{\i\fs24 Farbrenggen di tzait oif a solcha narishkaiten}{\fs24 
+ [to spend time on such nonsense], who did it?  So, at the end, when I was prepared, ya, in Nagyhalasz, there was the middle }{\i\fs24 shule}{\fs24 
+, and the [unclear] it was called, where you could get above the elementary school four grades, four years.  So, I wanted to have at least get that what I could.  I don't know if my father ever discussed this question with, eh...
+\par NL:\tab Your uncle.
+\par YM:\tab No, my uncle he did, but with my rebbe.
+\par NL:\tab Oh.
+\par YM:\tab Yes, you know, that was a big thing.
+\par NL:\tab Of course.
+\par YM:\tab }{\i\fs24 Hachutzoniyot}{\fs24  [outside studies] wasn't simple to study.  I don't know i
+f he did or if he didn't, but he advised me, probably at the influence of my uncle, to go to A, B, C, D teachers, prepare with them, and at the end they gave us then, we went to school, that was a day assigned for...
+\par NL:\tab Examinations.
+\par YM:\tab For private examinations.  So, the man who gave me the exam in mathematics, and, eh, }{\i\fs24 tziur}{\fs24 , eh,
+\par NL:\tab Penmanship?
+\par YM:\tab No, eh, not penmanship, but you know, to...
+\par NL:\tab Composition?
+\par YM:\tab To eh, to draw something.
+\par NL:\tab Oh.
+\par YM:\tab Drawing.
+\par NL:\tab Drawing.
+\par YM:\tab You know, so he said, look, you did quite well in mathematics.  You did terribly, no, he said, you did terribly in this, my department and if you will pass mathematics, well, fine, I will let you pass.  If not, [laughs] you won't pass!
+\par NL:\tab [Laughs]
+\par YM:\tab [Laughs]
+\par NL:\tab Yah, interesting.  So now, you stayed in this town for two-and-a-half years...
+\par YM:\tab Two-and-a-half years.
+\par NL:\tab And then?
+\par YM:\tab Then I went to Ungvar.
+\par NL:\tab That's...
+\par YM:\tab U-N-G-V-A-R.
+\par NL:\tab And that was in Hungary?
+\par YM:\tab That was, that was, that was originally, originally it was Hungary.  At the time when I went there it was the capital city of Podkarpatska Rus.
+\par NL:\tab And how do you spell Podkarpatska Rus?
+\par YM:\tab  P-O-D, Karpatska as you spell, it's a separate word, of course.
+\par NL:\tab Yes.
+\par YM:\tab  Kar-Pat-Ski, just as I say it phonetically, Russ, R-U-S-S.}{\fs24\super 2{\footnote \pard\plain \ql \li0\ri0\sa240\widctlpar
+\tx-360\tx0\tx720\tx792\tx1440\tx1584\tx2160\tx2376\tx2880\tx3168\tx3600\tx3960\tx4140\tx4320\tx4578\tx4752\tx5040\tx5544\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {2}{\fs24 \tab 
+\tab \tab \tab   }{Podkarpatska Rus in }{\i Columbia Lippincott Gazetteer}{.}}}{\fs24 
+  And this was the capital city of Podkarpatska Rus.  In, at the time, 13, 14, two-and-a-half years, I was about seventeen, eighteen years of age, and I got to Ungvar, maybe even less, I don't know, I stayed in Ungvar for four-and-a-half years.
+\par NL:\tab Still studying?
+\par YM:\tab Still studying, and only this.
+\par NL:\tab At the }{\i\fs24 yeshiva}{\fs24  there?
+\par YM:\tab At the }{\i\fs24 yeshiva}{\fs24 .  There was a }{\i\fs24 yeshiva haramah}{\fs24 , it was a big }{\i\fs24 yeshiva}{\fs24 .  There were 300 }{\i\fs24 bocherim}{\fs24 , and there already it was divided in, eh, divisions and sub-divisions, younger }{
+\i\fs24 bocherim }{\fs24 who studied [unclear] just this.  As I have mentioned before, }{\i\fs24 maidneshiiur}{\fs24  [phonetic] and so on, so, others who studied up to this and this point, later on others who came up to, I don't know, the }{\i\fs24 
+horaah}{\fs24 , who, who stood for the }{\i\fs24 nisayon}{\fs24 , [exams] }{\i\fs24 paskan shailles}{\fs24  and so on.  There was, as I have said, this Erbavram Yosef Greenwald was my father's }{\i\fs24 haver}{\fs24  [friend] in his father's }{\i\fs24 
+yeshiva}{\fs24 , and he was one, he was the chairman of the committee who examined for the }{\i\fs24 horaah}{\fs24 .  }{\i\fs24 Horaah}{\fs24 , is you know, all kinds of other things.
+\par NL:\tab Yes.
+\par YM:\tab But among other things it is, eh }{\i\fs24 issur veheter}{\fs24 , [prohibition permitted] you know, }{\i\fs24 kashres}{\fs24  [dietary laws], and }{\i\fs24 Shabbes}{\fs24  and }{\i\fs24 yom tov}{\fs24 
+ [holiday] and so on, so, under his guidance, his son, who died here already, in Brooklyn, who was his successor later on, I studied with him, Yehoshua Greenwald, and together we were ordained, if I may call it that, to be }{\i\fs24 rabbonim}{\fs24 
+, and to, that was not yet }{\i\fs24 haturis rabbonis}{\fs24  [ordination], it was just to }{\i\fs24 paskan}{\fs24  and to }{\i\fs24 paskan shailles}{\fs24  in }{\i\fs24 issur veheter}{\fs24 .
+\par NL:\tab Mmm Hmm.
+\par YM:\tab Up to }{\i\f31\fs24 simank\'ecfiyot}{\fs24 .  That was the way it went.  And that's the way, the way it worked.
+\par NL:\tab That was the cycle.
+\par YM:\tab The cycle, yes.  That was the highest.  That was the most, eh, progress, the highest grade, let's say, achieved.
+\par NL:\tab Yes.
+\par YM:\tab So this is what I finished in Ungvar.  From Ungvar I was, at the age of 19 and older, probably, drafted into the Czech army.
+\par NL:\tab I see.
+\par YM:\tab I think we should stop here and now and we could probably, ya, and we will...
+\par NL:\tab We'll continue, all right, thank you very much, eh.
+\par NL:\tab We are continuing the interview with Cantor Mandel, March 3rd, 1982, Nora Levin interviewing.  Cantor Mandel, would you now tell us the circumstances under which you, went into the Czech army, and your experiences in the army?
+\par YM:\tab I see, eh...[tape turns off briefly]
+\par 
+\par YM:\tab I'm sorry for this interruption.  You asked me to tell you how I got into the Czech army?  Of course I was drafted and, like anybody else, at the time [phone rings; pause]
+\par NL:\tab All right.
+\par YM:\tab Is this O.K.?  The draft into the Czech army went like everywhere else.  You had to register, and, the draft board saw you in March, for what I had to come home especially from my }{\i\fs24 yeshiva}{\fs24 , and I was found, eh, able to, to serve.
+
+\par NL:\tab What year was this?
+\par YM:\tab That was in 1924.  1924.  I then, when I was drafted, I went back to }{\i\fs24 yeshiva}{\fs24 
+ for my last exams which I had to go through, and with that I started to look, maybe for a position for the High Holy Days, because draftees had to report October the 1st, and on October the 1st, was I think  }{\i\fs24 erev}{\fs24  or }{\i\fs24 
+Rosh Hashanah}{\fs24 , I tried out in a few places.  Finally I, performed the services, I }{\i\fs24 davened}{\fs24 
+, and served in Ruzomberok [phonetic], that's called Russaveit [phonetic] eh, where, eh, a high military official who was a physician who had a sanatorium in 
+Detatra [phonetic] told me I shouldn't be concerned, he will give me proper documentation that I got sick on the way to Olm\'fc
+tz where I had to, mail some letter that I had to report, and this would be accepted.  The only thing what will happen is that I wil
+l have to serve a few days, and in this case it was ten days, after I am finished with my year-and-a-half of service.  It happened that way in 1926 I got out of this early Czech military service.  A very interesting thing and maybe worthwhile to mention j
+u
+st for one reason, how the Czech, who--how liberal and wonderful they were.  In the Czech army, any candidate for the priesthood, the rabbinate, or such, had the right to, after basic training, which everyone had to go through, and that was ten weeks, he 
+h
+ad the right to report or to request or was even asked if he wants to go to a school, school for military administration was one way, the second possibility was a school in different hospitals to learn and study and become a male nurse.  I chose the hospi
+tals, the military nursing, and went through all kinds of courses, and finally I was placed in Olm\'fctz}{\b\fs24 , }{\fs24 which is a town, Olomoudz}{\fs24\super 3{\footnote \pard\plain \ql \li0\ri0\sa240\widctlpar
+\tx-360\tx0\tx720\tx792\tx1440\tx1584\tx2160\tx2376\tx2880\tx3168\tx3600\tx3960\tx4140\tx4320\tx4578\tx4752\tx5040\tx5544\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {3}{\fs24 \tab 
+\tab \tab \tab   }{Alternate spelling: Olomouc.}}}{\fs24 , spelled A-L-O-M-O-U-D-Z, where I served in their }{\i\fs24 basheli}{\fs24 , in, in the hospital there, }{\i\fs24 Nahradisko}{\fs24 , and }{\i\fs24 Novy Svet}{\fs24  [all phonetic].
+  Those were the two places where I served.  The patients, the soldiers, came in the morning, with this kind, that kind, the other kind of illnesses, and we always had two doctors.  It happened that the commandant of the school, who was a, eh, colonel, a 
+Jew, Dr. Galner, I will never forget his name, he was the head of these departments where I served.  So, I served there, and from there I was discharged from the military.
+\par NL:\tab That would be 1927?
+\par YM:\tab 1926.
+\par NL:\tab 1926.
+\par YM:\tab '24 I was taken, '26 I got out.  The 
+military service at the time was a year-and-a-half, eighteen months.  From there, I went home and, eh, as every Jewish father, my father saw my future very well-established and wanted me to get married and so on.  I, however, as I have mentioned before, g
+o
+t infected with music.  It happened partially that when I came in, as a, as a, into the military, one day a lieutenant came out to the exercises and asked who could help him out.  He was studying a new operetta for the, to be performed on the celebration 
+of Masaryk's birthday, and he would like some people who could sing to help him, and so on.  So my friends, who knew me from }{\i\fs24 yeshiva}{\fs24 , they heard me }{\i\fs24 daven}{\fs24 
+ there and all that, said, "He has a nice voice."  So, this man arranged with my commanding officer to see him.  I didn't know one musical note at the time, not at all.  And this wonderful human being was patient with me and taught me }{\i\f31\fs24 Prodan
+\'e1nev\'ecsta}{\fs24 , the, the, ten, the Bride, whatever...
+\par NL:\tab Bartered Bride?
+\par YM:\tab Ya.
+\par NL:\tab Smetana.
+\par YM:\tab Smetana.  He taught it to me.  Of course I didn't know, I was never in a theater.
+\par NL:\tab Uhm hmn.
+\par YM:\tab So, I didn't know when to go out and when to come in, but he pushed me in and pulled me out, just like, but I knew the music very well, because music, a musical ear I had.  I learned everything by ear.
+\par NL:\tab Interesting.
+\par YM:\tab Later on, then, when I sang many other occasions, I used to speak--there were many Hungarian speaking people who didn't even learn Czech--so I used to be their, eh, to, I used to speak to them at celebrations and so 
+on.  But when I came home, we had to make a deal with my father.  I am not going to get married.  I wanted to go straight back, whatever it will take, but study music.  One more thing, maybe is interesting to characterize how the Czechs handled things.  T
+his very superintendent of performances in Olomouc told me that if I want to, the military division, that division of my, of my military, of the military...
+\par NL:\tab Experience.
+\par YM:\tab Ya.  Would pay all the expenses to train me for the opera.  He felt I had good e
+nough a voice for that.  However, the only thing I have to be, I have to sign for, is four years study is a minimum, and then I have to sign that wherever I will be assigned into a chorus or to parts in an opera or operetta or so on in the state theaters,
+ 
+I will have to do that.  I will have to sing, or to perform, whatever.  I thought it was a tremendous idea.  I had an uncle in, who was a little more liberal than my parents, who was a lawyer by profession, so I wrote to him and told him about the great t
+h
+ing what I'm looking forward to.  He understood and went over to my village from a place where he lived was about 40km.  He went over on Sunday and sat with my parents, with my father mainly, for hours, and tried to explain to him what great future is bef
+o
+re me.  My father had one answer, and he told my mother, this is the way my uncle told it back to me, my mother's name was Rezel.  "Rezel, we"--Moishe was my uncle's name--"Moishe is here for a very special purpose, to tell us what he told us, and you hea
+rd what he said.  If this comes through, then we had four sons.  We will be left with three."  It was a terrible shock to me.
+\par NL:\tab Mmm.
+\par YM:\tab And even to my uncle.  But when he wrote to me about it.  I just didn't have the, the discipline was so immense, was s
+o unbreakable, that I just couldn't see my myself to, to do anything else but to accept his decision.  So, we made the deal with my father.  When I came back after I was done with my military service, we spoke about this, and he told me he will never agre
+e I should be a dingle dangle singer or be an operetta singer, whatever.  Anyway, we made a deal, not to get married, what he wanted, and not to join the Academy of Music in Br\'fc
+nn or Prague, as the Superintendent of Music suggested.  So, I went back to }{\i\fs24 yeshiva.  }{\fs24 And I studied for two years in Pressburg, where I stood again before the }{\i\fs24 va-adat}{\fs24  [board of Rabbis] and I am the }{\i\fs24 musmacht}{
+\fs24  [ordained Rabbi] today of Pressburg }{\i\fs24 yeshiva}{\fs24 .  Maybe this is the only good thing which comes from this.
+\par NL:\tab Were you contented in that experience,  Cantor?
+\par YM:\tab In Pressburg, you mean?
+\par NL:\tab Yes.
+\par YM:\tab I was, because I made myself available to many, of course you know that the congregations in Europe were organized, there was one community, one }{\i\fs24 kehillah}{\fs24 , but there were many small synagogues.  And I was always invited to }{
+\i\fs24 daven}{\fs24  here, to }{\i\fs24 daven}{\fs24 
+ there, and I was paid for it.  And this money which I made there, I could continue my musical studies right in Pressburg proper, and eventually travel to Vienna and pay for my lessons, which I got there.
+\par NL:\tab These were vocal lessons?
+\par YM:\tab Vocal lessons, musical lessons.  I didn't know, I had no musical training.
+\par NL:\tab Did you go to a conservatory, or...
+\par YM:\tab Later on.
+\par NL:\tab Later on.
+\par YM:\tab In Vienna.  In 1926 I finally...
+\par 
+\par \sect }\sectd \linex0\headery791\footery1632\sectdefaultcl {\header \pard\plain \ql \li0\ri0\widctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9068\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i\fs24 
+\par }\pard \qr \li0\ri0\widctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9068\faauto\rin0\lin0\itap0 {\i\fs24 YEHUDA MANDEL    [2-1-\chpgn ]    
+\par }}\pard\plain \qj \li0\ri0\sl361\slmult0\widctlpar\tx-360\tx0\tx720\tx792\tx1440\tx1584\tx2160\tx2376\tx2880\tx3168\tx3600\tx3960\tx4140\tx4320\tx4578\tx4752\tx5040\tx5544\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\fs24 \sect }\sectd \sbknone\linex0\headery791\footery1632\sectdefaultcl {\header \pard\plain \ql \li0\ri0\widctlpar
+\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i\fs24 
+\par }\pard \qr \li0\ri0\widctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 {\i\fs24 YEHUDA MANDEL    [2-1-\chpgn ]    
+\par }}{\footer \pard\plain \qc \li0\ri0\widctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i 
+From the collection of the Gratz College Holocaust Oral History Archive}{ 
+\par }}\pard\plain \qj \li0\ri0\sl361\slmult0\widctlpar\tx-360\tx0\tx720\tx792\tx1440\tx1584\tx2160\tx2376\tx2880\tx3168\tx3600\tx3960\tx4140\tx4320\tx4578\tx4752\tx5040\tx5544\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i\fs24 Tape two, side one:}{\fs24 
+\par }\pard \qj \fi540\li0\ri0\sl361\slmult0\widctlpar\tx-360\tx0\tx720\tx792\tx1440\tx1584\tx2160\tx2376\tx2880\tx3168\tx3600\tx3960\tx4140\tx4320\tx4578\tx4752\tx5040\tx5544\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 {\fs24 
+\par NL:\tab This is a continuation of our interview with Cantor Mandel, tape two, side one.  Yes, you were saying about your musical education?
+\par YM:\tab I got my musical education from 1926, '27, '28, when I already used to go to Vienna and had lessons in Pressburg.  In 1928, finally,
+ I went over to Vienna and settled there.  The way to settle there for me was one way.  I became the cantor of a small congregation which was supposed to have been built later on, a beautiful temple and so on, but when I came there, the name of it was Mon
+tef-Temple Montefiore, }{\i\fs24 Tabelstrasse achtunddreissig}{\fs24 
+ [38].  That's where I functioned as a cantor and got a salary which was very small, but I taught a lot.  I had children to prepare for bar mitzvahs and gave lessons in Talmud and other Hebrew lessons.  And
+ this is the way I maintained myself in Vienna while I was studying, was the cantor of this little congregation, and did other work, and studied.  Now there I was already a student in Neues Wiener Konservatorium.  That was the place where I studied music 
+and voice and piano and so on and so forth.
+\par NL:\tab You had the best of both worlds.
+\par YM:\tab Ya, right.
+\par NL:\tab So, tell me a little about your impressions of the Jewish community as you experienced it.
+\par YM:\tab In Vienna?
+\par NL:\tab In Vienna, yes.  And whether there were any ominous signs of antisemitism or the coming of the Nazi movement.
+\par YM:\tab If I will tell you that at the time when I was in Vienna, or a little before that, a school was organized there for the training of }{\i\fs24 Bet Sefer L'hazanim Vemorim}{\fs24  [school for cantors and teach
+ers].  However, in order to understand how it could be organized, you have to know that at the time I was fortunate to meet and the school was lucky, I think, to have been organized at the time when the chief rabbi of Austria in Vienna, of course, was Rav
+ Chajes.
+\par NL:\tab How is that spelled?
+\par YM:\tab C-H-A-J-E-S.
+\par NL:\tab Oh, very well-known.
+\par YM:\tab Sure.
+\par NL:\tab Yes, of course.
+\par YM:\tab A person who was not only the great }{\i\fs24 lamdan}{\fs24  [scholar], was not only the, the, extremely well educated person in every field, but he loved, he was ne
+ver married, and he always told us that we are his family.  He used to come into school.  I will never forget it and I consider it as a great, eh, as an extraordinary occurrence in my life.  Rav Chajes came in to school and at the time he prepared somethi
+ng, either it was }{\i\fs24 Yom Kippur katan}{\fs24  service or something or }{\i\fs24 minha}{\fs24  for weekdays, and he looked at me and came over to me and got a hold of my cheeks and said, "}{\i\fs24 Solche bokerim darfen mir haben hier}{\fs24 
+ [We need such young men here!]."
+\par NL:\tab [Chuckles] Oh, how beautiful.
+\par YM:\tab Eh, he heard about me, about my background, and so on.  But maybe there is another thing.  After I studied for about two years or something like that in Vienna, in the meantime I went to }{\i\fs24 Bet Sefer L'hazanim Vemorim}{\fs24 
+, went, had these teachings, was the cantor of this small congregation, something happened in Vienna.  The 20th District of Vienna looked for a }{\i\fs24 hazan}{\fs24 
+ at the time.  And this is again interesting maybe for people to know.  It's history.  The Vienna congregation, even for its smallest distri
+ct, like Florence, or it was the name of the 20th District, was looking for a cantor, so they, in those days there was no Cantor's Assembly and there was no placement commission, so they put an announcement in the newspapers that this-and-this age, and th
+i
+s-and-this quality and so on and so forth is needed, and whoever felt like applying, applied.  One hundred and eighteen people applied in 1928, young people, all talented, all very fine young upcoming people, and out of this amount of people, about 12 wer
+e chosen, not for an audition, but }{\i\fs24 f\'fcr eine Vorprobe}{\fs24 
+ [pre-audition].  That means before they were given permission to perform in synagogue, the board, the rabbis, the music educators, the conductors in the different temples, the cantors of the different tem
+ples, came together in no other place but the Seitenstetten Temple.  And there they listened to him, and each in his department posed questions to the candidate.  If the young man passed, then he got permission to give an audition.  I had one of my teache
+rs, who was the last chief cantor of the Seitenstetten Temple in Vienna, Heinrich Fischer, was the chief cantor of Vienna because he was Sulzer's successor.  And he arranged for someone from Nuesatz Ujvid\'e9
+k, Novi Sad, in Yugoslavia, where the congregation w
+as also seeking a cantor.  He arranged for a man by the name of Mr. Gross to be able to attend and listen to the people, to the twelve or whatever who will hear there.  He had to have special permission for it, but he got it for him.  This Mr. Gross came 
+from Germany, from the Fair, went home, on his way back to Yugoslavia he stayed in Vienna, I don't know what, and came to this eh...
+\par NL:\tab Examination?
+\par YM:\tab Examination, yes.  He heard me and told my teacher he likes what he heard and he would like me to come 
+down to Yugoslavia--Novi Sad--for an audition.  At the same time in my family there was a lot of trouble.  One of my sisters who was the immediate child after me, had }{\i\fs24 galoppierende Tuberkulose}{\fs24 
+ [consumption].  And my parents weren't in good financial standi
+ngs, and I was just sick all the time to help her, to try to get her to the doctor or somewhere, where we thought at least she would get some help.  So I knew I had to get a bigger position, more money, and to help.  My sister, unfortunately, died.  All m
+y efforts didn't help her.  And, eh...
+\par NL:\tab What was her name?
+\par YM:\tab Rivka.
+\par NL:\tab That was Rivka.
+\par YM:\tab Rivka.
+\par NL:\tab Yes.
+\par YM:\tab Eh...
+\par NL:\tab Were you able to go to Yugoslavia?
+\par YM:\tab Yes.  I spoke to my teacher, Chais Fischer, }{\i\fs24 Hazan}{\fs24  Fischer, and he arranged for me at a cert
+ain date to go to Yugoslavia.  At the meantime, one of the rabbis, Dr. Bach in Vienna who heard me there, said his son-in-law is the rabbi in Groningen, Holland, and he thinks I am the ideal candidate for his congregation.
+\par NL:\tab Well well.
+\par YM:\tab So, I went to Yugoslavia.  I will never forget it.  I think it was the 19th of April, 1928.  And I gave an audition.
+\par NL:\tab It was in Novi Sad?
+\par YM:\tab In Novi Sad.  N-O-V-I, next word is capital S-A-D, Yugoslavia.  I say this because I will come back to another point in the same place later.  So I went down there and I }{\i\fs24 davened}{\fs24 ...
+\par NL:\tab Excuse me, before we go there, eh, Cantor, did you detect any signs of growing Nazi activity in Vienna?
+\par YM:\tab In Vienna?  Yes, a lot.
+\par NL:\tab Can you talk about that a bit?
+\par YM:\tab Yes.  I used to spend a lot of time in the house of }{\i\fs24 Oberkantor}{\fs24 
+ Fischer.  And he had a son, Alex, who at the time was a student at the university.  And one day I--it's very clear in my mind--he came home and told his parents in Hungarian, because they came from Hungary and they sti
+ll spoke it, "Please, please, whatever the great position of the- eh, to be Sulzer's successor, whatever money you make here, Father, whatever comfort you have here, please don't remain here, because this thing will just fall apart.  It is impossible.  To
+day in this department of the university there were fights, and Jewish people were beaten up and weren't let go to listen to the lectures, and so on."  But you could see it even sometimes in the streets and, eh...
+\par NL:\tab For example?
+\par YM:\tab For example, eh, men f
+ighting outside and a hundred people around.  No one knew what it's all about, so someone said, "Yes, this man called the other man, 'You dirty Jew.'  And this one couldn't take it and started a fight."  Another thing, people used to sit in the coffee hou
+s
+es when people used to walk by--and I experienced this myself--and they made just remarks, "This is stable, the Jewish stable, where they sit around and they do nothing, they just live on our money and our land, and so on and so forth."  It was not as org
+anized as it became later, but it was...
+\par NL:\tab It was...
+\par YM:\tab Brewing.
+\par NL:\tab And discernible.
+\par YM:\tab Yes.  Yes.  Definitely yes.
+\par NL:\tab Was there a Nazi movement yet that you recall?  An Austrian Nazi movement?
+\par YM:\tab I was told that in Oberstreig at the time, around Gra
+z and Linz, there were already people communicating with German Nazis and, you have to know, and you know it just as well as I do, that in the middle 20's, already '23, '24, Hitler was already arrested, was already in jail, and was already writing his eh.
+..
+\par NL:\tab }{\i\fs24 Mein Kampf}{\fs24 .
+\par YM:\tab }{\i\fs24 Mein Kampf}{\fs24  and so on and so forth.  And that influenced many people.  When I see for instance that with, }{\fs24\ul The Sound of Music}{\fs24 
+, I see the same thing what I really experienced.  How many times did it happen that we wanted to go in Austria especially is eh famous that people bought for }{\i\fs24 Ausfl\'fcge}{\fs24 , eh... [excursions]
+\par NL:\tab Outings?
+\par YM:\tab Outings.  And how many times were we told, "Don't go there."  I don't know where, this place, that place, "'Cause there there is something preparing for this and 
+this day, and if a group of young Jews will be seen somewhere," though we didn't look like Jews but, "eh, there will be some trouble.  So you better don't make that trip."  You could see it officially.  I know that I, for instance, needed working papers, 
+and this small congregation didn't have too much influence, but they tried very hard to get it for me.  They couldn't, and I could stay in Vienna only illegally as a cantor, and legally as a student.  Because as a student I was allowed to stay there.
+
+\par NL:\tab So Austrian citizenship was out of the question.
+\par YM:\tab Oh, it was out of the question, sure.  It was out of the question.
+\par NL:\tab Did you have any knowledge of Mayor Luger, was he in office at the time?
+\par YM:\tab He was before my time.
+\par NL:\tab He was before your time.
+\par YM:\tab He was before my time.  I know that he was a strong antisemite, but I never knew him.  He was before my time.
+\par NL:\tab Now was the milieu different in Yugoslavia at Novi Sad?  Was it more benign with respect to Jews?
+\par YM:\tab Maybe it's worth it--yes, it definitely w
+as, because the Serb people who took over really this part of former Hungary were depressed themselves for many many hundreds of years, and they knew what it is to live under an oppressive government, and they were very nice and pleasant, and the Slav peo
+ple as a rule, I mean if you are talking about Serbs, about Ruthenians, until they are poisoned...
+\par NL:\tab Instigated...
+\par YM:\tab Instigated, there's no trouble with them.  I mean you can live with them.  I don't say they loved Jews.  But when you have for instance 
+a priest who will tell them nothing else but that the Jews killed Christ and this and that and the Jews, be careful before Passover, because they need your children's blood for the Passover }{\i\fs24 matzah}{\fs24 
+, then of course, a fire starts.  It's terrible.
+\par NL:\tab How large a Jewish community was in Novi Sad?
+\par YM:\tab In Novi Sad there were 1,000 Jews, about 500 families, one temple--beautiful, with an organ, with a choir of 40, with, eh, it was a beautiful community.  And I was there for six years.
+\par NL:\tab And you were quite happy?
+\par YM:\tab I was very happy there.  As a matter of fact, I married there my wife, may she rest in peace, Zahava.
+\par NL:\tab Zahava.  What year was that?
+\par YM:\tab We got married in 1930.  June the 30th.
+\par NL:\tab And so you were there until '34.
+\par YM:\tab Yes.
+\par NL:\tab I see.  And it was a very contented time for you?
+\par YM:\tab A beautiful time in my life.
+\par NL:\tab What was happening to your parents in the meantime?  Were they...
+\par YM:\tab My father died in 1930, formal death that he had heart trouble and lung trouble and all kinds of things, he died in 1930.  At the same time in 1930 while being the cantor of, eh, }{\i\fs24 Oberkantor}{\fs24 
+ of Novi Sad, I was elected now without any audition, in Vienna again.  This time it was }{\i\fs24 der f\'fcnfzehnte Bezirk}{\fs24 .  It was a very elegant, beautiful, section.
+\par NL:\tab That's the fifth...
+\par YM:\tab The fifteenth.
+\par NL:\tab The fifteenth.
+\par YM:\tab The Temple of the Fifteenth District.  And eh...
+\par NL:\tab Did you accept?
+\par YM:\tab I went to Vienna with my wife in 1930.  She didn't want to leave before--she was a teacher by profession--and she didn't want to leave before the ex
+ams are over, so we left in June.  By the time--the end of June.  By the time we got to Budapest where she had an uncle, this uncle was already at the station, and we wanted to go to Vienna, giving us a telegram from my uncle who, I told you before, who w
+ent to talk, speak up for me, to intercede.
+\par NL:\tab Who tried to intercede?
+\par YM:\tab "Don't ask questions.  Come straight over."  And the reason for it was that my father died.  We were in Budapest on a certain Sunday, and it was the thirtieth or whatever it was, th
+e first of July, and my father died Friday before, was buried on the same day, because, of course, my uncle wouldn't have done anything else.  So I was never at my father's funeral.  So when I went home, I sat  }{\i\fs24 shiva}{\fs24 
+ and [unclear].  So, eh...
+\par NL:\tab Did you return to Novi Sad?
+\par YM:\tab No, I went to Vienna and [unclear].  However, my appointment in, with }{\i\fs24 Obergeneralstabsrat}{\fs24  Bieck, who was the president of the congregation, was for the first or second of July.  And after the }{\i\fs24 shiva}{\fs24 
+ it was already the 10th or 8th of July.  By the time I got to Vienna it was the 12th of July.  And the secretary, Dr. L\'f6
+wenherz of the main congregation in Vienna, my--you asked me before about the citizenship in Austria--told me when I told him that one of my conditions to come to Vienna i
+s if the congregation, the community, guarantees me to become a citizen.  So he said--I was very young, and he was a middle-aged person, very well-educated--so he told me, "}{\i\fs24 Mein liebes Kind, die Staatsb\'fcrgerschaft k\'f6
+nnen wir nicht garantieren.  Das ist die Sache der Regierung.  Wir k\'f6nnen Ihren alles Andere geben.}{\fs24 "}{\fs24\super 4{\footnote \pard\plain \ql \li0\ri0\sa240\widctlpar
+\tx-360\tx0\tx720\tx792\tx1440\tx1584\tx2160\tx2376\tx2880\tx3168\tx3600\tx3960\tx4140\tx4320\tx4578\tx4752\tx5040\tx5544\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {4}{\fs24 \tab 
+\tab \tab \tab   }{My dear child, we cannot guarantee your citizenship.  Only the government can give you that.  We can give you everything else.}}}{\fs24 
+  So I--my wife was a teacher in Yugoslavia at this date, and I had this beautiful position, and we went back. However, we stayed in the Marienbad Hotel, I will never forget it.  And I looked out
+ at the quay and tears were dripping out of my eyes.  I was so sad that I can't come back to Vienna.  I loved Vienna.  I loved Vienna.
+\par NL:\tab It's an enchanting city, especially in this pre-war period, the inter-war period.  So...
+\par YM:\tab So after this...
+\par NL:\tab Your life flowed on then, in Novi Sad?
+\par YM:\tab Yes, after this it's a very interesting period.  As I say, up until '34, February, I was in Novi Sad.  I sang concerts in the Academy of Music in Budapest, here, there, I sang on the radio.  I started in 1930 the can
+torial music programs on the Yugoslav radio.  You may even have found something in those notes which I left with you, where there are letters and notes from the radio station in Budapest.
+\par NL:\tab Yes, I want you to identify those if we have time.
+\par YM:\tab Yes, I will, I will.
+\par NL:\tab Because we made copies and I think I have your original.
+\par YM:\tab I will.  I will.  So...
+\par NL:\tab It was a rich life.
+\par YM:\tab It was a very rich life.  Here, the following happened, probably in 1933, fall, after the holiday, in the fall, the }{\i\fs24 Chevrah Kadisha}{\fs24 
+ [burial society] in Novi Sad which was at the time 200 years old, because they started with Jews who came from Phoenicia and all the Middle Eastern countries...
+\par NL:\tab Turkey...
+\par YM:\tab Traveled through Turkey and all the other countries, and settled in Yugoslavia, and among other places, Novi Sad, so that }{\i\fs24 Chevrah Kaddisha }{\fs24 
+started to be active in that part of the world, 200 years ago at the time.  So, they, eh, this was a very big celebration, where the king, King Alexander, was represented by one of his gene
+rals, and the chief rabbi, Alkali, Dr. Alkali from Belgrade, came down and there was a tremendous banquet in the evening, but in the morning it started, the whole thing started with a celebration in the temple to have a service.  The details are not impor
+tant, but...
+\par NL:\tab But it was a momentous time.
+\par YM:\tab Yes.  But what is important is that a man by the name of Dr. Braun, who was at the time--a German fellow--who was at the time the director of the radio station, the national radio station, that is, the radio
+ station was run by the government there, you know, so, he was the director of that, and when he heard us with the choir and how beautiful it was, and all that, he came over to me after the service and said, "Could we come over once to pick up your servic
+e on Friday evening, or }{\i\fs24 Shabbes}{\fs24 
+ Saturday morning, and broadcast it?"  I said, "I couldn't tell you that.  You would have to talk to the rabbi, and the religious committee, and so on."  I spoke to the rabbi and saw right away that he will not agree.  He was 
+an extremely jealous person, and didn't want to give }{\i\fs24 koved}{\fs24  [show respect] to...
+\par NL:\tab Be showered on like that.
+\par YM:\tab Yes.  So anyway, eh, finally this got back and forth.  Finally we decided with this Dr. Braun that if he can't take the whole service from the
+ temple, I should come and give concerts in Belgrade, and so I went every three, four, five weeks [unclear] Belgrade and gave concerts and so on.  One day I get a letter from a man in Kovno, of all places.  He writes to me in Yiddish, "My dear friend, }{
+\i\fs24 Hazan }{\fs24 
+Mandel, I heard you on the radio on this and this date, and I liked what I heard, and I would like you to come down to Kovno to give a few concerts.  Concerning this, don't worry about money," he said, "it's my responsibility.  But in order to make it le
+gal, in a few days you will receive suggestions, a plan, plus an agreement from a concert bureau, Klavahoff [phonetic]."
+\par NL:\tab [chuckles]
+\par YM:\tab Klavahoff [phonetic], was the name of the concert bureau.  I remember!  In a few days I really received, I think it 
+was around January or something, now, of 1934.  This went on for three months in 1933 and so on.  But it took us a long time.  I get this, and I thought, one more thing is important, that my family, the family of my wife, was, all lived in Novi Sad, and m
+y
+ father-in-law, who was the rabbi of this congregation once upon a time, because he never learned the Serb language which became the official language of the community, he wasn't the rabbi or the associate rabbi but became the secretary general of the con
+g
+regation.  So I spoke to him, I spoke to the family and so on, and they, my mother-in-law, may she rest in peace, she said, "My dear child, you live in the same house where we are.  What are you missing?  Why do you want to go away?  What is it, what are 
+you really looking for?"
+\par NL:\tab Searching...
+\par YM:\tab Searching for.  And I didn't know what to answer.  But I answered, "I will come."  And we corresponded back and forth, and in February of 1934 I went down to Kovno to the house of this wonderful person who arran
+ged for me in his--he lived in a mansion--a wing of his house, with a car, with everything, whatever I wanted to go, at my disposal and so on, and I sang, I }{\i\fs24 davened}{\fs24  in Kovno, in the }{\i\fs24 Dobi Shakorshul}{\fs24  [phonetic] first }{
+\i\fs24 Shabbes}{\fs24 , then I sang a benefit concert for the, for a }{\i\fs24 yeshiva}{\fs24 , and then the next week we had a concert with the Lithuanian National Orchestra, rather in the Academy of Music there, and it was very nice.
+\par NL:\tab A concert of Jewish...?
+\par YM:\tab A concert, no, no,
+\par NL:\tab Secular.
+\par YM:\tab A mixture.
+\par NL:\tab But some liturgical music?
+\par YM:\tab Ya.  Yes.  Definitely yes.
+\par NL:\tab In the Lithuanian...
+\par YM:\tab In the Lithuanian...
+\par NL:\tab Musical Hall...
+\par YM:\tab In the Academy of Music.  Yes.  And accompanying was the symphony orchestra of the Lithuanian govern...
+\par NL:\tab What an experience for a young man.
+\par YM:\tab It was just overwhelming.  And I was there for two or three weeks.  I sent telegrams to extend my vacation, because I had vacation for two weeks, and suddenly one weekend, one }{\i\fs24 Shabbes}{\fs24 , I think the third }{\i\fs24 Shabbes}{\fs24 
+ or something, a gentleman is at the table with us, and this man, I think his name was Mr. Barkin, in whose house I stayed, introduces a man by the name Mr., eh, I can't remember his name now.  Anyway, introduces him, "This is the president of the }{
+\i\fs24 Grosse Chor Synagoge}{\fs24  in Riga.  It's my brother-in-law, Mr. Becker."
+\par NL:\tab Your brother-in-law?
+\par YM:\tab }{\i\fs24 His}{\fs24  brother-in-law, Mr. Becker.
+\par NL:\tab Barkin's brother-in-law.
+\par YM:\tab Ya.  This man was the brother-in-law of this Mr. Becker.  And Mr. Becker came to }{\i\fs24 shul}{\fs24 , heard me }{\i\fs24 daven}{\fs24 , and Sunday he tells me, "You know, we are seeking a }{\i\fs24 hazan}{\fs24 
+ for eighteen or nineteen months already, }{\i\fs24 Hazan }{\fs24 Rabitz }{\i\fs24 davened Rosh Hashonah and Yom Kippur}{\fs24 .  Our }{\i\fs24 hazan}{\fs24  until now was Herman Yadlovger [phonetic], who was }{\i\fs24 Rigenzer}{\fs24 
+ himself, but he isn't there any more.  And we had many, many candid
+ates, this one, that one.  I think you should try out for this position."  So I didn't dare to stay any longer.  I went home, and about two, three, maybe four weeks later I went back to Riga, and then my family was all in tears, why do I go?  And I }{
+\i\fs24 davened}{\fs24  in Riga, and among three, we were down, they were down, the congregation was down to three people.  That was Herman Yadlovger [phonetic], }{\i\fs24 Hazan}{\fs24 
+ Alter, Yisruel Alter, and myself.  And I will, consider this again it was a great and beautiful shining point in my career.  }{\i\fs24 Rogachover}{\fs24  }{\i\fs24 Gaon}{\fs24 
+ at the time, who lived in Dvinsk, but came for treatment to Riga, and I had a chance to speak with him, and before the...
+\par NL:\tab What was his name again?
+\par YM:\tab The }{\i\fs24 Rogachover Gaon}{\fs24 , Rozin.}{\fs24\super 5{\footnote \pard\plain \ql \li0\ri0\sa240\widctlpar
+\tx-360\tx0\tx720\tx792\tx1440\tx1584\tx2160\tx2376\tx2880\tx3168\tx3600\tx3960\tx4140\tx4320\tx4578\tx4752\tx5040\tx5544\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {5}{\fs24 \tab 
+\tab \tab \tab   }{Joseph Rozin (1858-1936), Polish Talmudic genius, called "the }{\i Rogachover}{" after his birthplace (Rogachov).}}}{\fs24 
+\par NL:\tab Rozin.
+\par YM:\tab But he goes under the name, the }{\i\fs24 Rogachover}{\fs24  }{\i\fs24 Gaon}{\fs24 , }{\i\fs24 Rogachover}{\fs24 .  How you spell it, }{\i\fs24 Rogachover}{\fs24 
+, the best way I can say it, Gaon [Brilliant Rabbi-teacher].  And he told the people, the board, when they came to him "Rebbe, we are in such-and-such a quandary, we don't have a }{\i\fs24 hazan}{\fs24 ," an so on, he said, "}{\i\fs24 
+Yidden, oib yir vilt haben a Yid, a hazan, a Yid, nemt Hazan Mandel}{\fs24 ."}{\fs24\super 6{\footnote \pard\plain \ql \li0\ri0\sa240\widctlpar
+\tx-360\tx0\tx720\tx792\tx1440\tx1584\tx2160\tx2376\tx2880\tx3168\tx3600\tx3960\tx4140\tx4320\tx4578\tx4752\tx5040\tx5544\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {6}{\fs24 \tab 
+\tab \tab \tab \tab \tab   }{Jews, if you want to have a Jew, a cantor, a Jew, take Cantor Mandel.}}}{\fs24 
+\par NL:\tab Ah, you had }{\i\fs24 so}{\fs24  many offers!
+\par YM:\tab Yes.  Yes.
+\par NL:\tab Incredible.
+\par YM:\tab So...
+\par NL:\tab Did you pick up any impressions of Jewish life...
+\par 
+\par \sect }\sectd \linex0\headery791\footery1632\sectdefaultcl {\header \pard\plain \ql \li0\ri0\widctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i\fs24 
+\par }\pard \qr \li0\ri0\widctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 {\i\fs24 YEHUDA MANDEL    [2-2-\chpgn ]    
+\par }}\pard\plain \qj \li0\ri0\sl361\slmult0\widctlpar\tx-360\tx0\tx720\tx792\tx1440\tx1584\tx2160\tx2376\tx2880\tx3168\tx3600\tx3960\tx4140\tx4320\tx4578\tx4752\tx5040\tx5544\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\fs24 \sect }\sectd \sbknone\linex0\headery791\footery1632\sectdefaultcl {\header \pard\plain \ql \li0\ri0\widctlpar
+\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i\fs24 
+\par }\pard \qr \li0\ri0\widctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 {\i\fs24 YEHUDA MANDEL    [2-2-\chpgn ]    
+\par }}{\footer \pard\plain \qc \li0\ri0\widctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i 
+From the collection of the Gratz College Holocaust Oral History Archive}{ 
+\par }}\pard\plain \qj \li0\ri0\sl361\slmult0\widctlpar\tx-360\tx0\tx720\tx792\tx1440\tx1584\tx2160\tx2376\tx2880\tx3168\tx3600\tx3960\tx4140\tx4320\tx4578\tx4752\tx5040\tx5544\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i\fs24 Tape two, side two:}{\fs24 
+\par }\pard \qj \fi540\li0\ri0\sl361\slmult0\widctlpar\tx-360\tx0\tx720\tx792\tx1440\tx1584\tx2160\tx2376\tx2880\tx3168\tx3600\tx3960\tx4140\tx4320\tx4578\tx4752\tx5040\tx5544\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 {\fs24 
+\par NL:\tab This is tape two, side two, continuing our interview with Cantor Mandel.
+\par YM:\tab As I have told you before, when I initially started to plan to go to, as they called it at the time, Siberia [laughs]...
+\par NL:[laughs]
+\par YM:\tab My family called it Siberia, I couldn't give them a good reason why I want to go, because really I had, we had, all we needed for sharing }{\i\fs24 kavod}{\fs24  [respect], and }{\i\fs24 nachat}{\fs24 
+ [gratification] and live in the same town with the parents; it was beautiful.  But why be in Riga--the }{\i\fs24 Grosse Chor Synagoge}{\fs24  was first of all the off
+icial temple of the Jewry of Lettland.  [Latvia].  Second of all, my predecessor, not the immediate one, the immediate one was Herman Yadlovger [phonetic], as I said before, my predecessor there was Baruch Leib Rosowsky, }{\i\fs24 Hazan }{\fs24 
+Rosowsky, which by the way was the father of the Rosowsky who worked so much on the }{\i\fs24\ul M'nigunei Hatam, Ta'amag Hanigunim}{\fs24  and so on...}{\fs24\super 7{\footnote \pard\plain \ql \li0\ri0\sa240\widctlpar
+\tx-360\tx0\tx720\tx792\tx1440\tx1584\tx2160\tx2376\tx2880\tx3168\tx3600\tx3960\tx4140\tx4320\tx4578\tx4752\tx5040\tx5544\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {7}{\fs24 \tab 
+\tab \tab \tab   }{Solomon Rosowsky (1878-1962) composer and musicologist, wrote }{\ul The Cantillation of the Bible (Five Books of Moses}{.}}}{\fs24 
+\par NL:\tab Ah, I see...
+\par YM:\tab It's his father.  It's his father.  I met him once in New York.  He just couldn't let me go.
+\par NL:\tab I can imagine.
+\par YM:\tab That I was the successor of his father.  So, when I came back home after I }{\i\fs24 davened}{\fs24 
+, and I wasn't engaged immediately because we had meetings and this, and that, and I didn't have the time to stay there for so long, so I went home to Yugoslavia.  I told my family the reas
+ons I will go to Riga are as follows:  I know I have a lifetime agreement here which I won't--I will leave.  Ella,}{\i\fs24  zikronah livrachah}{\fs24 
+, has a lifetime position at the state, true.  We have a beautiful, artistically furnished, beautiful apartment, true.  I will leave that.  But where I'm going is--Riga is near the }{\i\fs24 Kol Bach}{\fs24 .}{\fs24\super 8{\footnote \pard\plain 
+\ql \li0\ri0\sa240\widctlpar\tx-360\tx0\tx720\tx792\tx1440\tx1584\tx2160\tx2376\tx2880\tx3168\tx3600\tx3960\tx4140\tx4320\tx4578\tx4752\tx5040\tx5544\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {8}{\fs24 \tab \tab \tab \tab   }{\ul Kol Bo}{ - everything within.}}}{\fs24 
+  Can you imagine that in 1934, Riga had from kindergarten on, up to university, schools and high schools where the teaching language was Hebrew.  When our son was born, I will never forge
+t it, we had a very dear friend Dr. Gurvich, a lawyer, and his wife was a physician, their children came up to my wife to visit her in the sanatorium where she gave birth, and with a bunch of Hebrew names, what kind of names, written in Hebrew, they gave 
+to her.  This is the kind of, no, the fact that in the temple there was a }{\i\fs24 bet}{\fs24  }{\i\fs24 hamidrash}{\fs24  [Talmudic school] where 150 people were sitting every morning and every afternoon }{\i\fs24 bain mincha and maariv}{\fs24 
+ [between the late afternoon and evening prayers] and they studied Talmud.  The...
+\par NL:\tab The intellectual...
+\par YM:\tab The intellectual level, quality of Rigensen Jews, of Russian Jewry, I will say, of course, there were others, but...
+\par NL:\tab In Riga...
+\par YM:\tab ...was so high, was so high.  Riga had 60,000 Jews at the time, I think 60
+0,000 inhabitants, and 60,000 Jews.  Every person spoke at least three, four languages, Yiddish, of course, Russian, of course, Latvian, of course, but many people spoke perfect, perfect Hebrew, German, English, French, and so on.  It was such a high leve
+l, I always say if there would be a class to choose from, where to choose from, for leaders of Jewry, worldwide, it should definitely be this kind of Jewry, because their intellect, I mean the way they, they, they were }{\i\fs24 ber tzedakah}{\fs24 
+.  Once a year we had an appeal for, I don't know, the }{\i\fs24 moshav zakanim}{\fs24  [old age home].  Once a year a beautiful banquet was arranged.  }{\i\fs24 Latkes}{\fs24  were served on Hanukkah, and that was the time.  But the }{\i\fs24 latkes}{
+\fs24  had a hole.  Three, four sentences were necessary to tell the people: "}{\i\fs24 Meine tyere friynt mir huben lecher, Der moshav zakanim hot nit genug gelt}{\fs24 ."}{\fs24\super 9{\footnote \pard\plain \ql \li0\ri0\sa240\widctlpar
+\tx-360\tx0\tx720\tx792\tx1440\tx1584\tx2160\tx2376\tx2880\tx3168\tx3600\tx3960\tx4140\tx4320\tx4578\tx4752\tx5040\tx5544\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {9}{\fs24 \tab 
+\tab \tab \tab   }{My dear friends, there are holes.  The Old-Age Home does not have enough money.}}}{\fs24   Money was flowing in like you can't imagine.
+\par NL:\tab What was the chief economic, or what were the chief economic occupations of Jews in Riga?
+\par YM:\tab As you well know, rubber industry was great.  Clothing industry was great.  Business, exports...
+\par NL:\tab Merchandising...
+\par YM:\tab Immense.  And they always say that where our }{\i\fs24 sechel}{\fs24  [brains-common sense], our intellect, stops, the Lithuanian Jew--the ones I was with--his intellect starts there.  They are such }{\i\fs24 khokhomim}{\fs24  [wise ones].  Such }
+{\i\fs24 Talmidey khokhomim}{\fs24  [learned wise scholars].  Such educated people, that I have never, I mean, I lived with all kinds of people...
+\par NL:\tab Yes.
+\par YM:\tab My own homeland, and eh, Hungary had quite a few nice }{\i\fs24 Talmidey khokhomim}{\fs24 , but there it was more on a general basis.
+\par NL:\tab Very high.
+\par YM:\tab Yes.
+\par NL:\tab Excellence.
+\par YM:\tab Ya.
+\par NL:\tab Yes.
+\par YM:\tab High excellence.
+\par NL:\tab So you stayed just for a short time and returned home?
+\par YM:\tab Eh, no.
+\par NL:\tab What did you do...
+\par YM:\tab I stayed, I stayed until trouble became very prevalent...
+\par NL:\tab Oh.
+\par YM:\tab Around Riga.
+\par NL:\tab Oh, you, your wife and you then removed to Riga?
+\par YM:\tab We moved to Riga, and were in Riga from 1934, beginning of 1934, '5, '6, three years.
+\par NL:\tab I see.  And did your wife resume teaching?
+\par YM:\tab She did not resume teaching.
+\par NL:\tab No.
+\par YM:\tab She had worked in the Hebrew school, not as a professional.  She had remedials, like, if children needed help, she gave it to them, 'cause she knew Hebrew at the time already quite well.
+\par NL:\tab And I would like the name of your son, Cantor.
+\par YM:\tab My son's name is Immanuel Zvi.
+\par NL:\tab And he was born in what year?
+\par YM:\tab He was born in 1936.
+\par NL:\tab In Riga?
+\par YM:\tab In Riga, May, I guess.
+\par NL:\tab Yes.
+\par YM:\tab Now, we moved to Riga, we lived there in Riga, and it was a continuation of }{\i\fs24 gan eden}{\fs24  [Garden of Eden], bea
+utiful.  We had no difficulties.  Finally in the Baltic States, as you know, that's the closest to Germany, there tremendous fights and border clashes, and real trouble started.  And the Germans became stronger and stronger, as I don't have to tell you, i
+t started in Austria, and then continued in other places.  Finally, there, it became very dangerous.
+\par NL:\tab Would you say the seat of it was in the universities, or among the lower classes, or simultaneous?
+\par YM:\tab I would say it was simultaneous.
+\par NL:\tab Yes.
+\par YM:\tab Yes, simultaneous.  Because I wasn't out in the Gdansk, for instance, these places which were the corridor, the so-called corridor, but there daily clashes came.
+\par NL:\tab Between the Nazis and anti-Nazis?
+\par YM:\tab Between the Nazis and anti-Nazis.  Jewish stores were obliterated.  Jewish people were beaten up.  Some disappeared, and the danger became immensely big.
+\par NL:\tab Excuse me, was there an economic problem in the country, generally, at that time?
+\par YM:\tab No.
+\par NL:\tab No.
+\par YM:\tab No, there was no...
+\par NL:\tab No depression.
+\par YM:\tab No kind of, no depression.
+\par NL:\tab No depression.
+\par YM:\tab No.
+\par NL:\tab So that was...
+\par YM:\tab Uhrmanish was the president at the time, of the country, and it was very well-organized...
+\par NL:\tab Prosperous.
+\par YM:\tab Prosperous, a good country.  And the Jews maintained the prosperity for [unc
+lear].  The government, you couldn't detect at the time in the government any Nazism, though some people who, for instance this Guraviches, who he was a lawyer, and dealt with the courts and so on, he said yes, there is antisemitism outside in the world. 
+ 
+We don't know about it because we live a sheltered life.  But he, and in the newspapers you, you could see it.  What happened in 1936 is maybe what saved us.  In 1936 my brother, my younger brother, who lived in Yugoslavia, got married, and that was in Ap
+ril of 1936, Yoel, was his name.
+\par NL:\tab Yoel.
+\par YM:\tab Yoel.  And I came to his wedding from Riga to Yugoslavia.  My wife was expecting, so she didn't make this trip, she stayed there, and--my father-in-law, when I traveled, was in  Yugoslavia, so I visited with th
+em as well--he told me that he was in Budapest some time ago, and the Secretary General, Eppler, asked him where I am.  He heard me once }{\i\fs24 daven}{\fs24 
+ in Budapest in one of the temples, main temples, and once give a concert at the Academy of Music for the benefit of Hungarian, it wasn't a [unclear] community, it was a big article [unclear], eh, the redactor, the...
+\par NL:\tab Editor.
+\par YM:\tab Editor of that was the father of Raphael Patai.
+\par NL:\tab Patai.
+\par YM:\tab Jozsef Patai.
+\par NL:\tab Oh yes.
+\par YM:\tab So, he was a very dear friend of my uncle, 
+and he knew that I'm close by, and at one of these concerts I participated.  And this man remembered and he said--you have to know that in Budapest the congregation all belonged to one united unit.  However, there are the more traditional, and the less tr
+aditional, and I think I mentioned that there is the Tabak temple for the--with organ and so on, and there is Rombach Temple, more traditional.  So, eh, so this Eppler, the Secretary General, tells my father-in-law, you know, }{\i\fs24 Oberkantor}{\fs24 
+ Tkatch will be retiring, and we need an }{\i\fs24 Oberkantor}{\fs24  as successor.  So, when I traveled to Yugoslavia, I heard about this.  They got in touch with me, I performed a }{\i\fs24 Shabbes}{\fs24 
+ service there, and was immediately elected to be the successor of the great }{\i\fs24 hazan }{\fs24 Yizzis Yisroeil Tkatch.  I came to Budapest in 1936, June.  And there the real trouble started.
+\par NL:\tab So, excuse me, will you have time to start that now, or shall we save it?
+\par YM:\tab Shall we save it.
+\par NL:\tab Shall we save it, because, eh...
+\par [unclear]
+\par 
+\par NL:\tab We are continuing our interview with Cantor Yehuda Mandel, March 17, 1982.  Yes, I think you heard where we left off, Mr. Mandel.
+\par YM:\tab Yes, I heard a few words, and I think it will keep me in the right direction and maybe in the right spot.  When I was elected to be the }{\i\fs24 hazan}{\fs24  in Rombach 
+Temple, that was 1945.  The month, I don't remember exactly, but I came to Budapest in 194-  1935, rather, that's, erase that...
+\par NL:\tab That's all right.  Yes, we'll fix it in the transcript.
+\par YM:\tab In 1935, then came back to occupy my position in Budapest in Rombach Temple, which was one of the main temples among the 48 or 49 synagogues which belonged to the United Jewish Organization of the }{\i\fs24 Kultusgemeinde }{\fs24 
+in Budapest.  There were two main temples, one was a very modern, you have probably seen pictures of it not too long ago in }{\i\fs24 The Exponent}{\fs24 , and so on.
+\par NL:\tab Yes.
+\par YM:\tab And one was my temple, the traditional one.  The Tabak Temple was a little bigger, but even this temple, the seating capacity of the Rombach temple was close to 4,000.
+\par NL:\tab Mmm.
+\par YM:\tab And I was very happy to come there and to be there.  First of all, great, great people, great musicians, and the }{\i\fs24 hazanim }{\fs24 were my predecessors.  To mention just two, Bachman, Yaakov Bachman, was one of my predecessors.  And }{
+\i\fs24 Hazan}{\fs24  Yisroeil Tkatch was the immediate predecessor of mine.  Beside that, Budapest was the best and most strongly organized Jewish community of the world.
+\par NL:\tab Is that so?
+\par YM:\tab Not even London, because London has a United Synagogue, but the whole, the whole, eh, British dominion belongs to it.
+\par NL:\tab Mmm hmm.
+\par YM:\tab Here, there was one congregation, so to say, if we may call it that, it was much, much more than }{\i\fs24 a}{\fs24  congregation, there was 49, there were 49 congregations.
+\par NL:\tab A community.
+\par YM:\tab A community.  And, eh, the whole approach to services, to organization, this community had their own hospitals, their own }{\i\fs24 moshav-z'kaynim}{\fs24 
+, old-age homes, their own schools, their own sport organizations, it was a country, or a government in a government, really.  And if you...
+\par NL:\tab How many Jews were there, would you say, in these 49 congregations?
+\par YM:\tab I would say, I know exactly that the congregation, and I know it because there state and church was not separated; there you paid dues or rather taxes to the community; if you were Jewish you paid to the Jewish community, if you were C
+atholic, to the Catholic community, and so on.  I know that our organization, our community, had 200,000 people registered and had over 125,000, as we called it there, }{\i\fs24 Kultussteuer zahlende Mitglieder}{\fs24 
+, people who paid dues, or rather taxes, to the congregation.  So I was born in Hungary, I spoke the language perfectly.  I came, so to say, I came home.  As great as Riga was for me as a center of Judaism, as a center of learning, as a center of }{
+\i\fs24 lamdanut}{\fs24  [learning], as a center of music, as being the successor
+ of Baruch Leib Rosowsky, who, I don't have to tell you was a great man, and I was very happy there, and I left a lifetime position in Yugoslavia to go there.  But here, I came home, besides, and this is the emotional part, maybe, my wife's parents and th
+e
+ whole family lived in Yugoslavia, now, formerly Hungary, but it was only about two hours ride.  So it was happiness to everybody.  I came there in June to prepare for the High Holy Day services.  I had all my rehearsals, the choir, and so on.  Our belong
+ings, our furniture and everything else, was packed in Riga, and on the way home, my wife went with the child to her parents to Neusatz [German for Novi Sad], Yugoslavia, and I was in Budapest.  I started, really, started really to function }{\i\fs24 Rosh
+}{\fs24 ,}{\i\fs24  }{\fs24 the }{\i\fs24 Rosh Hodesh}{\fs24  }{\i\fs24 benschen}{\fs24  [blessing], or to say, }{\i\fs24 birchat hachodesh}{\fs24 
+, eh, before Rosh Hashanah in 194-, 1936.  So, we may say probably August, September, October, everything was just magnificent.  And the people loved it.  I started to write Hungarian articles about }{\i\fs24 hazanut}{\fs24 
+ in the Hungarian--in the Jewish publications, and so on.  I had organized courses for Hebrew.  I got very busy in the Zionist organizations.  We started making plans for the future.  Suddenly I became the secretary of the }{\i\fs24 Kultusgemeinde}{\fs24 
+, the }{\i\fs24 Beamten}{\fs24  [officials], you know...
+\par NL:\tab Ah...
+\par YM:\tab And it was such a great thing for me, you know, coming from a little village in Podkarpatska Rus, going through all what I told you before, and now, suddenly to reach to this point, to be the chief cantor of, of one o
+f the main temples in the world, in Budapest community. I performed services and was very well-liked, I say it myself, very well-received.  We settled, we had a home close to the temple, because I didn't travel on }{\i\fs24 Shabbas}{\fs24 , and }{\i\fs24 
+yomim tovim}{\fs24  [holidays], and e
+verything was fine.  The High Holy days went over beautifully, beautifully, and everyone was talking.  Now, we had a Secretary General who was in charge of the administration.  He used to say, "No one was yet the chief cantor of the Budapest community in 
+the main temple at age 32.  Besides," he said, "there was never any one to have this position of Hungarian descent," so to say.  You know the Hungarian Jews were very patriotic.
+\par NL:\tab Assimilated.
+\par YM:\tab So, it was very good.  But, at the end--this went on in 1936, '37, and in '37 of the }{\i\fs24 yamim noraim}{\fs24  [ten days between }{\i\fs24 Rosh Hashana}{\fs24  and }{\i\fs24 Yom Kippur}{\fs24 ] in 1937, during the }{\i\fs24 yamim noraim}{
+\fs24 , nothing happened, but at }{\i\fs24 Shemini Atzeret}{\fs24 , or }{\i\fs24 Simchat Torah}{\fs24 , I don't remember what date, I already got a message from this very Secretary General }{\i\fs24 not}{\fs24 
+ to go home for lunch after the services because the }{\i\fs24 Fremdenpolizei}{\fs24 
+ [alien police], means the, I don't know what you would call it here, you know, had to do with giving permits, not giving permits to people, because I was a Czechoslovakian citizen.  And later on...
+\par NL:\tab Police for aliens.
+\par YM:\tab Ya.  And they had their own police, and they had their own, own eh...
+\par NL:\tab Militia.
+\par YM:\tab Ya.  And I was told that though my work permit to work in Hungary as a Czechoslovakian citizen is far from being exhausted, I would have to leave Hungary together with my family, my permit was revoked.  Why, no one knew.
+\par NL:\tab By an act of parliament, or was it...
+\par YM:\tab Not, not an act of parliament.  This alien police who had charge of the different, of the individuals, so to
+ say, had, eh, eh, had, eh, a commander or chief administrator who was a terrible antisemite, and he looked and looked, and most probably he had some trouble with the congregation before this.  And he tried to give back to them, and what can be worse than
+ take away they were looking for a, for a }{\i\fs24 hazan}{\fs24  for so many months and months and months, finally everything is settled, so he tried to get them from, through me.
+\par NL:\tab Excuse me, but the fact that you were born in Hungary did not mean anything, inasmuch as you were a Czech citizen?
+\par YM:\tab Right.  Did not mean anything, and I don't know even if I would have been a Hungarian citizen, if they couldn't have done something to me because they made up stories...
+\par NL:\tab They were looking for a pretext.
+\par YM:\tab Looking for excuses.
+\par NL:\tab Oh my.
+\par YM:\tab In 1937, trouble was real, real, real bad.
+\par NL:\tab Within the country or because of external...
+\par YM:\tab No...
+\par NL:\tab ...pressure?
+\par YM:\tab  Because of this organization extra pressure.
+\par NL:\tab Oh, I see.
+\par YM:\tab And I had a teacher--I still functioned, but wit
+h special permissions and probably some bribes and so on, bribes which were given to the different functionaries, I functioned.  But in 19- by the end of 1937, I felt it is very bad.  And I wrote to a teacher of mine, }{\i\fs24 Oberkantor}{\fs24 
+ Fischer, who was the succes
+sor of Sulzer in, in, eh, in [unclear] Stadttemple who was a teacher of mine.  And I loved him and I think he had a lot of, a lot of feelings for me as well.  And he wrote back to me and said, "I think you suffered enough for being born in Hungary.  There
+ is an open position in the Duke's Place Temple in London."
+\par NL:\tab Duke's Place.
+\par YM:\tab Duke's Place Temple.  That was the main temple of London where the chief rabbi was, eh...
+\par NL:\tab Presiding.
+\par YM:\tab Presiding.  Dr. Hertz, who made the [unclear] to the...
+\par NL:\tab Yes.
+\par YM:\tab And he says, "I think, the way I know you and what I know about you, if you will apply, you surely will be invited."
+\par NL:\tab Excuse me, if we could step back a little, Cantor Mandel.  Were other Jews who were also considered aliens being, eh, harassed this way too while you were there?
+\par YM:\tab Harassed they were already at this time.  It came to the point that by the end of 1938, thousands of Jews were transported to Galicia, to be specific, to Kamenets-Podolsk.
+\par NL:\tab Oh yes.
+\par YM:\tab Where they were killed, and when I
+ was in Kamenets-Podolsk, as a laborer, laborer in the labor camp, because I speak the language, I spoke to an old peasant who led me to the place where thousands or many, many were killed and buried, and said, "You see this mountain, that's a mountain of
+ people.  Jews were killed and buried there and this hill, this mountain covers them.  This is their grave."
+\par NL:\tab And this was all done through some internal decision in Hungary?
+\par YM:\tab They said that, this very alien officer, whatever we may call it, said, tha
+t these people are not Hungarian citizens.  They came, they escaped from Galicia in 1916, '17, '18 during the First World War, they stayed there through bribes, and they gave bribes to this one and that one, but now we are national Hungarian government an
+d
+ we will eradicate all this nonsense.  And whoever doesn't belong here we'll just take them out.  So they took them out, children, parents, grandparents, sick, wealthy, well people, and took them to Kamenets-Podolsk.  I don't have to tell you the story of
+ Kamenets-Podolsk.
+\par NL:\tab Did this attitude affect Hungarian Jews generally, in other words, the native or citizen groups, were they being also discriminated against in some way?
+\par YM:\tab To a degree they were, because the parliament already discussed the first Jew
+ish--the first law against Jews at the end of 1937.  The second law against the Jews, that the Jew cannot have a business of his own, he must have a non-Jew who will run his business, the second, in the base of Doraheim [?], who was the Minister, Prime Mi
+nister at the time, the second law, the second Jewish law against the Jews was bad, where a Jew couldn't have any more a store on his own at all, and so on.  People could be drafted into these labor camps.  Jews could not be so in the army anymore.
+\par NL:\tab National army.
+\par YM:\tab Ya.  No.  It was very much up to the local, eh, local...
+\par NL:\tab Authorities.
+\par YM:\tab ...authorities to execute or how to execute these things.
+\par NL:\tab I see.
+\par YM:\tab But there were not signs, there were really laws against the Jews.  People who lost their 
+jobs, of course, they were persecuted by having to move, I don't know, to a smaller apartment because they didn't have the means to maintain.  They didn't have any income.
+\par NL:\tab People lost businesses.
+\par YM:\tab They lost their businesses, they lost their jobs.  N
+o Jew could work for the government, no Jew could work for the city, no Jew could work anywhere where, eh, which had any, any work which had anything to do with the public.  Not even to collect, to be a collector of the...
+\par NL:\tab Trash.
+\par YM:\tab ...of the trash.  Or the gas company, or trash, or whatever.
+\par NL:\tab Yes.  So there was a clear antisemitic line coming.
+\par YM:\tab Definitely.  Definitely.
+\par NL:\tab And this, you think, was due to purely internal forces, or were there already external pressures from Germany?
+\par YM:\tab No, there
+ were, the Hungarian politicians were very glad to work along with, with the Germans, and there was quite a number, Hungary, first of all, had many, many Schwab, I don't know, do you know what that means.  The Germans who came to Hungary settled there, Sc
+hwabians.
+\par NL:\tab Schwabians.
+\par YM:\tab Ya.  Who came to Hungary and, of course, they went with Hitler and for Hitler right away.  Now wherever you had this kind of an influence, it was the, the feelings and actions against Jews were stronger.  Where these influences
+ didn't take, it was a little less, but the Germans really occupied Hungary only in 194-
+\par NL:\tab 4.
+\par YM:\tab 4.  And, eh, you had tremendous antisemitism,
+\par NL:\tab Before.
+\par YM:\tab Before that already in 1938, '39, '40, all through...
+\par 
+\par }}

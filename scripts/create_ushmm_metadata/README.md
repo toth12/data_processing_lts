@@ -15,7 +15,7 @@
 * **get\_interviewee_name.py:**: queries undress\_experiment for the interviewee field (1301 fields have it). If not found, check if there is a summary (summary begins with the name of the interviewee) and use it as a backup method (201 names found through this backup method). Returns a dictionary with 1503 entries, the keys being the 'id' of the interview and the value being the interviewee name. 
 * **get\_provenance.py**: queries undress\_experiment for the historical provenance field, returns a dictionary with 1514 entries, the keys being the 'id' of the interview and the value being the provenance
 * **get\_shelfmark.py**: queries undress\_experiment for the rgn field, returns a dictionary with 1514 entries, the keys being the 'id' of the interview and the value being the shelfmark
-
+* **get\_videos.py**: helper functions related to the video extraction task, including generating the url for the given interview, retrieving thumbnails and scraping the HTML for any video or audio interviews (.mp3 or .mp4)
 * **sample**: a folder with sample documents of the undress_experiment collection and a result.txt that shows the resulting collection
 
 ## Quickstart
