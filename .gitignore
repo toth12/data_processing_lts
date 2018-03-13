@@ -1,5 +1,6 @@
 .DS_Store
 *.swp
+*.swo
 *.pem
 *.pyc
 test.py
@@ -7,4 +8,4 @@ test.csv
 test_csv.py
 data/
 orginal_files_for_gabor/
-utils/__pycache__/
+__pycache__/
