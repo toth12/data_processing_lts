@@ -36,7 +36,7 @@ if __name__ == "__main__":
     created document to a new collection under 'Hol', name 'USHMM' database
     Generate a CSV spreadsheet with the missing field for each interview
     """
-    # query for ghettos
+    # query for interview ids
     result = h.query('Hol', 'undress_experiment', {}, {'id':1} )
     interview_ids = [id_['id'] for id_ in result]
 
@@ -109,4 +109,5 @@ if __name__ == "__main__":
 
         document['collection'] = "USHM"
         
+        # insert in the collection
         h.insert('Hol', 'USHMM', document)
