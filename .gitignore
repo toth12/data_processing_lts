@@ -3,9 +3,7 @@
 *.swo
 *.pem
 *.pyc
-test.py
-test.csv
-test_csv.py
+test*
 data/
 orginal_files_for_gabor/
 __pycache__/

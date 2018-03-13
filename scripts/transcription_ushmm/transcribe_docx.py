@@ -1,7 +1,14 @@
-import glob, os
+import sys, glob, os
+helper_path = os.path.join("..", "..", "utils")
+sys.path.insert(0, helper_path)
+import helper_mongo as h
+
 os.chdir("../../data/")
 from docx import Document
 import pprint
+
+TRACKER = "USHMM_transcript_processing_progress"
+DB = "Hol"
 
 def getTextUnits(filename):
     doc = Document(filename)
@@ -39,9 +46,15 @@ if __name__ == "__main__":
         if ("RG-50.030" in file or
             "RG-50.106" in file or
             "RG-50.549" in file):
-
+            # append to the array
             core_docx_asset.append(file)
-            
 
-    for entry in core_docx_asset:
-        getTextUnits(entry)
+    for file in core_docx_asset:
+        # get text units for this entry
+        question_docs, answers_doc = getTextUnits(file)
+
+        # update status
+        h.update_status(DB, TRACKER, "microsoft_doc_file", file, "Processed")
+    
+    result = h.query(DB, TRACKER, {}, {'id': 0})
+    pprint.pprint(result)
