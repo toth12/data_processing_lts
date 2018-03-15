@@ -7,7 +7,7 @@ from get_interviewee_name import getIntervieweeName
 from get_interview_title import getInterviewTitle
 from get_shelfmark import getShelfmark
 from get_provenance import getProvenance
-from get_videos import getVideos, getWebsite, getHTML, getImages
+from get_videos import getVideos, getImages, getHTMLs, getWebsite
 import constants
 
 import sys, os
@@ -23,6 +23,7 @@ pp = pprint.PrettyPrinter(indent=4)
 DB = constants.DB
 INPUT_COLLECTION = constants.INPUT_COLLECTION
 OUTPUT_COLLECTION = constants.OUTPUT_COLLECTION
+ORIGINAL_DATABASE = "USHM"
 
 def populateDocument(document, unknown_fields, dictionary, id_, field_name):
     """
@@ -56,6 +57,7 @@ if __name__ == "__main__":
     interviews_titles = getInterviewTitle()
     interviews_shelfmarks = getShelfmark()
     interviews_provenances = getProvenance()
+    interviews_htmls = getHTMLs()
 
     # initialize csv to record missing fields
     ofile  = open('USHM_missing_records.csv', "w")
@@ -70,11 +72,10 @@ if __name__ == "__main__":
         document = dict()
         unknown_fields = []
 
-        # get website url and html
-        url = getWebsite(id_)
-        html = getHTML(url)
+        # get corresponding html
+        html = interviews_htmls[id_]
 
-        # extract videos and images urls from  
+        # extract videos and images urls from html
         videos = getVideos(html)
         images = getImages(html)
         
@@ -90,9 +91,9 @@ if __name__ == "__main__":
         else:
             unknown_fields.append("media_url")
 
-        # populate fields
+        # populate fields with basic info from the original database
         document['ushhm_unique_id'] = id_
-        document['original_html'] = html
+        document['collection'] = ORIGINAL_DATABASE
 
         # populate remaining fields
         populateDocument(document, unknown_fields, interviews_year, id_, 'recording_year')
@@ -112,8 +113,6 @@ if __name__ == "__main__":
 
             # create csv entry
             spreadsheet.writerows([columns])
-
-        document['collection'] = "USHM"
         
         # insert in the collection
         h.insert(DB, OUTPUT_COLLECTION, document)
