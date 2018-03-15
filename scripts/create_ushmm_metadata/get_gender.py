@@ -37,7 +37,6 @@ def save_obj(obj, name):
 
 def load_obj(name):
     with open('input/' + name + '.pkl', 'rb') as f:
-        
         return pickle.load(f)
 
 
@@ -54,8 +53,7 @@ def getGenderHelper(interview):
     name = interview.get('interviewee')
 
     # load genderize backup dictionary
-    genderize_backup = load_obj(GENDERIZE_INFO)
-    
+    #genderize_backup = load_obj(GENDERIZE_INFO)
 
     if summary != None:
         male_counter = 0
@@ -104,6 +102,7 @@ def getGenderHelper(interview):
             
             data = response.json()
            
+            pprint.pprint(data)
             if data is not None and "probability" in data:
                 if data["probability"] > 0.9:
 
@@ -112,9 +111,11 @@ def getGenderHelper(interview):
                     gender.encode('ascii','ignore')
 
                     # create entry in the pickle object storing genderize info
-                    genderize_obj = load_obj(GENDERIZE_INFO)
-                    genderize_obj[first_name] = gender
-                    save_obj(genderize_obj, GENDERIZE_INFO)
+                    genderize_backup = load_obj(GENDERIZE_INFO)
+                    
+                    genderize_backup[first_name] = gender
+                    pprint.pprint(genderize_backup)
+                    save_obj(genderize_backup, GENDERIZE_INFO)
 
                     return gender
             
@@ -132,9 +133,8 @@ def getGender():
     """
     # initialize dictionary
     interviewees_gender = dict()
-    genderize = dict()
-    save_obj(genderize, GENDERIZE_INFO)
 
+    save_obj(dict(), GENDERIZE_INFO)
     # Create a pool of processes. By default, one is created for each CPU in your machine.
     with concurrent.futures.ProcessPoolExecutor() as executor:
         
@@ -150,10 +150,11 @@ def getGender():
                 interviewees_gender[key] = gender
              
     
-    # store object if it is the first call
-    #save_obj(interviewees_gender, GENDERIZE_INFO)
     return interviewees_gender
         
 if __name__ == "__main__":
-    obj = load_obj("genderize_info")
+    
+    obj = load_obj(GENDERIZE_INFO)
+    obj["Gabe"] = "male"
+    save_obj(obj, GENDERIZE_INFO)
     pprint.pprint(obj)

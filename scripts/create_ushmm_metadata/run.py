@@ -7,7 +7,7 @@ from get_interviewee_name import getIntervieweeName
 from get_interview_title import getInterviewTitle
 from get_shelfmark import getShelfmark
 from get_provenance import getProvenance
-from get_videos import getVideos, getImages, getHTMLs, getWebsite
+import get_videos as mediaExtraction
 import constants
 
 import sys, os
@@ -34,7 +34,11 @@ def populateDocument(document, unknown_fields, dictionary, id_, field_name):
     if dictionary.get(id_, None) != None:
         document[field_name] = dictionary[id_]
     elif field_name != 'camp_names' and field_name != 'ghetto_names' and field_name != "interview_summary":
+        # if no info, store it as a null value and add it to missing field
+        document[field_name] = None
         unknown_fields.append(field_name)
+    else:
+        document[field_name] = None
                 
 if __name__ == "__main__":
     """
@@ -57,40 +61,59 @@ if __name__ == "__main__":
     interviews_titles = getInterviewTitle()
     interviews_shelfmarks = getShelfmark()
     interviews_provenances = getProvenance()
-    interviews_htmls = getHTMLs()
+    interviews_htmls = mediaExtraction.getHTMLs()
 
     # initialize csv to record missing fields
-    ofile  = open('USHM_missing_records.csv', "w")
+    ofile  = open('output/USHM_missing_records.csv', "w")
     spreadsheet = csv.writer(ofile, quotechar='"', quoting=csv.QUOTE_ALL)
 
     # insert header
     header = [['interview_id', 'missing_fields', 'website_url', 'recording_year', 'gender', 'interviewee_name']]
     spreadsheet.writerows(header)
 
+    # initialize csv to record missing thumbnail for .mp4
+    ofile2  = open('output/USHM_missing_thumbnai.csv', "w")
+    media_spreadsheet = csv.writer(ofile2, quotechar='"', quoting=csv.QUOTE_ALL)
+
+    # insert header
+    media_header = [['interview_id', 'url']]
+    media_spreadsheet.writerows(media_header)
+
     # go over each interview and populate a document to be insert into Mongo
     for id_ in interview_ids:
+        # initialize variables
         document = dict()
         unknown_fields = []
 
-        # get corresponding html
+        # get html for the given interview
         html = interviews_htmls[id_]
 
         # extract videos and images urls from html
-        videos = getVideos(html)
-        images = getImages(html)
+        media, type_of_media = mediaExtraction.getVideos(html)
         
-        # populate thumbnail pictures
-        if images:
-            document["media_thumbnail"] = images
-        else:
-            unknown_fields.append("media_thumbnail")
+        # populate document with media
+        document["media_url"] = media
+        document["thumbnail_url"] = None
 
-        # populate videos, if any
-        if videos:
-            document["media_url"] = videos
-        else:
+        # else if .mp4 media was found, save video and look for thumbnail
+        if type_of_media == mediaExtraction.MP4:
+
+            # get thumbnail image
+            images = mediaExtraction.getImages(html)
+        
+            # populate thumbnail field, if any
+            # if no thumbnail, record it on spreadsheet of missing media
+            if images:
+                document["media_thumbnail"] = images
+            else:
+                url = mediaExtraction.getWebsite(id_)
+                unknown_media = [id_, url]
+                media_spreadsheet.writerows([unknown_media])
+
+        # if no media was found
+        elif type_of_media == mediaExtraction.NO_MEDIA:
             unknown_fields.append("media_url")
-
+        
         # populate fields with basic info from the original database
         document['ushhm_unique_id'] = id_
         document['collection'] = ORIGINAL_DATABASE
@@ -108,7 +131,7 @@ if __name__ == "__main__":
         
         # if there were any fields missing in the interview, record themissing interviews in csv
         if unknown_fields:
-            url = getWebsite(id_)
+            url = mediaExtraction.getWebsite(id_)
             columns = [id_, unknown_fields, url]
 
             # create csv entry
