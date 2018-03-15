@@ -98,6 +98,7 @@ def update_status(db_name,collection_name, query_key, query_value, status):
 	collection.update({query_key : query_value}, {'$set': {'status': status}})
 	client.close()
 
+
 if __name__ == "__main__":
 	#query example
 
