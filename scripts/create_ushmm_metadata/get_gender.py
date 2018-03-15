@@ -14,10 +14,10 @@ import requests
 import pickle
 
 # database info
-#DB = constants.DB
-#COLLECTION = constants.INPUT_COLLECTION
-DB = "Hol"
-COLLECTION = "undress_experiment"
+DB = constants.DB
+COLLECTION = constants.INPUT_COLLECTION
+#DB = "Hol"
+#COLLECTION = "undress_experiment"
 GENDERIZE_INFO = "genderize_info"
 
 # declare some constants
