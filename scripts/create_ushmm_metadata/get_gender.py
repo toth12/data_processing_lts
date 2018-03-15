@@ -1,6 +1,6 @@
 import pprint
 import pdb
-import sys, os
+import sys, os, glob
 import constants
 helper_path = os.path.join("..", "..", "utils")
 sys.path.insert(0, helper_path)
@@ -11,10 +11,14 @@ import urllib2
 import json
 import unicodedata
 import requests
+import pickle
 
 # database info
-DB = constants.DB
-COLLECTION = constants.INPUT_COLLECTION
+#DB = constants.DB
+#COLLECTION = constants.INPUT_COLLECTION
+DB = "Hol"
+COLLECTION = "undress_experiment"
+GENDERIZE_INFO = "genderize_info"
 
 # declare some constants
 MALE = "male"
@@ -27,7 +31,15 @@ MALE_WORDS = [' his ', 'His ', ' him ', 'He ', ' he ']
 FEMALE_WORDS = [' her ','Her ', ' she ', 'She ']
 TITLES_PREFIXES = ['Ms.', "Mr.", "Dr.", "Mrs."]
 
-counter = True
+def save_obj(obj, name):
+    with open('input/'+ name + '.pkl', 'wb') as f:
+        pickle.dump(obj, f, pickle.HIGHEST_PROTOCOL)
+
+def load_obj(name):
+    with open('input/' + name + '.pkl', 'rb') as f:
+        
+        return pickle.load(f)
+
 
 #TODO deal with couples
 def getGenderHelper(interview):
@@ -36,11 +48,14 @@ def getGenderHelper(interview):
     gender. 
     Returns the gender of the interviewee based on the number of 
     ''' 
-    global counter
-    #print(interview)
+
     # get interview summary
     summary = interview.get('interview_summary')
     name = interview.get('interviewee')
+
+    # load genderize backup dictionary
+    genderize_backup = load_obj(GENDERIZE_INFO)
+    
 
     if summary != None:
         male_counter = 0
@@ -67,6 +82,7 @@ def getGenderHelper(interview):
         else:
             return FEMALE
     
+    
     # use Genderize.io as a backup in case interview does not have an interview summary
     elif name != None : 
         # get the interviewee's name
@@ -90,14 +106,21 @@ def getGenderHelper(interview):
            
             if data is not None and "probability" in data:
                 if data["probability"] > 0.9:
-                    # convert from unicode to 
+
+                    # convert from unicode to utf
                     gender = data["gender"]
                     gender.encode('ascii','ignore')
+
+                    # create entry in the pickle object storing genderize info
+                    genderize_obj = load_obj(GENDERIZE_INFO)
+                    genderize_obj[first_name] = gender
+                    save_obj(genderize_obj, GENDERIZE_INFO)
+
                     return gender
             
         except Exception as e:
-            print "Exception: " + first_name
-            
+            pprint.pprint("Exception: " + first_name)
+    
     
     return NO_GENDER
 
@@ -109,6 +132,8 @@ def getGender():
     """
     # initialize dictionary
     interviewees_gender = dict()
+    genderize = dict()
+    save_obj(genderize, GENDERIZE_INFO)
 
     # Create a pool of processes. By default, one is created for each CPU in your machine.
     with concurrent.futures.ProcessPoolExecutor() as executor:
@@ -123,8 +148,12 @@ def getGender():
             if gender != NO_GENDER:
                 key = interview.get('id')
                 interviewees_gender[key] = gender
+             
     
+    # store object if it is the first call
+    #save_obj(interviewees_gender, GENDERIZE_INFO)
     return interviewees_gender
         
 if __name__ == "__main__":
-    getGender()
+    obj = load_obj("genderize_info")
+    pprint.pprint(obj)
