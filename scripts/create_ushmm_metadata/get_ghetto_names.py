@@ -1,11 +1,16 @@
 import pprint
 import pdb
 import sys, os
+import constants
 helper_path = os.path.join("..", "..", "utils")
 sys.path.insert(0, helper_path)
 import helper_mongo as h
 
 pp = pprint.PrettyPrinter(indent=4)
+
+# database info
+DB = constants.DB
+COLLECTION = constants.INPUT_COLLECTION
 
 def getGhettoNames():
     """
@@ -14,7 +19,7 @@ def getGhettoNames():
     and the value being an array with the names of the camps
     """
     # query for ghettos
-    result = h.query('Hol', 'undress_experiment', {}, {'subject_topical': 1,'id':1} )
+    result = h.query(DB, COLLECTION, {}, {'subject_topical': 1,'id':1} )
 
     # initialize dictionary
     interview_mentioned_ghettos = dict()

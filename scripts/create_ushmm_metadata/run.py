@@ -8,6 +8,7 @@ from get_interview_title import getInterviewTitle
 from get_shelfmark import getShelfmark
 from get_provenance import getProvenance
 from get_videos import getVideos, getWebsite, getHTML, getImages
+import constants
 
 import sys, os
 helper_path = os.path.join("..", "..", "utils")
@@ -17,6 +18,11 @@ import csv
 import pprint
 
 pp = pprint.PrettyPrinter(indent=4)
+
+# database info
+DB = constants.DB
+INPUT_COLLECTION = constants.INPUT_COLLECTION
+OUTPUT_COLLECTION = constants.OUTPUT_COLLECTION
 
 def populateDocument(document, unknown_fields, dictionary, id_, field_name):
     """
@@ -37,7 +43,7 @@ if __name__ == "__main__":
     Generate a CSV spreadsheet with the missing field for each interview
     """
     # query for interview ids
-    result = h.query('Hol', 'undress_experiment', {}, {'id':1} )
+    result = h.query(DB, INPUT_COLLECTION, {}, {'id':1} )
     interview_ids = [id_['id'] for id_ in result]
 
     # initialize dictionaries with all the pieces of information
@@ -110,4 +116,4 @@ if __name__ == "__main__":
         document['collection'] = "USHM"
         
         # insert in the collection
-        h.insert('Hol', 'USHMM', document)
+        h.insert(DB, OUTPUT_COLLECTION, document)

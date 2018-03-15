@@ -1,9 +1,13 @@
 import sys, os
+import constants
 helper_path = os.path.join("..", "..", "utils")
 sys.path.insert(0, helper_path)
 import pdb
 import helper_mongo as h
 
+
+DB = constants.DB
+COLLECTION = constants.INPUT_COLLECTION
 
 def getCampNames():
     """
@@ -13,7 +17,7 @@ def getCampNames():
     Returns a set of interview IDs with all 1514 entries
     """
     # query database
-    result = h.query('Hol', 'undress_experiment', {}, {'subject_corporate': 1,'id':1} )
+    result = h.query(DB, COLLECTION, {}, {'subject_corporate': 1,'id':1} )
 
     # initialize variables
     unknown_camps = []
@@ -66,6 +70,7 @@ def getCampNames():
         else:
             # keep track of camps without the subject corporate field
             unknown_camps.append(mongo_key)
+    
     
     return interview_known_camps
 

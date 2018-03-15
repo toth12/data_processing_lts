@@ -1,9 +1,14 @@
 import pprint
 import pdb
 import sys, os
+import constants
 helper_path = os.path.join("..", "..", "utils")
 sys.path.insert(0, helper_path)
 import helper_mongo as h
+
+# database info
+DB = constants.DB
+COLLECTION = "input_ushmm_metadata"
 
 def getInterviewSummary():
     """
@@ -12,7 +17,7 @@ def getInterviewSummary():
     and the value being the interview summary
     """
     # query for interview summaries and initialize dictionary
-    result = h.query('Hol', 'undress_experiment', {'interview_summary': {'$exists': 'true'}}, {'id': 1, 'interview_summary': 1})
+    result = h.query(DB, COLLECTION, {'interview_summary': {'$exists': 'true'}}, {'id': 1, 'interview_summary': 1})
     interview_summaries = dict()
     
     # iterate through each interview to find the gender

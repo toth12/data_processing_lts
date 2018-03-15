@@ -1,6 +1,7 @@
 import pprint
 import pdb
 import sys, os
+import constants
 helper_path = os.path.join("..", "..", "utils")
 sys.path.insert(0, helper_path)
 import helper_mongo as h
@@ -11,7 +12,9 @@ import json
 import unicodedata
 import requests
 
-
+# database info
+DB = constants.DB
+COLLECTION = constants.INPUT_COLLECTION
 
 # declare some constants
 MALE = "male"
@@ -111,7 +114,7 @@ def getGender():
     with concurrent.futures.ProcessPoolExecutor() as executor:
         
         # query for interview summaries
-        result = h.query('Hol', 'undress_experiment', {}, {'id': 1, 'interview_summary': 1, 'interviewee': 1})
+        result = h.query(DB, COLLECTION, {}, {'id': 1, 'interview_summary': 1, 'interviewee': 1})
         
         # execute calls asynchronously
         for interview, gender in zip(result, executor.map(getGenderHelper, result)):

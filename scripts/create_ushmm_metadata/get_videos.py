@@ -2,7 +2,7 @@ import urllib
 import time
 import pprint
 
-
+# URL for the USHM website
 BASE_URL = 'https://collections.ushmm.org/search/catalog/'
 
 def getHTML(url):
@@ -35,8 +35,9 @@ def getWebsite(_id):
     return BASE_URL + _id
 
 if __name__ == "__main__":
+    """
     url = getWebsite('irn516732')
     html = getHTML(url)
     pprint.pprint(html)
     getImages(html)
-
+    """

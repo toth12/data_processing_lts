@@ -8,6 +8,7 @@ from get_interview_title import getInterviewTitle
 from get_shelfmark import getShelfmark
 from get_provenance import getProvenance
 from get_videos import getVideos, getWebsite, getHTML, getImages
+import constants
 
 import sys, os
 helper_path = os.path.join("..", "..", "utils")
@@ -18,6 +19,10 @@ import pprint
 import pdb
 import time
 pp = pprint.PrettyPrinter(indent=4)
+
+# database info
+DB = constants.DB
+COLLECTION = constants.INPUT_COLLECTION
 
 def populateDocument(document, unknown_fields, dictionary, id_, field_name):
     """
@@ -38,7 +43,7 @@ if __name__ == "__main__":
     Generate a CSV spreadsheet with the missing field for each interview
     """
     # query for ghettos
-    result = h.query('let_them_speak_data_processing', 'input_ushmm_metadata', {}, {'id':1} )
+    result = h.query(DB, COLLECTION, {}, {'id':1} )
     interview_ids = [(id_['id'],id_['_id']) for id_ in result]
 
    
@@ -55,4 +60,4 @@ if __name__ == "__main__":
        
         document['collection'] = "USHM"
         
-        h.update_entry('let_them_speak_data_processing', 'input_ushmm_metadata', element[1],{'website_html':html})
+        h.update_entry(DB, COLLECTION, element[1],{'website_html':html})
