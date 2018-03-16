@@ -24,6 +24,13 @@ DB = constants.DB
 INPUT_COLLECTION = constants.INPUT_COLLECTION
 OUTPUT_COLLECTION = constants.OUTPUT_COLLECTION
 ORIGINAL_DATABASE = "USHM"
+"""
+def retrieveMissingFields(id_, row):
+    missing_fields = row[1]
+
+    for field in missing_fields:
+        if field == "interviewee_name":
+"""     
 
 def populateDocument(document, unknown_fields, dictionary, id_, field_name):
     """
@@ -39,7 +46,7 @@ def populateDocument(document, unknown_fields, dictionary, id_, field_name):
         unknown_fields.append(field_name)
     else:
         document[field_name] = None
-                
+               
 if __name__ == "__main__":
     """
     Queries the database to retrieve the interview_ids
