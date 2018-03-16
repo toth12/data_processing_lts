@@ -64,7 +64,7 @@ def createStructuredTranscriptDocx():
         mongo_rg = rg_number[:k] + "*" + rg_number[k+1:]
 
         # insert units on the output collection
-        h.update_field(DB, OUTPUT, "shelfmark", mongo_rg, "structured_transcript", units)
+        h.update_field(DB, OUTPUT, "shelf_mark", mongo_rg, "structured_transcript", units)
 
         # update status on the stracker
         h.update_field(DB, TRACKER, "microsoft_doc_file", file, "status", "Processed")
