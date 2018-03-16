@@ -86,6 +86,7 @@ if __name__ == "__main__":
     media_header = [['interview_id', 'url']]
     media_spreadsheet.writerows(media_header)
 
+   
     # go over each interview and populate a document to be insert into Mongo
     for id_ in interview_ids:
         # initialize variables
@@ -104,14 +105,14 @@ if __name__ == "__main__":
 
         # else if .mp4 media was found, save video and look for thumbnail
         if type_of_media == mediaExtraction.MP4:
-
+            
             # get thumbnail image
             images = mediaExtraction.getImages(html)
         
             # populate thumbnail field, if any
             # if no thumbnail, record it on spreadsheet of missing media
             if images:
-                document["media_thumbnail"] = images
+                document["thumbnail_url"] = images
             else:
                 url = mediaExtraction.getWebsite(id_)
                 unknown_media = [id_, url]
@@ -122,8 +123,8 @@ if __name__ == "__main__":
             unknown_fields.append("media_url")
         
         # populate fields with basic info from the original database
-        document['ushhm_unique_id'] = id_
-        document['collection'] = ORIGINAL_DATABASE
+        document['unique_id'] = id_
+        document['collection'] = 'USHMM'
 
         # populate remaining fields
         populateDocument(document, unknown_fields, interviews_year, id_, 'recording_year')
@@ -133,8 +134,8 @@ if __name__ == "__main__":
         #populateDocument(document, unknown_fields, interviewees_gender, id_, 'gender')
         populateDocument(document, unknown_fields, interviewees_names, id_, 'interviewee_name')
         populateDocument(document, unknown_fields, interviews_titles, id_, 'testimony_title')
-        populateDocument(document, unknown_fields, interviews_shelfmarks, id_, 'shelfmark')
-        populateDocument(document, unknown_fields, interviews_provenances, id_, 'historical_provenance')
+        populateDocument(document, unknown_fields, interviews_shelfmarks, id_, 'shelf_mark')
+        populateDocument(document, unknown_fields, interviews_provenances, id_, 'provenance')
         
         # if there were any fields missing in the interview, record themissing interviews in csv
         if unknown_fields:
@@ -146,3 +147,4 @@ if __name__ == "__main__":
         
         # insert in the collection
         h.insert(DB, OUTPUT_COLLECTION, document)
+ 
