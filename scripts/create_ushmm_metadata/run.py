@@ -45,8 +45,8 @@ def populateDocument(document, unknown_fields, dictionary, id_, field_name):
         document[field_name] = None
         unknown_fields.append(field_name)
     else:
-        document[field_name] = None
-               
+        document[field_name] = ''
+                
 if __name__ == "__main__":
     """
     Queries the database to retrieve the interview_ids
@@ -61,7 +61,7 @@ if __name__ == "__main__":
     # initialize dictionaries with all the pieces of information
     interviews_camp_names = getCampNames()
     interviews_ghetto_names = getGhettoNames()
-    interviewees_gender = getGender()
+    #interviewees_gender = getGender()
     interviews_year = getInterviewYear()
     interviews_summary = getInterviewSummary()
     interviewees_names = getIntervieweeName()
@@ -100,7 +100,7 @@ if __name__ == "__main__":
         
         # populate document with media
         document["media_url"] = media
-        document["thumbnail_url"] = None
+        document["thumbnail_url"] = ''
 
         # else if .mp4 media was found, save video and look for thumbnail
         if type_of_media == mediaExtraction.MP4:
@@ -130,7 +130,7 @@ if __name__ == "__main__":
         populateDocument(document, unknown_fields, interviews_camp_names, id_, 'camp_names')
         populateDocument(document, unknown_fields, interviews_ghetto_names, id_, 'ghetto_names')
         populateDocument(document, unknown_fields, interviews_summary, id_, 'interview_summary')
-        populateDocument(document, unknown_fields, interviewees_gender, id_, 'gender')
+        #populateDocument(document, unknown_fields, interviewees_gender, id_, 'gender')
         populateDocument(document, unknown_fields, interviewees_names, id_, 'interviewee_name')
         populateDocument(document, unknown_fields, interviews_titles, id_, 'testimony_title')
         populateDocument(document, unknown_fields, interviews_shelfmarks, id_, 'shelfmark')
