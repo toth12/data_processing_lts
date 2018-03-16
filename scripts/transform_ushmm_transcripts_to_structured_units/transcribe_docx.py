@@ -30,7 +30,7 @@ def getTextUnits(filename):
                 unit_type == "Q:" or
                 unit_type == "Answer:" or 
                  unit_type == "A:"):
-                units.append(paragraph)
+                units.append({'unit':paragraph})
             
     return units
 
