@@ -123,7 +123,7 @@ if __name__ == "__main__":
             unknown_fields.append("media_url")
         
         # populate fields with basic info from the original database
-        document['unique_id'] = id_
+        document['interview_id'] = id_
         document['collection'] = 'USHMM'
 
         # populate remaining fields
@@ -134,7 +134,7 @@ if __name__ == "__main__":
         #populateDocument(document, unknown_fields, interviewees_gender, id_, 'gender')
         populateDocument(document, unknown_fields, interviewees_names, id_, 'interviewee_name')
         populateDocument(document, unknown_fields, interviews_titles, id_, 'testimony_title')
-        populateDocument(document, unknown_fields, interviews_shelfmarks, id_, 'shelf_mark')
+        populateDocument(document, unknown_fields, interviews_shelfmarks, id_, 'shelfmark')
         populateDocument(document, unknown_fields, interviews_provenances, id_, 'provenance')
         
         # if there were any fields missing in the interview, record themissing interviews in csv
