@@ -133,7 +133,15 @@ def getGender():
     """
     # initialize dictionary
     interviewees_gender = dict()
+    
 
+    result = h.query(DB, COLLECTION, {}, {'id': 1, 'interview_summary': 1, 'interviewee': 1})
+
+    for interview in result:
+        interviewees_gender[interview['id']]='male'
+
+    
+    '''temporary suspended
     save_obj(dict(), GENDERIZE_INFO)
     # Create a pool of processes. By default, one is created for each CPU in your machine.
     with concurrent.futures.ProcessPoolExecutor() as executor:
@@ -141,14 +149,19 @@ def getGender():
         # query for interview summaries
         result = h.query(DB, COLLECTION, {}, {'id': 1, 'interview_summary': 1, 'interviewee': 1})
         
+        #temporary code added here
+
+
+        
         # execute calls asynchronously
         for interview, gender in zip(result, executor.map(getGenderHelper, result)):
 
             # add known genders to the dictionary
             if gender != NO_GENDER:
                 key = interview.get('id')
+                #
                 interviewees_gender[key] = gender
-             
+           '''  
     
     return interviewees_gender
         

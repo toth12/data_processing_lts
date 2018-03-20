@@ -16,6 +16,7 @@ sys.path.insert(0, helper_path)
 import helper_mongo as h
 import csv
 import pprint
+import pdb
 
 pp = pprint.PrettyPrinter(indent=4)
 
@@ -61,7 +62,7 @@ if __name__ == "__main__":
     # initialize dictionaries with all the pieces of information
     interviews_camp_names = getCampNames()
     interviews_ghetto_names = getGhettoNames()
-    #interviewees_gender = getGender()
+    interviewees_gender = getGender()
     interviews_year = getInterviewYear()
     interviews_summary = getInterviewSummary()
     interviewees_names = getIntervieweeName()
@@ -131,7 +132,7 @@ if __name__ == "__main__":
         populateDocument(document, unknown_fields, interviews_camp_names, id_, 'camp_names')
         populateDocument(document, unknown_fields, interviews_ghetto_names, id_, 'ghetto_names')
         populateDocument(document, unknown_fields, interviews_summary, id_, 'interview_summary')
-        #populateDocument(document, unknown_fields, interviewees_gender, id_, 'gender')
+        populateDocument(document, unknown_fields, interviewees_gender, id_, 'gender')
         populateDocument(document, unknown_fields, interviewees_names, id_, 'interviewee_name')
         populateDocument(document, unknown_fields, interviews_titles, id_, 'testimony_title')
         populateDocument(document, unknown_fields, interviews_shelfmarks, id_, 'shelfmark')
