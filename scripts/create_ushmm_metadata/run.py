@@ -124,7 +124,7 @@ if __name__ == "__main__":
             unknown_fields.append("media_url")
         
         # populate fields with basic info from the original database
-        document['interview_id'] = id_
+        document['testimony_id'] = id_
         document['collection'] = 'USHMM'
 
         # populate remaining fields
