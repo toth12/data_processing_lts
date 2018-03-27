@@ -25,6 +25,7 @@ DB = constants.DB
 INPUT_COLLECTION = constants.INPUT_COLLECTION
 OUTPUT_COLLECTION = constants.OUTPUT_COLLECTION
 ORIGINAL_DATABASE = "USHM"
+MANUAL_INPUT_CSV = "USHM_missing_records_ELLIOT.csv"
 """
 def retrieveMissingFields(id_, row):
     missing_fields = row[1]
@@ -33,7 +34,31 @@ def retrieveMissingFields(id_, row):
         if field == "interviewee_name":
 """     
 
-def populateDocument(document, unknown_fields, dictionary, id_, field_name):
+def retrieveMissingFields():
+    backup = dict()
+
+    with open('input/' + MANUAL_INPUT_CSV, 'rb') as csvfile:
+        spamreader = csv.reader(csvfile, quotechar='"', quoting=csv.QUOTE_ALL)
+        for row in spamreader:
+            
+            id_ = row[0]
+            info = dict()
+
+            # store gender if any
+            if row[3] != "":
+                info["interviewee_name"] = row[3]
+            
+            if row[4] != "":
+                info["gender"] = row[4]
+
+            if row[5] != "":
+                info["recording_year"] = row[5]
+
+            backup[id_] = info
+
+    return backup        
+
+def populateDocument(document, unknown_fields, dictionary, id_, field_name, manual_backup):
     """
     If a specific field exists for a given interview (id_), 
     add the field the mongo document. Else add to the field
@@ -41,6 +66,12 @@ def populateDocument(document, unknown_fields, dictionary, id_, field_name):
     """
     if dictionary.get(id_, None) != None:
         document[field_name] = dictionary[id_]
+    
+    # check if csv manual backup has info needed
+    elif manual_backup.get(id_, None) != None and field_name in manual_backup[id_] :
+        info = manual_backup[id_]
+        document[field_name] = info[field_name]
+
     elif field_name != 'camp_names' and field_name != 'ghetto_names' and field_name != "interview_summary":
         # if no info, store it as a null value and add it to missing field
         document[field_name] = None
@@ -58,6 +89,7 @@ if __name__ == "__main__":
     created document to a new collection under 'Hol', name 'USHMM' database
     Generate a CSV spreadsheet with the missing field for each interview
     """
+    
     # query for interview ids
     result = h.query(DB, INPUT_COLLECTION, {}, {'id':1} )
     interview_ids = [id_['id'] for id_ in result]
@@ -79,7 +111,7 @@ if __name__ == "__main__":
     spreadsheet = csv.writer(ofile, quotechar='"', quoting=csv.QUOTE_ALL)
 
     # insert header
-    header = [['interview_id', 'missing_fields', 'website_url', 'recording_year', 'gender', 'interviewee_name']]
+    header = [['interview_id', 'missing_fields', 'website_url', 'interviewee_name', 'gender', 'recording_year']]
     spreadsheet.writerows(header)
 
     # initialize csv to record missing thumbnail for .mp4
@@ -90,7 +122,9 @@ if __name__ == "__main__":
     media_header = [['interview_id', 'url']]
     media_spreadsheet.writerows(media_header)
 
-   
+    # get information from manual input csv with missing fields
+    manual_backup = retrieveMissingFields()
+
     # go over each interview and populate a document to be insert into Mongo
     for id_ in interview_ids:
         # initialize variables
@@ -131,15 +165,15 @@ if __name__ == "__main__":
         document['collection'] = 'USHMM'
 
         # populate remaining fields
-        populateDocument(document, unknown_fields, interviews_year, id_, 'recording_year')
-        populateDocument(document, unknown_fields, interviews_camp_names, id_, 'camp_names')
-        populateDocument(document, unknown_fields, interviews_ghetto_names, id_, 'ghetto_names')
-        populateDocument(document, unknown_fields, interviews_summary, id_, 'interview_summary')
-        populateDocument(document, unknown_fields, interviewees_gender, id_, 'gender')
-        populateDocument(document, unknown_fields, interviewees_names, id_, 'interviewee_name')
-        populateDocument(document, unknown_fields, interviews_titles, id_, 'testimony_title')
-        populateDocument(document, unknown_fields, interviews_shelfmarks, id_, 'shelfmark')
-        populateDocument(document, unknown_fields, interviews_provenances, id_, 'provenance')
+        populateDocument(document, unknown_fields, interviews_year, id_, 'recording_year', manual_backup)
+        populateDocument(document, unknown_fields, interviews_camp_names, id_, 'camp_names', manual_backup)
+        populateDocument(document, unknown_fields, interviews_ghetto_names, id_, 'ghetto_names', manual_backup)
+        populateDocument(document, unknown_fields, interviews_summary, id_, 'interview_summary', manual_backup)
+        populateDocument(document, unknown_fields, interviewees_gender, id_, 'gender', manual_backup)
+        populateDocument(document, unknown_fields, interviewees_names, id_, 'interviewee_name', manual_backup)
+        populateDocument(document, unknown_fields, interviews_titles, id_, 'testimony_title', manual_backup)
+        populateDocument(document, unknown_fields, interviews_shelfmarks, id_, 'shelfmark', manual_backup)
+        populateDocument(document, unknown_fields, interviews_provenances, id_, 'provenance', manual_backup)
         
         # if there were any fields missing in the interview, record themissing interviews in csv
         if unknown_fields:

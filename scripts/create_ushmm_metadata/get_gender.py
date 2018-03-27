@@ -11,7 +11,6 @@ import urllib2
 import json
 import unicodedata
 import requests
-import pickle
 
 # database info
 DB = constants.DB
@@ -32,12 +31,12 @@ FEMALE_WORDS = [' her ','Her ', ' she ', 'She ']
 TITLES_PREFIXES = ['Ms.', "Mr.", "Dr.", "Mrs."]
 
 def save_obj(obj, name):
-    with open('input/'+ name + '.pkl', 'wb') as f:
-        pickle.dump(obj, f, pickle.HIGHEST_PROTOCOL)
+    with open('input/'+ name + '.json', 'w') as f:
+        return json.dumps(obj, f)
 
 def load_obj(name):
-    with open('input/' + name + '.pkl', 'rb') as f:
-        return pickle.load(f)
+    with open('input/' + name + '.json', 'r') as f:
+        return json.load(f)
 
 
 #TODO deal with couples
@@ -80,7 +79,7 @@ def getGenderHelper(interview):
         else:
             return FEMALE
     
-    """
+    
     # use Genderize.io as a backup in case interview does not have an interview summary
     elif name != None : 
         # get the interviewee's name
@@ -98,19 +97,21 @@ def getGenderHelper(interview):
         
         # call API
         try:
+            pprint.pprint(url)
             response = requests.get(url)
             
+
             data = response.json()
-           
+            
             #pprint.pprint(data)
             if data is not None and "probability" in data:
                 if data["probability"] > 0.9:
 
                     # convert from unicode to utf
                     gender = data["gender"]
-                    #gender.encode('ascii',errors='backslashreplace')
+                    gender.encode('ascii',errors='backslashreplace')
 
-                    # create entry in the pickle object storing genderize info
+                    # create entry in the json object storing genderize info
                     genderize_backup = load_obj(GENDERIZE_INFO)
                     genderize_backup[first_name] = gender
                     save_obj(genderize_backup, GENDERIZE_INFO)
@@ -118,9 +119,9 @@ def getGenderHelper(interview):
                     return gender
             
         except Exception as e:
-            pprint.pprint("Exception: " + first_name + '. Error: ' + data)
+            pprint.pprint("Exception: " + first_name)
     
-    """
+
     return NO_GENDER
 
 
@@ -160,6 +161,8 @@ def getGender():
     return interviewees_gender
         
 if __name__ == "__main__":
+    obj = dict()
+    save_obj(obj, GENDERIZE_INFO)
     getGender()
-    obj = load_obj(GENDERIZE_INFO)
+    #obj = load_obj(GENDERIZE_INFO)
 
