@@ -43,12 +43,18 @@ def getGhettoNames():
             for item in subj_arr:
                 # check for pattern
                 if 'ghetto' in item:
-                    # add to temp aray
-                    known_ghettos.add(item)
 
-            # if any ghetto was found, add to return dictionary
-            if len(known_ghettos) != 0:
-                interview_mentioned_ghettos[key] = list(known_ghettos)
+                    # e.g u'Jewish ghettos--Poland--Warsaw.'
+                    item_parts = item.split('--')
+
+                    # if ghetto name is available, e.g Warsaw, add it
+                    if len(item_parts) > 2:
+
+                        # add to temp aray
+                        known_ghettos.add(item_parts[2])
+
+            # add ghetto_names, even if empty
+            interview_mentioned_ghettos[key] = list(known_ghettos)
 
     return interview_mentioned_ghettos
 

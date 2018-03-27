@@ -80,7 +80,7 @@ def getGenderHelper(interview):
         else:
             return FEMALE
     
-    
+    """
     # use Genderize.io as a backup in case interview does not have an interview summary
     elif name != None : 
         # get the interviewee's name
@@ -102,27 +102,25 @@ def getGenderHelper(interview):
             
             data = response.json()
            
-            pprint.pprint(data)
+            #pprint.pprint(data)
             if data is not None and "probability" in data:
                 if data["probability"] > 0.9:
 
                     # convert from unicode to utf
                     gender = data["gender"]
-                    gender.encode('ascii','ignore')
+                    #gender.encode('ascii',errors='backslashreplace')
 
                     # create entry in the pickle object storing genderize info
                     genderize_backup = load_obj(GENDERIZE_INFO)
-                    
                     genderize_backup[first_name] = gender
-                    pprint.pprint(genderize_backup)
                     save_obj(genderize_backup, GENDERIZE_INFO)
 
                     return gender
             
         except Exception as e:
-            pprint.pprint("Exception: " + first_name)
+            pprint.pprint("Exception: " + first_name + '. Error: ' + data)
     
-    
+    """
     return NO_GENDER
 
 
@@ -134,15 +132,13 @@ def getGender():
     # initialize dictionary
     interviewees_gender = dict()
     
-
     result = h.query(DB, COLLECTION, {}, {'id': 1, 'interview_summary': 1, 'interviewee': 1})
 
     for interview in result:
         interviewees_gender[interview['id']]='male'
 
-    
-    '''temporary suspended
     save_obj(dict(), GENDERIZE_INFO)
+
     # Create a pool of processes. By default, one is created for each CPU in your machine.
     with concurrent.futures.ProcessPoolExecutor() as executor:
         
@@ -151,23 +147,19 @@ def getGender():
         
         #temporary code added here
 
-
-        
         # execute calls asynchronously
         for interview, gender in zip(result, executor.map(getGenderHelper, result)):
 
             # add known genders to the dictionary
             if gender != NO_GENDER:
                 key = interview.get('id')
-                #
+                # store gender
                 interviewees_gender[key] = gender
-           '''  
+      
     
     return interviewees_gender
         
 if __name__ == "__main__":
-    
+    getGender()
     obj = load_obj(GENDERIZE_INFO)
-    obj["Gabe"] = "male"
-    save_obj(obj, GENDERIZE_INFO)
-    pprint.pprint(obj)
+

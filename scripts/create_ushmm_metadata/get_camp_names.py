@@ -61,11 +61,10 @@ def getCampNames():
                     known_camps.add(camp_name)
             
             # create entry for that interview if there were any camps
-            # else, add the mongo objectId to the list of unkown camps
-            if len(known_camps) != 0:
-                interview_known_camps[key] = list(known_camps) 
-            
-            else:
+            interview_known_camps[key] = list(known_camps)
+
+            # else, add the mongo objectId to the list of unkown camps  
+            if len(known_camps) == 0:
                 unknown_camps.append(mongo_key)
         else:
             # keep track of camps without the subject corporate field
