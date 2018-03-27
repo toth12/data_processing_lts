@@ -45,6 +45,9 @@ def populateDocument(document, unknown_fields, dictionary, id_, field_name):
         # if no info, store it as a null value and add it to missing field
         document[field_name] = None
         unknown_fields.append(field_name)
+    elif field_name =='camp_names' or field_name=='ghetto_names':
+        document[field_name]=[]
+        
     else:
         document[field_name] = ''
                 
@@ -124,7 +127,7 @@ if __name__ == "__main__":
             unknown_fields.append("media_url")
         
         # populate fields with basic info from the original database
-        document['interview_id'] = id_
+        document['testimony_id'] = id_
         document['collection'] = 'USHMM'
 
         # populate remaining fields

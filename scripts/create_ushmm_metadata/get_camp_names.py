@@ -4,6 +4,7 @@ helper_path = os.path.join("..", "..", "utils")
 sys.path.insert(0, helper_path)
 import pdb
 import helper_mongo as h
+import pprint
 
 
 DB = constants.DB
@@ -69,7 +70,6 @@ def getCampNames():
         else:
             # keep track of camps without the subject corporate field
             unknown_camps.append(mongo_key)
-    
     
     return interview_known_camps
 

@@ -49,13 +49,19 @@ def getGhettoNames():
 
                     # if ghetto name is available, e.g Warsaw, add it
                     if len(item_parts) > 2:
+                        name = item_parts[2]
+
+                        # remove '.' from name if it is the last character
+                        if name[len(name) - 1] == '.':
+                            name =  name.replace(name, name[:-1])
 
                         # add to temp aray
-                        known_ghettos.add(item_parts[2])
+                        known_ghettos.add(name)
 
             # add ghetto_names, even if empty
             interview_mentioned_ghettos[key] = list(known_ghettos)
 
+    
     return interview_mentioned_ghettos
 
                 
