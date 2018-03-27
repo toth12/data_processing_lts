@@ -45,6 +45,9 @@ def populateDocument(document, unknown_fields, dictionary, id_, field_name):
         # if no info, store it as a null value and add it to missing field
         document[field_name] = None
         unknown_fields.append(field_name)
+    elif field_name =='camp_names' or field_name=='ghetto_names':
+        document[field_name]=[]
+        
     else:
         document[field_name] = ''
                 

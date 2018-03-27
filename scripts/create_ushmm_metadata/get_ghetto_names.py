@@ -49,7 +49,7 @@ def getGhettoNames():
             # if any ghetto was found, add to return dictionary
             if len(known_ghettos) != 0:
                 interview_mentioned_ghettos[key] = list(known_ghettos)
-
+    
     return interview_mentioned_ghettos
 
                 
