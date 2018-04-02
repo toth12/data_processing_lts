@@ -32,7 +32,7 @@ TITLES_PREFIXES = ['Ms.', "Mr.", "Dr.", "Mrs."]
 
 def save_obj(obj, name):
     with open('input/'+ name + '.json', 'w') as f:
-        return json.dumps(obj, f)
+        return json.dump(obj, f)
 
 def load_obj(name):
     with open('input/' + name + '.json', 'r') as f:
@@ -92,18 +92,19 @@ def getGenderHelper(interview):
         else:
             first_name = tokens[0]
 
+
+        """ 
+        '''Code used to generate the genderize_info.json file used as a backup method'''
         # endpoint to be called     
         url = 'https://api.genderize.io/?name=' + first_name
         
         # call API
         try:
-            pprint.pprint(url)
             response = requests.get(url)
-            
 
             data = response.json()
             
-            #pprint.pprint(data)
+            pprint.pprint(data)
             if data is not None and "probability" in data:
                 if data["probability"] > 0.9:
 
@@ -120,7 +121,12 @@ def getGenderHelper(interview):
             
         except Exception as e:
             pprint.pprint("Exception: " + first_name)
-    
+        """
+        # load the backup method that uses genderize
+        genderize_backup = load_obj(GENDERIZE_INFO)
+        if first_name in genderize_backup:
+            gender = genderize_backup[first_name]
+            return gender
 
     return NO_GENDER
 
@@ -137,8 +143,6 @@ def getGender():
 
     for interview in result:
         interviewees_gender[interview['id']]='male'
-
-    save_obj(dict(), GENDERIZE_INFO)
 
     # Create a pool of processes. By default, one is created for each CPU in your machine.
     with concurrent.futures.ProcessPoolExecutor() as executor:
@@ -157,12 +161,8 @@ def getGender():
                 # store gender
                 interviewees_gender[key] = gender
       
-    
     return interviewees_gender
         
 if __name__ == "__main__":
-    obj = dict()
-    save_obj(obj, GENDERIZE_INFO)
     getGender()
-    #obj = load_obj(GENDERIZE_INFO)
-
+    

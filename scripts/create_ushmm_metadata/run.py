@@ -26,13 +26,6 @@ INPUT_COLLECTION = constants.INPUT_COLLECTION
 OUTPUT_COLLECTION = constants.OUTPUT_COLLECTION
 ORIGINAL_DATABASE = "USHM"
 MANUAL_INPUT_CSV = "USHM_missing_records_ELLIOT.csv"
-"""
-def retrieveMissingFields(id_, row):
-    missing_fields = row[1]
-
-    for field in missing_fields:
-        if field == "interviewee_name":
-"""     
 
 def retrieveMissingFields():
     backup = dict()
@@ -54,6 +47,11 @@ def retrieveMissingFields():
             if row[5] != "":
                 info["recording_year"] = row[5]
 
+            if row[6] != "":
+                info["comments"] = row[6]
+            else:
+                info["comments"] = ""
+
             backup[id_] = info
 
     return backup        
@@ -64,23 +62,30 @@ def populateDocument(document, unknown_fields, dictionary, id_, field_name, manu
     add the field the mongo document. Else add to the field
     of unkown_fields
     """
+    # populate data if possible
     if dictionary.get(id_, None) != None:
         document[field_name] = dictionary[id_]
     
     # check if csv manual backup has info needed
-    elif manual_backup.get(id_, None) != None and field_name in manual_backup[id_] :
+    elif manual_backup.get(id_, None) != None and field_name in manual_backup[id_]:
         info = manual_backup[id_]
         document[field_name] = info[field_name]
 
-    elif field_name != 'camp_names' and field_name != 'ghetto_names' and field_name != "interview_summary":
-        # if no info, store it as a null value and add it to missing field
+    ### even if no info was found, populate the entry with a null-equivalent value 
+    elif field_name == 'camp_names' or field_name == 'ghetto_names':
+        document[field_name]= []
+
+    elif field_name == 'recording_year':
         document[field_name] = None
-        unknown_fields.append(field_name)
-    elif field_name =='camp_names' or field_name=='ghetto_names':
-        document[field_name]=[]
-        
+
+    # for all other missing fields, populate with empty string
     else:
-        document[field_name] = ''
+        document[field_name] = ""
+
+         # add it to missing field csv
+        if field_name != 'interview_summary':
+            unknown_fields.append(field_name)
+
                 
 if __name__ == "__main__":
     """
@@ -93,7 +98,7 @@ if __name__ == "__main__":
     # query for interview ids
     result = h.query(DB, INPUT_COLLECTION, {}, {'id':1} )
     interview_ids = [id_['id'] for id_ in result]
-
+    
     # initialize dictionaries with all the pieces of information
     interviews_camp_names = getCampNames()
     interviews_ghetto_names = getGhettoNames()
@@ -164,13 +169,26 @@ if __name__ == "__main__":
         document['testimony_id'] = id_
         document['collection'] = 'USHMM'
 
+        # if interview has multiple interviewees, leave it as an empty string, else populate
+        if id_ in manual_backup:
+            backup_info = manual_backup[id_]
+            comment = backup_info["comments"]
+            if "Multiple interviewees" in comment:
+                document["interviewee_name"] = ""
+                document["gender"] = ""
+            
+            else:
+                populateDocument(document, unknown_fields, interviewees_names, id_, 'interviewee_name', manual_backup)
+                populateDocument(document, unknown_fields, interviewees_gender, id_, 'gender', manual_backup)
+        else:
+            populateDocument(document, unknown_fields, interviewees_names, id_, 'interviewee_name', manual_backup)
+            populateDocument(document, unknown_fields, interviewees_gender, id_, 'gender', manual_backup)
+        
         # populate remaining fields
         populateDocument(document, unknown_fields, interviews_year, id_, 'recording_year', manual_backup)
         populateDocument(document, unknown_fields, interviews_camp_names, id_, 'camp_names', manual_backup)
         populateDocument(document, unknown_fields, interviews_ghetto_names, id_, 'ghetto_names', manual_backup)
         populateDocument(document, unknown_fields, interviews_summary, id_, 'interview_summary', manual_backup)
-        populateDocument(document, unknown_fields, interviewees_gender, id_, 'gender', manual_backup)
-        populateDocument(document, unknown_fields, interviewees_names, id_, 'interviewee_name', manual_backup)
         populateDocument(document, unknown_fields, interviews_titles, id_, 'testimony_title', manual_backup)
         populateDocument(document, unknown_fields, interviews_shelfmarks, id_, 'shelfmark', manual_backup)
         populateDocument(document, unknown_fields, interviews_provenances, id_, 'provenance', manual_backup)
@@ -185,4 +203,5 @@ if __name__ == "__main__":
         
         # insert in the collection
         h.insert(DB, OUTPUT_COLLECTION, document)
+
  
