@@ -55,19 +55,21 @@ def createStructuredTranscriptDocx():
     for file in core_docx_asset:
         # get text units for this entry
         units = getTextUnits(file)
+        if len(units)>0:
         
-        # get RG number
-        rg_number = file.split("_")[0]
+        
+            # get RG number
+            rg_number = file.split("_")[0]
 
-        # find last occurrence of '.' and replace it with '*' 
-        k = rg_number.rfind(".")
-        mongo_rg = rg_number[:k] + "*" + rg_number[k+1:]
+            # find last occurrence of '.' and replace it with '*' 
+            k = rg_number.rfind(".")
+            mongo_rg = rg_number[:k] + "*" + rg_number[k+1:]
 
-        # insert units on the output collection
-        h.update_field(DB, OUTPUT, "shelfmark", mongo_rg, "structured_transcript", units)
+            # insert units on the output collection
+            h.update_field(DB, OUTPUT, "shelfmark", mongo_rg, "structured_transcript", units)
 
-        # update status on the stracker
-        h.update_field(DB, TRACKER, "microsoft_doc_file", file, "status", "Processed")
+            # update status on the stracker
+            h.update_field(DB, TRACKER, "microsoft_doc_file", file, "status", "Processed")
 
     # success
     pprint.pprint("Core_docx_asset was successfully processed.")
