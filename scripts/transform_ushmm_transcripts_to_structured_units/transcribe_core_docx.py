@@ -14,7 +14,6 @@ DB = constants.DB
 
 def getTextUnits(filename):
     doc = Document(filename)
-    
     units = list()
 
     # iterate over all paragraphs to get text units
@@ -25,13 +24,25 @@ def getTextUnits(filename):
         if paragraph:
             # get first word
             unit_type = paragraph.partition(' ')[0]
+
+            # exception, two interviews do not follow the formatting guidelines
+            # handle them
+            if (filename == "RG-50.030.0710_trs_en.docx" or
+                filename == "RG-50.030.0711_trs_en.docx"):
+                
+                if unit_type == "[DL]" or unit_type == "[AG]":
+                    units.append({'unit': paragraph})
             
-            if (unit_type == "Question:" or
+            # else parse them according to formatting guidelines
+            elif ("Question:" in unit_type or
                 unit_type == "Q:" or
-                unit_type == "Answer:" or 
-                 unit_type == "A:"):
-                units.append({'unit':paragraph})
-            
+                "Q." in unit_type or
+                "Answer:" in unit_type or 
+                unit_type == "A:" or
+                "A." in unit_type):
+
+                units.append({'unit': paragraph})
+
     return units
 
 def createStructuredTranscriptDocx():
@@ -55,21 +66,19 @@ def createStructuredTranscriptDocx():
     for file in core_docx_asset:
         # get text units for this entry
         units = getTextUnits(file)
-        if len(units)>0:
-        
-        
-            # get RG number
-            rg_number = file.split("_")[0]
+       
+        # get RG number
+        rg_number = file.split("_")[0]
 
-            # find last occurrence of '.' and replace it with '*' 
-            k = rg_number.rfind(".")
-            mongo_rg = rg_number[:k] + "*" + rg_number[k+1:]
+        # find last occurrence of '.' and replace it with '*' 
+        k = rg_number.rfind(".")
+        mongo_rg = rg_number[:k] + "*" + rg_number[k+1:]
 
-            # insert units on the output collection
-            h.update_field(DB, OUTPUT, "shelfmark", mongo_rg, "structured_transcript", units)
+        # insert units on the output collection
+        h.update_field(DB, OUTPUT, "shelfmark", mongo_rg, "structured_transcript", units)
 
-            # update status on the stracker
-            h.update_field(DB, TRACKER, "microsoft_doc_file", file, "status", "Processed")
+        # update status on the stracker
+        h.update_field(DB, TRACKER, "microsoft_doc_file", file, "status", "Processed")
 
     # success
     pprint.pprint("Core_docx_asset was successfully processed.")
