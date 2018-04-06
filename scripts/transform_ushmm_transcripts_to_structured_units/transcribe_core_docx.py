@@ -79,7 +79,7 @@ def createStructuredTranscriptDocx():
 
         # update status on the stracker
         h.update_field(DB, TRACKER, "microsoft_doc_file", file, "status", "Processed")
-
+        
     # success
     pprint.pprint("Core_docx_asset was successfully processed.")
 

@@ -58,7 +58,7 @@ def getTextUnits(filename):
 
 def createStructuredTranscriptDocx():
     """
-    Processes the 82 docx files beloging to the core asset in data
+    Processes the 509 doc files beloging to the core asset in data
     Core asset is identified by numbers RG-50.030, RG-50.106, RG-50.549
     """
     core_doc_asset = []
@@ -97,8 +97,9 @@ def createStructuredTranscriptDocx():
             # insert units on the output collection
             h.update_field(DB, OUTPUT, "shelfmark", mongo_rg, "structured_transcript", units)
 
+            original_filename = file[:-1]
             # update status on the stracker
-            h.update_field(DB, TRACKER, "microsoft_doc_file", file, "status", "Processed")
+            h.update_field(DB, TRACKER, "microsoft_doc_file", original_filename, "status", "Processed")
 
     # success
     pprint.pprint("Core_docx_asset was successfully processed.")

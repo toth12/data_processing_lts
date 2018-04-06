@@ -1,0 +1,16 @@
+[{'unit': u'Q. Would your father have done the same if he was in similar'}]
+RG-50.012.0043_trs_en.docx
+[{'unit': u'Questions: What do you tell your kids about the Holocaust.'}]
+RG-50.043.0002_trs_en.docx
+[{'unit': u'Question: Can we go back to you telling us a little bit about your town and what kinds of changes were going on before the war?'}, {'unit': u'Question: Can you describe the ghettos?  '}, {'unit': u'Question: What were the names of the ghettos and what were the approximate dates you were there?  '}, {'unit': u'Question: What camp was this?  '}, {'unit': u'Question: What were the living conditions like in the Scherbs(p) ghetto?'}, {'unit': u'Question: What was the formation of the ghetto?  How did they decide who worked?'}, {'unit': u'Question: What were the social and political systems in terms of law enforcement and government?'}, {'unit': u'Question:  How was the closing of the ghetto accomplished?'}, {'unit': u'Question: When you were on the trucks from the Malava(p) ghetto what were you thinking?'}, {'unit': u'Question: How did you know this?'}]
+RG-50.045.0016_trs_en.docx
+[{'unit': u'U.S, I never went back to Romania, I left my apartment, my'}]
+RG-50.062.0022_trs_en.docx
+[{'unit': u'G-A-N-I.'}]
+RG-50.233.0014_trs_en.docx
+[{'unit': u'\tInterview conducted: July 12, 1992'}]
+RG-50.233.0106_trs_en.docx
+[{'unit': u'O.k.  Then he would have been finished with school by the time the war started.'}]
+RG-50.233.0133_trs_en.docx
+[{'unit': u'RG-50.233*0139'}]
+RG-50.233.0139_trs_en.docx
