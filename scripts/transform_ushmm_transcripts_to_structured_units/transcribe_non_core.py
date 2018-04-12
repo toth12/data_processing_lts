@@ -19,7 +19,11 @@ DB = constants.DB
 def safePrint(str_):
     return ''.join(i for i in str_ if ord(i) < 128)
 
-def getMonologue(filename):
+def get062Monologue(filename):
+    """
+    Returns the monologue unit for the RG-50.062 series
+    Ignores headers info annotated within -- or ..
+    """
     doc = Document(filename)
     
     monologue = ""
@@ -34,11 +38,11 @@ def getMonologue(filename):
             
             # ensure it is not a header type
             if paragraph.count('-') < 2 and paragraph.count('.') < 2:
-                monologue += paragraph + ' '
+                monologue += paragraph
     
     return list({'unit': monologue})
 
-def getUnstructuredUnits(filename):
+def getUnstructured203Units(filename):
     doc = Document(filename)
     units = list()
     isHeader = True
@@ -47,6 +51,7 @@ def getUnstructuredUnits(filename):
         
         # ensure it is not an empty line
         if paragraph:
+
             # ignore the initial header info
             if isHeader:
                 if paragraph.split() > 5:
@@ -59,11 +64,43 @@ def getUnstructuredUnits(filename):
     return units   
 
 
-def get405Units(filename):
-    print(filename)
+def get405Monologue(filename):
+    """
+    Returns the monologue unit for the RG-50.405 monologue interviews
+    Ignores the first page that consists of interview header info
+    """
     doc = Document(filename)
     units = list()
     isHeader = True
+    monologue = ""
+    for para in doc.paragraphs:
+        paragraph = para.text
+        
+        # ensure it is not an empty line
+        if paragraph:
+            if isHeader:
+                # this strings indicates wheen the end of the headeer
+                if "JEWISH ORGANIZATIONAL AFFILIATIONS (IF GIVEN):" in paragraph:
+                    isHeader = False
+            
+            else:
+                monologue += paragraph
+    units.append({'unit:': monologue})
+
+    return units
+
+def getUnstructured405Units(filename):
+    """
+    Returns the units for the highly irregular RG-50.405 series
+    Questions and answers were on the same paragraph.
+    Questions were annotated within a parethensesis e.g. (Where do you live?)
+    Some answers for the same questions were broken in different paragraphs
+    """
+    doc = Document(filename)
+    units = list()
+    isHeader = True
+
+    ongoing_answer = ""
     for para in doc.paragraphs:
         paragraph = para.text
         
@@ -72,32 +109,87 @@ def get405Units(filename):
             # check if there is a question
             para_partition = paragraph.split(')', 1)
             
-            
             # it is a Q & A
             if isHeader:
                 # check if we found the start of the interview - first question
                 if (len(para_partition) > 1 and 
                     para_partition[0][len(para_partition[0]) - 1] == '?'):
-                    print(para_partition)
                     # ignore the initial ? for the question
                     units.append({'unit': para_partition[0][1:]})
-                    units.append({'unit:': para_partition[1]})
+
+                    # start capturing the answer
+                    ongoing_answer += para_partition[1].lstrip()
+                    #units.append({'unit:': para_partition[1]})
                     isHeader = False
             else:
+                # found a new question
                 if (len(para_partition) > 1 and 
                     para_partition[0][len(para_partition[0]) - 1] == '?'):
-                    # ignore the initial ? for the question
-                    units.append({'unit': para_partition[0][1:]})
-                    units.append({'unit:': para_partition[1]})
-                else:
-                    units.append({'unit': paragraph})
+                    # save the previous answer if any
+                    if ongoing_answer:
+                        units.append({'unit': ongoing_answer})
 
+                    # reset it
+                    ongoing_answer = ""
+                    
+                    # get question
+                    question = para_partition[0].lstrip() 
+
+                    # ignore the initial '(' for the question
+                    units.append({'unit': question[1:]})
+
+                    #units.append({'unit:': para_partition[1]})
+                    ongoing_answer +=  para_partition[1].lstrip()
+                else:
+                    ongoing_answer +=  paragraph.lstrip()
+
+    
     # in case it is a monologue
-    #if not units:
-        #for para in doc.paragraphs:
-    if ".0031" in filename:
-        pprint.pprint(units)
+    if len(units) < 5:
+        units = get405Monologue(filename)
+        
     return units
+
+"""
+def getUnstructured005Units(filename):
+    doc = Document(filename)
+    units = list()
+    isHeader = True
+
+    for para in doc.paragraphs:
+        paragraph = para.text
+        
+        # timestamp e.g 15:01:27
+        o = re.compile('[0-9]?[0-9]:[0-9][0-9]:[0-9][0-9]')
+        # ensure it is not an empty line
+        if paragraph:
+            if isHeader:
+"""
+def getBasicMonologue(filename):
+    """
+    Returns the units for the 3 intervies undeviews under the RG-50.005 series
+    This series is composed of monologues with some sentences randomly separated 
+    by line breaks
+    """
+    doc = Document(filename)
+    units = list()
+    isHeader = True
+
+    monologue = ""
+    for para in doc.paragraphs:
+        paragraph = para.text
+        
+        # ensure it is not an empty line
+        if paragraph:
+            if isHeader:
+                if len(paragraph.split()) > 7:
+                    isHeader = False
+                    monologue += paragraph
+            else:
+                monologue += ' ' + paragraph
+
+    return list({'unit': monologue})
+            
 
 def getTextUnits(filename):
     doc = Document(filename)
@@ -107,6 +199,9 @@ def getTextUnits(filename):
     
     non_units = ["name:", "date:", "thesis:", "currently:", "note", "comment", "grandparents:", "transcript:", "note:"]
 
+    #  50.005 is a special case, with line breaks for every sentence
+
+    
     # iterate over all paragraphs to get text units
     for para in doc.paragraphs:
         paragraph = para.text
@@ -125,14 +220,16 @@ def getTextUnits(filename):
             n = re.compile('\[[A-Z][A-Z]\]')
             typer2= n.match(unit_type)
 
-            # for interviews that have interviewee name at the beginning of unit
-            #if unit_type.isupper() and unit_type.isalpha() and len(unit_type) > 1:
+            # timestamp e.g 15:01:27
+            o = re.compile('[0-9]?[0-9]:[0-9][0-9]:[0-9][0-9]')
+            type3 = o.match(unit_type)           
 
             # else parse them according to formatting guidelines
             if ("Question:" in unit_type or
                 type1 or
                 "Answer:" in unit_type or 
-                typer2):
+                typer2 or
+                type3):
 
                 safePrint(unit_type)
                 units.append({'unit': paragraph})
@@ -160,38 +257,33 @@ def getTextUnits(filename):
                     units.append({'unit': paragraph})
                     # update tracker
                     unit_tracker[unit_type] += 1
-            # "Marion Muscati:" or "Vicente del Bosque"
-            '''elif len(paragraph.split()) > 3:
-                backup_type = paragraph.split()[2]
-                third_backup = paragraph.split()[3]
-                
-                if filename == "RG-50.470.0012_trs_en.docx":
-                    print third_backup
-                if ((':' in backup_type and backup_type.lower() not in non_units) or 
-                    (':' in third_backup and third_backup not in non_units)): 
-                    units.append({'unit': paragraph})
-                    # update tracker
-                    unit_tracker[unit_type] += 1'''
  
 
-    # check if backup method needed
+    # apply backup method when needed
     if len(unit_tracker) < 2:
         # the remaining 50.062 series is composed of monologues
         if "RG-50.062" in filename:
-            units = getMonologue(filename)
+            units = get062Monologue(filename)
             return units
         
         elif "RG-50.233" in filename:
-            units = getUnstructuredUnits(filename)
+            units = getUnstructured203Units(filename)
 
         elif "RG-50.405" in filename:
-            units = get405Units(filename)
+            units = getUnstructured405Units(filename)
         
+        elif ("RG-50.043" in filename or 
+            "RG-50.462" in filename or
+            "RG-50.045" in filename):
+            units = getBasicMonologue(filename)
         else:
             return []
 
+    #if "005.0028" in filename:
+        #pprint.pprint(units)
     return units
 
+    
 def createStructuredTranscriptDocX():
     docx_assets = []
     count = 0
@@ -231,3 +323,4 @@ def createStructuredTranscriptDocX():
 
 if __name__ == "__main__":
     createStructuredTranscriptDocX()
+    #TODO handle the 005 exception
