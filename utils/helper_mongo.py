@@ -94,8 +94,8 @@ def update_field(db_name,collection_name, query_key, query_value, field_key, fie
 	db = client[db_name]
 	collection = db[collection_name]
 
-
 	collection.update({query_key : query_value}, {'$set': {field_key: field_value}})
+
 	client.close()
 
 
