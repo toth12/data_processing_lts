@@ -1,0 +1,1301 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f30\fnil\fcharset2\fprq2{\*\panose 00000000000000000000}WP Hebrew David;}
+{\f31\froman\fcharset238\fprq2 Times New Roman CE;}{\f32\froman\fcharset204\fprq2 Times New Roman Cyr;}{\f34\froman\fcharset161\fprq2 Times New Roman Greek;}{\f35\froman\fcharset162\fprq2 Times New Roman Tur;}
+{\f36\froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\f37\froman\fcharset178\fprq2 Times New Roman (Arabic);}{\f38\froman\fcharset186\fprq2 Times New Roman Baltic;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;
+\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;
+\red128\green128\blue128;\red192\green192\blue192;}{\stylesheet{\ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext0 Normal;}{\*\cs10 \additive Default Paragraph Font;}{\*\cs15 \additive 
+Default Par1;}{\*\cs16 \additive \fs20 Default Para;}{\s17\qc \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext17 1;}{\s18\qj \li0\ri0\nowidctlpar\tx0\tqc\tx4320\tqr\tx8640\faauto\rin0\lin0\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext18 header;}{\*\cs19 \additive \sbasedon10 page number;}{\*\cs20 \additive \super Endnote Refe;}{\*\cs21 \additive \super Footnote Ref;}{\s22\qj \li0\ri0\nowidctlpar
+\tx0\tqc\tx4320\tqr\tx8640\faauto\rin0\lin0\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext22 footer;}{\s23\qj \fi-720\li720\ri0\nowidctlpar
+\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin720\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext23 _level1;}{\s24\qj \fi-720\li1440\ri0\nowidctlpar
+\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin1440\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext24 _level2;}{\s25\qj \fi-720\li2160\ri0\nowidctlpar
+\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin2160\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext25 _level3;}{\s26\qj \fi-720\li2880\ri0\nowidctlpar
+\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin2880\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext26 _level4;}{\s27\qj \fi-720\li3600\ri0\nowidctlpar
+\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin3600\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext27 _level5;}{\s28\qj \fi-720\li4320\ri0\nowidctlpar
+\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin4320\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext28 _level6;}{\s29\qj \fi-720\li5040\ri0\nowidctlpar
+\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin5040\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext29 _level7;}{\s30\qj \fi-720\li5760\ri0\nowidctlpar\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin5760\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext30 _level8;}{\s31\qj \fi-720\li6480\ri0\nowidctlpar\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin6480\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext31 _level9;}{
+\s32\qj \fi-720\li720\ri0\nowidctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin720\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext32 _levnl1;}{
+\s33\qj \fi-720\li1440\ri0\nowidctlpar\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin1440\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext33 _levnl2;}{\s34\qj \fi-720\li2160\ri0\nowidctlpar
+\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin2160\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext34 _levnl3;}{\s35\qj \fi-720\li2880\ri0\nowidctlpar
+\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin2880\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext35 _levnl4;}{\s36\qj \fi-720\li3600\ri0\nowidctlpar
+\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin3600\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext36 _levnl5;}{\s37\qj \fi-720\li4320\ri0\nowidctlpar
+\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin4320\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext37 _levnl6;}{\s38\qj \fi-720\li5040\ri0\nowidctlpar
+\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin5040\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext38 _levnl7;}{\s39\qj \fi-720\li5760\ri0\nowidctlpar\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin5760\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext39 _levnl8;}{\s40\qj \fi-720\li6480\ri0\nowidctlpar\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin6480\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext40 _levnl9;}}{\info
+{\title Tape two, side two:}{\author Douglas F. Olena}{\operator Preferred User}{\creatim\yr2003\mo7\dy8\hr17\min20}{\revtim\yr2003\mo8\dy5\hr15\min4}{\printim\yr2003\mo7\dy8\hr17\min21}{\version3}{\edmins29}{\nofpages54}{\nofwords14532}{\nofchars82838}
+{\*\company Gratz College}{\nofcharsws101730}{\vern8299}}\margl1728\margr1440\margt1729 
+\widowctrl\ftnbj\aenddoc\pgnstart43\hyphhotz365\aftnnar\notabind\noxlattoyen\expshrtn\noultrlspc\dntblnsbdb\nospaceforul\subfontbysize\lytprtmet\hyphcaps0\horzdoc\dghspace120\dgvspace120\dghorigin1701\dgvorigin1984\dghshow0\dgvshow3
+\jcompress\viewkind1\viewscale75\nolnhtadjtbl \fet0\sectd \sbknone\pgnrestart\pgnstarts43\linex0\headery809\footery1440\sectdefaultcl {\header \pard\plain \qr \li86\ri432\nowidctlpar
+\tx14\tx86\tx734\tx1454\tx2174\tx2894\tx3614\tx4334\tx5054\tx5774\tx6494\tx7214\tx7934\tx8654\tx8726\faauto\rin432\lin86\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i\fs24 
+\par YEHUDA MANDEL    [3-1-\chpgn ]    
+\par }}{\footer \pard\plain \qc \li86\ri432\nowidctlpar\tx14\tx86\tx734\tx1454\tx2174\tx2894\tx3614\tx4334\tx5054\tx5774\tx6494\tx7214\tx7934\tx8654\tx8726\faauto\rin432\lin86\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i 
+From the collection of the Gratz College Holocaust Oral History Archive
+\par }}{\*\pnseclvl1\pndec\pnstart1 {\pntxta .}}{\*\pnseclvl2\pnlcltr\pnstart1 {\pntxta .}}{\*\pnseclvl3\pnlcrm\pnstart1 {\pntxta .}}{\*\pnseclvl4\pndec\pnstart1 {\pntxtb (}{\pntxta )}}{\*\pnseclvl5\pnlcltr\pnstart1 {\pntxtb (}{\pntxta )}}{\*\pnseclvl6
+\pnlcrm\pnstart1 {\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pndec\pnstart1 {\pntxta .}}{\*\pnseclvl8\pnlcltr\pnstart1 {\pntxta .}}{\*\pnseclvl9\pnlcrm\pnstart1 }\pard\plain \ql \li0\ri0\sl361\slmult0\nowidctlpar\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\field{\*\fldinst {\fs24\lang4105\langfe1033\langnp4105  SEQ CHAPTER \\h \\r 1}}{\fldrslt }}{\i\fs24 Tape three, side one:}{\fs24 
+\par }\pard \ql \fi540\li0\ri0\sl361\slmult0\nowidctlpar\faauto\rin0\lin0\itap0 {\fs24 
+\par NL:\tab This is tape three, side one, continuing our interview with Cantor Yehuda Mandel, March 17, 1982.  Yes, so, even before the Nazi occupation there was mounting antisemitism.
+\par YM:\tab All the time.
+\par NL:\tab All the time.
+\par YM:\tab All the time.  If you look back to 1920, you know what happened in Hungary.
+\par NL:\tab Yes.
+\par YM:\tab Hundreds of people were killed, and, and, eh, persecuted, then already, because they had that, they had that need to do something against the Jews.  Why?  The main reason in my opinion is, was, at that time, when everything was fine, was the 
+Church.
+\par NL:\tab I see.
+\par YM:\tab The Church, the Catholic Church had an immense influence.  The state religion was Catholic, and they had an immense influence on the people.  And I don't have to tell you that the Church did not do too much good for the Jews at any t
+ime, and, ah...
+\par NL:\tab Was there also an economic factor, Jews were the prime elements in the middle class I believe, weren't they?
+\par YM:\tab Actually, yes.
+\par NL:\tab Yes.
+\par YM:\tab Yes, that's true.  And jealousy.
+\par NL:\tab Jealousy.
+\par YM:\tab And, eh, was prevalent all the time, everywhere.
+\par NL:\tab Hmm.
+\par YM:\tab However, the time I'm talking about and which I experienced, it was already official.  There were laws passed by the parliament against the Jews, what I have told you before.
+\par NL:\tab Yes.
+\par YM:\tab So, do you think I should go back, eh, go on?
+\par NL:\tab I think...
+\par YM:\tab On my own, or shall I, eh, shall I continue, or do you have any questions concerning...
+\par NL:\tab I was just going to ask one more question.  Were you aware of any large numbers of Jews leaving Hungary at this time, or talking about leaving?
+\par YM:\tab If there were people who were leaving, it was a very, very minute, little, eh...
+\par NL:\tab Group.
+\par YM:\tab ...group, or percentage of the Jewish people.  Hungarian Jewry really could have saved itself, almost completely, if they would have been aware of what they are facing.
+\par NL:\tab Where could they have gone, Mr. Mandel?
+\par YM:\tab They could have gone to countries like Canada.  They could have gone to countries like, in a, in a limited way, even to Palestine of that time, and many, many other places.  But, everyone else, I thin
+k, or most of the people, including myself, we never realized.  Finally, we had, we had it on the wall as they say.  It was just to be seen.  The picture was there.  Hundreds of, hundreds of people were leaving Germany, going through Hungary, going throug
+h Yugoslavia...
+\par NL:\tab You heard stories about the persecution.
+\par YM:\tab From all facets of life, and we could have seen.  But most probably, and this is my own feeling, we didn't want to see it.  We had it too good.
+\par NL:\tab Yes.
+\par YM:\tab Finally I, as a person 32 years old
+, come to Budapest, and when my salary had to be established, so the Secretary General tells me, "We'll put you in this-and-this class, classification of salary scale," he says, "you know, this is the salary the Minister for Interior, for the Interior is 
+g
+etting, so you should be satisfied."  So we, we couldn't spend it, and we couldn't, as beautiful as we wanted to live, we just, we just had more than we could observe, or could use.  And this probably was one factor.  Finally, Austria was occupied, we saw
+ it, we felt it, we, we saw it, we knew what happened in '39, we knew what happened in '38, we knew what happened in }{\i\fs24 Oberoestreich}{\fs24  [or }{\i\fs24 Ober\'f6streich}{\fs24 ] in '37, '38, '39, and we still stayed there.
+\par NL:\tab You felt immune.
+\par YM:\tab Ya.  It can be, can be anywhere and everywhere but here.  And this is the }{\i\fs24 klala}{\fs24 
+, the curse, of Jews.  I, as I read on now and read all through the generations, we didn't understand.  Other people say we are smart.  I think we aren't so smart for ourselves anyway.
+\par NL:\tab When it comes to survival.
+\par YM:\tab Right.  Any more questions?
+\par NL:\tab Not, not at the moment.  And so you decided to go to London, then, or did you...
+\par YM:\tab I applied, and I got an answer very quickly, "Yes, we, we are happy to have you for this and this Shabbat," and I should come.
+\par NL:\tab So this was '37.
+\par YM:\tab End of '37, yes.  Or the beginning of '38, '37-'38.  I think it was February of '38 if I am not wrong.  I went to London.  I was introduced to the Chief Rabbi and the }{\i\fs24 Bet Din}{\fs24  [Rabbinical Court] was si
+tting with me for all morning, and I went through the, the eh, tests which they give there, because there, they, if you are engaged by the United Synagogue, it's for a lifetime.  So they are very careful with their engagements, and who they engage, and ho
+w, and so on.
+\par NL:\tab May I ask what language you spoke?
+\par YM:\tab Yiddish.
+\par NL:\tab Yiddish.
+\par YM:\tab Or, with the }{\i\fs24 Bet Din}{\fs24  I spoke Hebrew.
+\par NL:\tab Hebrew.
+\par YM:\tab Ya.  Eh, and, I couldn't, I didn't speak a word of English, so how could I speak any other language but Yiddish?
+\par NL:\tab Well, I, I wondered.
+\par YM:\tab Yiddish with the people in general.  For instance, I stayed in a hotel, so the owner of the hotel was very honored that the Duke's Place Synagogue sends to him the }{\i\fs24 hazan}{\fs24 
+ and so forth, he himself served everything I needed, but he spoke in perfect Yiddish, so no problem.
+\par NL:\tab Yes.
+\par YM:\tab With eh, Rabbi, eh...
+\par NL:\tab Hertz.
+\par YM:\tab Hertz.  I don't know if you know it, that he was born and in childhood lived in Hungary.
+\par NL:\tab No, I didn't.
+\par YM:\tab Ya.  And he remembered a few Hungarian words.
+\par NL:\tab [chuckles]
+\par YM:\tab So that was our little joke.
+\par NL:\tab Yes.
+\par YM:\tab So, eh, I went through the whole thing, the United Synagogue sent me for medical exams and all that, and finally, after I performed services and after they felt I may be a candidate, and this again bears out 
+what I said before, we just didn't realize what we are faced with.  There were two meetings of the very selected board of the United Synagogue.  Sir Waley Cohen was the president, and some other people, four or five that I remember, one Dr. Rosen, who was
+ the vice president of Duke's Place Temple, he was with me because he spoke Yiddish and in a hurry, if I had to say something, he was the man who translated my Yiddish into English.  But anyway, what I want to say is, I performed services }{\i\fs24 
+Shabbes}{\fs24 .  Monday, 
+Tuesday, were taken up with seeing the doctors, getting through the health examinations, and all that, in the afternoon have meetings with the board of the United Synagogue, and Wednesday, and they prepared the agreement, and we are supposed to sign it on
+ 
+Wednesday evening.  Fine.  Wednesday morning I receive a telegram from Eppler Shambur [phonetic], he was the executive vice president of the main organiz-, main community in Budapest, "Your papers are in order again for another four years.  We expect you 
+home.  With love."
+\par NL:\tab Oh my.
+\par YM:\tab My family is in Budapest.  We are beautifully, eh...
+\par NL:\tab Situated.
+\par YM:\tab ...situated, and I go to the United Synagogue main office, and tell the secretary to call Sir Waley Cohen for me.  I couldn't talk to hi
+m, so I asked him, he spoke Yiddish, too, to translate and tell the, eh, president, Sir Waley Cohen, that I am again well-situated in Hungary and I am leaving, I don't want them to bear any expenses, I will go back home.  And I went back in 1938 to Hungar
+y.  So did we see?  We were just blind.  We didn't realize what's going on.
+\par NL:\tab But you may have thought there was a change in the atmosphere inasmuch...
+\par YM:\tab I, yes.
+\par NL:\tab Yes.
+\par YM:\tab I surely did.
+\par NL:\tab Yes.
+\par YM:\tab But it wasn't so.  And I was--I didn't see clearly.
+\par NL:\tab Well...
+\par YM:\tab Our eyes were completely--in Yiddish they say, }{\i\fs24 Oz Got vil einem schtroffen, nemt em zu dem ruyabid}{\fs24 . [If God wants to punish someone, then his capacity of seeing is taken away.]  The capacity of seeing.
+\par NL:\tab Of seeing.
+\par YM:\tab And this is exactly what happened to Hungarians.
+\par NL:\tab But what did happen that seemed to indicate a change in the atmosphere?  Was it a freak or a fluke?
+\par YM:\tab When I came back, the parliament was discussing the second law against the Jews.  That's the way it was.  In 1939, I stayed there with all kinds of trouble, here and there, again some, eh...
+\par NL:\tab Restrictions.
+\par YM:\tab ...some restrictions, and here I won't be able maybe you know to perform services again, and this news came, and went, and came, and went, but you have to under
+stand that the community as such had an immense power, an immense power.  In spite of everything.
+\par NL:\tab Political?
+\par YM:\tab Political and locally.  Even with this antisemite who was the head of the Alien Department, even through somebody else they had influence on him.
+\par NL:\tab I see.
+\par YM:\tab And I stayed on.  The first, the first, eh...
+\par NL:\tab Excuse me, but was your son feeling some discrimination in school?
+\par YM:\tab No, because he was all, among all Jewish children.
+\par NL:\tab He was in a Jewish school.
+\par YM:\tab In a Jewish school.
+\par NL:\tab I see.  And your wife, was she teaching?
+\par YM:\tab She was not teaching, and she didn't feel it.
+\par NL:\tab She didn't feel it.
+\par YM:\tab Here and there you heard the [unclear].
+\par NL:\tab But it was tolerable.
+\par YM:\tab Or outside, I don't know, you saw something of this, but it wasn't an organized way of hurting Jews.  However, it seems, through the Alien Department of the Ministry of the Interior, I was drafted into the, eh, into the labor camp in 1939 already.
+
+\par NL:\tab Mmm.
+\par YM:\tab During the summer we were in a place for the summer.
+\par NL:\tab Resort.
+\par YM:\tab Resort.  I received a, I received from the Ministry of Interior to report so and so here and here at this and this time.  I knew it is no good, because this is the way they gathered the people who were later on, trans-,
+\par NL:\tab Transported.
+\par YM:\tab Transported to, deported to Kamenets-Pudolsk.  I went home, and spoke to the organization, mainly to this executive vice president, who spoke to the chief rabbinate of Hungary.  We had a wonderful person.  His name was Dr. Havashi, Shimon\endash 
+Simon Havashi.  And he said the following, "Look, you had difficulty already because you are a Czechoslovakian citizen.  How about if we do this?  I will call the organization of chaplaincy."  The Jews had chaplain
+s just as the Catholics had chaplains.  "You are qualified.  You are }{\i\fs24 musmach}{\fs24  of }{\i\fs24 yeshivah}{\fs24 
+ [master, authority].  President.  We will write up your whole history.  I myself will contact the minister for military..." For, eh, I don't know what it was, [mumbles].
+\par NL:\tab Military affairs.
+\par YM:\tab Military affairs.  "And try to make a deal to them.  You will serve as a chaplain in the Hungarian army."  Wonderful.  Very good.  So this happened.  I was accepted.  I went into the army, instead of being herded up and, I don'
+t know, wherever they wanted to take me.
+\par NL:\tab To the Russian front.
+\par YM:\tab Ya.  And I worked there as a chaplain.  I stayed in my position, but whenever there was any question of, of Jew-, I mean, anything to do with Jewish chaplaincy, I was there in the hospi
+tals, in the barracks, military barracks.  If there was any other question...
+\par NL:\tab If someone died.
+\par YM:\tab If someone died, or funeral, or even weddings and so on, I, I was the one.
+\par NL:\tab You moved around.
+\par YM:\tab Moved, moved around.  But I kept my position and stayed in Budapest.
+\par NL:\tab Ohhhhh...
+\par YM:\tab In and around Budapest.  I did not go away.  I did not have to leave my position.
+\par NL:\tab I see.
+\par YM:\tab 'Cause that was one condition of, eh...
+\par NL:\tab Your appointment.
+\par YM:\tab Of my appointment, that the chief rabbi said, "He has a hi
+gh position here and is needed here.  However, he will serve wherever you need him, whenever you need him.  He is at your disposal.  We have in the whole country two or three chaplains, and we can't get you more.  We don't have the people, but here is you
+r chance."  So, they agreed.  So, here it went on...
+\par NL:\tab Excuse me, did you have contact with other Jews in the labor force, and could you see what was happening?
+\par YM:\tab This was not the labor force yet.  At the time when I went...
+\par NL:\tab Oh.
+\par YM:\tab ...in '39, Jews were still in the military.
+\par NL:\tab This was the army.
+\par YM:\tab The army.
+\par NL:\tab And you had a Hungarian army uniform.
+\par YM:\tab Ya.
+\par NL:\tab I see.  I see.
+\par YM:\tab Later on, this went on 1939, '40, I t
+hink even '41, then came a decree, a military decree, "Jews cannot wear Hungarian uniforms anymore, and have to be demoted."  If they were officers, they were demoted to privates, put into the, into different companies, labor companies.
+\par NL:\tab Labor companies.
+\par YM:\tab Labor companies.  And, there were people for instance who were high, highly, eh...
+\par NL:\tab In high ranks.
+\par YM:\tab In high ranks.  They couldn't keep their distinction in any way, and had to be demoted as laborers.  Even this didn't open our eyes.  I think ve
+ry few people escaped after this.  I could have, for instance, and I'm not going far away, I'm just talking about myself, because the others were better and well-versed than I was.  I was at the time a Czechoslovakian citizen, a Czechoslovakian citizen.  
+As a Czechoslo-, the Czechoslovakian, the Hungarian quota, the Rumanian quota was filled with a waiting list for the United States to, to get in for years and years.  But the Czechoslovakian quota, for reasons of course, because very few immigrants...
+
+\par NL:\tab Left.
+\par YM:\tab Very few left Czechoslovakia.  It was a beautiful, wonderful little country.
+\par NL:\tab Few applied.
+\par YM:\tab Few applied.  And I could have come here in 1938 or '39 without waiting a day, just leave my things there and get out.  But I didn't do it.  We just didn't believe it.
+\par NL:\tab But you see, you had three or four years of relatively calm life.
+\par YM:\tab Ya.  This is what kept me there, and kept everyone there.  They told the joke that, I don't know, an aunt or mother or grandmother is the--sacrificed herself for a
+ piece of furniture, because she couldn't leave that.  Or the dining room, or the this.  And this was all true.  And I, I'm taking the examples of...
+\par NL:\tab This is, I'm afraid, human nature, not just Jewish.
+\par YM:\tab Of myself.  Ya.  So, I stayed and in 1939, fro
+m 1939 until about '41, the end of '41, something like that, I served as a chaplain of the Hungarian army, as a Jew, Jewish chaplain.  After this, when everyone else was demoted, I was demoted myself.  The only distinction we had was this cap that you see
+ on that picture.
+\par NL:\tab Picture.
+\par YM:\tab Ya, picture.  And we worked as laborers.  For the first, '42, '43, and even part of '44, I was never over the border, let's say, not in Poland, not in...
+\par NL:\tab Russia.
+\par YM:\tab ...Galicia, not in Russia.  In 1944, March the 19th,
+ the Germans occupied Hungary.  And then, of course, the screws were tightened and tightened.  The Jewish Committee was established, and this and that, and later on, as you, as you have seen probably from the Joel Brand}{\fs24\super 10{\footnote 
+\pard\plain \ql \li0\ri0\nowidctlpar\tx-1440\tx-1080\tx-720\tx-360\tx0\tx360\tx1080\tx1800\tx2520\tx3240\tx3960\tx4680\tx5400\tx6120\tx6840\tx7560\tx7920\tx8280\tx8640\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {10}{
+\fs24   }{Brand, J., and A. Weissberg, }{\ul Desperate Mission: Joel Brand's Story}{.  New York, 1958.}}}{\fs24 
+ book and so on, the details I won't go in, because this is public knowledge.  In June, a group finally--the way it went and how, is very well described, I think in Joel's book.  A group of about 1700 J
+ews, the outstanding, leading Jews of Hungary, were gathered together, and with German permission, left Hungary to go to Palestine, to Israel.  The motivation were the trucks, of course, which he expected to get, and all that, but this is history, so I wo
+n't go into that.
+\par NL:\tab Could we go back a little,
+\par YM:\tab Sure.
+\par NL:\tab I think it would be very important for us to hear about your experiences in the labor battalions between '42 and '44, if you would tell us where you were.
+\par YM:\tab In the labor battalions I was, I remember the first one, I was in--let me write this down for you...
+\par NL:\tab Yes.
+\par YM:\tab ...because it's Hungarian.  This was the first camp.  Let me write it here.  Eh, probably 1940.  1940, it was Laplo Danya [phonetic].
+\par NL:\tab Not far from Budapest.
+\par YM:\tab Eh, no, about, let's say, about 100km, something like that.  The same year, yes, I have to say it, while I was even in labor camp I was always taken out or...
+\par NL:\tab Repatriated?
+\par YM:\tab ...forced out by the community of Budapest, that I got a permit for this Shabbat and that Shabbat.
+\par NL:\tab I see.
+\par YM:\tab And }{\i\fs24 Rosh Hodesh}{\fs24  and High Holy days, of course, and wherever I was, I could always come home and perform those services.
+\par NL:\tab I see.  The authorities, respected that?
+\par YM:\tab The authorities respected it because the command 
+came from higher up place given to this lower command, and I went up.  Eh, in the labor camp itself, I had many, many people who knew me from home, but I tried, and I did, not take anything to be different for me than for anybody else.  If the wheel barro
+w had to be carried, I carried it like everybody else.  I was strong.  There was nothing wrong with me.  I was a healthy, strong, comparatively young person, so I worked on with everybody else.
+\par NL:\tab What kinds of work did the battalions do?
+\par YM:\tab We built so-called, eh, }{\i\fs24 Flugplatz}{\fs24 .
+\par NL:\tab Fortifications?
+\par YM:\tab No, no, eh, airports.
+\par NL:\tab Airports.  }{\i\fs24 Flugplatz}{\fs24 .
+\par YM:\tab Which were never used, and they knew it would never be used.  But in order to keep us occupied, and to take the last drop of strength out of us, of course, th
+is was done.  We worked in another place, Bilka [phonetic], 1943, probably, Bilka.  1943 is, eh, that was a stone...
+\par NL:\tab Quarry.
+\par YM:\tab Quarry, ya.
+\par NL:\tab Yes.
+\par YM:\tab Eh, I don't remember now the name.
+\par NL:\tab It will come.
+\par YM:\tab Ya.
+\par NL:\tab It will come.
+\par YM:\tab So...
+\par NL:\tab And, the Hungarians themselves were in charge, or were there some German overseers?
+\par YM:\tab [unclear] the, up to 1944, there were no Germans.  Eh, the Hungarian military was in charge.  In each company there were two-hundred-and either sixteen or twenty-six Jews who had no worth [?] or "work"?] whatsoever.
+\par NL:\tab No-
+\par YM:\tab No worth of command or anything.  Eh, to each of these companies, nine hundred, two-hundred-and-sixteen or -twenty people, there were twenty-four milit-, eh, milit-, I mean soldiers, Hungarian soldiers
+, non-Jews, who had ammunition and had, and they were our guards.  They guarded us.  There was a commander for each...
+\par NL:\tab Unit.
+\par YM:\tab Unit.  And a sub-commander for each unit.  If we were lucky enough to have a person with who
+m we could talk, especially if it was a person, like I had one, for instance, who was an official in a bank.  So I used to deal with that bank and I knew him from before.  So I had some influence on him.  However, if there was one like we had in this plac
+e, Bilka, who wanted us to run eh, for six, eight miles, and people were just fainting, he could do that.  He was sitting in his little car and chasing us.  Which car was behind us...
+\par NL:\tab Just maliciously.
+\par YM:\tab Just maliciously, for no good reason.
+\par NL:\tab No good reason.
+\par YM:\tab No.  Now, I myself was in many cases, because of my position probably in the community, employed as or rather assigned to be--because I had this training, I think I mentioned to you, from the Czechoslovakian army yet, that I took the courses
+ for male nursing, I was assigned to be the nurse.  This gave me a very good opportunity.  In Hungary it was no problem, but then we worked, for instance, in Bilka, which was already a Ruthenian, eh, district, so I could talk to the people who lived there
+, and here and there I heard the radio and brought back to my, to the other Jewish people some news.
+\par NL:\tab Some news.
+\par YM:\tab Some news from Bilka.  The whole process of the labor camp was unhuman.  And I remember particularly one case when we went the first time
+, we went over the border of Hungary, a sergeant major told us, "Don't think that we are taking you from here to bring you back.  You Jews should know what you are--what you are faced with."  That was in '44.  Of course, we knew already anyway what we are
+ 
+faced with.  The Hungarian population, with the exception of a very few, was antisemitic.  They didn't have to be coaxed into hating the Jew.  They were brought up on that.  The young boy who grew up with the church where he went every Sunday and he heard
+ from the priest, "Now we will celebrate the holiday which will bring back the birth of our Christ, who was killed by..." and that went on and on and on, and all kinds of other things.
+\par NL:\tab What other work did the Jews do in the labor battalions besides help to build aircraft, or airfields.
+\par YM:\tab Airfields.  They were in stone...
+\par NL:\tab Quarries.
+\par YM:\tab ...quarries.  They were in coal mines.  They were in--no field work, because a Jew, a Jew later on, '40, '41, '42, after the Jewish laws were passed, couldn't even ta
+lk to a non-Jew in a community if there was, let's say a kindhearted old lady who wanted to give these Jewish workers, laborers, some bread or some milk, to sell them, for good money.  She couldn't do it.  If you were caught, you were extremely punished.
+
+\par NL:\tab Punished.
+\par YM:\tab Yes.
+\par NL:\tab Severely.
+\par YM:\tab Severely.
+\par NL:\tab Digging ditches, I suppose.
+\par YM:\tab Digging ditches, later on.  That was already 1944, when the Germans thought that they would save themselves by, eh, by having those ditches and...
+\par NL:\tab Tanks.
+\par YM:\tab ...tanks won't come through.
+\par NL:\tab Anti-tank ditches.
+\par YM:\tab Crazy things.  And, eh...
+\par NL:\tab So many Jews perished...
+\par YM:\tab Many, many.
+\par NL:\tab ...in this, in these, years.
+\par YM:\tab And many Jews were killed.
+\par NL:\tab And many were killed.
+\par YM:\tab Sure, in the labor camps.  If you couldn't work any longer.
+\par NL:\tab You were killed.
+\par YM:\tab Done away with.  That's it.
+\par NL:\tab Were you given enough...
+\par YM:\tab Food.
+\par NL:\tab ...food to sustain?  No.
+\par YM:\tab We were given food.  To some people, they could survive on it.  Some people just faded away on it, because it was no food of any value, of any...
+\par NL:\tab Did you live in barracks, [unclear].
+\par YM:\tab We lived, as a rule, not in barracks, but in, in places where animals were placed for, what would that be,
+\par NL:\tab Preserves?
+\par YM:\tab Stables.  No.
+\par NL:\tab Oh, stables.
+\par YM:\tab Stables, ya.  Now we are at 1944.
+\par NL:\tab One more question...
+\par YM:\tab Ya.
+\par NL:\tab ...please, eh, Cantor.  Did you have any contact with your family during '43 and '44?
+\par YM:\tab Yes.  I did, and not only that, but because of the strength of the community and the heavy influence they had on certain poli-
+\par NL:\tab Certain politicians.
+\par YM:\tab Eh, I was always home, let's say for }{\i\fs24 Pesach}{\fs24 , for }{\i\fs24 Rosh Hashanah}{\fs24 , for }{\i\fs24 Yom Kippur}{\fs24 , for }{\i\fs24 Shavuot}{\fs24 , for, a
+nd many, in many years, many of these years, and we are talking now from '39 through '44, it's five years almost, there were times when we were discharged.  The whole company was discharged because it was snow and ice and so on, and it wasn't even, not ev
+en an excuse could be found why they are keeping us there.
+\par NL:\tab Mmm.
+\par 
+\par 
+\par 
+\par }\pard \ql \li0\ri0\sl361\slmult0\nowidctlpar\faauto\rin0\lin0\itap0 {\fs24 
+\par \sect }\sectd \linex0\headery809\footery1440\sectdefaultcl {\header \pard\plain \ql \li0\ri0\nowidctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9068\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i\fs24 
+\par }\pard \qr \li0\ri0\nowidctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9068\faauto\rin0\lin0\itap0 {\i\fs24 YEHUDA MANDEL    [3-2-\chpgn ]    
+\par }}{\footer \pard\plain \qc \li0\ri0\nowidctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i 
+From the collection of the Gratz College Holocaust Oral History Archive
+\par }}{\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}
+{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl8
+\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}\pard\plain \qj \li0\ri0\sl361\slmult0\nowidctlpar\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i\fs24 Tape three, side two:}{\fs24 
+\par }\pard \qj \fi540\li0\ri0\sl361\slmult0\nowidctlpar\faauto\rin0\lin0\itap0 {\fs24 
+\par NL:\tab This is a continuation of the deferred interview with Cantor Yehuda Mandel.  This is June 4, 1982, and we'll now continue from the other portion of the tape.
+  Yes, Cantor Mandel, would you like to add to the material you've already told us about in connection with this last experience?
+\par YM:\tab In great strokes, I would like to say the following.  1944, October the 15th, as you probably remember, Horthy, the Hungarian, eh...
+\par NL:\tab Regent.
+\par YM:\tab Regent, somehow or other got together with the Allied Forces and made a declaration, and through his Ministry of the, of the, Exterior, as they called it there, he made a decision to which it seems the government, the ministers, 
+at the time, agreed, or didn't agree, but it seems it was without the knowledge of the Germans...
+\par NL:\tab Mmm hmm.
+\par YM:\tab ...who were at the time already, of course, in Hungary...
+\par NL:\tab Yes.
+\par YM:\tab ...because they came in the 18th of March, or 19th of March, 1944.  He made up his mind that he will declare Hungary joining the Allied Forces, and he did that...
+\par NL:\tab Mmm hmm.
+\par YM:\tab ...on the 15th of, eh...
+\par NL:\tab October.
+\par YM:\tab ...October.
+\par NL:\tab Now, excuse me, may we just step back, because there's a very important segment, and I w
+ondered if you, in the places where you were, were aware of the change.  I'm not sure if I'm pronouncing the name of the head of the Arrow Cross, but in the fall, late August or early September of '44, the Arrow Cross movement came into control under Sz
+\'e1lasi.
+\par YM:\tab Sz\'e1lasi.
+\par NL:\tab Sz\'e1lasi.
+\par YM:\tab Sz\'e1lasi is the proper pronunciation.
+\par NL:\tab Yes.  Now were you aware of that, Cantor?
+\par YM:\tab Eh, no.
+\par NL:\tab No.
+\par YM:\tab Not at all.  We knew--we weren't aware of Auschwitz, we weren't because we were kept away from everything.  And even if we stole somewhere a little news, it was just that controlled news which the Hungarian or, eh...
+\par NL:\tab The Germans.
+\par YM:\tab ...or German stations disseminated.
+\par NL:\tab Mmm hmm.
+\par YM:\tab ...to us.  So we weren't aware of anything.
+\par NL:\tab Mmm.
+\par YM:\tab We were terribly scared, and lived under that constant fear of being killed, because we were told time and again by the Hungarian guards who were with us that we weren't brought here to be taken back eventually home, or to, or to get through...
+
+\par NL:\tab Survive.
+\par YM:\tab ...this period, or to survive.  We were brought here to eradicate us, to }{\i\fs24 erase}{\fs24  us, they used the expression.
+\par NL:\tab }{\i\fs24 They}{\fs24  told you that.
+\par YM:\tab Yes.
+\par NL:\tab So...
+\par YM:\tab Yes.
+\par NL:\tab So this was the Hungarians, not the Germans.
+\par YM:\tab The Hungarians.
+\par NL:\tab Not the Germans.
+\par YM:\tab I have to say one more thing about the German and Hungarian guards.  That the hatred, or rather the, the, ed-, education these poor peasants were given, and 
+the antisemitism which was pushed into many of them by force, that they were just filled with hatred, and they killed, so to say, like it would be a }{\i\fs24 mitzvah}{\fs24 
+ [good deed] to be performed.  The German killed when he had an order to kill.  The Hungarian peasant boy who came in, and we had, in a company there were about 224 people, there were, there was a guard to every four men.
+\par NL:\tab Oh my.
+\par YM:\tab Can you imagine what that is?
+\par NL:\tab Oh my.
+\par YM:\tab We couldn't move, we couldn't go, we couldn't look, unless we had a guard along with us.
+\par NL:\tab And about how many Jews were there in the whole, eh, assemblage?
+\par YM:\tab Each, oh, there were, at times there were presumably more than 125,000 in, called in for work, for...
+\par NL:\tab In the labor force.
+\par YM:\tab ...in the labor force.  And, and, and, eh, to be detained in detention for...
+\par NL:\tab So the attrition rate must have been very heavy.
+\par YM:\tab Immense.  Immense.
+\par NL:\tab Beatings and outright shootings.
+\par YM:\tab For instance, four brother-in-laws, my first wife's two brothers and two brother-in-laws, were--died at the }{\i\fs24 Duna}{\fs24\super 11{\footnote \pard\plain \ql \li0\ri0\nowidctlpar
+\tx-1440\tx-1080\tx-720\tx-360\tx0\tx360\tx1080\tx1800\tx2520\tx3240\tx3960\tx4680\tx5400\tx6120\tx6840\tx7560\tx7920\tx8280\tx8640\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {11}{\fs24   }{
+Hungarian name for Danube River.}}}{\fs24  [phonetic], on }{\i\fs24 Flecktyphus}{\fs24  [typhus], on starvation, on, eh, I don't know...
+\par NL:\tab Beatings.
+\par YM:\tab Beatings, and so on.  So this was the, this was the trend.
+\par NL:\tab Great mortality.
+\par YM:\tab This was the trend.  So, it is very hard to say, if we were informed or not.  If we are talking about the normal, human approach to information, we never had it.  We never, we heard something, we came to a spot where, where there were in the C
+arpathian Mountains, people who escaped to the, Czechoslova-, to the Slovakian freedom fighters, so we heard something that, for instance, M\'e1
+ramarossziget, which was a heavily Jewish, populated Jewish town, there are no more Jews.  We couldn't understand, 
+what is he talking about?  How can this be?  So, eh, but to come back to what I can say as a fact, when we heard, the Horthy declaration, we did hear, and we were at the time in Poland, yet, somewhere in Galicia, I don't remember exactly where.
+\par NL:\tab Part of your labor, work?
+\par YM:\tab Part of the labor force, part of the company, let's say where we were, where I was, there we heard, somehow, either I or somebody else brought the news that Horthy made this and this declaration.
+\par NL:\tab Now, one more interruption, please.
+\par YM:\tab Yes.
+\par NL:\tab What were you doing, what was Hungary doing in Poland?  Was this on German orders?
+\par YM:\tab Of course.  Hungarian Jews were organized into labor battalions and taken first, as I have mentioned previously, to work in Hungary, no sense at all, to build, I don't know, eh, places for...
+\par NL:\tab Ditches.
+\par YM:\tab Ditches.  For, na-, air, airf-, air, eh...
+\par NL:\tab Fields.
+\par YM:\tab ...fields.  We knew in advance, and everybody knew that there will never be an airfield there, because it just didn't make sense.  But just...
+\par NL:\tab Made work.
+\par YM:\tab ...to make us work.
+\par NL:\tab And then Poland?
+\par YM:\tab No, then we were pushed and pushed and pushed, at German orders, of course, further out, so we got to Galicia, we got to Pol-, we got to Poland, we got to the Russian part, Ru
+ssian Poland, and so on.  And my whole family, members of my family died there, no one came back.
+\par NL:\tab Mmm.
+\par YM:\tab From there.  These were the young people of the family.  The others went to Auschwitz, of course.  Now, when we heard, and maybe I skipped a little bit because it could just be repetition over and over again.
+\par NL:\tab It's all right.  It's all very important.
+\par YM:\tab So, the way we lived was just exactly what I told you.  That the Hungarian soldiers were constantly around us, pushing us, beating us, killing
+ us, all kinds of things, and they told us that that's what we are there for.  When the Horthy declaration, October the 15th, finally came out, we were all elated.
+\par NL:\tab Of course.
+\par YM:\tab And we tried very hard to get together, to organize ourselves, to be able
+ to go back to home, so to say.  We didn't know what happened in Budapest, we didn't know that almost none of our, eh, of our family members are in Budapest anymore.  My own family was already long ago in Bergen-Belsen, and others were in the same place o
+r in Auschwitz, or were destroyed already, or--the good thing was if they got into the ghetto, which was already organized in, eh, much earlier, in 1944.  So...
+\par NL:\tab Excuse me, but if they had gone into the ghetto, you say, they stood a better chance of surviving?
+\par YM:\tab In most cases, yes.  At least at the beginning.  Of course, you have to understand that in the ghetto, ya, I have to, I have to reflect to what you have said before, and maybe it will be a little mixed up.
+\par NL:\tab That's all right.
+\par YM:\tab But don't mind me.
+\par NL:\tab We'll come, eh...
+\par YM:\tab It's too excit-, too much excitement for me to talk about it, but I am happy to put it down, and...
+\par NL:\tab I'm sorry, if it's distressing.
+\par YM:\tab No, that's perfectly all right.
+\par NL:\tab Yes.
+\par YM:\tab When we heard the Horthy declaration, I'm coming back to this the third time.
+\par NL:\tab I'm not letting you finish [chuckles].
+\par YM:\tab We, we, no, we thought we will, we will go home.  We didn't know about what happened, about ghetto, about this, that, nothing.  So, it was good.  That was the 15th.  I think, just a few hours later, we heard that Sz\'e1
+lasi took over, the Germans clamped down on the Hungarians, the Hungarian government...
+\par NL:\tab I see.
+\par YM:\tab ...helped Sz\'e1lasi.  Sz\'e1lasi became, eh, the, eh...
+\par NL:\tab The head of government?
+\par YM:\tab Prime minister, the head of the government, so to say.
+\par NL:\tab Yes.
+\par YM:\tab And he was the antisemite...
+\par NL:\tab Par excellence.
+\par YM:\tab Arch antisemite.  And there, he organized, because military forces he didn't have any more, so he organized the youngsters, the 15, 16, 17-year-old boys, every
+one had a, a gun, and sent them into the ghetto houses.  You remember that, eh, through him...
+\par NL:\tab Wallenberg.
+\par YM:\tab Through Wallenberg, these so-called }{\i\fs24 gesch\'fctzteHa\'fcser}{\fs24  [protected houses] 
+were organized.  They went in there, took out the people, they took them in the morning, they never came back, as they had promised in the evening.  They lined them up in the, in the courtyards, whoever they wanted they took, they took them on the street,
+ they took them to the Danube.  Hundreds of people were murdered by being shot into the Danube.  Just shot at the, at the, eh, at the, eh, close to the...
+\par NL:\tab Shore.
+\par YM:\tab ...shore, and thrown into the water.  And that was life in Budapest.  At the time I was
+ still--ya, I came back, now this happened probably October the 16th, 17th, something like that.  But, this organization took place in the labor battalion, or rather, the Germans gave an order as the Russians pushed back in the direction to, towards Hunga
+ry, that all the labor forces must be marched in the direction of, eh, Austria, or rather, Germany, and well, if you couldn't march, you just, eh...
+\par NL:\tab Died.
+\par YM:\tab ...died, or was killed.  So, we, about 20 or 22 of us, got together, and we got as far from Budapest, a place called, eh, S\'e1toralja\'fajhely.
+\par NL:\tab Would you spell that?
+\par YM:\tab S-A-T-
+\par NL:\tab T?
+\par YM:\tab T, like Thomas, O-R-, eh, let me write it down, it's easier I think than to spell it, [mumbles, spelling it], Sator-alja-ujhely\endash that place I will--ujhely.
+\par NL:\tab You escaped from your guards, then, Cantor?
+\par YM:\tab Yes, yes.  We escaped and walked nights, because daytime was dangerous.
+\par NL:\tab Mmm hmm.
+\par YM:\tab We, if we could, somehow, we got a little lift by a peasant who drove in some direction, a car, or something, and so we got
+, as I say, it took us, the 17th, I remember, I arrived in Budapest the 7th of November, 1944.  So it took us close to three weeks to make 210 or 250km.  Finally...
+\par NL:\tab Excuse me, did you have any Jewish insignia on that would have identified you?
+\par YM:\tab No, we tore it all off.
+\par NL:\tab You tore it off.
+\par YM:\tab And walked without it, and slept in the fields.  And I will never forget it, when I came to a town which is just on the outskirts of Budapest, I saw in the Hungar-, on the Hungarian paper, on the top of the pape
+r, that the fall of Budapest is expected within the shortest while.  So we pushed on, and got into Budapest, and I got in, I didn't think what I'm doing at the time, probably, I wasn't just careful enough, but I went back to our apartment, which was on Ve
+s
+herlaynu [phonetic], 13.  It was about two-and-a-half blocks, three blocks, away from my temple, and, um, I went up, that was the 7th of November, terrible snow, we had a magnificent apartment, corner, it was a corner apartment looking out to two streets 
+o
+f Vesherlaynu, and eh, Kazinsi [phonetic] Street.  In the apartment, there were, presumably, because I have never seen them there, they were all over the place when I came down, and scattered all over, presumably 105 people were pushed into our apartment,
+ which was a huge apartment, but still.
+\par NL:\tab Mmm.
+\par YM:\tab They were laying like sardines.  I had a magnificent private library, among other things.  My son just told me this week, he was here to visit us with his family, so he told me that for his last birthday,
+ which is the 8th of May, he got from his wife and children the }{\i\fs24 Encyclopaedia Judaica}{\fs24 , and I started to cry.  Why?  Because in the '20's, or was it the beginning of the '30's, the }{\i\fs24 Encyclopaedia Judaica}{\fs24 
+ appeared first in Germany,
+\par NL:\tab Mmm hmm.
+\par YM:\tab And I was one of the first subscribers, and I had, I don't remember now, was it, eight or nine volumes at the time already in my library, }{\i\fs24 Herrenzimmer}{\fs24  as we called it there, office.  And, eh...
+\par NL:\tab What had happened to the library?
+\par YM:\tab Not, not, not to talk about Shass and Poskim [phonetic] and so on, what I accumulated.  What happened?  Most probably it was used for wood.
+\par NL:\tab Fuel.
+\par YM:\tab To keep themselves alive.
+\par NL:\tab Oh my.  Oh my.  Oh my.
+\par YM:\tab Alive.  And these books were all used up.  I came in...
+\par NL:\tab Mmm.
+\par YM:\tab We were on the top floor.  There was no roof.  Snow was falling on the Persian rugs...
+\par NL:\tab Oh my.
+\par YM:\tab I saw the dining room, the magnificent }{\i\fs24 deutsche}{\fs24  }{\i\fs24 Tischlermeister}{\fs24  [German master carpenter] dining room, knocked to pieces, the Rosenthal...
+\par NL:\tab China.
+\par YM:\tab China, knocked to pieces, two or three pieces remained...
+\par NL:\tab Oh my, oh my.
+\par YM:\tab And, I thought I will get a heart attack.
+\par NL:\tab Oh my.
+\par YM:\tab I didn't know what happened to my family, even then!  So...
+\par NL:\tab Did you know any of the people in the room?
+\par YM:\tab No.
+\par NL:\tab No one.
+\par YM:\tab No.  I could not get to anyone.
+\par NL:\tab Just shoved in the room.
+\par YM:\tab Ya.  Our, ya. Our superintendent in the house was a non-Jew, and mainly the woman, his wife, was a terrible antisemite, who, a child of my brother was brought to us, thinking, fr
+om Yugoslavia, thinking maybe Budapest, you know, with my influence, and this and this, maybe he will be able to save because father and mother wasn't there anymore, so the grandparents sent the child to Budapest to us, and this antisemitic woman reported
+ this chi-...
+\par NL:\tab Child.
+\par YM:\tab Child, who was then maybe six years old.
+\par NL:\tab Oh my.
+\par YM:\tab That he's here, and he doesn't even talk Hungarian, and he came without permission, and to be taken away.  So, before anything happens, my wife, may she rest in peace, she 
+sent him back to Yugoslavia, and he went, of course, to Auschwitz with the grandparents.
+\par NL:\tab Oh my.
+\par YM:\tab So, this kind of thing.  But I didn't know about all this.  So the only, so, I was away about half a block from my...
+\par NL:\tab Temple.
+\par YM:\tab Temple, no, from t
+he administrative building of our congregation.  I went out there.  There were some people who I knew very well, and they told me in short what has happened.  They, that, eh, select group of close to 2,000 people went with Dr., what's his name?
+\par NL:\tab Kasztner.
+\par YM:\tab 
+Kas, Kasztner.  And, they, they don't know exactly where they are, but Kasztner has an office, he's here and here and here.  I couldn't go there either, because it was dangerous to even to breathe on the outside.  So I went to another place.  Finall
+y I found some friends who told me what has happened, and that my family is together with those people who were taken, presumably, to Palestine.
+\par NL:\tab That was the story.
+\par YM:\tab That was the story.
+\par NL:\tab Mmm hmm.  But actually to Bergen-Belsen.
+\par YM:\tab Actually they were, there were all kinds, I read, I just read, what's his name?
+\par NL:\tab Brand.
+\par YM:\tab Brand's book, and there, from that I see that no one knew exactly what will happen.  There were moments, my wife told me later on when we met after the war in Is
+rael, that there were hours, days, when they thought they are being sent to Auschwitz, just like everybody, like the others.
+\par NL:\tab That special Kasztner...
+\par YM:\tab That special Kasztner group.
+\par NL:\tab For which they had to pay a lot of money.  Yes.
+\par YM:\tab Hundreds\endash millions.
+\par NL:\tab Yes.
+\par YM:\tab So, jewelry, or whatever anyone had, had to give.
+\par NL:\tab Yes.  So, people were not sure what was going to happen to them, even on that transfer.
+\par YM:\tab No, absolutely not.  Absolutely not.
+\par NL:\tab It's a very important fact to note.
+\par YM:\tab Yes, eh, no, never were they sure what's coming next.  But how did I find out finally what's with my family?  I went into one of these houses, which presumably were...  
+\par NL:\tab Protected.
+\par YM:\tab Pro-, protected.  And a very dear friend of mine, may he rest in peace, Dr. H
+ershkowich, who was a rabbi in Budapest, told me, "Look, I can't tell you a thing, because what I know, I tell you.  But I think you must make it your business to get together, as hard as it is, we will dress you up as a Hungarian peasant, and we'll give 
+y
+ou this and that," eh, I had a big mustache, "and, you go on the street and we will give you papers," of course, false papers, "where we will say you are a, a, you are, eh, coming from the front, and you are injured, and this and that, and you are on furl
+ough."  So, finally the third or fourth day I think, the third day after I arrived in Budapest, I got to the office of Dr. eh...
+\par NL:\tab Kasztner.
+\par YM:\tab Kasztner.  I don't blame him now, looking back in that he was extremely careful.  His secretary didn't want to
+ receive me, I told her who I am, who I was, rather, and I'm interested to know one thing, to hear one thing from him, can he tell me where my family is at this time?  With my family was, besides our own son, the son, my brother's, eh, my bro-, my brother
+'
+s brother-in-law's child, who came up because his mother was caught on the street and, she was in Auschwitz, taken to Auschwitz immediately, so this poor child knew that when there was anything, they went up to Ellami, near to Aunt Ella, so this child wan
+d
+ered up to our apartment, and so when it was decided that my family will be taken, my wife said, "This child must be taken too.  I can't leave him here."  So she took him along.  So I wanted to know what happened.  I didn't even know that this child is wi
+th her, but I was interested in my wife, my son, my brother.
+\par NL:\tab Yes.
+\par YM:\tab And, eh, I went up, after a lot of difficulties...
+\par NL:\tab He didn't want to see you?
+\par YM:\tab He didn't want to see me.  I had to go the next day, again.
+\par NL:\tab You had to go back again?
+\par YM:\tab Back again, endangering my life.  Finally, when I came...
+\par NL:\tab Excuse me, but why didn't he want to see you?
+\par YM:\tab Most probably, most probably the way I look back now, he did not want from anyone to give the information to anyone so that it shouldn't be publici
+zed that someone spoke to him and given the exact information, because everyone else will be around with the same question.  So, somehow I could, I can see it in that view, in, in, eh...
+\par NL:\tab Retrospect.
+\par YM:\tab Ya, now.  But it was a terrible thing at the time.
+\par NL:\tab He had a secretary.
+\par YM:\tab He had a secretary, and she said, "No, you can't see him."  She told me all kinds of things, that there are German soldiers in here, officers, and he's discussing something, he's in conference, what.  Anyway,
+\par NL:\tab But he was being protected, obviously.
+\par YM:\tab He was being protected.  The next day, or whenever I got back, maybe it was the same day because I almost, you can't imagine...
+\par NL:\tab Oh.
+\par YM:\tab ...what kind of des-
+\par NL:\tab Desperation.
+\par YM:\tab ...desperation I was in.  I wen
+t back, and the secretary started the same story again.  I pushed her aside and I told her, "Look, I am coming from where, from where life doesn't have too much of a value anyhow.  I have nothing and no one here.  My family is gone and I know they are und
+er the guidance of this--presumably--organization."  And pushed her aside, opened the door to Kasztner's office, and went in.  And he started giving me the story again.  This may be interesting...
+\par NL:\tab Yes, extremely.
+\par YM:\tab ...you know, that he can't tell me b
+ecause part of them went already, and part.  "But you know who went," I said, "tell me, are they still in Bergen-Belsen?  Are they off, are they away, where are they?"  So, he says, eh, he says.  So I told him, "Look, here is this desk.  I will break it t
+o pieces and I will kill you here if you don't give me an answer.  Because my life isn't worth anything anyhow."  So, he got very, he got very, eh...
+\par NL:\tab Disturbed.
+\par YM:\tab ...disturbed by that, and told the girl to bring in the list.
+\par NL:\tab Mmm hmm.
+\par YM:\tab And told me that, no, my family is still in Bergen-Belsen, but they will be transferred, I don't know, to...
+\par NL:\tab Switzerland.
+\par YM:\tab ...Switzerland, with the second or third transport, whatever it was.
+\par NL:\tab But they were out of Hungary.
+\par YM:\tab They were out of Hungary; they were in Germany.  With this }{\i\fs24 Sondergruppe}{\fs24  [special group], as they called it at the time.
+\par NL:\tab Yes.  Yes.
+\par YM:\tab So, this kind of thing, you know, you can't talk even, even forty years later without eh, being very much...
+\par NL:\tab Agitated.
+\par YM:\tab Distur-, agi-, by it.  So, this is the information, and now, what happened after that.
+\par NL:\tab Excuse me, could you just tell me a little more about Kasztner, because there is such a controversy...
+\par YM:\tab Right.
+\par NL:\tab ...over his role.  How did you know that he was in charge of this special transport?
+\par YM:\tab This Dr. Hershkowich, Boblyn Hershkowich [phonetic]...
+\par NL:\tab Oh, he told you.
+\par YM:\tab ...told me, "This man is in charge."
+\par NL:\tab Mmm hmm.
+\par YM:\tab I know nothing about hi-, about it.
+\par NL:\tab You didn't know his name before, earlier?
+\par YM:\tab No, I'd never heard of him.
+\par NL:\tab You'd never heard of him.
+\par YM:\tab And I know very little, I knew Joel Brand very well, he was, he lived in Budapest, but he, Kasztner was really a newspaper man who lived somewhere in Rumania.
+\par NL:\tab Cluj?
+\par YM:\tab Cluj, ya, in the former Hungary, formerly Hungary.
+\par NL:\tab Mmm hmm, yes.
+\par YM:\tab So, eh, I really didn't know about him, and I, and I never saw, never heard of him.
+\par NL:\tab What sort of impression did he make?  Of course...
+\par YM:\tab It is...
+\par NL:\tab ...he was your enemy [chuckles].
+\par YM:\tab It is very hard to be, to be just.
+\par NL:\tab Yeah.
+\par YM:\tab And to give any, any description even about the man from whom you want to know...
+\par NL:\tab Life and death.
+\par YM:\tab Life and death, so to say.
+\par NL:\tab Yes.
+\par YM:\tab So, but this was a terrible, this was one, one of the most destructive d
+ay, impressions, or, or occurrences in my life.  Why?  Because I saw up there, my piano was broken to pieces, that was, one leg of the piano was laying in one end of the music room, the so-called mus-, eh, I had a special music room, you know...
+\par NL:\tab Uh huh.
+\par YM:\tab ...where I had the musical library.  And so on.  And, and, and here I see my }{\i\fs24 family}{\fs24 , my, my }{\i\fs24 child}{\fs24 , my }{\i\fs24 wife}{\fs24 , my, eh...
+\par NL:\tab Everything.
+\par YM:\tab ...aren't here anymore.  So everything is gone.  And later on, eh, I didn't have a chance to speak to Dr. Kasztn
+er later on, when I was, for instance, in Israel already and he was there too.  I always thought of it to go back, talk to the man, and see, }{\i\fs24 Ma tuvu shel hibor zu}{\fs24 
+?  What kind of a person, I never got to it.  Maybe in the back of my mind I didn't want to really, to go.
+\par NL:\tab Yes.
+\par YM:\tab Most probably, psychologically, eh.
+\par NL:\tab It's understandable.
+\par YM:\tab ...eh, probably, I can understand it, but the fact is that I spoke about it, spoke about it, spoke, I will go and see, eh, what was his first name, eh, Kasztner, eh...
+\par NL:\tab Rezs\'f6.
+\par YM:\tab Rezs\'f6.  I'm going to see Rezs\'f6, talk to him, }{\i\fs24 mama-lushen, pushit}{\fs24 
+, [simple mother language] ask and see, see who is he that he could be such a murderer.  And when I come to him and the girl tells him who I am, I, not that I was a bigger }{\i\fs24 yichuss}{\fs24 
+ [status] than anybody else, but that he's a, that he was able to, to, throw me out, so to say, and not even talk to me.
+\par NL:\tab Mmm.
+\par YM:\tab So, but I never got to him face to face.
+\par NL:\tab Were there indeed German guards in his office?  Could you see some surveillance?
+\par YM:\tab I didn't see, I didn't see, I didn't see, but, his office was on the second floor, and down-, downstairs--why, I don't know, most probably there were other German agencies or something--there was a Hungarian guard.
+\par NL:\tab I see.
+\par YM:\tab And, of course, I went there saying that I live in the house, a Hungarian, I don't know, petty officer on furlough, so, so I just go home, and no one knew where I'm going, but this is what happened.
+\par NL:\tab Were there other Jews trying to see him?  Were you aware of...
+\par YM:\tab I know of none.
+\par NL:\tab ...pressure on him?
+\par YM:\tab I know of none.  But most probably there were, and this is why he was so extremely sensitive and refused.  Before he found out what it is.
+\par NL:\tab Can you tell us a little about your knowledge of Joel Brand, because he, too, was such an important figure.
+\par YM:\tab Yes.
+\par NL:\tab How did you know him?
+\par YM:\tab Him, I knew only through official channels, like, I was a member of the board at the Zionist, World Zionist Organization of the }{\i\fs24 Keren Kayemet}{\fs24 , the }{\i\fs24 Keren Ha'yesod}{\fs24 , and we used 
+to meet in good times, you know, in '36, '37,
+\par NL:\tab I see.
+\par YM:\tab And we spoke about it that the danger is very great, and this and that, and then I had the troubles with, as a Czechoslovakian citizen to remain in Hungary and work in Hungary because they, the H
+ungarian government, emulated so to say, the permission given to me earlier to work in Hungary, so I was in and out and tried to get through Yugoslavia, contacts with England, where I really went for a, an audition to the Duke's Place Temple and so on, so
+ I really...
+\par NL:\tab And did he help you?
+\par YM:\tab No.
+\par NL:\tab He didn't help you, but you tried to get some help from him?
+\par YM:\tab No, not from him.
+\par NL:\tab Oh.
+\par YM:\tab I never, I never.
+\par NL:\tab Oh.
+\par YM:\tab You know, he was one of the, one of the board members, one of the boys, so to say.
+\par NL:\tab Was he a popular man, as far as you know?
+\par YM:\tab As f-
+\par 
+\par \sect }\sectd \linex0\headery809\footery1440\sectdefaultcl {\header \pard\plain \ql \li0\ri0\nowidctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9068\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i\fs24 
+\par }\pard \qr \li0\ri0\nowidctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9068\faauto\rin0\lin0\itap0 {\i\fs24 YEHUDA MANDEL    [4-1-\chpgn ]    
+\par }}\pard\plain \qj \li0\ri0\sl361\slmult0\nowidctlpar\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\fs24 \sect }\sectd \sbknone\linex0\headery809\footery1440\sectdefaultcl {\header \pard\plain \ql \li0\ri0\nowidctlpar
+\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9068\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i\fs24 
+\par }\pard \qr \li0\ri0\nowidctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9068\faauto\rin0\lin0\itap0 {\i\fs24 YEHUDA MANDEL    [4-1-\chpgn ]    
+\par }}{\footer \pard\plain \qc \li0\ri0\nowidctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i 
+From the collection of the Gratz College Holocaust Oral History Archive
+\par }}\pard\plain \qj \li0\ri0\sl361\slmult0\nowidctlpar\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i\fs24 Tape four, side one:}{\fs24 
+\par }\pard \qj \fi540\li0\ri0\sl361\slmult0\nowidctlpar\faauto\rin0\lin0\itap0 {\fs24 
+\par NL:\tab This is a continuation of our interview with Cantor Yehuda Mandel, June 4th, interviewing.  You were about to say something about Joel Brand's wife.
+\par YM:\tab Joel Brand's wife was an extremely capable, smart woman.  And I think she would have been more capable to do the work which was assigned to Joel than Joel himself.
+\par NL:\tab More sophisticated.
+\par YM:\tab More sophisticated and with more, with more }{\i\fs24 chutzpah}{\fs24 .
+\par NL:\tab Mmm hmm.
+\par YM:\tab Because it required a tremendous amount of }{\i\fs24 chutzpah}{\fs24 , which he had, but not in the right directio
+n somehow.  He wasn't the right person for the job.  This is my opinion and I don't, I wasn't there and I don't know, unfortunately, the history and the facts well enough to make--to judge.  This is just my opinion.  Now, eh, but we have to come back, I t
+hink, to, where I left off.
+\par NL:\tab Yes, yes, we do indeed.  You were saying that Kasztner finally told you that your family was still in Bergen-Belsen.
+\par YM:\tab In Bergen-Belsen, and they will be sent over to Switzerland with the first transport.  We waited, as you know, these months went by.
+\par NL:\tab Where did you stay, Cantor?
+\par YM:\tab I went to stay with, in this }{\i\fs24 geschuetzte}{\fs24  [protected] }{\i\fs24 Haus}{\fs24 
+, so to say, the guarded, the protected house.  Once here, once there, I got this document which is the runner's, eh, runner's document to bring messages from one place to the other, and as you know, as you remember, these documents were given out with th
+e knowledge of, of, poor, what's his name?
+\par NL:\tab Wallenberg.
+\par YM:\tab Wallenberg.  And I was in the, under the protection of the Switzer consulate, eh, so this was, this was the thing with which I was, which was, I was going around.
+\par NL:\tab Did we make a copy of this?
+\par YM:\tab I think you did.
+\par NL:\tab These are among the things you gave me.
+\par YM:\tab Yes.
+\par NL:\tab Oh fine.
+\par YM:\tab Yes.  But I of course had falsified papers.
+\par NL:\tab Mmm hmm.
+\par YM:\tab That I am a Hungarian soldier here on, eh, on, eh, wounded, and here on furlough, and so on and so forth.  But those, those papers I destroyed after the Russians...
+\par NL:\tab Came in.
+\par YM:\tab Abbreviated, eh, freed Budapest, so to say, because I was afraid many people were taken into custody for this kind of course.
+\par NL:\tab Of course.
+\par YM:\tab Being you worked for the Hungarians, and you were this and this, you know, it wasn't important it should be true, it was important if someone found out.  You know.
+\par NL:\tab Yes.
+\par YM:\tab It was very dangerous.  But this was what I carried around.  I was dressed up as a, as a peasant, and I had this in my pocket for where I went, people knew that I am, I am official of the, of Switzer, eh, consulate or delegation.
+\par NL:\tab And Wallenberg gave you this?
+\par YM:\tab Wallenberg's office.
+\par NL:\tab Wallenberg's office gave you this.
+\par YM:\tab Gave it to me.
+\par NL:\tab Yes.  And so you were able to get meals there?
+\par YM:\tab No, don't think of meals as you have a meal you sit down.
+\par NL:\tab Bread.
+\par YM:\tab But whatever there was,
+\par NL:\tab Ya.
+\par YM:\tab Whatever there was, we shared.  If it was a cup of tea, it was that.  If it was a piece of bread, it was that.  
+If we could get in somehow, through one of our men, eh, some food, real food, it was cooked, and our people prepared it.  There was a time, for instance, we couldn't cook, because there was no water.  The water level was so low that there was no possibili
+ty to cook.  So, that is the way it went by.
+\par NL:\tab About how many people were there in your house?
+\par YM:\tab In that, in that one house I would say there were about close to 300.
+\par NL:\tab Mmm.
+\par YM:\tab Ya.  And this we slept like sardines but we...
+\par NL:\tab You were safe.
+\par YM:\tab Ya.  We, more or less, we were safe.
+\par NL:\tab More or less.
+\par YM:\tab And these months like the rest of November, December, up to January when Budapest was occupied by the, or rather, freed...
+\par NL:\tab Liberated.
+\par YM:\tab ...as they call, liberated by the Russians, eh, that's the way we, we really lived.  
+\par NL:\tab Can you say a little more about those months, Cantor?  Did you have contact with other Jews in similar houses?
+\par YM:\tab A lot.
+\par NL:\tab A lot.
+\par YM:\tab A lot, because I was one of the people as this }{\i\fs24 Fut\'e1rigazoly\'e1ny}{\fs24  means as you see here, }{\i\fs24 Eilbot}{\fs24 --}{\i\fs24 Eilbotenausweis}{\fs24 .  This is the, the, eh, document for a runner.
+\par NL:\tab Messenger.
+\par YM:\tab What?  Ya, messenger, from one place to the other.
+\par NL:\tab Mmm hmm.
+\par YM:\tab I went to Wallenberg's office, I saw him...
+\par NL:\tab Mmm hmm.
+\par YM:\tab ...once in awhile.  I spoke to him a word or two.  Of course, there was no time.  I got a pack of, of documents from him to take it to this place, to that place, and that's where I went.
+\par NL:\tab In other words, you were able to give other Jews papers that enabled them to be protected?
+\par YM:\tab Yes.  And we had our people there, and they filled in the names and gave it a number, and it became an official document.  In some cases these, eh, }{\i\fs24 Nyilas}{\fs24 ...
+\par NL:\tab Arrow Cross.
+\par YM:\tab Arrow Cross, eh, youngsters, respected it, and in some cases they didn't.  They just took them away.
+\par NL:\tab I see.  So Budapest was still under the control of the Arrow Cross...
+\par YM:\tab Ya.  Oh yes, all these months, all these months.
+\par NL:\tab In, eh, November, December, these months.
+\par YM:\tab That means about two weeks in November, the whole December, and the whole January, and those were terrible months.  The worst anyone, because you never knew when you were on the street, if a youngster of 12 or 13 or 15 had just a, a...
+\par NL:\tab A whim.
+\par YM:\tab Ya.  A whim, to, to kill you, he did, no problem.  And he wasn't, he wasn't taken to give account for it, why he did it, what he did it, as long as it was a Jew, no problem.
+\par NL:\tab Mmm.
+\par YM:\tab Now, during this time, maybe there is one outstanding occurrence and you've probably, eh, seen that in, in the Brand book, where we dressed up as Hungarian gendarmerie.  I was one of them.
+\par NL:\tab You were one of them.
+\par YM:\tab With them, and we went to the, prisons and we took out, altogether, close to 300 people.  We, we cursed them, and pushed them, and hollered at them, and all that, but we told them quietly, "You are being taken, you are being rescued."
+\par NL:\tab Ohhh my.
+\par YM:\tab This may be...
+\par NL:\tab Oh, that's extraordinary.
+\par YM:\tab This is extraordinary.  This is a...
+\par NL:\tab This is a prison in Budapest?
+\par YM:\tab There was a so-called }{\i\fs24 g\'fcta }{\fs24  folkhouse [phonetic] where they gathered from all places the people who they wanted to...
+\par NL:\tab Deport.
+\par YM:\tab ...deport.  To march.
+\par NL:\tab An assembly point.
+\par YM:\tab Ya, ya, an assembly point.  And we took them out.  We came 
+with false papers and we, documentation and all that.  And there was one of them, this young man, eh, what was his name?  He became later consul of Israel in one of the countries.  I don't remember his name anymore.  But his name is mentioned in...
+\par NL:\tab In Brand's book.
+\par YM:\tab Ya.  In Brand's book.  He was our commander and he was...
+\par NL:\tab These were Zionists?
+\par YM:\tab Ya, all Zionist people.
+\par NL:\tab All Zionists.  I see.
+\par YM:\tab And he had so much }{\i\fs24 azis}{\fs24  [impudence], [chuckles], he had so much, really }{\i\fs24 chutzpah}{\fs24 , that...
+\par NL:\tab Courage.
+\par YM:\tab Courage.  Nothing could stop him.
+\par NL:\tab Daring.
+\par YM:\tab Ya, daring.  And we hollered at the Jews and cursed them and what, and quietly we were telling them that, "You are being taken out of here and places elsewhere."
+\par NL:\tab Oh my.  That's, that happens, yes.
+\par YM:\tab I, I just can't talk about it without, without getting goose pimples, you know?
+\par NL:\tab I too, of course.  This was in December?
+\par YM:\tab In, in, in December, probably, or January.
+\par NL:\tab Yes.
+\par YM:\tab The worst time.
+\par NL:\tab And where were they then taken?
+\par YM:\tab Fifty here...
+\par NL:\tab Into these protected homes.
+\par YM:\tab We didn't take 300 at once, we took 50, 40, 50, whatever there was in that so-called }{\i\fs24 g\'fcte}{\fs24  [phonetic], eh, gathering eh, prison, you know.
+\par NL:\tab Assembly place.
+\par YM:\tab Assembly place.  We took them out, and that 
+happened three, four, or five times.  We had all these, heh, eh, shields, from, what the, what the gendarmerie, the Hungarian gendarmerie used to wear, you know, while doing their thing, their killing the Jews.  I lived through, eh, Ujvid\'e9
+k, that means Novi Sad.
+\par NL:\tab Novi Sad.
+\par YM:\tab You know, the }{\i\fs24 harigah}{\fs24  [massacre] in Novi Sad, I lived that, through.  I was at the Danube.  And I told you I think already what happened there.
+\par NL:\tab Mmm hmm.
+\par YM:\tab Now, to come, to go on, back further, when finally Budapest was liberated by the Russians, it took a day or so before I, eh, I had a }{\i\fs24 yeshivah}{\fs24  friend, }{\i\fs24 yeshivah}{\fs24 
+ friend of mine, Dr. Breslauer, who became the emissary of Czechoslovakian affairs in Budapest, and he gave me papers to go to Czechoslovakia, because I wanted to get in touch with my family.
+\par NL:\tab You hadn't heard, of course, from them.
+\par YM:\tab Not a thing about them.  Just what I heard from an opinion--no, what, the fir-, I went to Czechoslovakia, I couldn't get out any telegram, anything.  A week or two later, that means in
+ February, probably, or the beginning of March, we were told that a repat- repatriation affair will be taking place from Switzerland, the people who were taken by Kasztner's group to Switzerland, will be transported back to Hungary, and I was waiting that
+ my wife will return.
+\par NL:\tab But you were then in Czechoslovakia.
+\par YM:\tab I, I, no...
+\par NL:\tab You went back.
+\par YM:\tab I was in Czechoslovakia for a short while.  I came back to Budapest and waited.
+\par NL:\tab What about the Russian occupation?  Did you feel the sting of that?
+\par YM:\tab They, they did not interfere with me personally.
+\par NL:\tab Mmm hmm.
+\par YM:\tab I know many people who, for one reason or another, or even without a reason, were tak-, were...
+\par NL:\tab Arrested.
+\par YM:\tab ...arrested, and never came back, or came back in a half a year or a year, or what not.  But personally I did not feel, first of all, I spoke the language fluently, and if I got into a }{\i\fs24 hoddenwieden}{\fs24 
+ [phonetic], for instance, once, I walked, eh, from my house to the next block, let's say, and I saw that two Russian soldiers, eh, ar
+e coming in my direction.  And as soon as we would have passed each other, they started to walk back.  One was in front of me, and one was in the back of me.  And I was foolish enough to wear my watch.  So, as it was customary in those days, [unclear] sha
+ll see, they had already fifteen watches on their arm, but they wanted to have your watch, too.  So, he says, "Give the watch."  I said, I didn't give it to him right away, and maybe that was foolish, why, I don't know, but I had }{\i\fs24 chutzpah }{
+\fs24 enough maybe, I was educated in these actions, you know, and I told him in Russian, "Look, you don't have the right to take this watch from me, but I will give it to you, }{\i\fs24 if}{\fs24 
+ you will give me your number and you will tell me your name.  Show me your documentation.  I don't w
+ant, I know you don't have the right, but you give me your name, and I will go from here directly to the commander of the Russian army here in Budapest, and you will hear from me later."
+\par NL:\tab Oh ho, they disappeared [laughs].
+\par YM:\tab They disappeared.  This was one experience.
+\par NL:\tab Well.
+\par YM:\tab Another
+ experience was you know in labor camp, we didn't have, we got any any, any news, any piece of paper, any, anything, we couldn't read.  So in the evenings, nights, when we laid down already on our bunks, on the little bit of straw or whatever was on the f
+loor, we, we had those automatic, eh, flashlights, where you have to, it had a little battery inside, and if you pushed it hard enough, it gave you a little light.  So, I had one of these little...
+\par NL:\tab Flashlights.
+\par YM:\tab Flashlights, and a Russian boy, fifteen years old, was the Russian guard, came to me and told me, "Give me that!"  He saw it in my hand.  Saw it.  So, I didn't want to make a big }{\i\fs24 schpiel}{\fs24 
+ [to do] or, he was a child, so to say, I didn't want, eh, I gave it to him.
+\par NL:\tab You gave it to him.
+\par YM:\tab This happened, and this happened with drinks and watches and...
+\par NL:\tab Jewelry.
+\par YM:\tab ...whatever they wanted.
+\par NL:\tab Yes.
+\par YM:\tab Whatever they wanted.  So these are the...
+\par NL:\tab You weren't, you weren't hurt by them.
+\par YM:\tab No, and these are probably the occurrences which a
+nyone who was occupied by a force, by--I had another experience, for instance, a friend of mine whose father already was a board member of my temple, came to me after, after we were, we were already freed by the Hungarians, by the...
+\par NL:\tab Russians.
+\par YM:\tab Russians.  That he has material to produce, I don't know, how many hundreds of kilo of soap.  And the city was dying of dirt, and, and, and, and, filth, and...
+\par NL:\tab Disease.
+\par YM:\tab And disease.  And he said he will produce it on his own, for his own money.  So I, 
+"What really do you want from me?"  "You speak Russian so well.  Please come with me to the commander of the city."  I went with him and we sat down and, when I told the commander, it was, I think, the associate commander or something like that, I told th
+i
+s general what my friend wants, he will give half without charge to the government, but half he wants to sell on the open market.  So the answer of the, of the soldier--of the general was, "Tell your friend that I already called in two soldiers.  They wil
+l
+ be given a few minutes.  The pants he is wearing aren't his either.  We didn't come here as friends.  We came here as an occupying force, and, therefore, whatever he has he will have to go with these people, show him where it is, give us the material, pr
+epare it as he wanted, and we will take it."
+\par NL:\tab Mmm.  Confiscate everything.
+\par YM:\tab This was their attitude.
+\par NL:\tab Their mentality.
+\par YM:\tab Ya.  So I'm not wondering now about the little boy of 15 or 16 who came and wanted my flashlight.  But to come back to this, 
+many, many people came back from Switzerland, in buses and so on, and from them, particularly one family with whom I was very friendly, came back and gave me a report about my family, from the, for the first time I heard from them probably it was March, o
+r...
+\par NL:\tab The first time in how long?
+\par YM:\tab I left Hungary the last time probably in Ju-, May, May the 30th.  We just spoke about it this last Sunday with my son, and he was there, so he remembers.  Because--and he brought me an article from someone who was in
+ the same city at the same time.  It was May the 29th or 30th of 1944 I left.  Now, probably I saw my family the day when the Germans marched into Hungary, that was the 19th...
+\par NL:\tab The 19th of March.
+\par YM:\tab ...of March.  From the 19th of March to about a year
+, a year in space, I didn't hear from my family, I didn't know these things what I mentioned before occurred during that time.  I got the information that my family is in Switzerland.  Then I went illegally the second and the third time to Czechoslovakia,
+ then I could already send telegrams, I wrote a letter which I sent,  eh, to, to, eh, what was it, }{\i\fs24 Sur Montreux}{\fs24 \endash 
+that's where my family was--and my wife, because of her profession--she was a teacher--she got together 40 children and under the guidance of the, of the Switzer Jewish, eh...
+\par NL:\tab Welfare.
+\par YM:\tab ...Welfare Board, she made a class, a school out of them, and taught them for, I don't know how long.
+\par NL:\tab How long was she in Bergen-Belsen?
+\par YM:\tab She was in Bergen-Belsen from the 30th of May, we just calculated it this week, 30th of May to about, eh, December, probably.  December.
+\par NL:\tab Under harsh conditions.
+\par YM:\tab Ya.  Under, under, under Bergen-Belsen conditions.  What more can I tell you?  But they were still not as bad as the ones who were just in the, in the concentration camps.
+\par NL:\tab So they still, a special, special continu-
+\par YM:\tab Under separate, was a }{\i\fs24 Sondergruppe}{\fs24  as they called it, }{\i\fs24 Sondergruppe}{\fs24 .  They were, of course, they had guards around and all that, but they got some food, they got some care, eh...
+\par NL:\tab They weren't killed.
+\par YM:\tab They weren't killed.  I remember that this boy who is now in Israel, a very fine y
+oung man who my wife rescued, had an infection of the middle ear.  And one of our professors, who was also in this group, Dr. Polachek, was given permission to go in with, he was a laryngologist, an outstanding man, to be taken by a German guard or whatev
+er to the town somewhere to a hospital where he performed the operation.  The child had a 103\u778\'b0
+  fever and all that, was brought back, and the child today, thank God, has three beautiful children, and so on.  So these kind of things which, which had transpired in those days is hard, very hard even to remember or to describe.
+\par NL:\tab Yes.  Can you just add another point, eh, Cantor, um, did your wife, um, have to make some special effort to get to Kasztner in order to be part of this special transport?  How did she negotiate that?
+\par YM:\tab No, she did not.  My brother...
+\par NL:\tab Mmm hmm.
+\par YM:\tab ...who was a rabbinical student at the time in the seminary, and, as I have told you before, he got his doctoral degree already with the yellow Star of David on his lapel, he was very active in the Zionist movement.
+\par NL:\tab I see.
+\par YM:\tab So he, when these things were discussed, who shall be taken, a) he was there...
+\par NL:\tab Mmm hmm.
+\par YM:\tab ...and I don't know if he mentioned at all or not, but my friends who were there, like this Komoly, Otto, who was
+ a very dear friend, I'm sure he thought of it just as well, not to leave Ella with the child, just when I am, I don't know where, leave her here, if there is a possibility to rescue them.  I don't think she had to negotiate too much.
+\par NL:\tab So it was your brother who spoke, eh...
+\par YM:\tab My brother was there, ah, he was in that committee or not, I don't know.
+\par NL:\tab So it was not just Kasztner's decision.
+\par YM:\tab No.
+\par NL:\tab It was a joint decision.
+\par YM:\tab No.  No.  No.  That was, that was a deci-, a deci-, it wasn't--probably the final decision was Kasztner's, but the suggestions, who should be taken, were given by the Zionist organization, by the leaders of the Zionist organization.
+\par NL:\tab Mmm.  Yes, that's an interesting point.  Because many people think he did the whole, eh, he made the whole solution.
+\par YM:\tab No.  I don't think anyone, that anyone went to Kasztner for, maybe the Rumanian settlement of the, of the...
+\par NL:\tab Cluj.
+\par YM:\tab Yes, the Cluj, around Cluj, but in Budapest, I don't think Kasztner carried that much weight, a), and 
+secondly, I don't think anyone knew about Kasztner.  So if it was a case where, let's say just for the sake of argument, Ella Mandel was contacted, she wasn't contacted by Kasztner.  She was contacted by Komoly, by, by somebody else, no, there were fiftee
+n, twenty, or twenty-five people on that board, and each had his friends, of course...
+\par NL:\tab Yes.
+\par YM:\tab ...as it's impossible it shouldn't go like this.
+\par NL:\tab Yes.  Of course.
+\par YM:\tab Of course.
+\par NL:\tab Of course.
+\par YM:\tab And these people were thinking of each other, who were the people, who are really the leaders of the community; who can be, should be, rescued, because I don't think that, first of all, they had to have the money, I mean, let's be practical.
+
+\par NL:\tab Yes, I was going to ask, do you know how much they had to pay?
+\par YM:\tab They had to have the wealth.  I don't-, there wasn't a set.
+\par NL:\tab There wasn't.
+\par YM:\tab No.  Diamonds, and gold, and wedding rings, and dollars, and, eh, sterling from, from, [unclear].
+\par NL:\tab Anything with asset value.
+\par YM:\tab Anything of asset, of hard currency, hard value.
+\par NL:\tab I see.
+\par YM:\tab That was taken.  And, and probably they got together millions and millions in value.  So, I don't think I was the one who had the amount of money or gold or diamonds, or whatnot, to, eh...
+\par NL:\tab Ransom them.
+\par YM:\tab ...to, to ransom them.  Eh, I had books, which weren't worth anything, as you see, eh, firewood, for firewood they were good, nothing else.
+\par NL:\tab Mmm.
+\par YM:\tab So, eh...
+\par NL:\tab So you made contact, and your wife conducted the school.
+\par YM:\tab No.  She conducted the school there.  I never, I wrote to her, I tried to call her, I, eh, tried to, for her to get back to Hungary, because, on the 3rd of March is my birthday.
+\par NL:\tab Ahhh.
+\par YM:\tab Can you imagine?  And when we were liberated already, people from all kinds of companies came with pick and shovel and told me, "We will give you a gift for your birthday, and it will be we will clean the courtyard of the temple."
+\par NL:\tab Oh.
+\par YM:\tab My temple was...
+\par NL:\tab A shambles.
+\par YM:\tab ...a shambles.  And, eh, it was th
+e ghetto hospital, do I have to tell you more?  A stench, you couldn't go there, you couldn't get in there, the seats, the Rombach Temple is an art, a work of art, and all the seats were torn out, used for firewood, of course, and, and the...
+\par NL:\tab Chandeliers.
+\par YM:\tab ...the, the, the }{\i\fs24 cupola}{\fs24 
+, the, top, was broken down, and when after we got together in March, and my comrades gave me this gift, I organized in my temple a rebuilding committee.  And that was in March/April.  And I got so much money, not I, I had a committee for that.
+\par NL:\tab Yes, for the funds.
+\par YM:\tab For the funds.  With }{\i\fs24 Slichot}{\fs24  services in the fall were already performed...
+\par NL:\tab In the sanctuary.
+\par YM:\tab In the sanctuary, in the temple.
+\par NL:\tab Mmm.
+\par YM:\tab And I thought everything goes in the right direction.
+\par NL:\tab Now, the Russians didn't disturb you.
+\par YM:\tab No.
+\par NL:\tab Interesting.
+\par YM:\tab The only difficulties we had was to get material to rebuild the dome, for instance, what needed another--a lot of iron bars and whatnot, so we had a man by the name on our board at the temp
+le by the name Hagadush [phonetic], who was in this line, and he got us all the material we needed for the dome of the temple.  Another one got us material for the wood part, a third one, it wasn't rebuilt as it was once upon a time, but it was rebuilt, a
+nd }{\i\fs24 Slichos}{\fs24  we could say already, and that was a great achievement.
+\par NL:\tab Oh my.
+\par YM:\tab The choir was reestablished.  Everything, I thought, everything is fine.  Not only that, but the chief rabbi of Hungary was Dr. Havashi, who suggested to me at the time to go 
+into the Hungarian army as a chaplain, maybe I won't have any trouble anymore because I speak the language and I was born in Hungary and all that, he didn't know, that's another story.
+\par NL:\tab Well, who knows.
+\par YM:\tab But, he tried.
+\par NL:\tab Yes.
+\par YM:\tab But his son became, after the war, when the so-called Hungarian government was already organized, the Russians were still there, but they didn't show themselves, I mean the Hungarian government...
+\par NL:\tab Took over.
+\par YM:\tab Ya.  Eh, he became the chief chaplain of the Armed Forces,
+ and was a very dear friend of mine and offered me a position in a high-ranking, as a high-ranking officer in his, eh, off-, in his department, because I had so much experience in labor camps, so he said, "There are }{\i\fs24 agunot}{\fs24 
+ [abandoned wives] and all kinds of questions, and you will be the one to organize it the proper way."
+\par NL:\tab Yes.
+\par YM:\tab "You can stay as chief cantor of your temple.  You can stay with the congregation.  Stay here."  So I wrote all this to my wife, but she just became so disillusioned and disg
+usted with Hungary, where she grew up, and she was born, and she knew the language, that she just did not want to come back.  I remember the High Holy Days went by and, eh, she prepared for Israel directly.  She never came back...
+\par NL:\tab I see.
+\par YM:\tab ...neither as a repatriate nor as a private person, nor anything.  She was a great Zionist, to begin with.
+\par NL:\tab I see.
+\par YM:\tab And she wanted to go to be a }{\i\fs24 chalutzah}{\fs24  in, in Palestine.
+\par NL:\tab Excuse me another minute now.
+\par YM:\tab Yes, sure.
+\par NL:\tab Were you able to go back to your apartment, Cantor?
+\par YM:\tab No.  No.
+\par NL:\tab Where did you live?
+\par YM:\tab But I got, I had a very dear friend of mine, he was a lawyer by profession, may he rest in peace, Dr. Deutsch, who, we were close, very close friends, who told me, "Now you are not going to repair 
+that broken down apartment up there.  Here on the third floor is the apartment of this antisemite who ran out, who ran away.  You move in there.  What will be later, we will see.  But in the mean-," and that's where I lived.
+\par NL:\tab That's where you lived.
+\par YM:\tab I, I lived one, eh, floor below, and gave space, I was by myself, all the people who came little by little, I had two sister-in-laws came from Auschwitz, they stayed with me for a while, other people who needed, eh, a place where...
+\par NL:\tab Housing.
+\par YM:\tab ...a place where--housing, they lived there.  And my sister-in-law, who is now in Israel, and her sister, they lived there.  I had a, a, not a\'85
+\par NL:\tab A }{\i\fs24 kibbutz}{\fs24  [chuckles].
+\par YM:\tab Ya, a }{\i\fs24 kibbutz}{\fs24  like, }{\i\fs24 Kibbutz galiyot}{\fs24 .  And, eh, the end, we corresponded back, I wr
+ote, rather, I didn't correspond because I didn't get an answer.  The first letter I got from my wife was already, was when she was already in Bari, South Italy.
+\par NL:\tab Oh my.  She really had made a firm decision.
+\par YM:\tab Firm decision.  She was on her way.  I got-
+\par NL:\tab With your son.
+\par YM:\tab Ya, with my son.  And the other boy.
+\par NL:\tab The other boy.
+\par YM:\tab And, eh, the letter read, "I read all your letters.  I wrote to you.  I hope you have received it.  What with it all, my final decision is not to step any more on Hungarian soil."  Her parents, her brothers, her brothers-in-law, her...
+\par NL:\tab All perished.
+\par YM:\tab All perished.  So, it's understandable.  And she walked out of that magnificent apartment, of that elegant apartment, a little castle of art, she walked out with a sack on her back...
+\par NL:\tab Oh my.
+\par YM:\tab ...with the two children.  So you can imagine how she felt.  And she said, "After all this, I hope you got my letters gradually, but in the meantime, I want you to remember, I am with [unclear] son, plus [phonetic], so, and s
+o," and I knew who it is, and that was the first letter I received.  Can you imagine?
+\par NL:\tab And you were, of course, divided about this.
+\par YM:\tab Right.  And I decided, definitely she said not to go back to that blood-soaked country anymore.
+\par NL:\tab Mmm.
+\par YM:\tab "And I'm going to Israel."
+\par NL:\tab Mmm.
+\par YM:\tab "I will let you know where I am.  And if you want to, we can unite again in Israel."  So you can imagine what, what that, what that meant, at the time.  That was, and finally, took a little, took time, you know, because I ha
+d to, we started the High Holy Days, there was }{\i\fs24 Rosh Hashanah}{\fs24  and }{\i\fs24 Yom Kippur}{\fs24  and }{\i\fs24 Succot}{\fs24 , and }{\i\fs24 Hoshana Rabba}{\fs24 
+, and everything was prepared for me to stay there.  And I started already to work with this Dr. Ferencz Hadashi, to, eh, maybe help people the time being in an inoffi-, an, eh, unofficial capacity but help them, eh...\sect }\sectd 
+\sbknone\linex0\headery809\footery1440\sectdefaultcl {\header \pard\plain \ql \li0\ri0\nowidctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9068\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i\fs24 
+\par }\pard \qr \li0\ri0\nowidctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9068\faauto\rin0\lin0\itap0 {\i\fs24 YEHUDA MANDEL    [4-2-\chpgn ]    
+\par }}{\footer \pard\plain \qc \li0\ri0\nowidctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i 
+From the collection of the Gratz College Holocaust Oral History Archive
+\par }}\pard\plain \qj \li0\ri0\sl361\slmult0\nowidctlpar\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i\fs24 Tape four, side two:}{\fs24 
+\par }\pard \qj \fi540\li0\ri0\sl361\slmult0\nowidctlpar\faauto\rin0\lin0\itap0 {\fs24 
+\par NL:\tab This is a continuation of our interview with Cantor Mandel, eh, tape four, side two.  Yes, Cantor.
+\par YM:\tab Eh, I had a lifetime position in Budapest.  I was in very high, eh, category of retire-of the retirement, eh, depart-, eh, fund.  And, if I would have served my time, I would have been retired there.
+\par NL:\tab In a good pension.
+\par YM:\tab And I thought things will, things will work out, but she didn't want to come back, and I came to the congregation with a request to give me a furlough, or rather a leave of absence...
+\par NL:\tab Leave of absence.
+\par YM:\tab ...and, eh, it was worked out after the High Holy Days.  It was probably well at the time in October or something like that.  So, November, December, January, finally I liquidated, I told my friend, Deutsch, Dr. Deutsch, that I 
+am leaving.  He was on the board and he had, he was part of the decision-making really.  Finally, I left my sister-in-law and my cousin, who is now professor in, of languages in Budapest.  She was a little girl, she came back with her mother.  Her mother 
+w
+ent back to their original home,and she wanted to study at the university, and people who came back got certain rights and were accepted in the university, got stipends in the university, and she was one of them, so they lived in my apartment.  And I left
+ the 7th of February, 194-
+\par NL:\tab '46.
+\par YM:\tab '46.  I left Budapest, so to say, on a leave of absence for three months.  I still have their letters and the documentation and all that for it.  I knew, I mentioned, that I will never come back to serve the congregat
+ion, but I thought this is the best I can do.
+\par NL:\tab Oh yes, surely.
+\par YM:\tab So, eh, I went, and this is maybe another interesting point.  Maybe in the great tragedy this comic thing is interesting.  Then...
+\par NL:\tab Excuse me, did you have any trouble getting permission to leave from the Russian authorities?
+\par YM:\tab No.
+\par NL:\tab No.
+\par YM:\tab No.  In those days, in '46, the Hungarian government was completely established on a socialistic, the Socialists ruled the country, so to say, and there was no Russian interference whatsoever.
+\par NL:\tab I see.
+\par YM:\tab We got together again, the Zionist organization was reestablished and so on.  So we got tog-, the printing machines were still working, falsified papers, and this time we got, with the permission and the O.K. of the International Red Cross, 
+we got papers that there are 82 Israeli, rather, at that time...
+\par NL:\tab Pales-
+\par YM:\tab ...Palestinians who were beaten by the Germans so badly that they can't talk at all.  They are deaf and dumb.
+\par NL:\tab My word.  [chuckles]
+\par YM:\tab Why did we need it?  Because the Hung
+arian Jews [chuckling] are famous for that, because they speak no other language, most of them, but Hungarian.  You know, today it's much better.  In those days, forty years ago it was, you know, Hungarians spoke Hungarian.
+\par NL:\tab Like Americans? [chuckles]
+\par YM:\tab 
+Ya.  Ya.  So, anyway, eh, so this was the story.  So what are we to do?  The Zionist organization told me--I don't remember anymore who the Secretary General was--we had meetings, I spoke and spoke with these people and briefed them how they will have t
+o behave and what will be done and all that.  And we will go through Yugoslavia to Italy and will congregate at a certain spot, and from there, we will be transported to an illegal }{\i\fs24 aliyah}{\fs24 
+, to Israel.  Now this is, this comes in now an interesting-
+\par NL:\tab [unclear]
+\par YM:\tab Ya.  So, eh, I started out with them.  We came to the Yugoslav border.  I served in Yugoslavia for six years, I spoke the language perfectly, but I wasn't supposed to speak...
+\par NL:\tab Say a word.
+\par YM:\tab ...speak a word but Hebrew.  And what's the story with all these dummies?  No, they, they, they can't talk!  They are broken up.
+\par NL:\tab [laughs]
+\par YM:\tab A colleague of mine, who was back in Subotitsa at the time already, gave us, he, he was alerted that I will pass by, so he came out to the station, looked, looked, looked, and we couldn't talk to each other, [laughs] because we weren't talking.
+
+\par NL:\tab [laughs]
+\par YM:\tab And I think even the border guard...
+\par NL:\tab Must have known.
+\par YM:\tab ...was, was, knew what's what.
+\par NL:\tab [laughs]
+\par YM:\tab So, here we passed by, and we were told that
+ some people slept in the Jewish community center there.  My colleague gave them space and all that, and finally we came back to the station there, that's the border station, Subotitsa, we traveled to Zagreb.
+\par NL:\tab Mmm hmm.
+\par YM:\tab Zagreb was one of the big citi
+es in Yugoslavia, and we were told that when we arrived there, I have just to look for one person who will have a walking stick in his hand, and one of his fingers will be bandaged, and whatever he does, wherever he goes, we should go after him.
+\par NL:\tab Follow him.  [chuckling]
+\par YM:\tab So we were these people, you know, dumb, }{\i\fs24 nebech}{\fs24 
+ [pitifully] now, they can't talk, mute, they, they come with me, after me, and we walk, and I carry on baggages, whatever we have, and we were taken to a place in Zagreb to spend the ni
+ght there, and from there we were organized into groups and traveled to Italy.  In those days...
+\par NL:\tab By foot?
+\par YM:\tab No, traveled by train.
+\par NL:\tab Train.
+\par YM:\tab In those days, if you were a refugee, no questions were asked, no tickets, no ticket was requested, and it was immensely respected.
+\par NL:\tab Open.  Completely open and free.
+\par YM:\tab Open, ya, open.  And you could, you could go, neither in Yugoslavia nor in Italy, of course, we chose the closest route, and we finally got to somewhere before Milan, and there we settled down for a little while, there was a }{\i\fs24 kibbutz}{
+\fs24  already, and then we were transferred to Milan, into, into the city, because the transports were organized from there.
+\par NL:\tab From Milan.
+\par YM:\tab And, eh, we didn't know it will take that long, but this was approximately February, let's say the 15th or something like that, and we saw it takes too long, takes too long, and there were }{\i\fs24 kibbutzim}{\fs24 
+ all over the place in Milan.  You mention it--in Padua, everywhere, }{\i\fs24 kibbutzim}{\fs24 , and there were people who didn't know a word of Hebrew.  So I worked in Italy--February, March, April, up to the begin
+ning of May, April probably, when we finally tried to get to, to the illegal }{\i\fs24 aliyah}{\fs24 --and I taught Hebrew in these different }{\i\fs24 kibbutzim}{\fs24 
+, traveled around, never paid for a ticket, no questions asked.  I don't remember anymore what the word was for the, in Italian, what to say, but I was told, and I remembered it.
+\par NL:\tab [unclear]
+\par YM:\tab I told the conductor, aw, }{\i\fs24 bene}{\fs24 , }{\i\fs24 bene}{\fs24 , everything was fine.  So, I traveled to these places and so, taught.  Then, finally, in April, I think it must have been because I know that the }{\i\fs24 seder}{\fs24 
+ we did already in Spezia.  Finally, we got to, to, eh, to a date when we were told we will...
+\par NL:\tab Leave.
+\par YM:\tab ...leave.  And again, fate.  And I can't say }{\i\fs24 eyn adam nokef etsba' milematah ella im keyn}{\fs24 .}{\fs24\super 12{\footnote \pard\plain \ql \li0\ri0\nowidctlpar
+\tx-1440\tx-1080\tx-720\tx-360\tx0\tx360\tx1080\tx1800\tx2520\tx3240\tx3960\tx4680\tx5400\tx6120\tx6840\tx7560\tx7920\tx8280\tx8640\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {12}{\fs24   }{
+"No man can lift a finger from below unless so instructed from above." Tractate Hullin.}}}{\fs24 
+ [From Talmud]  How true it is.  The eve before we have left, I don't know why, people exactly chose me or came to me to tell me, that in the, I don't know how many people among them, how many people, there are p
+eople who are absolutely kosher and wouldn't eat a bite unless it's 100 percent }{\i\fs24 toleslah}{\fs24 
+ [phonetic], and there is some food in the storeroom which is about a kilometer away, and it was pouring, raining, but it's a good time to step on the, on the, on the illegal boat.
+\par NL:\tab Boat.
+\par YM:\tab Why, if I would go with a few more people, we could get the food prepared for these people.  And I went and I got...
+\par NL:\tab Drenched.
+\par YM:\tab ...deadly tired.  Drenched, of course, but deadly tired.  When we started out about one o'cloc
+k at night or something like that, I fell asleep on the bus.  And I begged my comrades, and this shows again humanity, I told them, "Look, I am so tired, I don't know how long I can sit and not fall asleep."  Because you can't imagine what went on before 
+these days and all that I ran and ran and ran and tried, can you imagine that maybe 30 or 40 people stepped over me...
+\par NL:\tab Didn't wake you.
+\par YM:\tab ...while I was sleeping, and they didn't wake me.
+\par NL:\tab Oh my.
+\par YM:\tab When the }{\i\fs24 Haganah }{\fs24 people drove back already.
+\par NL:\tab Oh my.
+\par YM:\tab Suddenly they heard a tremendous }{\i\fs24 geschrei}{\fs24  [yell], "}{\i\fs24 Ma karah?}{\fs24  [What happened?]  Ah, ah, ah ha [unclear]?  }{\i\fs24 Ma karah}{\fs24 ?"
+\par NL:\tab Oh my.
+\par YM:\tab So they thought I got a heart attack.
+\par NL:\tab Oh my.  Oh my.
+\par YM:\tab They stopped the lorry, came and tried to calm me, calm me, and told me, "}{\i\fs24 Eyn davar, nikach otcha b'pa'am haba}{\fs24 ." [Don't worry.  We will take you next time.]  And finally...
+\par NL:\tab Oh.
+\par YM:\tab These people went and I stayed there.  Finally, at the next transport...
+\par NL:\tab How long did you have to wait?
+\par YM:\tab I think a week.
+\par NL:\tab Mmm.
+\par YM:\tab Something like that.
+\par NL:\tab Oh yes, oh, oh, oh my.
+\par YM:\tab But every minute was, was.  So, again we started out and we went I think in 12 or 13 lorries.  We were transported to, in the direction, to Spezia.  We finally arrived there, and we saw }{\i\fs24 epes}{\fs24 
+ strangely that the Italian police is around us.  We didn't know what happened with the Italian police.  So, none of us, and the }{\i\fs24 Haganah }{\fs24 
+people, who were among us, of course, knew very well what's going on because they, they, they didn't hav
+e to give them the whole hand, they knew from one finger.  And they told us quietly that this and this is happening.  And probably the English, who occupied that part of the country, told the Italians to arrest us.  We were arrested, first we were told we
+ will be taken into...
+\par NL:\tab Custody.
+\par YM:\tab Spezia.  Custody.  But then, somehow or other, they succeeded, the one who...
+\par NL:\tab The }{\i\fs24 Haganah}{\fs24 .
+\par YM:\tab ...spoke, yes, on our people.  Of course no one knew that they were...
+\par NL:\tab Civilians.
+\par YM:\tab ...dressed just like us.  They will, eh, eh, we, we can stay, they will send out guards, and so on and so forth, but we can stay on the...
+\par NL:\tab Boat.
+\par YM:\tab ...the boat.  We stayed on the boat, and I don't remember exactly what, how long, for how long before Pesach.  The, the, what organization was it now who sent us food?
+\par NL:\tab JDC?
+\par YM:\tab I don't remember.  Sent us }{\i\fs24 matzah}{\fs24 , and on the }{\i\fs24 molo}{\fs24  [pier, dock], on the, on that eh tongue which leads to the, into the ocean where the, what's that called in English, I don't remember, you know, that built...
+
+\par NL:\tab A walkway.
+\par YM:\tab Ya, something.  Where our boat was, was, is resting, standing.  There, and on the boat with little lamps and candles and whatnot, I made the }{\i\fs24 seder}{\fs24 .
+\par NL:\tab Oh my.
+\par YM:\tab For that, in 1946, I remember the date, and we had a...
+\par NL:\tab My, what a moment.  What a moment.
+\par YM:\tab We had a }{\i\fs24 seder}{\fs24 .
+\par NL:\tab Were there British soldiers standing by?
+\par YM:\tab No, Italians.  The British were probably two kilometers or a half a kilometer away, and the British Commando definitely was responsible for it.
+\par NL:\tab Of course.
+\par YM:\tab So, we were there, I don't remember for how long, but finally we saw nothing happens, }{\i\fs24 red dahin, red daher}{\fs24  [talk here, talk there], nothing happened.  So, I was one of the people who, who was considered to be on the command.
+
+\par NL:\tab The leadership.
+\par YM:\tab 
+The leadership.  So, I spoke Hungarian, there were many, many Hungarians, so I had to translate whatever was said.  And, em, we tried to keep the spirit up of the people.  Then I wrote this [unclear] Spezia, and the eleven hundred and eighteen people were
+ on that, I mean, including children, of course...
+\par NL:\tab Mmm hmm.
+\par YM:\tab ...decided to have a hunger strike.  And we had a hunger strike for 119 hours.  In the meantime, the English became a little concerned, because in those days, you know, it wasn't as bad as 
+it is today, you know, there was still some shame in them, and they sent down the Minister of Labor, Morrison, a Jew.  At the time, he came down, and I sat in on a five-man committee.  I didn't speak a word of English at the time, but the final upshot was
+ he should give us--and when I saw, just this week, I think, }{\i\fs24 Exodus}{\fs24  was on television.
+\par NL:\tab Mmm.
+\par YM:\tab That's exactly our story.  It was just transposed into the children camp because it's more...
+\par NL:\tab Dramatic.
+\par YM:\tab ...effective, more, more, more dramatic, more
+, ya.  But that's our story.  And, eh, he said we should give up the hunger strike, and he will go back and will talk to the government and this and that.  After, I think, a certain amount of time, a few hours, because the whole hunger strike kept on for 
+a
+bout 118 hours, so he probably was there the 80th hour or something like that.  And we agreed to one thing, that we won't commit, we won't start the suicides until we don't hear him.  But the hunger strike will go on.  I will never forget it, in this trag
+ic story maybe this is a little light, eh...
+\par NL:\tab Touch.
+\par YM:\tab ...point, touch, too.  A German boy was there with us.  And while, at one of the }{\i\fs24 mifgash}{\fs24  [meeting], the whole group was singing, }{\i\fs24 lo yatzul, tzarroayim}{\fs24  [wouldn't have been saved in the afternoon], a
+nd this boy at one point or another, fainted.  The doctor came, gave him an injection, brought him back, and his first, when he came to, his first word, first words were, "}{\i\fs24 Aber ich werde nicht essen}{\fs24 !" [But I shall not eat.]
+\par NL:\tab [laughs]
+\par YM:\tab [laughs]  So he,
+\par NL:\tab This got into the newspapers?  Ohhhh...
+\par YM:\tab I don't know, most probably.
+\par NL:\tab Ohhh, oh my.
+\par YM:\tab So, finally this guy says this, this is a light touch to our tragedy.
+\par NL:\tab But such spirit.
+\par YM:\tab Ya.  So, we went on, finally we heard from Morrison that elev
+en hundred and eighteen certificates were granted to the Spezia people.  Eh, however, we cannot leave yet.  The English are extremely concerned about us, and how could we ever make it on this five hundred and some eh, ton, little boat?  The Jewish Agency 
+h
+ad to buy another boat, to divide us into two groups, and then they will give out the certificates.  So we gave up the hunger strikes and we divid-, the people were divided, and these two boats got into Israel under the name, eh, in May, 1946, under the n
+ame Eliahu Golomb and Dov Hoz.
+\par NL:\tab Oh.  Oh.  Dov?
+\par YM:\tab Dov Hoz, the labor leader, Dov Hoz.
+\par NL:\tab How is the last name spelled?
+\par YM:\tab Hoz.  I think, Dov Hoz.  Hay, vav, zayin }{\f30\fs24 \'27\'26\'25}{\fs24 .
+\par NL:\tab I don't know that name.  But Golomb, of course, I, I know.
+\par YM:\tab Eliahu Golomb.
+\par NL:\tab The }{\i\fs24 Haganah }{\fs24 founder.
+\par YM:\tab Ya. Ya.  So, eh, I was pushed in front, you know, to be the commander of one of the boats, and I remember we had an unfortunate thing.  We had our doctor on the boat, didn't know--we had many doctors--they didn't know exactly if
+ this is typhus, typh-, typhus fever, or, or something else.  So one of our men, this again may be a light moment in the great tragedy, one of the men who was so very sick with a very high temperature, had to be taken off in Greece to be taken into a hosp
+ital, to the epidemic department there, and of course the }{\i\fs24 Haganah}{\fs24  people came with us, but I was the one who signed the documents.  You know, [chuckles] this is }{\i\fs24 meshugas}{\fs24  [craziness], you know but it is interesting.
+
+\par NL:\tab You were the spokesman, the official.
+\par YM:\tab Because, ya.  And one more, more, finally we arrived in Haifa.  Probably it was about 14th or 15th or 12th, something, beginning of...
+\par NL:\tab May.
+\par YM:\tab ...May.  Why do I say that?  Because the 18th I remember, was }{\i\fs24 Shavuot}{\fs24 .  We arrive in Haifa.  My wife was with the two children in }{\i\fs24 Kibbutz Shar Hamakkim}{\fs24 .  The }{\i\fs24 kibbutz}{\fs24 
+ people gave, sent someone in a car to pick me up.
+\par NL:\tab Mmm.
+\par YM:\tab And because I was the commander of one of the boats, I couldn't leave before...
+\par NL:\tab Everyone.
+\par YM:\tab ...all documents are signed, and everyone is off the boat!  [chuckles]
+\par NL:\tab Oh, ironic.
+\par YM:\tab My wife was waiting two hours }{\i\fs24 after}{\fs24  everyone was out, and I didn't come down, and she went back to the }{\i\fs24 kibbutz}{\fs24 , I again did not arrive, because she was waiting for
+ the previous transport also.  But I didn't arrive.  So, anyway, I had one English pound in my pocket.  So I went to a taxi chauffeur and told him, "}{\i\fs24 Tikach otti l'shar Hamakkim}{\fs24 ." [Take me to the kibbutz.]  "}{\i\fs24 Zeh harbey kesef}{
+\fs24 ?" [That's a lot of money.]  "}{\i\fs24 Ayn le kesef.  Yesh lee zeh.  Ami yachol la tat la rami}{\fs24  [chuckles]" [I have none.  Here's what I have.]  I didn't know what it is, so he said, "}{\i\fs24 Atah hegata karega im }{\fs24 
+Eliahu Golomb?" [You just arrived with Eliahu Golomb?]  "}{\i\fs24 Kayn.}{\fs24 "  "}{\i\fs24 Atah lo tzarich l'shalem}{\fs24  anything, nothing.  }{\i\fs24 Shum davar.  Lo kesef lo.  Ekach miata shum davar}{\fs24 
+." [You just arrived with no money, no.  I won't take anything from you.]
+\par NL:\tab [unclear].
+\par YM:\tab "}{\i\fs24 T'kaness, t'kaness}{\fs24 ." [Get in, get in.] and drove me to Shar Hamakkim.
+\par NL:\tab Oh my.
+\par YM:\tab When I came to Shar Hamakkim I was asking for, eh...
+\par NL:\tab Ella.
+\par YM:\tab ...my wife was in Isr-, in Europe, her Hebrew name was Zahava, and, the, the other name, the Hungarian name, was Gabriella, which people shortened to Ella.  So, I asked for Zahava Mandel.  [mumbles] 
+ "Know anyone named Zahava?  No."  So, anyway, they changed her name to Ella, they says it's good enough a name, Ella.
+\par NL:\tab [laughs]
+\par YM:\tab Ella, what we need Zahava for?
+\par NL:\tab [laughing] Oh.
+\par YM:\tab So, finally we met.
+\par NL:\tab Oh my.
+\par YM:\tab I, I, I don't have to tell you anything about that.
+\par NL:\tab Oh my.  Oh my.
+\par YM:\tab Three days or four days later, ya, I stayed in the }{\i\fs24 kibbutz }{\fs24 for a day or two, maybe because Shar Hamakkim was such a well-organized }{\i\fs24 kibbutz}{\fs24 .  It was a }{\i\fs24 Hashomer Hatza'ir}{\fs24  }{\i\fs24 kibbutz}{\fs24 
+, as you well know.  And, for me it was very far, but no other }{\i\fs24 kibbutz}{\fs24 
+ has given the opportunity to the children which Shar Hamakkim granted them.  Ella became their immediate teacher, and they tried to educate her, she should become a teacher in Israel and so on, and she didn't want it.  She
+ didn't want it.  She said, I did enough.
+\par NL:\tab My!
+\par YM:\tab She went to work in the }{\i\fs24 gan hayerachot}{\fs24  [vegetable garden].  For, and she worked there.  Later on she became the }{\i\fs24 mevashelet}{\fs24  [cook].
+\par NL:\tab Mmm.
+\par YM:\tab And that was, the people were just carrying her on their hands, because the food became entirely different after her perfect, wonderful cook.  I came there and saw that Shar Hamakkim }{\i\fs24 kibbutz}{\fs24 
+, for whatever reason, I'm not going into details, is not for me.  I saw that right away.  Though I was born and grew up in a village, and my father, he had a, I knew how to drive horses and all that, but I knew this was not for me.
+\par NL:\tab You were a city man.
+\par YM:\tab Ya.
+\par NL:\tab City man.
+\par YM:\tab I, em.
+\par NL:\tab Uh, what a problem.
+\par YM:\tab Maybe I, maybe I was, maybe I was too old even at the time already.
+\par NL:\tab Too many experiences.
+\par YM:\tab Ya.  I was born in 1904, and we are talking about '46, so at the time I was 42 years old, and I thought, no, I don't have the right to come here and take all what these people starved
+  for, for, for decades and decades, one.  Secondly, I didn't feel that the spiritual atmosphere is mine.  Third, they wanted to, to have me, even if I will just teach music in their schools.  I just didn't feel like doing it.  So three days later, and wi
+th this I will close, three days later, I }{\i\fs24 davened}{\fs24 , I got, first of all, a suit lent to me, given to me by my, by Ella's schoolmate with whom she went to school from first grade to the university.
+\par NL:\tab Also in Palestine.
+\par YM:\tab In Palestine.  He lived there, and he was a lawyer by profession and was a member of }{\i\fs24 Yeshurun}{\fs24  Congregation, }{\i\fs24 Beit Kenesset Yeshurun}{\fs24 
+ in Yerushalayim.  He lived in Yerushalayim.  Three days after I arrived in Israel I had this }{\i\fs24 z'chut}{\fs24  [opportunity] to have, to }{\i\fs24 daven}{\fs24  in }{\i\fs24 Beit Hakenesset Yeshurun}{\fs24  in Yerushalayim.
+\par NL:\tab Extraordinary.
+\par YM:\tab See, there, in those days was no restriction yet.  I went to the }{\i\fs24 kotel}{\fs24  [wall] and [unclear], and I was accepted to be the }{\i\fs24 hazan}{\fs24  of, eh...
+\par NL:\tab }{\i\fs24 Yeshurun}{\fs24 .
+\par YM:\tab ...of }{\i\fs24 Yeshurun}{\fs24 .  And I couldn't make a go of it, because I had no, I needed }{\i\fs24 d'me}{\fs24  }{\i\fs24 maftayach}{\fs24  [an advance, some money].
+\par NL:\tab Mmm.
+\par YM:\tab And at the time I didn't understand.  When the }{\i\fs24 gabbai}{\fs24  [lay communal official] spoke to me and said, "}{\i\fs24 Ha lo, atah yodeah Ivrit.  Yotzay m'aclal!  Yofi!  Eyn lanu morim.  Tikkanes le-eitz
+eh bet sefer sh'attah tivkhar.  Yaholiyot Gemara, Mishnah, Torah, ma sh'atah rotzeh?}{\fs24 "}{\fs24\super 13{\footnote \pard\plain \ql \li0\ri0\nowidctlpar
+\tx-1440\tx-1080\tx-720\tx-360\tx0\tx360\tx1080\tx1800\tx2520\tx3240\tx3960\tx4680\tx5400\tx6120\tx6840\tx7560\tx7920\tx8280\tx8640\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {13}{\fs24   "}{
+You know Hebrew.  Excellent!  Good! We don't have any teachers.  Go to any school you will choose, teach Gemarah, Mishnah, Torah, whatever you like."}}}{\fs24   And I said to myself, the chief cantor of Budapest came here, you know, this is our }{\i\fs24 
+mishugas}{\fs24  [crazy], and, here in Yerushalayim, in Israel, in Palestine, I should become a }{\i\fs24 melamed}{\fs24  [teacher]?  I didn't accept it, because they didn't want to at least lend 
+me money, but a man by the name Friedman, was in Yeshurun when I }{\i\fs24 davened}{\fs24  in Yeshurun, this again shows me, "}{\i\fs24 Eyn adam nokef etsba' milematah.}{\fs24 
+" [no man can lift a finger from below]  Went home, half crazy, telephoned around the whole country, finally through a friend of ours, an engineer Stark, he found me, and came, }{\i\fs24 b'neyvel uve'chinor}{\fs24 
+ [with harp and violin], and the congregation bought us a beautiful apartment, }{\i\fs24 Rechov Hahermon, esrim v'chamesh}{\fs24  [15], Haifa, and I became the }{\i\fs24 hazzan}{\fs24  [cantor] of the, of the }{\i\fs24 beit ha'knesset}{\fs24 
+ [synagogue] in Haifa.
+\par NL:\tab Oh.
+\par YM:\tab And this here ends the story.  Then it took a long time before I could convince my wife to leave the }{\i\fs24 kibbutz }{\fs24 but she did, and we lived in Haifa, and then I thought, you know, you come to the United States, bri
+ng a few bags, and fill them with dollars, and then you go back to Israel.  It didn't happen like that, because the }{\i\fs24 milchemet hashichrur}{\fs24 
+ [war of Liberation] broke out, and I couldn't go back, and couldn't stay here, I had to take a position.  I took a position in New York, 1948, March or April, where I became the, yes, and I needed papers to 
+                                                                           get in here, non-quota, and I couldn't get it any other way, but in those days cantors couldn't come here non-quota, only rabbis, or priests, or ministers.  So, because
+ I am qualified, I became the associate rabbi to a rabbi, and I want to mention his name, Rav Chaim Porille, }{\i\fs24 zichron livrachah}{\fs24 
+ [may his name be for a blessing], who is the rabbi of the Rumanische Shul in New York, a tremendous orthodox shul, and...
+\par NL:\tab Excuse me, how do you spell his name?
+\par YM:\tab Rav Chaim Porille.
+\par NL:\tab P-O-R,
+\par YM:\tab P-O-R-I-L-L-E
+\par NL:\tab E.  Porille.
+\par YM:\tab Eh, I became his associate, and I was there for two years as the principal of their, of their  Hebrew school.  So I asked Rav Chaim Porille, "}{\i\fs24 Rebbe, vi a zoy kenich zein a principal in a school in America; ich ken nicht keyn vott English
+}{\fs24 ?"}{\fs24\super 14{\footnote \pard\plain \ql \li0\ri0\nowidctlpar\tx-1440\tx-1080\tx-720\tx-360\tx0\tx360\tx1080\tx1800\tx2520\tx3240\tx3960\tx4680\tx5400\tx6120\tx6840\tx7560\tx7920\tx8280\tx8640\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {14}{\fs24   }{"Rabbi, how can I be a principal in a school in America if I don't know a word of English?"}}}{\fs24   "}{\i\fs24 Sogter, bei uns lernt man Yiddish}{\fs24 
+."  He says, "Here we study Yiddish."  And all the reports he wrote for me to the government, because it was a public school.  "}{\i\fs24 Sorgt sich nicht, alles wird zein--ihr wird nur darfen untershreibn}{\fs24 ."}{\fs24\super 15{\footnote \pard\plain 
+\ql \li0\ri0\nowidctlpar\tx-1440\tx-1080\tx-720\tx-360\tx0\tx360\tx1080\tx1800\tx2520\tx3240\tx3960\tx4680\tx5400\tx6120\tx6840\tx7560\tx7920\tx8280\tx8640\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {15}{\fs24   }{
+"Don't worry, everything wil be--all you have to do is sign."
+\par }}}{\fs24   He was a magnificent, wonderful person.  Then, it took a year before I, I convinced my wife to come here.  They arrived in '49.
+\par NL:\tab You had family here?
+\par YM:\tab Yes, I had one sister here, and that's the reason I came, because she was the only, after my brother in '49 died, we are the only one, she is the only one I still have out of seven brothers and sisters.
+\par NL:\tab What a saga.
+\par YM:\tab So, eh, she came here with our son.  We settled in New York.  Then, in 1949, when my brother died in Israel, my sister just could
+n't take it.  She went to pieces and begged me if there is any position in Philadelphia, would I please move here, because she just can't stand it.  Though she had never met this brother, because this brother was born after she has left home.
+\par NL:\tab Mmm.
+\par YM:\tab She came here to an uncle.  Eh, and so on.  But we came, settled here, and I came to Bet Judah of Logan in 1950, eh, I think this January the 14th, and since then, I'm here, and the rest is, the rest is an open book.
+\par NL:\tab Thank you very, very much, Cantor Mandel.  I can't tell you how valuable this testimony is.  Thank you.
+\par YM:\tab You are welcome, I'm sure.
+\par 
+\par 
+\par 
+\par 
+\par }\pard \qj \li0\ri0\sl361\slmult0\nowidctlpar\faauto\rin0\lin0\itap0 {\fs24 
+\par }\pard \qj \fi540\li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 {\fs24 \page Addendum to Yehuda Mandel testimony 6/6/1980
+\par 
+\par Shellie Greenspun, a former student of Gratz, mailed this material to me January 31, 1984.  Please keep it together with the testimony of YEHUDA MANDEL.  -Nora Levin
+\par 
+\par From Shellie (Rochelle) Greenspun (above note and date)
+\par 
+\par 
+\par }\pard \qj \fi540\li0\ri0\sl361\slmult0\nowidctlpar\faauto\rin0\lin0\itap0 {\fs24 Nora, with me you must simply live long enough...eventually everything gets done.  I refer first to the promise I made to you to take d
+own the account of the Kasztner story related to the Brand Mission in Hungary in the period of the Holocaust (a year ago).  My friend, Emanuel (Manny) Mandel and his father Cantor Yehudah Mandel, formerly of Logan, Philadelphia, Israel, various camps in w
+a
+r-torn Europe, Hungary and Czechoslovakia sat with me to recall their lives in this period.  Since Manny was a child of 8 at the time, I think it is clear that his memories are a bit hazy.  However, he seemed quite clear in terms of time and place.  Howev
+e
+r, his father, who was in a work camp, was not part of the group.  And his mother has passed away.  So what we have is a child's memories.  It is interesting that the strongest memory was of the "cold" German train and the "warm" Swiss train.  That transf
+er evoked the most dramatic response in our conversation.
+\par 
+\par I do not believe that the bit of information which has been secured has added at all to the body of knowledge on this subject.  Still, it was an important task to further document those terrible times.  I am grateful for having had this opportunity.
+
+\par 
+\par 
+\par 
+\par }\pard \qc \fi540\li0\ri0\sl361\slmult0\nowidctlpar\faauto\rin0\lin0\itap0 {\fs24 
+\par 
+\par 
+\par 
+\par }\pard \qc \li0\ri0\sl361\slmult0\nowidctlpar\faauto\rin0\lin0\itap0 {\fs24 
+\par }\pard \qc \fi540\li0\ri0\sl361\slmult0\nowidctlpar\faauto\rin0\lin0\itap0 {\fs24 \page 
+\par }\pard \qc \fi540\li0\ri0\sl312\slmult0\nowidctlpar\faauto\rin0\lin0\itap0 {\fs28 Testimony obtained from Emanuel Mandel,
+\par June 6, 1980,
+\par concerning the transfer of Jews from Hungary in 1944.}{\fs24 
+\par }\pard \qj \fi540\li0\ri0\sl312\slmult0\nowidctlpar\faauto\rin0\lin0\itap0 {\fs24 
+\par On April 19, 1944 the Nazis occupied Budapest.  It was the day after Passover.  Emanuel Mandel's father, a Cantor, was permitted to return from a work camp in order to }{\i\fs24 daven}{\fs24 
+ services.  Cantor Mandel, who was present for this interview, indicated that the }{\i\fs24 Kehillah}{\fs24  had great power and was actually able to "force the Germans to allow him to come home.  [This was the Congregation of Pest].  The }{\i\fs24 
+Kehillah}{\fs24  had over 1,040 employees involved with hospitals, hold age homes and every facet of Jewish life."
+\par 
+\par Cantor Mandel was a Czechoslovak citizen who came to Hungary in 1936.  The Czechs and Hungarians hated each other, but they hated the Jews even more.  The Ca
+ntor had working papers for four years.  He went to serve as a chaplain and remained a chaplain even when he was sent to the labor camp.  This allowed him to have special privileges.  That is how the Cantor was able to bring supplies back to the congregat
+ion.
+\par 
+\par A.THE TRIP:  How were people chosen for the trip?
+\par 1."Money, gold, diamonds, cash boullion
+\par 2.Active in the underground
+\par 3.Active in Jewish community leadership
+\par 4.Luck
+\par 5.Arrogance and push"
+\par 
+\par B.What was Emanuel Mandel's connection?
+\par He had an uncle in }{\i\fs24 Ha Shomer Hatzair}{\fs24  who organized a Zionist underground network who organized }{\i\fs24 brecha}{\fs24 , escape through mountains and with }{\i\fs24 Aliyah Bet}{\fs24 
+ via ships.  Emanuel Mandel was not allowed in his grandmother's room--there was a printing press there to print illegal papers.  From time to time it was moved from place to place.
+\par C.What were the arrangements with the Germans?
+\par The Jews were to be taken to one of three ports.  All were to claim to be displaced persons--claiming Palestinian citizenship.  This allowed the Germans to
+ legitimize the whole procedure and account for the movement of 1,617 people.  The ports were to be in Turkey, Spain or the Baltic.  But the cattle cars (boxcars) went Northwest.  They camped at night.  Emanuel believes that three days (?) later they stop
+ped for "rest" at or near Hamburg near the Hanover railroad, 18 miles or so from Bergen-Belsen.  They were taken to Bergen-Belsen, a huge detention center, supposedly for three days to one week.
+\par Emanuel indicates that this was a transit center.  Their luck was the Red Cross knew of their whereabouts and movement.  Emanuel says that no one from the group died in camp except one young woman.  None of the group was put to labor.  }{\i\fs24 
+Sondergruppe}{\fs24  was the name of the group.
+\par 
+\par Negotiations continued.
+\par D.What was the timing?
+\par In June, 1944, Normandy Invasion.  The Luftwaffe was knocked out of commission.  Hungary was liberated in January, 1945.  War was winding down.  The group stayed three months in Bergen-Belsen until September.  Then about 300 people, 1/4 of the group,
+ were taken to Switzerland for additional dollars--money to be paid on tracing of the group to its destination.  The Jews had money in Swiss accounts (some of the Jews) and released these additional funds to the Germans.  Emanuel's mother had a 4kt diamon
+d in a cake of soap.  The cake of soap was lost on the first night after they left Hungary.
+\par 
+\par Emanuel Mandel got out in March, 1945.  The war ended in May.  In March, 1945, Emanuel was taken to German Switzerland.  He recounts the following story.  "German t
+rains cannot run on Swiss tracks, so the train or tracks had to be switched.  The train on the Swiss tracks was warm inside."  He was taken and fumigated and put on the Swiss train.  From March to May the area was run by the Red Cross.  About 20-40 of the
+ Hungarian kids were sent to school at Swaingallen [phonetic].
+\par 
+\par Emanuel Mandel was eight years of age in 1944.  His mother, who accompanied him on the trip, has since passed away.  His father, Cantor Yehudah Mandel, has a separate escape story.  Cantor Mand
+el suggests that Kasztner organized the trip on which his son escaped.  "In regard to the eligibility process it was only natural in those times that some would be saved and others would not."  The Cantor did not fault Kasztner for being burdened with the
+se decisions.  "Everyone who could grabbed at freedom."}{
+\par }}

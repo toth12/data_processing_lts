@@ -1,0 +1,383 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f27\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Tahoma;}
+{\f28\froman\fcharset238\fprq2 Times New Roman CE;}{\f29\froman\fcharset204\fprq2 Times New Roman Cyr;}{\f31\froman\fcharset161\fprq2 Times New Roman Greek;}{\f32\froman\fcharset162\fprq2 Times New Roman Tur;}
+{\f33\froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\f34\froman\fcharset178\fprq2 Times New Roman (Arabic);}{\f35\froman\fcharset186\fprq2 Times New Roman Baltic;}{\f244\fswiss\fcharset238\fprq2 Tahoma CE;}
+{\f245\fswiss\fcharset204\fprq2 Tahoma Cyr;}{\f247\fswiss\fcharset161\fprq2 Tahoma Greek;}{\f248\fswiss\fcharset162\fprq2 Tahoma Tur;}{\f249\fswiss\fcharset177\fprq2 Tahoma (Hebrew);}{\f250\fswiss\fcharset178\fprq2 Tahoma (Arabic);}
+{\f251\fswiss\fcharset186\fprq2 Tahoma Baltic;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;
+\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}{\stylesheet{\ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext0 Normal;}{\s1\qj \li0\ri0\nowidctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin0\itap0 
+\fs24\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp1033 \sbasedon0 \snext0 heading 1;}{\s2\qj \li0\ri0\nowidctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin0\itap0 
+\fs24\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp1033 \sbasedon0 \snext0 heading 2;}{\s3\qj \li0\ri0\nowidctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin0\itap0 
+\fs24\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp1033 \sbasedon0 \snext0 heading 3;}{\s4\qj \li0\ri0\nowidctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin0\itap0 
+\fs24\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp1033 \sbasedon0 \snext0 heading 4;}{\s5\qj \li0\ri0\nowidctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin0\itap0 
+\fs24\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp1033 \sbasedon0 \snext0 heading 5;}{\s6\qj \li0\ri0\nowidctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin0\itap0 
+\fs24\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp1033 \sbasedon0 \snext0 heading 6;}{\s7\qj \li0\ri0\nowidctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin0\itap0 
+\fs24\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp1033 \sbasedon0 \snext0 heading 7;}{\s8\qj \li0\ri0\nowidctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin0\itap0 
+\fs24\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp1033 \sbasedon0 \snext0 heading 8;}{\s9\qj \li0\ri0\nowidctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin0\itap0 
+\fs24\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp1033 \sbasedon0 \snext0 heading 9;}{\*\cs10 \additive Default Paragraph Font;}{\*\cs15 \additive Default Par1;}{\s16\ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext16 _26;}{\s17\qj \li1440\ri0\nowidctlpar\faauto\rin0\lin1440\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext17 _25;}{
+\s18\qj \li2160\ri0\nowidctlpar\faauto\rin0\lin2160\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext18 _24;}{\s19\qj \li2880\ri0\nowidctlpar\faauto\rin0\lin2880\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext19 
+_23;}{\s20\qj \li3600\ri0\nowidctlpar\faauto\rin0\lin3600\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext20 _22;}{\s21\qj \li4320\ri0\nowidctlpar\faauto\rin0\lin4320\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 
+\snext21 _21;}{\s22\qj \li5040\ri0\nowidctlpar\faauto\rin0\lin5040\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext22 _20;}{\s23\qj \li5760\ri0\nowidctlpar
+\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin5760\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext23 _19;}{\s24\qj \li6480\ri0\nowidctlpar
+\tx0\tx720\tx1440\tx2160\tx2880\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin6480\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext24 _18;}{\s25\qj \li0\ri0\nowidctlpar
+\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin0\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext25 _17;}{\s26\qj \li1440\ri0\nowidctlpar\faauto\rin0\lin1440\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext26 _16;}{\s27\qj \li2160\ri0\nowidctlpar\faauto\rin0\lin2160\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext27 _15;}{
+\s28\qj \li2880\ri0\nowidctlpar\faauto\rin0\lin2880\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext28 _14;}{\s29\qj \li3600\ri0\nowidctlpar\faauto\rin0\lin3600\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext29 
+_13;}{\s30\qj \li4320\ri0\nowidctlpar\faauto\rin0\lin4320\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext30 _12;}{\s31\qj \li5040\ri0\nowidctlpar\faauto\rin0\lin5040\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 
+\snext31 _11;}{\s32\qj \li5760\ri0\nowidctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin5760\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext32 _10;}{\s33\qj \li6480\ri0\nowidctlpar
+\tx0\tx720\tx1440\tx2160\tx2880\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin6480\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext33 _9;}{\s34\qj \li0\ri0\nowidctlpar
+\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin0\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext34 _8;}{\s35\qj \li1440\ri0\nowidctlpar\faauto\rin0\lin1440\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext35 _7;}{\s36\qj \li2160\ri0\nowidctlpar\faauto\rin0\lin2160\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext36 _6;}{
+\s37\qj \li2880\ri0\nowidctlpar\faauto\rin0\lin2880\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext37 _5;}{\s38\qj \li3600\ri0\nowidctlpar\faauto\rin0\lin3600\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext38 _4;}
+{\s39\qj \li4320\ri0\nowidctlpar\faauto\rin0\lin4320\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext39 _3;}{\s40\qj \li5040\ri0\nowidctlpar\faauto\rin0\lin5040\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext40 
+_2;}{\s41\qj \li5760\ri0\nowidctlpar\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin5760\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext41 _1;}{\s42\qj \li6480\ri0\nowidctlpar
+\tx0\tx720\tx1440\tx2160\tx2880\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin6480\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext42 _;}{\*\cs43 \additive Default Para;}{\*\cs44 \additive \super Endnote Refe;}{\*\cs45 \additive 
+\super Footnote Ref;}{\s46\ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \f27\fs16\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext46 Balloon Text;}{\s47\qj \li0\ri0\nowidctlpar\tx0\tqc\tx4320\tqr\tx8640\tx9360\faauto\rin0\lin0\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext47 header;}{\s48\qj \li0\ri0\nowidctlpar\tx0\tqc\tx4320\tqr\tx8640\tx9360\faauto\rin0\lin0\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext48 footer;}{
+\s49\qj \fi-720\li720\ri0\nowidctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin720\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext49 _level1;}{
+\s50\qj \fi-720\li1440\ri0\nowidctlpar\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin1440\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext50 _level2;}{
+\s51\qj \fi-720\li2160\ri0\nowidctlpar\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin2160\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext51 _level3;}{\s52\qj \fi-720\li2880\ri0\nowidctlpar
+\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin2880\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext52 _level4;}{\s53\qj \fi-720\li3600\ri0\nowidctlpar
+\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin3600\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext53 _level5;}{\s54\qj \fi-720\li4320\ri0\nowidctlpar
+\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin4320\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext54 _level6;}{\s55\qj \fi-720\li5040\ri0\nowidctlpar
+\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin5040\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext55 _level7;}{\s56\qj \fi-720\li5760\ri0\nowidctlpar
+\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin5760\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext56 _level8;}{\s57\qj \fi-720\li6480\ri0\nowidctlpar\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin6480\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext57 _level9;}{\s58\qj \fi-720\li720\ri0\nowidctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin720\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext58 _levnl1;}{\s59\qj \fi-720\li1440\ri0\nowidctlpar\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin1440\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext59 _levnl2;}{\s60\qj \fi-720\li2160\ri0\nowidctlpar\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin2160\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext60 _levnl3;}{\s61\qj \fi-720\li2880\ri0\nowidctlpar\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin2880\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext61 _levnl4;}{\s62\qj \fi-720\li3600\ri0\nowidctlpar\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin3600\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext62 _levnl5;}{\s63\qj \fi-720\li4320\ri0\nowidctlpar\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin4320\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 
+\snext63 _levnl6;}{\s64\qj \fi-720\li5040\ri0\nowidctlpar\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin5040\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext64 _levnl7;}{\s65\qj \fi-720\li5760\ri0\nowidctlpar
+\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin5760\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext65 _levnl8;}{\s66\qj \fi-720\li6480\ri0\nowidctlpar\tx6480\tx7200\tx7920\tx8640\tx9360\faauto\rin0\lin6480\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext66 _levnl9;}}{\info{\author ALYSSA}{\operator Preferred User}{\creatim\yr2003\mo8\dy1\hr11\min56}{\revtim\yr2003\mo8\dy1\hr11\min57}{\version2}{\edmins1}{\nofpages20}{\nofwords5867}
+{\nofchars33442}{\*\company Preferred Company}{\nofcharsws41069}{\vern8299}}\margl1440\margr1440\margt1959\margb990 
+\widowctrl\ftnbj\aenddoc\hyphhotz365\aftnnar\notabind\noxlattoyen\expshrtn\noultrlspc\dntblnsbdb\nospaceforul\subfontbysize\lytprtmet\hyphcaps0\horzdoc\dghspace120\dgvspace120\dghorigin1701\dgvorigin1984\dghshow0\dgvshow3
+\jcompress\viewkind1\viewscale75\nolnhtadjtbl \fet0\sectd \sbknone\linex0\headery1440\footery990\sectdefaultcl {\header \pard\plain \qr \li432\ri432\nowidctlpar\faauto\rin432\lin432\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i\fs24 
+SAMUEL FLOR    [1-1-\chpgn ]    }{\i 
+\par }}{\footer \pard\plain \ql \li432\ri432\nowidctlpar\faauto\rin432\lin432\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\fs24 
+\par }\pard \qc \li432\ri432\nowidctlpar\faauto\rin432\lin432\itap0 {\i From the collection of the Gratz College Holocaust Oral History Archive
+\par }}{\*\pnseclvl1\pndec\pnstart1 {\pntxta .}}{\*\pnseclvl2\pnlcltr\pnstart1 {\pntxta .}}{\*\pnseclvl3\pnlcrm\pnstart1 {\pntxta .}}{\*\pnseclvl4\pndec\pnstart1 {\pntxtb (}{\pntxta )}}{\*\pnseclvl5\pnlcltr\pnstart1 {\pntxtb (}{\pntxta )}}{\*\pnseclvl6
+\pnlcrm\pnstart1 {\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pndec\pnstart1 {\pntxta .}}{\*\pnseclvl8\pnlcltr\pnstart1 {\pntxta .}}{\*\pnseclvl9\pnlcrm\pnstart1 }\pard\plain \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\field{\*\fldinst {\fs24\lang4105\langfe1033\langnp4105  SEQ CHAPTER \\h \\r 1}}{\fldrslt }}{\fs24 \tab \tab \tab \tab \tab Key:\tab \tab SF - Samuel Flor [interviewee]
+\par \tab \tab \tab \tab \tab \tab \tab MS - Marian Salkin [interviewer]
+\par \tab \tab \tab \tab \tab \tab \tab Interview Date - March 3, 1981
+\par 
+\par }\pard \qj \fi576\li0\ri0\sl432\slmult0\nowidctlpar\faauto\rin0\lin0\itap0 {\i\fs24 Tape one, side one:}{\fs24 
+\par 
+\par MS:\tab This is an interview with Mr. Samuel Flor.  I regret that the first few sentences of Mr. Flor's initial, first interview, for some reason, are blank on the tape, but my initial question to him was, "
+Please tell me where you were born and when, and a little about your family."  As I say, the first few sentences are not on the tape but you can easily pick up the meaning of the sentence, of the question that is, from that point on.  Please keep listenin
+g.  You will shortly hear his remarks and my question to him, as I said, my question to him was, "Please tell me where you were born and when, and a little bit about your family.
+\par SF:\tab We were four Jews in the kindergarten and we were about 25 non-Jews, and we four were always singled out for a beating since we were little children.
+\par MS:\tab Would you give us the name of the town...
+\par SF:\tab The town where I was born was called Chernovitz.}{\fs24\super 1{\footnote \pard\plain \ql \li0\ri0\sa240\nowidctlpar\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+1  Also known as Chernovtsy, Czernowitz (German), Chernovitsy (Russian), Cernovcy.}}}{\fs24 
+  Then when I was six years old this town became Romania and was called Cernauti.  It had a different name because, you know, there were signed peace treaties and the geography of Europe changed entirely.  But I cannot remember a time when I was not remi
+nded of antisemitic beatings of Jews.  There was not Hitler or anybody like that, but the Jews were used to this treatment.  And then later on, I started to study music in the conservatory in Cernauti, and I went to Vienna to the Academy of Music, and I s
+t
+udied music there.  I had to go to the university, too, and always on Saturdays, the students of German descent or even Austrian descent, they put on their students' uniforms and walked around in circles in the big hall of the university, and when a Jew a
+ppeared, they all jumped at him and beat him up.  They had sticks prepared for this.  This big hall is called in Latin the }{\i\fs24 Aula}{\fs24 
+, that means [unclear] hall, and the Jews knew, on Saturday we don't go there.  Saturday in Europe is a working day.  They have on
+ly one day, here we have a weekend Saturday and Sunday.  After I graduated from the university there, I concertized very much in Europe, Africa, Asia, and finally I went back to Cernauti, where I became a full professor at the university and in the conser
+v
+atory, and I started to compose an opera.  I thought I'm a composer, and I was concert-master of the Philharmonia there.  I had my own string quartet, but then, all of a sudden, we were notified that our town will be Russia, because Hitler and Stalin at t
+h
+at time were allied and they decided to abolish the Versailles Peace Treaty, so our town Chernovitz became Chernovitsy and sure enough, it's forbidden to speak any other language but Russian.  As in Romania, it was forbidden to speak any other language bu
+t
+ Romanian.  And especially the Jews had to prove that they are citizens of this place.  I took pictures from the cemetery where my family, the Flors, are for the last 300 years living there.  This didn't help.  I had to prove it with papers.  So I had to 
+b
+ribe the authority that they should believe me.  Now, when the Russians came, all of a sudden we became Russian citizens and everybody became a passport.  Do not misunderstand.  A passport is not a travel document like it is in the United States.  A passp
+o
+rt is sort of a driver's license, an I.D. card, but it's the most important card in Russia.  Then this was June 28, 1940, and we were--I was teaching at the Conservatory, I got married to my wife Gertrude.  But then I was very shocked because at holidays,
+ 
+the Russian holidays are the day of the Red Army, which is in February, and the day of the Revolution, which is in October.  We had to march.  Everybody had to march.  If you didn't bring your paper from a doctor, then you were jailed, put into jail.  So 
+w
+e all had to march--which means demonstrate on the streets and say how great Russia is, how great our leader Stalin is.  But the biggest joke was when we had to march in front of a tribune, and there was standing Russian officers and German officers with 
+t
+heir swastika, and we had to yell, "Heil Hitler" and "Long live Stalin", and it was very shocking to me because many of my friends in Germany and in Austria were in concentration camps, were killed, and I had to yell, "Heil Hitler" and "Long live Stalin."
+
+\par }\pard \qj \fi576\li0\ri0\sl480\slmult0\nowidctlpar\faauto\rin0\lin0\itap0 {\fs24 MS:\tab At the time that you had to greet Hitler and Stalin, you knew then already that friends and relatives of yours were interned in concentration camps.  
+\par SF:\tab Yes.
+\par MS:\tab You were aware of it at that time?
+\par SF:\tab Oh yes, very much, because I was in correspondenc
+e with Vienna and with Berlin, where my friends were living, and I, since I was a composer and I had since published there, so my publisher who escaped, and some other people who escaped, they came to us and told us.  And we were concertizing and playing,
+ 
+and it was unbelievable how much the Russians offered in the respect of concerts, entertainment.  But there was no newspaper in town, and we never had any idea of what the day is, because we had before seven daily newspapers, and all of a sudden we had on
+l
+y one, which was in Russian.  And in this paper they wrote mostly how many potatoes this peasant has planted, and how much this laborer has worked, but they didn't write what happened.  But in the meantime, many people were deported, dragged out of their 
+homes, and taken away.  We heard they were taken to Siberia.  At that time we didn't know.  One of those people was my mother-in-law.
+\par MS:\tab These were people being deported in your town?
+\par SF:\tab Yes.
+\par MS:\tab Were they doing it by sections?  I mean, how did they, if you knew this was happening, wasn't there an instant desire to leave the country at that point, or to try to save yourself from this?
+\par SF:\tab This is the nicest American question I've ever heard.  To leave the country at that point...
+\par MS:\tab Was impossible?
+\par SF:\tab It
+ was impossible to leave, to move.  When you came outside of the city limit, there were guards with dogs, and peasants of a whole village tried to escape.  And they had sacks with cats, because they knew that there would be dogs.  At a certain time they l
+e
+t the cat run so the dogs would chase the cats.  Those peasants were completely eliminated.  One night the Russians came into the house of my father-in-law, who was a pharmacist, searched the whole house and then they took him away.  We never saw him agai
+n
+.  Today is 1981.  About 2 weeks ago, I received a letter from Israel, where somebody wrote, she spoke to a man who was in jail with my father-in-law, and she knew how he died.  But we never saw his body, we just got his clothes.  That was under the Russi
+a
+ns.  And this went on until June 22, 1941.  On June 22, 1941, those two friends, Hitler and Stalin, got mad at each other and started the war.  And sure enough, the bombs were flying, the planes were bombing us, and so on, and all of a sudden, I saw that 
+m
+y director from the Philharmonia and all the authorities of the Russians were leaving.  So I packed my knapsack, and my wife and we walked.  We came to the river Prut, which is a river in this town, and all of a sudden there were standing machine guns, an
+d
+ they didn't let us pass.  And I talked to the guards, I said, "Listen, my paper was, my name was in the paper very often, and when the Germans come they surely will kill me first."  He said, "Nothing doing, you cannot pass here."  And while we were argui
+n
+g with those guards, German planes came to bomb the bridge.  So I took my wife and said, "We can die home, we don't have to die at the bridge."  So we went home.  The next day we heard that most of the people were killed there, and we saw through our wind
+o
+w how the bridge was bombed and destroyed.  On July 5, the Germans came.  When the Germans marched into our town, there was no Russian left anymore.  The town was very quiet, but they came in with Rumanian soldiers, and the janitor from our house, who was
+ 
+a Communist all the time, because he told the authorities who was a rich person's house, who should be deported to Siberia, or not.  This janitor stood on the street with a bottle of liquor and tried to get the German soldiers in, to invite him and to sho
+w
+ his patriotism towards the Germans.  It was very interesting how this man talked because we heard him say, "I love this 'Heil Hitler' so much, but I hide him under the bed and now I've hanged 'Heil Hitler' on the wall."  This guy didn't have any idea tha
+t
+ Hitler's first name was Adolf.  He thought it's "Heil".  So finally he got some Germans in.  So sure enough the Jews were rounded up, among them I also was rounded up.  Rounded up means we had to stand on the sidewalk, and we were taken to the Palace of 
+C
+ulture.  I played very often there.  The benches were missing, the chairs were not there, and we stood in line.  And we stood and stood.  It was five in the morning, we were taken, six.  It was middle of July, and loud voices said, "Whoever moves will be 
+s
+hot." A man went with a whip and whipped the people who moved.  So we stood.  In front of me I saw a man and I saw his neck getting red and more red and more red, and so we stood.  I recognized him.  His name was Schoenbaum.  He played cello.  He was a ce
+l
+list.  But sure we cannot talk.  We cannot whisper, and we knew always behind us more people were brought in, and more people were brought in, and so we stood.  And it was evening and we stood.  All night we stood.  We already stood 24 hours.  Many people
+ sang together, and this guy with the whip or the guys with the whip came and beat them up. But you were not allowed to move.  And then finally there came the command, "}{\i\fs24 Links rum}{\fs24 !"}{\fs24\super 2{\footnote \pard\plain 
+\ql \li0\ri0\sa240\nowidctlpar\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {2}{\fs24   }{Turn left (from }{\i links herum}{)}}}{\fs24   That means, turn about and march, well, wh
+o could turn about.  We almost fell down, and we started to march.  And we marched down the Francens [phonetic] Street, around the university.  I knew the territory very well and since I am tall, I was on the side.  In fours we were marching, and I saw he
+d
+ges there; there is a park.  And I told a man in front of me: "Run." And I jumped and he jumped over the hedge, and four or five ran after us.  We heard gunshots.  I don't know whether it was rifle shots.  But those people marched.  We ran down the hill, 
+came to another street, I think we were five people.  Sure, a group of Germans, five, came, and took us.  And they led us and arrested other people, so now we marched again with this group.  But we were much less.  I think we were 50 or 100 people.
+\par MS:\tab May I ask you a question.  Was your wife one of that group with you?
+\par SF:\tab Only men was there.  There were no women.  We marched there, and they took us to the river Prut.  There was a sort of a beach called Mamaya [phonetic].  And on this Mamaya Beach they took
+ us and I saw what has happened.  The group from before what I was with, they were all machine gunned, and they were all dead and we had to bury them, and among them was our Rabbi Mark.  After they, we buried those people, some said }{\i\fs24 Kaddish}{
+\fs24 .  Then they lin
+ed us up on the wall with our hands up, we should stand, and they had an entertainment, a very interesting entertainment.  They cocked their rifle, I mean they pulled it back, I'm not sure if they're loaded, and you were not about to turn around, and then
+ 
+they were shooting.  Two fell down and died from heart attacks.  They didn't shoot at us, higher probably.  None was killed, and then they said "Get, get going."  So we ran back home.  So you can imagine, my mother, my sister, and my wife.  They were desp
+e
+rate, but I came back, and they heard all the people were killed and all of a sudden I'm alive.  Then they took us to slave labor.  We worked on this River Prut on the bridge, and very often they put an electric shock into the iron bars where we were stan
+d
+ing, so most of us fell into the water.  But I swim, but some, how do you say, drowned.  Then all of a sudden the order came that all Jews have to go into a ghetto.  A ghetto is a place where they put barbed wire around and say, "Now you will live here." 
+ So we lived in this place, squeezed together, about 30, 40 in a room.  It was October.  It was raining.
+\par MS:\tab Would you please repeat the name of the city in the ghetto.
+\par SF:\tab The city is Chernovitz and the people were told with loud speaker, cars went 
+through the streets and said, "All Jews have to be by nightfall in the ghetto."  It was about 10 in the morning.  "Have to be," between this street, and that street, down to the river and down to the river, drag.  And the people walked and walked.  Nobody
+ 
+had a horse or wagon, or a car or a truck, or something, so old, young, people with baby carriage pushed.  So we went there.  Don't forget, Jews are very obedient.  The most obedient people in Europe was the Jews, out of gratefulness that they were not be
+a
+ten up.  So, therefore, it's basic European education.  You are treated like an animal, but you're grateful that you're not beaten.  So, they had their sense of humor, and this didn't go just because of Hitler, it went for centuries.  So we went to this g
+h
+etto, surrounded by barbed wire.  We slept 30, 40 in a room.  It was October, it was raining, and again, a loud speaker came there, "Everybody by the name from A to F will be, has to go down to the train, and you will be relocated." So the people walked d
+o
+wn to the train, from A to F.  And there we were put in cattle cars.  But, before, we saw, day before, two days before, we saw cattle cars going, people looking out of the windows, out of this little barred windows from a cattle car, and yelling very loud
+,
+ "Chernovitz, Lura, Homorod, Vatra, Dornei, Kempolo [phonetic]."  All the people yelled places from where they came.  These were the Jews which were deported from about 100 miles away, from 50 miles away, and they had to pass through this railroad line.  
+A
+nd we always stood and waited for when a train came, and then we knew where people were deported.  Now it's our turn.  We were hurled into cattle cars.  Cattle car has written, "Four horses or thirty men." Here they put 80 people in it.  And so we were ta
+k
+en and on this cattle car.  We stood there and stood there, the car didn't move.  We were taken about five in the evening.  At seven in the morning the car started to move, but the doors were locked.  We screamed and yelled, "Water."  Nothing was given us
+,
+ neither water, nor were there toilet facilities, nothing, absolutely nothing.  We are locked in the car, and we made a turn when everybody can stand at the window for two minutes.  Window means, it's a little cubicle.  So we made this turn, and the train
+ 
+started to move in the morning, and we know this territory very well where the train moved.  And then we moved through Bessarabia, and all of a sudden some time at three in the afternoon, the train stopped on an open track.  The door was flung open, and s
+o
+me Romanian and German soldiers stood there with horsewhips and whipped us down.  Now, to get off such a train without a track.  Here you have Track 5 or Track 6 if you go to New York or Chicago.  No, they have no tracks.  To go down from this train regul
+a
+rly is about four, five feet, but here we had to jump down 10 feet, or even deeper.  And now, imagine, old people, my mother, my sister, my wife, and I. And so we somehow got down, and now we had to use this little trench as a bathroom while those soldier
+s
+ were standing with rifles, bayonet on the rifle, and watching us do it.  And if they saw somebody bend down, had a fountain pen, had a watch hanging, had a billfold, they took everything away, but we were glad they didn't shoot you.  So, you're grateful.
+  Now it was unbelievable, ugly, and very sad.  Then the train was taken.  We were whipped to get on the train.  So we moved, and we came to Mogilev,}{\fs24\super 3{\footnote \pard\plain \ql \li0\ri0\sa240\nowidctlpar\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {3}{\fs24   }{Mogilev in 1946 - east of Belorussian SSR.}}}{\fs24  this is a town on the Dniester [River].
+\par MS:\tab Excuse me just one moment Mr. Flor.  What direction, you were going further into, you were going easterly in to...
+\par SF:\tab Northeast, into the Ukraine.  
+\par MS:\tab Into the Ukraine?
+\par SF:\tab Yes, and northeast was Mogilev.  And all of a sudden it was said very loud: "Whoever has with hi
+m foreign currency, or gold, or diamonds, will be shot." Now you imagine some 3,000 or 4,000 people are lying down in rainy, muddy ground, and hearing this on the loud speaker.  And the first people walked there and put something in.  We didn't see what. 
+ 
+It was probably money or so.  And I saw next to me a man taking out of his pocket money and just throwing it away, and it was lying in the wind.  What money it was, I don't know, either English or Swiss or maybe American.  And there was a diamond bracelet
+ 
+lying there, and a girl threw it.  "Please move, otherwise they will think it's yours." There was a field filled with money and filled with diamonds.  And then all of a sudden we heard a sound and saw some smoke coming, so people were shot.  I didn't see 
+a
+ny.  It was far.  Then we were put on a ferry, crossed the Dniester River, and we were in the Ukraine.  And here it was said, "Whoever had relatives or friends in Mogilev, from the other town should call them.  We send somebody with a paper and they will 
+come here."
+\par MS:\tab What do you think their purpose in that was?
+\par SF:\tab I don't have any idea what the purpose was.  It was told, and after about maybe a half an hour, one man went with the paper into the town of Mogilev, and after a half an hour some people came.
+  It was the biggest shock.  I saw people like you hardly see it at the movies, in rags, walking and coming.  I did not recognize those people.  I didn't call for anybody.  We didn't have any relatives there at the time.  But those people took their relat
+i
+ves and embrace them, and this man came with horsewhip and beat them into the ditch, and said, "Now you have enough and you have seen them, and now they will go with you." So we were not taken to this town.  Now we were chased into a circle, that means, w
+e
+ had to stand and go in a circle, and then we were taken to Gaul [phonetic].  Now one was holding onto the other and having his bundles, but always we were pushed to go faster.  So we dropped our bundles, people dropped down, couldn't move.  So we had to 
+l
+eave them there.  This is the way we walked all night.  In the morning we were put into a barn, a huge, huge barn with straw, where we fell down and slept immediately.  But we woke up, it was hot, and then we had to go again.  In the afternoon we came aga
+i
+n to the place which we left before and we saw the people still lying there, their teeth broken out, and the Ukrainian peasants were behind us and taking the bundles away and dividing it with the soldiers, the gold teeth and whatever was in the bundle.  S
+o
+ we walked, then we were put on a train again.  And all of a sudden the train stopped, but this ride was maybe one day, and we were in Ladesti on the Bugac River, on a stone quarry.  And on this stone quarry, there was neither house or a tree, or anything
+ 
+but a stone quarry.  And now we saw from another car people coming out like birds, flying with their hands and making gesticulations, and we found out they were from the insane asylum of Chernovitz, all the Jewish inmates.  They were deported with us.  An
+d we were on this stone quarry, it was called }{\i\fs24 carrera di pietra}{\fs24 
+ in Romanian, which means stone quarry.  And we were now, we had Ukrainian guards.  Nobody was permitted to go down.  We had to stay on top of this stone quarry, but once a day you were permitte
+d with a bucket to go to the river and bring your bucket of water, and only the head of the family could go.  Now, what you do with the water?  You wash yourself, you drink, you cook.  There was no facilities.  We were permitted to make fire.  We found so
+me little wood lying around.
+\par MS:\tab No food was provided?
+\par SF:\tab Nothing, nothing, zero, and we got the idea to take grass, and to put the grass, to mush it into water and to try to eat this.  To boil it a little, then we got nettles.  Those are leaves, this is n
+ot poison ivy, this is plain nettles and they burn your figures, and this we also mushed.  And it was good to eat.  I mean good, relative.  But many people got blue, swollen, and dead.  And their ribs, when they were moving, means they were still alive, a
+nd they were not moving, they throw them into the river.  But especially the crazy people, one by the name of Iskowitch, and this Iskowitch always stood in front of us with big eyes and said, "}{\i\fs24 Brot}{\fs24 
+", which means, "Give me bread."  His hands were like claws 
+and this other woman--it was sort of a chorus, "Give me bread."  You know a hungry person is very hard to tame, but a crazy hungry person, it was unbelievable.  So we can't help it.  This Iskowitch killed several of his people by, how do you say, biting i
+nto their neck like a vampire or something.  It was very sad.  Unbelievable.  So from this stone quarry people were taken into the town of Tulchin,}{\fs24\super 4{\footnote \pard\plain \ql \li0\ri0\sa240\nowidctlpar\faauto\rin0\lin0\itap0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {4}{\fs24 \tab   }{Tulchin - Ukrainian S.S.R.}}}{\fs24  [alternate spelling Tul'cin] a certain group only.  I was among this group.
+\par MS:\tab Was there a selection made for the Tulchin?
+\par SF:\tab Absolutely.  One day three Germans and two Rumanians and a civilian came with a list of names, and read names.  And he called the name Professor Samuel Flor.  And he called Dr. Mosen and [unclear] Schreibe
+r, Dr. Mayer, Veshler, Tembler, so he called all those names and we stood in line and so on.
+\par MS:\tab Were they to your knowledge, people of particular skills, were they professional people?
+\par SF:\tab Yes, professional people all of those.  Glazer, a roofer, Katz, and we were taken to Tulchin.  Now in Tulchin we all were put to sort of a slave labor, which means work in peat up to your knees.
+\par MS:\tab Work in what?
+\par SF:\tab This is a black thing which is under water, you take it off,  and you make squares, and you heat with this.
+\par MS:\tab Oh, peat.
+\par SF:\tab Peat, that's it.  And here we got food, two potatoes a day per person.  Oh, and a handful of peas, they were rotten peas, but it was peas.  So, and we lived in a new ghetto which was done in the town of Tulchin, at the southeast end of
+ the town.  There were very dilapidated houses because, don't forget, the war went through Tulchin, so many places were somehow burned or something and there they said we should live.  So we lived there and we--they were surrounded with barbed wire and wh
+ile--we had to go to work every day.
+\par MS:\tab Was this within the camp or you worked outside of the camp.
+\par SF:\tab Outside.  We were taken every day to a certain place to work.
+\par MS:\tab By a guard?
+\par SF:\tab Now I did a different work.  I worked in the hospital.  And I don't wa
+nt to get into this here, what I did in the hospital, and, but this had nothing to do with Jews.  We were 18 people taken every day to the hospital to do certain work there, and we were taken home every day.  Now my wife, Gertrude, she always asked me eve
+ry day "Will we survive?" I said "Yes, we will survive." I don't know why I said it and I don't know why she asked.  She was nervous but I, to me, I saw the whole thing.
+\par 
+\par \sect }\sectd \linex0\headery1440\footery990\sectdefaultcl {\header \pard\plain \qr \li432\ri432\nowidctlpar\faauto\rin432\lin432\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i\fs24 SAMUEL FLOR    [1-2-\chpgn ]    }{\i 
+\par }}\pard\plain \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\i\fs24 Tape one, side two:}{\fs24 
+\par }\pard \qj \fi576\li0\ri0\sl480\slmult0\nowidctlpar\faauto\rin0\lin0\itap0 {\fs24 
+\par SF:\tab 
+"...all nationalities are the same.  It doesn't make any difference which they say, and all of a sudden you go here with a swastika and you hate Jews and you kill Jews, I show you.  And he said, "Hitler gave me the greatest thing anybody can give me.  I h
+ave a house, I have a garden, and I have a vegetable garden and a little plot of land.  I never dreamt I would have this and, therefore, I'm a most grateful man."  There was a man }{\i\fs24 Sonderf\'fchrer}{\fs24 
+ Fritz von Rohde, and one day I talked with this man and he said,
+ "I'm very worried."  He was worried?  He gave me a cigarette.  I looked then at him, and he said, "I come now from Kolomyja, and this is a town in Poland, which is about 100 miles from here and he said, "I get the order to put flat 500 Jews.  So I tell o
+ne of the boys of the Hitler Youth, "You go and count the cartridges."  And the boy comes back and says, "}{\i\fs24 Melde gehorsam, Herr Sonderf\'fchrer}{\fs24 .  I'm telling you, Mr. }{\i\fs24 Sonderf\'fchrer}{\fs24 , that we 
+have only 380 cartridges."  He said, "This is terrible.  How can we shoot 500 when they give us only 380 cartridges?" and this young man said, "I have an idea.  Let's shoot 380, and 120 we beat to death.  We club them to death."  And }{\i\fs24 Sonderf\'fc
+hrer}{\fs24  Fritz von
+ Rohde said, "Nothing doing, I killed 25,000 Jews but I never touched a single Jew, because this is not a war against Jews.  This is a war for humanity, as my immediate superior Eichmann said."  That was the only time I heard the name Eichmann.  So this w
+as the }{\i\fs24 Sonderf\'fchrer}{\fs24  Fritz von Rohde, a very cultivated, cultured man.  Very nice man, but as you can see, the basis of their upbringing or education is, they do something for humanity.  By that, they do it for the fatherland.
+\par MS:\tab Humanity being the elimination of all Jews?  
+\par SF:\tab Absolutely.
+\par MS:\tab This is humanity?
+\par SF:\tab Absolutely.  Therefore, we should not forget, we stand here and hate and are ready to kill, look what those miserable people did.  But don't forget those miserable people were educated and brough
+t up for the last 2,000 years this way.  And we are mad that such a thing happens?  And so it is very sad because, unfortunately, we Americans did not behave very nicely during the whole activity.
+\par MS:\tab I don't follow you.
+\par SF:\tab You don't follow, no?  It is im
+possible that the United States did not know what was going on.  I never said, "Declare war, " God forbid, although you had to declare war.  I say, "You should realize what's going on, and since such a thing is going on, we cannot deal with the Germans." 
+What they do?  "We cannot deal with the Poles." Bene\'9a, President Bene\'9a
+ from Czechoslovakia came and talked to Roosevelt, Beck from Poland, the President, came and talked to Roosevelt, and they told him exactly what had happened.  This happened from 1933, no
+t as most of the people think 1941.  They talked about the Iron Guard,}{\fs24\super 5{\footnote \pard\plain \ql \li0\ri0\sa240\nowidctlpar\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {5}{\fs24 \tab }{\tab 
+  A fascist military-political force in Romania, violently antisemitic, which was responsible for massacres of Jews in 1940-41.}}}{\fs24  and there was a man by the name of Antonescu, who was
+ the president of Rumania.  Now, what did he do?  He did absolutely what Hitler told him or showed him to do.  So, therefore, I must tell you that it is impossible that something was wrong in the war and we here don't know it.  I have read in the }{
+\fs24\ul New York Times}{\fs24 
+, I went to the library in New York, a very short article which was written on June 18, 1941.  You can see this article, too.  The population of the Bukovina, which is Chernovitz, sent a telegram to Marshall Stalin to ask him to permit them to go into
+ the interior of Russia, because they feel badly to live so close to the border.  And after the liberation, Marshall Stalin permitted them to move to the interior.  In }{\fs24\ul New York Times}{\fs24 
+, that's the reality.  June 13, 14, 15, trucks went through the streets of
+ our town, Chernovitz, and dragged people out of the houses, 35,000, in order to deport them to Siberia.  I am sorry, I saw it. I cannot tell you what happened other town, I can tell you only what happened in this town.  But you see what's written in the 
+}{\fs24\ul New York Times}{\fs24 
+.  So, therefore, I say that there are certain things which cannot happen, I'm talking only of Europe now, in Europe, that the United States should not know and not take action.  By not taking action, the only action I ask for to say, I cannot
+ deal with murderers, but they didn't do it. Now to go on.  In Tulchin, with }{\i\fs24 Sonderf\'fchrer}{\fs24 
+ Fritz von Rohde, my wife was very nervous all the time--will we survive or not.  And finally she said, "We have to hide." I said, "How and where can you hide?" I said
+, "Whenever the Germans leave, they exterminate the camp."  Every camp where the Germans left, north of us, we heard through the grapevine, Uman, Giessen, Braslav\endash 
+these are camps.  All the people were plain killed by the Germans.  And anyway, so, and, whil
+e she was nervous and said, "We have to hide," I said, "Where do you want to hide?" She said, "Here, in this room." We lived 18 people.  "Where?" She said, "Dig a hole." And she stamped with her foot.  And we heard this hole.  And since we were working pe
+o
+ple, so we opened the boards, and there was a little concrete and we went down.  It was a sort of a room; it was very musty.  That's right.  So we slept on straw.  Let's nail those boards together," and so we tried.  We went down, and I checked.  You coul
+d
+n't see anything.  Everybody in the camp, about that time we were about 500 people in the camp, everybody knew.  Said we're crazy.  Said, "Listen, you dig a hole in your room, you will be burning like rats.  Best thing is you should stay outside.  Maybe w
+e
+ can escape." O.K. The only day which happened that we were not taken to work, this was December 31, 1943.  In the morning we were already lined up to go to work.  They said, "Go back into your huts or barracks, whatever." And we sat there all day until n
+ext morning, and then we were taken to work.  I never knew why.  When I came to the United States I found out why.  There's an Upton Sinclair book, }{\i\fs24 Presidential Mission, World's End, Dragon's Teeth}{\fs24 
+; it's a Lanny Budd series it's called.  In this book I read
+, Hitler was near Tulchin on this day.  Nobody was permitted to move on the street, from camp or from the people who lived there.  Then comes a second day when we were sent home at 12 noon, because in the morning we were taken to the barracks, to make cra
+tes and to load them, and we saw most of the German trucks go west.  So west means they are retreating.  And while we saw this and we were doing the crates, at noon we were all taken back to the camp and, while we were taken back, I saw from outside the }
+{\i\fs24 R\'fckzugs}{\fs24 
+-SS, that means the storm troopers, the retreat storm troopers, came with another roll of barbed wire, so the fence was now maybe 15 feet high.  O.K., that's it and this must be that.  While we went into the camp, into our room--we 18 people--I heard v
+ery clearly cannons, boom, boom, pretty far.  So I said, "It's time to go down, let's crawl down."
+\par MS:\tab Into your room?
+\par SF:\tab Into this hole in our room, we crawled down, and we stood there.  And all of a sudden Dr. Moser yells, "Can I come down?"  He laughed all the time.  "Come down, you want to die like a rat."  Then came }{\i\fs24 Herr und Frau Deligdish}{\fs24 
+ [phonetic].  She was a history teacher and he was a worker at the lumber mill.  So she came down, both came down and we saw soon enough we were standing 68 people, 
+one next to the other.  So we are full.  We close the trap and we stand there.  Dr. Fishman said, "We are here to live or to die, but if anybody opens their mouth, we'll be killed here.  We have to stand like one person."  And this moment we heard steps o
+n
+ top and we knew it right away, these are Germans.  And since we all speak fluent German, so we heard one said, "You lie down and rest and we will do it."  So, it was a young voice.  They planted field cannon in front of this hut and they started shooting
+.
+  Sound travels 333 meters a second, I started to count, 21, 22, to hear how far they aim.  And it was Friday noon when we climbed down.  We thought we would be there two hours, three hours.  We stood there until Monday morning; Friday, Saturday, Sunday. 
+ 
+Monday morning was March 15, 1944.  We smelled smoke, so we knew they burned everything out, so we pushed the trap out.  Everything was smoking, but nothing was burning in our house.  Everything around was burning.  The wind was blowing and so on.  And we
+ 
+pushed it out, and we came out, and I stuck my head out, and there stood a little 10, 11 year old boys, dressed in long coats, with long rifles, with hats over their, I mean, this Russian hats.  I look at them and said, "Who are you?"  "No," they said, I 
+told them the story concentration camp, they didn't have any idea what we talk.  I said, "Who are you?" He said, "Me, }{\i\fs24 Russki partizan}{\fs24 
+ [phonetic]." He said, "We are the genuine Russian partisans; beware of imitation."  Those kids there, with long rifles, "[u
+nclear] Fritz, where's the Germans?" They called them Fritz, all the Germans.  And one yelled, and here a German jumped on a truck, and this boy, without taking the rifle on the shoulder, shoot!  Then they threw a grenade into the motor of the truck.  The
+y
+ didn't pay much attention, so about three or four days later, the Russian army came.  The interesting thing was, by that time, I think we were 300 in the camp.  None of us wanted to go out through the gate or in.  They all wanted to climb the fence.  The
+y
+ tore the rags they had, they tore their bodies, but they wanted to climb the fence.  I don't know what--the psychology--and then we went out into the town of Tulchin, but we were terribly afraid.  We were hiding in houses but finally--the Russians were v
+e
+ry, very dangerous.  They wanted everybody to go to the army but we were like skeletons, number one, and number two, they said, "Oh, come on, you're no good, if you are no good for the Germans, you are no good for us."  We told them, "Jews."  We went to t
+h
+e authorities, talked to them.  A few of us got arrested, but then they let us out a day later because we were stinking too much, they said.  And finally we got on a truck.  Somehow we got a bottle of vodka, and we waved the vodka in front of a trunk, and
+ 
+the guy stopped.  My mother, my sister, Gert, my wife, and I and two friends, we went on this truck and he took us to go south.  And all of a sudden, in the middle of the woods, he stopped, asked us to go down to the woods, undress completely.  He took al
+l
+ our miserable rags, including the shoes and left with the Russian truck.  So we came south to a town Soroca [also spelled Soroki], which is on the Dniester River, and we came to the Dniester River.  There were some people, many, many people from the conc
+entration camp who survived.  Sure, we know each other.  My name was also known, and they came and they told us, gave us a hint how to get across the Dniester, and finally we came back to Chernovitz.
+\par MS:\tab You were able to make your way back to your town?
+\par SF:\tab 
+Back to Chernovitz, and when we came to Chernovitz, we came into our apartment.  The apartment was a condominium which we built.  And they were a family in the apartment who lived next door.  We knew them.  They were Nazis all the time and they were terri
+ble antisemites, and so on.  They were very shocked to see us come back, and we told them, "But no, this is our apartment."  He said, "Listen, if you talk very much, then we will tell the authorities you are the owner of an apartment, and then you go to S
+i
+beria."  The ruling was that Hitler and Stalin had an agreement, whatever they find when they move into a town which was nationalized, it belongs to them.  Now when we were deported, our house was nationalized.  So here comes the neighbor, a good Nazi, an
+d
+ said, "Listen, I'm a good Nazi, I want this house."  They said, "O.K.  You give a token down payment, let's say a dollar," so he gives the token down payment and he's the owner of the house.  So, therefore, Gertrude and I, we joined the Czech army right 
+away.
+\par MS:\tab The Czech army?
+\par SF:\tab The Czech army passed by, and I saw there a name of a man who I knew, and this man knew me even better, only by reputation.  He was a composer.  So I talked to this man and he said, "Please, by all means, come."  And Gertrude's
+ mother was Czech, so we joined the Czech army.  We were fighting now the Russians, I mean the Germans, surrounded by the Russians, but provided by the Czechs.  Into Prague, and we moved into Prague May 8, 1945, the day when the war was over.  I became an
+ 
+officer.  At night we were playing, and day we were shooting, and when I was an officer, 88 officers of the original Czech army survived this miserable war.  Here it is here, I found a paper from the army.  I will show you this later.  You see, and there 
+i
+s something written about me, I conducted the orchestra there.  It was during the war. [unclear].  It means "Our concerts."  And then we were received, big honor, but I saw right away it cannot go on very happily here so I tried very hard to get out, so I
+ got out.  We went to South America, Barranquilla, Colombia, where we stayed for six months.
+\par MS:\tab Can I ask you, your emigration then was from Prague?
+\par SF:\tab Yes.
+\par MS:\tab How did you come, regarding a passport and funds, and the ability to leave at that point?
+\par SF:\tab 
+The army provided passport, clothes, food, and officer salary.  Now, first we were soldiers, but I became an officer, my wife became a sergeant, and, then, after the war was over, we were discharged and we got some money.  But money is the most unimportan
+t
+ thing there.  The means how to get out, and there was a group of Belgian soldiers who were fighting with the Czechs.  They took us along, and we climbed under the benches in the truck, and that is the way we got out.  Then we came to Paris.  In Paris we 
+w
+aited six months for a possibility of a boat getting out, but Gertrude, my wife, has an uncle in Barranquilla in South America, and sent him a telegram, and two days later a visa was waiting for us with a little money.  So then we cross the ocean by boat,
+ only for army personnel.  There were no civilians on this boat.
+\par MS:\tab What became of the rest of your family?
+\par SF:\tab My mother and my sister, when the Russians came in, we all came out, they went south to Bucharest, and from Bucharest they went into a DP camp i
+n Salzburg.  Now do you know what's a DP camp?  A displaced persons camp.  Why is there such a camp?  How come these camps?  The reason for the displaced person camp was that most of the Jews who came home were told, "Get the hell out of here, or I tell t
+h
+e authorities."  And they were running.  Most of those people were running away from the Russians.  They didn't feel so much Jewish or anything, they felt like animals who were treated less than a louse.  And they wanted, "Just please, let me live, that's
+ all I want.  I do anything you want, if you let me live.  But let me live like a human being, not like an animal in the camp."  So, therefore, these were the DP camps.  It is very unfortunate that I was in Paris at the HIAS.}{\fs24\super 6{\footnote 
+\pard\plain \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {6}{\fs24   }{Hebrew Immigrant Aid Society
+.  World-wide agency that helps individuals with pre-emigration, emigration and resettlement services.
+\par }}}{\fs24   I was in uniform and I didn't need any help.  I never got any help and I never wanted any help.  So when I came to the HIAS I could see how impossible
+ it is to be just, to help this person or that person.  You don't know.  But they helped very much the DP people to cross the ocean to come to the United States.  But don't forget, Jews are as human as anybody else, so they have the same characteristic, a
+n
+d, therefore, they got out.  And when we came to the United States, and here I will finish very soon.  I started to drive.  I played first the Robin Hood Dell Orchestra in Philadelphia, and then Mitropoulos engaged me to come to Minneapolis.  When I came 
+here, it took me two days to get a job, two days, I played.  And then I started to drive, and one day, when I came back to this territory, to the east, from Minneapolis, I had to come to the George Washington Bridge, and the bridge was a beautiful }{
+\i\fs24 Bild}{\fs24  [pic
+ture].  I saw, I saw it was wonderful; the closer I came, the bigger the bridge became, and I was very impressed.  While I drove onto the bridge here at the toll booth, a man stuck his hand out, and I said, "Mister, who built the bridge?"  He looked at me
+,
+ like I'm crazy.  "Fifty cents!" I said, "Who built it?"  He grabbed my fifty cents, a car behind me honking like mad, so he didn't tell me.  I go on the right side, turn to the right.  I come West Side River Emergency Parking.  I go into the emergency pa
+r
+king, get out and look at the bridge.  The bridge is even more beautiful on this side.  I said, "Hey, Gertrude, look!"  A policeman comes and says, "What are you doing here?"  "I'm looking at the bridge."  "Something wrong with you?"  "No."  "No, you can'
+t
+ park here."  I said, "Mister, who built the bridge?"  He looked at me and said, "Did you drive over the bridge?"  "Yeah."  "Did you pay for it?"  "Yeah."  "You built the bridge; get going!"  I was sick.  When I go the Reichs Autobahn in Germany, who buil
+t?  }{\i\fs24 Der f\'fchrer}{\fs24 
+ himself.  The Po bridge, who built it?  Il Duce, Mussolini.  I go to the Dnieper Dam in Russia.  Who builds this?  Stalin.  Here, I build a bridge.  Do you know who I am, the most important person.  You can't imagine what it means to realize 
+what I am, and this is the only time in my life that I know that I am I.  Nobody ever told me that I am a Rumanian, a Czech, a Pole, a Russian, a German.  I'm Sam Flor, and that's all.  So, now you can ask.  Thank you very very much.
+\par MS:\tab I must ask you a simple thing.  We'd like you to sign a release.  This can be released for educational purposes.
+\par SF:\tab A release, yeah.
+\par MS:\tab Do you have a pen?
+\par SF:\tab Yeah, I have a pen.  Is your husband in a law office in Philadelphia?
+\par MS:\tab No, in Lansdale, Pennsylvania.  Today is March...
+\par SF:\tab 3-3-81.  Do you know what I write here?  Interviewer.
+\par MS:\tab All right.
+\par }}

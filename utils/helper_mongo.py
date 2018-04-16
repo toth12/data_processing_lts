@@ -88,6 +88,16 @@ def insert(db_name,collection_name,data):
 
 	return result
 
+def update_field(db_name,collection_name, query_key, query_value, field_key, field_value):
+	client = MongoClient()
+	client = MongoClient('localhost', 27017)
+	db = client[db_name]
+	collection = db[collection_name]
+
+
+	collection.update({query_key : query_value}, {'$set': {field_key: field_value}})
+	client.close()
+
 
 if __name__ == "__main__":
 	#query example

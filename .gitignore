@@ -1,3 +1,10 @@
 .DS_Store
 *.swp
+*.swo
 *.pem
+*.pyc
+test*
+data/
+__pycache__/
+__pycache__
+samples
