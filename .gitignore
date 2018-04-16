@@ -9,3 +9,4 @@ __pycache__/
 __pycache__
 samples
 temp/
+non_core_temp/
