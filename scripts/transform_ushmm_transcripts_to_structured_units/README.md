@@ -4,7 +4,8 @@
 
 ## File Documentation
 
-* **transcribe_core_doc.py**: transcribes all X files that are parte of the asset
+* **transcribe_core_doc.py**: transcribes all X files that are part of the core asset with doc extension
+* **transcribe_core_docx.py**: transcribes all X files that are part of the core asset with docx extension
 
 
 ## Quickstart
