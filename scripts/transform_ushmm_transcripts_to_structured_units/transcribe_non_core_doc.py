@@ -21,6 +21,25 @@ pp = pprint.PrettyPrinter(indent=4)
 def safePrint(str_):
     return ''.join(i for i in str_ if ord(i) < 128)
 
+def get462Monologue(filename):
+    """
+    Returns the units for the 3 intervies undeviews under the RG-50.005 series
+    This series is composed of monologues with some sentences randomly separated 
+    by line breaks
+    """
+    doc = Document(filename)
+
+    monologue = ""
+    for para in doc.paragraphs:
+        paragraph = para.text
+        
+        # ensure it is not an empty line
+        if paragraph and len(paragraph.split()) > 7:
+            # add to monologue
+            monologue += ' ' + paragraph
+
+    return list({'unit': monologue})
+
 def getUnstructured042Units(filename):
     """
     Returns the unstructured units of the RG.50-402 series
@@ -50,6 +69,29 @@ def getUnstructured042Units(filename):
                     units.append({'unit':paragraph})
     return units
 
+def get926Monologue(filename):
+    """
+    Returns the unstructured units of the RG.50-402 series
+    These interviews did not have any indi
+    """
+    doc = Document(filename)
+    monologue = ""
+    o = re.compile('track [0-9][0-9]')
+
+    # iterate over all paragraphs to get text units
+    for para in doc.paragraphs:
+        paragraph = para.text
+
+        # timestamp e.g 15:01:27
+        isHeader = o.match(paragraph.lower())         
+        # ensure paragraph is not just empty line
+        hasText = paragraph.lstrip()
+
+        # ensure it is not an empty line
+        if hasText and not isHeader:
+            monologue += paragraph
+        
+    return [{'unit': monologue}]
 def getUnstructured926Units(filename):
     """
     Returns the unstructured units of the RG.50-402 series
@@ -74,7 +116,10 @@ def getUnstructured926Units(filename):
                 break
             elif not isHeader:
                 units.append({'unit':paragraph})
-    pp.pprint(units)
+    # in case it is a monologue
+    if not units:
+        units = get926Monologue(filename)
+
     return units
 def getTextUnits(filename):
     """
@@ -88,9 +133,9 @@ def getTextUnits(filename):
     
     unit_tracker = defaultdict(int)
     
-    non_units = ["name:", "date:", "thesis:", "currently:", "note", "comment", "grandparents:", "transcript:", "note:"]
+    non_units = ["name:", "date:", "date", "series", "transcriber", "thesis:", "currently:", "note", "comment", "grandparents:", "transcript:", "note:"]
 
-    
+    ongoing_answer = ""
     # iterate over all paragraphs to get text units
     for para in doc.paragraphs:
         paragraph = para.text
@@ -98,7 +143,8 @@ def getTextUnits(filename):
         # ensure it is not an empty line
         if paragraph:
             # get first word
-            unit_type = paragraph.partition(' ')[0]
+            formatted_para = paragraph.lstrip()
+            unit_type = formatted_para.partition(' ')[0]
             # in case it is in the format of e.g 'George Salton:'
             
             # e.g AJ:, B.
@@ -112,9 +158,8 @@ def getTextUnits(filename):
             # timestamp e.g 15:01:27
             o = re.compile('[0-9]?[0-9]:[0-9][0-9]:[0-9][0-9]')
             type3 = o.match(unit_type)           
-
-            ongoing_answer = ""
             
+   
             # else parse them according to formatting guidelines
             if ("Question:" in unit_type or
                 type1 or
@@ -123,15 +168,15 @@ def getTextUnits(filename):
                 type3):
 
                 # check if there was an ongoing paragraph
-                units.append({'unit': paragraph})
-                '''
-                if ongoing_answer:                
+               #units.append({'unit': paragraph})
+                
+                if ongoing_answer: 
                     units.append({'unit': ongoing_answer})
 
                 # reset it
                 ongoing_answer = ""
                 ongoing_answer += paragraph
-                '''
+                
                 # update tracker
                 unit_tracker[unit_type] += 1
 
@@ -142,6 +187,7 @@ def getTextUnits(filename):
                 units.append({'unit': paragraph})
                 # update tracker
                 unit_tracker[unit_type] += 1
+            
             
             # backup method,in case it is in the format of e.g 'George Salton:'
             elif len(paragraph.split()) > 3:
@@ -154,19 +200,20 @@ def getTextUnits(filename):
                     # update tracker
                     unit_tracker[unit_type] += 1
 
-            # if it is an ongoing answer
-            """
-            elif ongoing_answer:
+            # if it is none of these cases, maybe there is an ongoing answer
+            if ongoing_answer and ongoing_answer != paragraph:
+         
                 if not any(non_unit in paragraph.lower() for non_unit in non_units):
                     ongoing_answer += paragraph
-            """
+                
     
     if len(unit_tracker) < 2:
         if "50.042" in filename:
             units = getUnstructured042Units(filename)
         elif "50.926" in filename:
-            print(filename)
             units = getUnstructured926Units(filename)
+        elif "50.462.0005" in filename:
+            units = get462Monologue(filename)
         else:
           return []
     
@@ -224,7 +271,7 @@ def createStructuredTranscriptDocx():
 
     
     # success
-    pprint.pprint("Non-core doc files were successfully processed, but there  " +  str(missing_count) + " missing")
+    pprint.pprint("Non-core doc files were successfully processed, but there are " +  str(missing_count) + " missing")
 
 if __name__ == "__main__":
     createStructuredTranscriptDocx()

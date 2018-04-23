@@ -330,6 +330,8 @@ def createStructuredTranscriptDocX():
 
             # update status on the stracker
             h.update_field(DB, TRACKER, "microsoft_doc_file", file, "status", "Processed")
+            h.update_field(DB, TRACKER, "microsoft_doc_file", file, "extraction_method", "transcribe_non_core_docx")
+
         else:
             count += 1
             print(file)

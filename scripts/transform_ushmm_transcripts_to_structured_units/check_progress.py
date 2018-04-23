@@ -6,7 +6,7 @@ helper_path = os.path.join("..", "..", "utils")
 sys.path.insert(0, helper_path)
 import helper_mongo as h
 
-pp = pprint.PrettyPrinter(indent=4)
+pp = pprint.PrettyPrinter(indent=3)
 DB = constants.DB
 TRACKER = constants.TRACKER_COLLECTION
 OUTPUT = constants.OUTPUT_COLLECTION
