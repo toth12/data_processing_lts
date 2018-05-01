@@ -74,6 +74,7 @@ def createStructuredTranscriptDocx():
             # convert file to docx, storing it in an untracked folder called temp
             file_docx = file + 'x'
             command = 'textutil -convert docx ' + file + ' -output ' + 'temp/'+ file_docx 
+            
             call(command, shell=True)
 
             # append to the array
