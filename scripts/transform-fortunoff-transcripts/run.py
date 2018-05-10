@@ -1,7 +1,18 @@
 from parse import segment_transcript
 import glob
 import pdb	
-import os
+import os,sys
+helper_path = os.path.join("..", "..", "utils")
+sys.path.insert(0, helper_path)
+import helper_mongo as h
+
+
+##
+# Globals
+##
+
+db = 'let_them_speak_data_processing'
+collection='output_fortunoff_metadata'
 
 def run ():
 	'''This function begins the process described in the Readme of this folder'''
@@ -12,7 +23,13 @@ def run ():
 	#get the shelfmarks of the input files
 	shelf_marks=list(set(['_'.join(element.split('/')[-1].split('_')[1:3])for element in input_files]))
 	
-	
+	#create the output collection
+	os.system('mongo ' + db + ' --eval "db.createCollection(\''+collection+'\')"')
+
+	testimony_ids = [{'testimony_id': value} for value in shelf_marks]	#upload shelfmarks
+
+	h.insert(db,collection,testimony_ids)
+	#pdb.set_trace()
 
 	#find the corresponding transcript files of each shelfmark
 	#create a dictionary with shelfmarks as keys, and values as empty dictionary
@@ -73,7 +90,10 @@ def run ():
 			
 				#process the transcript by passing the filename to the segment_transcript function
 				result.extend(segment_transcript(files))
-			final_result.append(result)
+			
+			
+			final_result.append({shelfmark:result})
+			
 		except:
 			#in case the processing was not possible store the shelfmark
 			unprocessed.append(shelfmark)
@@ -91,6 +111,22 @@ def run ():
 		
 		if element not in missing:
 			missing_shelfmarks.append(element)
+
+	#upload the results to the DB
+
+	for element in final_result:
+
+		#get the unique id of the entry based on the shelfmark
+		entry_id=h.query(db,collection,{'testimony_id':element.keys()[0]},{})[0]
+		h.update_entry(db,collection,entry_id['_id'],{'structured_transcript':element[element.keys()[0]]})
+
+	#delete those entries that could not be processed
+	
+	
+	#db.output_fortunoff_metadata.remove( {'structured_transcript': { $exists: false } } )
+	#os.system('mongo ' + db + ' --eval "db.output_fortunoff_metadata.remove({\'structured_transcript\': { $exists: false } } )"')
+	
+	h.delete(db,collection,{'structured_transcript': { '$exists': False } })
 
 	pdb.set_trace()
 				
