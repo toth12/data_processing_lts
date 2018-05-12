@@ -7,10 +7,11 @@ def transform_transcript_to_structured_unit(transcript_file_name):
 	with open(transcript_file_name) as fd:
 		doc = xmltodict.parse(fd.read())
 	
-	result=[]
+	result=['']
 	i=0
+
 	for p in doc['transcription']['p']:
-		paragraph={'unit':[]}
+		paragraph=[]
 
 		if p is not None:
 
@@ -18,24 +19,32 @@ def transform_transcript_to_structured_unit(transcript_file_name):
 			if type(p['span']) == list:
 				for span in p['span']:
 					if '#text' in span.keys():
-						paragraph['unit'].append(span['#text'])
+						if span['#text'] is not None:
+							paragraph.append(span['#text'])
 					elif 'i' in span.keys():
-						paragraph['unit'].append(span['i'])
+						if span['i'] is not None:
+							paragraph.append(span['i'])
 
 
 					
 			elif type(p['span']) == OrderedDict:
-				paragraph['unit'].append(p['span']['#text'])
+				if p['span']['#text'] is not None:
+					paragraph.append(p['span']['#text'])
 				
 
 			
-				
-			paragraph['unit']=' '.join(paragraph['unit'])
-			result.append(paragraph)
+			
+			paragraph=' '.join(paragraph)
+			if paragraph[1:2].isupper() and paragraph[0] !='[':
+				result.append(paragraph)
+			else:
+				result[len(result)-1]= result[len(result)-1] +' '+paragraph
 			i=i+1
-	if len(result) !=i:
-		print 'problematic'
+	
+	
+	result=[{'unit':element}for element in result if len(element)>0]
+
 	return result
 if __name__ == '__main__':
-	name='/Users/gmt28/Documents/Workspace/Docker_Engine/varad/Yale_Projects/shoah-foundation-data/scripts/transform-usc-transcripts/inputs/93.2.xml'
+	name='/Users/gmt28/Documents/Workspace/Docker_Engine/varad/Yale_Projects/shoah-foundation-data/scripts/transform-usc-transcripts/inputs/9.1.xml'
 	transform_transcript_to_structured_unit(name)

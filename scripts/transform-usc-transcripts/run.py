@@ -23,28 +23,39 @@ def run ():
 	reader = csv.DictReader(open('USC_Shoah_Foundation_Transcripts_list.csv', 'rb'))
 	
 	not_processed=[]
-	problematics=['93', '323', '1363', '1511', '1568', '2074', '3022', '3283', '3475', '3858', '3949', '5248', '5388', '5758', '5795', '5970', '7177', '8527', '9024', '9489', '9665', '10010', '10272', '10572', '10587', '11167', '11552', '11611', '12455', '13079', '13213', '13219', '13483', '14212', '14613', '15694', '17299', '17374', '18102', '18960', '19195', '19210', '22685', '22734', '22889', '24814', '25381', '27129', '27759']
+	#problematics=['93', '323', '1363', '1511', '1568', '2074', '3022', '3283', '3475', '3858', '3949', '5248', '5388', '5758', '5795', '5970', '7177', '8527', '9024', '9489', '9665', '10010', '10272', '10572', '10587', '11167', '11552', '11611', '12455', '13079', '13213', '13219', '13483', '14212', '14613', '15694', '17299', '17374', '18102', '18960', '19195', '19210', '22685', '22734', '22889', '24814', '25381', '27129', '27759']
 	i=1
+	
 	for line in reader:
+
 	#get all input filenames
  	#input_files=glob.glob(os.getcwd()+'/inputs/1.*.xml')
  		
- 		i=i+1
- 		if line['IntCode'] in problematics:
- 			print line['IntCode']
-	 		#try:
-		 	number_of_parts=line['NumTapes']
-		 	int_code=line['IntCode']
-		 	final_result=[]
+		
+		
+ 		
+ 		print i
+ 		
+	 	number_of_parts=line['NumTapes']
+	 	int_code=line['IntCode']
+	 	final_result=[]
+	 	
+		try:
 		 	for part in range(1,int(number_of_parts)+1):
 		 		input_file=os.getcwd()+'/inputs/'+int_code+'.'+str(part)+'.xml'
-		 	try:
-		 		result=transform_transcript_to_structured_unit(input_file)
-		 		final_result.extend(result)
-		 			#pdb.set_trace()
-		 	except Exception as e: 
-				print(e)
-		 		not_processed.append(line['IntCode'])
+			 	
+			 	result=transform_transcript_to_structured_unit(input_file)
+			 	final_result.extend(result)
+
+			 #upload to the DB
+			
+			 			
+		except Exception as e: 
+			print(e)
+			print int_code+'.'+str(part)+'.xml'
+			not_processed.append({int_code+'.'+str(part)+'.xml':e})
+			 
+		i=i+1
 	pdb.set_trace()
  	
 	#get the shelfmarks of the input files
