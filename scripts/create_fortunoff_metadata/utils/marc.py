@@ -22,16 +22,16 @@ def get_marc_fields(record, fields):
       of the given field in the Marc record
   '''
   result = {}
-  pdb.set_trace()
+  
   for field in fields:
     args = get_field_args(field)
     label = args['label']
+    
 
     # some marc fields have list values, e.g. 655a
-    if args['field_type'] == list:
+    if args['field_type'] == list or label=='gender':
       result[label] = get_list_field(record, args)
-
-    # most marc fields have string values
+      # most marc fields have string values
     else:
       result[label] = get_str_field(record, args)
 

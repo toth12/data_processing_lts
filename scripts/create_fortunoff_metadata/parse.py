@@ -6,7 +6,6 @@ from utils.text import read, get_stopwords
 from utils.api import save, config
 from utils.dir import make_dir, rm_dir
 from utils.marc import get_marc_fields
-from utils.parse import clean_year
 from collections import defaultdict, Counter
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk import pos_tag
@@ -49,30 +48,11 @@ fields = [
     'letter': 'a',
     'label': 'testimony_title',
   },
-  {
-    'number': '245',
-    'letter': 'c',
-    'label': 'interviewer',
-  },
-  {
-    'number': '245',
-    'letter': 'f',
-    'label': 'date',
-  },
+  
   {
     'number': '100',
     'letter': 'a',
     'label': 'interviewee_name',
-  },
-  {
-    'number': '100',
-    'letter': 'd',
-    'label': 'interviewee_dates',
-  },
-  {
-    'number': '700',
-    'letter': 'a',
-    'label': 'interveiwers',
   },
   {
     'number': '520',
@@ -82,13 +62,25 @@ fields = [
   {
     'number': '610',
     'letter': 'a',
-    'label': 'camp_names',
+    'label': 'camp_names_1',
     'type': list
   },
   {
-    'number': '650',
+    'number': '690',
     'letter': 'a',
-    'label': 'subjects',
+    'label': 'camp_names_2',
+    'type': list
+  },
+  {
+    'number': '691',
+    'letter': 'a',
+    'label': 'camp_names_3',
+    'type': list
+  },
+  {
+    'number': '691',
+    'letter': 'a',
+    'label': 'ghetto_names',
     'type': list
   },
   {
@@ -97,9 +89,19 @@ fields = [
     'label': 'testimony_id',
   },
   {
-    'number': '852',
-    'letter': 'a',
+    'number': '260',
+    'letter': 'b',
     'label': 'provenance',
+  },
+  {
+    'number': '260',
+    'letter': 'c',
+    'label': 'recording_year',
+  },
+  {
+    'number': '650',
+    'letter': '0',
+    'label': 'gender',
   }
 ]
 
@@ -204,23 +206,61 @@ def flatten_marc_json(records):
   keys
   '''
   parsed_records = []
-  for record in records:
+  for i, record in enumerate(records):
     
     parsed = get_marc_fields(record, fields)
-    parsed['gender'] = 'unknown'
+    parsed['gender'] = clean_gender(parsed['gender'])
     parsed['collection'] = 'Fortunoff'
     parsed['shelfmark'] = parsed['testimony_id']
-    parsed['recording_year'] = clean_year(parsed['date'])
-    parsed['ghetto_names'] = []
+    parsed['recording_year'] = clean_year(parsed['recording_year'])
     parsed['media_url'] = []
     parsed['thumbnail_url'] = ''
-    parsed['camp_names'] = clean_camp_names(parsed['camp_names'])
+    parsed['camp_names']=parsed['camp_names_1']+parsed['camp_names_2']+parsed['camp_names_2']
+    parsed['camp_names'] = clean_camp_names(parsed['camp_names_1'])
     parsed['provenance'] = clean_provenance(parsed['provenance'])
-
+    parsed['ghetto_names']=clean_ghetto_names(parsed['ghetto_names'])
+    
+    parsed.pop('camp_names_1',None)
+    parsed.pop('camp_names_2',None)
+    parsed.pop('camp_names_3',None)
+    
     # add the parsed record to the list of parsed records
     parsed_records.append(parsed)
   return parsed_records
 
+
+def clean_gender(gender):
+  '''
+  @args:
+    {arr} gender: a list of urls, one them is the gender attribute of interviews
+  @returns:
+    {arr} 'M' or 'F' or 
+  '''
+
+  #check if multiple gender info is present, in this case this is a couple
+
+  gender_urls={'F':'http://id.loc.gov/authorities/subjects/sh85147274','M':'http://id.loc.gov/authorities/subjects/sh85083510'}
+  
+  if (gender_urls['F'] in gender) and (gender_urls['M'] in gender):
+    gender =float('nan')
+  elif (gender_urls['F'] in gender):
+    gender='F'
+  elif (gender_urls['M'] in gender):
+    gender = 'M'
+  else:
+    gender =float('nan')
+   
+  return gender
+
+def clean_year(recording_year):
+  '''
+  @args:
+    {arr} recording_year: a string representing the year when the interview was recorded
+  @returns:
+    {arr} string representation of the year without the dot at the end
+  '''
+  
+  return recording_year[0:4]
 
 def clean_camp_names(camp_names):
   '''
@@ -229,7 +269,15 @@ def clean_camp_names(camp_names):
   @returns:
     {arr} a list of strings
   '''
-  return [i.replace(' (Concentration camp)', '') for i in camp_names]
+
+  if len(camp_names)>0:
+    result=[]
+    for element in camp_names:
+      if '(Concentration camp)' in element:
+        result.append(element.split('(Concentration camp)')[0].strip())
+    return result
+  else:
+    return camp_names
 
 
 def clean_provenance(provenance):
@@ -242,14 +290,35 @@ def clean_provenance(provenance):
   return provenance.strip().rstrip(',')
 
 
+def clean_ghetto_names(ghetto_names):
+  '''
+  @args:
+    {str} provenance: a string reflecting the provenance of a record
+  @returns:
+    {str}: a string
+  '''
+  
+  if len(ghetto_names)>0:
+    result=[]
+    for element in ghetto_names:
+      if 'ghetto' in element:
+        
+        result.append(element.split('ghetto.')[0].strip())
+    return result
+  else:
+    return ghetto_names
+
 def format_marc():
   '''
   Return a list of dictionaries, where each dict represents a
   testimony and possesses the required keys
   '''
   marc_json = get_marc_json()
+
   marc_json_nested = nest_marc_json(marc_json)
+  #ez kell
   marc_json_flat = flatten_marc_json(marc_json_nested)
+  pdb.set_trace()
   return marc_json_flat
 
 
