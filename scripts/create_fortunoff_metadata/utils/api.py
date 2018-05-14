@@ -15,7 +15,7 @@ config = {
   'protocol': 'http',
   'host': 'localhost',
   'port': 8080,
-  'db': 'lts'
+  'db': 'let_them_speak_data_processing'
 }
 
 ##

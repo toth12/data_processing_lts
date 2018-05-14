@@ -220,6 +220,7 @@ def flatten_marc_json(records):
     parsed['provenance'] = clean_provenance(parsed['provenance'])
     parsed['ghetto_names']=clean_ghetto_names(parsed['ghetto_names'])
     
+    #delete unnecessary fields
     parsed.pop('camp_names_1',None)
     parsed.pop('camp_names_2',None)
     parsed.pop('camp_names_3',None)
@@ -837,6 +838,8 @@ if __name__ == '__main__':
 
   # process records
   records = format_marc()
+  #save it to the DB
+  save(records, 'output_fortunoff_metadata')
   pdb.set_trace()
   #process_texts(records)
   #build_tree_data(records)
