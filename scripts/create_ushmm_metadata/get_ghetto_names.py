@@ -10,7 +10,7 @@ pp = pprint.PrettyPrinter(indent=4)
 
 # database info
 DB = constants.DB
-COLLECTION = constants.INPUT_COLLECTION
+COLLECTION = constants.INPUT_COLLECTION_USHMM
 
 def getGhettoNames():
     """

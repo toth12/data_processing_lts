@@ -2,8 +2,6 @@ import pprint
 import pdb
 import sys, os
 import constants
-helper_path = os.path.join("..", "..", "utils")
-sys.path.insert(0, helper_path)
 import helper_mongo as h
 
 # database info

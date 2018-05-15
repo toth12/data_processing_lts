@@ -2,14 +2,12 @@ import pprint
 import pdb
 import sys, os
 import constants
-helper_path = os.path.join("..", "..", "utils")
-sys.path.insert(0, helper_path)
 import helper_mongo as h
 pp = pprint.PrettyPrinter(indent=4)
 
 # database info
 DB = constants.DB
-COLLECTION = constants.INPUT_COLLECTION
+COLLECTION = constants.INPUT_COLLECTION_USHMM
 
 def getInterviewTitle():
     """

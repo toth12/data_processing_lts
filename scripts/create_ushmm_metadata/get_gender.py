@@ -2,8 +2,6 @@ import pprint
 import pdb
 import sys, os, glob
 import constants
-helper_path = os.path.join("..", "..", "utils")
-sys.path.insert(0, helper_path)
 import helper_mongo as h
 import concurrent.futures
 # Python 2.7
@@ -11,13 +9,17 @@ import urllib2
 import json
 import unicodedata
 import requests
+import pdb
+
 
 # database info
 DB = constants.DB
-COLLECTION = constants.INPUT_COLLECTION
+COLLECTION = constants.INPUT_COLLECTION_USHMM
 #DB = "Hol"
 #COLLECTION = "undress_experiment"
 GENDERIZE_INFO = "genderize_info"
+
+INPUT_FOLDER=constants.INPUT_FOLDER_USHMM_METADATA
 
 # declare some constants
 MALE = "male"
@@ -31,11 +33,11 @@ FEMALE_WORDS = [' her ','Her ', ' she ', 'She ']
 TITLES_PREFIXES = ['Ms.', "Mr.", "Dr.", "Mrs."]
 
 def save_obj(obj, name):
-    with open('input/'+ name + '.json', 'w') as f:
+    with open(INPUT_FOLDER+ name + '.json', 'w') as f:
         return json.dump(obj, f)
 
 def load_obj(name):
-    with open('input/' + name + '.json', 'r') as f:
+    with open(INPUT_FOLDER + name + '.json', 'r') as f:
         return json.load(f)
 
 

@@ -21,15 +21,18 @@ pp = pprint.PrettyPrinter(indent=4)
 
 # database info
 DB = constants.DB
-INPUT_COLLECTION = constants.INPUT_COLLECTION
-OUTPUT_COLLECTION = constants.OUTPUT_COLLECTION
+INPUT_COLLECTION = constants.INPUT_COLLECTION_USHMM
+OUTPUT_COLLECTION = constants.OUTPUT_COLLECTION_USHMM
 ORIGINAL_DATABASE = "USHM"
 MANUAL_INPUT_CSV = "USHM_missing_records_ELLIOT.csv"
+INPUT_FOLDER=constants.INPUT_FOLDER_USHMM_METADATA
+OUTPUT_FOLDER=constants.OUTPUT_FOLDER_USHMM_PROCESSING_LOGS
+INPUT_DATA='input_ushmm_metadata.bson'
 
 def retrieveMissingFields():
     backup = dict()
 
-    with open('input/' + MANUAL_INPUT_CSV, 'rb') as csvfile:
+    with open(INPUT_FOLDER + MANUAL_INPUT_CSV, 'rb') as csvfile:
         spamreader = csv.reader(csvfile, quotechar='"', quoting=csv.QUOTE_ALL)
         for row in spamreader:
             
@@ -86,7 +89,7 @@ def populateDocument(document, unknown_fields, dictionary, id_, field_name, manu
             unknown_fields.append(field_name)
 
                 
-if __name__ == "__main__":
+def main():
     """
     Queries the database to retrieve the interview_ids
     Populate document with the non-null data for each interview and insert
@@ -94,6 +97,10 @@ if __name__ == "__main__":
     Generate a CSV spreadsheet with the missing field for each interview
     """
     
+    # takes the input collection (mongo collection exported to JSON) and imports it to the DB
+
+    os.system('mongorestore -d ' + DB + ' -c '+INPUT_COLLECTION +' '+INPUT_FOLDER+INPUT_DATA)
+
     # query for interview ids
     result = h.query(DB, INPUT_COLLECTION, {}, {'id':1} )
     interview_ids = [id_['id'] for id_ in result]
@@ -111,7 +118,7 @@ if __name__ == "__main__":
     interviews_htmls = mediaExtraction.getHTMLs()
 
     # initialize csv to record missing fields
-    ofile  = open('output/USHM_missing_records.csv', "w")
+    ofile  = open(OUTPUT_FOLDER+'USHM_missing_records.csv', "w")
     spreadsheet = csv.writer(ofile, quotechar='"', quoting=csv.QUOTE_ALL)
 
     # insert header
@@ -119,7 +126,7 @@ if __name__ == "__main__":
     spreadsheet.writerows(header)
 
     # initialize csv to record missing thumbnail for .mp4
-    ofile2  = open('output/USHM_missing_thumbnai.csv', "w")
+    ofile2  = open(OUTPUT_FOLDER+'USHM_missing_thumbnai.csv', "w")
     media_spreadsheet = csv.writer(ofile2, quotechar='"', quoting=csv.QUOTE_ALL)
 
     # insert header
