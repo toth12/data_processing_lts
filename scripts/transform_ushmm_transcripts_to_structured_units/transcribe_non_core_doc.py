@@ -1,9 +1,7 @@
 import sys, glob, os
-helper_path = os.path.join("..", "..", "utils")
-sys.path.insert(0, helper_path)
 import helper_mongo as h
 
-os.chdir("../../data/")
+
 from docx import Document
 from subprocess import call
 
@@ -12,9 +10,11 @@ import constants
 import re
 from collections import defaultdict
 
-TRACKER = constants.TRACKER_COLLECTION
-OUTPUT = constants.OUTPUT_COLLECTION
+TRACKER = constants.USHMM_TRACKER_COLLECTION
+OUTPUT = constants.OUTPUT_COLLECTION_USHMM
 DB = constants.DB
+INPUT_FOLDER=constants.INPUT_FOLDER_USHMM_TRANSCRIPTS_DOC
+OUTPUT_FOLDER_USHMM_PROCESSING_LOGS=constants.OUTPUT_FOLDER_USHMM_PROCESSING_LOGS 
 
 pp = pprint.PrettyPrinter(indent=4)
 
@@ -219,15 +219,20 @@ def getTextUnits(filename):
     
     return units
 
-def createStructuredTranscriptDocx():
+def createStructuredTranscript_Non_Core_Doc():
     """
     Processes the 509 doc files beloging to the core asset in data
     Core asset is identified by numbers RG-50.030, RG-50.106, RG-50.549
     """
+
+    #create a temporary folder that will hold the data transformed from doc to docx
+    os.system('mkdir ' + INPUT_FOLDER+'temp')
+
     core_doc_asset = []
     missing_count = 0
+    missing_files=[]
     # get all the docx files that are part of the core asset
-    for file in glob.glob("*.doc"):
+    for file in glob.glob(INPUT_FOLDER+"*.doc"):
 
         # RG numbers for the core asset
         if ("RG-50.030" not in file and
@@ -236,19 +241,18 @@ def createStructuredTranscriptDocx():
 
             # convert file to docx, storing it in an untracked folder called temp
             file_docx = file + 'x'
-            command = 'textutil -convert docx ' + file + ' -output ' + 'non_core_temp/'+ file_docx 
+            command = 'textutil -convert docx ' + file + ' -output ' + INPUT_FOLDER+'temp/'+ file_docx.split('/')[-1]
             call(command, shell=True)
 
             # append to the array
             core_doc_asset.append(file_docx)
 
-    # go to created dir
-    os.chdir('non_core_temp')
+    
 
     # get the units for each file, store them and update tracker
     for file in core_doc_asset:
         # get text units for this entry
-        units = getTextUnits(file)
+        units = getTextUnits(INPUT_FOLDER+'temp/'+file.split('/')[-1])
 
         if units:
             # get RG number
@@ -267,13 +271,24 @@ def createStructuredTranscriptDocx():
             h.update_field(DB, TRACKER, "microsoft_doc_file", original_filename, "extraction_method", "transcribe_non_core_doc")
         else:
             print(file)
+            missing_files.append(file.split('/')[-1])
             missing_count += 1
 
     
+    #delete the temporary folder
+    os.system('rm -r ' + INPUT_FOLDER+'temp')
+
+    print "The files above could not be processed; they are logged in: "+OUTPUT_FOLDER_USHMM_PROCESSING_LOGS 
+   
+    #write the missing files to text file
+    file = open(OUTPUT_FOLDER_USHMM_PROCESSING_LOGS+'transcribe_non_core_doc_failed.txt','w')
+    file.write('\n'.join(missing_files))
+
+    print missing_count
     # success
     pprint.pprint("Non-core doc files were successfully processed, but there are " +  str(missing_count) + " missing")
 
 if __name__ == "__main__":
-    createStructuredTranscriptDocx()
+    createStructuredTranscript_Non_Core_Doc()
     #TODO account for the fact that ongoing answers in different paragaphs can exist
    

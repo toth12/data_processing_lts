@@ -1,9 +1,7 @@
 import sys, glob, os
-helper_path = os.path.join("..", "..", "utils")
-sys.path.insert(0, helper_path)
 import helper_mongo as h
 
-os.chdir("../../data/")
+
 from docx import Document
 from collections import defaultdict
 from subprocess import call
@@ -12,9 +10,11 @@ import pprint
 import constants
 import re
 
-TRACKER = constants.TRACKER_COLLECTION
-OUTPUT = constants.OUTPUT_COLLECTION
+TRACKER = constants.USHMM_TRACKER_COLLECTION
+OUTPUT = constants.OUTPUT_COLLECTION_USHMM
 DB = constants.DB
+INPUT_FOLDER=constants.INPUT_FOLDER_USHMM_TRANSCRIPTS_DOC
+OUTPUT_FOLDER_USHMM_PROCESSING_LOGS=constants.OUTPUT_FOLDER_USHMM_PROCESSING_LOGS 
 
 def safePrint(str_):
     """
@@ -295,7 +295,7 @@ def getTextUnits(filename):
     return units
 
     
-def createStructuredTranscriptDocX():
+def createStructuredTranscript_Non_Core_Docx():
     """
     Creates the structure dunits for the for the 132 files
     that are part of the non-core asset and which have the
@@ -304,8 +304,9 @@ def createStructuredTranscriptDocX():
     Missing interviews are piped into the file entitled missing_non_core file
     """
     docx_assets = []
-    count = 0
-    for file in glob.glob("*.docx"):
+    missing_count = 0
+    missing_files=[]
+    for file in glob.glob(INPUT_FOLDER+"*.docx"):
          # RG numbers for the non-core asset
         if ("RG-50.030" not in file and
             "RG-50.106" not in file and
@@ -333,14 +334,24 @@ def createStructuredTranscriptDocX():
             h.update_field(DB, TRACKER, "microsoft_doc_file", file, "extraction_method", "transcribe_non_core_docx")
 
         else:
-            count += 1
+            missing_count += 1
+            missing_files.append(file.split('/')[-1])
             print(file)
-    print count
+    
+    print "The files above could not be processed; they are logged in: "+OUTPUT_FOLDER_USHMM_PROCESSING_LOGS 
+   
+    #write the missing files to text file
+    file = open(OUTPUT_FOLDER_USHMM_PROCESSING_LOGS+'transcribe_non_core_docx_failed.txt','w')
+    file.write('\n'.join(missing_files))
+
+    print missing_count
+
+
 
     # success
-    pprint.pprint("Core_docx_asset was successfully processed.")
+    pprint.pprint("Non-core doc files were successfully processed, but there are " +  str(missing_count) + " missing")
     
 
 if __name__ == "__main__":
-    createStructuredTranscriptDocX()
+    createStructuredTranscript_Non_Core_Docx()
     #TODO handle the 005 exception

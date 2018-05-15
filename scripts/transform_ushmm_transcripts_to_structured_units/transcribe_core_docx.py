@@ -3,14 +3,15 @@ helper_path = os.path.join("..", "..", "utils")
 sys.path.insert(0, helper_path)
 import helper_mongo as h
 
-os.chdir("../../data/")
+
 from docx import Document
 import pprint
 import constants
 
-TRACKER = constants.TRACKER_COLLECTION
-OUTPUT = constants.OUTPUT_COLLECTION
+TRACKER = constants.USHMM_TRACKER_COLLECTION
+OUTPUT = constants.OUTPUT_COLLECTION_USHMM
 DB = constants.DB
+INPUT_FOLDER=constants.INPUT_FOLDER_USHMM_TRANSCRIPTS_DOC
 
 def getTextUnits(filename):
     doc = Document(filename)
@@ -53,7 +54,7 @@ def createStructuredTranscriptDocx():
     core_docx_asset = []
 
     # get all the docx files that are part of the core asset
-    for file in glob.glob("*.docx"):
+    for file in glob.glob(INPUT_FOLDER+"*.docx"):
 
         # RG numbers for the core asset
         if ("RG-50.030" in file or

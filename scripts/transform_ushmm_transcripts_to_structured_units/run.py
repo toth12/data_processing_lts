@@ -1,14 +1,34 @@
 from create_tracker import createTracker
 from transcribe_core_doc import createStructuredTranscriptDoc
+from transcribe_core_docx import createStructuredTranscriptDocx
+from transcribe_non_core_doc import createStructuredTranscript_Non_Core_Doc
+from transcribe_non_core_docx import createStructuredTranscript_Non_Core_Docx
 
 def main():
 	#Create a collection that tracks the progress of processing
-	#createTracker()
+	createTracker()
 	print ("A temporary collection tracking the transformation of USHMM transcript was set up")
 
-	#Transcribe files belonging to the cora data asset and has the DOC format
+	#Transcribe files belonging to the core data asset and has the DOC format
 	print ("The processing of USHMM transcripts in DOC format belonging to the core asset has started")
 	createStructuredTranscriptDoc()
+
+	#Transcribe files belonging to the core data asset and has the DOCX format
+	print ("The processing of USHMM transcripts in DOC format belonging to the core asset has started")
+	createStructuredTranscriptDocx()
+
+	#Transcribe files not belonging to the core data asset and has the DOC format
+	print ("The processing of USHMM transcripts in DOC format not belonging to the core asset has started")
+	createStructuredTranscript_Non_Core_Doc()
+
+	#Transcribe files not belonging to the core data asset and has the DOCX format
+	print ("The processing of USHMM transcripts in DOCX format not belonging to the core asset has started")
+	createStructuredTranscript_Non_Core_Docx()
+
+
+
+
+
 
 if __name__ == '__main__':
 	main()
