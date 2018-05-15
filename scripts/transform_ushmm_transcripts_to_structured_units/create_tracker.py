@@ -7,13 +7,14 @@ sys.path.insert(0, helper_path)
 import helper_mongo as h
 
 # change directory to retrieve docs
-os.chdir("../../data/")
+#os.chdir("../../data/")
 
 # initial status for all files in the tracker
 INITIAL_STATUS = "not processed"
 DB = constants.DB
-INPUT_COLLECTION = constants.INPUT_COLLECTION
-TRACKER = constants.TRACKER_COLLECTION
+INPUT_COLLECTION = constants.INPUT_COLLECTION_USHMM
+TRACKER = constants.USHMM_TRACKER_COLLECTION
+INPUT_FOLDER=constants.INPUT_FOLDER_USHMM_TRANSCRIPTS_DOC
 
 def getDocs():
     """
@@ -22,7 +23,7 @@ def getDocs():
     file name
     """
     docs = dict()
-    for file in glob.glob("*"):
+    for file in glob.glob(INPUT_FOLDER+"*"):
         # get RG number
         rg_number = file.split("_")[0]
 

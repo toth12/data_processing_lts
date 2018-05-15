@@ -1,20 +1,17 @@
 import sys, glob, os
-helper_path = os.path.join("..", "..", "utils")
-sys.path.insert(0, helper_path)
 import helper_mongo as h
-
-os.chdir("../../data/")
 from docx import Document
 from subprocess import call
 
 import pprint
 import constants
 import re
+import pdb
 
-
-TRACKER = constants.TRACKER_COLLECTION
-OUTPUT = constants.OUTPUT_COLLECTION
+TRACKER = constants.USHMM_TRACKER_COLLECTION
+OUTPUT = constants.OUTPUT_COLLECTION_USHMM
 DB = constants.DB
+INPUT_FOLDER=constants.INPUT_FOLDER_USHMM_TRANSCRIPTS_DOC
 
 def getTextUnits(filename):
     doc = Document(filename)
@@ -56,15 +53,19 @@ def getTextUnits(filename):
 
     return units
 
-def createStructuredTranscriptDocx():
+def createStructuredTranscriptDoc():
     """
     Processes the 509 doc files beloging to the core asset in data
     Core asset is identified by numbers RG-50.030, RG-50.106, RG-50.549
     """
+    #create a temporary folder that will hold the data transformed from doc to docx
+    os.system('mkdir ' + INPUT_FOLDER+'temp')
+
+
     core_doc_asset = []
 
     # get all the docx files that are part of the core asset
-    for file in glob.glob("*.doc"):
+    for file in glob.glob(INPUT_FOLDER+"*.doc"):
 
         # RG numbers for the core asset
         if ("RG-50.030" in file or
@@ -73,19 +74,19 @@ def createStructuredTranscriptDocx():
 
             # convert file to docx, storing it in an untracked folder called temp
             file_docx = file + 'x'
-            command = 'textutil -convert docx ' + file + ' -output ' + 'temp/'+ file_docx 
+            command = 'textutil -convert docx ' + file + ' -output ' + INPUT_FOLDER+'temp/'+ file_docx.split('/')[-1] 
             
             call(command, shell=True)
-
+            
             # append to the array
             core_doc_asset.append(file_docx)
 
-    os.chdir('temp')
+    
 
     # get the units for each file, store them and update tracker
     for file in core_doc_asset:
         # get text units for this entry
-        units = getTextUnits(file)
+        units = getTextUnits(INPUT_FOLDER+'temp/'+file.split('/')[-1])
 
         if units:
             # get RG number
@@ -102,11 +103,15 @@ def createStructuredTranscriptDocx():
             # update status on the stracker
             h.update_field(DB, TRACKER, "microsoft_doc_file", original_filename, "status", "Processed")
 
+    #delete the temporary folder
+    os.system('rm -r ' + INPUT_FOLDER+'temp')
+
+
     # success
-    pprint.pprint("Core_docx_asset was successfully processed.")
+    pprint.pprint("Core_doc_asset was successfully processed.")
 
 if __name__ == "__main__":
-    createStructuredTranscriptDocx()
+    createStructuredTranscriptDoc()
     #getTextUnits()
     """
     result = h.query(DB, OUTPUT, { "structured_transcript": {'$exists': 'true'}}, {'id': 0})
