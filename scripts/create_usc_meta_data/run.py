@@ -37,12 +37,12 @@ def rename_usc_metadata_fields():
 			else:
 				new_entry[fieldname_map[key]]=line[key]
 			#add a missing field
-		new_entry['recording_year']=None
+		new_entry['recording_year']=int(new_entry['recording_year'])
 		data_with_renamed_fields.append(new_entry)
 	
 	return data_with_renamed_fields
 
-def post_process_ghetto_camp_names(names):
+def post_process_ghetto_names(names):
 	result=[]
 	if len(names)>0:
 		individual_names=names.strip().split(';')
@@ -52,6 +52,17 @@ def post_process_ghetto_camp_names(names):
 				result.append(name)
 	return result
 
+def post_process_camp_names(names):
+	result=[]
+	if len(names)>0:
+		individual_names=names.strip().split(';')
+		for element in individual_names:
+			if 'Concentration Camp)' in element or 'Death Camp)' in element:
+				name=element.split('(')[0].strip().decode('utf-8',errors='replace')
+				if len(name)>2:
+					result.append(name)
+	return result
+
 
 
 
@@ -59,8 +70,8 @@ def post_process_metadata(meta_data):
 
 	for element in meta_data:
 		#postprocess ghetto names
-		element['ghetto_names']=post_process_ghetto_camp_names(element['ghetto_names'])
-		element['camp_names']=post_process_ghetto_camp_names(element['camp_names'])
+		element['ghetto_names']=post_process_ghetto_names(element['ghetto_names'])
+		element['camp_names']=post_process_camp_names(element['camp_names'])
 
 		#provenance to be left empty
 		element['provenance']=''
@@ -92,4 +103,3 @@ if __name__ == '__main__':
 
 	#upload result
 	h.insert(db,collection,usc_metadata_processed)
-	pdb.set_trace()
