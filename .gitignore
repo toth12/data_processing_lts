@@ -9,3 +9,6 @@ __pycache__/
 __pycache__
 samples
 venv
+temp/
+non_core_temp/
+create_ushmm_transcript
