@@ -11,8 +11,7 @@ import get_videos as mediaExtraction
 import constants
 
 import sys, os
-helper_path = os.path.join("..", "..", "utils")
-sys.path.insert(0, helper_path)
+
 import helper_mongo as h
 import csv
 import pprint
