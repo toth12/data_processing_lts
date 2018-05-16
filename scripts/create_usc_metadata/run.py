@@ -1,32 +1,29 @@
 import pdb	
 import os,sys
-helper_path = os.path.join("..", "..", "utils")
-sys.path.insert(0, helper_path)
 import glob
 import csv
 import helper_mongo as h
 import codecs
-
+import constants
 
 ##
 # Globals
 ##
 
-db = 'let_them_speak_data_processing'
-collection='output_usc_metadata'
+# inputs and global config
+INPUT_DATA = constants.INPUT_FOLDER_USC_METADATA+'transcript_testimonies_info_for_Gabor.csv' # path to metadata xml
+db = constants.DB# the database name to use when saving results
+OUTPUT_COLLECTION = constants.OUTPUT_COLLECTION_USC
+
 
 fieldname_map={'IntCode':'testimony_id','IntervieweeName':'interviewee_name','Gender':'gender','Shelfmark':'shelfmark','CollectionOwner':'collection'}
-
-
-input_file=os.getcwd()+'/input/transcript_testimonies_info_for_Gabor.csv'
-
 
 
 def rename_usc_metadata_fields():
 	
 	#open the input file and make a python dictionary out of it
 
-	reader = csv.DictReader(open(input_file, 'rb'))
+	reader = csv.DictReader(open(INPUT_DATA, 'rb'))
 	data_with_renamed_fields=[]
 	for line in reader:
 		#change the fieldnames and build a new dictionary
@@ -93,13 +90,13 @@ def post_process_metadata(meta_data):
 
 
 
-if __name__ == '__main__':
+def main():
 	#create a collection that will hold the data
 
-	os.system('mongo ' + db + ' --eval "db.createCollection(\''+collection+'\')"')
+	os.system('mongo ' + db + ' --eval "db.createCollection(\''+OUTPUT_COLLECTION+'\')"')
 
 	usc_metadata_renamed=rename_usc_metadata_fields()
 	usc_metadata_processed=post_process_metadata(usc_metadata_renamed)
 
 	#upload result
-	h.insert(db,collection,usc_metadata_processed)
+	h.insert(db,OUTPUT_COLLECTION,usc_metadata_processed)
