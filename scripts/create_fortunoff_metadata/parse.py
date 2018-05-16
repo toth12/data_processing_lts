@@ -12,15 +12,19 @@ import os
 import xmltodict
 import sys
 import json
-import pdb
+import constants
 
 ##
 # Globals
 ##
 
+
+
 # inputs and global config
-marc_xml_path = 'inputs/metadata/fortunoff-marc.xml' # path to metadata xml
-db = config['db'] # the database name to use when saving results
+INPUT_DATA='fortunoff-marc.xml'
+marc_xml_path = constants.INPUT_FOLDER_FORTUNOFF_METADATA+'fortunoff-marc.xml' # path to metadata xml
+db = constants.DB# the database name to use when saving results
+OUTPUT_COLLECTION = constants.OUTPUT_COLLECTION_FORTUNOFF
 max_records = 182 # max records to process (int|None)
 
 
@@ -310,12 +314,12 @@ def format_marc():
 # Main
 ##
 
-if __name__ == '__main__':
+def main():
 
   
 
   # process records
   records = format_marc()
   #save it to the DB
-  save(records, 'output_fortunoff_metadata')
+  save(records, OUTPUT_COLLECTION)
   

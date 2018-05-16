@@ -6,6 +6,7 @@ API for db connections
 '''
 
 from pymongo import MongoClient
+import constants
 
 ##
 # Globals
@@ -15,7 +16,7 @@ config = {
   'protocol': 'http',
   'host': 'localhost',
   'port': 8080,
-  'db': 'let_them_speak_data_processing'
+  'db': constants.DB
 }
 
 ##

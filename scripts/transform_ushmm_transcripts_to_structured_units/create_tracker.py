@@ -5,9 +5,9 @@ import constants
 helper_path = os.path.join("..", "..", "utils")
 sys.path.insert(0, helper_path)
 import helper_mongo as h
+import pdb
 
-# change directory to retrieve docs
-#os.chdir("../../data/")
+
 
 # initial status for all files in the tracker
 INITIAL_STATUS = "not processed"
