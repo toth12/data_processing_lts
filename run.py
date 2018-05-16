@@ -35,7 +35,8 @@ def process_data():
  #create_ushmm_transcript_input.main()'''
 
  #transform Fortunoff catalogue data to app specific metadata
- create_fortunoff_metadata.main()
+ #create_fortunoff_metadata.main()
+ #print ("The processing of Fortunoff metadata finished")
 
 
 
