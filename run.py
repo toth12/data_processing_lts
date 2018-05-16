@@ -39,11 +39,11 @@ def process_data():
 
  #transform Fortunoff catalogue data to app specific metadata
  #print ("The processing of Fortunoff metadata has started")
- create_fortunoff_metadata.main()
+ #create_fortunoff_metadata.main()
  #print ("The processing of Fortunoff metadata finished")
 
  #print ("The processing of Fortunoff transcripts has started")
- create_fortunoff_transcript_input.run()
+ #create_fortunoff_transcript_input.run()
  #print ("The processing of Fortunoff transcripts has finished")
 
 
