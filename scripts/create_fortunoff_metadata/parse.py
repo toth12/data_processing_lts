@@ -2,9 +2,9 @@
 Transform the Marc XML from UC Riverside to JSON and save in Mongo
 '''
 
-from utils.text import read
-from utils.api import save, config
-from utils.marc import get_marc_fields
+from text import read
+from api import save, config
+from marc import get_marc_fields
 from collections import defaultdict, Counter
 from glob import glob
 import codecs
