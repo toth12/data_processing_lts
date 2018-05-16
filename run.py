@@ -17,6 +17,8 @@ from scripts.transform_ushmm_transcripts import run as create_ushmm_transcript_i
 from scripts.create_fortunoff_metadata import parse as create_fortunoff_metadata
 from scripts.transform_fortunoff_transcripts import run as create_fortunoff_transcript_input
 from scripts.create_usc_metadata import run as create_usc_metadata
+from scripts.transform_usc_transcripts import run as create_usc_transcripts
+
 
 ##Global Variables##
 
@@ -49,9 +51,14 @@ def process_data():
 
  #transform USC catalogue data to app specific metadata
  #print ("The processing of USC metadata has started")
- #create_usc_metadata.main()
+ create_usc_metadata.main()
  #print ("The processing of USC metadata finished")
+ 
 
+ #print ("The processing of USC transcripts has started")
+ create_usc_transcripts.run()
+ #print ("The processing of USC transcripts has finished")
+ 
 
 
 
