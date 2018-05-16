@@ -13,8 +13,9 @@ import constants
 
 #import project specific scripts
 from scripts.create_ushmm_metadata import run as create_ushmm_metadata
-from scripts.transform_ushmm_transcripts_to_structured_units import run as create_ushmm_transcript_input
+from scripts.transform_ushmm_transcripts import run as create_ushmm_transcript_input
 from scripts.create_fortunoff_metadata import parse as create_fortunoff_metadata
+from scripts.transform_fortunoff_transcripts import run as create_fortunoff_transcript_input
 
 ##Global Variables##
 
@@ -32,11 +33,22 @@ def process_data():
 
  #process USHMM transcripts
  #print ("The processing of USHMM transcripts has started")
- #create_ushmm_transcript_input.main()'''
+ #create_ushmm_transcript_input.main()
+ #print ("The processing of USHMM transcripts finished")
+ 
 
  #transform Fortunoff catalogue data to app specific metadata
- #create_fortunoff_metadata.main()
+ #print ("The processing of Fortunoff metadata has started")
+ create_fortunoff_metadata.main()
  #print ("The processing of Fortunoff metadata finished")
+
+ #print ("The processing of Fortunoff transcripts has started")
+ create_fortunoff_transcript_input.run()
+ #print ("The processing of Fortunoff transcripts has finished")
+
+
+
+
 
 
 

@@ -169,7 +169,6 @@ def nest_marc_json(arr):
 
     parsed = to_dict(record_json)
     records.append(parsed)
-    print(' * parsed', idx+1, 'marc records')
   return records
 
 
