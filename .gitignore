@@ -8,4 +8,7 @@ data/
 __pycache__/
 __pycache__
 samples
-input/
+venv
+temp/
+non_core_temp/
+create_ushmm_transcript
