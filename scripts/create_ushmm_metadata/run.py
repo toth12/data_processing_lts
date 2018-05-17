@@ -88,6 +88,7 @@ def populateDocument(document, unknown_fields, dictionary, id_, field_name, manu
         if field_name != 'interview_summary':
             unknown_fields.append(field_name)
 
+
                 
 def main():
     """
@@ -139,6 +140,8 @@ def main():
     # go over each interview and populate a document to be insert into Mongo
     for id_ in interview_ids:
         # initialize variables
+        #if id_=='irn508927':
+            #pdb.set_trace()
         document = dict()
         unknown_fields = []
 
@@ -179,6 +182,10 @@ def main():
         if id_ in manual_backup:
             backup_info = manual_backup[id_]
             comment = backup_info["comments"]
+            #change the interview year to integer
+            if ('recording_year' in backup_info.keys()):
+                backup_info["recoding_year"]=int(backup_info["recording_year"])
+                
             if "Multiple interviewees" in comment:
                 document["interviewee_name"] = ""
                 document["gender"] = ""
@@ -208,6 +215,12 @@ def main():
             spreadsheet.writerows([columns])
         
         # insert in the collection
+
+        #make sure that interview year is an integer
+
+        if (not isinstance(document['recording_year'],int)) and (document['recording_year'] is not None):
+            document['recording_year']=int(document['recording_year'])
+
         h.insert(DB, OUTPUT_COLLECTION, document)
 
  

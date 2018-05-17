@@ -247,7 +247,7 @@ def clean_year(recording_year):
     {arr} string representation of the year without the dot at the end
   '''
   
-  return recording_year[0:4]
+  return int(recording_year[0:4])
 
 def clean_camp_names(camp_names):
   '''

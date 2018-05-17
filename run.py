@@ -25,7 +25,7 @@ from scripts.transform_usc_transcripts import run as create_usc_transcripts
 DB = constants.DB
 
 def process_data():
-
+ '''
  #create the empty let_them_data_processing database
  os.system('mongo ' + DB + ' --eval "db.createCollection(\'test\')"')
  
@@ -33,31 +33,40 @@ def process_data():
  print ("The processing of USHMM metadata has started")
  create_ushmm_metadata.main()
  print ("The processing of USHMM metadata finished")
-
+ 
  #process USHMM transcripts
  print ("The processing of USHMM transcripts has started")
  create_ushmm_transcript_input.main()
  print ("The processing of USHMM transcripts finished")
  
-
+ 
  #transform Fortunoff catalogue data to app specific metadata
  print ("The processing of Fortunoff metadata has started")
  create_fortunoff_metadata.main()
  print ("The processing of Fortunoff metadata finished")
 
+ #process USC transcripts
  print ("The processing of Fortunoff transcripts has started")
  create_fortunoff_transcript_input.run()
  print ("The processing of Fortunoff transcripts has finished")
-
+ 
  #transform USC catalogue data to app specific metadata
  print ("The processing of USC metadata has started")
  create_usc_metadata.main()
  print ("The processing of USC metadata finished")
  
-
+ #process USC transcripts
  print ("The processing of USC transcripts has started")
  create_usc_transcripts.run()
  print ("The processing of USC transcripts has finished")
+ '''
+ #test the output results
+ print ("Testing of output has started; for a more detailed output run: python test_processing_outputs.py ")
+ os.system('pytest test_processing_outputs.py')
+ print ("Testing of output has finished")
+
+
+ 
  
 
 

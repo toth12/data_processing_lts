@@ -33,7 +33,6 @@ def getInterviewYear():
         # add to dict if it is a valid year
         if year != '':
             interview_year[key] = int(year)
-
     return interview_year
 
 if __name__ == "__main__":

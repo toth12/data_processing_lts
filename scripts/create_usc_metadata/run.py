@@ -69,7 +69,7 @@ def post_process_metadata(meta_data):
 		#postprocess ghetto names
 		element['ghetto_names']=post_process_ghetto_names(element['ghetto_names'])
 		element['camp_names']=post_process_camp_names(element['camp_names'])
-
+		element['media_url']=[element['media_url']]
 		#provenance to be left empty
 		element['provenance']=''
 		element['interviewee_name']=element['interviewee_name'].decode('utf-8',errors='replace')
