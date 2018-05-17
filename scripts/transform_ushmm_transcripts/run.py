@@ -4,6 +4,7 @@ from transcribe_core_docx import createStructuredTranscriptDocx
 from transcribe_non_core_doc import createStructuredTranscript_Non_Core_Doc
 from transcribe_non_core_docx import createStructuredTranscript_Non_Core_Docx
 import constants
+import helper_mongo as h
 
 db = constants.DB
 collection=constants.OUTPUT_COLLECTION_USHMM
