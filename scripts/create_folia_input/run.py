@@ -64,29 +64,35 @@ def process(data,id_,_id,shelf_mark):
 
 
 if __name__ == "__main__":
-    with open(os.getcwd()+'/data/input/sample_input.json') as json_data:
+    '''with open(os.getcwd()+'/data/input/sample_input.json') as json_data:
         sample_data = json.load(json_data) 
     result=process(sample_data,'some_id','some_id','some_shelf_mark')
+    ''
+    '''
+
+
     #get the id of those documents that has a structured_transcript field
     #todo use constants here
     #todo: work on a better parser
     
 
 
-    '''problematic_ids=[]
+    problematic_ids=[]
     #pos_tagger =pt.TreeTaggerComponent('en')
-    results=h.query('let_them_speak_data_processing', 'output_ushmm_metadata', {'structured_transcript':{'$exists':True}}, {'testimony_id':1,'structured_transcript':1,'shelfmark':1} )   
+    results=h.query('let_them_speak_data_processing_test', 'output_ushmm_metadata', {'structured_transcript':{'$exists':True}}, {'testimony_id':1,'structured_transcript':1,'shelfmark':1} )   
     pdb.set_trace()
-    for index,result in enumerate(results[0:10]):
+    for index,result in enumerate(results[0:1]):
         print index
         element=process(result['structured_transcript'],result['testimony_id'],result['_id'],result['shelfmark'])
         if element is not None:
             problematic_ids.append(element)
-    print problematic_ids'''
+    print problematic_ids
 
-    
-    #load the sample data
     '''
+    #load the sample data
+    
     with open(os.getcwd()+'/data/input/sample_input.json') as json_data:
         sample_data = json.load(json_data)
-    process(sample_data,'some_id',pos_tagger,'someid','someshelfmark')'''
+    process(sample_data,'some_id',pos_tagger,'someid','someshelfmark')
+
+    '''

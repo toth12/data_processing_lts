@@ -4,6 +4,8 @@ from pynlpl.formats import folia
 import pdb
 import xml.dom.minidom as xmlprint
 from stanfordcorenlp import StanfordCoreNLP
+from unidecode import unidecode
+from slugify import slugify
 
 
 
@@ -32,8 +34,10 @@ def annotate(folia_doc):
         #tokenize
         
         token_id=1
-        result= json.loads(nlp.annotate(sentence.text(), properties=props))
-
+        try:
+            result= json.loads(nlp.annotate(slugify(sentence.text()), properties=props))
+        except:
+            pdb.set_trace()
         for token in result['sentences'][0]['tokens']:
             
             
@@ -59,6 +63,7 @@ def annotate(folia_doc):
 
 
     #Return the result in string
+   
     return folia_doc
 
 
