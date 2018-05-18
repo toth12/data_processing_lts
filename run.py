@@ -18,6 +18,7 @@ from scripts.create_fortunoff_metadata import parse as create_fortunoff_metadata
 from scripts.transform_fortunoff_transcripts import run as create_fortunoff_transcript_input
 from scripts.create_usc_metadata import run as create_usc_metadata
 from scripts.transform_usc_transcripts import run as create_usc_transcripts
+from scripts.create_folia_input import run as create_folia_input
 
 
 ##Global Variables##
@@ -25,8 +26,8 @@ from scripts.transform_usc_transcripts import run as create_usc_transcripts
 DB = constants.DB
 
 def process_data():
- '''
- #create the empty let_them_data_processing database
+ 
+ '''#create the empty let_them_data_processing database
  os.system('mongo ' + DB + ' --eval "db.createCollection(\'test\')"')
  
  #transform USHMM catalogue data to app specific metadata
@@ -59,11 +60,15 @@ def process_data():
  print ("The processing of USC transcripts has started")
  create_usc_transcripts.run()
  print ("The processing of USC transcripts has finished")
- '''
+ 
  #test the output results
  print ("Testing of output has started; for a more detailed output run: python test_processing_outputs.py ")
  os.system('pytest test_processing_outputs.py')
- print ("Testing of output has finished")
+ print ("Testing of output has finished")'''
+
+ create_folia_input.main()
+
+
 
 
  

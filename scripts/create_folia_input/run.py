@@ -1,6 +1,8 @@
-from create_folia_xml_with_divisions import process as create_folia_xml_with_divisions
-from annotate_folia_file import annotate
-from sentence_divide_folia_divisions import process as sentence_divide_folia_divisions
+#from create_folia_xml_with_divisions import process as create_folia_xml_with_divisions
+#from annotate_folia_file import annotate
+#from sentence_divide_folia_divisions import process as sentence_divide_folia_divisions
+from annotate_folia_file_2 import annotate
+
 '''
 from tokenize_folia_file import process as tokenize_folia_file
 from pos_tag_folia_file import process as pos_tag_folia_file
@@ -15,11 +17,20 @@ import sys
 helper_path = os.path.join("..", "..", "utils")
 sys.path.insert(0, helper_path)
 import helper_mongo as h
+import corenlp
 
 
-from print_xml import pretty_print
 def process(data,id_,_id,shelf_mark):
+    
+    #data=' '.join([element['unit'] for element in data[0:5]])
+    
+    with corenlp.CoreNLPClient(annotators="tokenize ssplit pos lemma".split(),properties={'timeout': '50000'}) as client:
+        for element in data:
+            result=annotate(element['unit'],client)
+            print (result)
+            
     #try:
+    '''
     folia_xml_with_divisions=create_folia_xml_with_divisions(data,id_,shelf_mark,'1923','Budapest','Birkenau','M')
         
 
@@ -27,6 +38,7 @@ def process(data,id_,_id,shelf_mark):
        
     annotated_folia_xml=annotate(folia_xml_with_sentences)
     pdb.set_trace()
+    '''
 
     '''
 
@@ -63,7 +75,8 @@ def process(data,id_,_id,shelf_mark):
 
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
+    
     '''with open(os.getcwd()+'/data/input/sample_input.json') as json_data:
         sample_data = json.load(json_data) 
     result=process(sample_data,'some_id','some_id','some_shelf_mark')
@@ -80,13 +93,12 @@ if __name__ == "__main__":
     problematic_ids=[]
     #pos_tagger =pt.TreeTaggerComponent('en')
     results=h.query('let_them_speak_data_processing_test', 'output_ushmm_metadata', {'structured_transcript':{'$exists':True}}, {'testimony_id':1,'structured_transcript':1,'shelfmark':1} )   
-    pdb.set_trace()
-    for index,result in enumerate(results[0:1]):
-        print index
+    for index,result in enumerate(results[0:3]):
+        print (index)
         element=process(result['structured_transcript'],result['testimony_id'],result['_id'],result['shelfmark'])
         if element is not None:
             problematic_ids.append(element)
-    print problematic_ids
+    print (problematic_ids)
 
     '''
     #load the sample data

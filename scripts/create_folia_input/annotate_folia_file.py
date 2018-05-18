@@ -6,6 +6,12 @@ import xml.dom.minidom as xmlprint
 from stanfordcorenlp import StanfordCoreNLP
 from unidecode import unidecode
 from slugify import slugify
+import constants
+
+
+
+stanford_nlp=constants.STANFORD_CORE_NLP_JAR
+
 
 
 
@@ -63,7 +69,7 @@ def annotate(folia_doc):
 
 
     #Return the result in string
-   
+        
     return folia_doc
 
 

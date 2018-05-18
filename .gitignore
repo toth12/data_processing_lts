@@ -5,6 +5,7 @@
 *.pyc
 test*
 data/
+lib/
 __pycache__/
 __pycache__
 samples
