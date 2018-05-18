@@ -31,7 +31,7 @@ def process(data,id_,_id,shelf_mark,client):
         annotated_folia_xml=annotate(folia_xml_with_sentences,client)
         html_output=create_html_output(annotated_folia_xml)
         look_up_table=create_token_sentence_lookup(annotated_folia_xml,id_)
-        h.update_entry('let_them_speak_data_processing_test', 'output_ushmm_metadata',_id,{'html_transcript':html_output}) 
+        h.update_entry('let_them_speak_data_processing_test', 'testimonies',_id,{'html_transcript':html_output}) 
         h.insert('let_them_speak_data_processing_test', 'tokens',look_up_table)
 
         annotated_folia_xml.save(constants.FOLIA_OUTPUT_FOLDER+id_+'.xml')
@@ -63,13 +63,28 @@ def main():
         problematic_ids=[]
         
         results=h.query('let_them_speak_data_processing_test', 'testimonies', {'structured_transcript':{'$exists':True}}, {'testimony_id':1,'structured_transcript':1,'shelfmark':1} )   
-        for index,result in enumerate(results[0:10]):
+        
+        #results=h.aggregate('let_them_speak_data_processing_test', 'testimonies',     [{ '$sample': {'size': 10} }, { '$project' : {'testimony_id':1,'structured_transcript':1,'shelfmark':1} } ] )   
+
+        for index,result in enumerate(results[0:1]):
             
-            print (index)  
+            print (index)
+             
             element=process(result['structured_transcript'],result['testimony_id'],result['_id'],result['shelfmark'],client)
             if element is not None:
                 problematic_ids.append(element)
-    print (problematic_ids)
+    
+    print ("From the following shelfmarks a folia file could not be created; it is logged into: "+constants.FOLIA_PROCESSING_LOG_FOLDER)
+    
+    print('\n'.join(problematic_ids))
+
+    #write the missing files to text file
+    file = open(constants.FOLIA_PROCESSING_LOG_FOLDER+'unprocessed_shelfmarks.txt','w')
+    file.write('\n'.join(problematic_ids))
+
+    #unidecode.unidecode(text)
+    
+
 
     '''
     #load the sample data

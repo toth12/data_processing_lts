@@ -1,9 +1,9 @@
 import sys, os
 import pdb
-
 #set utils path
 helper_path = os.getcwd()+"/utils"
 sys.path.insert(0, helper_path)
+import helper_mongo as h
 
 #set constants path
 constants_path = os.getcwd()
@@ -52,7 +52,7 @@ def process_data():
  create_fortunoff_metadata.main()
  print ("The processing of Fortunoff metadata finished")
 
- #process USC transcripts
+ #process Fortunoff transcripts
  print ("The processing of Fortunoff transcripts has started")
  create_fortunoff_transcript_input.run()
  print ("The processing of Fortunoff transcripts has finished")
@@ -74,12 +74,23 @@ def process_data():
 
 
  #copy the three collections into one
-
+ '''
  os.system('mongo ' + DB + ' --eval "db.'+output_collection_fortunoff+'.copyTo(\'testimonies\')"')
  os.system('mongo ' + DB + ' --eval "db.'+output_collection_ushmm+'.copyTo(\'testimonies\')"')
  os.system('mongo ' + DB + ' --eval "db.'+output_collection_usc+'.copyTo(\'testimonies\')"')
- '''
+ 
  create_folia_input.main()
+
+ '''
+
+ #delete unprocessed entries
+
+ h.delete(db,'testimonies',{'html_transcript': { '$exists': False } })
+
+ '''
+ 
+ 
+
 
 
 
