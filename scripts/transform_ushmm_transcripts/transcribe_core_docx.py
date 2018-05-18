@@ -69,7 +69,8 @@ def createStructuredTranscriptDocx():
         units = getTextUnits(file)
        
         # get RG number
-        rg_number = file.split("_")[0]
+        original_filename = file.split('/')[-1]
+        rg_number=original_filename.split("_")[0]
 
         # find last occurrence of '.' and replace it with '*' 
         k = rg_number.rfind(".")
@@ -79,7 +80,7 @@ def createStructuredTranscriptDocx():
         h.update_field(DB, OUTPUT, "shelfmark", mongo_rg, "structured_transcript", units)
 
         # update status on the stracker
-        h.update_field(DB, TRACKER, "microsoft_doc_file", file, "status", "Processed")
+        h.update_field(DB, TRACKER, "microsoft_doc_file", original_filename, "status", "Processed")
         
     # success
     pprint.pprint("Core_docx_asset was successfully processed.")

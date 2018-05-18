@@ -256,7 +256,8 @@ def createStructuredTranscript_Non_Core_Doc():
 
         if units:
             # get RG number
-            rg_number = file.split("_")[0]
+            original_filename = file.split('/')[-1]
+            rg_number=original_filename.split("_")[0]
 
             # find last occurrence of '.' and replace it with '*' 
             k = rg_number.rfind(".")
@@ -265,7 +266,7 @@ def createStructuredTranscript_Non_Core_Doc():
             # insert units on the output collection
             h.update_field(DB, OUTPUT, "shelfmark", mongo_rg, "structured_transcript", units)
 
-            original_filename = file[:-1]
+            
             # update status on the stracker
             h.update_field(DB, TRACKER, "microsoft_doc_file", original_filename, "status", "Processed")
             h.update_field(DB, TRACKER, "microsoft_doc_file", original_filename, "extraction_method", "transcribe_non_core_doc")

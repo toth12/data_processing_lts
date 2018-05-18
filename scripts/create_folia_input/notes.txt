@@ -1,0 +1,3 @@
+query['irn47382']['26761']
+file:///Users/gmt28/Documents/Workspace/Docker_Engine/varad/Yale_Projects/shoah-foundation-data/scripts/create_folia_input/data/html_output/irn47382.html
+http://cuda.library.yale.edu:8082/blacklab-server-1.6.0/test_folia_data_3/hits?patt=%22Events%22
