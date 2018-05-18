@@ -4,7 +4,6 @@ from pynlpl.formats import folia
 import pdb
 from nltk.tokenize import word_tokenize
 import xml.dom.minidom as xmlprint
-import ucto
 from bs4 import BeautifulSoup
 
 

@@ -25,3 +25,5 @@ OUTPUT_FOLDER_USC_PROCESSING_LOGS = os.getcwd()+"/data/outputs/usc/processing_lo
 USHMM_TRACKER_COLLECTION = "USHMM_transcript_processing_progress_test"
 
 STANFORD_CORE_NLP_JAR=os.getcwd()+"/lib/stanford-corenlp-full-2018-02-27"
+
+FOLIA_OUTPUT_FOLDER=os.getcwd()+"/data/outputs/folia_output/"

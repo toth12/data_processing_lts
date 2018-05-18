@@ -25,8 +25,8 @@ INPUT_DATA='fortunoff-marc.xml'
 marc_xml_path = constants.INPUT_FOLDER_FORTUNOFF_METADATA+'fortunoff-marc.xml' # path to metadata xml
 db = constants.DB# the database name to use when saving results
 OUTPUT_COLLECTION = constants.OUTPUT_COLLECTION_FORTUNOFF
-max_records = 182 # max records to process (int|None)
-
+max_records = 4390 # max records to process (int|None)
+#complete number of records: 4390
 
 
 # marc fields to process

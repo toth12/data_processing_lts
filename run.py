@@ -25,6 +25,12 @@ from scripts.create_folia_input import run as create_folia_input
 
 DB = constants.DB
 
+output_collection_fortunoff=constants.OUTPUT_COLLECTION_FORTUNOFF
+output_collection_usc=constants.OUTPUT_COLLECTION_USC
+output_collection_ushmm=constants.OUTPUT_COLLECTION_USHMM
+
+
+
 def process_data():
  
  '''#create the empty let_them_data_processing database
@@ -64,8 +70,15 @@ def process_data():
  #test the output results
  print ("Testing of output has started; for a more detailed output run: python test_processing_outputs.py ")
  os.system('pytest test_processing_outputs.py')
- print ("Testing of output has finished")'''
+ print ("Testing of output has finished")
 
+
+ #copy the three collections into one
+
+ os.system('mongo ' + DB + ' --eval "db.'+output_collection_fortunoff+'.copyTo(\'testimonies\')"')
+ os.system('mongo ' + DB + ' --eval "db.'+output_collection_ushmm+'.copyTo(\'testimonies\')"')
+ os.system('mongo ' + DB + ' --eval "db.'+output_collection_usc+'.copyTo(\'testimonies\')"')
+ '''
  create_folia_input.main()
 
 

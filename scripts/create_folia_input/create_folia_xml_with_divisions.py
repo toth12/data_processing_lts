@@ -24,7 +24,6 @@ def process(units,testimony_id,shelf_mark,year,ghetto,camp,gender):
     #iterate through the input to create the folia division elements
 
     for unit in units:
-
         division=folia.Division(new_doc)
         division.settext(unit['unit'])
         text.add(division)

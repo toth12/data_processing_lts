@@ -16,7 +16,7 @@ stanford_nlp=constants.STANFORD_CORE_NLP_JAR
 
 
 
-def annotate(folia_doc):
+def annotate(folia_doc,client):
     """Takes a folia doc string, which is divided into div units, and splits the text of each unit into sentences, adds a unique id to each sentence 
 	with a prefix. Returns a new folia doc string which contains also sentence level division. For sentence tokenization it uses NLTK.
     :param folia_doc: folia xml containing division level segmentation
@@ -31,37 +31,38 @@ def annotate(folia_doc):
     #get the first level text
     text=folia_doc.select(folia.Text)
     sentence_id=1
-    nlp = StanfordCoreNLP('http://localhost', port=8090)
+    '''nlp = StanfordCoreNLP('http://localhost', port=8090)
     props={'annotators': 'tokenize, pos, lemma','pipelineLanguage':'en','outputFormat':'json'}
-
+    '''
     #get each sentence
     sentences=folia_doc.sentences()
     for sentence in sentences:
         #tokenize
         
         token_id=1
-        try:
-            result= json.loads(nlp.annotate(slugify(sentence.text()), properties=props))
-        except:
-            pdb.set_trace()
-        for token in result['sentences'][0]['tokens']:
+        
+        result= client.annotate(sentence.text())
+        
+        
+        for token in  result.sentence[0].token:
+            
             
             
             #create a new token
 
      #set the nospace attribute of each token           
-            if not token['after']==' ':
+            if not token.after==' ':
 
                 token_element=folia.Word(folia_doc,id=sentence.id+'_'+str(token_id),space=False)
             else:
                 token_element=folia.Word(folia_doc,id=sentence.id+'_'+str(token_id))
 
-            token_element.settext(unicode(token['word']))
+            token_element.settext(token.word)
 
             #annotate it
 
-            token_element.add(folia.PosAnnotation, set='brown-tagset',cls=token['pos'])
-            token_element.add(folia.LemmaAnnotation, set='treetagger',cls=token['lemma'])
+            token_element.add(folia.PosAnnotation, set='brown-tagset',cls=token.pos)
+            token_element.add(folia.LemmaAnnotation, set='treetagger',cls=token.pos)
 
             sentence.add(token_element)
 
