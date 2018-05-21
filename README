@@ -1,0 +1,80 @@
+# Let Them Speak Data Processing
+
+> Let Them Speak is a joint project by Gabor M. Toth and Yale Fortunoff Archive and DH Lab. It builds a data edition and text analysis tools to study testimonies of Holocaust survivors. Let Them Speak is empowered by a corpus engine (Blacklab) and a Mongo DB. (link to project rep) This repository is a collection of python scripts to transform two types of raw data (catalogue data and interview transcripts) into the input (link) of the engine and the DB. Raw data are provided by three institutions:
+
+> * Fortunoff Archive Yale University
+> * United States Holocaust Memorial Museums
+> * USC Shoah Foundation
+
+> Transformation of each data set is desribed in the README. (See /scripts/)
+
+
+## Operating System Requirements
+
+This project can be run on both Linux and Mac; but to process a few hundred raw transcripts in DOC, it uses Mac Os Text Utils. This process is skipped if the library is not available. 
+
+## Dependencies
+
+First you'll need to install a Mongo DB. 
+
+Linux:
+
+```bash
+sudo apt-get install mongo
+```
+
+Mac:
+
+```bash
+brew install mongo
+```
+
+Second you'll need to install the requirements:
+
+```bash
+pip install -r requirements
+```
+
+Then download Stanford Parser into lib:
+
+```bash
+
+```
+
+If your operating system is OS, check if ... is installed. 
+
+```bash
+
+```
+
+## Running the transformations
+
+Once the dependencies are settled, you can run all transformations in the main project folder by:
+
+```bash
+python run.py
+```
+
+That will start a pipeline of 2x3 transformations:
+
+> * transformation of catalogue data in various data formats (xls,marcXML,mongo collection dump) into the datamodel of the app 
+> * transformation of transcripts (in XML, plain text, PDF, DOC, DOCX) into annotated FOLIA XML
+
+The pipeline finishes with a test.
+
+## Input
+
+The input data is to be copied to data/input/{collectionsiglum}. Each input data is described in the README of folders for different transformations.
+
+## Output
+
+It is in data/output. The output of transformations is the input of the engine empowering Let Them Speak. First, it is two Mongo collections (see the model in ..) in /data/output/db/lts.archive:
+
+> * testimonies
+> * tokens
+
+Second, it is a collection of annotated folia files (see the model in..) in /data/output/folia/. 
+
+Third, the documents that could not be processed are in /data/output/logs.
+
+

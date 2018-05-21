@@ -1,6 +1,8 @@
-# Shoah Foundation Data
+# USHMM Metadata Transformation
 
-> A script to extract information from the USHM databse
+> A script to extract information from data provided by USHMM. It is a Mongo Collection gathered by downloading all testimonies that are transcribed and publicly available and then filtering them to find only the English ones. (archived as input_ushmm.json to be copied to data/inputs/ushmm/metadata).Some of the data set has been preprocessed manually (gender of interviwee, missing pieces of information in catalogue records, (interview year, video url, etc)), they are archived as (genderize_info.json,USHM_missing_records_Eliot.csv). The processing is done by including data from these two data files. The process is logged.
+> 
+> Second, interview transcripts in DOC, DOCX, PDF were either downloaded from USHMM's website or given by the collection curator (files in DOC and DOCX).
 
 ## File Documentation
 
@@ -18,7 +20,7 @@
 * **get\_videos.py**: helper functions related to the video extraction task, including generating the url for the given interview, retrieving thumbnails and scraping the HTML for any video or audio interviews (.mp3 or .mp4)
 * **sample**: a folder with sample documents of the undress_experiment collection and a result.txt that shows the resulting collection
 
-## Quickstart
+## Quickstart to run only these transformations
 
 * git clone https://github.com/YaleDHLab/shoah-foundation-data.git
 * cd scripts/create\_ushmm\_metadata
@@ -27,4 +29,4 @@
 
 ## Issues
 
-Report any issues to @gabrielsaruhashi
+Report any issues to @toth12

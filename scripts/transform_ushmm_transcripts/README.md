@@ -10,9 +10,11 @@
 
 ## Quickstart
 
+
 * git clone https://github.com/YaleDHLab/shoah-foundation-data.git
 * cd scripts/transform\_ushmm\_transcripts_to_structured_units
 * python run.py
+* 
 
 
 ## Issues

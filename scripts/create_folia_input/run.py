@@ -19,9 +19,12 @@ helper_path = os.path.join("..", "..", "utils")
 sys.path.insert(0, helper_path)
 import helper_mongo as h
 import corenlp
-os.environ["CORENLP_HOME"] = r'/Users/gmt28/Documents/Workspace/Docker_Engine/varad/Yale_Projects/shoah-foundation-data-restored/shoah-foundation-data/lib/stanford-corenlp-full-2018-02-27'
 import constants
 
+os.environ["CORENLP_HOME"] = constants.CORENLP_HOME
+
+
+DB=constants.DB
 
 def process(data,id_,_id,shelf_mark,client):
 
@@ -49,12 +52,6 @@ def main():
     
     
 
-
-    #get the id of those documents that has a structured_transcript field
-    #todo use constants here
-    #todo: work on a better parser
-    
-
     #start Stanford Parser in the background
 
     with corenlp.CoreNLPClient(annotators="tokenize ssplit pos lemma".split(),properties={'timeout': '50000'}) as client:
@@ -62,11 +59,11 @@ def main():
 
         problematic_ids=[]
         
-        results=h.query('let_them_speak_data_processing_test', 'testimonies', {'structured_transcript':{'$exists':True}}, {'testimony_id':1,'structured_transcript':1,'shelfmark':1} )   
+        #results=h.query(DB, 'testimonies', {'structured_transcript':{'$exists':True}}, {'testimony_id':1,'structured_transcript':1,'shelfmark':1} )   
         
-        #results=h.aggregate('let_them_speak_data_processing_test', 'testimonies',     [{ '$sample': {'size': 10} }, { '$project' : {'testimony_id':1,'structured_transcript':1,'shelfmark':1} } ] )   
+        results=h.aggregate('let_them_speak_data_processing_test', 'testimonies',     [{ '$sample': {'size': 10} }, { '$project' : {'testimony_id':1,'structured_transcript':1,'shelfmark':1} } ] )   
 
-        for index,result in enumerate(results[0:1]):
+        for index,result in enumerate(results):
             
             print (index)
              
@@ -86,11 +83,4 @@ def main():
     
 
 
-    '''
-    #load the sample data
     
-    with open(os.getcwd()+'/data/input/sample_input.json') as json_data:
-        sample_data = json.load(json_data)
-    process(sample_data,'some_id',pos_tagger,'someid','someshelfmark')
-
-    '''
