@@ -52,9 +52,9 @@ def main():
 
         problematic_ids=[]
         
-        results=h.query(DB, 'testimonies', {'structured_transcript':{'$exists':True}}, {'testimony_id':1,'structured_transcript':1,'shelfmark':1} )   
+        results=h.query(DB, 'testimonies', {'structured_transcript':{'$exists':True}}, {'testimony_id':1,'structured_transcript':1,'shelfmark':1,'collection':'1'} )   
         
-        #results=h.aggregate('let_them_speak_data_processing_test', 'testimonies',     [{ '$sample': {'size': 5} }, { '$project' : {'testimony_id':1,'structured_transcript':1,'shelfmark':1} } ] )   
+        #results=h.aggregate('let_them_speak_data_processing_test', 'testimonies',     [{ '$sample': {'size': 4} }, { '$project' : {'testimony_id':1,'structured_transcript':1,'shelfmark':1} } ] )   
 
         for index,result in enumerate(results):
             
@@ -62,7 +62,10 @@ def main():
              
             element=process(result['structured_transcript'],result['testimony_id'],result['_id'],result['shelfmark'],client)
             if element is not None:
+
                 problematic_ids.append(element)
+
+                
             
     
     print ("From the following shelfmarks a folia file could not be created; it is logged into: "+constants.FOLIA_PROCESSING_LOG_FOLDER)
@@ -73,7 +76,7 @@ def main():
     file = open(constants.FOLIA_PROCESSING_LOG_FOLDER+'unprocessed_shelfmarks.txt','w')
     file.write('\n'.join(problematic_ids))
 
-    #unidecode.unidecode(text)
+    
     
 
 

@@ -35,12 +35,12 @@ def process_data():
  
  #create the empty let_them_data_processing database
  '''os.system('mongo ' + DB + ' --eval "db.createCollection(\'test\')"')
- '''
+ 
  #transform USHMM catalogue data to app specific metadata
  print ("The processing of USHMM metadata has started")
  create_ushmm_metadata.main()
  print ("The processing of USHMM metadata finished")
- '''
+ 
  #process USHMM transcripts
  print ("The processing of USHMM transcripts has started")
  create_ushmm_transcript_input.main()
@@ -80,13 +80,14 @@ def process_data():
  os.system('mongo ' + DB + ' --eval "db.'+output_collection_fortunoff+'.copyTo(\'testimonies\')"')
  os.system('mongo ' + DB + ' --eval "db.'+output_collection_ushmm+'.copyTo(\'testimonies\')"')
  os.system('mongo ' + DB + ' --eval "db.'+output_collection_usc+'.copyTo(\'testimonies\')"')
-
+'''
+ #create the folia input
  create_folia_input.main()
 
 
+'''
 
-
- #delete unprocessed entries: /Users/gmt28/Documents/let-them-speak/server
+ #delete unprocessed entries
 
 
 
