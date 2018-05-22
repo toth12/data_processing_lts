@@ -5,13 +5,3 @@
 
 
 
-## Quickstart to run only this transformation
-
-* git clone https://github.com/YaleDHLab/shoah-foundation-data.git
-* cd scripts/create\_usc\_metadata
-* python run.py
-
-
-## Issues
-
-Report any issues to @toth12

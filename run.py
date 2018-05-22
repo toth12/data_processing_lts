@@ -28,13 +28,14 @@ DB = constants.DB
 output_collection_fortunoff=constants.OUTPUT_COLLECTION_FORTUNOFF
 output_collection_usc=constants.OUTPUT_COLLECTION_USC
 output_collection_ushmm=constants.OUTPUT_COLLECTION_USHMM
-
+output_folder_db=constants.OUTPUT_FOLDER_DB
+output_db=constants.OUTPUT_DB
 
 
 def process_data():
  
  #create the empty let_them_data_processing database
- '''os.system('mongo ' + DB + ' --eval "db.createCollection(\'test\')"')
+ os.system('mongo ' + DB + ' --eval "db.createCollection(\'test\')"')
  
  #transform USHMM catalogue data to app specific metadata
  print ("The processing of USHMM metadata has started")
@@ -80,12 +81,12 @@ def process_data():
  os.system('mongo ' + DB + ' --eval "db.'+output_collection_fortunoff+'.copyTo(\'testimonies\')"')
  os.system('mongo ' + DB + ' --eval "db.'+output_collection_ushmm+'.copyTo(\'testimonies\')"')
  os.system('mongo ' + DB + ' --eval "db.'+output_collection_usc+'.copyTo(\'testimonies\')"')
-'''
+
  #create the folia input
  create_folia_input.main()
 
 
-'''
+
 
  #delete unprocessed entries
 
@@ -99,13 +100,12 @@ def process_data():
  
  collections_to_delete=[constants.OUTPUT_COLLECTION_USHMM,constants.INPUT_COLLECTION_USHMM,constants.OUTPUT_COLLECTION_FORTUNOFF,constants.OUTPUT_COLLECTION_USC,constants.
 USHMM_TRACKER_COLLECTION,'test']
- output_db='lts'
  for collection in collections_to_delete:
  	os.system('mongo ' + output_db + ' --eval "db.'+collection+'.drop()"')
 
  #archive the output db
 
- os.system('mongodump --db=' + output_db + ' --archive=lts.archive')
+ os.system('mongodump --db=' + output_db + ' --archive='+output_folder_db+'lts.archive')
 
  #delete it for testing purposes
 
@@ -114,40 +114,6 @@ USHMM_TRACKER_COLLECTION,'test']
 
 
 
-
- #pdb.set_trace()
-
- #os.system('mongodump --db=' + DB + ' -c testimonies,tokens --archive=lts.archive')
- 
- 
-
- #delete unprocessed entries
-
- h.delete(db,'testimonies',{'html_transcript': { '$exists': False } })
-
- #delete lts testimonies
-
- os.system('mongodump ' + DB + ' -c testimonies,tokens --archive=lts.archive')
-
-
- '''
- 
- 
-
-
-
-
-
- 
- 
-
-
-
-
-
-
-
- 
 if __name__ == '__main__':
 	
 	process_data()

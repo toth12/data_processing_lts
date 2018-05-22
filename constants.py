@@ -20,7 +20,8 @@ DB = "let_them_speak_data_processing_test"
 OUTPUT_FOLDER_USHMM_PROCESSING_LOGS = os.getcwd()+"/data/outputs/ushmm/processing_logs/"
 OUTPUT_FOLDER_FORTUNOFF_PROCESSING_LOGS = os.getcwd()+"/data/outputs/fortunoff/processing_logs/"
 OUTPUT_FOLDER_USC_PROCESSING_LOGS = os.getcwd()+"/data/outputs/usc/processing_logs/"
-
+OUTPUT_FOLDER_DB=os.getcwd()+"/data/outputs/db/"
+OUTPUT_DB='lts'
 
 USHMM_TRACKER_COLLECTION = "USHMM_transcript_processing_progress_test"
 
@@ -31,3 +32,5 @@ FOLIA_OUTPUT_FOLDER=os.getcwd()+"/data/outputs/folia_output/"
 FOLIA_PROCESSING_LOG_FOLDER=os.getcwd()+"/data/outputs/folia_processing_log/"
 
 CORENLP_HOME=os.getcwd()+"/lib/stanford-corenlp/"
+
+
