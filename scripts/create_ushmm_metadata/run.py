@@ -9,7 +9,7 @@ from get_shelfmark import getShelfmark
 from get_provenance import getProvenance
 import get_videos as mediaExtraction
 import constants
-
+from text import transform_fields_with_non_latin_characters_to_latin
 import sys, os
 
 import helper_mongo as h
@@ -220,7 +220,8 @@ def main():
 
         if (not isinstance(document['recording_year'],int)) and (document['recording_year'] is not None):
             document['recording_year']=int(document['recording_year'])
-
+        document=transform_fields_with_non_latin_characters_to_latin([document])
+        
         h.insert(DB, OUTPUT_COLLECTION, document)
 
  

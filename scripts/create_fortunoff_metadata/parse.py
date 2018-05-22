@@ -2,7 +2,7 @@
 Transform the Marc XML from UC Riverside to JSON and save in Mongo
 '''
 
-from text import read
+from text import read,transform_fields_with_non_latin_characters_to_latin
 from api import save, config
 from marc import get_marc_fields
 from collections import defaultdict, Counter
@@ -13,6 +13,7 @@ import xmltodict
 import sys
 import json
 import constants
+import pdb
 
 ##
 # Globals
@@ -319,6 +320,9 @@ def main():
 
   # process records
   records = format_marc()
+  records=transform_fields_with_non_latin_characters_to_latin(records)
+
+  
   #save it to the DB
   save(records, OUTPUT_COLLECTION)
   

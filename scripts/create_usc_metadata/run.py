@@ -5,6 +5,8 @@ import csv
 import helper_mongo as h
 import codecs
 import constants
+from text import transform_fields_with_non_latin_characters_to_latin
+import codecs
 
 ##
 # Globals
@@ -23,7 +25,8 @@ def rename_usc_metadata_fields():
 	
 	#open the input file and make a python dictionary out of it
 
-	reader = csv.DictReader(open(INPUT_DATA, 'rb'))
+	f=codecs.open(INPUT_DATA, encoding='utf-8',errors='ignore')
+	reader = csv.DictReader(f)
 	data_with_renamed_fields=[]
 	for line in reader:
 		#change the fieldnames and build a new dictionary
@@ -45,7 +48,7 @@ def post_process_ghetto_names(names):
 		individual_names=names.strip().split(';')
 		for element in individual_names:
 			if len(element)>0:
-				name=element.split('(')[0].strip().decode('utf-8',errors='replace')
+				name=element.split('(')[0].strip()
 				result.append(name)
 	return result
 
@@ -55,7 +58,7 @@ def post_process_camp_names(names):
 		individual_names=names.strip().split(';')
 		for element in individual_names:
 			if 'Concentration Camp)' in element or 'Death Camp)' in element:
-				name=element.split('(')[0].strip().decode('utf-8',errors='replace')
+				name=element.split('(')[0].strip()
 				if len(name)>2:
 					result.append(name)
 	return result
@@ -72,10 +75,10 @@ def post_process_metadata(meta_data):
 		element['media_url']=[element['media_url']]
 		#provenance to be left empty
 		element['provenance']=''
-		element['interviewee_name']=element['interviewee_name'].decode('utf-8',errors='replace')
+		element['interviewee_name']=element['interviewee_name']
 		element['shelfmark']='USC Shoah '+element['testimony_id']
 		element['testimony_id']='usc_shoah_'+element['testimony_id']
-		element['testimony_title']='Oral history interview with '+element['testimony_title'].decode('utf-8',errors='replace')
+		element['testimony_title']='Oral history interview with '+element['testimony_title']
 
 		if element['gender']=='m':
 			element['gender']='male'
@@ -97,6 +100,9 @@ def main():
 
 	usc_metadata_renamed=rename_usc_metadata_fields()
 	usc_metadata_processed=post_process_metadata(usc_metadata_renamed)
+	pdb.set_trace()
+	usc_metadata_processed=transform_fields_with_non_latin_characters_to_latin(usc_metadata_processed)
 
+	pdb.set_trace()
 	#upload result
 	h.insert(db,OUTPUT_COLLECTION,usc_metadata_processed)

@@ -8,6 +8,10 @@ Text data helpers
 import json
 import codecs
 import regex as re
+import unidecode
+from six import string_types
+import pdb
+
 
 def read(path, codec):
   '''
@@ -125,3 +129,33 @@ def get_stopwords():
   '''
   with codecs.open('utils/data/stopwords.txt', 'r', 'utf8') as f:
     return set(f.read().split())
+
+def transform_fields_with_non_latin_characters_to_latin(records):
+  '''
+  Takes a python list of dictionaries and transliterates all values in the dictionary
+  @args:
+    {list} records: python list of dictionaries
+  @returns:
+    {dict} same dictionary with transliterated fields
+  '''
+  
+  for i,elements in enumerate(records):
+    
+    for element in elements:
+      if type(elements[element]) is list:
+        for f,d in enumerate(elements[element]):
+
+          records[i][element][f]=unidecode.unidecode(d)
+          
+      else:
+        if not ((type(records[i][element]) is int) or (records[i][element] is None)):
+          try:
+            records[i][element]=unidecode.unidecode(records[i][element])
+          except:
+            pdb.set_trace()
+  return records
+
+if __name__ == "__main__":
+  records=[{'ghetto_names':['Łódź'],'recording_year':1999,'camp_names':[],'name':''}]
+  expected_output=[{'ghetto_names':['Lodz'],'recording_year':1999,'camp_names':[],'name':''}]
+  print (transform_fields_with_non_latin_characters_to_latin(records))

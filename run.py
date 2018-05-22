@@ -34,13 +34,13 @@ output_collection_ushmm=constants.OUTPUT_COLLECTION_USHMM
 def process_data():
  
  #create the empty let_them_data_processing database
- os.system('mongo ' + DB + ' --eval "db.createCollection(\'test\')"')
- 
+ '''os.system('mongo ' + DB + ' --eval "db.createCollection(\'test\')"')
+ '''
  #transform USHMM catalogue data to app specific metadata
  print ("The processing of USHMM metadata has started")
  create_ushmm_metadata.main()
  print ("The processing of USHMM metadata finished")
- 
+ '''
  #process USHMM transcripts
  print ("The processing of USHMM transcripts has started")
  create_ushmm_transcript_input.main()
@@ -117,8 +117,8 @@ USHMM_TRACKER_COLLECTION,'test']
  #pdb.set_trace()
 
  #os.system('mongodump --db=' + DB + ' -c testimonies,tokens --archive=lts.archive')
-
- '''
+ 
+ 
 
  #delete unprocessed entries
 
