@@ -51,4 +51,4 @@ def find_sentence_id(fragment,folia_xml):
 
 		
 
-	return {'start_index':'s'+str(result_index[0]),'end_index':'s'+str(result_index[-1])}
+	return {'start_sentence_index':'s'+str(result_index[0]),'end_sentence_index':'s'+str(result_index[-1])}
