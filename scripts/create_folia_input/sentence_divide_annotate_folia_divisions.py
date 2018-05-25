@@ -51,7 +51,7 @@ def process(folia_doc,prefix,client):
 
                 #set the text for the sentence
                 
-                sentence_element.settext(corenlp.to_text(annotated_division.sentence[0]))
+                sentence_element.settext(corenlp.to_text(sentence))
                 token_id=1
                 for token in sentence.token:
 

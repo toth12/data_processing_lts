@@ -33,7 +33,7 @@ output_db=constants.OUTPUT_DB
 
 
 def process_data():
- 
+ '''
  #create the empty let_them_data_processing database
  os.system('mongo ' + DB + ' --eval "db.createCollection(\'test\')"')
  
@@ -81,7 +81,7 @@ def process_data():
  os.system('mongo ' + DB + ' --eval "db.'+output_collection_fortunoff+'.copyTo(\'testimonies\')"')
  os.system('mongo ' + DB + ' --eval "db.'+output_collection_ushmm+'.copyTo(\'testimonies\')"')
  os.system('mongo ' + DB + ' --eval "db.'+output_collection_usc+'.copyTo(\'testimonies\')"')
-
+'''
  #create the folia input
  create_folia_input.main()
 
@@ -90,7 +90,7 @@ def process_data():
 
  #delete unprocessed entries
 
-
+'''
 
  h.delete(DB,'testimonies',{'html_transcript': { '$exists': False } })
 
@@ -112,7 +112,7 @@ USHMM_TRACKER_COLLECTION,'test']
  os.system('mongo ' + output_db + ' --eval "db.dropDatabase()"')
  #create a new DB and copy everything to there
 
-
+'''
 
 if __name__ == '__main__':
 	
