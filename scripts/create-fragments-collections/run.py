@@ -8,13 +8,16 @@ constants_path = os.getcwd()
 sys.path.insert(0, constants_path)
 import constants
 from find_sentence_id import find_sentence_id as find_fragment
+from pynlpl.formats import folia
 
 
 ####Globals####
 
 input_fragment_gt=os.getcwd()+"/data/inputs/fragments/fragments_by_gt.csv"
 input_fragment_ec=os.getcwd()+"/data/inputs/fragments/fragments_by_ec.csv"
+input_fragment_manual_back_up=os.getcwd()+"/data/inputs/fragments/fragments_retrieved_manually.csv"
 log_folder=constants.OUTPUT_FOLDER_FRAGMENTS_PROCESSING_LOGS
+not_found=[]
 
 def read_csv(filename):
 	
@@ -51,25 +54,39 @@ def WriteDictToCSV(csv_file,csv_columns,dict_data):
     return           
 
 
-def find_fragment_position(records):
-	not_found=[]
-	for record in records:
+def find_fragment_position(records,back_up):
+	
+	for index,record in enumerate(records):
+		print '{number} / {processed}'.format(number=index,processed=len(records))
 		#check if the transcript already exist
 		transcript_file=constants.FOLIA_OUTPUT_FOLDER+record['ushmm_id']+'.xml'
 		if not os.path.exists(transcript_file):
 			record['transcript_file_available']=False
 			#set here the way Doug says
+			record['start_sentence_index']=None
+			record['end_sentence_index']=None
 		else:
 			#open the folia xml and try to locate the folia file
-
+			record['transcript_file_available']=True
 			folia_xml=folia.Document(file=transcript_file)
 			result=find_fragment(record['label_2'],folia_xml)
 			#check if it was possible to find the folia xml
+
 			if result is None:
-				#log it
-				not_found.append(record['fragment_identifier'])
-				record['start_sentence_index']=None
-				record['end_sentence_index']=None
+				
+				#try to locate it in the back up file
+				manual_info=[element for element in back_up if element['fragment_identifier'] == record['fragment_identifier']]
+				if len(manual_info)>0:
+					record['start_sentence_index']=manual_info[0]['start_sentence_index']
+					record['end_sentence_index']=manual_info[0]['end_sentence_index']
+				
+				else:
+				#if not there log it and set the value for 0
+				
+					not_found.append(record['fragment_identifier'])
+					#check in the back-up data 
+					record['start_sentence_index']=None
+					record['end_sentence_index']=None
 			else:
 				record['start_sentence_index']=result['start_sentence_index']
 				record['end_sentence_index']=result['end_sentence_index']
@@ -79,13 +96,14 @@ def find_fragment_position(records):
 if __name__ == '__main__':
 	fragments_gt=read_csv(input_fragment_gt)
 	fragments_ec=read_csv(input_fragment_ec)
+	fragments_back_up=read_csv(input_fragment_manual_back_up)
 	result=update_fragments(fragments_gt,fragments_ec)
 
 	#eliminate entries that are to be deleted
 
 	result_updated=[element for element in result if not (element['status'] == 'del')]
-
-	result_with_fragment_pos=find_fragment_position(result_updated)
+	print 'updating fragments finished'
+	result_with_fragment_pos=find_fragment_position(result_updated,fragments_back_up)
 
 	print ("The following fragments could not be found, and they are logged to "+log_folder)
 	
@@ -94,10 +112,9 @@ if __name__ == '__main__':
 	#write the missing files to text file
 	file = open(log_folder+'fragments_not_found.txt','w')
 	file.write('\n'.join(not_found))
-	pdb.set_trace()
+	
 
+	
 
-
-
-	WriteDictToCSV('fragments.csv',result[0].keys(),result_updated)
+	WriteDictToCSV('fragments_with_paragraph_info.csv',result_with_fragment_pos[0].keys(),result_with_fragment_pos)
 

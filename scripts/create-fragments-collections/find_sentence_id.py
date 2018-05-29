@@ -9,7 +9,7 @@ os.environ["CORENLP_HOME"] = constants.CORENLP_HOME
 
 def find_sentence_id(fragment,folia_xml):
 	#start a parser
-
+	
 	try:
 		folia_sentences=[element.text() for element in folia_xml.sentences()]
 		
