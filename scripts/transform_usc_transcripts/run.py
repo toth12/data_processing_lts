@@ -50,7 +50,7 @@ def run ():
 
 		#delete the unprocessed entries
 
-	h.delete(db,collection,{'structured_transcript': { '$exists': False } })
+	#h.delete(db,collection,{'structured_transcript': { '$exists': False } })
 	print ("The processing of the following shelfmarks was not possible, they are logged into: "+OUTPUT_FOLDER_USC_PROCESSING_LOGS)
 
 	print('\n'.join(not_processed_shelfmarks))

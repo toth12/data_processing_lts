@@ -52,7 +52,7 @@ def main():
 	createStructuredTranscript_Non_Core_Docx()
 
 	#delete those entries that were not yet processed
-	h.delete(db,collection,{'structured_transcript': { '$exists': False } })
+	#h.delete(db,collection,{'structured_transcript': { '$exists': False } })
 
 
 

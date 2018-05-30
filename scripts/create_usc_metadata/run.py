@@ -100,9 +100,9 @@ def main():
 
 	usc_metadata_renamed=rename_usc_metadata_fields()
 	usc_metadata_processed=post_process_metadata(usc_metadata_renamed)
-	pdb.set_trace()
+	
 	usc_metadata_processed=transform_fields_with_non_latin_characters_to_latin(usc_metadata_processed)
 
-	pdb.set_trace()
+	
 	#upload result
 	h.insert(db,OUTPUT_COLLECTION,usc_metadata_processed)

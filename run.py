@@ -19,6 +19,7 @@ from scripts.transform_fortunoff_transcripts import run as create_fortunoff_tran
 from scripts.create_usc_metadata import run as create_usc_metadata
 from scripts.transform_usc_transcripts import run as create_usc_transcripts
 from scripts.create_folia_input import run as create_folia_input
+from add_sample_transcript import add_sample_transcript
 
 
 ##Global Variables##
@@ -34,37 +35,37 @@ output_db=constants.OUTPUT_DB
 
 def process_data():
  
- '''
+ 
  #create the empty let_them_data_processing database
  os.system('mongo ' + DB + ' --eval "db.createCollection(\'test\')"')
  
- '''
+ 
  #transform USHMM catalogue data to app specific metadata
  print ("The processing of USHMM metadata has started")
  create_ushmm_metadata.main()
  print ("The processing of USHMM metadata finished")
- '''
+ 
  #process USHMM transcripts
  print ("The processing of USHMM transcripts has started")
  create_ushmm_transcript_input.main()
  print ("The processing of USHMM transcripts finished")
  
- '''
+ 
  #transform Fortunoff catalogue data to app specific metadata
  print ("The processing of Fortunoff metadata has started")
  create_fortunoff_metadata.main()
  print ("The processing of Fortunoff metadata finished")
- '''
+ 
  #process Fortunoff transcripts
  print ("The processing of Fortunoff transcripts has started")
  create_fortunoff_transcript_input.run()
  print ("The processing of Fortunoff transcripts has finished")
- '''
+ 
  #transform USC catalogue data to app specific metadata
  print ("The processing of USC metadata has started")
  create_usc_metadata.main()
  print ("The processing of USC metadata finished")
- '''
+ 
  #process USC transcripts
  print ("The processing of USC transcripts has started")
  create_usc_transcripts.run()
@@ -96,6 +97,14 @@ def process_data():
 
  h.delete(DB,'testimonies',{'html_transcript': { '$exists': False } })
 
+ 
+ #upload the unprocessed entries if necessary
+
+ add_sample_transcript()
+
+
+
+ #create a new DB and copy everything to there
 
 
  os.system('mongo ' + DB + ' --eval "db.copyDatabase(\'let_them_speak_data_processing_test\',\'lts\',\'localhost\')"')
@@ -114,9 +123,8 @@ USHMM_TRACKER_COLLECTION,'test']
  #delete it for testing purposes
 
  os.system('mongo ' + output_db + ' --eval "db.dropDatabase()"')
- #create a new DB and copy everything to there
 
-'''
+
 
 if __name__ == '__main__':
 	

@@ -117,7 +117,7 @@ def run ():
 		h.update_entry(db,collection,entry_id['_id'],{'structured_transcript':element[element.keys()[0]]})
 
 	#delete those entries that could not be processed
-	h.delete(db,collection,{'structured_transcript': { '$exists': False } })
+	#h.delete(db,collection,{'structured_transcript': { '$exists': False } })
 
 
 	print ("The processing of the following shelfmarks was not possible, they are logged into: "+OUTPUT_FOLDER_FORTUNOFF_PROCESSING_LOGS)
