@@ -22,6 +22,8 @@ OUTPUT_FOLDER_FORTUNOFF_PROCESSING_LOGS = os.getcwd()+"/data/outputs/fortunoff/p
 OUTPUT_FOLDER_USC_PROCESSING_LOGS = os.getcwd()+"/data/outputs/usc/processing_logs/"
 OUTPUT_FOLDER_DB=os.getcwd()+"/data/outputs/db/"
 OUTPUT_DB='lts'
+OUTPUT_FOLDER_FRAGMENTS_PROCESSING_LOGS=os.getcwd()+"/data/outputs/fragment_processing_logs/"
+OUTPUT_FOLDER_FRAGMENTS=os.getcwd()+"/data/outputs/fragments/"
 
 USHMM_TRACKER_COLLECTION = "USHMM_transcript_processing_progress_test"
 
