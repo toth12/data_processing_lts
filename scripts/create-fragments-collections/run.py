@@ -9,6 +9,14 @@ sys.path.insert(0, constants_path)
 import constants
 from find_sentence_id import find_sentence_id as find_fragment
 from pynlpl.formats import folia
+#set utils path
+helper_path = os.getcwd()+"/utils"
+sys.path.insert(0, helper_path)
+import helper_mongo as h
+
+DB = constants.DB
+
+
 
 
 ####Globals####
@@ -18,6 +26,7 @@ input_fragment_ec=os.getcwd()+"/data/inputs/fragments/fragments_by_ec.csv"
 input_fragment_manual_back_up=os.getcwd()+"/data/inputs/fragments/fragments_retrieved_manually.csv"
 log_folder=constants.OUTPUT_FOLDER_FRAGMENTS_PROCESSING_LOGS
 not_found=[]
+folia_file_not_available=[]
 
 def read_csv(filename):
 	
@@ -31,7 +40,7 @@ def update_fragments(to_be_updated,base_for_updating):
 	
 	for i,entry in enumerate(to_be_updated):
 		#check if we already know the time 
-		print len(str(entry['question_position']))	
+			
 	
 		if len(str(entry['question_position']))<4:
 			#if time is unknown check the time in the other file
@@ -65,31 +74,38 @@ def find_fragment_position(records,back_up):
 			#set here the way Doug says
 			record['start_sentence_index']=None
 			record['end_sentence_index']=None
+			folia_file_not_available.append(record['ushmm_id'])
 		else:
-			#open the folia xml and try to locate the folia file
-			record['transcript_file_available']=True
-			folia_xml=folia.Document(file=transcript_file)
-			result=find_fragment(record['label_2'],folia_xml)
-			#check if it was possible to find the folia xml
+		#first try with the manual file
+			manual_info=[element for element in back_up if element['fragment_identifier'] == record['fragment_identifier']]
 
-			if result is None:
-				
+			if len(manual_info)>0:
+				record['start_sentence_index']=manual_info[0]['start_sentence_index']
+				record['end_sentence_index']=manual_info[0]['end_sentence_index']
+			else:
+				#open the folia xml and try to locate the folia file
+				record['transcript_file_available']=True
+				folia_xml=folia.Document(file=transcript_file)
+
 				#try to locate it in the back up file
-				manual_info=[element for element in back_up if element['fragment_identifier'] == record['fragment_identifier']]
-				if len(manual_info)>0:
-					record['start_sentence_index']=manual_info[0]['start_sentence_index']
-					record['end_sentence_index']=manual_info[0]['end_sentence_index']
-				
-				else:
-				#if not there log it and set the value for 0
-				
-					not_found.append(record['fragment_identifier'])
-					#check in the back-up data 
+				result=find_fragment(record['label_2'],folia_xml)
+				#check if it was possible to find the folia xml
+
+				if result is None:
+					
+					not_found.append(record['fragment_identifier']+' | '+record['ushmm_id'])
+					#change the transcript in the testimonies collection to the sample output
+					query=h.query(DB, 'testimonies', {'testimony_id':record['ushmm_id']},{'_id':1,'html_transcript':1})
+					sample_html='<html><body><p>This transcript is not yet available</p></body></html>'
+					h.update_entry(DB,'testimonies',query[0]['_id'],{'html_transcript':sample_html})
+
+					
+
 					record['start_sentence_index']=None
 					record['end_sentence_index']=None
-			else:
-				record['start_sentence_index']=result['start_sentence_index']
-				record['end_sentence_index']=result['end_sentence_index']
+				else:
+					record['start_sentence_index']=result['start_sentence_index']
+					record['end_sentence_index']=result['end_sentence_index']
 	return records
 		
 
@@ -113,6 +129,14 @@ if __name__ == '__main__':
 	file = open(log_folder+'fragments_not_found.txt','w')
 	file.write('\n'.join(not_found))
 	
+
+	print ("The following fragments could not be found, and they are logged to "+log_folder)
+	
+	print('\n'.join(not_found))
+
+	#write the missing files to text file
+	file = open(log_folder+'fragments_not_found.txt','w')
+	file.write('\n'.join(not_found))
 
 	
 
