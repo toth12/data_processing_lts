@@ -24,6 +24,7 @@ DB = constants.DB
 input_fragment_gt=os.getcwd()+"/data/inputs/fragments/fragments_by_gt.csv"
 input_fragment_ec=os.getcwd()+"/data/inputs/fragments/fragments_by_ec.csv"
 input_fragment_manual_back_up=os.getcwd()+"/data/inputs/fragments/fragments_retrieved_manually.csv"
+
 log_folder=constants.OUTPUT_FOLDER_FRAGMENTS_PROCESSING_LOGS
 not_found=[]
 folia_file_not_available=[]
@@ -130,15 +131,15 @@ if __name__ == '__main__':
 	file.write('\n'.join(not_found))
 	
 
-	print ("The following fragments could not be found, and they are logged to "+log_folder)
+	print ("The following folia files were missing, and they are logged in "+log_folder)
 	
-	print('\n'.join(not_found))
+	print('\n'.join(folia_file_not_available))
 
 	#write the missing files to text file
-	file = open(log_folder+'fragments_not_found.txt','w')
-	file.write('\n'.join(not_found))
+	file = open(log_folder+'folia_files_not_found.txt','w')
+	file.write('\n'.join(folia_file_not_available))
 
 	
 
-	WriteDictToCSV('fragments_with_paragraph_info.csv',result_with_fragment_pos[0].keys(),result_with_fragment_pos)
+	WriteDictToCSV(constants.OUTPUT_FOLDER_FRAGMENTS+'fragments_with_paragraph_info.csv',result_with_fragment_pos[0].keys(),result_with_fragment_pos)
 
