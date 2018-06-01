@@ -11,6 +11,7 @@ sys.path.insert(0, constants_path)
 import constants
 
 
+
 #import project specific scripts
 from scripts.create_ushmm_metadata import run as create_ushmm_metadata
 from scripts.transform_ushmm_transcripts import run as create_ushmm_transcript_input
@@ -20,6 +21,7 @@ from scripts.create_usc_metadata import run as create_usc_metadata
 from scripts.transform_usc_transcripts import run as create_usc_transcripts
 from scripts.create_folia_input import run as create_folia_input
 from add_sample_transcript import add_sample_transcript
+from scripts.create_fragments_collection import run as create_fragments_collection
 
 
 ##Global Variables##
@@ -90,39 +92,76 @@ def process_data():
 
 
 
-
- #delete unprocessed entries
-
-
+ pdb.set_trace() #check what is going on here -> the count of them should be the same amount as the count at the end of add sample transcript
+ #delete entries that could not be processed by folia
 
  h.delete(DB,'testimonies',{'html_transcript': { '$exists': False } })
 
+ #delete entries where transformation to structured_transcript was not possible
+ h.delete(DB,'testimonies',{'structured_transcript': { '$exists': False } })
+
+#perhaps these entries are to be logged
+
  
- #upload the unprocessed entries if necessary
+ #upload sample text to the unprocessed entries if necessary and update their status to transcript_unprocessed
 
  add_sample_transcript()
+
+ #add a status transcript_processed to processed entries 
+ 
+ results=h.query(DB, 'testimonies', {'status': { '$exists': False } },{'_id':1})
+ for result in results:
+ 		#update the status
+ 		status={'status':'transcript_processed'}
+ 		h.update_entry(DB,'testimonies',result['_id'],status)
+
+
+ 		
+
+
+
+
+#find fragments
+
+ create_fragments_collection.main()
 
 
 
  #create a new DB and copy everything to there
 
 
- os.system('mongo ' + DB + ' --eval "db.copyDatabase(\'let_them_speak_data_processing_test\',\'lts\',\'localhost\')"')
+ os.system('mongo ' + DB + ' --eval "db.copyDatabase(\''+DB+'\',\''+output_db+'\',\'localhost\')"')
 
 #delete the unnecessary collections from the final result
  
  collections_to_delete=[constants.OUTPUT_COLLECTION_USHMM,constants.INPUT_COLLECTION_USHMM,constants.OUTPUT_COLLECTION_FORTUNOFF,constants.OUTPUT_COLLECTION_USC,constants.
-USHMM_TRACKER_COLLECTION,'test']
+ USHMM_TRACKER_COLLECTION,'test']
  for collection in collections_to_delete:
  	os.system('mongo ' + output_db + ' --eval "db.'+collection+'.drop()"')
+
+#add the fragment collection to it
+
+ os.system('mongoimport -d ' + output_db + ' -c fragments --file data/outputs/fragments/fragments_post_processed.json --jsonArray')
 
  #archive the output db
 
  os.system('mongodump --db=' + output_db + ' --archive='+output_folder_db+'lts.archive')
 
- #delete it for testing purposes
+ #delete it from the host system
 
  os.system('mongo ' + output_db + ' --eval "db.dropDatabase()"')
+
+ #zip the folia files
+ os.system('zip -r -j data/outputs/folia_output/folia.zip data/outputs/folia_output/*')
+
+ #upload the data to amazon server
+
+ print 'upload data to amazon servers'
+
+ os.system('aws s3 cp data/outputs/folia_output/folia.zip s3://lab-secrets/let-them-speak/a --profile lab-secrets')
+
+ os.system('aws s3 cp data/outputs/db/lts.archive s3://lab-secrets/let-them-speak/a --profile lab-secrets')
+
 
 
 

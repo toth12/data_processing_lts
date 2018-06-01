@@ -100,7 +100,12 @@ def find_fragment_position(records,back_up):
 					sample_html='<html><body><p>This transcript is not yet available</p></body></html>'
 					h.update_entry(DB,'testimonies',query[0]['_id'],{'html_transcript':sample_html})
 
+					#change the status of the transcript in the testimony collection
+					h.update_entry(DB,'testimonies',query[0]['_id'],{'status':'transcript_unprocessed'})
 					
+					#delete the folia file as it should not go into the system
+
+					os.remove(transcript_file)
 
 					record['start_sentence_index']=None
 					record['end_sentence_index']=None
@@ -110,7 +115,7 @@ def find_fragment_position(records,back_up):
 	return records
 		
 
-if __name__ == '__main__':
+def main():
 	fragments_gt=read_csv(input_fragment_gt)
 	fragments_ec=read_csv(input_fragment_ec)
 	fragments_back_up=read_csv(input_fragment_manual_back_up)

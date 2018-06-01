@@ -42,9 +42,11 @@ def add_sample_transcript():
  		#check if already in the testimonies collection
  		testimonies=h.query(DB,'testimonies',{'testimony_id':result['testimony_id']},{})
  		if len(testimonies)==0:
- 			
  			result['html_transcript']='<html><body><p>This transcript is not yet available</p></body></html>'
+ 			result['status']='transcript_unprocessed'
  			h.insert(DB,'testimonies',result)
+
+ 
 
 
  
