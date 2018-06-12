@@ -24,6 +24,8 @@ OUTPUT_FOLDER_DB=os.getcwd()+"/data/outputs/db/"
 OUTPUT_DB='lts'
 OUTPUT_FOLDER_FRAGMENTS_PROCESSING_LOGS=os.getcwd()+"/data/outputs/fragment_processing_logs/"
 OUTPUT_FOLDER_FRAGMENTS=os.getcwd()+"/data/outputs/fragments/"
+OUTPUT_FOLDER_FOR_QUALITY_CONTROL=os.getcwd()+"/data/outputs/collections_for_quality_control/"
+
 
 USHMM_TRACKER_COLLECTION = "USHMM_transcript_processing_progress_test"
 
@@ -34,5 +36,7 @@ FOLIA_OUTPUT_FOLDER=os.getcwd()+"/data/outputs/folia_output/"
 FOLIA_PROCESSING_LOG_FOLDER=os.getcwd()+"/data/outputs/folia_processing_log/"
 
 CORENLP_HOME=os.getcwd()+"/lib/stanford-corenlp/"
+
+
 
 

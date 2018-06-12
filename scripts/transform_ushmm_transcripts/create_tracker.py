@@ -2,10 +2,16 @@ from pymongo import MongoClient
 import pprint
 import sys, glob, os
 import constants
-helper_path = os.path.join("..", "..", "utils")
-sys.path.insert(0, helper_path)
-import helper_mongo as h
 import pdb
+#helper_path = os.path.join("..", "..", "utils")
+#sys.path.insert(0, helper_path)
+
+
+
+import helper_mongo as h
+
+
+
 
 
 
@@ -25,15 +31,15 @@ def getDocs():
     docs = dict()
     for file in glob.glob(INPUT_FOLDER+"*"):
         # get RG number
-        rg_number = file.split("_")[0]
+        rg_number = file.split('/')[-1].split("_")[0]
 
         # find last occurrence of '.' and replace it with '*' 
         k = rg_number.rfind(".")
         mongo_rg = rg_number[:k] + "*" + rg_number[k+1:]
 
         # add it to dictionary
-        docs[mongo_rg] = file
-
+        docs[mongo_rg] = file.split('/')[-1]
+        
     # return
     return docs
 
@@ -54,10 +60,13 @@ def createTracker():
         # populate document
         document['id'] = interview['id']
         document['rg_number'] = rg_number
-        document['pdf_transcripts'] = interview['fnd_doc_filename']
+
+        #filter pdfs files and only those that are in fact transcripts
+        document['pdf_transcripts'] = [element for element in interview['fnd_doc_filename'] if 'trs' in element ]
+        
         document['microsoft_doc_file'] = docs.get(rg_number, "")
         document['status'] = INITIAL_STATUS
-
+        
          # insert document in tracker
         h.insert(DB, TRACKER, document)
 
