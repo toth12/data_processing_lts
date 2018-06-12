@@ -29,6 +29,7 @@ def getDocs():
     file name
     """
     docs = dict()
+    double_transcripts=0
     for file in glob.glob(INPUT_FOLDER+"*"):
         # get RG number
         rg_number = file.split('/')[-1].split("_")[0]
@@ -37,9 +38,16 @@ def getDocs():
         k = rg_number.rfind(".")
         mongo_rg = rg_number[:k] + "*" + rg_number[k+1:]
 
+
         # add it to dictionary
-        docs[mongo_rg] = file.split('/')[-1]
+
+        if mongo_rg in docs.keys():
+            docs[mongo_rg].append(file.split('/')[-1])
+        else:
+            docs[mongo_rg] = [file.split('/')[-1]]
         
+        
+     
     # return
     return docs
 
