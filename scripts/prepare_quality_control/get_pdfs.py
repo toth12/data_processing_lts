@@ -68,15 +68,14 @@ if __name__ == '__main__':
 	os.system('mongo ' + output_db + ' --eval "db.testimonies.find({\'collection\':\'USHMM\',\'status\':\'transcript_processed\'}).forEach(function(doc){db.testimonies_for_quality_control.insert(doc);});"')
 
 	
-	#db.testimonies.find({'collection':'USHMM','status':'transcript_processed'}).forEach(function(doc){db.testimonies_for_quality_control.insert(doc);});
 	
 	add_pdf_files()
 
 	create_csv_file()
 
 	#dump the collection
-
-	os.system('mongodump --db=' + output_db + '--collection=testimonies_for_quality_control --archive='+output_folder+'testimonies_for_quality_control.archive')
+	
+	os.system('mongodump --db=' + output_db + ' --collection=testimonies_for_quality_control -o '+output_folder)
 
 	#delete the collection
 

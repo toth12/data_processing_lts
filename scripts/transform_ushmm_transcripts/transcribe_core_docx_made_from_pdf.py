@@ -11,7 +11,7 @@ import pdb
 TRACKER = constants.USHMM_TRACKER_COLLECTION
 OUTPUT = constants.OUTPUT_COLLECTION_USHMM
 DB = constants.DB
-INPUT_FOLDER=constants.INPUT_FOLDER_USHMM_TRANSCRIPTS_DOC
+INPUT_FOLDER=constants.INPUT_FOLDER_USHMM_TRANSCRIPTS_PDF_TRANSFORMED_TO_DOCS
 
 def getTextUnits(filename):
     doc = Document(filename)
@@ -58,36 +58,38 @@ def createStructuredTranscriptDoc():
     Processes the 509 doc files beloging to the core asset in data
     Core asset is identified by numbers RG-50.030, RG-50.106, RG-50.549
     """
-    #create a temporary folder that will hold the data transformed from doc to docx
-    os.system('mkdir ' + INPUT_FOLDER+'temp')
-
+    
 
     core_doc_asset = []
 
     # get all the docx files that are part of the core asset
-    for file in glob.glob(INPUT_FOLDER+"*.doc"):
-
+    for file in glob.glob(INPUT_FOLDER+"*.docx"):
         # RG numbers for the core asset
         if ("RG-50.030" in file or
+            #this is questionable
             "RG-50.106" in file or
             "RG-50.549" in file):
 
-            # convert file to docx, storing it in an untracked folder called temp
-            file_docx = file + 'x'
-            command = 'textutil -convert docx ' + file + ' -output ' + INPUT_FOLDER+'temp/'+ file_docx.split('/')[-1] 
             
-            call(command, shell=True)
             
             # append to the array
-            core_doc_asset.append(file_docx)
+            core_doc_asset.append(file)
 
     
 
     # get the units for each file, store them and update tracker
+    not_processed=0
     for file in core_doc_asset:
-        # get text units for this entry
-        units = getTextUnits(INPUT_FOLDER+'temp/'+file.split('/')[-1])
+        
 
+
+
+
+
+
+        # get text units for this entry
+        units = getTextUnits(file)
+        pdb.set_trace()
         if units:
             # get RG number
             original_filename = file.split('/')[-1]
@@ -98,27 +100,28 @@ def createStructuredTranscriptDoc():
             mongo_rg = rg_number[:k] + "*" + rg_number[k+1:]
 
             # insert units on the output collection
-            h.update_field(DB, OUTPUT, "shelfmark", mongo_rg, "structured_transcript", units)
+            #h.update_field(DB, OUTPUT, "shelfmark", mongo_rg, "structured_transcript", units)
 
-            
+            pdb.set_trace()
             # update status on the stracker
             
-            h.update_field(DB, TRACKER, "microsoft_doc_file", original_filename, "status", "Processed")
+            #h.update_field(DB, TRACKER, "microsoft_doc_file", original_filename, "status", "Processed")
+        
 
-    #delete the temporary folder
-    os.system('rm -r ' + INPUT_FOLDER+'temp')
+        else:
+            #update field to not processed here
+            not_processed=not_processed+1
 
+    
 
+    pdb.set_trace()
     # success
     pprint.pprint("Core_doc_asset was successfully processed.")
 
 if __name__ == "__main__":
     createStructuredTranscriptDoc()
 
-    files=['RG-50.030.0281_trs_en.docx','RG-50.030.0333_trs_en.docx','RG-50.030.0394_trs_en.docx']
-    for element in files:
-        result=getTextUnits(element)
-        pdb.set_trace()
+   
 
     #getTextUnits()
     """

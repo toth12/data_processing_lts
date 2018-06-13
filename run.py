@@ -37,7 +37,7 @@ output_db=constants.OUTPUT_DB
 
 def process_data():
  
- 
+ '''
  #create the empty let_them_data_processing database
  os.system('mongo ' + DB + ' --eval "db.createCollection(\'test\')"')
  
@@ -157,10 +157,10 @@ def process_data():
  #upload the data to amazon server
 
  print 'upload data to amazon servers'
+'''
+ os.system('aws s3 cp data/outputs/folia_output/folia.zip s3://lab-secrets/let-them-speak/folia.zip --profile lab-secrets')
 
- os.system('aws s3 cp data/outputs/folia_output/folia.zip s3://lab-secrets/let-them-speak/a --profile lab-secrets')
-
- os.system('aws s3 cp data/outputs/db/lts.archive s3://lab-secrets/let-them-speak/a --profile lab-secrets')
+ os.system('aws s3 cp data/outputs/db/lts.archive s3://lab-secrets/let-them-speak/lts.archive --profile lab-secrets')
 
 
 
