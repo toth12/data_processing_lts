@@ -73,6 +73,7 @@ def createTracker():
         document['pdf_transcripts'] = [element for element in interview['fnd_doc_filename'] if 'trs' in element ]
         
         document['microsoft_doc_file'] = docs.get(rg_number, "")
+        
         document['status'] = INITIAL_STATUS
         
          # insert document in tracker

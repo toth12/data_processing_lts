@@ -29,8 +29,8 @@ from scripts.transform_ushmm_transcripts import create_tracker
 
 #added
 from scripts.transform_ushmm_transcripts import transcribe_core_docx_made_from_pdf
-from scripts.transform_ushmm_transcripts import transcribe_non_core_docx_made_from_pdf    
-
+from scripts.transform_ushmm_transcripts import transcribe_non_core_docx_made_from_pdf
+from scripts.transform_ushmm_transcripts import transcribe_core_docx    
 ##Global Variables##
 
 DB = constants.DB
@@ -47,7 +47,10 @@ TRACKER = constants.USHMM_TRACKER_COLLECTION
 def process_data():
  
 	transcribe_core_docx_made_from_pdf.createStructuredTranscriptDoc() 
-	#transcribe_non_core_docx_made_from_pdf.createStructuredTranscriptDoc() 
+	#transcribe_non_core_docx_made_from_pdf.createStructuredTranscriptDoc()
+	#transcribe_core_docx.createStructuredTranscriptDocx()
+
+
 
 if __name__ == '__main__':
 	

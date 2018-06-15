@@ -19,11 +19,11 @@ os.environ["CORENLP_HOME"] = constants.CORENLP_HOME
 
 DB=constants.DB
 
-def process(data,id_,_id,shelf_mark,client):
+def process(data,id_,_id,shelf_mark):
 
     try:
         folia_xml_with_divisions=create_folia_xml_with_divisions(data,id_,shelf_mark,'1923','Budapest','Birkenau','M')
-        annotated_folia_xml=sentence_divide_annotate_folia_divisions(folia_xml_with_divisions,'s',client)
+        annotated_folia_xml=sentence_divide_annotate_folia_divisions(folia_xml_with_divisions,'s')
         html_output=create_html_output(annotated_folia_xml)
         look_up_table=create_token_sentence_lookup(annotated_folia_xml,id_)
         h.update_entry('let_them_speak_data_processing_test', 'testimonies',_id,{'html_transcript':html_output}) 
@@ -47,23 +47,23 @@ def main():
 
     #start Stanford Parser in the background
 
-    with corenlp.CoreNLPClient(annotators="tokenize ssplit pos lemma".split(),properties={'timeout': '50000'}) as client:
+    
 
 
-        problematic_ids=[]
+    problematic_ids=[]
+    
+    results=h.query(DB, 'testimonies', {'structured_transcript':{'$exists':True}}, {'testimony_id':1,'structured_transcript':1,'shelfmark':1,'collection':'1'} )   
+    
+    #results=h.aggregate('let_them_speak_data_processing_test', 'testimonies',     [{ '$sample': {'size': 4} }, { '$project' : {'testimony_id':1,'structured_transcript':1,'shelfmark':1} } ] )   
+
+    for index,result in enumerate(results):
         
-        results=h.query(DB, 'testimonies', {'structured_transcript':{'$exists':True}}, {'testimony_id':1,'structured_transcript':1,'shelfmark':1,'collection':'1'} )   
         
-        #results=h.aggregate('let_them_speak_data_processing_test', 'testimonies',     [{ '$sample': {'size': 4} }, { '$project' : {'testimony_id':1,'structured_transcript':1,'shelfmark':1} } ] )   
+         
+        element=process(result['structured_transcript'],result['testimony_id'],result['_id'],result['shelfmark'])
+        if element is not None:
 
-        for index,result in enumerate(results):
-            
-            
-             
-            element=process(result['structured_transcript'],result['testimony_id'],result['_id'],result['shelfmark'],client)
-            if element is not None:
-
-                problematic_ids.append(element)
+            problematic_ids.append(element)
 
                 
             
@@ -71,10 +71,12 @@ def main():
     print ("From the following shelfmarks a folia file could not be created; it is logged into: "+constants.FOLIA_PROCESSING_LOG_FOLDER)
     
     print('\n'.join(problematic_ids))
-
+    '''
     #write the missing files to text file
     file = open(constants.FOLIA_PROCESSING_LOG_FOLDER+'unprocessed_shelfmarks.txt','w')
     file.write('\n'.join(problematic_ids))
+
+    '''
 
     
     

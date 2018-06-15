@@ -1,5 +1,5 @@
 import sys, glob, os
-#import helper_mongo as h
+import helper_mongo as h
 from docx import Document
 from subprocess import call
 
@@ -9,7 +9,7 @@ import re
 import pdb
 
 TRACKER = constants.USHMM_TRACKER_COLLECTION
-OUTPUT = constants.OUTPUT_COLLECTION_USHMM
+OUTPUT = 'testimonies'
 DB = constants.DB
 INPUT_FOLDER=constants.INPUT_FOLDER_USHMM_TRANSCRIPTS_PDF_TRANSFORMED_TO_DOCS
 
@@ -53,6 +53,30 @@ def getTextUnits(filename):
 
     return units
 
+
+
+
+def create_dictionary_of_file_list(filelist):
+    result={}
+    for file in filelist:
+        original_filename = file.split('/')[-1]
+        rg_number=original_filename.split("_")[0]
+
+        # find last occurrence of '.' and replace it with '*' 
+        k = rg_number.rfind(".")
+        mongo_rg = rg_number[:k] + "*" + rg_number[k+1:]
+
+        #check if already in the list
+
+        if mongo_rg not in result.keys():
+            result[mongo_rg]=[file]
+        else:
+            pdb.set_trace()
+            result[mongo_rg].append(file)
+
+
+    return result
+
 def createStructuredTranscriptDoc():
     """
     Processes the 509 doc files beloging to the core asset in data
@@ -79,42 +103,48 @@ def createStructuredTranscriptDoc():
 
     # get the units for each file, store them and update tracker
     not_processed=0
-    for file in core_doc_asset:
-        
+    processed_doc=0
 
 
 
-
-
-
+    core_doc_asset=create_dictionary_of_file_list(core_doc_asset)
+    
+    for mongo_rg in core_doc_asset:
         # get text units for this entry
-        units = getTextUnits(file)
-        pdb.set_trace()
-        if units:
-            # get RG number
-            original_filename = file.split('/')[-1]
-            rg_number=original_filename.split("_")[0]
-
-            # find last occurrence of '.' and replace it with '*' 
-            k = rg_number.rfind(".")
-            mongo_rg = rg_number[:k] + "*" + rg_number[k+1:]
-
-            # insert units on the output collection
-            #h.update_field(DB, OUTPUT, "shelfmark", mongo_rg, "structured_transcript", units)
-
-            pdb.set_trace()
-            # update status on the stracker
-            
-            #h.update_field(DB, TRACKER, "microsoft_doc_file", original_filename, "status", "Processed")
+        processed=[]
+        result=[]
         
+        for file in core_doc_asset[mongo_rg]:
 
-        else:
-            #update field to not processed here
+            if ("RG-50.583" in file):
+                units=getUnstructured50_583Units(file)
+            else:
+                units = getTextUnits(file)
+            
+            if units:
+                result.extend(units)
+            
+                processed.append(True)
+            else:
+                #check if processed
+                processed.append(False)
+
+        if False in processed:
+            #h.update_field(DB, TRACKER, "microsoft_doc_file", original_filename, "status", "Unprocessed")
             not_processed=not_processed+1
+        else:
+            # insert units on the output collection
+            h.update_field(DB, OUTPUT, "shelfmark", mongo_rg, "structured_transcript", result)
+
+                
+            # update status on the stracker
+                
+            #h.update_field(DB, TRACKER, "rg_number", mongo_rg, "status", "Processed")
+            processed_doc=processed_doc+1
 
     
 
-    pdb.set_trace()
+    
     # success
     pprint.pprint("Core_doc_asset was successfully processed.")
 

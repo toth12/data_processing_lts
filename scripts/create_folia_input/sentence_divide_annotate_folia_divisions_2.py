@@ -16,7 +16,7 @@ from utils import stanford_parser
 
 def process(folia_doc,prefix):
     """Takes a folia doc string, which is divided into div units, and splits the text of each unit into sentences, adds a unique id to each sentence 
-    with a prefix. Returns a new folia doc string which contains also sentence level division. For sentence tokenization it uses NLTK.
+	with a prefix. Returns a new folia doc string which contains also sentence level division. For sentence tokenization it uses NLTK.
     :param folia_doc: folia xml containing division level segmentation
     :param prefix: prefix to be used when adding a unique id to each sentence
     :return: folia xml with division and sentence segmentation
@@ -41,7 +41,7 @@ def process(folia_doc,prefix):
 
             for sentence in annotated_division['sentences']:
               
-        #create a sentence element               
+		#create a sentence element               
                 if len(sentence_index)==1:
                     sentence_element=folia.Sentence(folia_doc,id='s'+str(sentence_index[0]))
                     sentence_index.append(2)
