@@ -1,5 +1,5 @@
 import sys, glob, os
-#import helper_mongo as h
+import helper_mongo as h
 from docx import Document
 from subprocess import call
 

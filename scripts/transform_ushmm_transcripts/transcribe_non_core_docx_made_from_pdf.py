@@ -9,7 +9,7 @@ import re
 import pdb
 
 TRACKER = constants.USHMM_TRACKER_COLLECTION
-OUTPUT = 'testimonies'
+OUTPUT = constants.OUTPUT_COLLECTION_USHMM
 DB = constants.DB
 INPUT_FOLDER=constants.INPUT_FOLDER_USHMM_TRANSCRIPTS_PDF_TRANSFORMED_TO_DOCS
 
@@ -168,7 +168,7 @@ def createStructuredTranscriptDoc():
                 
             # update status on the stracker
                 
-            #h.update_field(DB, TRACKER, "rg_number", mongo_rg, "status", "Processed")
+            h.update_field(DB, TRACKER, "rg_number", mongo_rg, "status", "Processed")
             processed_doc=processed_doc+1
 
     
