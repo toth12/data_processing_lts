@@ -2,6 +2,7 @@ import sys, glob, os
 import helper_mongo as h
 from docx import Document
 from subprocess import call
+from data_spec import create_dictionary_of_file_list
 
 import pprint
 import constants
@@ -159,7 +160,8 @@ def createStructuredTranscriptDoc():
                 processed.append(False)
 
         if False in processed:
-            #h.update_field(DB, TRACKER, "microsoft_doc_file", original_filename, "status", "Unprocessed")
+            h.update_field(DB, TRACKER, "rg_number", mongo_rg, "status", "Unprocessed")
+
             not_processed=not_processed+1
         else:
             # insert units on the output collection

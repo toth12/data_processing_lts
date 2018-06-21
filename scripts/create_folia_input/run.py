@@ -71,12 +71,12 @@ def main():
     print ("From the following shelfmarks a folia file could not be created; it is logged into: "+constants.FOLIA_PROCESSING_LOG_FOLDER)
     
     print('\n'.join(problematic_ids))
-    '''
+    
     #write the missing files to text file
     file = open(constants.FOLIA_PROCESSING_LOG_FOLDER+'unprocessed_shelfmarks.txt','w')
     file.write('\n'.join(problematic_ids))
 
-    '''
+    
 
     
     

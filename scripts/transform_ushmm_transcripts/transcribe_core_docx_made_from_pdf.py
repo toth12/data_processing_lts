@@ -2,6 +2,7 @@ import sys, glob, os
 import helper_mongo as h
 from docx import Document
 from subprocess import call
+from data_spec import create_dictionary_of_file_list
 
 import pprint
 import constants
@@ -56,26 +57,7 @@ def getTextUnits(filename):
 
 
 
-def create_dictionary_of_file_list(filelist):
-    result={}
-    for file in filelist:
-        original_filename = file.split('/')[-1]
-        rg_number=original_filename.split("_")[0]
 
-        # find last occurrence of '.' and replace it with '*' 
-        k = rg_number.rfind(".")
-        mongo_rg = rg_number[:k] + "*" + rg_number[k+1:]
-
-        #check if already in the list
-
-        if mongo_rg not in result.keys():
-            result[mongo_rg]=[file]
-        else:
-            pdb.set_trace()
-            result[mongo_rg].append(file)
-
-
-    return result
 
 def createStructuredTranscriptDoc():
     """
@@ -130,7 +112,8 @@ def createStructuredTranscriptDoc():
                 processed.append(False)
 
         if False in processed:
-            #h.update_field(DB, TRACKER, "microsoft_doc_file", original_filename, "status", "Unprocessed")
+            h.update_field(DB, TRACKER, "rg_number", mongo_rg, "status", "Unprocessed")
+
             not_processed=not_processed+1
         else:
             # insert units on the output collection

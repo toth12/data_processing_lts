@@ -1,5 +1,7 @@
 import sys, glob, os
 import helper_mongo as h
+from data_spec import create_dictionary_of_file_list
+import pdb
 
 
 from docx import Document
@@ -246,36 +248,51 @@ def createStructuredTranscript_Non_Core_Doc():
 
             # append to the array
             core_doc_asset.append(file_docx)
-
     
+
+     
 
     # get the units for each file, store them and update tracker
-    for file in core_doc_asset:
-        # get text units for this entry
-        units = getTextUnits(INPUT_FOLDER+'temp/'+file.split('/')[-1])
-
-        if units:
-            # get RG number
-            original_filename = file.split('/')[-1]
-            rg_number=original_filename.split("_")[0]
-
-            # find last occurrence of '.' and replace it with '*' 
-            k = rg_number.rfind(".")
-            mongo_rg = rg_number[:k] + "*" + rg_number[k+1:]
-
-            # insert units on the output collection
-            h.update_field(DB, OUTPUT, "shelfmark", mongo_rg, "structured_transcript", units)
-
-            
-            # update status on the stracker
-            h.update_field(DB, TRACKER, "microsoft_doc_file", original_filename, "status", "Processed")
-            h.update_field(DB, TRACKER, "microsoft_doc_file", original_filename, "extraction_method", "transcribe_non_core_doc")
-        else:
-            print(file)
-            missing_files.append(file.split('/')[-1])
-            missing_count += 1
-
+    core_doc_asset=create_dictionary_of_file_list(core_doc_asset)
+   
+    not_processed=0
+    processed_doc=0
     
+    # get the units for each file, store them and update tracker 
+    for mongo_rg in core_doc_asset:
+        # get text units for this entry
+        processed=[]
+        result=[]
+        
+        for file in core_doc_asset[mongo_rg]:
+
+            units = getTextUnits(INPUT_FOLDER+'temp/'+file.split('/')[-1])
+            
+            
+            if units:
+                result.extend(units)
+            
+                processed.append(True)
+            else:
+                #check if processed
+                processed.append(False)
+
+        
+            
+        if False in processed:
+
+            h.update_field(DB, TRACKER, "rg_number", mongo_rg, "status", "Unprocessed")
+            not_processed=not_processed+1
+        else:
+            # insert units on the output collection
+            h.update_field(DB, OUTPUT, "shelfmark", mongo_rg, "structured_transcript", result)
+
+                
+            # update status on the stracker
+                
+            h.update_field(DB, TRACKER, "rg_number", mongo_rg, "status", "Processed")
+            processed_doc=processed_doc+1
+
     #delete the temporary folder
     os.system('rm -r ' + INPUT_FOLDER+'temp')
 
