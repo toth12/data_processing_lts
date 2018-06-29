@@ -29,7 +29,7 @@ def main():
 	
 	
 	#Transcribe files belonging to the core data asset and has the DOCX format
-	print ("The processing of USHMM transcripts in DOC format belonging to the core asset has started")
+	print ("The processing of USHMM transcripts in DOCX format belonging to the core asset has started")
 	createStructuredTranscriptDocx()
 	
 	#Transcribe files belonging to the core data asset and has the DOC format
@@ -43,7 +43,7 @@ def main():
 	
 	
 	
-	#Transcribe files not belonging to the core data asset and has the DOC format -> this is where the problem is
+	#Transcribe files not belonging to the core data asset and has the DOC format
 	print ("The processing of USHMM transcripts in DOC format not belonging to the core asset has started")
 
 	if status ==0:

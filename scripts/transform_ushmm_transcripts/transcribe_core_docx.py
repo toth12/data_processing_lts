@@ -14,6 +14,8 @@ TRACKER = constants.USHMM_TRACKER_COLLECTION
 OUTPUT = constants.OUTPUT_COLLECTION_USHMM
 DB = constants.DB
 INPUT_FOLDER=constants.INPUT_FOLDER_USHMM_TRANSCRIPTS_DOC
+OUTPUT_FOLDER_USHMM_PROCESSING_LOGS=constants.OUTPUT_FOLDER_USHMM_PROCESSING_LOGS 
+
 
 def getTextUnits(filename):
     doc = Document(filename)
@@ -67,7 +69,8 @@ def createStructuredTranscriptDocx():
 
     core_doc_asset=create_dictionary_of_file_list(core_docx_asset)
    
-
+    missing_count = 0
+    missing_files=[]
     not_processed=0
     processed_doc=0#copy here
     for mongo_rg in core_doc_asset:
@@ -88,10 +91,22 @@ def createStructuredTranscriptDocx():
                 #check if processed
                 processed.append(False)
 
+        #set the method used to transform the transcript
+
+        h.update_field(DB, TRACKER, "rg_number", mongo_rg, "method", "transcript_core_docx")
+
+        not_processed=not_processed+1
+
         if False in processed:
 
             h.update_field(DB, TRACKER, "rg_number", mongo_rg, "status", "Unprocessed")
+
+            #set the method used to transform the transcript
+
+            h.update_field(DB, TRACKER, "rg_number", mongo_rg, "method", "transcribe_core_docx")
+
             not_processed=not_processed+1
+            missing_files.append(' '.join(core_doc_asset[mongo_rg]))
         else:
             # insert units on the output collection
             h.update_field(DB, OUTPUT, "shelfmark", mongo_rg, "structured_transcript", result)
@@ -103,7 +118,9 @@ def createStructuredTranscriptDocx():
             processed_doc=processed_doc+1
 
 
-    
+     #write the missing files to text file
+    file = open(OUTPUT_FOLDER_USHMM_PROCESSING_LOGS+'transcribe_core_docx_failed.txt','w')
+    file.write('\n'.join(missing_files))
     pprint.pprint("Core_docx_asset was successfully processed.")
 
 if __name__ == "__main__":

@@ -96,16 +96,16 @@ def find_fragment_position(records,back_up):
 					
 					not_found.append(record['fragment_identifier']+' | '+record['ushmm_id'])
 					#change the transcript in the testimonies collection to the sample output
-					query=h.query(DB, 'testimonies', {'testimony_id':record['ushmm_id']},{'_id':1,'html_transcript':1})
-					sample_html='<html><body><p>This transcript is not yet available</p></body></html>'
-					h.update_entry(DB,'testimonies',query[0]['_id'],{'html_transcript':sample_html})
+					#query=h.query(DB, 'testimonies', {'testimony_id':record['ushmm_id']},{'_id':1,'html_transcript':1})
+					#sample_html='<html><body><p>This transcript is not yet available</p></body></html>'
+					#h.update_entry(DB,'testimonies',query[0]['_id'],{'html_transcript':sample_html})
 
 					#change the status of the transcript in the testimony collection
-					h.update_entry(DB,'testimonies',query[0]['_id'],{'status':'transcript_unprocessed'})
+					#h.update_entry(DB,'testimonies',query[0]['_id'],{'status':'transcript_unprocessed'})
 					
 					#delete the folia file as it should not go into the system
 
-					os.remove(transcript_file)
+					#os.remove(transcript_file)
 
 					record['start_sentence_index']=None
 					record['end_sentence_index']=None

@@ -278,11 +278,16 @@ def createStructuredTranscript_Non_Core_Doc():
                 processed.append(False)
 
         
-            
+        #set the method used to transform the transcript
+
+        h.update_field(DB, TRACKER, "rg_number", mongo_rg, "method", "transcribe_non_core_doc")
+
+        not_processed=not_processed+1 
         if False in processed:
 
             h.update_field(DB, TRACKER, "rg_number", mongo_rg, "status", "Unprocessed")
             not_processed=not_processed+1
+            missing_files.append(' '.join(core_doc_asset[mongo_rg]))
         else:
             # insert units on the output collection
             h.update_field(DB, OUTPUT, "shelfmark", mongo_rg, "structured_transcript", result)
@@ -292,17 +297,17 @@ def createStructuredTranscript_Non_Core_Doc():
                 
             h.update_field(DB, TRACKER, "rg_number", mongo_rg, "status", "Processed")
             processed_doc=processed_doc+1
+           
 
     #delete the temporary folder
     os.system('rm -r ' + INPUT_FOLDER+'temp')
 
-    print "The files above could not be processed; they are logged in: "+OUTPUT_FOLDER_USHMM_PROCESSING_LOGS 
    
     #write the missing files to text file
     file = open(OUTPUT_FOLDER_USHMM_PROCESSING_LOGS+'transcribe_non_core_doc_failed.txt','w')
     file.write('\n'.join(missing_files))
 
-    print missing_count
+    
     # success
     pprint.pprint("Non-core doc files were successfully processed, but there are " +  str(missing_count) + " missing")
 

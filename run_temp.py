@@ -22,7 +22,7 @@ from scripts.transform_ushmm_transcripts import run
 from scripts.create_ushmm_metadata import run as create_ushmm_metadata
 from scripts.transform_ushmm_transcripts import run as create_ushmm_transcript_input
 from scripts.create_fortunoff_metadata import parse as create_fortunoff_metadata
-from scripts.transform_fortunoff_transcripts import run as create_fortunoff_transcript_input
+from scripts.transform_fortunoff_transcripts import parse 
 from scripts.create_usc_metadata import run as create_usc_metadata
 from scripts.transform_usc_transcripts import run as create_usc_transcripts
 from scripts.create_folia_input import run as create_folia_input
@@ -42,8 +42,14 @@ output_db=constants.OUTPUT_DB
 
 
 def process_data():
-	run.main()
+	create_folia_input.main()
+
+	'''url='/Users/gmt28/Documents/Workspace/Docker_Engine/varad/Yale_Projects/shoah-foundation-data-restored/shoah-foundation-data/data/inputs/fortunoff/transcripts/'
+	files=[url+'mssa_hvt_93_p1of2.plain_text.txt',url+'mssa_hvt_93_p2of2.plain_text.txt']
+	print files[0]
+	result=parse.segment_transcript(files[0])
+	pdb.set_trace()'''
 	
 if __name__ == '__main__':
-	
 	process_data()
+	

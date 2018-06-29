@@ -37,7 +37,7 @@ output_db=constants.OUTPUT_DB
 
 def process_data():
  
- '''
+ 
  #create the empty let_them_data_processing database
  os.system('mongo ' + DB + ' --eval "db.createCollection(\'test\')"')
  
@@ -46,13 +46,12 @@ def process_data():
  print ("The processing of USHMM metadata has started")
  create_ushmm_metadata.main()
  print ("The processing of USHMM metadata finished")
- '''
+ 
  #process USHMM transcripts
  print ("The processing of USHMM transcripts has started")
  create_ushmm_transcript_input.main()
  print ("The processing of USHMM transcripts finished")
  
- '''
  #transform Fortunoff catalogue data to app specific metadata
  print ("The processing of Fortunoff metadata has started")
  create_fortunoff_metadata.main()
@@ -84,18 +83,17 @@ def process_data():
 
  
  os.system('mongo ' + DB + ' --eval "db.'+output_collection_fortunoff+'.copyTo(\'testimonies\')"')
- '''
+ 
  os.system('mongo ' + DB + ' --eval "db.'+output_collection_ushmm+'.copyTo(\'testimonies\')"')
 
- '''
+ 
  os.system('mongo ' + DB + ' --eval "db.'+output_collection_usc+'.copyTo(\'testimonies\')"')
-'''
+
  #create the folia input
  create_folia_input.main()
 
-'''
 
- pdb.set_trace() #check what is going on here -> the count of them should be the same amount as the count at the end of add sample transcript
+
  #delete entries that could not be processed by folia
 
  h.delete(DB,'testimonies',{'html_transcript': { '$exists': False } })
@@ -158,15 +156,15 @@ def process_data():
  os.system('zip -r -j data/outputs/folia_output/folia.zip data/outputs/folia_output/*')
 
  #upload the data to amazon server
-
+'''
  print 'upload data to amazon servers'
 
  os.system('aws s3 cp data/outputs/folia_output/folia.zip s3://lab-secrets/let-them-speak/folia.zip --profile lab-secrets')
 
  os.system('aws s3 cp data/outputs/db/lts.archive s3://lab-secrets/let-them-speak/lts.archive --profile lab-secrets')
 
-
 '''
+
 
 if __name__ == '__main__':
 	

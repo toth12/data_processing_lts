@@ -7,7 +7,7 @@ def annotate(text):
 	'''Utility function that sentence split, tokenize and pos tag an English text'''
 	
 	#set up the properties of the annotator
-	props={'annotators':'tokenize,ssplit,pos'}
+	props={'annotators':'tokenize,ssplit,pos,lemma'}
 
 	#set the encoding of the annotator
 	requests.encoding = 'utf-8'

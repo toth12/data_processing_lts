@@ -340,10 +340,14 @@ def createStructuredTranscript_Non_Core_Docx():
             else:
                 #check if processed
                 processed.append(False)
+        #set the method used to transform the transcript
 
+        h.update_field(DB, TRACKER, "rg_number", mongo_rg, "method", "transcribe_non_core_docx")
+
+        not_processed=not_processed+1
         if False in processed:
             h.update_field(DB, TRACKER, "rg_number", mongo_rg, "status", "Unprocessed")
-
+            missing_files.append(' '.join(core_doc_asset[mongo_rg]))
             not_processed=not_processed+1
         else:
             # insert units on the output collection

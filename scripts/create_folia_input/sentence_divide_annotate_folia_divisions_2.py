@@ -71,7 +71,7 @@ def process(folia_doc,prefix):
                     #annotate it
 
                     token_element.add(folia.PosAnnotation, set='brown-tagset',cls=token['pos'])
-                    token_element.add(folia.LemmaAnnotation, set='treetagger',cls=token['pos'])
+                    token_element.add(folia.LemmaAnnotation, set='treetagger',cls=token['lemma'])
 
                     sentence_element.add(token_element)
 
