@@ -80,7 +80,7 @@ def post_process_metadata(meta_data):
 		element['testimony_id']='usc_shoah_'+element['testimony_id']
 		element['testimony_title']='Oral history interview with '+element['testimony_title']
 
-		if element['gender']=='m':
+		if element['gender']=='M':
 			element['gender']='male'
 		else:
 			element['gender']='female'
