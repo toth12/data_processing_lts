@@ -162,7 +162,7 @@ def createStructuredTranscriptDoc():
                 #check if processed
                 processed.append(False)
         #set the method used to transform the transcript
-
+        pdb.set_trace()
         h.update_field(DB, TRACKER, "rg_number", mongo_rg, "method", "transcribe_non_core_docx_made_from_pdf")
 
         not_processed=not_processed+1
@@ -173,7 +173,7 @@ def createStructuredTranscriptDoc():
             not_processed=not_processed+1
         else:
             # insert units on the output collection
-            h.update_field(DB, OUTPUT, "shelfmark", mongo_rg, "structured_transcript", result)
+            h.update_field(DB, OUTPUT, "shelfmark", 'USHMM '+mongo_rg, "structured_transcript", result)
 
                 
             # update status on the stracker

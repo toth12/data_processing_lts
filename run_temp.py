@@ -42,7 +42,19 @@ output_db=constants.OUTPUT_DB
 
 
 def process_data():
-	create_folia_input.main()
+	methods={}
+	lines=open('fragment_not_in_xml').readlines()
+	for line in lines:
+		print line
+		result=h.query(DB,constants.USHMM_TRACKER_COLLECTION,{'id':line.strip().strip('\n')},{'method':1,'microsoft_doc_file':1})
+		if len(result)>0:
+			if result[0]['method'] in methods.keys():
+				methods[result[0]['method']].append(result[0]['microsoft_doc_file'])
+			else:
+				methods[result[0]['method']]=[result[0]['microsoft_doc_file']]
+		
+	pdb.set_trace()
+	#transcribe_non_core_docx_made_from_pdf.createStructuredTranscriptDoc()
 
 	'''url='/Users/gmt28/Documents/Workspace/Docker_Engine/varad/Yale_Projects/shoah-foundation-data-restored/shoah-foundation-data/data/inputs/fortunoff/transcripts/'
 	files=[url+'mssa_hvt_93_p1of2.plain_text.txt',url+'mssa_hvt_93_p2of2.plain_text.txt']

@@ -19,8 +19,10 @@ def getTextUnits(filename):
     doc = Document(filename)
     units = list()
     # iterate over all paragraphs to get text units
+    
     for para in doc.paragraphs:
         paragraph = para.text
+        
         
         # ensure it is not an empty line
         if paragraph:
@@ -51,8 +53,12 @@ def getTextUnits(filename):
                     "Theodore:" in unit_type or 
                     "MR." in unit_type):
                     
-                    units.append({'unit': paragraph})     
-
+                    units.append({'unit': paragraph})
+            else:
+                if len(units)>0:
+                    units[-1]['unit']= units[-1]['unit']+paragraph       
+    print units
+    
     return units
 
 
@@ -114,7 +120,7 @@ def createStructuredTranscriptDoc():
                 processed.append(False)
 
         #set the method used to transform the transcript
-
+            
         h.update_field(DB, TRACKER, "rg_number", mongo_rg, "method", "transcribe_core_docx_made_from_pdf")
 
         not_processed=not_processed+1
@@ -125,7 +131,7 @@ def createStructuredTranscriptDoc():
         else:
             # insert units on the output collection
 
-            h.update_field(DB, OUTPUT, "shelfmark", mongo_rg, "structured_transcript", result)
+            h.update_field(DB, OUTPUT, "shelfmark", 'USHMM '+mongo_rg, "structured_transcript", result)
 
                 
             # update status on the stracker
@@ -140,6 +146,7 @@ def createStructuredTranscriptDoc():
     
     # success
     pprint.pprint("Core_docx_asset_made_from_pdf was successfully processed.")
+    
 
 if __name__ == "__main__":
     createStructuredTranscriptDoc()

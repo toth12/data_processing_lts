@@ -92,10 +92,9 @@ def createStructuredTranscriptDocx():
                 processed.append(False)
 
         #set the method used to transform the transcript
-
         h.update_field(DB, TRACKER, "rg_number", mongo_rg, "method", "transcript_core_docx")
 
-        not_processed=not_processed+1
+        
 
         if False in processed:
 
@@ -109,7 +108,7 @@ def createStructuredTranscriptDocx():
             missing_files.append(' '.join(core_doc_asset[mongo_rg]))
         else:
             # insert units on the output collection
-            h.update_field(DB, OUTPUT, "shelfmark", mongo_rg, "structured_transcript", result)
+            h.update_field(DB, OUTPUT, "shelfmark",'USHMM '+mongo_rg, "structured_transcript", result)
 
                 
             # update status on the stracker

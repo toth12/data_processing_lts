@@ -290,7 +290,7 @@ def createStructuredTranscript_Non_Core_Doc():
             missing_files.append(' '.join(core_doc_asset[mongo_rg]))
         else:
             # insert units on the output collection
-            h.update_field(DB, OUTPUT, "shelfmark", mongo_rg, "structured_transcript", result)
+            h.update_field(DB, OUTPUT, "shelfmark", 'USHMM '+mongo_rg, "structured_transcript", result)
 
                 
             # update status on the stracker
