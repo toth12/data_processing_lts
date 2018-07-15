@@ -21,6 +21,7 @@ def getTextUnits(filename):
     # iterate over all paragraphs to get text units
     for para in doc.paragraphs:
         paragraph = para.text
+
         
         # ensure it is not an empty line
         if paragraph:
@@ -51,7 +52,10 @@ def getTextUnits(filename):
                     "Theodore:" in unit_type or 
                     "MR." in unit_type):
                     
-                    units.append({'unit': paragraph})     
+                    units.append({'unit': paragraph})
+            else:
+                if len(units)>0:
+                    units[-1]['unit']= units[-1]['unit']+paragraph      
 
     return units
 

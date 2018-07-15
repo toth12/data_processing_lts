@@ -9,6 +9,8 @@ import helper_mongo as h
 constants_path = os.getcwd()
 sys.path.insert(0, constants_path)
 import constants
+from subprocess import call
+
 
 #added
 from scripts.transform_ushmm_transcripts import transcribe_core_docx_made_from_pdf
@@ -52,8 +54,16 @@ def process_data():
 				methods[result[0]['method']].append(result[0]['microsoft_doc_file'])
 			else:
 				methods[result[0]['method']]=[result[0]['microsoft_doc_file']]
+
+	for element in methods['transcribe_core_doc']:
+		pdb.set_trace()
+		command = 'textutil -convert docx ' + constants.INPUT_FOLDER_USHMM_TRANSCRIPTS_DOC+element[0] + ' -output ' + element[0]+'x' 
+            
+		call(command, shell=True)
+		units=transcribe_core_doc.getTextUnits(element[0]+'x')
+
 		
-	pdb.set_trace()
+		pdb.set_trace()
 	#transcribe_non_core_docx_made_from_pdf.createStructuredTranscriptDoc()
 
 	'''url='/Users/gmt28/Documents/Workspace/Docker_Engine/varad/Yale_Projects/shoah-foundation-data-restored/shoah-foundation-data/data/inputs/fortunoff/transcripts/'
