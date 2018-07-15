@@ -97,6 +97,26 @@ def get405Monologue(filename):
 
     return units
 
+def getUnstructured_50_615_Units(filename):
+    """
+    Returns the units for the RG-50.616 interviews, it does not try to find questions and answers;
+    units are separated by empty lines in the original file
+    
+    """
+    doc = Document(filename)
+    units = list()
+    
+    monologue = ""
+    for para in doc.paragraphs:
+        paragraph = para.text
+        if len(paragraph)!=0:
+            
+            print paragraph
+            print '-'*30
+        units.append({'unit:': paragraph})
+    pdb.set_trace()
+    return units
+
 def getUnstructured405Units(filename):
     """
     Returns the units for the highly irregular RG-50.405 series
@@ -289,6 +309,10 @@ def getTextUnits(filename):
             "RG-50.462" in filename or
             "RG-50.045" in filename):
             units = getBasicMonologue(filename)
+
+        elif('RG-50.615.0001' in filename):
+            units=getUnstructured_50_615_Units(filename)
+        
         else:
             return []
 

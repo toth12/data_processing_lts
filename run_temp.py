@@ -18,7 +18,7 @@ from scripts.transform_ushmm_transcripts import transcribe_non_core_docx_made_fr
 from scripts.transform_ushmm_transcripts import transcribe_core_docx
 from scripts.transform_ushmm_transcripts import transcribe_core_doc
 from scripts.transform_ushmm_transcripts import transcribe_non_core_doc 
-from scripts.transform_ushmm_transcripts import transcribe_non_core_docx as tcd 
+from scripts.transform_ushmm_transcripts import transcribe_non_core_docx 
 from scripts.transform_ushmm_transcripts import run
 #import project specific scripts
 from scripts.create_ushmm_metadata import run as create_ushmm_metadata
@@ -46,6 +46,7 @@ output_db=constants.OUTPUT_DB
 def process_data():
 	methods={}
 	lines=open('fragment_not_in_xml').readlines()
+	f='/Users/gmt28/Documents/Workspace/Docker_Engine/varad/Yale_Projects/shoah-foundation-data-restored/shoah-foundation-data/data/inputs/ushmm/transcripts/microsoft_doc_docx/RG-50.615.0001_trs_en.docx'
 	for line in lines:
 		print line
 		result=h.query(DB,constants.USHMM_TRACKER_COLLECTION,{'id':line.strip().strip('\n')},{'method':1,'microsoft_doc_file':1})
@@ -55,12 +56,15 @@ def process_data():
 			else:
 				methods[result[0]['method']]=[result[0]['microsoft_doc_file']]
 
-	for element in methods['transcribe_core_doc']:
-		pdb.set_trace()
-		command = 'textutil -convert docx ' + constants.INPUT_FOLDER_USHMM_TRANSCRIPTS_DOC+element[0] + ' -output ' + element[0]+'x' 
+	units=transcribe_non_core_docx.getUnstructured_50_615_Units(f)
+	for element in methods['transcribe_non_core_docx']:
+		
+		'''command = 'textutil -convert docx ' + constants.INPUT_FOLDER_USHMM_TRANSCRIPTS_DOC+element[0] + ' -output ' + element[0]+'x' 
             
 		call(command, shell=True)
-		units=transcribe_core_doc.getTextUnits(element[0]+'x')
+		units=transcribe_non_core_doc.getTextUnits(element[0]+'x')'''
+
+		units=transcribe_non_core_docx.getUnstructured_50_616_Units(constants.INPUT_FOLDER_USHMM_TRANSCRIPTS_DOC+element[0])
 
 		
 		pdb.set_trace()
