@@ -70,7 +70,62 @@ def getUnstructured203Units(filename):
             else:
                 units.append({'unit': paragraph})
 
-    return units   
+    return units
+
+def getUnstructured_50_005_0028_Units(filename):
+    """
+    Returns the units for the RG-50.005.0037 interview
+    """
+    doc = Document(filename)
+    units = list()
+    for para in doc.paragraphs:
+        paragraph = para.text
+        
+        # ensure it is not an empty line
+        if len(paragraph)>0:
+
+            # ignore the initial header info
+            
+
+            if ('Interviewer:' in paragraph) or ('Engel:' in paragraph) or ('Jacoby:' in paragraph) :
+                units.append({'unit': paragraph})
+
+            else:
+                if len(units)==0:
+                    units.append({'unit': paragraph})
+            
+                else:
+                    units[-1]['unit']=units[-1]['unit']+' '+paragraph
+
+    return units     
+
+
+def getUnstructured_50_005_0037_Units(filename):
+    """
+    Returns the units for the RG-50.005.0037 interview
+    """
+    doc = Document(filename)
+    units = list()
+    for para in doc.paragraphs:
+        paragraph = para.text
+        
+        # ensure it is not an empty line
+        if len(paragraph)>0:
+
+            # ignore the initial header info
+            
+
+            if ('Q:' in paragraph):
+                units.append({'unit': paragraph})
+            else:
+                if len(units)==0:
+                    units.append({'unit': paragraph})
+                elif ('Q:' in units[-1]['unit']):
+                    units.append({'unit': paragraph})
+                else:
+                    units[-1]['unit']=units[-1]['unit']+' '+paragraph
+
+    return units     
 
 def get405Monologue(filename):
     """
@@ -218,6 +273,8 @@ def getBasicMonologue(filename):
     return list({'unit': monologue})
             
 
+
+
 def getTextUnits(filename):
     """
     Returns the text units for a given file in the non-core asset
@@ -312,7 +369,6 @@ def getTextUnits(filename):
 
         elif('RG-50.615.0001' in filename):
             units=getUnstructured_50_615_Units(filename)
-        
         else:
             return []
 
@@ -354,8 +410,14 @@ def createStructuredTranscript_Non_Core_Docx():
         
         for file in core_doc_asset[mongo_rg]:
 
-            
-            units = getTextUnits(file)
+            #add file specific methods here
+
+            if('RG-50.005.003' in filename):
+                units=getUnstructured_50_005_0037_Units(filename)
+            elif('RG-50.005.0028' in filename):
+                units=getUnstructured_50_005_0028_Units(filename)
+            else:
+                units = getTextUnits(file)
             
             if units:
                 result.extend(units)

@@ -44,6 +44,14 @@ output_db=constants.OUTPUT_DB
 
 
 def process_data():
+
+
+	f='/Users/gmt28/Documents/Workspace/Docker_Engine/varad/Yale_Projects/shoah-foundation-data-restored/shoah-foundation-data/data/inputs/ushmm/transcripts/microsoft_doc_docx/RG-50.005.0028_trs_en.docx'
+
+	result=transcribe_non_core_docx.getUnstructured_50_005_0028_Units(f)
+	pdb.set_trace()
+	'''
+
 	methods={}
 	lines=open('fragment_not_in_xml').readlines()
 	f='/Users/gmt28/Documents/Workspace/Docker_Engine/varad/Yale_Projects/shoah-foundation-data-restored/shoah-foundation-data/data/inputs/ushmm/transcripts/microsoft_doc_docx/RG-50.615.0001_trs_en.docx'
@@ -59,10 +67,12 @@ def process_data():
 	units=transcribe_non_core_docx.getUnstructured_50_615_Units(f)
 	for element in methods['transcribe_non_core_docx']:
 		
-		'''command = 'textutil -convert docx ' + constants.INPUT_FOLDER_USHMM_TRANSCRIPTS_DOC+element[0] + ' -output ' + element[0]+'x' 
+		command = 'textutil -convert docx ' + constants.INPUT_FOLDER_USHMM_TRANSCRIPTS_DOC+element[0] + ' -output ' + element[0]+'x' 
             
 		call(command, shell=True)
-		units=transcribe_non_core_doc.getTextUnits(element[0]+'x')'''
+		units=transcribe_non_core_doc.getTextUnits(element[0]+'x')
+
+		'
 
 		units=transcribe_non_core_docx.getUnstructured_50_616_Units(constants.INPUT_FOLDER_USHMM_TRANSCRIPTS_DOC+element[0])
 
@@ -70,11 +80,14 @@ def process_data():
 		pdb.set_trace()
 	#transcribe_non_core_docx_made_from_pdf.createStructuredTranscriptDoc()
 
-	'''url='/Users/gmt28/Documents/Workspace/Docker_Engine/varad/Yale_Projects/shoah-foundation-data-restored/shoah-foundation-data/data/inputs/fortunoff/transcripts/'
+	
+	url='/Users/gmt28/Documents/Workspace/Docker_Engine/varad/Yale_Projects/shoah-foundation-data-restored/shoah-foundation-data/data/inputs/fortunoff/transcripts/'
 	files=[url+'mssa_hvt_93_p1of2.plain_text.txt',url+'mssa_hvt_93_p2of2.plain_text.txt']
 	print files[0]
 	result=parse.segment_transcript(files[0])
 	pdb.set_trace()'''
+
+
 	
 if __name__ == '__main__':
 	process_data()
