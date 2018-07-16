@@ -30,7 +30,7 @@ def process(data):
         annotated_folia_xml=sentence_divide_annotate_folia_divisions(folia_xml_with_divisions,'s')
         
         html_output=create_html_output(annotated_folia_xml)
-        look_up_table=create_token_sentence_lookup(annotated_folia_xml,data['_id'])
+        look_up_table=create_token_sentence_lookup(annotated_folia_xml,data['testimony_id'])
         h.update_entry('let_them_speak_data_processing_test', 'testimonies',data['_id'],{'html_transcript':html_output}) 
         h.insert('let_them_speak_data_processing_test', 'tokens',look_up_table)
 
