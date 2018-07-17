@@ -36,7 +36,7 @@ def get462Monologue(filename):
         paragraph = para.text
         
         # ensure it is not an empty line
-        if paragraph and len(paragraph.split()) > 7:
+        if (len(paragraph) > 0) and len(paragraph.split()) > 7:
             # add to monologue
             monologue += ' ' + paragraph
 
@@ -112,7 +112,7 @@ def getUnstructured_50_233_0083_Units(filename):
             units.append({'unit':paragraph.strip()})
 
         
-    pdb.set_trace()
+    
     return units
 def getUnstructured926Units(filename):
     """
@@ -163,7 +163,7 @@ def getTextUnits(filename):
         paragraph = para.text
         
         # ensure it is not an empty line
-        if paragraph:
+        if len(paragraph.strip())>0:
             # get first word
             formatted_para = paragraph.lstrip()
             unit_type = formatted_para.partition(' ')[0]

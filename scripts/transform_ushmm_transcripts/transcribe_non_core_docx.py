@@ -39,7 +39,7 @@ def get062Monologue(filename):
         paragraph = para.text
         
         # ensure it is not an empty line
-        if paragraph:
+        if len(paragraph.strip())>0:
             
             # ensure it is not a header type
             if paragraph.count('-') < 2 and paragraph.count('.') < 2:
@@ -59,7 +59,7 @@ def getUnstructured203Units(filename):
         paragraph = para.text
         
         # ensure it is not an empty line
-        if paragraph:
+        if len(paragraph.strip())>0:
 
             # ignore the initial header info
             if isHeader:
@@ -98,7 +98,7 @@ def getUnstructured_50_061_0010_Units(filename):
                     previous_is_question=False
                 else:
                     units[-1]['unit']= units[-1]['unit']+ ' '+ paragraph
-    pdb.set_trace()
+   
         # ensure it is not an empty line
     return units
 
@@ -140,7 +140,7 @@ def getUnstructured_50_005_0037_Units(filename):
         paragraph = para.text
         
         # ensure it is not an empty line
-        if len(paragraph)>0:
+        if len(paragraph.strip())>0:
 
             # ignore the initial header info
             
@@ -170,7 +170,7 @@ def get405Monologue(filename):
         paragraph = para.text
         
         # ensure it is not an empty line
-        if paragraph:
+        if len(paragraph.strip()):
             if isHeader:
                 # this strings indicates wheen the end of the headeer
                 if "JEWISH ORGANIZATIONAL AFFILIATIONS (IF GIVEN):" in paragraph:
@@ -195,11 +195,7 @@ def getUnstructured_50_615_Units(filename):
     for para in doc.paragraphs:
         paragraph = para.text
         if len(paragraph)!=0:
-            
-            print paragraph
-            print '-'*30
         units.append({'unit:': paragraph})
-    pdb.set_trace()
     return 
 
 def getUnstructured_50_615_Units(filename):
@@ -211,15 +207,12 @@ def getUnstructured_50_615_Units(filename):
     doc = Document(filename)
     units = list()
     
-    monologue = ""
+    
     for para in doc.paragraphs:
         paragraph = para.text
-        if len(paragraph)!=0:
-            
-            print paragraph
-            print '-'*30
-        units.append({'unit:': paragraph})
-    pdb.set_trace()
+        if len(paragraph.strip())!=0:
+            units.append({'unit:': paragraph})
+    
     return units
 
 def getUnstructured405Units(filename):
@@ -238,7 +231,7 @@ def getUnstructured405Units(filename):
         paragraph = para.text
         
         # ensure it is not an empty line
-        if paragraph:
+        if len(paragraph.strip())>0:
             # check if there is a question
             para_partition = paragraph.split(')', 1)
             
@@ -312,7 +305,7 @@ def getBasicMonologue(filename):
         paragraph = para.text
         
         # ensure it is not an empty line
-        if paragraph:
+        if len(paragraph.strip())>0:
             if isHeader:
                 if len(paragraph.split()) > 7:
                     isHeader = False
@@ -347,7 +340,7 @@ def getTextUnits(filename):
         paragraph = para.text
         
         # ensure it is not an empty line
-        if paragraph:
+        if len(paragraph.strip())>0:
             # get first word
             unit_type = paragraph.partition(' ')[0]
             # in case it is in the format of e.g 'George Salton:'
@@ -461,7 +454,7 @@ def createStructuredTranscript_Non_Core_Docx():
 
             #add file specific methods here
 
-            if('RG-50.005.003' in filename):
+            if('RG-50.005.0037' in filename):
                 units=getUnstructured_50_005_0037_Units(filename)
             elif('RG-50.005.0028' in filename):
                 units=getUnstructured_50_005_0028_Units(filename)

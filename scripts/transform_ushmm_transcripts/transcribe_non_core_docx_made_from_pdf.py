@@ -54,7 +54,7 @@ def getTextUnits(filename):
         paragraph = para.text
         
         # ensure it is not an empty line
-        if paragraph:
+        if len(paragraph.strip())>0:
             # get first word
             unit_type = paragraph.partition(' ')[0]
             
@@ -82,8 +82,12 @@ def getTextUnits(filename):
                     "Theodore:" in unit_type or 
                     "MR." in unit_type):
                     
-                    units.append({'unit': paragraph})     
-
+                    units.append({'unit': paragraph})
+            else:
+                if len(units)>0:
+                    units[-1]['unit']= units[-1]['unit']+paragraph 
+                else:   
+                    units.append({'unit': paragraph})
     return units
 
 
@@ -162,7 +166,6 @@ def createStructuredTranscriptDoc():
                 #check if processed
                 processed.append(False)
         #set the method used to transform the transcript
-        pdb.set_trace()
         h.update_field(DB, TRACKER, "rg_number", mongo_rg, "method", "transcribe_non_core_docx_made_from_pdf")
 
         not_processed=not_processed+1

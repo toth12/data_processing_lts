@@ -26,7 +26,7 @@ def getTextUnits(filename):
         paragraph = para.text
         
         # ensure it is not an empty line
-        if paragraph:
+        if len(paragraph.strip())>0:
             # get first word
             unit_type = paragraph.partition(' ')[0]
 

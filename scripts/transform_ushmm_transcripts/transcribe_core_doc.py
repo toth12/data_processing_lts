@@ -3,7 +3,6 @@ import helper_mongo as h
 from docx import Document
 from subprocess import call
 from data_spec import create_dictionary_of_file_list
-
 import pprint
 import constants
 import re
@@ -24,7 +23,7 @@ def getTextUnits(filename):
 
         
         # ensure it is not an empty line
-        if paragraph:
+        if len(paragraph.strip())>0:
             # get first word
             unit_type = paragraph.partition(' ')[0]
             
@@ -53,8 +52,9 @@ def getTextUnits(filename):
                     "MR." in unit_type):
                     
                     units.append({'unit': paragraph})
+            #add it even if the pattern is not clearly present
             else:
-                if len(units)>0:
+                if len(units.strip())>0:
                     units[-1]['unit']= units[-1]['unit']+paragraph      
 
     return units
