@@ -94,6 +94,26 @@ def get926Monologue(filename):
             monologue += paragraph
         
     return [{'unit': monologue}]
+
+
+def getUnstructured_50_233_0083_Units(filename):
+    """
+    Returns the unstructured units of the RG.50-233-0083 documents
+    These interviews did not have any indi
+    """
+    doc = Document(filename)
+   
+    
+    units=[]
+    # iterate over all paragraphs to get text units
+    for para in doc.paragraphs:
+        paragraph = para.text
+        if len(paragraph.strip())>0:
+            units.append({'unit':paragraph.strip()})
+
+        
+    pdb.set_trace()
+    return units
 def getUnstructured926Units(filename):
     """
     Returns the unstructured units of the RG.50-402 series
@@ -216,6 +236,8 @@ def getTextUnits(filename):
             units = getUnstructured926Units(filename)
         elif "50.462.0005" in filename:
             units = get462Monologue(filename)
+        elif "RG-50.233.0083" in filename:
+            units = getUnstructured_50_233_0083_Units(filename)
         else:
           return []
     

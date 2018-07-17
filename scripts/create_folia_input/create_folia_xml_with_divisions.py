@@ -29,6 +29,7 @@ def process(data):
     #iterate through the input to create the folia division elements
 
     for unit in data['structured_transcript']:
+        pdb.set_trace()
         division=folia.Division(new_doc)
         division.settext(unit['unit'])
         text.add(division)

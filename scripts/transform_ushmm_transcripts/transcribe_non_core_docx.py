@@ -64,12 +64,42 @@ def getUnstructured203Units(filename):
             # ignore the initial header info
             if isHeader:
                 if paragraph.split() > 5:
-                    units.append(paragraph)
+                    units.append({'units':paragraph})
                     isHeader = False
 
             else:
                 units.append({'unit': paragraph})
 
+    return units
+
+def getUnstructured_50_061_0010_Units(filename):
+    """
+    Returns the units for the RG-50.203  interviews
+    Ignores the first page that consists of interview header info
+    """
+    doc = Document(filename)
+    units = list()
+
+    previous_is_question=True
+    for para in doc.paragraphs:
+        paragraph = para.text
+        if len(paragraph.strip())>0:
+            question=False
+            for run in para.runs:
+                if run.italic:
+                    question=True
+                    previous_is_question=True
+                    
+            if question == True:
+                units.append({'unit':paragraph})
+            else:
+                if previous_is_question:
+                    units.append({'unit':paragraph})
+                    previous_is_question=False
+                else:
+                    units[-1]['unit']= units[-1]['unit']+ ' '+ paragraph
+    pdb.set_trace()
+        # ensure it is not an empty line
     return units
 
 def getUnstructured_50_005_0028_Units(filename):
@@ -151,6 +181,26 @@ def get405Monologue(filename):
     units.append({'unit:': monologue})
 
     return units
+
+def getUnstructured_50_615_Units(filename):
+    """
+    Returns the units for the RG-50.616 interviews, it does not try to find questions and answers;
+    units are separated by empty lines in the original file
+    
+    """
+    doc = Document(filename)
+    units = list()
+    
+    monologue = ""
+    for para in doc.paragraphs:
+        paragraph = para.text
+        if len(paragraph)!=0:
+            
+            print paragraph
+            print '-'*30
+        units.append({'unit:': paragraph})
+    pdb.set_trace()
+    return 
 
 def getUnstructured_50_615_Units(filename):
     """
@@ -367,8 +417,7 @@ def getTextUnits(filename):
             "RG-50.045" in filename):
             units = getBasicMonologue(filename)
 
-        elif('RG-50.615.0001' in filename):
-            units=getUnstructured_50_615_Units(filename)
+        
         else:
             return []
 
@@ -416,6 +465,8 @@ def createStructuredTranscript_Non_Core_Docx():
                 units=getUnstructured_50_005_0037_Units(filename)
             elif('RG-50.005.0028' in filename):
                 units=getUnstructured_50_005_0028_Units(filename)
+            elif ('RG-50.061.0010' in filename):
+                units=getUnstructured_50_061_0010_Units(filename)
             else:
                 units = getTextUnits(file)
             

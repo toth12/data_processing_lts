@@ -45,12 +45,24 @@ output_db=constants.OUTPUT_DB
 
 def process_data():
 
+	#create_folia_input.main()
 
-	f='/Users/gmt28/Documents/Workspace/Docker_Engine/varad/Yale_Projects/shoah-foundation-data-restored/shoah-foundation-data/data/inputs/ushmm/transcripts/microsoft_doc_docx/RG-50.005.0028_trs_en.docx'
+	
+	
+	f='/Users/gmt28/Documents/Workspace/Docker_Engine/varad/Yale_Projects/shoah-foundation-data-restored/shoah-foundation-data/data/inputs/ushmm/transcripts/microsoft_doc_docx/RG-50.061.0010_trs_en.docx'
 
-	result=transcribe_non_core_docx.getUnstructured_50_005_0028_Units(f)
+	units=transcribe_non_core_docx.getUnstructured_50_061_0010_Units(f)
+	
 	pdb.set_trace()
-	'''
+	command = 'textutil -convert docx ' + f + ' -output ' + f.split('/')[-1]+'x' 
+	call(command, shell=True)
+	
+	
+	units=transcribe_non_core_doc.getTextUnits(f.split('/')[-1]+'x')
+
+	
+	
+	pdb.set_trace()
 
 	methods={}
 	lines=open('fragment_not_in_xml').readlines()
@@ -72,7 +84,7 @@ def process_data():
 		call(command, shell=True)
 		units=transcribe_non_core_doc.getTextUnits(element[0]+'x')
 
-		'
+		
 
 		units=transcribe_non_core_docx.getUnstructured_50_616_Units(constants.INPUT_FOLDER_USHMM_TRANSCRIPTS_DOC+element[0])
 
@@ -85,7 +97,7 @@ def process_data():
 	files=[url+'mssa_hvt_93_p1of2.plain_text.txt',url+'mssa_hvt_93_p2of2.plain_text.txt']
 	print files[0]
 	result=parse.segment_transcript(files[0])
-	pdb.set_trace()'''
+	pdb.set_trace()
 
 
 	
