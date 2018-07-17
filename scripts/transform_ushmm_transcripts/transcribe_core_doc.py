@@ -54,7 +54,7 @@ def getTextUnits(filename):
                     units.append({'unit': paragraph})
             #add it even if the pattern is not clearly present
             else:
-                if len(units.strip())>0:
+                if len(units)>0:
                     units[-1]['unit']= units[-1]['unit']+paragraph      
 
     return units

@@ -51,7 +51,7 @@ def process_data():
  print ("The processing of USHMM transcripts has started")
  create_ushmm_transcript_input.main()
  print ("The processing of USHMM transcripts finished")
- 
+ '''
  #transform Fortunoff catalogue data to app specific metadata
  print ("The processing of Fortunoff metadata has started")
  create_fortunoff_metadata.main()
@@ -71,6 +71,7 @@ def process_data():
  print ("The processing of USC transcripts has started")
  create_usc_transcripts.run()
  print ("The processing of USC transcripts has finished")
+ '''
  
  #test the output results
  print ("Testing of output has started; for a more detailed output run: python test_processing_outputs.py ")
@@ -82,12 +83,12 @@ def process_data():
  
 
  
- os.system('mongo ' + DB + ' --eval "db.'+output_collection_fortunoff+'.copyTo(\'testimonies\')"')
+ #os.system('mongo ' + DB + ' --eval "db.'+output_collection_fortunoff+'.copyTo(\'testimonies\')"')
  
  os.system('mongo ' + DB + ' --eval "db.'+output_collection_ushmm+'.copyTo(\'testimonies\')"')
 
  
- os.system('mongo ' + DB + ' --eval "db.'+output_collection_usc+'.copyTo(\'testimonies\')"')
+ #os.system('mongo ' + DB + ' --eval "db.'+output_collection_usc+'.copyTo(\'testimonies\')"')
 
  #create the folia input
  create_folia_input.main()
@@ -150,10 +151,10 @@ def process_data():
 
  #delete it from the host system
 
- os.system('mongo ' + output_db + ' --eval "db.dropDatabase()"')
+ #os.system('mongo ' + output_db + ' --eval "db.dropDatabase()"')
 
  #zip the folia files
- os.system('zip -r -j data/outputs/folia_output/folia.zip data/outputs/folia_output/*')
+ #os.system('zip -r -j data/outputs/folia_output/folia.zip data/outputs/folia_output/*')
 
  #upload the data to amazon server
 '''

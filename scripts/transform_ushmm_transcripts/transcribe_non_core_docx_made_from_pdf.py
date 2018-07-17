@@ -45,6 +45,45 @@ def getUnstructured50_583Units(filename):
                 units.append({'unit':paragraph})
     return units
 
+def getUnstructured_50_462_0005_Units(filename):
+    """
+    Returns the units for the RG-50.616 interviews, it does not try to find questions and answers;
+    units are separated by empty lines in the original file
+    
+    """
+    doc = Document(filename)
+    units = list()
+    
+    
+    for para in doc.paragraphs:
+        paragraph = para.text
+        if len(paragraph.strip())!=0:
+            units.append({'unit': paragraph})
+    
+    return units
+
+
+def getUnstructured_50_462_0032_Units(filename):
+    """
+    Returns the units for the RG-50.616 interviews, it does not try to find questions and answers;
+    units are separated by empty lines in the original file
+    
+    """
+    doc = Document(filename)
+    units = list()
+    
+    
+    for para in doc.paragraphs:
+        paragraph = para.text
+        if len(paragraph.strip())!=0:
+            if ((paragraph[0:2]=='LC') or (paragraph[0:2]=='MS')):
+                units.append({'unit': paragraph})
+            elif len(units)>0:
+                units[-1]['unit']=units[-1]['unit']+ ' '+paragraph
+            else:
+                units.append({'unit': paragraph})
+    return units
+
 
 def getTextUnits(filename):
     doc = Document(filename)
@@ -155,6 +194,12 @@ def createStructuredTranscriptDoc():
 
             if ("RG-50.583" in file):
                 units=getUnstructured50_583Units(file)
+            elif("RG-50.462.0005" in file):
+                units=getUnstructured_50_462_0005_Units()
+
+            elif("RG-50.462.0032" in file):
+                units=getUnstructured_50_462_0032_Units()
+
             else:
                 units = getTextUnits(file)
             

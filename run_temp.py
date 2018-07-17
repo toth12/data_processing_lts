@@ -30,6 +30,7 @@ from scripts.transform_usc_transcripts import run as create_usc_transcripts
 from scripts.create_folia_input import run as create_folia_input
 from add_sample_transcript import add_sample_transcript
 from scripts.create_fragments_collection import run as create_fragments_collection
+from bson.objectid import ObjectId
 
 
 ##Global Variables##
@@ -46,19 +47,29 @@ output_db=constants.OUTPUT_DB
 def process_data():
 
 	#create_folia_input.main()
+	#pdb.set_trace()
+
+	
+	f='/Users/gmt28/Documents/Workspace/Docker_Engine/varad/Yale_Projects/shoah-foundation-data-restored/shoah-foundation-data/data/inputs/ushmm/pdf_transcript_not_available_in_doc_transformed_to_docx/RG-50.462.0032_trs_en.docx'
+
+	units=transcribe_non_core_docx_made_from_pdf.getUnstructured_50_462_0032_Units(f)
+
+	
 
 	
 	
-	f='/Users/gmt28/Documents/Workspace/Docker_Engine/varad/Yale_Projects/shoah-foundation-data-restored/shoah-foundation-data/data/inputs/ushmm/transcripts/microsoft_doc_docx/RG-50.061.0010_trs_en.docx'
-
-	units=transcribe_non_core_docx.getUnstructured_50_061_0010_Units(f)
-	
+	h.update_field(DB, 'testimonies', "shelfmark", "USHMM RG-50.462*0032", "structured_transcript", units)
+	create_folia_input.main()
 	pdb.set_trace()
+
+
+	
 	command = 'textutil -convert docx ' + f + ' -output ' + f.split('/')[-1]+'x' 
 	call(command, shell=True)
 	
 	
 	units=transcribe_non_core_doc.getTextUnits(f.split('/')[-1]+'x')
+
 
 	
 	

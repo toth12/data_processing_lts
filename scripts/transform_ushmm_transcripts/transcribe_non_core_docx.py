@@ -64,7 +64,7 @@ def getUnstructured203Units(filename):
             # ignore the initial header info
             if isHeader:
                 if paragraph.split() > 5:
-                    units.append({'units':paragraph})
+                    units.append({'unit':paragraph})
                     isHeader = False
 
             else:
@@ -178,25 +178,10 @@ def get405Monologue(filename):
             
             else:
                 monologue += paragraph
-    units.append({'unit:': monologue})
+    units.append({'unit': monologue})
 
     return units
 
-def getUnstructured_50_615_Units(filename):
-    """
-    Returns the units for the RG-50.616 interviews, it does not try to find questions and answers;
-    units are separated by empty lines in the original file
-    
-    """
-    doc = Document(filename)
-    units = list()
-    
-    monologue = ""
-    for para in doc.paragraphs:
-        paragraph = para.text
-        if len(paragraph)!=0:
-        units.append({'unit:': paragraph})
-    return 
 
 def getUnstructured_50_615_Units(filename):
     """
@@ -211,7 +196,7 @@ def getUnstructured_50_615_Units(filename):
     for para in doc.paragraphs:
         paragraph = para.text
         if len(paragraph.strip())!=0:
-            units.append({'unit:': paragraph})
+            units.append({'unit': paragraph})
     
     return units
 
@@ -454,12 +439,16 @@ def createStructuredTranscript_Non_Core_Docx():
 
             #add file specific methods here
 
-            if('RG-50.005.0037' in filename):
-                units=getUnstructured_50_005_0037_Units(filename)
-            elif('RG-50.005.0028' in filename):
-                units=getUnstructured_50_005_0028_Units(filename)
-            elif ('RG-50.061.0010' in filename):
-                units=getUnstructured_50_061_0010_Units(filename)
+            if('RG-50.005.0037' in file):
+                units=getUnstructured_50_005_0037_Units(file)
+            elif('RG-50.005.0028' in file):
+                units=getUnstructured_50_005_0028_Units(file)
+            elif('RG-50.061.0010' in file):
+                units=getUnstructured_50_061_0010_Units(file)
+            
+            elif('RG-50.615.0001' in file):
+                units=getUnstructured_50_615_Units(file)
+
             else:
                 units = getTextUnits(file)
             
