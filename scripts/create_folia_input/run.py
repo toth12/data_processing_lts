@@ -32,8 +32,8 @@ def process(data):
         
         html_output=create_html_output(annotated_folia_xml)
         look_up_table=create_token_sentence_lookup(annotated_folia_xml,data['testimony_id'])
-       # h.update_entry('let_them_speak_data_processing_test', 'testimonies',data['_id'],{'html_transcript':html_output}) 
-        #h.insert('let_them_speak_data_processing_test', 'tokens',look_up_table)
+        h.update_entry('let_them_speak_data_processing_test', 'testimonies',data['_id'],{'html_transcript':html_output}) 
+        h.insert('let_them_speak_data_processing_test', 'tokens',look_up_table)
 
         annotated_folia_xml.save(folia_output_folder+data['testimony_id']+'.xml')
        
@@ -60,19 +60,15 @@ def main():
 
 
     
-    # this is the original results=h.query(DB, 'testimonies', {'structured_transcript':{'$exists':True}}, {'testimony_id':1,'structured_transcript':1,'shelfmark':1,'collection':1,'camp_names':1,'ghetto_names':1,'gender':1,'interviewee_name':1,'recording_year':1} )   
+    results=h.query(DB, 'testimonies', {'structured_transcript':{'$exists':True}}, {'testimony_id':1,'structured_transcript':1,'shelfmark':1,'collection':1,'camp_names':1,'ghetto_names':1,'gender':1,'interviewee_name':1,'recording_year':1} )   
     
     
-    results=h.query(DB, 'output_ushmm_metadata', {'testimony_id':'irn509153'}, {'testimony_id':1,'structured_transcript':1,'shelfmark':1,'collection':1,'camp_names':1,'ghetto_names':1,'gender':1,'interviewee_name':1,'recording_year':1} )
     
     
     for index,result in enumerate(results):
         
         
-       # structured_transcript=result['structured_transcript']
-       # result.pop('structured_transcript')
-       # result.pop('_id')
-       # meta_data=result
+       
         print "The folia processing of "+str(index)+". document out of "+str(len(results))+" started."
         element=process(result)
         if element is not None:
