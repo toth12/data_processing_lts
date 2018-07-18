@@ -37,7 +37,7 @@ output_db=constants.OUTPUT_DB
 
 def process_data():
  
- 
+ '''
  #create the empty let_them_data_processing database
  os.system('mongo ' + DB + ' --eval "db.createCollection(\'test\')"')
  
@@ -51,7 +51,7 @@ def process_data():
  print ("The processing of USHMM transcripts has started")
  create_ushmm_transcript_input.main()
  print ("The processing of USHMM transcripts finished")
- '''
+
  #transform Fortunoff catalogue data to app specific metadata
  print ("The processing of Fortunoff metadata has started")
  create_fortunoff_metadata.main()
@@ -71,7 +71,7 @@ def process_data():
  print ("The processing of USC transcripts has started")
  create_usc_transcripts.run()
  print ("The processing of USC transcripts has finished")
- '''
+ 
  
  #test the output results
  print ("Testing of output has started; for a more detailed output run: python test_processing_outputs.py ")
@@ -122,12 +122,12 @@ def process_data():
 
 
 
-
+'''
 #find fragments
 
  create_fragments_collection.main()
 
-
+'''
 
  #create a new DB and copy everything to there
 
@@ -157,7 +157,7 @@ def process_data():
  #os.system('zip -r -j data/outputs/folia_output/folia.zip data/outputs/folia_output/*')
 
  #upload the data to amazon server
-'''
+
  print 'upload data to amazon servers'
 
  os.system('aws s3 cp data/outputs/folia_output/folia.zip s3://lab-secrets/let-them-speak/folia.zip --profile lab-secrets')
