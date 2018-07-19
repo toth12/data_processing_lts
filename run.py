@@ -22,7 +22,6 @@ from scripts.create_usc_metadata import run as create_usc_metadata
 from scripts.transform_usc_transcripts import run as create_usc_transcripts
 from scripts.create_folia_input import run as create_folia_input
 from add_sample_transcript import add_sample_transcript
-from scripts.create_fragments_collection import run as create_fragments_collection
 
 
 ##Global Variables##
