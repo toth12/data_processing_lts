@@ -17,7 +17,7 @@ OUTPUT_COLLECTION_USHMM = "output_ushmm_metadata"
 INPUT_COLLECTION_USHMM = "input_ushmm_metadata"
 OUTPUT_COLLECTION_FORTUNOFF = "output_fortunoff_metadata"
 OUTPUT_COLLECTION_USC = "output_usc_metadata"
-DB = "let_them_speak_data_processing_test"
+DB = "let_them_speak_data_processing"
 
 #set the pathes of the data specific processing logs
 OUTPUT_FOLDER_USHMM_PROCESSING_LOGS = os.getcwd()+"/data/outputs/ushmm/processing_logs/"
