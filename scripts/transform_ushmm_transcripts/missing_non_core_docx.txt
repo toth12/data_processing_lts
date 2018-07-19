@@ -1,6 +1,0 @@
-RG-50.012.0043_trs_en.docx
-RG-50.028.0057_trs_en.docx
-RG-50.061.0010_trs_en.docx
-RG-50.470.0023_trs_en.docx
-4
-'Core_docx_asset was successfully processed.'

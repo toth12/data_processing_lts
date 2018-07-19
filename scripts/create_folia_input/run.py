@@ -1,5 +1,4 @@
 from create_folia_xml_with_divisions import process as create_folia_xml_with_divisions
-from annotate_folia_file import annotate
 from sentence_divide_annotate_folia_divisions import process as sentence_divide_annotate_folia_divisions
 from create_html_output import process as create_html_output
 from create_token_sentence_lookup import process as create_token_sentence_lookup
