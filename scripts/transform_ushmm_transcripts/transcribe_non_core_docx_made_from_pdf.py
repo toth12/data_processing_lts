@@ -195,10 +195,10 @@ def createStructuredTranscriptDoc():
             if ("RG-50.583" in file):
                 units=getUnstructured50_583Units(file)
             elif("RG-50.462.0005" in file):
-                units=getUnstructured_50_462_0005_Units()
+                units=getUnstructured_50_462_0005_Units(file)
 
             elif("RG-50.462.0032" in file):
-                units=getUnstructured_50_462_0032_Units()
+                units=getUnstructured_50_462_0032_Units(file)
 
             else:
                 units = getTextUnits(file)
