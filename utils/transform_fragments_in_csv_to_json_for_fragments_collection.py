@@ -22,8 +22,8 @@ import json
 import random
 import json
 
-input_file_path=''
-output_file_path=''
+input_file_path=constants.INPUT_FOLDER_FRAGMENTS+'fragments.csv'
+output_file_path=constants.INPUT_FOLDER_FRAGMENTS+'fragments.json'
 
 def create_fragments_collection(dictionary_from_csv):
 	'''Creates a json representation of a fragment collection'''
@@ -89,9 +89,6 @@ def get_node(testimony_id,node,is_parent=False):
 		    'end_sentence_index': random.randint(1, 20),
 		    'children': [],}
 	else:
-		print node['start_sentence_index']
-		print node['end_sentence_index']
-		print '-'*16
 		return {
 		'label': node['label'],
 		'testimony_id': node['testimony_id'],
@@ -115,7 +112,15 @@ def ReadCSVasDict(csv_file):
             print("I/O error({0}): {1}".format(errno, strerror))    
     return result
 
+def main():
+	dictionary_from_csv=ReadCSVasDict(input_file_path)
+	result=create_fragments_collection(dictionary_from_csv)
+
 	
+
+	with open(output_file_path, 'wb') as outfile:
+		json.dump(result, outfile)
+
 if __name__ == '__main__':
 	dictionary_from_csv=ReadCSVasDict(input_file_path)
 	result=create_fragments_collection(dictionary_from_csv)

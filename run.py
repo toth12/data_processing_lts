@@ -4,6 +4,7 @@ import pdb
 helper_path = os.getcwd()+"/utils"
 sys.path.insert(0, helper_path)
 import helper_mongo as h
+import transform_fragments_in_csv_to_json_for_fragments_collection
 
 #set constants path
 constants_path = os.getcwd()
@@ -33,6 +34,8 @@ output_collection_usc=constants.OUTPUT_COLLECTION_USC
 output_collection_ushmm=constants.OUTPUT_COLLECTION_USHMM
 output_folder_db=constants.OUTPUT_FOLDER_DB
 output_db=constants.OUTPUT_DB
+output_folder_fragments=constants.OUTPUT_FOLDER_FRAGMENTS
+
 
 
 def process_data():
@@ -122,9 +125,8 @@ def process_data():
 
 
 
-#find fragments
-
- create_fragments_collection.main()
+ #create fragments from the CSV input file
+ transform_fragments_in_csv_to_json_for_fragments_collection.main()
 
 
 
@@ -142,7 +144,8 @@ def process_data():
 
 #add the fragment collection to it
 
- os.system('mongoimport -d ' + output_db + ' -c fragments --file data/outputs/fragments/fragments_post_processed.json --jsonArray')
+ os.system('mongoimport -d ' + output_db + ' -c fragments --file '+output_folder_fragments+'fragments.json --jsonArray')
+
 
  #archive the output db
 

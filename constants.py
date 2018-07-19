@@ -9,6 +9,8 @@ INPUT_FOLDER_FORTUNOFF_METADATA = os.getcwd()+"/data/inputs/fortunoff/metadata/"
 INPUT_FOLDER_FORTUNOFF_TRANSCRIPTS = os.getcwd()+"/data/inputs/fortunoff/transcripts/"
 INPUT_FOLDER_USC_METADATA = os.getcwd()+"/data/inputs/usc/metadata/"
 INPUT_FOLDER_USC_TRANSCRIPTS=os.getcwd()+"/data/inputs/usc/transcripts/"
+INPUT_FOLDER_FRAGMENTS=os.getcwd()+"/data/inputs/fragments/"
+
 #set the parameter of the Mongo DB and data specific collections
 
 OUTPUT_COLLECTION_USHMM = "output_ushmm_metadata"

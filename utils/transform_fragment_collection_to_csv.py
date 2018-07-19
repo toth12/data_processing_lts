@@ -24,7 +24,7 @@ import json
 DB = 'lts'
 collection='fragments'
 path_to_folia_xml=os.getcwd()+"/data/outputs/folia_output/"
-output_path='some path to here'
+output_path=os.getcwd()+'/data/inputs/fragments/fragments.csv'
 
 
 def get_leaves():
@@ -125,7 +125,7 @@ def get_fragments_original_sentence(folia_xml_id,start_sentence_index,end_senten
 
 def write_to_csv(data,file):
 	keys = data[0].keys()
-	f=open(file, 'wb')
+	f=open(file, 'w')
 	writer = csv.DictWriter(f, fieldnames=keys)
 	writer.writeheader()
 	writer.writerows(data)
