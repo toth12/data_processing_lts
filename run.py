@@ -37,7 +37,7 @@ output_db=constants.OUTPUT_DB
 
 def process_data():
  
- '''
+ 
  #create the empty let_them_data_processing database
  os.system('mongo ' + DB + ' --eval "db.createCollection(\'test\')"')
  
@@ -71,29 +71,26 @@ def process_data():
  print ("The processing of USC transcripts has started")
  create_usc_transcripts.run()
  print ("The processing of USC transcripts has finished")
- pdb.set_trace()
- 
  
  #test the output results
  print ("Testing of output has started; for a more detailed output run: python test_processing_outputs.py ")
  os.system('pytest test_processing_outputs.py')
  print ("Testing of output has finished")
-'''
+
 
  #copy the three collections into one
  
- '''
+
  
  os.system('mongo ' + DB + ' --eval "db.'+output_collection_fortunoff+'.copyTo(\'testimonies\')"')
  
-
- #os.system('mongo ' + DB + ' --eval "db.'+output_collection_ushmm+'.copyTo(\'testimonies\')"')
+ os.system('mongo ' + DB + ' --eval "db.'+output_collection_ushmm+'.copyTo(\'testimonies\')"')
 
  
  os.system('mongo ' + DB + ' --eval "db.'+output_collection_usc+'.copyTo(\'testimonies\')"')
 
  #create the folia input
- #create_folia_input.main()
+ create_folia_input.main()
 
 
 
@@ -122,13 +119,12 @@ def process_data():
 
  		
 
- pdb.set_trace()
- '''
 
- 
+
+
 #find fragments
 
- #create_fragments_collection.main()
+ create_fragments_collection.main()
 
 
 
@@ -146,7 +142,7 @@ def process_data():
 
 #add the fragment collection to it
 
- #os.system('mongoimport -d ' + output_db + ' -c fragments --file data/outputs/fragments/fragments_post_processed.json --jsonArray')
+ os.system('mongoimport -d ' + output_db + ' -c fragments --file data/outputs/fragments/fragments_post_processed.json --jsonArray')
 
  #archive the output db
 
@@ -154,16 +150,16 @@ def process_data():
 
  #delete it from the host system
 
- #os.system('mongo ' + output_db + ' --eval "db.dropDatabase()"')
+ os.system('mongo ' + output_db + ' --eval "db.dropDatabase()"')
 
  #zip the folia files
- #os.system('zip -r -j data/outputs/folia_output/folia.zip data/outputs/folia_output/*')
+ os.system('zip -r -j data/outputs/folia_output/folia.zip data/outputs/folia_output/*')
 
  #upload the data to amazon server
- '''
+'''
  print 'upload data to amazon servers'
 
- os.system('	')
+ os.system('aws s3 cp data/outputs/folia_output/folia.zip s3://lab-secrets/let-them-speak/folia.zip --profile lab-secrets')
 
  os.system('aws s3 cp data/outputs/db/lts.archive s3://lab-secrets/let-them-speak/lts.archive --profile lab-secrets')
 
