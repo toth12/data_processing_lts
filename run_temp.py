@@ -47,22 +47,13 @@ def process_data():
 
 
 
-	transcribe_non_core_docx.createStructuredTranscript_Non_Core_Docx()
+	transcribe_core_doc.createStructuredTranscriptDoc()
 	create_folia_input.main()
+
 	pdb.set_trace()
+	f='/Users/gmt28/Documents/Workspace/Docker_Engine/varad/Yale_Projects/shoah-foundation-data-restored/shoah-foundation-data/data/inputs/ushmm/transcripts/microsoft_doc_docx/RG-50.030.0335_trs_en.doc'
 
 	
-	f='/Users/gmt28/Documents/Workspace/Docker_Engine/varad/Yale_Projects/shoah-foundation-data-restored/shoah-foundation-data/data/inputs/ushmm/pdf_transcript_not_available_in_doc_transformed_to_docx/RG-50.462.0032_trs_en.docx'
-
-	units=transcribe_non_core_docx_made_from_pdf.getUnstructured_50_462_0032_Units(f)
-
-	
-
-	
-	
-	h.update_field(DB, 'testimonies', "shelfmark", "USHMM RG-50.462*0032", "structured_transcript", units)
-	create_folia_input.main()
-	pdb.set_trace()
 
 
 	

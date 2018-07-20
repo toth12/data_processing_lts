@@ -34,7 +34,6 @@ def getTextUnits(filename):
             # e.g [WJ]
             n = re.compile('\[[A-Z][A-Z]\]')
             typer2= n.match(unit_type)
-
             # else parse them according to formatting guidelines
             if ("Question:" in unit_type or
                 type1 or
@@ -44,19 +43,18 @@ def getTextUnits(filename):
                 units.append({'unit': paragraph})
             
             # backup for 2 interviews that don't match any of the patterns above
-            elif (filename == "RG-50.030.0336_trs_en.docx" or 
-                filename == "RG-50.030.0335_trs_en.docx"):
+            elif ("RG-50.030.0336_trs_en.docx" in filename or 
+                "RG-50.030.0335_trs_en.docx" in filename):
 
-                if ("Interviewer:" in unit_type or 
-                    "Theodore:" in unit_type or 
-                    "MR." in unit_type):
+                if ("interviewer:" in unit_type.lower() or 
+                    "theodore:" in unit_type.lower() or 
+                    "mr." in unit_type.lower()):
                     
                     units.append({'unit': paragraph})
             #add it even if the pattern is not clearly present
             else:
                 if len(units)>0:
                     units[-1]['unit']= units[-1]['unit']+paragraph      
-
     return units
 
 def createStructuredTranscriptDoc():
@@ -77,6 +75,7 @@ def createStructuredTranscriptDoc():
         if ("RG-50.030" in file or
             "RG-50.106" in file or
             "RG-50.549" in file):
+        
 
             # convert file to docx, storing it in an untracked folder called temp
             file_docx = file + 'x'
@@ -91,7 +90,6 @@ def createStructuredTranscriptDoc():
    
     not_processed=0
     processed_doc=0
-    
     # get the units for each file, store them and update tracker
     for mongo_rg in core_doc_asset:
         # get text units for this entry
@@ -113,9 +111,7 @@ def createStructuredTranscriptDoc():
 
         
         #set the method used to transform the transcript
-
         h.update_field(DB, TRACKER, "rg_number", mongo_rg, "method", "transcribe_core_doc")
-
         not_processed=not_processed+1
         if False in processed:
             h.update_field(DB, TRACKER, "rg_number", mongo_rg, "status", "Unprocessed")
