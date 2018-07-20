@@ -16,7 +16,7 @@ import helper_mongo as h
 
 
 # initial status for all files in the tracker
-INITIAL_STATUS = "not processed"
+INITIAL_STATUS = "Unprocessed"
 DB = constants.DB
 INPUT_COLLECTION = constants.INPUT_COLLECTION_USHMM
 TRACKER = constants.USHMM_TRACKER_COLLECTION
