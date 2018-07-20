@@ -151,7 +151,6 @@ if __name__ == "__main__":
     files=['RG-50.030.0281_trs_en.docx','RG-50.030.0333_trs_en.docx','RG-50.030.0394_trs_en.docx']
     for element in files:
         result=getTextUnits(element)
-        pdb.set_trace()
 
     #getTextUnits()
     """

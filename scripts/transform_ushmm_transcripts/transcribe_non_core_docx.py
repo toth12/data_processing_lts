@@ -417,13 +417,11 @@ def createStructuredTranscript_Non_Core_Docx():
     missing_files=[]
     for file in glob.glob(INPUT_FOLDER+"*.docx"):
          # RG numbers for the non-core asset
-        '''if ("RG-50.030" not in file and
+        if ("RG-50.030" not in file and
             "RG-50.106" not in file and
             "RG-50.549" not in file):
-            docx_assets.append(file)'''
-         #This is temporary
-        if ("RG-50.462.0009" in file):
             docx_assets.append(file)
+        
 
 
     # get the units for each file, store them and update tracker
@@ -476,11 +474,8 @@ def createStructuredTranscript_Non_Core_Docx():
             not_processed=not_processed+1
         else:
             # insert units on the output collection
-            #this is the original
-            #h.update_field(DB, OUTPUT, "shelfmark", 'USHMM '+mongo_rg, "structured_transcript", result)
-            #this is temporary
-            h.update_field(DB, 'testimonies', "shelfmark", 'USHMM '+mongo_rg, "structured_transcript", result)
-
+            h.update_field(DB, OUTPUT, "shelfmark", 'USHMM '+mongo_rg, "structured_transcript", result)
+            
                 
             # update status on the stracker
             
