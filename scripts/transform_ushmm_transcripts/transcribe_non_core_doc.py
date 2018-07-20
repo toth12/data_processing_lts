@@ -158,10 +158,12 @@ def getTextUnits(filename):
     non_units = ["name:", "date:", "date", "series", "transcriber", "thesis:", "currently:", "note", "comment", "grandparents:", "transcript:", "note:"]
 
     ongoing_answer = ""
+
+    
+
     # iterate over all paragraphs to get text units
     for para in doc.paragraphs:
         paragraph = para.text
-        
         # ensure it is not an empty line
         if len(paragraph.strip())>0:
             # get first word
@@ -181,7 +183,10 @@ def getTextUnits(filename):
             o = re.compile('[0-9]?[0-9]:[0-9][0-9]:[0-9][0-9]')
             type3 = o.match(unit_type)           
             
-   
+            
+            
+
+
             # else parse them according to formatting guidelines
             if ("Question:" in unit_type or
                 type1 or
@@ -206,6 +211,7 @@ def getTextUnits(filename):
                     unit_type.lower() not in non_units and
                     unit_type[:-1].isalpha()):
                 
+                
                 units.append({'unit': paragraph})
                 # update tracker
                 unit_tracker[unit_type] += 1
@@ -216,30 +222,27 @@ def getTextUnits(filename):
                 backup_type = paragraph.split()[1]
                 backup_two = paragraph.split()[2]
 
-                if ((':' in backup_type and backup_type.lower() not in non_units) or
-                    (':' in backup_two and backup_two.lower() not in non_units)): 
-                    units.append({'unit': paragraph})
+                if ((':' in backup_type or backup_type.lower() not in non_units) or
+                    (':' in backup_two or backup_two.lower() not in non_units)): 
+                    
+                    if ((paragraph.strip()[0].islower() and len(paragraph.strip()) > 5) or (paragraph.strip()[-1] in ['.','!','?'])) and len(units) >0:
+                        units[-1]['unit']=units[-1]['unit']+ ' '+paragraph
                     # update tracker
-                    unit_tracker[unit_type] += 1
-
+                        unit_tracker[unit_type] += 1
+                    else:
+                        units.append({'unit':paragraph})
+                        unit_tracker[unit_type] += 1
             # if it is none of these cases, maybe there is an ongoing answer
-            if ongoing_answer and ongoing_answer != paragraph:
-         
+                
+            elif (ongoing_answer and ongoing_answer != paragraph):
+               
                 if not any(non_unit in paragraph.lower() for non_unit in non_units):
                     ongoing_answer += paragraph
-                
-    
+            else:
+                units.append({'unit':paragraph})
+
     if len(unit_tracker) < 2:
-        if "50.042" in filename:
-            units = getUnstructured042Units(filename)
-        elif "50.926" in filename:
-            units = getUnstructured926Units(filename)
-        elif "50.462.0005" in filename:
-            units = get462Monologue(filename)
-        elif "RG-50.233.0083" in filename:
-            units = getUnstructured_50_233_0083_Units(filename)
-        else:
-          return []
+        return []
     
     return units
 
@@ -263,6 +266,7 @@ def createStructuredTranscript_Non_Core_Doc():
             "RG-50.106" not in file and
             "RG-50.549" not in file):
 
+        
             # convert file to docx, storing it in an untracked folder called temp
             file_docx = file + 'x'
             command = 'textutil -convert docx ' + file + ' -output ' + INPUT_FOLDER+'temp/'+ file_docx.split('/')[-1]
@@ -288,8 +292,16 @@ def createStructuredTranscript_Non_Core_Doc():
         
         for file in core_doc_asset[mongo_rg]:
 
-            units = getTextUnits(INPUT_FOLDER+'temp/'+file.split('/')[-1])
-            
+            if "50.042" in file:
+                units = getUnstructured042Units(file)
+            elif "50.926" in file:
+                units = getUnstructured926Units(file)
+            elif "50.462.0005" in file:
+                units = get462Monologue(file)
+            elif "RG-50.233.0083" in file:
+                units = getUnstructured_50_233_0083_Units(file)
+            else:
+                units = getTextUnits(INPUT_FOLDER+'temp/'+file.split('/')[-1])
             
             if units:
                 result.extend(units)
@@ -301,7 +313,6 @@ def createStructuredTranscript_Non_Core_Doc():
 
         
         #set the method used to transform the transcript
-
         h.update_field(DB, TRACKER, "rg_number", mongo_rg, "method", "transcribe_non_core_doc")
 
         not_processed=not_processed+1 
@@ -312,7 +323,7 @@ def createStructuredTranscript_Non_Core_Doc():
             missing_files.append(' '.join(core_doc_asset[mongo_rg]))
         else:
             # insert units on the output collection
-            h.update_field(DB, OUTPUT, "shelfmark", 'USHMM '+mongo_rg, "structured_transcript", result)
+            h.update_field(DB, 'testimonies', "shelfmark", 'USHMM '+mongo_rg, "structured_transcript", result)
 
                 
             # update status on the stracker
