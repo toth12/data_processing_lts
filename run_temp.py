@@ -29,7 +29,6 @@ from scripts.create_usc_metadata import run as create_usc_metadata
 from scripts.transform_usc_transcripts import run as create_usc_transcripts
 from scripts.create_folia_input import run as create_folia_input
 from add_sample_transcript import add_sample_transcript
-from scripts.create_fragments_collection import run as create_fragments_collection
 from bson.objectid import ObjectId
 
 
@@ -46,8 +45,11 @@ output_db=constants.OUTPUT_DB
 
 def process_data():
 
-	#create_folia_input.main()
-	#pdb.set_trace()
+
+
+	transcribe_non_core_docx.createStructuredTranscript_Non_Core_Docx()
+	create_folia_input.main()
+	pdb.set_trace()
 
 	
 	f='/Users/gmt28/Documents/Workspace/Docker_Engine/varad/Yale_Projects/shoah-foundation-data-restored/shoah-foundation-data/data/inputs/ushmm/pdf_transcript_not_available_in_doc_transformed_to_docx/RG-50.462.0032_trs_en.docx'

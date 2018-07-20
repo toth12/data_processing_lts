@@ -28,9 +28,9 @@ def create_dictionary_of_file_list(filelist):
             position={}
             for f in result[element]:
                 pos=f.split('/')[-1].split('_')[1][-1]
-                position[pos]=f
-
-            reordered=[position[i] for i in position]
+                position[int(pos)]=f
+            possible_positions=sorted(position.keys())
+            reordered=[position[i] for i in possible_positions]
             result[element]=reordered
             
     return result
