@@ -368,13 +368,21 @@ def getTextUnits(filename):
                 backup_type = paragraph.split()[1]
                 backup_two = paragraph.split()[2]
 
-                safePrint(backup_type)
-
-                if ((':' in backup_type and backup_type.lower() not in non_units) or
-                    (':' in backup_two and backup_two.lower() not in non_units)): 
-                    units.append({'unit': paragraph})
+                if ((':' in backup_type or backup_type.lower() not in non_units) or
+                    (':' in backup_two or backup_two.lower() not in non_units)): 
+                    
+                    if ((paragraph.strip()[0].islower() and len(paragraph.strip()) > 3) or (paragraph.strip()[-1] in ['.','!','?'])) and len(units) >0:
+                        units[-1]['unit']=units[-1]['unit']+ ' '+paragraph
                     # update tracker
-                    unit_tracker[unit_type] += 1
+                        unit_tracker[unit_type] += 1
+                    
+
+                    else:
+                        units.append({'unit':paragraph})
+                        unit_tracker[unit_type] += 1
+            else:
+                units.append({'unit':paragraph})
+
  
 
     # apply backup method when needed
@@ -456,6 +464,10 @@ def createStructuredTranscript_Non_Core_Docx():
             
             if units:
                 result.extend(units)
+
+                #replace white spaces
+                for i,element in enumerate(units):
+                    units[i]['unit']=' '.join(element['unit'].split())
             
                 processed.append(True)
             else:
@@ -463,7 +475,6 @@ def createStructuredTranscript_Non_Core_Docx():
                 processed.append(False)
         #set the method used to transform the transcript
         
-
 
         h.update_field(DB, TRACKER, "rg_number", mongo_rg, "method", "transcribe_non_core_docx")
 

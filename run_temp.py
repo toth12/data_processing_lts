@@ -46,7 +46,7 @@ output_db=constants.OUTPUT_DB
 def process_data():
 
 
-	transcribe_non_core_docx_made_from_pdf.createStructuredTranscriptDoc()
+	transcribe_non_core_docx.createStructuredTranscript_Non_Core_Docx()
 	create_folia_input.main()
 
 	pdb.set_trace()
