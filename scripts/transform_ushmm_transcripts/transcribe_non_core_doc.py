@@ -304,6 +304,9 @@ def createStructuredTranscript_Non_Core_Doc():
                 units = getTextUnits(INPUT_FOLDER+'temp/'+file.split('/')[-1])
             
             if units:
+                #replace white spaces
+                for i,element in enumerate(units):
+                    units[i]['unit']=' '.join(element['unit'].split())
                 result.extend(units)
             
                 processed.append(True)
@@ -323,7 +326,7 @@ def createStructuredTranscript_Non_Core_Doc():
             missing_files.append(' '.join(core_doc_asset[mongo_rg]))
         else:
             # insert units on the output collection
-            h.update_field(DB, OUTPUT_COLLECTION_USHMM, "shelfmark", 'USHMM '+mongo_rg, "structured_transcript", result)
+            h.update_field(DB, OUTPUT, "shelfmark", 'USHMM '+mongo_rg, "structured_transcript", result)
 
                 
             # update status on the stracker

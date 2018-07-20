@@ -463,11 +463,14 @@ def createStructuredTranscript_Non_Core_Docx():
                 units = getTextUnits(file)
             
             if units:
-                result.extend(units)
 
                 #replace white spaces
                 for i,element in enumerate(units):
                     units[i]['unit']=' '.join(element['unit'].split())
+                
+                result.extend(units)
+
+                
             
                 processed.append(True)
             else:

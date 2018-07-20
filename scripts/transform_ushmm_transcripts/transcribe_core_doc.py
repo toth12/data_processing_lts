@@ -102,6 +102,9 @@ def createStructuredTranscriptDoc():
             
             
             if units:
+                #replace white spaces
+                for i,element in enumerate(units):
+                    units[i]['unit']=' '.join(element['unit'].split())
                 result.extend(units)
             
                 processed.append(True)
