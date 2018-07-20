@@ -58,10 +58,9 @@ def main():
     problematic_ids=[]
 
 
-    #this is the original
     results=h.query(DB, 'testimonies', {'structured_transcript':{'$exists':True}}, {'testimony_id':1,'structured_transcript':1,'shelfmark':1,'collection':1,'camp_names':1,'ghetto_names':1,'gender':1,'interviewee_name':1,'recording_year':1} )   
     #this is used for debugging
-    #results=h.query(DB, 'testimonies', {'testimony_id':'irn504830'}, {'testimony_id':1,'structured_transcript':1,'shelfmark':1,'collection':1,'camp_names':1,'ghetto_names':1,'gender':1,'interviewee_name':1,'recording_year':1} )   
+    #results=h.query(DB, 'testimonies', {'testimony_id':'irn62054'}, {'testimony_id':1,'structured_transcript':1,'shelfmark':1,'collection':1,'camp_names':1,'ghetto_names':1,'gender':1,'interviewee_name':1,'recording_year':1} )   
 
 
     

@@ -47,7 +47,7 @@ def process_data():
 
 
 
-	transcribe_core_doc.createStructuredTranscriptDoc()
+	transcribe_core_docx.createStructuredTranscriptDocx()
 	create_folia_input.main()
 
 	pdb.set_trace()

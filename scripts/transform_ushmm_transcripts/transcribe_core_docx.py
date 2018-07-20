@@ -32,10 +32,10 @@ def getTextUnits(filename):
 
             # exception, two interviews do not follow the formatting guidelines
             # handle them
-            if (filename == "RG-50.030.0710_trs_en.docx" or
-                filename == "RG-50.030.0711_trs_en.docx"):
+            if ("RG-50.030.0710_trs_en.docx" in filename or
+                "RG-50.030.0711_trs_en.docx" in filename):
                 
-                if unit_type == "[DL]" or unit_type == "[AG]":
+                if unit_type == "[DL]" or unit_type == "[AG]" or unit_type== "[BB]":
                     units.append({'unit': paragraph})
             
             # else parse them according to formatting guidelines
@@ -47,7 +47,6 @@ def getTextUnits(filename):
                 "A." in unit_type):
 
                 units.append({'unit': paragraph})
-
     return units
 
 def createStructuredTranscriptDocx():
@@ -64,6 +63,8 @@ def createStructuredTranscriptDocx():
         if ("RG-50.030" in file or
             "RG-50.106" in file or
             "RG-50.549" in file):
+        #this is temporary
+
             # append to the array
             core_docx_asset.append(file)
 
