@@ -11,6 +11,7 @@ import regex as re
 import unidecode
 from six import string_types
 import pdb
+import csv
 
 
 def read(path, codec):
@@ -154,6 +155,17 @@ def transform_fields_with_non_latin_characters_to_latin(records):
           except:
             pdb.set_trace()
   return records
+
+def ReadCSVasDict(csv_file):
+    result=[]
+    try:
+        with open(csv_file) as csvfile:
+            reader = csv.DictReader(csvfile)
+            for row in reader:
+                result.append(row)
+    except IOError as (errno, strerror):
+            print("I/O error({0}): {1}".format(errno, strerror))    
+    return result
 
 if __name__ == "__main__":
   records=[{'ghetto_names':['Łódź'],'recording_year':1999,'camp_names':[],'name':''}]
