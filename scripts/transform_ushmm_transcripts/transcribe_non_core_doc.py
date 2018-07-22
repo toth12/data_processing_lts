@@ -68,7 +68,31 @@ def getUnstructured042Units(filename):
                 if 'USHMM Archives' in paragraph or "wentworth films" in paragraph.lower() :
                     break
                 elif 'beep' not in paragraph.lower():
-                    units.append({'unit':paragraph})
+                   units.append({'unit':paragraph})
+    
+    return units
+
+
+def getUnstructured042_special_Units(filename):
+    """
+    Returns the unstructured units of the RG.50-402 series
+    These interviews did not have any indi
+    """
+    doc = Document(filename)
+    units = list()
+    # all interviews start with a header
+    isHeader = True
+    # iterate over all paragraphs to get text units
+    for para in doc.paragraphs:
+        paragraph = para.text
+        
+        # ensure paragraph is not just empty line
+        hasText = paragraph.lstrip()
+        # ensure it is not an empty line
+        if hasText:
+
+            
+            units.append({'unit':paragraph})
     return units
 
 def get926Monologue(filename):
@@ -262,11 +286,13 @@ def createStructuredTranscript_Non_Core_Doc():
     for file in glob.glob(INPUT_FOLDER+"*.doc"):
 
         # RG numbers for the core asset
-        if ("RG-50.030" not in file and
+        '''if ("RG-50.030" not in file and
             "RG-50.106" not in file and
             "RG-50.549" not in file):
+        '''
+        if (('50.042.0025' in file) or ('50.042.0012' in file) or ('50.042.0014' in file)):
 
-        
+           
             # convert file to docx, storing it in an untracked folder called temp
             file_docx = file + 'x'
             command = 'textutil -convert docx ' + file + ' -output ' + INPUT_FOLDER+'temp/'+ file_docx.split('/')[-1]
@@ -291,15 +317,18 @@ def createStructuredTranscript_Non_Core_Doc():
         result=[]
         
         for file in core_doc_asset[mongo_rg]:
-
-            if "50.042" in file:
-                units = getUnstructured042Units(file)
+            
+            
+            if (('50.042.0025' in file) or ('50.042.0012' in file) or ('50.042.0014' in file)):
+                units = getUnstructured042_special_Units(INPUT_FOLDER+'temp/'+file.split('/')[-1])
+            elif "50.042" in file:
+                units = getUnstructured042Units(INPUT_FOLDER+'temp/'+file.split('/')[-1])
             elif "50.926" in file:
-                units = getUnstructured926Units(file)
+                units = getUnstructured926Units(INPUT_FOLDER+'temp/'+file.split('/')[-1])
             elif "50.462.0005" in file:
-                units = get462Monologue(file)
+                units = get462Monologue(INPUT_FOLDER+'temp/'+file.split('/')[-1])
             elif "RG-50.233.0083" in file:
-                units = getUnstructured_50_233_0083_Units(file)
+                units = getUnstructured_50_233_0083_Units(INPUT_FOLDER+'temp/'+file.split('/')[-1])
             else:
                 units = getTextUnits(INPUT_FOLDER+'temp/'+file.split('/')[-1])
             
@@ -314,11 +343,11 @@ def createStructuredTranscript_Non_Core_Doc():
                 #check if processed
                 processed.append(False)
 
-        
         #set the method used to transform the transcript
         h.update_field(DB, TRACKER, "rg_number", mongo_rg, "method", "transcribe_non_core_doc")
 
-        not_processed=not_processed+1 
+        not_processed=not_processed+1
+
         if False in processed:
 
             h.update_field(DB, TRACKER, "rg_number", mongo_rg, "status", "Unprocessed")

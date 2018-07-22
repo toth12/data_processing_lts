@@ -61,10 +61,8 @@ def main():
 
     results=h.query(DB, 'testimonies', {'structured_transcript':{'$exists':True}}, {'testimony_id':1,'structured_transcript':1,'shelfmark':1,'collection':1,'camp_names':1,'ghetto_names':1,'gender':1,'interviewee_name':1,'recording_year':1} )   
     #this is used for debugging temporary
-    #results=h.query(DB, 'testimonies', {'testimony_id':'irn514138'}, {'testimony_id':1,'structured_transcript':1,'shelfmark':1,'collection':1,'camp_names':1,'ghetto_names':1,'gender':1,'interviewee_name':1,'recording_year':1} )   
+    #results=h.query(DB, 'testimonies',{ '$or': [ {'testimony_id':'irn505578'}, {'testimony_id':'irn505566'},{'testimony_id':'irn505568'}] },{'testimony_id':1,'structured_transcript':1,'shelfmark':1,'collection':1,'camp_names':1,'ghetto_names':1,'gender':1,'interviewee_name':1,'recording_year':1})   
 
-
-    
     
     for index,result in enumerate(results):
         

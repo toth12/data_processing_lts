@@ -57,7 +57,6 @@ def getTextUnits(filename):
             else:
                 if len(units)>0:
                     units[-1]['unit']= units[-1]['unit']+paragraph       
-    print units
     
     return units
 
