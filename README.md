@@ -1,12 +1,12 @@
 # Let Them Speak Data Processing
 
-> Let Them Speak is a joint project by Gabor M. Toth and Yale Fortunoff Archive and DH Lab. It builds a data edition and text analysis tools to study testimonies of Holocaust survivors. Let Them Speak is empowered by a corpus engine (Blacklab) and a Mongo DB. (link to project rep) This repository is a collection of python scripts to transform two types of raw data (catalogue data and interview transcripts) into the input (link) of the engine and the DB. Raw data are provided by three institutions:
+> Let Them Speak is a joint project by Gabor M. Toth and Yale Fortunoff Archive and DH Lab. It builds a data edition and text analysis tools to study testimonies of Holocaust survivors. Let Them Speak is empowered by a corpus engine (Blacklab) and a Mongo DB. This repository is a collection of python scripts to transform two types of raw data (catalogue data and interview transcripts provided by data providers) into the input of the engine (annotated FOLIA xml files) and into collections of the Mongo DB running the edition. Raw data are provided by three institutions:
 
-> * Fortunoff Archive Yale University
-> * United States Holocaust Memorial Museums
-> * USC Shoah Foundation
+> * Fortunoff Archive Yale University - siglum: fortunoff
+> * United States Holocaust Memorial Museums - siglum: ushmm
+> * USC Shoah Foundation - siglum: usc
 
-> Transformation of each data set is desribed in the README of the corresponding folder. (See /scripts/)
+> Transformation of each data set is desribed in the README of the corresponding folder. (See scripts/)
 
 
 ## Operating System Requirements
@@ -46,8 +46,12 @@ pip2 install -r requirements
 ```
 
 Then download Stanford Parser most recent version (https://nlp.stanford.edu/software/lex-parser.shtml#Download) and then unzip it and copy it to lib/stanford-corenlp (lib/stanford-corenlp is not part of the repo, you need to create it):
+```bash
+mkdir lib
+mkdir stanford-corenlp
+```
 
-Unzip the data file and copy it to the main folder, this will create both input folders and the output folders.
+Unzip the data file provided by the owner of the repo, and copy it to the main folder, this will create both input folders and the output folders (this will be empty with folders used to hold output data).
 
 
 ## Running the transformations
@@ -68,23 +72,24 @@ python2 run.py
 That will start a pipeline of 2x3 transformations:
 
 > * transformation of catalogue data in various data formats (xls,marcXML,mongo collection dump) into the datamodel of the app 
-> * transformation of transcripts (in XML, plain text, PDF, DOC, DOCX) into annotated FOLIA XML
+> * transformation of transcripts (in XML, plain text, PDF, DOC, DOCX) into annotated FOLIA XML.
 
 The pipeline finishes with a test.
 
 ## Input
 
-The input data is to be copied to data/input/{collection_siglum}. Each input data is described in the README of folders for different transformations. This repo comes with input data ready. Unzip the input data and copy to data/.
+The input data is copied to data/input/{collection_siglum}, once the data.zip is copied to the project folder, and unzipped. Each input data is described in the README of folders for different transformations. 
 
 ## Output
 
-It is in data/output. The output of transformations is the input of the engine empowering Let Them Speak. First, it is two Mongo collections (see the model in DataModel.md) saved in /data/output/db/lts.archive:
+It is in data/output. The output of transformations is the input of the engine empowering Let Them Speak. First, it is three Mongo collections (see the model in DataModel.md) saved in /data/output/db/lts.archive:
 
 > * testimonies
 > * tokens
+> * fragments
 
 Second, it is a collection of annotated folia files in /data/output/folia/. 
 
-Third, log of documents that could not be processed are in /data/outputs/.
+Third, log of documents that could not be processed are in /data/outputs/{collection_siglum}
 
 
