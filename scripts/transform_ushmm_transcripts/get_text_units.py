@@ -25,7 +25,7 @@ import heapq
 
 DB=constants.DB
 TRACKER="USHMM_transcript_processing_progress_test"
-SAMPLE_FILE='sample_data/input_ids.txt'
+SAMPLE_FILE='scripts/transform_ushmm_transcripts/sample_data/input_ids.txt'
 INPUT_FOLDER='/Users/gmt28/Documents/Workspace/Docker_Engine/varad/Yale_Projects/shoah-foundation-data-restored/shoah-foundation-data/data/inputs/ushmm/transcripts/microsoft_doc_docx/'
 
 def getTextUnits(filename):
@@ -40,7 +40,7 @@ def getTextUnits(filename):
 
       
 
-    text = ' '.join([' '.join(para.text.split()[0:4]) for para in doc.paragraphs if len(para.text.strip()) >50])
+    '''text = ' '.join([' '.join(para.text.split()[0:4]) for para in doc.paragraphs if len(para.text.strip()) >50])
     counter=text.split()
 
     result_counter=[]
@@ -61,64 +61,92 @@ def getTextUnits(filename):
             result_counter.append(len(pattern_presence))
     result_counter.index(heapq.nlargest(1, result_counter)[0])
     pdb.set_trace()
-    # iterate over all paragraphs to get text units
+    # iterate over all paragraphs to get text units'''
+    
     for para in doc.paragraphs:
-        paragraph = para.text
-        
-        # ensure it is not an empty line
-        if len(paragraph.strip())>0:
+        paragraph = para.text.strip()
+         # ensure it is not 
+       
+        presence_regex_unit=False
+        presence_answer_unit=False
+        presence_question_unit=False
+        if len(paragraph)>0:
             # get first word
-            print 'l'
+            first_words=paragraph[0:10]
+            for element in question_units:
+                if element in first_words:
+                    presence_question_unit=True
+                    break
+            if presence_question_unit == False:
+                for element in answer_units:
+                    if element in first_words:
+                        presence_answer_unit=True
+                        break
+            if presence_answer_unit==False:
+                for element in regex_units:
+                    n = re.compile(element)
+                    typer2= n.match(first_words)
+                    if typer2 and (first_words not in non_units):
+                        presence_regex_unit=True
+                        break
+            if presence_regex_unit or presence_answer_unit or presence_question_unit:
+                units.append({'unit':paragraph})
+
+            elif(len(units)>0 and len(paragraph.split())>3):
+                if ((units[-1]['unit'].split()>3) and (units[-1]['unit'][-1] not in ['?','.','!']) ):
+                    units[-1]['unit']=units[-1]['unit']+' '+paragraph
+                else:
+                    units.append({'unit':paragraph})
+
+
+            
+            else: 
+                units.append({'unit':paragraph})
+
+
+
+
+    
+    #pdb.set_trace()
     return units
 
 
-if __name__ == '__main__':
-    
+def main():
     ids=open(SAMPLE_FILE).readlines()
     all_files=[]
-    for testimony_id in ids[0:1]:
+    for testimony_id in ids:
 
         result=h.query(DB,TRACKER,{'id':testimony_id.strip()},{'microsoft_doc_file':1,'method':1,'id':1,'_id':0})[0]
         all_files.append(result)
 
     for element in all_files:
-
         name=element['microsoft_doc_file'][0]
+        print element['id']
         if name.split('.')[-1]=='doc':
+            result=[]
             for files in element['microsoft_doc_file']:
                 
                 file=INPUT_FOLDER+ files
                 command = 'textutil -convert docx ' + file + ' -output ' + os.getcwd()+'/sample_data/'+files+'x' 
-                file=os.getcwd()+'/sample_data/'+files+'x'
-                getTextUnits(file)
+                file=os.getcwd()+'/scripts/transform_ushmm_transcripts/sample_data/'+files+'x'
+                units=getTextUnits(file)
+                for i,unit in enumerate(units):
+                    units[i]['unit']=' '.join(unit['unit'].split())
+                result.extend(units)
+            h.update_field(DB, 'output_ushmm_metadata', "testimony_id", element['id'], "structured_transcript", result)
+
         else:
+            result=[]
             for file in element['microsoft_doc_file']:
                 file=INPUT_FOLDER+file
-                getTextUnits(file)
+                units=getTextUnits(file)
+                for i,unit in enumerate(units):
+                    units[i]['unit']=' '.join(unit['unit'].split())
+                result.extend(units)
+
+            h.update_field(DB, 'output_ushmm_metadata', "testimony_id", element['id'], "structured_transcript", result)
+
     
             
-
-
-
-    '''
-unit_type = paragraph.partition(' ')[0]
-
-            # exception, two interviews do not follow the formatting guidelines
-            # handle them
-            if ("RG-50.030.0710_trs_en.docx" in filename or
-                "RG-50.030.0711_trs_en.docx" in filename):
-                
-                if unit_type == "[DL]" or unit_type == "[AG]" or unit_type== "[BB]":
-                    units.append({'unit': paragraph})
-            
-            # else parse them according to formatting guidelines
-            elif ("Question:" in unit_type or
-                unit_type == "Q:" or
-                "Q." in unit_type or
-                "Answer:" in unit_type or 
-                unit_type == "A:" or
-                "A." in unit_type):
-
-                units.append({'unit': paragraph})
-
-    '''
+if __name__ == '__main__':
+    main()

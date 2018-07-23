@@ -20,6 +20,7 @@ from scripts.transform_ushmm_transcripts import transcribe_core_doc
 from scripts.transform_ushmm_transcripts import transcribe_non_core_doc 
 from scripts.transform_ushmm_transcripts import transcribe_non_core_docx 
 from scripts.transform_ushmm_transcripts import run
+from scripts.transform_ushmm_transcripts import get_text_units
 #import project specific scripts
 from scripts.create_ushmm_metadata import run as create_ushmm_metadata
 from scripts.transform_ushmm_transcripts import run as create_ushmm_transcript_input
@@ -46,7 +47,7 @@ output_db=constants.OUTPUT_DB
 def process_data():
 
 
-	transcribe_non_core_doc.createStructuredTranscript_Non_Core_Doc()
+	get_text_units.main()
 	
 	create_folia_input.main()
 
@@ -93,7 +94,6 @@ def process_data():
 		units=transcribe_non_core_docx.getUnstructured_50_616_Units(constants.INPUT_FOLDER_USHMM_TRANSCRIPTS_DOC+element[0])
 
 		
-		pdb.set_trace()
 	#transcribe_non_core_docx_made_from_pdf.createStructuredTranscriptDoc()
 
 	
