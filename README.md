@@ -51,12 +51,25 @@ mkdir lib
 mkdir stanford-corenlp
 ```
 
-Unzip the data file provided by the owner of the repo, and copy it to the main folder, this will create both input folders and the output folders (this will be empty with folders used to hold output data).
+Copy the data.zip provided by the repo owner to the main folder, and unzip it. This will create both input folders and the output folders (this will be empty with folders used to hold output data).
 
 
 ## Running the transformations
 
 Once the dependencies are settled, you can run all transformations in the main project folder by:
+
+First open a new tab in the terminal with the project root folder and start the Stanford core nlp server as a daemon:
+
+```bash
+python start_stanford_parser.py
+```
+
+Or if both python3 and python2 are installed:
+
+```bash
+python2 start_stanford_parser.py
+```
+Then you can start the entire transformation process, which takes several hours to accomplish.
 
 ```bash
 python run.py
@@ -69,12 +82,12 @@ Or if both python3 and python2 are installed:
 python2 run.py
 ```
 
-That will start a pipeline of 2x3 transformations:
+That will start a pipeline of 2x3 (i.e. two transformations per each institution) transformations:
 
 > * transformation of catalogue data in various data formats (xls,marcXML,mongo collection dump) into the datamodel of the app 
 > * transformation of transcripts (in XML, plain text, PDF, DOC, DOCX) into annotated FOLIA XML.
 
-The pipeline finishes with a test.
+The pipeline finishes with a test, optionally it uploads the output to an amazon server (this is by default commented out). To hold data during transformations, the pipeline constructs a temporary mongo DB (let_them_speak_data_processing); at the end of the process, this DB is dropped. To create the final output,the pipeline constructs a temporary mongo DB (lts); at the end of the process, this DB is dropped. All relative pathes, collection and DB names are stored in constants.py.
 
 ## Input
 
@@ -88,7 +101,7 @@ It is in data/output. The output of transformations is the input of the engine e
 > * tokens
 > * fragments
 
-Second, it is a collection of annotated folia files in /data/output/folia/. 
+Second, it is a collection of annotated folia files in /data/output/folia/ in zip file. 
 
 Third, log of documents that could not be processed are in /data/outputs/{collection_siglum}
 
