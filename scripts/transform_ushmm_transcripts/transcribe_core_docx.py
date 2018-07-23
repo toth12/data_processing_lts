@@ -4,6 +4,7 @@ sys.path.insert(0, helper_path)
 import helper_mongo as h
 from data_spec import create_dictionary_of_file_list
 import pdb
+from get_text_units import getTextUnits
 
 
 from docx import Document
@@ -17,7 +18,7 @@ INPUT_FOLDER=constants.INPUT_FOLDER_USHMM_TRANSCRIPTS_DOC
 OUTPUT_FOLDER_USHMM_PROCESSING_LOGS=constants.OUTPUT_FOLDER_USHMM_PROCESSING_LOGS 
 
 
-def getTextUnits(filename):
+def getTextUnits_old(filename):
     doc = Document(filename)
     units = list()
 

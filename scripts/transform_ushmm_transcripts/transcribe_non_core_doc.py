@@ -2,6 +2,7 @@ import sys, glob, os
 import helper_mongo as h
 from data_spec import create_dictionary_of_file_list
 import pdb
+from get_text_units import getTextUnits
 
 
 from docx import Document
@@ -167,7 +168,7 @@ def getUnstructured926Units(filename):
         units = get926Monologue(filename)
 
     return units
-def getTextUnits(filename):
+def getTextUnits_old(filename):
     """
     Returns the text units for a given file in the non-core asset
     Uses regex to identify common patterns and uses specific backup methods
@@ -319,18 +320,8 @@ def createStructuredTranscript_Non_Core_Doc():
         for file in core_doc_asset[mongo_rg]:
             
             
-            if (('50.042.0025' in file) or ('50.042.0012' in file) or ('50.042.0014' in file)):
-                units = getUnstructured042_special_Units(INPUT_FOLDER+'temp/'+file.split('/')[-1])
-            elif "50.042" in file:
-                units = getUnstructured042Units(INPUT_FOLDER+'temp/'+file.split('/')[-1])
-            elif "50.926" in file:
-                units = getUnstructured926Units(INPUT_FOLDER+'temp/'+file.split('/')[-1])
-            elif "50.462.0005" in file:
-                units = get462Monologue(INPUT_FOLDER+'temp/'+file.split('/')[-1])
-            elif "RG-50.233.0083" in file:
-                units = getUnstructured_50_233_0083_Units(INPUT_FOLDER+'temp/'+file.split('/')[-1])
-            else:
-                units = getTextUnits(INPUT_FOLDER+'temp/'+file.split('/')[-1])
+            
+            units = getTextUnits(INPUT_FOLDER+'temp/'+file.split('/')[-1])
             
             if units:
                 #replace white spaces

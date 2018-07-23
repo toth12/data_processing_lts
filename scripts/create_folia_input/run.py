@@ -32,8 +32,7 @@ def process(data):
         html_output=create_html_output(annotated_folia_xml)
         look_up_table=create_token_sentence_lookup(annotated_folia_xml,data['testimony_id'])
         #this is temporary
-        unique_id=h.query('lts', 'testimonies',{'testimony_id':data['testimony_id']},{'id_':1})[0]
-        h.update_entry('lts','testimonies',unique_id['_id'],{'html_transcript':html_output}) 
+        h.update_entry(DB,'testimonies',data['_id'],{'html_transcript':html_output}) 
         h.insert(DB, 'tokens',look_up_table)
 
         annotated_folia_xml.save(folia_output_folder+data['testimony_id']+'.xml')
@@ -60,14 +59,11 @@ def main():
     problematic_ids=[]
 
 
-    #results=h.query(DB, 'testimonies', {'structured_transcript':{'$exists':True}}, {'testimony_id':1,'structured_transcript':1,'shelfmark':1,'collection':1,'camp_names':1,'ghetto_names':1,'gender':1,'interviewee_name':1,'recording_year':1} )   
+    results=h.query(DB, 'testimonies', {'structured_transcript':{'$exists':True}}, {'testimony_id':1,'structured_transcript':1,'shelfmark':1,'collection':1,'camp_names':1,'ghetto_names':1,'gender':1,'interviewee_name':1,'recording_year':1} )   
     #this is used for debugging temporary
     #results=h.query(DB, 'testimonies',{ '$or': [ {'testimony_id':'irn505578'}, {'testimony_id':'irn505566'},{'testimony_id':'irn505568'}] },{'testimony_id':1,'structured_transcript':1,'shelfmark':1,'collection':1,'camp_names':1,'ghetto_names':1,'gender':1,'interviewee_name':1,'recording_year':1})   
 
-    ids=['irn503624','irn508771\n', 'irn511061\n', 'irn510457\n', 'irn511056\n', 'irn511063\n', 'irn511020\n', 'irn509102\n', 'irn511064\n', 'irn511069\n', 'irn511231\n', 'irn539330']
     
-    ids=[{'testimony_id':id.strip()} for id in ids]
-    results=h.query(DB, 'output_ushmm_metadata',{ '$or': ids },{'testimony_id':1,'structured_transcript':1,'shelfmark':1,'collection':1,'camp_names':1,'ghetto_names':1,'gender':1,'interviewee_name':1,'recording_year':1})   
     for index,result in enumerate(results):
         
         

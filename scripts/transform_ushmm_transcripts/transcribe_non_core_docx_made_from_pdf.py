@@ -3,6 +3,7 @@ import helper_mongo as h
 from docx import Document
 from subprocess import call
 from data_spec import create_dictionary_of_file_list
+from get_text_units import getTextUnits
 
 import pprint
 import constants
@@ -85,7 +86,7 @@ def getUnstructured_50_462_0032_Units(filename):
     return units
 
 
-def getTextUnits(filename):
+def getTextUnits_old(filename):
     doc = Document(filename)
     units = list()
     # iterate over all paragraphs to get text units
@@ -192,16 +193,8 @@ def createStructuredTranscriptDoc():
         
         for file in core_doc_asset[mongo_rg]:
 
-            if ("RG-50.583" in file):
-                units=getUnstructured50_583Units(file)
-            elif("RG-50.462.0005" in file):
-                units=getUnstructured_50_462_0005_Units(file)
-
-            elif("RG-50.462.0032" in file):
-                units=getUnstructured_50_462_0032_Units(file)
-
-            else:
-                units = getTextUnits(file)
+            
+            units = getTextUnits(file)
             
             if units:
                 #replace white spaces

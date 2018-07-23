@@ -2,6 +2,8 @@ import sys, glob, os
 import helper_mongo as h
 from data_spec import create_dictionary_of_file_list
 import pdb
+from get_text_units import getTextUnits
+
 
 
 from docx import Document
@@ -303,7 +305,7 @@ def getBasicMonologue(filename):
 
 
 
-def getTextUnits(filename):
+def getTextUnits_old(filename):
     """
     Returns the text units for a given file in the non-core asset
     Uses regex to identify common patterns and uses specific backup methods
@@ -449,18 +451,8 @@ def createStructuredTranscript_Non_Core_Docx():
 
             #add file specific methods here
 
-            if('RG-50.005.0037' in file):
-                units=getUnstructured_50_005_0037_Units(file)
-            elif('RG-50.005.0028' in file):
-                units=getUnstructured_50_005_0028_Units(file)
-            elif('RG-50.061.0010' in file):
-                units=getUnstructured_50_061_0010_Units(file)
             
-            elif('RG-50.615.0001' in file):
-                units=getUnstructured_50_615_Units(file)
-
-            else:
-                units = getTextUnits(file)
+            units = getTextUnits(file)
             
             if units:
 

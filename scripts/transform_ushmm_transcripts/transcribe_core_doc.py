@@ -7,6 +7,7 @@ import pprint
 import constants
 import re
 import pdb
+from get_text_units import getTextUnits
 
 TRACKER = constants.USHMM_TRACKER_COLLECTION
 OUTPUT = constants.OUTPUT_COLLECTION_USHMM
@@ -14,7 +15,7 @@ DB = constants.DB
 INPUT_FOLDER=constants.INPUT_FOLDER_USHMM_TRANSCRIPTS_DOC
 OUTPUT_FOLDER_USHMM_PROCESSING_LOGS=constants.OUTPUT_FOLDER_USHMM_PROCESSING_LOGS 
 
-def getTextUnits(filename):
+def getTextUnits_old(filename):
     doc = Document(filename)
     units = list()
     # iterate over all paragraphs to get text units
