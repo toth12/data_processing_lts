@@ -287,11 +287,10 @@ def createStructuredTranscript_Non_Core_Doc():
     for file in glob.glob(INPUT_FOLDER+"*.doc"):
 
         # RG numbers for the core asset
-        '''if ("RG-50.030" not in file and
+        if ("RG-50.030" not in file and
             "RG-50.106" not in file and
             "RG-50.549" not in file):
-        '''
-        if (('50.042.0025' in file) or ('50.042.0012' in file) or ('50.042.0014' in file)):
+        
 
            
             # convert file to docx, storing it in an untracked folder called temp

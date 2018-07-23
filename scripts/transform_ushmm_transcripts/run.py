@@ -31,7 +31,6 @@ def main():
 	#Transcribe files belonging to the core data asset and has the DOCX format
 	print ("The processing of USHMM transcripts in DOCX format belonging to the core asset has started")
 	createStructuredTranscriptDocx()
-	
 	#Transcribe files belonging to the core data asset and has the DOC format
 	print ("The processing of USHMM transcripts in DOC format belonging to the core asset has started")
 	
@@ -40,7 +39,6 @@ def main():
 		createStructuredTranscriptDoc()
 	else:
 		print ('Textutil is not available on this system, this is skipped')
-	
 	
 	
 	#Transcribe files not belonging to the core data asset and has the DOC format
@@ -53,22 +51,20 @@ def main():
 		print ('Textutil is not available on this system, this is skipped')
 	
 
-	
 	#Transcribe files not belonging to the core data asset and has the DOCX format
 	print ("The processing of USHMM transcripts in DOCX format not belonging to the core asset has started")
 	createStructuredTranscript_Non_Core_Docx()
 
 	
-	
 
 	#Transcribe files belonging to the core data asset and originally in pdf
 	print ("The processing of USHMM transcripts, which were originally in PDF, and belonging to the core asset has started")
 	transcribe_core_docx_made_from_pdf()
-	
+
 	#Transcribe files not belonging to the core data asset and originally in pdf
 	print ("The processing of USHMM transcripts, which were originally in PDF, and not belonging to the core asset has started")
 	transcribe_non_core_docx_made_from_pdf()
-
+	
 	#delete those entries that were not yet processed
 	#h.delete(db,collection,{'structured_transcript': { '$exists': False } })
 

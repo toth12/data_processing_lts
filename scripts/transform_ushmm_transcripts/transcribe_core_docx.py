@@ -102,7 +102,6 @@ def createStructuredTranscriptDocx():
         
 
         if False in processed:
-
             h.update_field(DB, TRACKER, "rg_number", mongo_rg, "status", "Unprocessed")
 
             #set the method used to transform the transcript
