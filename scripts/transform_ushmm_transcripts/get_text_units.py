@@ -33,35 +33,10 @@ def getTextUnits(filename):
     units = list()
 
     #Check if any known segmentation unit is available
-    regex_units=r'track [0-9][0-9]',r'[A-Z][A-Z]?[.|:|-]',r'[0-9]?[0-9]:[0-9][0-9]:[0-9][0-9]',r'\[[A-Z][A-Z]\]'
+    regex_units=[r'track [0-9][0-9]',r'[A-Z][A-Z]?[.|:|-]',r'[0-9]?[0-9]:[0-9][0-9]:[0-9][0-9]',r'\[[A-Z][A-Z]\]']
     question_units=["Question:","Q:","Q."]
     answer_units=["Answer:",'A:','A.']
-    non_units = ["name:", "date:", "date", "series", "transcriber", "thesis:", "currently:", "note", "comment", "grandparents:", "transcript:", "note:"]
-
-      
-
-    '''text = ' '.join([' '.join(para.text.split()[0:4]) for para in doc.paragraphs if len(para.text.strip()) >50])
-    counter=text.split()
-
-    result_counter=[]
-    for element in question_units:
-        result_counter.append(counter.count(element))
-    question_units_present=heapq.nlargest(1, result_counter)
-
-    result_counter=[]
-    for element in answer_units:
-        result_counter.append(counter.count(element))
-    answer_units_present=heapq.nlargest(1, result_counter)
-
-    result_counter=[]
-    if (question_units_present[0]==0 and answer_units_present[0]==0):
-        for element in regex_units:
-            pattern=re.compile(element)
-            pattern_presence= pattern.findall(text)
-            result_counter.append(len(pattern_presence))
-    result_counter.index(heapq.nlargest(1, result_counter)[0])
-    pdb.set_trace()
-    # iterate over all paragraphs to get text units'''
+    non_units = ["name:", "date:", "date", "series", "transcriber", "thesis:", "currently:", "note", "comment", "grandparents:", "transcript:", "note:","Interviewer:","Theodore:","mr.","Mr.","[DL]","[AG]","[BB]"]
     
     for para in doc.paragraphs:
         paragraph = para.text.strip()
@@ -97,9 +72,6 @@ def getTextUnits(filename):
                     units[-1]['unit']=units[-1]['unit']+' '+paragraph
                 else:
                     units.append({'unit':paragraph})
-
-
-            
             else: 
                 units.append({'unit':paragraph})
 
@@ -107,7 +79,6 @@ def getTextUnits(filename):
 
 
     
-    #pdb.set_trace()
     return units
 
 

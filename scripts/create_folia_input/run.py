@@ -64,7 +64,7 @@ def main():
     #this is used for debugging temporary
     #results=h.query(DB, 'testimonies',{ '$or': [ {'testimony_id':'irn505578'}, {'testimony_id':'irn505566'},{'testimony_id':'irn505568'}] },{'testimony_id':1,'structured_transcript':1,'shelfmark':1,'collection':1,'camp_names':1,'ghetto_names':1,'gender':1,'interviewee_name':1,'recording_year':1})   
 
-    ids=['irn508771\n', 'irn511061\n', 'irn510457\n', 'irn511056\n', 'irn511063\n', 'irn511020\n', 'irn509102\n', 'irn511064\n', 'irn511069\n', 'irn511231\n', 'irn539330']
+    ids=['irn503624','irn508771\n', 'irn511061\n', 'irn510457\n', 'irn511056\n', 'irn511063\n', 'irn511020\n', 'irn509102\n', 'irn511064\n', 'irn511069\n', 'irn511231\n', 'irn539330']
     
     ids=[{'testimony_id':id.strip()} for id in ids]
     results=h.query(DB, 'output_ushmm_metadata',{ '$or': ids },{'testimony_id':1,'structured_transcript':1,'shelfmark':1,'collection':1,'camp_names':1,'ghetto_names':1,'gender':1,'interviewee_name':1,'recording_year':1})   
