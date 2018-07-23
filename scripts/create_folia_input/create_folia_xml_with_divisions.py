@@ -12,7 +12,6 @@ def process(data):
 
     #todo: add metadata to here
 
-
     #create a new folia document
     new_doc=folia.Document(id=data['testimony_id'])
     new_doc.metadata['shelfmark']=data['shelfmark']

@@ -25,10 +25,9 @@ folia_output_folder=constants.FOLIA_OUTPUT_FOLDER
 def process(data):
     
     try:
-        
+
         folia_xml_with_divisions=create_folia_xml_with_divisions(data)
         annotated_folia_xml=sentence_divide_annotate_folia_divisions(folia_xml_with_divisions,'s')
-        
         html_output=create_html_output(annotated_folia_xml)
         look_up_table=create_token_sentence_lookup(annotated_folia_xml,data['testimony_id'])
         #this is temporary
@@ -65,7 +64,6 @@ def main():
 
     
     for index,result in enumerate(results):
-        
         
        
         print "The folia processing of "+str(index)+". document out of "+str(len(results))+" started."

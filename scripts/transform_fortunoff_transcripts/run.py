@@ -19,7 +19,7 @@ def run ():
 	'''This function begins the process described in the Readme of this folder'''
 	
 	#get all input filenames
- 	input_files=glob.glob(input_folder+'*.txt')
+ 	input_files=glob.glob(input_folder+'*.txt')[0:5]
 
 	#get the shelfmarks of the input files
 	shelf_marks=list(set(['_'.join(element.split('/')[-1].split('_')[1:3])for element in input_files]))
@@ -90,7 +90,7 @@ def run ():
 				
 				#add a change of tape message
 				if i!=1:
-					result.extend({'unit':'Change of tape'})
+					result.extend([{'unit':'Change of tape'}])
 				result.extend(processed_transcript)
 			
 			
