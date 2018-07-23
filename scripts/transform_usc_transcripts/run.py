@@ -36,6 +36,8 @@ def run ():
 		 	for part in range(1,int(number_of_parts)+1):
 		 		input_file=INPUT_FOLDER+int_code+'.'+str(part)+'.xml'
 			 	result=transform_transcript_to_structured_unit(input_file)
+			 	if part != 1:
+					final_result.extend({'unit':'Change of tape'})
 			 	final_result.extend(result)
 
 			 #upload to the DB
