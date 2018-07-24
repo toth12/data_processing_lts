@@ -47,7 +47,7 @@ def run ():
 		except Exception as e:
 			not_processed_shelfmarks.append('USC SHOAH '+int_code)
 			not_processed_files.append(int_code+'.'+str(part)+'.xml')
-		break
+		
 
 
 

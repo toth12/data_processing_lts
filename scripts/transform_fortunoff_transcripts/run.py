@@ -19,7 +19,7 @@ def run ():
 	'''This function begins the process described in the Readme of this folder'''
 	
 	#get all input filenames
- 	input_files=glob.glob(input_folder+'*.txt')[0:5]
+ 	input_files=glob.glob(input_folder+'*.txt')
 
 	#get the shelfmarks of the input files
 	shelf_marks=list(set(['_'.join(element.split('/')[-1].split('_')[1:3])for element in input_files]))
