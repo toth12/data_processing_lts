@@ -68,7 +68,10 @@ def main(fragments):
 			record['start_sentence_index']=new_start_sentence_index
 			record['end_sentence_index']= new_end_sentence_index
 	if len(not_retrieved)==0:
+		print "Update was successful all fragments were identified in the XML files"
 		not_retrieved.append({'testimony_id':'','original_sentences':''})
+	else:
+		print "Update was not completely successful, please open the log file to find the problematic fragments"
 	try:
 		write_to_csv(not_retrieved,path_log_file+'fragments_not_retrieved.csv')
 		write_to_csv(fragments,path_to_CSV_updated)

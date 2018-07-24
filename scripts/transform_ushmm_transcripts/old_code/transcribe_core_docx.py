@@ -18,7 +18,37 @@ INPUT_FOLDER=constants.INPUT_FOLDER_USHMM_TRANSCRIPTS_DOC
 OUTPUT_FOLDER_USHMM_PROCESSING_LOGS=constants.OUTPUT_FOLDER_USHMM_PROCESSING_LOGS 
 
 
+def getTextUnits_old(filename):
+    doc = Document(filename)
+    units = list()
 
+    # iterate over all paragraphs to get text units
+    for para in doc.paragraphs:
+        paragraph = para.text
+        
+        # ensure it is not an empty line
+        if len(paragraph.strip())>0:
+            # get first word
+            unit_type = paragraph.partition(' ')[0]
+
+            # exception, two interviews do not follow the formatting guidelines
+            # handle them
+            if ("RG-50.030.0710_trs_en.docx" in filename or
+                "RG-50.030.0711_trs_en.docx" in filename):
+                
+                if unit_type == "[DL]" or unit_type == "[AG]" or unit_type== "[BB]":
+                    units.append({'unit': paragraph})
+            
+            # else parse them according to formatting guidelines
+            elif ("Question:" in unit_type or
+                unit_type == "Q:" or
+                "Q." in unit_type or
+                "Answer:" in unit_type or 
+                unit_type == "A:" or
+                "A." in unit_type):
+
+                units.append({'unit': paragraph})
+    return units
 
 def createStructuredTranscriptDocx():
     """
