@@ -89,7 +89,7 @@ def run ():
 				processed_transcript=segment_transcript(files)
 				
 				#add a change of tape message
-				if i!=1:
+				if i!=0:
 					result.extend([{'unit':'Change of tape'}])
 				result.extend(processed_transcript)
 			
