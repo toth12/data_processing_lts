@@ -23,7 +23,7 @@ method_collection='USHMM_transcript_processing_progress_test'
 
 def add_additional_data(data,pool='old'):
 	new_data=[]
-	for record in data[105:110]:
+	for record in data:
 		entry=record.copy()
 		
 		#Get the number of tokens in the previous folia output
@@ -58,7 +58,7 @@ def add_additional_data(data,pool='old'):
 		entry['video_lenght']=get_video_length(entry['testimony_id'])
 		new_data.append(entry)
 	
-	pdb.set_trace()
+	text.write_to_csv(new_data,'base_data_for_second_qc.csv')
 
 
 def get_previous_folia_out(testimony_id):
@@ -75,13 +75,11 @@ def get_current_folia_out(testimony_id):
 
 def get_undress_exp_token_count(testimony_id):
 	#connect to mongo
-	all_ids=h.query(DB,'undress',{},{'id':1,'_id':0})
 
-	for element in all_ids[0:1]:
-		result=h.query(DB,'undress',{'id':element['id']},{'sentence_segmented_tokenized_only_lemmas':1})[0]
-		data=result['sentence_segmented_tokenized_only_lemmas']
-		count=sum(len(sentence) for sentence in data)
-		return count
+	result=h.query(DB,'undress',{'id':testimony_id},{'sentence_segmented_tokenized':1})[0]
+	data=result['sentence_segmented_tokenized']
+	count=sum(len(sentence) for sentence in data)
+	return count
 def get_video_length(testimony_id):
 	#get videos
 	videos=h.query('lts','testimonies',{'testimony_id':testimony_id},{'media_url':1})[0]['media_url']
@@ -106,7 +104,7 @@ if __name__ == '__main__':
 	#read the csv file in
 	input_data=text.ReadCSVasDict(input_csv)
 	add_additional_data(input_data)
-	pdb.set_trace()
+	
 
 
 
