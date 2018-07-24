@@ -154,6 +154,10 @@ def process_data():
 
  os.system('mongo ' + output_db + ' --eval "db.dropDatabase()"')
 
+ #delete processing DB from the system
+
+ #os.system('mongo ' + DB + ' --eval "db.dropDatabase()"')
+
  #zip the folia files
  os.system('zip -r -j data/outputs/folia_output/folia.zip data/outputs/folia_output/*')
 '''
