@@ -11,4 +11,4 @@ def make_output_pathes():
 	os.makedirs(constants.OUTPUT_FOLDER_FOR_QUALITY_CONTROL)
 	os.makedirs(constants.FOLIA_OUTPUT_FOLDER)
 	os.makedirs(constants.FOLIA_PROCESSING_LOG_FOLDER)
-	os.makedirs(constants.CORENLP_HOME)
+	

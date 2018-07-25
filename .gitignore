@@ -3,6 +3,7 @@
 *.swo
 *.pem
 *.pyc
+*.zip
 test*
 data/
 lib/

@@ -15,7 +15,7 @@ This project can be run on both Linux and Mac; but to process a few hundred raw 
 
 ## Python version
 
-This project is running with python2.
+This project is running with python 2.7
 
 ## Dependencies
 
@@ -36,16 +36,16 @@ brew install mongo
 Second you'll need to install the requirements:
 
 ```bash
-pip install -r requirements
+pip install -r requirements.txt
 ```
 
 In case both python 2 and python 3 are installed:
 
 ```bash
-pip2 install -r requirements
+pip2 install -r requirements.txt
 ```
 
-Then download Stanford Parser most recent version (https://nlp.stanford.edu/software/lex-parser.shtml#Download), copy it it to project folder. First create the folder for it:
+Then download Stanford Parser most recent version (https://stanfordnlp.github.io/CoreNLP/download.html), copy it it to project folder. First create the folder for it:
 ```bash
 mkdir -p lib/stanford-corenlp
 ```
@@ -53,7 +53,7 @@ mkdir -p lib/stanford-corenlp
 Second, unzip it (the actual zip filename may change!):
 
 ```bash
-unzip -j stanford-parser-full-2018-02-27.zip -d libs/stanford/
+unzip -j stanford-corenlp-full-2018-02-27.zip -d lib/stanford-corenlp/
 ```
 
 Copy the data.zip provided by the repo owner to the main folder, and unzip it. This will create both input folders and the output folders (this will be empty with folders used to hold output data).
