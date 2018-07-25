@@ -83,10 +83,15 @@ def run ():
 
 		#use a try catch block to store the shelfmarks that could not be processed
 		try:
-			for files in shelf_marks_with_filenames[shelfmark]:
+			for i,files in enumerate(shelf_marks_with_filenames[shelfmark]):
 			
 				#process the transcript by passing the filename to the segment_transcript function
-				result.extend(segment_transcript(files))
+				processed_transcript=segment_transcript(files)
+				
+				#add a change of tape message
+				if i!=0:
+					result.extend([{'unit':'Change of tape'}])
+				result.extend(processed_transcript)
 			
 			
 			final_result.append({shelfmark.upper().replace('_','-'):result})

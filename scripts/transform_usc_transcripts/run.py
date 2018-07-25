@@ -36,15 +36,18 @@ def run ():
 		 	for part in range(1,int(number_of_parts)+1):
 		 		input_file=INPUT_FOLDER+int_code+'.'+str(part)+'.xml'
 			 	result=transform_transcript_to_structured_unit(input_file)
+			 	if part != 1:
+					final_result.extend([{'unit':'Change of tape'}])
 			 	final_result.extend(result)
 
 			 #upload to the DB
 			entry_id=h.query(db,collection,{'testimony_id':'usc_shoah_'+int_code},{})[0]
 			h.update_entry(db,collection,entry_id['_id'],{'structured_transcript':final_result})
 			 			
-		except Exception as e: 
+		except Exception as e:
 			not_processed_shelfmarks.append('USC SHOAH '+int_code)
 			not_processed_files.append(int_code+'.'+str(part)+'.xml')
+		
 
 
 

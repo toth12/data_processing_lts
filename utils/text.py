@@ -167,6 +167,14 @@ def ReadCSVasDict(csv_file):
             print("I/O error({0}): {1}".format(errno, strerror))    
     return result
 
+def write_to_csv(data,file):
+    keys = data[0].keys()
+    f=open(file, 'w')
+    writer = csv.DictWriter(f, fieldnames=keys)
+    writer.writeheader()
+    writer.writerows(data)
+
+
 if __name__ == "__main__":
   records=[{'ghetto_names':['Łódź'],'recording_year':1999,'camp_names':[],'name':''}]
   expected_output=[{'ghetto_names':['Lodz'],'recording_year':1999,'camp_names':[],'name':''}]

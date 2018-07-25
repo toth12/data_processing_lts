@@ -40,6 +40,9 @@ FOLIA_PROCESSING_LOG_FOLDER=os.getcwd()+"/data/outputs/folia_processing_log/"
 
 CORENLP_HOME=os.getcwd()+"/lib/stanford-corenlp/"
 
+PATH_TO_FRAGMENTS_CSV=os.getcwd()+"/data/inputs/fragments/fragments.csv"
+PATH_TO_FRAGMENTS_CSV_UPDATED=os.getcwd()+"/data/inputs/fragments/fragments_updated.csv"
+
 
 
 

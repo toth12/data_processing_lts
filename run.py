@@ -10,6 +10,7 @@ import transform_fragments_in_csv_to_json_for_fragments_collection
 constants_path = os.getcwd()
 sys.path.insert(0, constants_path)
 import constants
+from make_output_pathes import make_output_pathes
 
 
 
@@ -39,7 +40,11 @@ output_folder_fragments=constants.OUTPUT_FOLDER_FRAGMENTS
 
 def process_data():
  
+ #create the output folders
+ make_output_pathes()
+
  
+
  #create the empty let_them_data_processing database
  os.system('mongo ' + DB + ' --eval "db.createCollection(\'test\')"')
  
@@ -94,7 +99,7 @@ def process_data():
  #create the folia input
  create_folia_input.main()
 
-
+ 
 
  #delete entries that could not be processed by folia
 
@@ -154,11 +159,15 @@ def process_data():
 
  os.system('mongo ' + output_db + ' --eval "db.dropDatabase()"')
 
+ #delete processing DB from the system
+
+ #os.system('mongo ' + DB + ' --eval "db.dropDatabase()"')
+
  #zip the folia files
  os.system('zip -r -j data/outputs/folia_output/folia.zip data/outputs/folia_output/*')
-
- #upload the data to amazon server
 '''
+ #upload the data to amazon server
+
  print 'upload data to amazon servers'
 
  os.system('aws s3 cp data/outputs/folia_output/folia.zip s3://lab-secrets/let-them-speak/folia.zip --profile lab-secrets')

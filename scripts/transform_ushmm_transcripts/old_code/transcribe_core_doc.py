@@ -15,7 +15,48 @@ DB = constants.DB
 INPUT_FOLDER=constants.INPUT_FOLDER_USHMM_TRANSCRIPTS_DOC
 OUTPUT_FOLDER_USHMM_PROCESSING_LOGS=constants.OUTPUT_FOLDER_USHMM_PROCESSING_LOGS 
 
+def getTextUnits_old(filename):
+    doc = Document(filename)
+    units = list()
+    # iterate over all paragraphs to get text units
+    for para in doc.paragraphs:
+        paragraph = para.text
 
+        
+        # ensure it is not an empty line
+        if len(paragraph.strip())>0:
+            # get first word
+            unit_type = paragraph.partition(' ')[0]
+            
+            # e.g [d]
+            m = re.compile('[A-Z][.|:]')
+            type1 = m.match(unit_type)
+
+            # e.g [WJ]
+            n = re.compile('\[[A-Z][A-Z]\]')
+            typer2= n.match(unit_type)
+            # else parse them according to formatting guidelines
+            if ("Question:" in unit_type or
+                type1 or
+                "Answer:" in unit_type or 
+                typer2):
+
+                units.append({'unit': paragraph})
+            
+            # backup for 2 interviews that don't match any of the patterns above
+            elif ("RG-50.030.0336_trs_en.docx" in filename or 
+                "RG-50.030.0335_trs_en.docx" in filename):
+
+                if ("interviewer:" in unit_type.lower() or 
+                    "theodore:" in unit_type.lower() or 
+                    "mr." in unit_type.lower()):
+                    
+                    units.append({'unit': paragraph})
+            #add it even if the pattern is not clearly present
+            else:
+                if len(units)>0:
+                    units[-1]['unit']= units[-1]['unit']+paragraph      
+    return units
 
 def createStructuredTranscriptDoc():
     """

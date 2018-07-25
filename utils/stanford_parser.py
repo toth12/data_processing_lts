@@ -32,6 +32,9 @@ def sentence_to_text(sentence):
     return text
 
 def start_stanfordcornlp_server(path_to_stanford_corenlp):
+	"""
+    Helper routine that starts Stanford Parser in the background as daemon
+    """
 	start_command='java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000'
 	complete_start_command='cd '+ path_to_stanford_corenlp +' && '+start_command+' &'
 	os.system(complete_start_command)
