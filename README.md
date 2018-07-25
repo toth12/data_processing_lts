@@ -45,10 +45,15 @@ In case both python 2 and python 3 are installed:
 pip2 install -r requirements
 ```
 
-Then download Stanford Parser most recent version (https://nlp.stanford.edu/software/lex-parser.shtml#Download) and then unzip it and copy it to lib/stanford-corenlp (lib/stanford-corenlp is not part of the repo, you need to create it):
+Then download Stanford Parser most recent version (https://nlp.stanford.edu/software/lex-parser.shtml#Download), copy it it to project folder. First create the folder for it:
 ```bash
-mkdir lib
-mkdir stanford-corenlp
+mkdir -p lib/stanford-corenlp
+```
+
+Second, unzip it (the actual zip filename may change!):
+
+```bash
+unzip -j stanford-parser-full-2018-02-27.zip -d libs/stanford/
 ```
 
 Copy the data.zip provided by the repo owner to the main folder, and unzip it. This will create both input folders and the output folders (this will be empty with folders used to hold output data).
