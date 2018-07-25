@@ -10,6 +10,7 @@ import transform_fragments_in_csv_to_json_for_fragments_collection
 constants_path = os.getcwd()
 sys.path.insert(0, constants_path)
 import constants
+from make_output_pathes import make_output_pathes
 
 
 
@@ -39,7 +40,11 @@ output_folder_fragments=constants.OUTPUT_FOLDER_FRAGMENTS
 
 def process_data():
  
+ #create the output folders
+ make_output_pathes()
+
  
+
  #create the empty let_them_data_processing database
  os.system('mongo ' + DB + ' --eval "db.createCollection(\'test\')"')
  
