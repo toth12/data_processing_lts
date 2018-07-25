@@ -23,41 +23,44 @@ method_collection='USHMM_transcript_processing_progress_test'
 
 def add_additional_data(data,pool='old'):
 	new_data=[]
-	for record in data:
-		entry=record.copy()
-		
-		#Get the number of tokens in the previous folia output
-		counts_previous_folia=get_previous_folia_out(record['testimony_id'])
-		entry['token_in_prev_folia']=counts_previous_folia['tokens']
-		entry['divs_in_prev_folia']=counts_previous_folia['divisions']
-
-		
-		#Get the number of tokens in the current folia
-		counts_current_folia=get_current_folia_out(record['testimony_id'])
-		entry['token_in_current_folia']=counts_current_folia['tokens']
-		entry['divs_in_current_folia']=counts_current_folia['divisions']
-		
-
-		#Get the method used for building this file
+	for index,record in enumerate(data):
+		print str(index)+"records ouf of "+str(len(data))+" records have been processed"
 		try:
-			entry['method']=h.query(DB,method_collection,{'id':record['testimony_id']},{'method':1})[0]['method']
-		except:
-			entry['method']=''
+			entry=record.copy()
+			
+			#Get the number of tokens in the previous folia output
+			counts_previous_folia=get_previous_folia_out(record['testimony_id'])
+			entry['token_in_prev_folia']=counts_previous_folia['tokens']
+			entry['divs_in_prev_folia']=counts_previous_folia['divisions']
 
-		#Get the number of tokens in the undress experiment
-		entry['token_in_undress_experiment']=get_undress_exp_token_count(record['testimony_id'])
-		if pool=='old':
-			if len(entry['pass or fail'])>0:
-				entry['status']='first_qc'
+			
+			#Get the number of tokens in the current folia
+			counts_current_folia=get_current_folia_out(record['testimony_id'])
+			entry['token_in_current_folia']=counts_current_folia['tokens']
+			entry['divs_in_current_folia']=counts_current_folia['divisions']
+			
+
+			#Get the method used for building this file
+			try:
+				entry['method']=h.query(DB,method_collection,{'id':record['testimony_id']},{'method':1})[0]['method']
+			except:
+				entry['method']=''
+
+			#Get the number of tokens in the undress experiment
+			entry['token_in_undress_experiment']=get_undress_exp_token_count(record['testimony_id'])
+			if pool=='old':
+				if len(entry['pass or fail'])>0:
+					entry['status']='first_qc'
+				else:
+					entry['status']=''
+
 			else:
 				entry['status']=''
-
-		else:
-			entry['status']=''
-		#Get the lenght of videos
-		entry['video_lenght']=get_video_length(entry['testimony_id'])
-		new_data.append(entry)
-	
+			#Get the lenght of videos
+			entry['video_lenght']=get_video_length(entry['testimony_id'])
+			new_data.append(entry)
+		except:
+			print "The following id could not be processed: "+entry['testimony_id']
 	text.write_to_csv(new_data,'base_data_for_second_qc.csv')
 
 

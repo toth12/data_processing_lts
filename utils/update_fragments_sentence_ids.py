@@ -37,10 +37,10 @@ def main(fragments):
 			sentence=folia_doc.sentences(i)
 			if new_end_sentence_index is None:
 				if Levenshtein.ratio(original_sentences[-1],sentence.text()) > 0.9:
-					new_end_sentence_index=int(sentence.id.split('s')[1])-1
+					new_end_sentence_index=int(sentence.id.split('s')[1])
 			if new_start_sentence_index is None:
 				if Levenshtein.ratio(original_sentences[0],sentence.text()) > 0.9:
-					new_start_sentence_index=int(sentence.id.split('s')[1])-1
+					new_start_sentence_index=int(sentence.id.split('s')[1])
 			if (new_end_sentence_index is not None) and (new_start_sentence_index is not None):
 				break
 
@@ -49,10 +49,10 @@ def main(fragments):
 		for sentence in sentences:
 			if new_end_sentence_index is None:
 				if Levenshtein.ratio(original_sentences[-1],sentence.text()) > 0.9:
-					new_end_sentence_index=int(sentence.id.split('s')[1])-1
+					new_end_sentence_index=int(sentence.id.split('s')[1])
 			if new_start_sentence_index is None:
 				if Levenshtein.ratio(original_sentences[0],sentence.text()) > 0.9:
-					new_start_sentence_index=int(sentence.id.split('s')[1])-1
+					new_start_sentence_index=int(sentence.id.split('s')[1])
 			if (new_end_sentence_index is not None) and (new_start_sentence_index is not None):
 				break
 		#if none produced results

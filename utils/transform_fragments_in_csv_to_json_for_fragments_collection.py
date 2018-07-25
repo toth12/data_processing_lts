@@ -22,8 +22,8 @@ import json
 import random
 import json
 
-input_file_path=constants.INPUT_FOLDER_FRAGMENTS+'fragments.csv'
-output_file_path=constants.INPUT_FOLDER_FRAGMENTS+'fragments.json'
+input_file_path=constants.INPUT_FOLDER_FRAGMENTS+'fragments_updated.csv'
+output_file_path=constants.OUTPUT_FOLDER_FRAGMENTS+'fragments.json'
 
 def create_fragments_collection(dictionary_from_csv):
 	'''Creates a json representation of a fragment collection'''
