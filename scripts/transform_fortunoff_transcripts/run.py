@@ -20,7 +20,6 @@ def run ():
 	
 	#get all input filenames
  	input_files=glob.glob(input_folder+'*.txt')
-
 	#get the shelfmarks of the input files
 	shelf_marks=list(set(['_'.join(element.split('/')[-1].split('_')[1:3])for element in input_files]))
 
@@ -31,6 +30,7 @@ def run ():
 	#find the corresponding transcript files of each shelfmark
 	#create a dictionary with shelfmarks as keys, and values as empty dictionary
 	shelf_marks_with_filenames={}
+
 
 	for element in shelf_marks:
 		shelf_marks_with_filenames[element]=[]
@@ -53,6 +53,7 @@ def run ():
 
 		#get the number of transcript parts
 		number_of_parts=int(str(shelf_marks_with_filenames[element][0].split('_p')[1].split('.')[0].split('of')[1]))
+
 
 		#iterate through the number of parts
 		for i in range(1,number_of_parts+1):
@@ -77,16 +78,15 @@ def run ():
 	final_result=[]
 	
 	for shelfmark in shelf_marks_with_filenames:
-		
+		'''if shelfmark !='hvt_93':
+			continue'''
 		#create a list that will store the result of segmentation
 		result=[]
-
 		#use a try catch block to store the shelfmarks that could not be processed
 		try:
 			for i,files in enumerate(shelf_marks_with_filenames[shelfmark]):
-			
 				#process the transcript by passing the filename to the segment_transcript function
-				processed_transcript=segment_transcript(files)
+				processed_transcript=segment_transcript(files,shelfmark)
 				
 				#add a change of tape message
 				if i!=0:
@@ -96,12 +96,11 @@ def run ():
 			
 			final_result.append({shelfmark.upper().replace('_','-'):result})
 			
-		except:
+		except Exception as e:
 			#in case the processing was not possible store the shelfmark
 			unprocessed.append(shelfmark)
 
 		
-
 	#check if there are shelfmarks that are missing from the dataset
 	missing=[int(element.split('_')[1]) for element in shelf_marks_with_filenames.keys()]
 	missing.sort()

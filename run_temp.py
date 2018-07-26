@@ -31,6 +31,8 @@ from scripts.transform_usc_transcripts import run as create_usc_transcripts
 from scripts.create_folia_input import run as create_folia_input
 from add_sample_transcript import add_sample_transcript
 from bson.objectid import ObjectId
+from scripts.transform_fortunoff_transcripts import run as create_fortunoff_transcript_input
+
 
 
 ##Global Variables##
@@ -46,10 +48,13 @@ output_db=constants.OUTPUT_DB
 
 def process_data():
 
+ 	
+ 	create_fortunoff_transcript_input.run()
+ 	
 
-	get_text_units.main()
 	
-	create_folia_input.main()
+	
+	#create_folia_input.main()
 
 	pdb.set_trace()
 	f='/Users/gmt28/Documents/Workspace/Docker_Engine/varad/Yale_Projects/shoah-foundation-data-restored/shoah-foundation-data/data/inputs/ushmm/transcripts/microsoft_doc_docx/RG-50.030.0335_trs_en.doc'

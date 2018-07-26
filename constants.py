@@ -7,6 +7,7 @@ INPUT_FOLDER_USHMM_TRANSCRIPTS_DOC = os.getcwd()+"/data/inputs/ushmm/transcripts
 INPUT_FOLDER_USHMM_TRANSCRIPTS_PDF_TRANSFORMED_TO_DOCS = os.getcwd()+"/data/inputs/ushmm/pdf_transcript_not_available_in_doc_transformed_to_docx/"
 INPUT_FOLDER_FORTUNOFF_METADATA = os.getcwd()+"/data/inputs/fortunoff/metadata/"
 INPUT_FOLDER_FORTUNOFF_TRANSCRIPTS = os.getcwd()+"/data/inputs/fortunoff/transcripts/"
+INPUT_FOLDER_FORTUNOFF_NAME_CODES = os.getcwd()+"/data/inputs/fortunoff/"
 INPUT_FOLDER_USC_METADATA = os.getcwd()+"/data/inputs/usc/metadata/"
 INPUT_FOLDER_USC_TRANSCRIPTS=os.getcwd()+"/data/inputs/usc/transcripts/"
 INPUT_FOLDER_FRAGMENTS=os.getcwd()+"/data/inputs/fragments/"
