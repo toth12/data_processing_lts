@@ -12,13 +12,20 @@
 ## File Documentation
 
 
+
 * **create_tracker.py**: creates a collection that tracks the processing of each shelfmark; processes below update the status field in the tracker with either "Processed" or "Unprocessed" values. This logs the entire process.
+* **get_text_units.py**: this contains the main function that transforms a docx document into the output. All following files are calling this function.
 * **transcribe_core_doc.py**: transforms all files that are part of group 2 above. It uses textutil to create docx file which is used as input
 * **transcribe_core_docx.py**: transforms all files that are part of group 1 above. 
 * ***transcribe_non_core_doc.py**: transforms all files that are part of group 4 above. It uses textutil to create docx file which is used as input
 * **transcribe_non_core_docx.py**: transforms all files that are part of group 4 above.
 * ***transcribe_non_core_docx_made_from_pdf.py**: transforms all files that are part of group 5 above. As input it uses the docx version of the pdf files.
 * ***transcribecore_docx_made_from_pdf.py**: transforms all files that are part of group 6 above. As input it uses the docx version of the pdf files.
+
+## Log files:
+
+All log files are in data/outputs/processing_logs/
+
 
 ## Input:
 Transcripts in DOCX, DOC, or PDFs transformed to DOCX

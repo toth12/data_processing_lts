@@ -7,6 +7,8 @@
 > * USC Shoah Foundation - siglum: usc
 
 > Transformation of each data set is desribed in the README of the corresponding folder. (See scripts/)
+> 
+> The main process (see below) also takes testimonial fragments in CSV file (by using utils/transform_fragments_in_csv_to_json_for_fragments_collection.py), and transforms them to the required input of the Mongo fragments collection
 
 
 ## Operating System Requirements
