@@ -72,9 +72,9 @@ def remove_surnames(shelfmark,data,surname):
 
 	 # Load the list of surnames
 
-	 if shelfmark == 'hvt_6':
-	 	new_surname = '[surname removed]' 
-	 	for i,element in enumerate(data):
-	 		data[i]=element.replace(surname,new_surname)
+	 
+	 new_surname = '[surname removed]' 
+	 for i,element in enumerate(data):
+	 	data[i]=element.replace(surname,new_surname)
 	 return data
 
