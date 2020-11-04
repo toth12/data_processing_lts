@@ -92,11 +92,12 @@ def run ():
 			for i,files in enumerate(shelf_marks_with_filenames[shelfmark]):
 				
 
+
 				#find the relevant surname
-				surname = names[names.Identifier==shelfmark.upper().replace('_','-')]['surname'].values[0]
+				surnames = names[names.Identifier==shelfmark.upper().replace('_','-')]['surname'].values
 
 				#process the transcript by passing the filename to the segment_transcript function
-				processed_transcript=segment_transcript(files,shelfmark,surname)
+				processed_transcript=segment_transcript(files,shelfmark,surnames)
 				
 				#add a change of tape message
 				if i!=0:

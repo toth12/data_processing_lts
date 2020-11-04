@@ -5,7 +5,7 @@ import re
 import pandas as pd
 import re
 
-def segment_transcript(path_to_transcript_file,shelfmark,surname):
+def segment_transcript(path_to_transcript_file,shelfmark,surnames):
  '''Processes raw plain text transcripts (created by 3playmedia) that are 
 	sequences of questions and answers. Beginning of each question or answer 
 	is signed with an upper case word (such as for instance INTERVIEWER or DORI LAUB)
@@ -22,7 +22,7 @@ def segment_transcript(path_to_transcript_file,shelfmark,surname):
  #eliminate empty lines
  input_data=[element.strip().decode('utf-8') for element in input_data if element !='\n']
  input_data=correct_names(shelfmark,input_data)
- input_data=remove_surnames(shelfmark,input_data,surname)
+ input_data=remove_surnames(shelfmark,input_data,surnames,path_to_transcript_file)
  
  #process the transcript line by line
  for line in input_data:
@@ -67,18 +67,23 @@ def correct_names(shelfmark,data):
 	
 	return data
 
-def remove_surnames(shelfmark,data,surname):
+def remove_surnames(shelfmark,data,surnames,path_to_transcript_file):
 	 '''A function to remove the surnames of survivors from transcripts'''
 	 
 	 new_surname = '[surname removed]'
 	 total_count = 0
 	 for i,element in enumerate(data):
 
-	 	data[i],count=re.subn(surname, repl=new_surname, string=element)
-	 	total_count = total_count+count
+	 	for surname in surnames:
+
+		 	data[i],count=re.subn(surname, repl=new_surname, string=element)
+		 	total_count = total_count+count
 
 	 	#data[i]=element.replace(surname,new_surname)
 	 if total_count == 0:
-	 	print shelfmark
+	 	part=int(path_to_transcript_file.split('_p')[1].split('.')[0].split('of')[0])
+	 	if part ==1:
+		 	print path_to_transcript_file.split('/')[-1]
+		 	print shelfmark
 	 return data
 
