@@ -4,6 +4,7 @@ import pdb
 import os,sys
 import helper_mongo as h
 import constants
+import pandas as pd
 
 
 ##
@@ -24,6 +25,10 @@ def run ():
 	shelf_marks=list(set(['_'.join(element.split('/')[-1].split('_')[1:3])for element in input_files]))
 
 	testimony_ids = [{'testimony_id': value} for value in shelf_marks]	#upload shelfmarks
+
+	#read the surnames of survivors
+	names=pd.read_csv(constants.INPUT_FOLDER_FORTUNOFF_METADATA+'Fortunoff_first_names.csv' )
+	names['surname']=names.primary_name.apply(lambda x: x.split(',')[0].strip())
 	
 
 
@@ -85,8 +90,13 @@ def run ():
 		#use a try catch block to store the shelfmarks that could not be processed
 		try:
 			for i,files in enumerate(shelf_marks_with_filenames[shelfmark]):
+				
+
+				#find the relevant surname
+				surname = names[names.Identifier==shelfmark.upper().replace('_','-')]['surname'].values[0]
+
 				#process the transcript by passing the filename to the segment_transcript function
-				processed_transcript=segment_transcript(files,shelfmark)
+				processed_transcript=segment_transcript(files,shelfmark,surname)
 				
 				#add a change of tape message
 				if i!=0:
