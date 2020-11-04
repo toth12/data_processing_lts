@@ -3,7 +3,7 @@ import constants
 import json
 import re
 import pandas as pd
-
+import re
 
 def segment_transcript(path_to_transcript_file,shelfmark,surname):
  '''Processes raw plain text transcripts (created by 3playmedia) that are 
@@ -69,12 +69,16 @@ def correct_names(shelfmark,data):
 
 def remove_surnames(shelfmark,data,surname):
 	 '''A function to remove the surnames of survivors from transcripts'''
-
-	 # Load the list of surnames
-
 	 
-	 new_surname = '[surname removed]' 
+	 new_surname = '[surname removed]'
+	 total_count = 0
 	 for i,element in enumerate(data):
-	 	data[i]=element.replace(surname,new_surname)
+
+	 	data[i],count=re.subn(surname, repl=new_surname, string=element)
+	 	total_count = total_count+count
+
+	 	#data[i]=element.replace(surname,new_surname)
+	 if total_count == 0:
+	 	print shelfmark
 	 return data
 
