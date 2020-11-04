@@ -114,7 +114,6 @@ def run ():
 	#upload the results to the DB
 
 	for element in final_result:
-
 		#get the unique id of the entry based on the shelfmark
 		entry_id=h.query(db,collection,{'testimony_id':element.keys()[0]},{})[0]
 
