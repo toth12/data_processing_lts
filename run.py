@@ -6,6 +6,7 @@ sys.path.insert(0, helper_path)
 import helper_mongo as h
 import transform_fragments_in_csv_to_json_for_fragments_collection
 
+
 #set constants path
 constants_path = os.getcwd()
 sys.path.insert(0, constants_path)
@@ -43,12 +44,20 @@ def process_data():
  #create the output folders
  make_output_pathes()
 
+ #delete lts database if already in the system
+ os.system('mongo ' + output_db + ' --eval "db.dropDatabase()"')
+
+ #delete the processing databases if already in the system
+ os.system('mongo ' + DB + ' --eval "db.dropDatabase()"')
+
  
 
  #create the empty let_them_data_processing database
  os.system('mongo ' + DB + ' --eval "db.createCollection(\'test\')"')
- 
- 
+
+
+
+ '''
  #transform USHMM catalogue data to app specific metadata
  print ("The processing of USHMM metadata has started")
  create_ushmm_metadata.main()
@@ -58,7 +67,7 @@ def process_data():
  print ("The processing of USHMM transcripts has started")
  create_ushmm_transcript_input.main()
  print ("The processing of USHMM transcripts finished")
- 
+ '''
  #transform Fortunoff catalogue data to app specific metadata
  print ("The processing of Fortunoff metadata has started")
  create_fortunoff_metadata.main()
@@ -68,7 +77,7 @@ def process_data():
  print ("The processing of Fortunoff transcripts has started")
  create_fortunoff_transcript_input.run()
  print ("The processing of Fortunoff transcripts has finished")
- 
+ '''
  #transform USC catalogue data to app specific metadata
  print ("The processing of USC metadata has started")
  create_usc_metadata.main()
@@ -78,7 +87,7 @@ def process_data():
  print ("The processing of USC transcripts has started")
  create_usc_transcripts.run()
  print ("The processing of USC transcripts has finished")
- 
+ '''
  #test the output results
  print ("Testing of output has started; for a more detailed output run: python test_processing_outputs.py ")
  os.system('pytest test_processing_outputs.py')
@@ -157,7 +166,7 @@ def process_data():
 
  #delete it from the host system
 
- os.system('mongo ' + output_db + ' --eval "db.dropDatabase()"')
+#os.system('mongo ' + output_db + ' --eval "db.dropDatabase()"')
 
  #delete processing DB from the system
 
