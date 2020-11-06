@@ -56,8 +56,8 @@ def process_data():
  os.system('mongo ' + DB + ' --eval "db.createCollection(\'test\')"')
 
 
-
  '''
+ 
  #transform USHMM catalogue data to app specific metadata
  print ("The processing of USHMM metadata has started")
  create_ushmm_metadata.main()
