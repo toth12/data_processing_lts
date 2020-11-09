@@ -16,7 +16,7 @@ collection=constants.OUTPUT_COLLECTION_USC
 INPUT_FOLDER=constants.INPUT_FOLDER_USC_TRANSCRIPTS
 OUTPUT_FOLDER_USC_PROCESSING_LOGS=constants.OUTPUT_FOLDER_USC_PROCESSING_LOGS
 
-def run ():
+def run (debug=False):
 	'''This function begins the process described in the Readme of this folder'''
 	
 	#open the transcript list
@@ -24,14 +24,18 @@ def run ():
 	not_processed_files=[]
 	not_processed_shelfmarks=[]
 
-	
+	c = 0
 	for line in reader:
+		#set the debugger
+		if (debug == True) and (c==10):
+			break
 		
 		
 		number_of_parts=line['NumTapes']
 	 	int_code=line['IntCode']
 	 	final_result=[]
 	 	
+	 	c = c+1
 		try:
 		 	for part in range(1,int(number_of_parts)+1):
 		 		input_file=INPUT_FOLDER+int_code+'.'+str(part)+'.xml'

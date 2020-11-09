@@ -162,4 +162,4 @@ def run (debug):
 
 
 if __name__ == '__main__':
-	run()
+	run(debug=False)

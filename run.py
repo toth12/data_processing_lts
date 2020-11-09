@@ -1,5 +1,6 @@
 import sys, os
 import pdb
+import shutil
 #set utils path
 helper_path = os.getcwd()+"/utils"
 sys.path.insert(0, helper_path)
@@ -74,9 +75,9 @@ def process_data():
  
  #process USHMM transcripts
  print ("The processing of USHMM transcripts has started")
- create_ushmm_transcript_input.main()
+ create_ushmm_transcript_input.main(debug)
  print ("The processing of USHMM transcripts finished")
- '''
+ 
  #transform Fortunoff catalogue data to app specific metadata
  print ("The processing of Fortunoff metadata has started")
  create_fortunoff_metadata.main()
@@ -94,9 +95,9 @@ def process_data():
  
  #process USC transcripts
  print ("The processing of USC transcripts has started")
- create_usc_transcripts.run()
+ create_usc_transcripts.run(debug)
  print ("The processing of USC transcripts has finished")
- '''
+ 
  #test the output results
  print ("Testing of output has started; for a more detailed output run: python test_processing_outputs.py ")
  os.system('pytest test_processing_outputs.py')
@@ -183,9 +184,9 @@ def process_data():
 
  #zip the folia files
  os.system('zip -r -j data/outputs/folia_output/folia.zip data/outputs/folia_output/*')
-'''
- #upload the data to amazon server
 
+ #upload the data to amazon server
+ '''
  print 'upload data to amazon servers'
 
  os.system('aws s3 cp data/outputs/folia_output/folia.zip s3://lab-secrets/let-them-speak/folia.zip --profile lab-secrets')
@@ -196,5 +197,6 @@ def process_data():
 
 
 if __name__ == '__main__':
-	
-	process_data()
+ dir = "data/outputs/"
+ shutil.rmtree(dir,ignore_errors=True)
+ process_data()

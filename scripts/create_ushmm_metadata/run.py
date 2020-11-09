@@ -99,7 +99,6 @@ def main():
     """
     
     # takes the input collection (mongo collection exported to JSON) and imports it to the DB
-
     os.system('mongorestore -d ' + DB + ' -c '+INPUT_COLLECTION +' '+INPUT_FOLDER+INPUT_DATA)
 
     # query for interview ids
