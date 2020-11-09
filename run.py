@@ -7,6 +7,15 @@ import helper_mongo as h
 import transform_fragments_in_csv_to_json_for_fragments_collection
 
 
+
+#parse argument for debugging
+import argparse
+parser = argparse.ArgumentParser(description="Only the first ten interviews are processed from every collection")
+parser.add_argument('-debug', action='store_true')
+args = parser.parse_args()
+debug = args.debug
+
+
 #set constants path
 constants_path = os.getcwd()
 sys.path.insert(0, constants_path)
@@ -75,7 +84,7 @@ def process_data():
  
  #process Fortunoff transcripts
  print ("The processing of Fortunoff transcripts has started")
- create_fortunoff_transcript_input.run()
+ create_fortunoff_transcript_input.run(debug=debug)
  print ("The processing of Fortunoff transcripts has finished")
  '''
  #transform USC catalogue data to app specific metadata

@@ -16,7 +16,7 @@ collection=constants.OUTPUT_COLLECTION_FORTUNOFF
 input_folder=constants.INPUT_FOLDER_FORTUNOFF_TRANSCRIPTS
 OUTPUT_FOLDER_FORTUNOFF_PROCESSING_LOGS=constants.OUTPUT_FOLDER_FORTUNOFF_PROCESSING_LOGS
 
-def run ():
+def run (debug):
 	'''This function begins the process described in the Readme of this folder'''
 	
 	#get all input filenames
@@ -49,9 +49,13 @@ def run ():
 		shelf_marks_with_filenames[shelf].append(element)
 
 
-
 	#the dictionary with shelfmarks contains all shelfmarks with corresponding filenames but not necessarily in the right order, this part of the script reorders them
-	for element in shelf_marks_with_filenames:
+	for c,element in enumerate(shelf_marks_with_filenames):
+		
+		#set the debug to here
+		if (debug == True) and (c==10):
+			break
+
 
 		#create an empty list that will hold the ordered list of transcript parts
 		ordered_list=[]
@@ -82,9 +86,12 @@ def run ():
 	unprocessed=[]
 	final_result=[]
 	
-	for shelfmark in shelf_marks_with_filenames:
-		'''if shelfmark !='hvt_93':
-			continue'''
+	for c, shelfmark in enumerate(shelf_marks_with_filenames):
+
+		#set the debug to here
+		if (debug == True) and (c==10):
+			break
+		
 		#create a list that will store the result of segmentation
 		result=[]
 		#use a try catch block to store the shelfmarks that could not be processed
