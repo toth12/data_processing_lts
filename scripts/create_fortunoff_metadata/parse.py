@@ -320,7 +320,7 @@ def main():
 
   # process records
   records = format_marc()
-  records=transform_fields_with_non_latin_characters_to_latin(records)
+  #records=transform_fields_with_non_latin_characters_to_latin(records)
 
   
   #save it to the DB

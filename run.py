@@ -64,15 +64,14 @@ def process_data():
 
  #create the empty let_them_data_processing database
  os.system('mongo ' + DB + ' --eval "db.createCollection(\'test\')"')
-
-
+ 
  
  
  #transform USHMM catalogue data to app specific metadata
  print ("The processing of USHMM metadata has started")
  create_ushmm_metadata.main()
  print ("The processing of USHMM metadata finished")
- 
+
  #process USHMM transcripts
  print ("The processing of USHMM transcripts has started")
  create_ushmm_transcript_input.main(debug)
@@ -82,16 +81,16 @@ def process_data():
  print ("The processing of Fortunoff metadata has started")
  create_fortunoff_metadata.main()
  print ("The processing of Fortunoff metadata finished")
- 
+
  #process Fortunoff transcripts
  print ("The processing of Fortunoff transcripts has started")
  create_fortunoff_transcript_input.run(debug=debug)
  print ("The processing of Fortunoff transcripts has finished")
+ print ("The processing of USC metadata finished")
  
  #transform USC catalogue data to app specific metadata
  print ("The processing of USC metadata has started")
  create_usc_metadata.main()
- print ("The processing of USC metadata finished")
  
  #process USC transcripts
  print ("The processing of USC transcripts has started")
@@ -116,7 +115,7 @@ def process_data():
  os.system('mongo ' + DB + ' --eval "db.'+output_collection_usc+'.copyTo(\'testimonies\')"')
 
  #create the folia input
- create_folia_input.main()
+ #create_folia_input.main()
 
  
 

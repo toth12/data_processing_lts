@@ -219,7 +219,7 @@ def main():
 
         if (not isinstance(document['recording_year'],int)) and (document['recording_year'] is not None):
             document['recording_year']=int(document['recording_year'])
-        document=transform_fields_with_non_latin_characters_to_latin([document])
+        #document=transform_fields_with_non_latin_characters_to_latin([document])
         
         h.insert(DB, OUTPUT_COLLECTION, document)
 
