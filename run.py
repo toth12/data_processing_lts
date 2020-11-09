@@ -66,7 +66,7 @@ def process_data():
  os.system('mongo ' + DB + ' --eval "db.createCollection(\'test\')"')
 
 
- '''
+ 
  
  #transform USHMM catalogue data to app specific metadata
  print ("The processing of USHMM metadata has started")
@@ -87,7 +87,7 @@ def process_data():
  print ("The processing of Fortunoff transcripts has started")
  create_fortunoff_transcript_input.run(debug=debug)
  print ("The processing of Fortunoff transcripts has finished")
- '''
+ 
  #transform USC catalogue data to app specific metadata
  print ("The processing of USC metadata has started")
  create_usc_metadata.main()
