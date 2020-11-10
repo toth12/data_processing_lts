@@ -58,6 +58,21 @@ if __name__ == "__main__":
             res = '|'.join(group)
             print res
             print '\n'
+        print '-'*10
+
+        words_with_dash_second_element = [word.split('-')[1] for word in words if '-' in word]
+
+        for w in words_with_dash_second_element:
+            if w in words:
+                print w
+        print '-'*10
+        words_with_dash_first_element = [word.split('-')[0] for word in words if '-' in word]
+
+        for w in words_with_dash_first_element:
+            if w in words:
+                print w
+
+
         pdb.set_trace()
 
 

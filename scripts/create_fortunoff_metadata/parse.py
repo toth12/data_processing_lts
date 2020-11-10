@@ -14,6 +14,8 @@ import sys
 import json
 import constants
 import pdb
+import helper_mongo as h
+import pandas as pd
 
 ##
 # Globals
@@ -312,8 +314,10 @@ def format_marc():
 
 
 def harmonize_camp_names():
-    camp_names = h.query(DB, OUTPUT_COLLECTION, {}, {'camp_names': 1,'id':1} )
 
+    OUTPUT_COLLECTION = constants.OUTPUT_COLLECTION_FORTUNOFF
+    DB = constants.DB
+    camp_names = h.query(DB, OUTPUT_COLLECTION, {}, {'camp_names': 1,'id':1} )
     #load the prepared data
     df_variants = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'camp_variants_resolution_sheet.csv')
     df_to_remove = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'camp_names_remove_list.csv',header=None)
