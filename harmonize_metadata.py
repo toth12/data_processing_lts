@@ -4,7 +4,11 @@ import pdb
 from utils import helper_mongo as h
 import pprint
 import pandas as pd
-
+pd.set_option('display.max_rows', 500)
+import numpy as np
+import sklearn.cluster
+import distance
+import editdistance
 
 DB = constants.OUTPUT_DB
 COLLECTION = 'testimonies'
@@ -34,9 +38,28 @@ if __name__ == "__main__":
         [final_result.extend(element) for element in result if len(element)>0]
         df = pd.DataFrame(final_result)
         df = df.drop_duplicates().sort_values(0)
+
+
+        words = df[0].to_list()#So that indexing with a list will work
+        groups = []
+        for element in words:
+            group = [element]
+            for word in words:
+                dist= editdistance.eval(element,word)
+                if (dist <3) and (dist>0):
+                    group.append(word)
+            if len(group)>1:
+                group.sort()
+                groups.append(group)
+        groups = set(tuple(x) for x in groups)
+
+        for group in groups:
+            print '\n'
+            res = '|'.join(group)
+            print res
+            print '\n'
         pdb.set_trace()
 
-        df.to_csv(field+'.csv',encoding='utf-8')
-    pdb.set_trace()
+
 
 

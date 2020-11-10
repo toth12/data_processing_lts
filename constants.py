@@ -11,6 +11,7 @@ INPUT_FOLDER_FORTUNOFF_NAME_CODES = os.getcwd()+"/data/inputs/fortunoff/"
 INPUT_FOLDER_USC_METADATA = os.getcwd()+"/data/inputs/usc/metadata/"
 INPUT_FOLDER_USC_TRANSCRIPTS=os.getcwd()+"/data/inputs/usc/transcripts/"
 INPUT_FOLDER_FRAGMENTS=os.getcwd()+"/data/inputs/fragments/"
+METADATA_CORRECTION_DOCS=os.getcwd()+"/data/inputs/metadata_correction_docs/"
 
 #set the parameter of the Mongo DB and data specific collections
 

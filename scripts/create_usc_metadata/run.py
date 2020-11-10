@@ -2,10 +2,10 @@ import pdb
 import os,sys
 import glob
 import csv
-import helper_mongo as h
+from utils import helper_mongo as h
 import codecs
 import constants
-from text import transform_fields_with_non_latin_characters_to_latin
+from utils.text import transform_fields_with_non_latin_characters_to_latin
 import codecs
 import pandas as pd
 
@@ -27,7 +27,7 @@ def rename_usc_metadata_fields():
 	#open the input file and make a python dictionary out of it
 
 	data=pd.read_csv(INPUT_DATA)
-	data['ghetto_names'] = data['ghetto_names'].astype('string')
+	#data['ghetto_names'] = data['ghetto_names'].astype('string')
 	data['IntCode'] = data['IntCode'].astype('string')
 	data = data.fillna('')
 	data = data.to_dict(orient='index')
@@ -60,13 +60,35 @@ def post_process_ghetto_names(names):
 
 def post_process_camp_names(names):
 	result=[]
+	#load the prepared data
+	df_variants = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'camp_variants_resolution_sheet.csv')
+	df_to_remove = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'camp_names_remove_list.csv',header=None)
+	df_to_correct = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'camp_names_correction_list.csv')
+	#result=correction_sheet[correction_sheet.variants.str.contains(text_to_correct)]
+
+	#if not result.empty:
+    #print result.final_version[0]
+
 	if len(names)>0:
 		individual_names=names.strip().split(';')
 		for element in individual_names:
 			if 'Concentration Camp)' in element or 'Death Camp)' in element:
 				name=element.split('(')[0].strip()
 				if len(name)>2:
-					result.append(name)
+					#check if it is to be 
+					
+					if name in df_to_remove[0].to_list():
+						continue
+					elif not (df_to_correct[df_to_correct.original_form==name].empty):
+						corrected_version = df_to_correct[df_to_correct.original_form==name].final_form.values[0]
+						result.append(corrected_version)
+					elif not (df_variants[df_variants.variants.str.contains(name)].empty):
+
+						variant_to_include = df_variants[df_variants.variants.str.contains(name)].final_version.values[0]
+						result.append(variant_to_include)
+
+					else:
+						result.append(name)
 	return result
 
 
@@ -105,9 +127,12 @@ def main():
 	os.system('mongo ' + db + ' --eval "db.createCollection(\''+OUTPUT_COLLECTION+'\')"')
 	usc_metadata_renamed=rename_usc_metadata_fields()
 	usc_metadata_processed=post_process_metadata(usc_metadata_renamed)
-	
+
 	#usc_metadata_processed=transform_fields_with_non_latin_characters_to_latin(usc_metadata_processed)
 
 	
 	#upload result
 	h.insert(db,OUTPUT_COLLECTION,usc_metadata_processed)
+
+if __name__ == '__main__':
+	main()
