@@ -135,7 +135,6 @@ def harmonize_camp_ghetto_names(field):
                 h.update_field(DB,OUTPUT_COLLECTION, '_id', entry['_id'], field, result)
             
     except:
-        print 'except'
         pdb.set_trace()
     
 

@@ -86,7 +86,7 @@ def process_data():
  print ("The processing of USHMM transcripts has started")
  create_ushmm_transcript_input.main(debug)
  
- '''
+ 
  print ("The processing of USHMM transcripts finished")
  
  #transform Fortunoff catalogue data to app specific metadata
@@ -99,7 +99,7 @@ def process_data():
  create_fortunoff_transcript_input.run(debug=debug)
  print ("The processing of Fortunoff transcripts has finished")
 
- 
+ '''
  
  
  #test the output results
