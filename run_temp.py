@@ -60,6 +60,8 @@ def process_data():
  print ("The processing of USHMM transcripts finished")
  '''
  #transform Fortunoff catalogue data to app specific metadata
+ create_ushmm_metadata.harmonize_camp_ghetto_names(field='ghetto_names')
+ '''
  print ("The processing of Fortunoff metadata has started")
  create_fortunoff_metadata.main()
  print ("The processing of Fortunoff metadata finished")
@@ -69,7 +71,7 @@ def process_data():
  print ("The processing of Fortunoff transcripts has started")
  create_fortunoff_transcript_input.run()
  print ("The processing of Fortunoff transcripts has finished")
- '''
+ 
  #transform USC catalogue data to app specific metadata
  print ("The processing of USC metadata has started")
  create_usc_metadata.main()
@@ -166,7 +168,7 @@ def process_data():
 
  #zip the folia files
  os.system('zip -r -j data/outputs/folia_output/folia.zip data/outputs/folia_output/*')
-'''
+
  #upload the data to amazon server
 
  print 'upload data to amazon servers'
@@ -176,7 +178,7 @@ def process_data():
  os.system('aws s3 cp data/outputs/db/lts.archive s3://lab-secrets/let-them-speak/lts.archive --profile lab-secrets')
 
 '''
-'''
+
 
 if __name__ == '__main__':
     

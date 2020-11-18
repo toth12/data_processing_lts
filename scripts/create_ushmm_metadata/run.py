@@ -13,11 +13,11 @@ import constants
 from text import transform_fields_with_non_latin_characters_to_latin
 import sys, os
 import pandas as pd
-
+import pdb
 import helper_mongo as h
 import csv
 import pprint
-import pdb
+
 import re
 
 pp = pprint.PrettyPrinter(indent=4)
@@ -91,20 +91,31 @@ def populateDocument(document, unknown_fields, dictionary, id_, field_name, manu
         if field_name != 'interview_summary':
             unknown_fields.append(field_name)
 
-def harmonize_camp_names():
-    camp_names = h.query(DB, OUTPUT_COLLECTION, {}, {'camp_names': 1,'id':1} )
+def harmonize_camp_ghetto_names(field):
+    names = h.query(DB, OUTPUT_COLLECTION, {}, {field: 1,'id':1} )
 
     #load the prepared data
-    df_variants = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'camp_variants_resolution_sheet.csv')
-    df_to_remove = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'camp_names_remove_list.csv',header=None)
-    df_to_correct = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'camp_names_correction_list.csv',encoding='utf-8')
+    if field =="camp_names":
+
+        df_variants = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'camp_variants_resolution_sheet.csv')
+        df_to_remove = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'camp_names_remove_list.csv',header=None)
+        df_to_correct = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'camp_names_correction_list.csv',encoding='utf-8')
+    
+    elif (field=="ghetto_names"):
+        df_variants = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'ghetto_variants_resolution_sheet.csv')
+        df_to_remove = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'ghetto_names_remove_list.csv',header=None)
+        df_to_correct = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'ghetto_names_correction_list.csv',encoding='utf-8')
+    
+
+
     try:
-        for entry in camp_names:
-            if len(entry['camp_names'])==0:
+        for entry in names:
+            print entry[field]
+            if len(entry[field])==0:
                 continue
             else:
                 result=[]
-                for name in entry['camp_names']:
+                for name in entry[field]:
                     if name =='Block 10 (Auschwitz':
                         name = 'Auschwitz'
 
@@ -120,10 +131,13 @@ def harmonize_camp_names():
 
                     else:
                         result.append(name.encode('utf-8'))
-                h.update_field(DB,OUTPUT_COLLECTION, '_id', entry['_id'], 'camp_names', result)
+                
+                h.update_field(DB,OUTPUT_COLLECTION, '_id', entry['_id'], field, result)
             
     except:
+        print 'except'
         pdb.set_trace()
+    
 
 
 
@@ -262,8 +276,9 @@ def main():
         
         h.insert(DB, OUTPUT_COLLECTION, document)
     #start the metadata harmonization
-    harmonize_camp_names()
+    harmonize_camp_ghetto_names(field='camp_names')
+    harmonize_camp_ghetto_names(field='ghetto_names')
 if __name__ == '__main__':
-    harmonize_camp_names()
+    harmonize_camp_ghetto_names(field='ghetto_names')
 
  
