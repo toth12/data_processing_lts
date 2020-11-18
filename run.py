@@ -50,7 +50,8 @@ output_folder_fragments=constants.OUTPUT_FOLDER_FRAGMENTS
 
 
 def process_data():
- 
+
+
  #create the output folders
  make_output_pathes()
 
@@ -65,7 +66,15 @@ def process_data():
  #create the empty let_them_data_processing database
  os.system('mongo ' + DB + ' --eval "db.createCollection(\'test\')"')
  
+ #transform USC catalogue data to app specific metadata
+ print ("The processing of USC metadata has started")
+ create_usc_metadata.main()
+ print ("The processing of USC metadata finished")
  
+ #process USC transcripts
+ print ("The processing of USC transcripts has started")
+ create_usc_transcripts.run(debug)
+ print ("The processing of USC transcripts has finished")
  
  #transform USHMM catalogue data to app specific metadata
  print ("The processing of USHMM metadata has started")
@@ -86,16 +95,9 @@ def process_data():
  print ("The processing of Fortunoff transcripts has started")
  create_fortunoff_transcript_input.run(debug=debug)
  print ("The processing of Fortunoff transcripts has finished")
- print ("The processing of USC metadata finished")
+
  
- #transform USC catalogue data to app specific metadata
- print ("The processing of USC metadata has started")
- create_usc_metadata.main()
  
- #process USC transcripts
- print ("The processing of USC transcripts has started")
- create_usc_transcripts.run(debug)
- print ("The processing of USC transcripts has finished")
  
  #test the output results
  print ("Testing of output has started; for a more detailed output run: python test_processing_outputs.py ")
@@ -140,11 +142,6 @@ def process_data():
  		#update the status
  		status={'status':'transcript_processed'}
  		h.update_entry(DB,'testimonies',result['_id'],status)
-
-
- 		
-
-
 
 
  #create fragments from the CSV input file

@@ -31,7 +31,7 @@ def getMetaData(field_name):
 
 if __name__ == "__main__":
     
-    fields = ['camp_names','ghetto_names']
+    fields = ['ghetto_names','camp_names']
     for field in fields:
         result = getMetaData(field_name=field)
         final_result = []
@@ -60,6 +60,7 @@ if __name__ == "__main__":
             print '\n'
         print '-'*10
 
+        pdb.set_trace()
         words_with_dash_second_element = [word.split('-')[1] for word in words if '-' in word]
 
         for w in words_with_dash_second_element:
