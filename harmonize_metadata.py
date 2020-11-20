@@ -35,7 +35,7 @@ def getMetaData(field_name):
 if __name__ == "__main__":
     
     fields = ['ghetto_names','camp_names']
-    fields = ['ghetto_names']
+    fields = ['camp_names']
     for field in fields:
         result = getMetaData(field_name=field)
 
@@ -50,8 +50,7 @@ if __name__ == "__main__":
 
         for element in sorted(output):
             print element
-            if element[0:2] =="Dv":
-                pdb.set_trace()
+
             #text = "Dvar\xc4\x97ts (Hrodzenskaia voblasts')"
             #if text in element:
                 #pdb.set_trace()

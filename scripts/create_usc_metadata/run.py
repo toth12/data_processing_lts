@@ -70,6 +70,8 @@ def post_process_ghetto_names(names):
 
 					variant_to_include = df_variants[df_variants.variants.str.contains(name)].final_version.values[0]
 					result.append(variant_to_include)
+				else:
+					result.append(name)
 	return result
 
 def post_process_camp_names(names):
@@ -114,6 +116,7 @@ def post_process_metadata(meta_data):
 		#postprocess ghetto names
 		element['ghetto_names']=post_process_ghetto_names(element['ghetto_names'])
 		element['camp_names']=post_process_camp_names(element['camp_names'])
+		
 		element['media_url']=[element['media_url']]
 		#provenance to be left empty
 		element['provenance']=''
