@@ -50,12 +50,26 @@ def rename_usc_metadata_fields():
 
 def post_process_ghetto_names(names):
 	result=[]
+	#load the prepared data
+	df_variants = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'ghetto_variants_resolution_sheet.csv')
+	df_to_remove = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'ghetto_names_remove_list.csv',header=None)
+	df_to_correct = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'ghetto_names_correction_list.csv')
+	#result=correction_sheet[correction_sheet.variants.str.contains(text_to_correct)]
 	if len(names.strip())>0:
 		individual_names=names.strip().split(';')
 		for element in individual_names:
 			if len(element)>0:
 				name=element.split('(')[0].strip()
-				result.append(name)
+				#check if it is to be 
+				if name in df_to_remove[0].to_list():
+					continue
+				elif not (df_to_correct[df_to_correct.original_form==name].empty):
+					corrected_version = df_to_correct[df_to_correct.original_form==name].final_form.values[0]
+					result.append(corrected_version)
+				elif not (df_variants[df_variants.variants.str.contains(name)].empty):
+
+					variant_to_include = df_variants[df_variants.variants.str.contains(name)].final_version.values[0]
+					result.append(variant_to_include)
 	return result
 
 def post_process_camp_names(names):

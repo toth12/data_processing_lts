@@ -118,24 +118,34 @@ def harmonize_camp_ghetto_names(field):
                 for name in entry[field]:
                     if name =='Block 10 (Auschwitz':
                         name = 'Auschwitz'
+                        result.append(name.encode('utf-8').strip())
+
+                    elif name[0:4]=="Dvar":
+                        name = "Dvarets"
+                        result.append(name.encode('utf-8').strip())
+
+                    elif name[0:4]=="Kolk":
+                        name = "Kolky"
+                        result.append(name.encode('utf-8').strip())
 
                     elif name in df_to_remove[0].to_list():
                         continue
-                    elif not (df_to_correct[df_to_correct.original_form==name.encode('utf-8')].empty):
-                        corrected_version = df_to_correct[df_to_correct.original_form==name.encode("utf-8")].final_form.values[0]
+                    elif not (df_to_correct[df_to_correct.original_form==name.encode('utf-8').strip()].empty):
+                        corrected_version = df_to_correct[df_to_correct.original_form==name.encode("utf-8").strip()].final_form.values[0]
                         result.append(corrected_version)
-                    elif not (df_variants[df_variants.variants.str.contains(name.encode('utf-8'))].empty):
+                    elif not (df_variants[df_variants.variants.str.contains(name.encode('utf-8').strip())].empty):
 
-                        variant_to_include = df_variants[df_variants.variants.str.contains(name.encode("utf-8"))].final_version.values[0]
+                        variant_to_include = df_variants[df_variants.variants.str.contains(name.encode("utf-8").strip())].final_version.values[0]
                         result.append(variant_to_include)
 
                     else:
-                        result.append(name.encode('utf-8'))
+                        result.append(name.encode('utf-8').strip())
                 
                 h.update_field(DB,OUTPUT_COLLECTION, '_id', entry['_id'], field, result)
             
-    except:
-        pdb.set_trace()
+    except Exception as e:
+        print e
+        
     
 
 

@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import sys, os
 import constants
 import pdb
@@ -9,6 +11,7 @@ import numpy as np
 import sklearn.cluster
 import distance
 import editdistance
+import urllib
 
 DB = constants.OUTPUT_DB
 COLLECTION = 'testimonies'
@@ -21,10 +24,10 @@ def getMetaData(field_name):
     Returns a set of interview IDs with all 1514 entries
     """
     # query database
-    result = h.query(DB, COLLECTION, {}, {field_name: 1,'id':1} )
+    result = h.query(DB, COLLECTION, {}, {field_name: 1,'id':1,'collection':1} )
     output= []
     for interview in result:
-        output.append(interview[field_name])
+        output.append({'field':interview[field_name],'collection':interview['collection']})
 
         
     return output
@@ -35,10 +38,37 @@ if __name__ == "__main__":
     fields = ['ghetto_names']
     for field in fields:
         result = getMetaData(field_name=field)
-        final_result = []
-        [final_result.extend(element) for element in result if len(element)>0]
-        df = pd.DataFrame(final_result)
+
+        #final_result = []
+        #[final_result.extend(element) for element in result if len(element)>0]
+        output = set()
+        df = pd.DataFrame(result)
+
+        for element in df.field.to_list():
+            for city in element:
+                output.add(city)
+
+        for element in sorted(output):
+            print element
+            if element[0:2] =="Dv":
+                pdb.set_trace()
+            #text = "Dvar\xc4\x97ts (Hrodzenskaia voblasts')"
+            #if text in element:
+                #pdb.set_trace()
+            #code=urllib.urlopen("https://en.wikipedia.org/wiki/"+element).getcode()
+            #if code == 404:
+             #   continue
+
+        pdb.set_trace()
+        df['Lo_1']=df['field'].apply(lambda x: True if 'Łódź' in x else False)
+        df['Lo_2']=df['field'].apply(lambda x: True if 'Łódź' in x else False)
+
+        print (df[df['Lo_1']==True])
+        print(df[df['Lo_2']==True])
+        
         df = df.drop_duplicates().sort_values(0)
+        print df.reindex()
+        pdb.set_trace()
 
 
         words = df[0].to_list()#So that indexing with a list will work
