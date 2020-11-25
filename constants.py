@@ -30,7 +30,7 @@ OUTPUT_DB='lts'
 OUTPUT_FOLDER_FRAGMENTS_PROCESSING_LOGS=os.getcwd()+"/data/outputs/fragment_processing_logs/"
 OUTPUT_FOLDER_FRAGMENTS=os.getcwd()+"/data/outputs/fragments/"
 OUTPUT_FOLDER_FOR_QUALITY_CONTROL=os.getcwd()+"/data/outputs/collections_for_quality_control/"
-
+OUTPUT_FOLDER_MISC=os.getcwd()+"/data/outputs/misc/"
 
 USHMM_TRACKER_COLLECTION = "USHMM_transcript_processing_progress_test"
 

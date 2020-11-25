@@ -8,7 +8,6 @@ import helper_mongo as h
 import transform_fragments_in_csv_to_json_for_fragments_collection
 
 
-
 #parse argument for debugging
 import argparse
 parser = argparse.ArgumentParser(description="Only the first ten interviews are processed from every collection")
@@ -34,6 +33,8 @@ from scripts.create_usc_metadata import run as create_usc_metadata
 from scripts.transform_usc_transcripts import run as create_usc_transcripts
 from scripts.create_folia_input import run as create_folia_input
 from add_sample_transcript import add_sample_transcript
+from scripts.identify_interviews_with_more_persons import run as identify_interviews_with_more_persons
+
 
 
 ##Global Variables##
@@ -161,6 +162,14 @@ def process_data():
 
 
  os.system('mongo ' + DB + ' --eval "db.copyDatabase(\''+DB+'\',\''+output_db+'\',\'localhost\')"')
+
+
+#post-process the output DB
+ identify_interviews_with_more_persons.run()
+
+#extract interviews with multiple persons and set empty of their gender
+
+
 
 #delete the unnecessary collections from the final result
  

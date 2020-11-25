@@ -12,4 +12,5 @@ def make_output_pathes():
 	os.makedirs(constants.FOLIA_OUTPUT_FOLDER)
 	os.makedirs(constants.FOLIA_PROCESSING_LOG_FOLDER)
 	os.makedirs(constants.OUTPUT_FOLDER_DB)
+	os.makedirs(constants.OUTPUT_FOLDER_MISC)
 	
