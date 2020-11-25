@@ -61,6 +61,15 @@ def process_data():
  #delete the processing databases if already in the system
  os.system('mongo ' + DB + ' --eval "db.dropDatabase()"')
 
+ #transform Fortunoff catalogue data to app specific metadata
+ print ("The processing of Fortunoff metadata has started")
+ create_fortunoff_metadata.main()
+ print ("The processing of Fortunoff metadata finished")
+
+ #process Fortunoff transcripts
+ print ("The processing of Fortunoff transcripts has started")
+ create_fortunoff_transcript_input.run(debug=debug)
+ print ("The processing of Fortunoff transcripts has finished")
  
 
  #create the empty let_them_data_processing database
@@ -93,15 +102,7 @@ def process_data():
  
  
 
- #transform Fortunoff catalogue data to app specific metadata
- print ("The processing of Fortunoff metadata has started")
- create_fortunoff_metadata.main()
- print ("The processing of Fortunoff metadata finished")
-
- #process Fortunoff transcripts
- print ("The processing of Fortunoff transcripts has started")
- create_fortunoff_transcript_input.run(debug=debug)
- print ("The processing of Fortunoff transcripts has finished")
+ 
 
  '''
  

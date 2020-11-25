@@ -214,6 +214,11 @@ def flatten_marc_json(records):
     parsed.pop('camp_names_2',None)
     parsed.pop('camp_names_3',None)
     
+
+    # check if double interview and then eliminate the gender info
+
+    if 'and' in parsed['testimony_title'].split():
+      parsed['gender'] = ''
     # add the parsed record to the list of parsed records
     parsed_records.append(parsed)
   return parsed_records
