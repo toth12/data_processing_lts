@@ -19,7 +19,7 @@ COLLECTION = 'testimonies'
 
 def run():
     # get the relevant metadata
-    result = h.query(DB, COLLECTION, {}, {'testimony_title': 1,'testimony_id':1,'collection':1} )
+    result = h.query(DB, COLLECTION, {}, {'testimony_title': 1,'shelfmark':1,'collection':1} )
 
     result = [element for element in result if (('and' in element['testimony_title'].split()) or ( len(element['testimony_title'].split(','))>1))]
     df = pd.DataFrame(result)
