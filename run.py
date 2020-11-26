@@ -34,7 +34,7 @@ from scripts.transform_usc_transcripts import run as create_usc_transcripts
 from scripts.create_folia_input import run as create_folia_input
 from add_sample_transcript import add_sample_transcript
 from scripts.identify_interviews_with_more_persons import run as identify_interviews_with_more_persons
-
+from scripts.print_all_testimonies import run as print_all_testimonies
 
 
 ##Global Variables##
@@ -52,7 +52,8 @@ output_folder_fragments=constants.OUTPUT_FOLDER_FRAGMENTS
 
 def process_data():
 
-
+ 
+ 
  #create the output folders
  make_output_pathes()
 
@@ -165,9 +166,16 @@ def process_data():
 
 
 #post-process the output DB
- identify_interviews_with_more_persons.run()
+
+
 
 #extract interviews with multiple persons and set empty of their gender
+ identify_interviews_with_more_persons.run()
+
+#print all interviews titles and shelfmarks to file
+ print_all_testimonies.run()
+
+
 
 
 

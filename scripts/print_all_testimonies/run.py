@@ -23,11 +23,15 @@ def getMetaData(field_name):
         
     return result
 
-if __name__ == "__main__":
-    
+
+def run():
     fields = ['shelfmark']
     for field in fields:
         result = getMetaData(field_name=field)
         df = pd.DataFrame(result)
         df = df.drop(columns="_id")
         df.to_csv(constants.OUTPUT_FOLDER_MISC+'all_interviews_with_titles_shelfmarks.csv',encoding='utf-8')
+
+if __name__ == "__main__":
+    run()
+    
