@@ -24,7 +24,7 @@ def getShelfmark():
         key = interview.get('id')
         
         # access date object
-        interviews_shelfmark[key] = 'USHMM '+interview.get('rg_number')
+        interviews_shelfmark[key] = interview.get('rg_number')
 
     return interviews_shelfmark
 
