@@ -35,7 +35,9 @@ from scripts.create_folia_input import run as create_folia_input
 from add_sample_transcript import add_sample_transcript
 from scripts.identify_interviews_with_more_persons import run as identify_interviews_with_more_persons
 from scripts.print_all_testimonies import run as print_all_testimonies
-
+from scripts.identify_interviewees_sharing_same_surname import run as identify_interviewees_sharing_same_surname
+from scripts.identify_interviewees_giving_more_interviews import run as identify_interviewees_giving_more_interviews
+from scripts.order_interviewees_by_surnames import run as order_interviewees_by_surnames
 
 ##Global Variables##
 
@@ -63,15 +65,7 @@ def process_data():
  #delete the processing databases if already in the system
  os.system('mongo ' + DB + ' --eval "db.dropDatabase()"')
 
- #transform Fortunoff catalogue data to app specific metadata
- print ("The processing of Fortunoff metadata has started")
- create_fortunoff_metadata.main()
- print ("The processing of Fortunoff metadata finished")
 
- #process Fortunoff transcripts
- print ("The processing of Fortunoff transcripts has started")
- create_fortunoff_transcript_input.run(debug=debug)
- print ("The processing of Fortunoff transcripts has finished")
  
 
  #create the empty let_them_data_processing database
@@ -99,6 +93,16 @@ def process_data():
  
  
  print ("The processing of USHMM transcripts finished")
+
+  #transform Fortunoff catalogue data to app specific metadata
+ print ("The processing of Fortunoff metadata has started")
+ create_fortunoff_metadata.main()
+ print ("The processing of Fortunoff metadata finished")
+
+ #process Fortunoff transcripts
+ print ("The processing of Fortunoff transcripts has started")
+ create_fortunoff_transcript_input.run(debug=debug)
+ print ("The processing of Fortunoff transcripts has finished")
  
  
  
@@ -175,6 +179,14 @@ def process_data():
 #print all interviews titles and shelfmarks to file
  print_all_testimonies.run()
 
+ #print interviewees giving multiple interviews
+ identify_interviewees_giving_more_interviews.run()
+
+ #identify interviewers sharing the same surname
+ identify_interviewees_sharing_same_surname.run()
+
+ #print all interviewees arranged by surnames
+ order_interviewees_by_surnames.run()
 
 
 

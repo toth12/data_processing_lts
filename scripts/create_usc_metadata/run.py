@@ -132,7 +132,15 @@ def post_process_metadata(meta_data):
 	return meta_data
 
 
-
+def add_youtube_links(data):
+	links=pd.read_csv(constants.INPUT_FOLDER_USC_METADATA+"YouTube_links.csv")
+	links = links.groupby("IntCode")['YouTubeLink'].apply(list).reset_index(name='media_url')
+	data = pd.DataFrame(data)
+	data['shelfmark']=pd.to_numeric(data["shelfmark"])
+	data = data.drop(columns=['media_url'])
+	data = pd.merge(data,links,left_on="shelfmark",right_on="IntCode",how='right')
+	return data.T.to_dict().values()
+	
 
 
 
@@ -144,12 +152,14 @@ def main():
 	os.system('mongo ' + db + ' --eval "db.createCollection(\''+OUTPUT_COLLECTION+'\')"')
 	usc_metadata_renamed=rename_usc_metadata_fields()
 	usc_metadata_processed=post_process_metadata(usc_metadata_renamed)
+	usc_metadata_processed_with_youtube_links = add_youtube_links(usc_metadata_processed)
+	
 
 	#usc_metadata_processed=transform_fields_with_non_latin_characters_to_latin(usc_metadata_processed)
 
 	
 	#upload result
-	h.insert(db,OUTPUT_COLLECTION,usc_metadata_processed)
+	h.insert(db,OUTPUT_COLLECTION,usc_metadata_processed_with_youtube_links)
 
 if __name__ == '__main__':
 	main()

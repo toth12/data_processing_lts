@@ -24,10 +24,11 @@ def getMetaData(field_name):
     Returns a set of interview IDs with all 1514 entries
     """
     # query database
-    result = h.query(DB, COLLECTION, {}, {field_name: 1,'id':1,'collection':1} )
+    result = h.query(DB, COLLECTION, {}, {field_name: 1,'id':1,'collection':1,'testimony_id':1,'shelfmark':1} )
     output= []
     for interview in result:
-        output.append({field_name:interview[field_name],'collection':interview['collection']})
+        if interview['interviewee_name']!='':
+            output.append({field_name:interview[field_name],'collection':interview['collection'],'shelfmark':interview['shelfmark']})
 
         
     return output
@@ -38,14 +39,27 @@ if __name__ == "__main__":
     fields = ['interviewee_name']
     for field in fields:
         result = getMetaData(field_name=field)
+        '''
         names = [element['interviewee_name'] for element in result if element['collection']!="Fortunoff"]
         groups = []
+        print "close variants"
         for element in names:
+            if element== '':
+                    continue
             group = [element]
             for name in names:
+                if name == '':
+                    continue
                 dist= editdistance.eval(element,name)
-                if (dist <5) and (dist>0):
-                    group.append(name)
+
+                #exclude the possibility that the shared first name gives rise to similarity
+                dist_first_name =editdistance.eval(element.split()[0],name.split()[0])
+                dist_last_name =editdistance.eval(element.split()[-1:],name.split()[-1:])
+
+                if (dist <3) and (dist>0):
+                    if dist_first_name>0:
+                        if dist_last_name<3:
+                            group.append(name)
             if len(group)>1:
                 group.sort()
                 groups.append(group)
@@ -58,6 +72,12 @@ if __name__ == "__main__":
             print '\n'
         print '-'*10
 
+        '''
+
+        df = pd.DataFrame(result)
+        df['shelfmark']=df['collection']+' '+df['shelfmark']
+        df = df[df.interviewee_name.duplicated(keep=False)]
+        df = df.groupby('interviewee_name')['shelfmark'].apply(list).reset_index(name='shelfmarks')
 
         pdb.set_trace()
 
