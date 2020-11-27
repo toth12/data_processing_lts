@@ -35,7 +35,7 @@ def getMetaData(field_name):
 if __name__ == "__main__":
     
     fields = ['ghetto_names','camp_names']
-    fields = ['camp_names']
+    fields = ['provenance']
     for field in fields:
         result = getMetaData(field_name=field)
 
@@ -43,7 +43,7 @@ if __name__ == "__main__":
         #[final_result.extend(element) for element in result if len(element)>0]
         output = set()
         df = pd.DataFrame(result)
-
+        pdb.set_trace()
         for element in df.field.to_list():
             for city in element:
                 output.add(city)

@@ -38,7 +38,7 @@ from scripts.print_all_testimonies import run as print_all_testimonies
 from scripts.identify_interviewees_sharing_same_surname import run as identify_interviewees_sharing_same_surname
 from scripts.identify_interviewees_giving_more_interviews import run as identify_interviewees_giving_more_interviews
 from scripts.order_interviewees_by_surnames import run as order_interviewees_by_surnames
-
+from scripts.identify_interviews_without_year_of_recording import run as identify_interviews_without_year_of_recording
 ##Global Variables##
 
 DB = constants.DB
@@ -189,12 +189,12 @@ def process_data():
  order_interviewees_by_surnames.run()
 
 
-
+ #print all interviews without recording year
+ identify_interviews_without_year_of_recording.run()
 
 #delete the unnecessary collections from the final result
  
- collections_to_delete=[constants.OUTPUT_COLLECTION_USHMM,constants.INPUT_COLLECTION_USHMM,constants.OUTPUT_COLLECTION_FORTUNOFF,constants.OUTPUT_COLLECTION_USC,constants.
- USHMM_TRACKER_COLLECTION,'test']
+ collections_to_delete=[constants.OUTPUT_COLLECTION_USHMM,constants.INPUT_COLLECTION_USHMM,constants.OUTPUT_COLLECTION_FORTUNOFF,constants.OUTPUT_COLLECTION_USC,constants.USHMM_TRACKER_COLLECTION,'test']
  for collection in collections_to_delete:
  	os.system('mongo ' + output_db + ' --eval "db.'+collection+'.drop()"')
 
