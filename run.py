@@ -39,6 +39,10 @@ from scripts.identify_interviewees_sharing_same_surname import run as identify_i
 from scripts.identify_interviewees_giving_more_interviews import run as identify_interviewees_giving_more_interviews
 from scripts.order_interviewees_by_surnames import run as order_interviewees_by_surnames
 from scripts.identify_interviews_without_year_of_recording import run as identify_interviews_without_year_of_recording
+from scripts.identify_interviews_without_ghetto_and_camp import run as identify_interviews_without_ghetto_and_camp
+from scripts.identify_interviews_without_gender_infos import run as identify_interviews_without_gender_infos
+from scripts.identify_interviews_without_name_of_interviewees import run as identify_interviews_without_name_of_interviewees
+
 ##Global Variables##
 
 DB = constants.DB
@@ -191,6 +195,15 @@ def process_data():
 
  #print all interviews without recording year
  identify_interviews_without_year_of_recording.run()
+
+ #identify interviews without camps and ghettos
+ identify_interviews_without_ghetto_and_camp.run()
+
+ #identify interviews without gender
+ identify_interviews_without_gender_infos.run()
+
+ #identify interviews where no interviewee name was retrieved
+ identify_interviews_without_name_of_interviewees.run()
 
 #delete the unnecessary collections from the final result
  

@@ -19,16 +19,16 @@ COLLECTION = 'testimonies'
 
 def run():
     # get the relevant metadata
-    result = h.query(DB, COLLECTION, {}, {'testimony_title':1,'recording_year': 1,'shelfmark':1,'collection':1} )
+    result = result = h.query(DB, COLLECTION, {}, {'interviewee_name': 1,'shelfmark':1,'collection':1,'testimony_title':1} )
     df = pd.DataFrame(result)
     df = df.drop(columns=['_id'])
     nan_value = float("NaN")
     df.replace("", nan_value, inplace=True)
-    df = df[~df['recording_year'].notna()]
+    df = df[~df['interviewee_name'].notna()]
     df.replace(nan_value,"", inplace=True)
-    df.drop(columns =["recording_year"], inplace=True)
+    df.drop(columns =["interviewee_name"], inplace=True)
     df.reset_index(drop=True,inplace=True)
-    df.to_csv(constants.OUTPUT_FOLDER_MISC+'interviews_without_recording_year.csv',encoding='utf-8')
+    df.to_csv(constants.OUTPUT_FOLDER_MISC+'interviews_without_name_of_interviewees.csv',encoding='utf-8')
 
 if __name__ == '__main__':
     run()

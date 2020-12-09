@@ -35,7 +35,7 @@ def getMetaData(field_name):
 if __name__ == "__main__":
     
     fields = ['ghetto_names','camp_names']
-    fields = ['provenance']
+    fields = ['testimony_title']
     for field in fields:
         result = getMetaData(field_name=field)
 
