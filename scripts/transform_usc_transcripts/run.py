@@ -27,6 +27,7 @@ def run (debug=False):
 	c = 0
 	for line in reader:
 		#set the debugger
+
 		if (debug == True) and (c==10):
 			break
 		

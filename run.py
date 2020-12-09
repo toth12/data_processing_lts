@@ -42,7 +42,7 @@ from scripts.identify_interviews_without_year_of_recording import run as identif
 from scripts.identify_interviews_without_ghetto_and_camp import run as identify_interviews_without_ghetto_and_camp
 from scripts.identify_interviews_without_gender_infos import run as identify_interviews_without_gender_infos
 from scripts.identify_interviews_without_name_of_interviewees import run as identify_interviews_without_name_of_interviewees
-
+from scripts.correct_ushmm_shelfmarks import run as correct_ushmm_shelfmarks
 ##Global Variables##
 
 DB = constants.DB
@@ -98,7 +98,7 @@ def process_data():
  
  print ("The processing of USHMM transcripts finished")
 
-  #transform Fortunoff catalogue data to app specific metadata
+ #transform Fortunoff catalogue data to app specific metadata
  print ("The processing of Fortunoff metadata has started")
  create_fortunoff_metadata.main()
  print ("The processing of Fortunoff metadata finished")
@@ -114,7 +114,7 @@ def process_data():
 
  
 
- '''
+ 
  
  
  #test the output results
@@ -125,7 +125,7 @@ def process_data():
 
  #copy the three collections into one
  
-'''
+
  
  os.system('mongo ' + DB + ' --eval "db.'+output_collection_fortunoff+'.copyTo(\'testimonies\')"')
  
@@ -135,7 +135,7 @@ def process_data():
  os.system('mongo ' + DB + ' --eval "db.'+output_collection_usc+'.copyTo(\'testimonies\')"')
 
  #create the folia input
- #create_folia_input.main()
+ create_folia_input.main()
 
  
 
@@ -175,7 +175,8 @@ def process_data():
 
 #post-process the output DB
 
-
+#correct USHMM shelfmarks
+ correct_ushmm_shelfmarks.run()
 
 #extract interviews with multiple persons and set empty of their gender
  identify_interviews_with_more_persons.run()

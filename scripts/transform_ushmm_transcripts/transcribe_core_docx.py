@@ -86,7 +86,6 @@ def createStructuredTranscriptDocx(debug=False):
         else:
             # insert units on the output collection
             h.update_field(DB, OUTPUT, "shelfmark",'USHMM '+mongo_rg, "structured_transcript", result)
-
                 
             # update status on the stracker
                 
