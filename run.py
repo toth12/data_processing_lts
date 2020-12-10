@@ -63,6 +63,7 @@ def process_data():
  #create the output folders
  make_output_pathes()
 
+
  #delete lts database if already in the system
  os.system('mongo ' + output_db + ' --eval "db.dropDatabase()"')
 
@@ -133,7 +134,7 @@ def process_data():
 
  
  os.system('mongo ' + DB + ' --eval "db.'+output_collection_usc+'.copyTo(\'testimonies\')"')
-
+ 
  #create the folia input
  create_folia_input.main()
 
