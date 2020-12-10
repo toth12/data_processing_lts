@@ -340,7 +340,6 @@ def harmonize_camp_names(field):
 
     try:
         for entry in names:
-            print entry[field]
             if len(entry[field])==0:
                 continue
             else:
