@@ -89,6 +89,19 @@ Or if both python3 and python2 are installed:
 python2 run.py
 ```
 
+Or it is also possible to run the transformations in debug mode. This will process only a few transcripts, hence it will be significantly faster than the full process.
+
+```bash
+python run.py -debug
+```
+
+Or if both python3 and python2 are installed:
+
+
+```bash
+python2 run.py -debug
+```
+
 That will start a pipeline of 2x3 (i.e. two transformations per each institution) transformations:
 
 > * transformation of catalogue data in various data formats (xls,marcXML,mongo collection dump) into the datamodel of the app 
