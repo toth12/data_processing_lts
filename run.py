@@ -164,7 +164,7 @@ def process_data():
 
 
  #create fragments from the CSV input file
- transform_fragments_in_csv_to_json_for_fragments_collection.main()
+ #transform_fragments_in_csv_to_json_for_fragments_collection.main()
 
 
 
@@ -215,7 +215,7 @@ def process_data():
 
 #add the fragment collection to it
 
- os.system('mongoimport -d ' + output_db + ' -c fragments --file '+output_folder_fragments+'fragments.json --jsonArray')
+ os.system('mongoimport -d ' + output_db + ' -c fragments --file '+INPUT_FOLDER_FRAGMENTS+'fragments.json --jsonArray')
 
 
  #archive the output db
@@ -234,14 +234,14 @@ def process_data():
  os.system('zip -r -j data/outputs/folia_output/folia.zip data/outputs/folia_output/*')
 
  #upload the data to amazon server
- '''
+ 
  print 'upload data to amazon servers'
 
- os.system('aws s3 cp data/outputs/folia_output/folia.zip s3://lab-secrets/let-them-speak/folia.zip --profile lab-secrets')
+ os.system('aws s3 cp data/outputs/folia_output/folia.zip s3://fortunoff-secrets/let-them-speak-staging-data/folia.zip --profile lts-staging')
 
- os.system('aws s3 cp data/outputs/db/lts.archive s3://lab-secrets/let-them-speak/lts.archive --profile lab-secrets')
+ os.system('aws s3 cp data/outputs/db/lts.archive s3://fortunoff-secrets/let-them-speak-staging-data/lts.archive --profile lts-staging')
 
-'''
+
 
 
 if __name__ == '__main__':
