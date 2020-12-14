@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import sys, os
 import pdb
 import shutil
@@ -6,6 +8,9 @@ helper_path = os.getcwd()+"/utils"
 sys.path.insert(0, helper_path)
 import helper_mongo as h
 import transform_fragments_in_csv_to_json_for_fragments_collection
+import encodings
+from encodings import idna
+from encodings import ascii
 
 
 #parse argument for debugging
@@ -62,6 +67,7 @@ def process_data():
  
  #create the output folders
  make_output_pathes()
+
 
 
  #delete lts database if already in the system
@@ -215,7 +221,7 @@ def process_data():
 
 #add the fragment collection to it
 
- os.system('mongoimport -d ' + output_db + ' -c fragments --file '+INPUT_FOLDER_FRAGMENTS+'fragments.json --jsonArray')
+ os.system('mongoimport -d ' + output_db + ' -c fragments --file '+constants.INPUT_FOLDER_FRAGMENTS+'fragments.json --jsonArray')
 
 
  #archive the output db
@@ -231,7 +237,11 @@ def process_data():
  #os.system('mongo ' + DB + ' --eval "db.dropDatabase()"')
 
  #zip the folia files
+
  os.system('zip -r -j data/outputs/folia_output/folia.zip data/outputs/folia_output/*')
+
+ #zip the lts archive
+ os.system('zip -r -j data/outputs/db/lts.archive.zip data/outputs/db/*')
 
  #upload the data to amazon server
  
@@ -239,7 +249,7 @@ def process_data():
 
  os.system('aws s3 cp data/outputs/folia_output/folia.zip s3://fortunoff-secrets/let-them-speak-staging-data/folia.zip --profile lts-staging')
 
- os.system('aws s3 cp data/outputs/db/lts.archive s3://fortunoff-secrets/let-them-speak-staging-data/lts.archive --profile lts-staging')
+ os.system('aws s3 cp data/outputs/db/lts.archive s3://fortunoff-secrets/let-them-speak-staging-data/lts.archive.zip --profile lts-staging')
 
 
 
