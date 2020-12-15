@@ -182,8 +182,6 @@ def process_data():
 
 #post-process the output DB
 
-#correct USHMM shelfmarks
- correct_ushmm_shelfmarks.run()
 
 #extract interviews with multiple persons and set empty of their gender
  identify_interviews_with_more_persons.run()
