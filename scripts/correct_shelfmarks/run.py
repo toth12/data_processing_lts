@@ -19,10 +19,11 @@ COLLECTION = 'testimonies'
 
 def run():
     # get the relevant metadata
-    result = h.query(DB, COLLECTION, {'collection':'USHMM'}, {'shelfmark':1} )
+    result = h.query(DB, COLLECTION, {}, {'shelfmark':1,'collection':1} )
     # modify the shelfmark of interviews
     for element in result:
-        h.update_entry(DB,COLLECTION,element['_id'],{'shelfmark':element['shelfmark'].split(' ')[1]})
+        if element ['collection'] !="USHMM":
+            h.update_entry(DB,COLLECTION,element['_id'],{'shelfmark':element['collection']+' '+str(element['shelfmark'])})
 
 
 

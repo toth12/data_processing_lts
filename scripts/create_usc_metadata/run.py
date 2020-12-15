@@ -120,6 +120,7 @@ def post_process_metadata(meta_data):
 		element['media_url']=[element['media_url']]
 		#provenance to be left empty
 		element['provenance']=''
+		element['collection']='USC'
 		element['interviewee_name']=element['interviewee_name']
 		element['shelfmark']=element['testimony_id']
 		element['testimony_id']='usc_shoah_'+element['testimony_id']

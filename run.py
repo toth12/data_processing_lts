@@ -47,7 +47,7 @@ from scripts.identify_interviews_without_year_of_recording import run as identif
 from scripts.identify_interviews_without_ghetto_and_camp import run as identify_interviews_without_ghetto_and_camp
 from scripts.identify_interviews_without_gender_infos import run as identify_interviews_without_gender_infos
 from scripts.identify_interviews_without_name_of_interviewees import run as identify_interviews_without_name_of_interviewees
-from scripts.correct_ushmm_shelfmarks import run as correct_ushmm_shelfmarks
+from scripts.correct_shelfmarks import run as correct_shelfmarks
 ##Global Variables##
 
 DB = constants.DB
@@ -183,7 +183,7 @@ def process_data():
 #post-process the output DB
 
 #correct USHMM shelfmarks
- correct_ushmm_shelfmarks.run()
+ correct_shelfmarks.run()
 
 #extract interviews with multiple persons and set empty of their gender
  identify_interviews_with_more_persons.run()
@@ -247,9 +247,9 @@ def process_data():
  
  print 'upload data to amazon servers'
 
- os.system('aws s3 cp data/outputs/folia_output/folia.zip s3://fortunoff-secrets/let-them-speak-staging-data/folia.zip --profile lts-staging')
+ #os.system('aws s3 cp data/outputs/folia_output/folia.zip s3://fortunoff-secrets/let-them-speak-staging-data/folia.zip --profile lts-staging')
 
- os.system('aws s3 cp data/outputs/db/lts.archive s3://fortunoff-secrets/let-them-speak-staging-data/lts.archive.zip --profile lts-staging')
+ #os.system('aws s3 cp data/outputs/db/lts.archive s3://fortunoff-secrets/let-them-speak-staging-data/lts.archive.zip --profile lts-staging')
 
 
 
