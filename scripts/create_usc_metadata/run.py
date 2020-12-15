@@ -122,7 +122,7 @@ def post_process_metadata(meta_data):
 		element['provenance']=''
 		element['collection']='USC'
 		element['interviewee_name']=element['interviewee_name']
-		element['shelfmark']= 'USC SHOAH '+element['testimony_id']
+		element['shelfmark']= element['testimony_id']
 		element['testimony_id']='usc_shoah_'+element['testimony_id']
 		element['testimony_title']='Oral history interview with '+element['testimony_title']
 

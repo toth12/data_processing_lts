@@ -200,7 +200,7 @@ def flatten_marc_json(records):
     parsed = get_marc_fields(record, fields)
     parsed['gender'] = clean_gender(parsed['gender'])
     parsed['collection'] = 'Fortunoff'
-    parsed['shelfmark'] = 'Fortunoff '+parsed['testimony_id']
+    parsed['shelfmark'] = parsed['testimony_id']
     parsed['recording_year'] = clean_year(parsed['recording_year'])
     parsed['media_url'] = []
     parsed['thumbnail_url'] = ''
