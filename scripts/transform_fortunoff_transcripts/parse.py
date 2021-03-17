@@ -78,12 +78,23 @@ def remove_surnames(shelfmark,data,surnames,path_to_transcript_file):
 
 		 	data[i],count=re.subn(surname, repl=new_surname, string=element)
 		 	total_count = total_count+count
-
+		
 	 	#data[i]=element.replace(surname,new_surname)
 	 if total_count == 0:
+	 	
 	 	part=int(path_to_transcript_file.split('_p')[1].split('.')[0].split('of')[0])
 	 	if part ==1:
+
 		 	print path_to_transcript_file.split('/')[-1]
 		 	print shelfmark
+		 	import regex
+		 	res = regex.findall("("+surname+"){e<=2}", ' '.join(data))
+
+		 	result =  [char for char in res if char.strip()[0].isupper()] 
+		 	print ('In the transcripts:')
+		 	print (set(result))
+		 	print ('In the catalogue results:')
+		 	print (surname)
+		 	
 	 return data
 
