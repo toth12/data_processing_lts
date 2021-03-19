@@ -70,7 +70,7 @@ def correct_names(shelfmark,data):
 def remove_surnames(shelfmark,data,surnames,path_to_transcript_file):
 	 '''A function to remove the surnames of survivors from transcripts'''
 	 
-	 new_surname = '[surname removed]'
+	 new_surname = surnames[0][0]+'.'
 	 total_count = 0
 	 for i,element in enumerate(data):
 
