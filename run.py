@@ -48,6 +48,7 @@ from scripts.identify_interviews_without_ghetto_and_camp import run as identify_
 from scripts.identify_interviews_without_gender_infos import run as identify_interviews_without_gender_infos
 from scripts.identify_interviews_without_name_of_interviewees import run as identify_interviews_without_name_of_interviewees
 from scripts.correct_shelfmarks import run as correct_shelfmarks
+from scripts.update_ushmm_videos import run as update_videos
 ##Global Variables##
 
 DB = constants.DB
@@ -213,6 +214,9 @@ def process_data():
 
  #identify interviews where no interviewee name was retrieved
  identify_interviews_without_name_of_interviewees.run()
+
+ # Update USHMM videos
+ update_videos.run()
 
 #delete the unnecessary collections from the final result
  

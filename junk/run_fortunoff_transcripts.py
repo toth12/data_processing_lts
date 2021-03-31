@@ -47,6 +47,7 @@ from scripts.identify_interviews_without_year_of_recording import run as identif
 from scripts.identify_interviews_without_ghetto_and_camp import run as identify_interviews_without_ghetto_and_camp
 from scripts.identify_interviews_without_gender_infos import run as identify_interviews_without_gender_infos
 from scripts.identify_interviews_without_name_of_interviewees import run as identify_interviews_without_name_of_interviewees
+from scripts.correct_shelfmarks import run as correct_shelfmarks
 ##Global Variables##
 
 DB = constants.DB
@@ -61,9 +62,14 @@ output_folder_fragments=constants.OUTPUT_FOLDER_FRAGMENTS
 
 
 def process_data():
-    create_fortunoff_transcript_input.run(debug=False)
+
+ 
 
 
+ #process Fortunoff transcripts
+ print ("The processing of Fortunoff transcripts has started")
+ create_fortunoff_transcript_input.run(debug=debug)
+ print ("The processing of Fortunoff transcripts has finished")
 
 
 

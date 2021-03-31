@@ -47,6 +47,8 @@ from scripts.identify_interviews_without_year_of_recording import run as identif
 from scripts.identify_interviews_without_ghetto_and_camp import run as identify_interviews_without_ghetto_and_camp
 from scripts.identify_interviews_without_gender_infos import run as identify_interviews_without_gender_infos
 from scripts.identify_interviews_without_name_of_interviewees import run as identify_interviews_without_name_of_interviewees
+from scripts.correct_shelfmarks import run as correct_shelfmarks
+from scripts.update_ushmm_videos import run as update_videos
 ##Global Variables##
 
 DB = constants.DB
@@ -61,7 +63,10 @@ output_folder_fragments=constants.OUTPUT_FOLDER_FRAGMENTS
 
 
 def process_data():
-    create_fortunoff_transcript_input.run(debug=False)
+    update_videos.run()
+
+ 
+
 
 
 
