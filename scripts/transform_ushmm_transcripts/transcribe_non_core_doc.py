@@ -26,7 +26,7 @@ def safePrint(str_):
 
 
 
-def createStructuredTranscript_Non_Core_Doc():
+def createStructuredTranscript_Non_Core_Doc(debug=False):
     """
     Processes the 509 doc files beloging to the core asset in data
     Core asset is identified by numbers RG-50.030, RG-50.106, RG-50.549
@@ -66,7 +66,11 @@ def createStructuredTranscript_Non_Core_Doc():
     processed_doc=0
     
     # get the units for each file, store them and update tracker 
-    for mongo_rg in core_doc_asset:
+    for c, mongo_rg in enumerate(core_doc_asset):
+        #set the debugger
+    
+        if (debug == True) and (c==3):
+            break
         # get text units for this entry
         processed=[]
         result=[]

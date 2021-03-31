@@ -11,6 +11,7 @@ INPUT_FOLDER_FORTUNOFF_NAME_CODES = os.getcwd()+"/data/inputs/fortunoff/"
 INPUT_FOLDER_USC_METADATA = os.getcwd()+"/data/inputs/usc/metadata/"
 INPUT_FOLDER_USC_TRANSCRIPTS=os.getcwd()+"/data/inputs/usc/transcripts/"
 INPUT_FOLDER_FRAGMENTS=os.getcwd()+"/data/inputs/fragments/"
+METADATA_CORRECTION_DOCS=os.getcwd()+"/data/inputs/metadata_correction_docs/"
 
 #set the parameter of the Mongo DB and data specific collections
 
@@ -29,7 +30,7 @@ OUTPUT_DB='lts'
 OUTPUT_FOLDER_FRAGMENTS_PROCESSING_LOGS=os.getcwd()+"/data/outputs/fragment_processing_logs/"
 OUTPUT_FOLDER_FRAGMENTS=os.getcwd()+"/data/outputs/fragments/"
 OUTPUT_FOLDER_FOR_QUALITY_CONTROL=os.getcwd()+"/data/outputs/collections_for_quality_control/"
-
+OUTPUT_FOLDER_MISC=os.getcwd()+"/data/outputs/misc/"
 
 USHMM_TRACKER_COLLECTION = "USHMM_transcript_processing_progress_test"
 

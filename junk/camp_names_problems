@@ -1,0 +1,126 @@
+1. Sub-Camps:
+
+a, 1462,Auschwitz I
+1457,Auschwitz II-Birkenau
+1468,Auschwitz III-Monowitz
+
+b, Birkenau as individual camp
+
+c, 251,Blechhammer
+1197,Blechhammer E/3
+
+2. Variants:
+
+Bačka Topola / Bačka Topola
+
+738,Budy
+816,Budzyn
+
+120,Czestochowa
+1179,Częstochowa
+
+1231,Flossenbürg
+42,Flossenbürg
+
+1469,Gross Rosen
+
+19,Gross-Rosen
+
+1270,Litoměřice
+86,Litoměrice
+
+1289,Markstädt
+547,Markstädt
+
+852,Płaszów
+1029,Płaszów
+
+3. Eliminate:
+
+122,Block 10 (Auschwitz
+2403,Co.
+
+70,Kanada I
+
+4. Apostrophes remain:
+
+2156,"Danzig, Schichau-Werft"
+
+5. UPPER CASE:
+
+217,HASAG Czestochowianka
+
+6. Kotojel:
+
+2280,Hamburg-Eidelstedt
+1571,Hamburg-Freihafen
+1834,Hamburg-Geilenberg
+1902,Hamburg-Langenhorn
+2927,Hamburg-Sasel
+1835,Hamburg-Tiefstack
+1836,Hamburg-Wilhelmsburg
+
+Krakau-Plaszow
+
+Kalisz-Kozminka
+
+DE:
+
+2217,Hessisch Lichtenau
+
+7. Wrong order:
+
+278,Heinkel-Werke Oranienburg
+
+8,Oranienburg Heinkel-Werke
+1738,Oranienburg-Heinkelwerke
+
+8. Dupla kotojel
+
+107,Kampor--Rab
+
+9. Variants:
+
+Krakau-Plaszow / Plaszów
+Kudowa-Sackisch (USHMM)
+
+10. Apostrophe in between:
+Mogilev-Podol'skii
+
+11. Egyutt is es kulon is:
+
+94,Plaszów and Krakow-Plascow
+
+Todo:
+
+
+0. Eliminate:
+    - 2403,Co.
+1. Create an active replacement list by hand (prefer English language variants based on the English language Wikipedia entry)
+
+A,
+a, Birkenau -> Auschwitz II-Birkenau
+b, 122,Block 10 (Auschwitz -> Auschwitz
+c, 70,Kanada I -> Auschwitz
+d, "Danzig, Schichau-Werft" - > Danzig, Schichau-Werft
+
+B, Correct the order and eliminate the double dash:
+a, 278,Heinkel-Werke Oranienburg, Oranienburg Heinkel-Werke, Oranienburg-Heinkelwerke -> Oranienburg Heinkel-Werke
+b, 107,Kampor--Rab
+
+C, Correct apostrophe in-between:
+
+- Mogilev-Podol'skii -> Mogilev-Podolskiy
+
+D, Correct the apostrophe at the end
+
+
+
+
+2. Identify very close variants -> choose a final term for them (Leave the dash for camps and names: Krakau-Plaszow as opposed to Krakau Plaszow)
+
+3. Split the ones with dash and check if there is any part that is repeated, if so correct it:
+
+Krakau-Plaszow / Plaszów
+
+

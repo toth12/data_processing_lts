@@ -14,7 +14,10 @@ def process(data):
 
     #create a new folia document
     new_doc=folia.Document(id=data['testimony_id'])
-    new_doc.metadata['shelfmark']=data['shelfmark']
+    if data['collection'] == 'USHMM':
+        new_doc.metadata['shelfmark']=data['shelfmark']
+    else:
+        new_doc.metadata['shelfmark']= data['collection'] + ' ' + str(data['shelfmark'])
     new_doc.metadata['testimony_id']=data['testimony_id']
     new_doc.metadata['ghetto_names']=' '.join(data['ghetto_names'])
     new_doc.metadata['camp_names']=' '.join(data['camp_names'])
@@ -43,11 +46,6 @@ if __name__ == "__main__":
     #save result with folia tool
 
     result.save(os.getcwd()+'/data/output/sample_folia_divisions.xml')
-
-
-
-
-
 
 
 

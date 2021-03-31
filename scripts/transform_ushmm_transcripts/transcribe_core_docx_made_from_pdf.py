@@ -18,7 +18,7 @@ INPUT_FOLDER=constants.INPUT_FOLDER_USHMM_TRANSCRIPTS_PDF_TRANSFORMED_TO_DOCS
 OUTPUT_FOLDER_USHMM_PROCESSING_LOGS=constants.OUTPUT_FOLDER_USHMM_PROCESSING_LOGS 
 
 
-def createStructuredTranscriptDoc():
+def createStructuredTranscriptDoc(debug):
     """
     Processes the 509 doc files beloging to the core asset in data
     Core asset is identified by numbers RG-50.030, RG-50.106, RG-50.549
@@ -51,7 +51,10 @@ def createStructuredTranscriptDoc():
 
     core_doc_asset=create_dictionary_of_file_list(core_doc_asset)
     
-    for mongo_rg in core_doc_asset:
+    for c, mongo_rg in enumerate(core_doc_asset):
+        #set the debugger
+        if (debug == True) and (c==3):
+            break
         # get text units for this entry
         processed=[]
         result=[]

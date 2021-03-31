@@ -14,6 +14,8 @@ import sys
 import json
 import constants
 import pdb
+import helper_mongo as h
+import pandas as pd
 
 ##
 # Globals
@@ -197,8 +199,8 @@ def flatten_marc_json(records):
     
     parsed = get_marc_fields(record, fields)
     parsed['gender'] = clean_gender(parsed['gender'])
-    parsed['collection'] = 'Fortunoff'
-    parsed['shelfmark'] = 'Fortunoff '+parsed['testimony_id']
+    parsed['collection'] = 'Fortunoff Archive'
+    parsed['shelfmark'] = parsed['testimony_id']
     parsed['recording_year'] = clean_year(parsed['recording_year'])
     parsed['media_url'] = []
     parsed['thumbnail_url'] = ''
@@ -212,6 +214,11 @@ def flatten_marc_json(records):
     parsed.pop('camp_names_2',None)
     parsed.pop('camp_names_3',None)
     
+
+    # check if double interview and then eliminate the gender info
+
+    if 'and' in parsed['testimony_title'].split():
+      parsed['gender'] = ''
     # add the parsed record to the list of parsed records
     parsed_records.append(parsed)
   return parsed_records
@@ -310,6 +317,59 @@ def format_marc():
   return marc_json_flat
 
 
+
+def harmonize_camp_names(field):
+
+    OUTPUT_COLLECTION = constants.OUTPUT_COLLECTION_FORTUNOFF
+    DB = constants.DB
+    names = h.query(DB, OUTPUT_COLLECTION, {}, {field: 1,'id':1} )
+
+    #load the prepared data
+    if field =="camp_names":
+
+        df_variants = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'camp_variants_resolution_sheet.csv')
+        df_to_remove = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'camp_names_remove_list.csv',header=None)
+        df_to_correct = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'camp_names_correction_list.csv',encoding='utf-8')
+    
+    elif (field=="ghetto_names"):
+        df_variants = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'ghetto_variants_resolution_sheet.csv')
+        df_to_remove = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'ghetto_names_remove_list.csv',header=None)
+        df_to_correct = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'ghetto_names_correction_list.csv',encoding='utf-8')
+    
+
+
+    try:
+        for entry in names:
+            if len(entry[field])==0:
+                continue
+            else:
+                result=[]
+                for name in entry[field]:
+                    if name == '\xc5\x81\xc3\xb3d\xc5\xba':
+                        pdb.set_trace()
+                    if name =='Block 10 (Auschwitz':
+                        name = 'Auschwitz'
+
+                    elif name in df_to_remove[0].to_list():
+                        continue
+                    elif not (df_to_correct[df_to_correct.original_form==name.encode('utf-8').strip()].empty):
+                        corrected_version = df_to_correct[df_to_correct.original_form==name.encode("utf-8").strip()].final_form.values[0]
+                        result.append(corrected_version)
+                    elif not (df_variants[df_variants.variants.str.contains(name.encode('utf-8').strip())].empty):
+
+                        variant_to_include = df_variants[df_variants.variants.str.contains(name.encode("utf-8").strip())].final_version.values[0]
+                        result.append(variant_to_include)
+
+                    else:
+                        result.append(name.encode('utf-8').strip())
+                
+                h.update_field(DB,OUTPUT_COLLECTION, '_id', entry['_id'], field, result)
+            
+    except:
+        pdb.set_trace()
+    
+
+
 ##
 # Main
 ##
@@ -320,9 +380,15 @@ def main():
 
   # process records
   records = format_marc()
-  records=transform_fields_with_non_latin_characters_to_latin(records)
+  #records=transform_fields_with_non_latin_characters_to_latin(records)
 
   
   #save it to the DB
   save(records, OUTPUT_COLLECTION)
+  harmonize_camp_names(field="camp_names")
+  harmonize_camp_names(field="ghetto_names")
+
+
+
+
   

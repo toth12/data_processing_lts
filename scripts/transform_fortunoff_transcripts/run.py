@@ -4,6 +4,7 @@ import pdb
 import os,sys
 import helper_mongo as h
 import constants
+import pandas as pd
 
 
 ##
@@ -15,7 +16,7 @@ collection=constants.OUTPUT_COLLECTION_FORTUNOFF
 input_folder=constants.INPUT_FOLDER_FORTUNOFF_TRANSCRIPTS
 OUTPUT_FOLDER_FORTUNOFF_PROCESSING_LOGS=constants.OUTPUT_FOLDER_FORTUNOFF_PROCESSING_LOGS
 
-def run ():
+def run (debug):
 	'''This function begins the process described in the Readme of this folder'''
 	
 	#get all input filenames
@@ -24,6 +25,10 @@ def run ():
 	shelf_marks=list(set(['_'.join(element.split('/')[-1].split('_')[1:3])for element in input_files]))
 
 	testimony_ids = [{'testimony_id': value} for value in shelf_marks]	#upload shelfmarks
+
+	#read the surnames of survivors
+	names=pd.read_csv(constants.INPUT_FOLDER_FORTUNOFF_METADATA+'Fortunoff_first_names.csv' )
+	names['surname']=names.primary_name.apply(lambda x: x.split(',')[0].strip())
 	
 
 
@@ -44,9 +49,13 @@ def run ():
 		shelf_marks_with_filenames[shelf].append(element)
 
 
-
 	#the dictionary with shelfmarks contains all shelfmarks with corresponding filenames but not necessarily in the right order, this part of the script reorders them
-	for element in shelf_marks_with_filenames:
+	for c,element in enumerate(shelf_marks_with_filenames):
+		
+		#set the debug to here
+		if (debug == True) and (c==10):
+			break
+
 
 		#create an empty list that will hold the ordered list of transcript parts
 		ordered_list=[]
@@ -77,16 +86,25 @@ def run ():
 	unprocessed=[]
 	final_result=[]
 	
-	for shelfmark in shelf_marks_with_filenames:
-		'''if shelfmark !='hvt_93':
-			continue'''
+	for c, shelfmark in enumerate(shelf_marks_with_filenames):
+
+		#set the debug to here
+		if (debug == True) and (c==10):
+			break
+		
 		#create a list that will store the result of segmentation
 		result=[]
 		#use a try catch block to store the shelfmarks that could not be processed
 		try:
 			for i,files in enumerate(shelf_marks_with_filenames[shelfmark]):
+				
+
+
+				#find the relevant surname
+				surnames = names[names.Identifier==shelfmark.upper().replace('_','-')]['surname'].values
+
 				#process the transcript by passing the filename to the segment_transcript function
-				processed_transcript=segment_transcript(files,shelfmark)
+				processed_transcript=segment_transcript(files,shelfmark,surnames)
 				
 				#add a change of tape message
 				if i!=0:
@@ -114,7 +132,6 @@ def run ():
 	#upload the results to the DB
 
 	for element in final_result:
-
 		#get the unique id of the entry based on the shelfmark
 		entry_id=h.query(db,collection,{'testimony_id':element.keys()[0]},{})[0]
 
@@ -145,4 +162,4 @@ def run ():
 
 
 if __name__ == '__main__':
-	run()
+	run(debug=False)

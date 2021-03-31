@@ -46,5 +46,7 @@ def transform_transcript_to_structured_unit(transcript_file_name):
 
 	return result
 if __name__ == '__main__':
-	name='/Users/gmt28/Documents/Workspace/Docker_Engine/varad/Yale_Projects/shoah-foundation-data/scripts/transform-usc-transcripts/inputs/9.1.xml'
-	transform_transcript_to_structured_unit(name)
+	name='9.1.xml'
+	result = transform_transcript_to_structured_unit(name)
+	pdb.set_trace()
+	

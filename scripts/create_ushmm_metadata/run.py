@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from get_camp_names import getCampNames
 from get_ghetto_names import getGhettoNames
 from get_gender import getGender
@@ -11,11 +12,13 @@ import get_videos as mediaExtraction
 import constants
 from text import transform_fields_with_non_latin_characters_to_latin
 import sys, os
-
+import pandas as pd
+import pdb
 import helper_mongo as h
 import csv
 import pprint
-import pdb
+
+import re
 
 pp = pprint.PrettyPrinter(indent=4)
 
@@ -88,6 +91,64 @@ def populateDocument(document, unknown_fields, dictionary, id_, field_name, manu
         if field_name != 'interview_summary':
             unknown_fields.append(field_name)
 
+def harmonize_camp_ghetto_names(field):
+    names = h.query(DB, OUTPUT_COLLECTION, {}, {field: 1,'id':1} )
+
+    #load the prepared data
+    if field =="camp_names":
+
+        df_variants = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'camp_variants_resolution_sheet.csv')
+        df_to_remove = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'camp_names_remove_list.csv',header=None)
+        df_to_correct = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'camp_names_correction_list.csv',encoding='utf-8')
+    
+    elif (field=="ghetto_names"):
+        df_variants = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'ghetto_variants_resolution_sheet.csv')
+        df_to_remove = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'ghetto_names_remove_list.csv',header=None)
+        df_to_correct = pd.read_csv(constants.METADATA_CORRECTION_DOCS+'ghetto_names_correction_list.csv',encoding='utf-8')
+    
+
+
+    try:
+        for entry in names:
+            if len(entry[field])==0:
+                continue
+            else:
+                result=[]
+                for name in entry[field]:
+                    if name =='Block 10 (Auschwitz':
+                        name = 'Auschwitz'
+                        result.append(name.encode('utf-8').strip())
+
+                    elif name[0:4]=="Dvar":
+                        name = "Dvarets"
+                        result.append(name.encode('utf-8').strip())
+
+                    elif name[0:4]=="Kolk":
+                        name = "Kolky"
+                        result.append(name.encode('utf-8').strip())
+
+                    elif name in df_to_remove[0].to_list():
+                        continue
+                    elif not (df_to_correct[df_to_correct.original_form==name.encode('utf-8').strip()].empty):
+                        corrected_version = df_to_correct[df_to_correct.original_form==name.encode("utf-8").strip()].final_form.values[0]
+                        result.append(corrected_version)
+                    elif not (df_variants[df_variants.variants.str.contains(name.encode('utf-8').strip())].empty):
+
+                        variant_to_include = df_variants[df_variants.variants.str.contains(name.encode("utf-8").strip())].final_version.values[0]
+                        result.append(variant_to_include)
+
+                    else:
+                        result.append(name.encode('utf-8').strip())
+                
+                h.update_field(DB,OUTPUT_COLLECTION, '_id', entry['_id'], field, result)
+            
+    except Exception as e:
+        print e
+        
+    
+
+
+
 
                 
 def main():
@@ -99,7 +160,6 @@ def main():
     """
     
     # takes the input collection (mongo collection exported to JSON) and imports it to the DB
-
     os.system('mongorestore -d ' + DB + ' -c '+INPUT_COLLECTION +' '+INPUT_FOLDER+INPUT_DATA)
 
     # query for interview ids
@@ -220,8 +280,12 @@ def main():
 
         if (not isinstance(document['recording_year'],int)) and (document['recording_year'] is not None):
             document['recording_year']=int(document['recording_year'])
-        document=transform_fields_with_non_latin_characters_to_latin([document])
-        
+        #document=transform_fields_with_non_latin_characters_to_latin([document])
         h.insert(DB, OUTPUT_COLLECTION, document)
+    #start the metadata harmonization
+    harmonize_camp_ghetto_names(field='camp_names')
+    harmonize_camp_ghetto_names(field='ghetto_names')
+if __name__ == '__main__':
+    harmonize_camp_ghetto_names(field='ghetto_names')
 
  

@@ -27,7 +27,7 @@ def safePrint(str_):
     return ''.join(i for i in str_ if ord(i) < 128)
 
  
-def createStructuredTranscript_Non_Core_Docx():
+def createStructuredTranscript_Non_Core_Docx(debug):
     """
     Creates the structure dunits for the for the 132 files
     that are part of the non-core asset and which have the
@@ -54,8 +54,11 @@ def createStructuredTranscript_Non_Core_Docx():
 
 
     core_doc_asset=create_dictionary_of_file_list(docx_assets)
-    
-    for mongo_rg in core_doc_asset:
+
+    for c, mongo_rg in enumerate(core_doc_asset):
+        #set the debugger
+        if (debug == True) and (c==3):
+            break
         # get text units for this entry
         processed=[]
         result=[]
