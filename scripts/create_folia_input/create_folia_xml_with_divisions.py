@@ -29,11 +29,17 @@ def process(data):
 
     text=folia.Text(new_doc)
     #iterate through the input to create the folia division elements
+    try:
+        for unit in data['structured_transcript']:
+            if (data['collection']=='USC Shoah Foundation') and ('time' in unit):
 
-    for unit in data['structured_transcript']:
-        division=folia.Division(new_doc)
-        division.settext(unit['unit'])
-        text.add(division)
+                division=folia.Division(new_doc,src=str(unit['part'])+'_'+str(unit['time']))
+            else:
+                division=folia.Division(new_doc)
+            division.settext(unit['unit'])
+            text.add(division)
+    except:
+        pdb.set_trace()
     new_doc.add(text)
     return new_doc
 

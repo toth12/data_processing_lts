@@ -226,7 +226,7 @@ def process_data():
 
 #add the fragment collection to it
 
- os.system('mongoimport -d ' + output_db + ' -c fragments --file '+constants.INPUT_FOLDER_FRAGMENTS+'fragments.json')
+ os.system('mongoimport -d ' + output_db + ' -c fragments --file '+constants.INPUT_FOLDER_FRAGMENTS+'fragments.json --jsonArray')
 
 
  #archive the output db
