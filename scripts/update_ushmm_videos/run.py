@@ -22,7 +22,7 @@ COLLECTION = 'testimonies'
 
 def run():
     file_name = 'USHMM_media_urls.csv'
-    df = pd.read_csv(file_name)
+    df = pd.read_csv(constants.INPUT_FOLDER_USHMM_METADATA+file_name)
 
 
     for row in df.iterrows():
